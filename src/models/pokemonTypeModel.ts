@@ -1,0 +1,16 @@
+import { getConnection } from 'typeorm';
+import PokemonTypes from '@/entities/PokemonTypes';
+
+const bulkSave = async (
+  pokemonTypes: PokemonTypes[]
+): Promise<PokemonTypes[]> => {
+  return getConnection()
+    .manager.save(pokemonTypes)
+    .catch(err => {
+      throw new Error(`Error in pokemon_types bulkSave: ${err}`);
+    });
+};
+
+export default {
+  bulkSave
+};

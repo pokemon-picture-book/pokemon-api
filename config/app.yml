@@ -1,0 +1,54 @@
+db:
+  production:
+    type: postgres
+    # TODO: 本番環境が用意されたら、その設定を反映する
+    host: localhost
+    port: 5432
+    username: pokemon
+    password: pokemon
+    database: pokemon
+    synchronize: true
+    logging: false
+    entities:
+      - dist/entities/**/*.js
+    migrations:
+      - dist/db/migrations/**/*.js
+    subscribers:
+      - dist/db/subscribers/**/*.js
+    cli:
+      entitiesDir: dist/entities
+      migrationsDir: dist/db/migrations
+      subscribersDir: dist/db/subscribers
+  development:
+    type: postgres
+    host: localhost
+    port: 5432
+    username: pokemon
+    password: pokemon
+    database: pokemon
+    synchronize: true
+    logging: false
+    entities:
+      - src/entities/**/*.ts
+    migrations:
+      - src/db/migrations/**/*.ts
+    subscribers:
+      - src/db/subscribers/**/*.ts
+    cli:
+      entitiesDir: src/entities
+      migrationsDir: src/db/migrations
+      subscribersDir: src/db/subscribers
+pokemon:
+  api:
+    url: https://pokeapi.co/api/v2
+  range:
+    offset: 0
+    limit: 721
+  link:
+    png:
+      image: https://raw.githubusercontent.com/noriyuki-shimizu/pokemon.json/master/images/
+      sprite: https://raw.githubusercontent.com/noriyuki-shimizu/pokemon.json/master/sprites/
+      thumbnail: https://raw.githubusercontent.com/noriyuki-shimizu/pokemon.json/master/thumbnails/
+  json:
+    pokedex: https://raw.githubusercontent.com/noriyuki-shimizu/pokemon.json/master/pokedex.json
+    types: https://raw.githubusercontent.com/noriyuki-shimizu/pokemon.json/master/types.json
