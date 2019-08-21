@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "typeRoots": [
-      "./src/@types"
-    ],
     "target": "esnext",
     "lib": ["esnext", "dom"],
     "module": "commonjs",
