@@ -16,7 +16,7 @@
     "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n Initialize",
     "migrate:run": "ts-node $(npm bin)/typeorm migration:run",
     "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert",
-    "initialize:data": "ts-node -C ttypescript --files src/db/seed"
+    "initialize:data": "ts-node-dev -C ttypescript --files src/db/seed"
   },
   "husky": {
     "hooks": {
@@ -79,7 +79,7 @@
     "sonar-scanner": "^3.1.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
-    "ts-node-dev": "^1.0.0-pre.40",
+    "ts-node-dev": "^1.0.0-pre.42",
     "ttypescript": "^1.5.7",
     "typescript": "^3.5.3",
     "typescript-transform-paths": "^1.1.8"
