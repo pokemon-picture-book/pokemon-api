@@ -1,5 +1,5 @@
 {
-  "name": "pokemon",
+  "name": "pokemon-api",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -74,8 +74,6 @@
     "lint-staged": "^9.2.3",
     "micro-dev": "^3.0.0",
     "nodemon": "^1.19.1",
-    "npm-run-all": "^4.1.5",
-    "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
     "sonar-scanner": "^3.1.0",
