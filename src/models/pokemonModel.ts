@@ -2,11 +2,9 @@ import { getConnection } from 'typeorm';
 import Pokemons from '@/entities/Pokemons';
 
 const bulkSave = async (pokemons: Pokemons[]): Promise<Pokemons[]> => {
-  return getConnection()
-    .manager.save(pokemons)
-    .catch(err => {
-      throw new Error(`Error in pokemons bulkSave: ${err}`);
-    });
+  return Pokemons.save(pokemons).catch(err => {
+    throw new Error(`Error in pokemons bulkSave: ${err}`);
+  });
 };
 
 const findAll = async (): Promise<Pokemons[]> => {
