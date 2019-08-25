@@ -18,9 +18,9 @@ const mappingTypes = (axiosResults: AxiosResultWithTypes[]): Types[] =>
  * @returns {Promise<Types[]>}
  */
 export default async (): Promise<Types[]> => {
-  const jsonPath: string = util('pokemon.json.types');
+  const dataPath: string = util('pokemon.data.git.path');
 
-  const response: AxiosResponse = await axios.get(jsonPath);
+  const response: AxiosResponse = await axios.get(`${dataPath}/types.json`);
 
   return mappingTypes(response.data);
 };

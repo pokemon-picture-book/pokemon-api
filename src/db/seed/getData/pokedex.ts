@@ -44,9 +44,9 @@ const mappingPokedex = (axiosResults): Pokedex[] =>
  * @returns {Promise<Pokedex[]>}
  */
 export default async (): Promise<Pokedex[]> => {
-  const pokedexPath: string = util('pokemon.json.pokedex');
+  const dataPath: string = util('pokemon.data.git.path');
 
-  const response: AxiosResponse = await axios.get(pokedexPath);
+  const response: AxiosResponse = await axios.get(`${dataPath}/pokedex.json`);
 
   return mappingPokedex(response.data);
 };

@@ -10,14 +10,14 @@ const getCode = index => `000${index + 1}`.slice(-3);
  * @returns {PngUrls[]}
  */
 export default (pokemons: Pokemons[]): PngUrls[] => {
-  const { image, sprite, thumbnail } = util('pokemon.link.png');
+  const dataPath = util('pokemon.data.git.path');
 
   return pokemons.map(
     (pokemon, i) =>
       new PngUrls(
-        `${image}${getCode(i)}${pokemon.code}.png`,
-        `${sprite}${getCode(i)}MS.png`,
-        `${thumbnail}${getCode(i)}${pokemon.code}.png`,
+        `${dataPath}/images/${getCode(i)}${pokemon.code}.png`,
+        `${dataPath}/sprites/${getCode(i)}MS.png`,
+        `${dataPath}/thumbnails/${getCode(i)}${pokemon.code}.png`,
         pokemon.id
       )
   );
