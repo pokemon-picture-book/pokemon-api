@@ -44,11 +44,6 @@ pokemon:
   range:
     offset: 0
     limit: 721
-  link:
-    png:
-      image: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master/images/
-      sprite: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master/sprites/
-      thumbnail: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master/thumbnails/
-  json:
-    pokedex: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master/pokedex.json
-    types: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master/types.json
+  data:
+    git:
+      path: https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master
