@@ -32,7 +32,6 @@
   "dependencies": {
     "axios": "^0.19.0",
     "fs": "0.0.1-security",
-    "image-to-ascii": "^3.0.12",
     "js-yaml": "^3.13.1",
     "logform": "^2.1.2",
     "loglevel": "^1.6.3",
