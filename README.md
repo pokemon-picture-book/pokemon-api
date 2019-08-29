@@ -3,8 +3,12 @@
 ## 使用技術
 
 * 言語
-  * Node.js (11.10.0)→[Nodeのバージョンを切り替えられる「NVM」（Windows編）](http://blog.h2o-space.com/2016/11/1095/)
+  * Node.js (11.10.0)
   * Typescript (3.5.3)
+
+* バージョン管理
+  * NVM
+    * 参考：[Nodeのバージョンを切り替えられる「NVM」（Windows編）](http://blog.h2o-space.com/2016/11/1095/)
 
 * フレームワーク
   * micro (9.3.4)
