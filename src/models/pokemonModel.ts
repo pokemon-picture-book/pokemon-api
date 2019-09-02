@@ -1,4 +1,3 @@
-import { getConnection } from 'typeorm';
 import Pokemons from '@/entities/Pokemons';
 
 const bulkSave = async (pokemons: Pokemons[]): Promise<Pokemons[]> => {
@@ -13,7 +12,7 @@ const findAll = async (): Promise<Pokemons[]> => {
   });
 };
 
-const findRangeWithTypeAndPngUrl = async (): Promise<Pokemons[]> =>
+const findTypeAndPngUrl = async (): Promise<Pokemons[]> =>
   Pokemons.createQueryBuilder()
     .innerJoinAndSelect('Pokemons.pngUrls', 'PngUrl')
     .innerJoinAndSelect('Pokemons.pokemonTypes', 'PokemonTypes')
@@ -24,5 +23,5 @@ const findRangeWithTypeAndPngUrl = async (): Promise<Pokemons[]> =>
 export default {
   bulkSave,
   findAll,
-  findRangeWithTypeAndPngUrl
+  findTypeAndPngUrl
 };
