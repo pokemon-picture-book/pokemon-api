@@ -7,5 +7,10 @@ module.exports = {
   moduleFileExtensions: ['ts', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1'
+  },
+  globals: {
+    'ts-jest': {
+      compiler: 'ttypescript'
+    }
   }
 };
