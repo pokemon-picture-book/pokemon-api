@@ -12,7 +12,7 @@ do
 done
 sleep 20
 
-sed -e 's/localhost/sonarqube/6' sonar-project.properties
+echo sonar.host.url=http://localhost:9000 >> sonar-project.properties
 npm run scan
 
 # start dev server
