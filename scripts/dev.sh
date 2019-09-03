@@ -12,7 +12,6 @@ do
 done
 sleep 20
 
-echo sonar.host.url=http://localhost:9000 >> sonar-project.properties
 npm run scan
 
 # start dev server
