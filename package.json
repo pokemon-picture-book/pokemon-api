@@ -11,10 +11,11 @@
     "dev": "ts-node -C ttypescript --files node_modules/.bin/micro-dev -H $HOST -p $PORT ./src/app.ts",
     "dev:local": "ts-node -C ttypescript --files node_modules/.bin/micro-dev ./src/app.ts",
     "build": "ttsc",
-    "clean": "rimraf dist/*",
+    "clean": "rm -rf dist",
     "scan": "sonar-scanner",
     "lint": "eslint --fix 'src/**/*.ts'",
     "test": "jest",
+    "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
     "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n Initialize",
     "migrate:run": "ts-node $(npm bin)/typeorm migration:run",
     "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert",
@@ -22,7 +23,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
     }
   },
   "lint-staged": {
@@ -70,13 +72,12 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^4.0.0-beta.1",
+    "husky": "^4.0.0-beta.2",
     "jest": "^24.9.0",
-    "lint-staged": "^9.2.3",
+    "lint-staged": "^9.4.0",
     "micro-dev": "^3.0.0",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
-    "rimraf": "^2.6.3",
     "sonar-scanner": "^3.1.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
