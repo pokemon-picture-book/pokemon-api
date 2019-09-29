@@ -6,10 +6,10 @@ import {
   OneToMany,
   OneToOne
 } from 'typeorm';
-import GifUrls from './GifUrls';
-import PngUrls from './PngUrls';
+import Gifs from './Gifs';
+import Pngs from './Pngs';
 import PokemonTypes from './PokemonTypes';
-import Bases from './Bases';
+import Specs from './Specs';
 
 @Entity()
 export class Pokemons extends BaseEntity {
@@ -31,14 +31,27 @@ export class Pokemons extends BaseEntity {
   })
   public name: string = '';
 
-  @OneToMany(() => GifUrls, gifUrls => gifUrls.pokemon)
-  public gifUrls: GifUrls[];
+  @Column({
+    type: 'smallint',
+    name: 'generation_no',
+    nullable: true
+  })
+  public generationNo: number;
 
-  @OneToOne(() => Bases, bases => bases.pokemon)
-  public bases: Bases;
+  @Column({
+    type: 'varchar',
+    length: 255
+  })
+  public detail: string;
 
-  @OneToOne(() => PngUrls, pngUrls => pngUrls.pokemon)
-  public pngUrls: PngUrls;
+  @OneToMany(() => Gifs, gifs => gifs.pokemon)
+  public gifs: Gifs[];
+
+  @OneToOne(() => Specs, spec => spec.pokemon)
+  public spec: Specs;
+
+  @OneToOne(() => Pngs, pngs => pngs.pokemon)
+  public pngs: Pngs;
 
   @OneToMany(() => PokemonTypes, pokemonTypes => pokemonTypes.pokemon)
   public pokemonTypes: PokemonTypes[];

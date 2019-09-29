@@ -9,7 +9,7 @@ import {
 import Pokemons from './Pokemons';
 
 @Entity()
-export class PngUrls extends BaseEntity {
+export class Pngs extends BaseEntity {
   @PrimaryGeneratedColumn()
   public id: number;
 
@@ -24,27 +24,18 @@ export class PngUrls extends BaseEntity {
   public spriteUrl: string = '';
 
   @Column({
-    name: 'thumbnail_url'
+    name: 'pokemon_id'
   })
-  public thumbnailUrl: string = '';
-
-  @Column()
   public pokemonId: number;
 
   @OneToOne(() => Pokemons)
-  @JoinColumn({ name: 'pokemonId' })
+  @JoinColumn({ name: 'pokemon_id' })
   public pokemon: Pokemons;
 
-  constructor(
-    imageUrl: string,
-    spriteUrl: string,
-    thumbnailUrl: string,
-    pokemonId: number
-  ) {
+  constructor(imageUrl: string, spriteUrl: string, pokemonId: number) {
     super();
     this.imageUrl = imageUrl;
     this.spriteUrl = spriteUrl;
-    this.thumbnailUrl = thumbnailUrl;
     this.pokemonId = pokemonId;
   }
 
@@ -53,4 +44,4 @@ export class PngUrls extends BaseEntity {
   }
 }
 
-export default PngUrls;
+export default Pngs;

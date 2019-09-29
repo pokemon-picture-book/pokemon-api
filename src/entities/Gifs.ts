@@ -9,7 +9,7 @@ import {
 import Pokemons from './Pokemons';
 
 @Entity()
-export class GifUrls extends BaseEntity {
+export class Gifs extends BaseEntity {
   @PrimaryGeneratedColumn()
   public id: number;
 
@@ -18,11 +18,13 @@ export class GifUrls extends BaseEntity {
   })
   public url: string = '';
 
-  @Column()
+  @Column({
+    name: 'pokemon_id'
+  })
   public pokemonId: number;
 
-  @ManyToOne(() => Pokemons, pokemon => pokemon.gifUrls)
-  @JoinColumn({ name: 'pokemonId' })
+  @ManyToOne(() => Pokemons, pokemon => pokemon.gifs)
+  @JoinColumn({ name: 'pokemon_id' })
   public pokemon: Pokemons;
 
   constructor(url: string, pokemonId: number) {
@@ -36,4 +38,4 @@ export class GifUrls extends BaseEntity {
   }
 }
 
-export default GifUrls;
+export default Gifs;

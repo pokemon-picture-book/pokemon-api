@@ -9,37 +9,49 @@ import {
 import Pokemons from './Pokemons';
 
 @Entity()
-export class Bases extends BaseEntity {
+export class Specs extends BaseEntity {
   @PrimaryGeneratedColumn()
   public id: number;
 
-  @Column()
+  @Column({
+    type: 'smallint'
+  })
   public hp: number;
 
-  @Column()
+  @Column({
+    type: 'smallint'
+  })
   public attack: number;
 
-  @Column()
+  @Column({
+    type: 'smallint'
+  })
   public defense: number;
 
   @Column({
-    name: 'sp_attack'
+    name: 'sp_attack',
+    type: 'smallint'
   })
   public spAttack: number;
 
   @Column({
-    name: 'sp_defense'
+    name: 'sp_defense',
+    type: 'smallint'
   })
   public spDefense: number;
 
-  @Column()
+  @Column({
+    type: 'smallint'
+  })
   public speed: number;
 
-  @Column()
+  @Column({
+    name: 'pokemon_id'
+  })
   public pokemonId: number;
 
   @OneToOne(() => Pokemons)
-  @JoinColumn({ name: 'pokemonId' })
+  @JoinColumn({ name: 'pokemon_id' })
   public pokemon: Pokemons;
 
   constructor(
@@ -66,4 +78,4 @@ export class Bases extends BaseEntity {
   }
 }
 
-export default Bases;
+export default Specs;
