@@ -14,18 +14,22 @@ export class PokemonTypes extends BaseEntity {
   @PrimaryGeneratedColumn()
   public id: number;
 
-  @Column()
+  @Column({
+    name: 'pokemon_id'
+  })
   public pokemonId: number;
 
-  @Column()
+  @Column({
+    name: 'type_id'
+  })
   public typeId: number;
 
   @ManyToOne(() => Pokemons)
-  @JoinColumn({ name: 'pokemonId' })
+  @JoinColumn({ name: 'pokemon_id' })
   public pokemon: Pokemons;
 
   @ManyToOne(() => Types)
-  @JoinColumn({ name: 'typeId' })
+  @JoinColumn({ name: 'type_id' })
   public types: Types;
 
   constructor(pokemonId: number, typeId: number) {
