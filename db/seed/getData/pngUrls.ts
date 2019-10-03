@@ -1,4 +1,4 @@
-import PngUrls from '@/entities/PngUrls';
+import PngUrls from '@/entities/Pngs';
 import util from '@/utils';
 import Pokemons from '@/entities/Pokemons';
 

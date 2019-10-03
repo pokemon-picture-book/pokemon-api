@@ -1,5 +1,5 @@
 import Pokemons from '@/entities/Pokemons';
-import Bases from '@/entities/Bases';
+import Bases from '@/entities/Specs';
 
 declare type GifUrlsWithPokemons = {
   url: string;

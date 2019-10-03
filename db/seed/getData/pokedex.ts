@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 import util from '@/utils';
 import Pokemons from '@/entities/Pokemons';
-import Bases from '@/entities/Bases';
+import Bases from '@/entities/Specs';
 import { Pokedex } from '@/@types/seed';
 
 /**

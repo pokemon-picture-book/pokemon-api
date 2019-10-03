@@ -2,7 +2,7 @@ import * as puppeteer from 'puppeteer';
 
 import { ScrapingNewPage } from '@/@types/scraping';
 import Pokemons from '@/entities/Pokemons';
-import GifUrls from '@/entities/GifUrls';
+import GifUrls from '@/entities/Gifs';
 import { GifUrlsWithPokemons } from '@/@types/seed';
 
 import ProgressBar = require('progress');

@@ -1,5 +1,5 @@
 import { getConnection } from 'typeorm';
-import GifUrls from '@/entities/GifUrls';
+import GifUrls from '@/entities/Gifs';
 
 const bulkSave = async (gifUrls: GifUrls[]): Promise<GifUrls[]> => {
   return GifUrls.save(gifUrls).catch(err => {

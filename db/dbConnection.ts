@@ -5,7 +5,7 @@ import {
   getConnection
 } from 'typeorm';
 
-import ormconfig = require('../../ormconfig');
+import ormconfig = require('../ormconfig');
 import uuid = require('uuid');
 
 const disconnect = async (): Promise<void> => {

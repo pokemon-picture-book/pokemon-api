@@ -14,4 +14,4 @@ package-lock.json
 *.log
 
 # migration file
-src/db/migrations/*.ts
+db/migrations/*.ts
