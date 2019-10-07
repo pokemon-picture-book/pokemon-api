@@ -16,7 +16,8 @@
     "lint": "eslint --fix --ext .ts src/",
     "test": "jest",
     "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
-    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n Initialize",
+    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n",
+    "migrate:create": "ts-node $(npm bin)/typeorm migration:create -n",
     "migrate:run": "ts-node $(npm bin)/typeorm migration:run",
     "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert",
     "initialize:data": "ts-node-dev -C ttypescript --files src/db/seed"
