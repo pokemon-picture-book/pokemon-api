@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "code": "Normal",
+        "name": "ノーマル"
+    },
+    {
+        "id": 2,
+        "code": "Fighting",
+        "name": "かくとう"
+    },
+    {
+        "id": 3,
+        "code": "Flying",
+        "name": "ひこう"
+    },
+    {
+        "id": 4,
+        "code": "Poison",
+        "name": "どく"
+    },
+    {
+        "id": 5,
+        "code": "Ground",
+        "name": "じめん"
+    },
+    {
+        "id": 6,
+        "code": "Rock",
+        "name": "いわ"
+    },
+    {
+        "id": 7,
+        "code": "Bug",
+        "name": "むし"
+    },
+    {
+        "id": 8,
+        "code": "Ghost",
+        "name": "ゴースト"
+    },
+    {
+        "id": 9,
+        "code": "Steel",
+        "name": "はがね"
+    },
+    {
+        "id": 10,
+        "code": "Fire",
+        "name": "ほのお"
+    },
+    {
+        "id": 11,
+        "code": "Water",
+        "name": "みず"
+    },
+    {
+        "id": 12,
+        "code": "Grass",
+        "name": "くさ"
+    },
+    {
+        "id": 13,
+        "code": "Electric",
+        "name": "でんき"
+    },
+    {
+        "id": 14,
+        "code": "Psychic",
+        "name": "エスパー"
+    },
+    {
+        "id": 15,
+        "code": "Ice",
+        "name": "こおり"
+    },
+    {
+        "id": 16,
+        "code": "Dragon",
+        "name": "ドラゴン"
+    },
+    {
+        "id": 17,
+        "code": "Dark",
+        "name": "あく"
+    },
+    {
+        "id": 18,
+        "code": "Fairy",
+        "name": "フェアリー"
+    }
+]
