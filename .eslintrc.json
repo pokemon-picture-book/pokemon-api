@@ -17,7 +17,10 @@
     "rules": {
         "prettier/prettier": [
             "error",
-            { "singleQuote": true }
+            {
+                "singleQuote": true,
+                "tabWidth": 4
+            }
         ],
         "no-console": "off",
         "import/no-unresolved": "off",
