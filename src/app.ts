@@ -10,12 +10,12 @@ const pokemonRoute = withNamespace('/pokemon');
 dbConnection.connect();
 
 process.on('SIGINT', async () => {
-  await dbConnection.disconnect();
-  process.exit();
+    await dbConnection.disconnect();
+    process.exit();
 });
 
 export default router(
-  get('/status', status),
-  pokemonRoute(get('/', pokemonList)),
-  get('/*', notFound)
+    get('/status', status),
+    pokemonRoute(get('/', pokemonList)),
+    get('/*', notFound)
 );

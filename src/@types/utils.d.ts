@@ -1,34 +1,34 @@
 declare type YamlPokemonRange = {
-  offset: number;
-  limit: number;
+    offset: number;
+    limit: number;
 };
 
 declare type YamlPokemonPngType = {
-  image: string;
-  sprite: string;
-  thumbnail: string;
+    image: string;
+    sprite: string;
+    thumbnail: string;
 };
 
 declare type YamlPokemonJsonFileWithTypes = {
-  pokedex: string;
-  types: string;
+    pokedex: string;
+    types: string;
 };
 
 declare type YamlPokemonApi = {
-  url: string;
+    url: string;
 };
 
 declare type YamlPokemonPngWithLink = {
-  png: YamlPokemonPngType;
+    png: YamlPokemonPngType;
 };
 
 declare type YamlPokemon = {
-  api: YamlPokemonApi;
-  range: YamlPokemonRange;
-  link: YamlPokemonPngWithLink;
-  json: YamlPokemonJsonFileWithTypes;
+    api: YamlPokemonApi;
+    range: YamlPokemonRange;
+    link: YamlPokemonPngWithLink;
+    json: YamlPokemonJsonFileWithTypes;
 };
 
 declare type YamlPropertys = {
-  pokemon: YamlPokemon;
+    pokemon: YamlPokemon;
 };

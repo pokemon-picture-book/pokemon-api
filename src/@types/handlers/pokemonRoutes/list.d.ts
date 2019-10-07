@@ -1,3 +1,3 @@
 declare type PokemonListQueryParameter = {
-  [key: string]: string;
+    [key: string]: string;
 };
