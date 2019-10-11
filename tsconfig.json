@@ -15,12 +15,8 @@
       "@/*": [
         "src/*"
       ]
-    },
-    "plugins": [
-      { "transform": "typescript-transform-paths" },
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ]
+    }
   },
-  "include": ["src/**/*", "db"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "db"]
 }

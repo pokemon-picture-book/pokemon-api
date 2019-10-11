@@ -11,7 +11,7 @@ const scan = (
     return done ? yamlProperty : scan(yamlProperty[value], keyIterator);
 };
 
-const load = (yamlPropertys: YamlPropertys, key: string) => {
+const load = (yamlPropertys: any, key: string) => {
     const filler: string = '.';
 
     if (key.indexOf(filler) >= 0) {
@@ -25,7 +25,7 @@ const load = (yamlPropertys: YamlPropertys, key: string) => {
 
 export default (key: string): any => {
     try {
-        const yamlPropertys: YamlPropertys = yaml.safeLoad(
+        const yamlPropertys: any = yaml.safeLoad(
             fs.readFileSync(
                 path.resolve(__dirname, '../../config/app.yml'),
                 'utf8'
