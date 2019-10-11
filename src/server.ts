@@ -6,39 +6,41 @@ import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
 
-import installValidator from './swagger';
-
-const app = express();
-
 export default class ExpressServer {
+    private app: Application;
+
     constructor() {
+        this.app = express();
         const root = path.normalize(`${__dirname}/..`);
-        app.set('appPath', `${root}client`);
-        app.use(
+        this.app.set('appPath', `${root}client`);
+        this.app.use(
             bodyParser.json({ limit: process.env.REQUEST_LIMIT || '100kb' })
         );
-        app.use(
+        this.app.use(
             bodyParser.urlencoded({
                 extended: true,
                 limit: process.env.REQUEST_LIMIT || '100kb'
             })
         );
-        app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
-        app.use(express.static('public'));
+        this.app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
+
+        if (process.env.NODE_ENV === 'development') {
+            this.app.use(express.static('public'));
+        }
     }
 
     router(routes: (app: Application) => void): ExpressServer {
-        installValidator(app, routes);
+        routes(this.app);
         return this;
     }
 
-    listen(p: string | number = process.env.PORT): Application {
+    listen(p: string = '3000', host: string = 'localhost'): Application {
         const welcome = port => () =>
             console.info(
                 `up and running in ${process.env.NODE_ENV ||
-                    'development'} @: ${os.hostname()} on port: ${port}}`
+                    'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
             );
-        http.createServer(app).listen(p, welcome(p));
-        return app;
+        http.createServer(this.app).listen(Number(p), host, welcome(p));
+        return this.app;
     }
 }
