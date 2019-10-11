@@ -6,11 +6,28 @@ import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
 
+import routes from './routes';
+
 export default class ExpressServer {
     private app: Application;
 
-    constructor() {
+    private port: string;
+
+    private host: string;
+
+    constructor(port: string = '3000', host: string = 'localhost') {
         this.app = express();
+        this.port = port;
+        this.host = host;
+    }
+
+    public start(): Application {
+        this.setting();
+        this.router();
+        return this.listen();
+    }
+
+    private setting() {
         const root = path.normalize(`${__dirname}/..`);
         this.app.set('appPath', `${root}client`);
         this.app.use(
@@ -29,18 +46,23 @@ export default class ExpressServer {
         }
     }
 
-    router(routes: (app: Application) => void): ExpressServer {
+    private router(): void {
         routes(this.app);
-        return this;
     }
 
-    listen(p: string = '3000', host: string = 'localhost'): Application {
-        const welcome = port => () =>
-            console.info(
-                `up and running in ${process.env.NODE_ENV ||
-                    'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
-            );
-        http.createServer(this.app).listen(Number(p), host, welcome(p));
+    private listen(): Application {
+        http.createServer(this.app).listen(
+            Number(this.port),
+            this.host,
+            function(this: ExpressServer) {
+                console.info(
+                    `up and running in ${process.env.NODE_ENV ||
+                        'development'} @: ${os.hostname()} on port: ${
+                        this.port
+                    }, host: ${this.host}`
+                );
+            }.bind(this)
+        );
         return this.app;
     }
 }

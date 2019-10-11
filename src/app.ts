@@ -1,6 +1,4 @@
-import Server from './server';
-import routes from './routes';
+import ExpressServer from './server';
 
-export default new Server()
-    .router(routes)
-    .listen(process.env.PORT, process.env.HOST);
+const { PORT, HOST } = process.env;
+export default new ExpressServer(PORT, HOST).start();
