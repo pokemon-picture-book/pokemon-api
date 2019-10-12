@@ -5,8 +5,10 @@ import * as bodyParser from 'body-parser';
 import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
+import { createConnection, BaseEntity } from 'typeorm';
 
 import routes from './routes';
+import * as ormconfig from '../ormconfig';
 
 export default class ExpressServer {
     private app: Application;
@@ -24,6 +26,7 @@ export default class ExpressServer {
     public start(): Application {
         this.setting();
         this.router();
+        this.dbConnection();
         return this.listen();
     }
 
@@ -48,6 +51,20 @@ export default class ExpressServer {
 
     private router(): void {
         routes(this.app);
+    }
+
+    private async dbConnection(): Promise<void> {
+        const connection = await createConnection({
+            ...ormconfig,
+            entities: ['./entities/**/*.ts'],
+            migrations: ['../db/migrations/**/*.ts'],
+            cli: {
+                entitiesDir: './entities',
+                migrationsDir: '../db/migrations'
+            }
+        });
+
+        BaseEntity.useConnection(connection);
     }
 
     private listen(): Application {
