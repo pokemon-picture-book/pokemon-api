@@ -1,5 +1,5 @@
 import { getConnection } from 'typeorm';
-import PokemonTypes from '@/entities/PokemonTypes';
+import PokemonTypes from '@/domain/entities/PokemonTypes';
 
 const bulkSave = async (
     pokemonTypes: PokemonTypes[]

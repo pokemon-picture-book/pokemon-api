@@ -1,4 +1,4 @@
-import Pokemons from '@/entities/Pokemons';
+import Pokemons from '@/domain/entities/Pokemons';
 
 const bulkSave = async (pokemons: Pokemons[]): Promise<Pokemons[]> => {
     return Pokemons.save(pokemons).catch(err => {
