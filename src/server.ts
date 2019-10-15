@@ -56,10 +56,10 @@ export default class ExpressServer {
     private async dbConnection(): Promise<void> {
         const connection = await createConnection({
             ...ormconfig,
-            entities: ['./entities/**/*.ts'],
+            entities: ['./domain/entities/**/*.ts'],
             migrations: ['../db/migrations/**/*.ts'],
             cli: {
-                entitiesDir: './entities',
+                entitiesDir: './domain/entities',
                 migrationsDir: '../db/migrations'
             }
         });

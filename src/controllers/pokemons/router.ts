@@ -1,11 +1,16 @@
 import * as express from 'express';
+import { Request, Response } from 'express';
 import 'reflect-metadata';
 
-import container from '@/inversify.config';
-import Controller from '@/controllers/pokemons/controller';
+import container from '@/registories/inversify.config';
+import PokemonController from '@/controllers/pokemons/controller';
 
-import TYPES from '@/registories/registory';
+import TYPES from '@/registories/types';
 
 export default express
     .Router()
-    .get('/', container.get<Controller>(TYPES.PokemonController).search);
+    .get('/', (req: Request, res: Response) =>
+        container
+            .get<PokemonController>(TYPES.PokemonController)
+            .search(req, res)
+    );

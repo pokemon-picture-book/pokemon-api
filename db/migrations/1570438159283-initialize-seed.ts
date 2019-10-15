@@ -1,54 +1,42 @@
 import {MigrationInterface, QueryRunner} from "typeorm";
-import fs = require('fs');
+
+import pokemons = require('../seed/data/pokemons.json');
+import types = require('../seed/data/types.json');
+import pokemonTypes = require('../seed/data/pokemonTypes.json');
+import specs = require('../seed/data/specs.json');
+import pngs = require('../seed/data/pngs.json');
+import gifs = require('../seed/data/gifs.json');
 
 const escapeSingleQuote = text => /\'/.test(text) ? text.replace(/\'/g, '\'\'') : text;
 
 export class initializeSeed1570438159283 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<any> {
-        const pokemons = JSON.parse(
-            fs.readFileSync('db/seed/data/pokemons.json', 'utf8')
-        );
         for (const pokemon of pokemons) {
             const { id, code, name, generation_no } = pokemon;
             await queryRunner.query(`INSERT INTO "pokemons" ("id", "code", "name", "generation_no") VALUES (${id}, '${escapeSingleQuote(code)}', '${name}', ${generation_no});`, undefined);
         }
 
-        const types = JSON.parse(
-            fs.readFileSync('db/seed/data/types.json', 'utf8')
-        )
         for (const type of types) {
             const { id, code, name } = type;
             await queryRunner.query(`INSERT INTO "types" ("id", "code", "name") VALUES (${id}, '${code}', '${name}');`, undefined);
         }
 
-        const pokemonTypes = JSON.parse(
-            fs.readFileSync('db/seed/data/pokemonTypes.json', 'utf8')
-        );
         for (const pokemonType of pokemonTypes) {
             const { pokemon_id, type_id } = pokemonType;
             await queryRunner.query(`INSERT INTO "pokemon_types" ("pokemon_id", "type_id") VALUES ('${pokemon_id}', '${type_id}');`, undefined);
         }
 
-        const specs = JSON.parse(
-            fs.readFileSync('db/seed/data/specs.json', 'utf8')
-        )
         for (const spec of specs ){
             const { pokemon_id, hp, attack, defense, sp_attack, sp_defense, speed } = spec;
             await queryRunner.query(`INSERT INTO "specs" ("pokemon_id", "hp", "attack", "defense", "sp_attack", "sp_defense", "speed") VALUES (${pokemon_id}, ${hp}, ${attack}, ${defense}, ${sp_attack}, ${sp_defense}, ${speed});`, undefined);
         }
 
-        const pngs = JSON.parse(
-            fs.readFileSync('db/seed/data/pngs.json', 'utf8')
-        );
         for (const png of pngs) {
             const { image_url, sprite_url, pokemon_id } = png;
             await queryRunner.query(`INSERT INTO "pngs" ("image_url", "sprite_url", "pokemon_id") VALUES ('${image_url}', '${sprite_url}', ${pokemon_id});`, undefined);
         }
 
-        const gifs = JSON.parse(
-            fs.readFileSync('db/seed/data/gifs.json', 'utf8')
-        );
         for (const gif of gifs) {
             const { pokemon_id, url } = gif;
             await queryRunner.query(`INSERT INTO "gifs" ("pokemon_id", "url") VALUES (${pokemon_id}, '${url}');`, undefined);
