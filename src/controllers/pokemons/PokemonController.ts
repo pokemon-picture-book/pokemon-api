@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 import { injectable, inject } from 'inversify';
 import 'reflect-metadata';
 
-import TYPES from '@/registories/types';
-import ISearchPokemonUsecase from '@/usecases/search-pokemon-usecase';
+import TYPES from '@/registories/inversify.types';
+import ISearchPokemonUsecase from '@/usecases/ISearchPokemonUsecase';
 import Pokemons from '@/domain/entities/Pokemons';
 
 @injectable()

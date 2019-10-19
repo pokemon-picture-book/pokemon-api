@@ -1,13 +1,12 @@
 import * as express from 'express';
-import { Application } from 'express';
-import * as path from 'path';
+import { Application, Router } from 'express';
 import * as bodyParser from 'body-parser';
 import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
 import { createConnection, BaseEntity } from 'typeorm';
 
-import routes from './routes';
+import appRoutes from './routes';
 import * as ormconfig from '../ormconfig';
 
 export default class ExpressServer {
@@ -31,8 +30,6 @@ export default class ExpressServer {
     }
 
     private setting() {
-        const root = path.normalize(`${__dirname}/..`);
-        this.app.set('appPath', `${root}client`);
         this.app.use(
             bodyParser.json({ limit: process.env.REQUEST_LIMIT || '100kb' })
         );
@@ -50,19 +47,24 @@ export default class ExpressServer {
     }
 
     private router(): void {
-        routes(this.app);
+        appRoutes.routes.forEach(route => {
+            const baseRouter = express.Router();
+            const itemRouter = express.Router({ mergeParams: true });
+
+            baseRouter.use(route.path, itemRouter);
+
+            route.children.forEach(child => {
+                itemRouter
+                    .route(child.path)
+                    [child.method]((req, res) => child.action(req, res));
+            });
+
+            this.app.use(appRoutes.base, baseRouter);
+        });
     }
 
     private async dbConnection(): Promise<void> {
-        const connection = await createConnection({
-            ...ormconfig,
-            entities: ['./domain/entities/**/*.ts'],
-            migrations: ['../db/migrations/**/*.ts'],
-            cli: {
-                entitiesDir: './domain/entities',
-                migrationsDir: '../db/migrations'
-            }
-        });
+        const connection = await createConnection(ormconfig);
 
         BaseEntity.useConnection(connection);
     }

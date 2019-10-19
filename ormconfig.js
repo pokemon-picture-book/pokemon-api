@@ -18,10 +18,12 @@ module.exports = {
    synchronize: true,
    logging: false,
    entities: [
-      'src/domain/entities/**/*.ts'
+      'src/domain/entities/**/*.ts',
+      'domain/entities/**/*.ts'
    ],
    migrations: [
-      'db/migrations/**/*.ts'
+      'db/migrations/**/*.ts',
+      '../db/migrations/**/*.ts'
    ],
    cli: {
       entitiesDir: 'src/domain/entities',
