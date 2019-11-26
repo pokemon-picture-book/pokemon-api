@@ -3,7 +3,7 @@ import { injectable, inject } from 'inversify';
 import 'reflect-metadata';
 
 import TYPES from '@/registories/inversify.types';
-import ISearchPokemonUsecase from '@/usecases/ISearchPokemonUsecase';
+import ISearchPokemonUsecase from '@/usecases/pokemons/ISearchPokemonUsecase';
 import Pokemons from '@/domain/entities/Pokemons';
 
 @injectable()
