@@ -3,7 +3,6 @@ import 'reflect-metadata';
 
 import container from '@/registories/inversify.config';
 import PokemonController from '@/controllers/pokemons/PokemonController';
-
 import TYPES from '@/registories/inversify.types';
 
 const pokemonControllerContainer = container.get<PokemonController>(
@@ -29,18 +28,20 @@ export default {
                 {
                     method: 'get',
                     path: '/:pokemonId',
-                    action: pokemonControllerContainer.search
+                    action: (req: Request, res: Response) =>
+                        pokemonControllerContainer.search(req, res)
+                },
+                {
+                    path: '/items',
+                    children: [
+                        {
+                            method: 'get',
+                            path: '/',
+                            action: (req: Request, res: Response) =>
+                                pokemonControllerContainer.search(req, res)
+                        }
+                    ]
                 }
-                // {
-                //     path: '/item',
-                //     children: [
-                //         {
-                //             method: 'get',
-                //             path: '/',
-                //             action: pokemonControllerContainer.search
-                //         }
-                //     ]
-                // }
             ]
         }
     ]

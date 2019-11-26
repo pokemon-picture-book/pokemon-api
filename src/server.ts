@@ -1,66 +1,51 @@
 import * as express from 'express';
-import { Application, Router } from 'express';
+import { Application } from 'express';
 import * as bodyParser from 'body-parser';
 import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
 import { createConnection, BaseEntity } from 'typeorm';
 
-import appRoutes from './routes';
+import appRoutes from '@/routes';
+import ExpressRouter from '@/domain/ExpressRouter';
 import * as ormconfig from '../ormconfig';
 
 export default class ExpressServer {
     private app: Application;
 
-    private port: string;
-
-    private host: string;
-
-    constructor(port: string = '3000', host: string = 'localhost') {
-        this.app = express();
-        this.port = port;
-        this.host = host;
+    constructor(app: Application) {
+        this.app = app;
     }
 
     public start(): Application {
-        this.setting();
-        this.router();
+        this.applicationSetting();
+        this.routerSetting();
         this.dbConnection();
         return this.listen();
     }
 
-    private setting() {
-        this.app.use(
-            bodyParser.json({ limit: process.env.REQUEST_LIMIT || '100kb' })
-        );
+    private applicationSetting() {
+        const { NODE_ENV, REQUEST_LIMIT, SESSION_SECRET } = process.env;
+
+        this.app.use(bodyParser.json({ limit: REQUEST_LIMIT || '100kb' }));
         this.app.use(
             bodyParser.urlencoded({
                 extended: true,
-                limit: process.env.REQUEST_LIMIT || '100kb'
+                limit: REQUEST_LIMIT || '100kb'
             })
         );
-        this.app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
+        this.app.use(cookieParser(SESSION_SECRET || 'mySecret'));
 
-        if (process.env.NODE_ENV === 'development') {
+        if (NODE_ENV === 'development') {
             this.app.use(express.static('public'));
         }
     }
 
-    private router(): void {
-        appRoutes.routes.forEach(route => {
-            const baseRouter = express.Router();
-            const itemRouter = express.Router({ mergeParams: true });
+    private routerSetting(): void {
+        const expressRouter = new ExpressRouter(appRoutes);
+        const { path, router } = expressRouter.setting();
 
-            baseRouter.use(route.path, itemRouter);
-
-            route.children.forEach(child => {
-                itemRouter
-                    .route(child.path)
-                    [child.method]((req, res) => child.action(req, res));
-            });
-
-            this.app.use(appRoutes.base, baseRouter);
-        });
+        this.app.use(path, router);
     }
 
     private async dbConnection(): Promise<void> {
@@ -70,18 +55,13 @@ export default class ExpressServer {
     }
 
     private listen(): Application {
-        http.createServer(this.app).listen(
-            Number(this.port),
-            this.host,
-            function(this: ExpressServer) {
-                console.info(
-                    `up and running in ${process.env.NODE_ENV ||
-                        'development'} @: ${os.hostname()} on port: ${
-                        this.port
-                    }, host: ${this.host}`
-                );
-            }.bind(this)
-        );
+        const { NODE_ENV, PORT, HOST } = process.env;
+        http.createServer(this.app).listen(Number(PORT), HOST, () => {
+            console.info(
+                `up and running in ${NODE_ENV ||
+                    'development'} @: ${os.hostname()} on port: ${PORT}, host: ${HOST}`
+            );
+        });
         return this.app;
     }
 }
