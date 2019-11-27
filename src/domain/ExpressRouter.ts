@@ -17,7 +17,7 @@ export default class ExpressRouter {
 
     private getSettingRouter(
         routes: (OperationRouter | ChildRouter)[],
-        path: string = ''
+        path?: string
     ): ItemRouter & { router: Router } {
         const itemRouter = express.Router({ mergeParams: true });
 
