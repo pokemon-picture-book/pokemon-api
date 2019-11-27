@@ -56,10 +56,12 @@ export default class ExpressServer {
 
     private listen(): Application {
         const { NODE_ENV, PORT, HOST } = process.env;
-        http.createServer(this.app).listen(Number(PORT), HOST, () => {
+        const port = PORT || '3000';
+        const host = HOST || 'localhost';
+        http.createServer(this.app).listen(Number(port), host, () => {
             console.info(
                 `up and running in ${NODE_ENV ||
-                    'development'} @: ${os.hostname()} on port: ${PORT}, host: ${HOST}`
+                    'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
             );
         });
         return this.app;
