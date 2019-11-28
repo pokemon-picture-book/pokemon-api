@@ -1,5 +1,4 @@
-import ExpressServer from './server';
+import * as express from 'express';
+import ExpressServer from '@/server';
 
-const { PORT, HOST } = process.env;
-
-export default new ExpressServer(PORT, HOST).start();
+export default new ExpressServer(express()).start();

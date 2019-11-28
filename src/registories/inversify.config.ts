@@ -1,9 +1,9 @@
 import { Container } from 'inversify';
 
 import IPokemonRepository from '@/domain/repositories/IPokemonRepository';
-import PokemonRepository from '@/domain/repositories/impl/PokemonRepository';
-import ISearchPokemonUsecase from '@/usecases/ISearchPokemonUsecase';
-import SearchPokemonInteractor from '@/usecases/interactores/SearchPokemonInteractor';
+import PokemonRepository from '@/infrastructure/repositories/PokemonRepository';
+import ISearchPokemonUsecase from '@/usecases/pokemons/ISearchPokemonUsecase';
+import SearchPokemonInteractor from '@/interactores/pokemons/SearchPokemonInteractor';
 import PokemonController from '@/controllers/pokemons/PokemonController';
 
 import TYPES from '@/registories/inversify.types';
