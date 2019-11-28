@@ -7,7 +7,7 @@ import Pokemons from '@/domain/entities/Pokemons';
 export default class PokemonRepository implements IPokemonRepository {
     public async findAll(): Promise<Pokemons[]> {
         return Pokemons.find().catch(err => {
-            throw new Error(`Error in pokemons findAll: ${err}`);
+            throw err;
         });
     }
 }

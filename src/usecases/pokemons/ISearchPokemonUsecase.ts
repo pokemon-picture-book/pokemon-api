@@ -1,5 +1,5 @@
-import Pokemons from '@/domain/entities/Pokemons';
+import PokemonSearchResponse from '@/usecases/dto/models/PokemonSearchResponse';
 
 export default interface ISearchPokemonUsecase {
-    search(): Promise<Pokemons[]>;
+    search(): Promise<PokemonSearchResponse[]>;
 }
