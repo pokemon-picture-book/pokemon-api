@@ -38,7 +38,7 @@ module.exports = [
         synchronize: true,
         logging: false,
         entities: ['dist/domain/entities/**/*.js'],
-        migrations: ['db/migrations/**/*.js'],
+        migrations: ['db/migrations/**/*.ts', '../db/migrations/**/*.ts'],
         cli: {
             entitiesDir: 'dist/domain/entities',
             migrationsDir: 'db/migrations'
