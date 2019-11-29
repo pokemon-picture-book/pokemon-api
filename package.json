@@ -6,18 +6,18 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "ts-node -C ttypescript --files src/app.ts",
+    "start": "NODE_ENV=production node dist/app.js",
+    "dev": "ts-node-dev -C ttypescript --files src/app.ts",
     "build": "rimraf dist/* && ttsc",
     "clean": "rimraf dist/*",
     "scan": "sonar-scanner",
-    "lint": "eslint --fix --ext .ts src/",
+    "lint": "eslint --fix --ext .ts .",
     "test": "jest",
     "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
-    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n",
-    "migrate:create": "ts-node $(npm bin)/typeorm migration:create -n",
-    "migrate:run": "ts-node $(npm bin)/typeorm migration:run",
-    "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert",
+    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n -c development",
+    "migrate:create": "ts-node $(npm bin)/typeorm migration:create -n -c development",
+    "migrate:run": "ts-node $(npm bin)/typeorm migration:run -c $NODE_ENV",
+    "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert -c $NODE_ENV",
     "create-seed": "ts-node db/seed/createSeedData.ts"
   },
   "husky": {
@@ -46,7 +46,7 @@
     "progress": "^2.0.3",
     "puppeteer": "^1.20.0",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.10-rc.1",
+    "typeorm": "^0.2.20",
     "uuid": "^3.3.2",
     "winston": "^3.2.1",
     "yaml": "^1.7.2"
@@ -82,6 +82,7 @@
     "ts-jest": "^24.0.2",
     "ts-loader": "^6.2.0",
     "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.44",
     "ttypescript": "^1.5.7",
     "typescript": "3.5.3",
     "typescript-transform-paths": "^1.1.11"
