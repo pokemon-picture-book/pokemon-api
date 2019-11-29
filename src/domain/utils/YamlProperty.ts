@@ -28,7 +28,7 @@ export default class YamlProperty {
         yamlProperty: any,
         keyIterator: IterableIterator<string>
     ): string | number {
-        const { value, done }: IteratorResult<string, any> = keyIterator.next();
+        const { value, done }: IteratorResult<string> = keyIterator.next();
 
         return done
             ? yamlProperty
