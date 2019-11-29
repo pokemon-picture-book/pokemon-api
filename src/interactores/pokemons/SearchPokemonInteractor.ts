@@ -13,7 +13,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
     private repository: IPokemonRepository;
 
     public async search(): Promise<PokemonSearchResponse[]> {
-        const pokemons: Pokemons[] = await this.repository.findAll();
+        const pokemons: Readonly<Pokemons>[] = await this.repository.findAll();
         return pokemons.map(
             (p): PokemonSearchResponse =>
                 new PokemonSearchResponse(p.id, p.code, p.name, p.generationNo)
