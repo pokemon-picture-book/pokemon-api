@@ -49,7 +49,10 @@ export default class ExpressServer {
     }
 
     private async dbConnection(): Promise<void> {
-        const connection = await createConnection(ormconfig);
+        const { NODE_ENV } = process.env;
+        const connection = await createConnection(
+            ormconfig.find((o: { name: string }) => o.name === NODE_ENV)
+        );
 
         BaseEntity.useConnection(connection);
     }
