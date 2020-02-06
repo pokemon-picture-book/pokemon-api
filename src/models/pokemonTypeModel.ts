@@ -1,14 +1,14 @@
 import { getConnection } from 'typeorm';
-import PokemonTypes from '@/entities/PokemonTypes';
+import PokemonTypes from '@/domain/entities/PokemonTypes';
 
 const bulkSave = async (
-  pokemonTypes: PokemonTypes[]
+    pokemonTypes: PokemonTypes[]
 ): Promise<PokemonTypes[]> => {
-  return PokemonTypes.save(pokemonTypes).catch(err => {
-    throw new Error(`Error in pokemon_types bulkSave: ${err}`);
-  });
+    return PokemonTypes.save(pokemonTypes).catch(err => {
+        throw new Error(`Error in pokemon_types bulkSave: ${err}`);
+    });
 };
 
 export default {
-  bulkSave
+    bulkSave
 };

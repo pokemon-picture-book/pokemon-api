@@ -17,12 +17,17 @@
     "rules": {
         "prettier/prettier": [
             "error",
-            { "singleQuote": true }
+            {
+                "singleQuote": true,
+                "tabWidth": 4
+            }
         ],
         "no-console": "off",
         "import/no-unresolved": "off",
         "no-unused-vars": "off",
         "no-restricted-syntax": "off",
-        "no-await-in-loop": "off"
+        "no-await-in-loop": "off",
+        "import/no-duplicates": "off",
+        "class-methods-use-this": "off"
     }
 }

@@ -7,6 +7,12 @@
     "removeComments": true,
     "rootDir": "./src",
     "outDir": "./dist",
+    "types": [
+      "reflect-metadata",
+      "jest"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
@@ -22,5 +28,5 @@
     ],
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "db"]
 }
