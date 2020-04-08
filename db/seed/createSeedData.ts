@@ -1,8 +1,27 @@
-import axios, { AxiosResponse } from 'axios';
-import * as puppeteer from 'puppeteer';
+import axios from 'axios';
 
 import fs = require('fs');
 import ProgressBar = require('progress');
+
+type Pokedex = {
+    id: number;
+    name: MultiLanguageParam;
+    type: string[];
+    base: {
+        HP: number;
+        Attack: number;
+        Defense: number;
+        'Sp. Attack': number;
+        'Sp. Defense': number;
+        Speed: number;
+    };
+};
+
+type MultiLanguageParam = {
+    english: string;
+    chinese: string;
+    japanese: string;
+};
 
 process.setMaxListeners(Infinity);
 
@@ -14,7 +33,7 @@ class ExternalAPI {
      * ポケモンのタイプ情報を取得します.
      */
     public async getTypes() {
-        const { data }: AxiosResponse = await axios.get(
+        const { data } = await axios.get<MultiLanguageParam[]>(
             `${this.PATH}/types.json`
         );
         return data;
@@ -24,21 +43,21 @@ class ExternalAPI {
      * ポケモンに関する様々なデータが格納されている JSON からデータを取得します.
      */
     public async getPokedex() {
-        const { data }: AxiosResponse = await axios.get(
+        const { data } = await axios.get<Pokedex[]>(
             `${this.PATH}/pokedex.json`
         );
         return data;
     }
 }
 
-abstract class CreateSeedCommand {
+abstract class CreateSeedCommand<T> {
     /** seed の名称 */
     protected namespace: string;
 
     /** 返還前のデータ */
-    protected data: any;
+    protected data: T;
 
-    constructor(namespace: string, data: any) {
+    constructor(namespace: string, data: T) {
         this.namespace = namespace;
         this.data = data;
     }
@@ -48,10 +67,13 @@ abstract class CreateSeedCommand {
     /**
      * JSON ファイルを出力します.
      */
-    public outputJSON() {
+    public async outputJSON() {
+        if (!this.data) {
+            throw new Error('Data is not mapping!');
+        }
         fs.writeFile(
             `db/seed/data/${this.namespace}.json`,
-            JSON.stringify(this.mapping(), null, '    '),
+            JSON.stringify(await this.mapping(), null, '    '),
             err => {
                 if (err) {
                     throw err;
@@ -62,7 +84,7 @@ abstract class CreateSeedCommand {
     }
 }
 
-class TypeSeeds extends CreateSeedCommand {
+class TypeSeeds extends CreateSeedCommand<MultiLanguageParam[]> {
     /**
      * ポケモンのタイプリストからテーブルに格納したいデータへマッピングします.
      */
@@ -75,7 +97,7 @@ class TypeSeeds extends CreateSeedCommand {
     }
 }
 
-class PokemonSeeds extends CreateSeedCommand {
+class PokemonSeeds extends CreateSeedCommand<Pokedex[]> {
     private readonly GENERATIONS = [
         { generationNo: 1, s: 0, e: 151 },
         { generationNo: 2, s: 151, e: 251 },
@@ -86,27 +108,56 @@ class PokemonSeeds extends CreateSeedCommand {
         { generationNo: 7, s: 721, e: 809 }
     ];
 
+    private readonly POKE_API_RESOURCE =
+        'https://pokeapi.co/api/v2/pokemon-species/';
+
     /**
      * ポケモンテーブルのデータにマッピングします.
      */
-    mapping() {
-        return this.data.map(pokedex => {
+    async mapping() {
+        const pokemons = [];
+        for (const pokedex of this.data) {
             const { id: pokemonId, name: multiName } = pokedex;
             const { english: code, japanese: name } = multiName;
             const { generationNo } = this.GENERATIONS.find(
                 g => g.s < pokemonId && pokemonId <= g.e
             );
-            return {
+
+            const pokemonDetail = await axios
+                .get(`${this.POKE_API_RESOURCE}${pokemonId}`)
+                .catch(() => null);
+
+            let flavorText: string = '';
+            if (pokemonDetail) {
+                const {
+                    flavor_text_entries: flavorUextEntries
+                } = pokemonDetail.data;
+                const firstFlavorUextEntrie = flavorUextEntries
+                    .filter(
+                        flavorUextEntrie =>
+                            flavorUextEntrie.language.name === 'ja'
+                    )
+                    .shift();
+
+                ({ flavor_text: flavorText } = firstFlavorUextEntrie);
+            }
+
+            pokemons.push({
                 id: pokemonId,
                 code,
                 name,
+                flavorText,
                 generation_no: generationNo
-            };
-        });
+            });
+        }
+        return pokemons;
     }
 }
 
-class PokemonTypeSeeds extends CreateSeedCommand {
+class PokemonTypeSeeds extends CreateSeedCommand<{
+    pokedexs: Pokedex[];
+    types: MultiLanguageParam[];
+}> {
     /**
      * ポケモンとタイプの中間テーブルデータにマッピングします.
      */
@@ -129,7 +180,7 @@ class PokemonTypeSeeds extends CreateSeedCommand {
     }
 }
 
-class SpecSeeds extends CreateSeedCommand {
+class SpecSeeds extends CreateSeedCommand<Pokedex[]> {
     /**
      * ポケモン特性テーブルのデータにマッピングします.
      */
@@ -149,8 +200,8 @@ class SpecSeeds extends CreateSeedCommand {
     }
 }
 
-class PngSeeds extends CreateSeedCommand {
-    private getCode: Function = index => `000${index + 1}`.slice(-3);
+class PngSeeds extends CreateSeedCommand<Pokedex[]> {
+    private getCode: Function = index => String(index + 1).padStart(3, '0');
 
     private readonly DATA_PATH: string =
         'https://raw.githubusercontent.com/pokemon-picture-book/pokemon.json/master';
@@ -176,110 +227,21 @@ class PngSeeds extends CreateSeedCommand {
     }
 }
 
-class GifSeeds extends CreateSeedCommand {
-    mapping() {
-        return this.data.flat();
-    }
-}
-
-class ScrapingPokestadium {
-    private readonly POKESTADIUM_URL =
-        'http://www.pokestadium.com/tools/sprites';
-
-    private data: any;
-
-    constructor(data: any) {
-        this.data = data;
-    }
-
-    public async execute() {
-        const bar: ProgressBar = new ProgressBar(
-            '  Running scraping [:bar] :rate/bps :percent :etas',
-            {
-                width: 40,
-                total: this.data.length,
-                complete: '\u001b[42m \u001b[0m',
-                incomplete: '\u001b[41m \u001b[0m'
-            }
-        );
-        const launchOption: puppeteer.LaunchOptions = {
-            timeout: 100000,
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-        };
-
-        const browser = await puppeteer.launch(launchOption);
-
-        const page: puppeteer.Page = await browser.newPage();
-
-        await page.goto(this.POKESTADIUM_URL, {
-            waitUntil: 'domcontentloaded'
-        });
-
-        const gifs = [];
-        for (const pokedex of this.data) {
-            const { id, name: multiName } = pokedex;
-            const { english: code } = multiName;
-
-            bar.tick();
-
-            gifs.push(await this.getGifUrlsWithPokemons(page, id, code));
-        }
-
-        await browser.close();
-
-        return gifs.flat();
-    }
-
-    private async getGifUrlsWithPokemons(
-        page: puppeteer.Page,
-        pokemonId: number,
-        pokemonCode: string
-    ) {
-        await page.reload({
-            waitUntil: 'domcontentloaded'
-        });
-
-        await page.type('input[name="search-query"]', pokemonCode);
-
-        await page.click('strong.tt-highlight');
-
-        await page.waitForSelector('div.sprite200 > img');
-
-        const gifs = await page.$$eval(
-            'div.sprite200 > img',
-            (imgs: HTMLImageElement[]) =>
-                imgs.filter(img => /.gif/.test(img.src)).map(img => img.src)
-        );
-
-        return gifs.length
-            ? gifs.map(gif => ({
-                  pokemon_id: pokemonId,
-                  url: gif
-              }))
-            : this.getGifUrlsWithPokemons(page, pokemonId, pokemonCode);
-    }
-}
-
 // main
 (async () => {
     try {
         const externalAPI: ExternalAPI = new ExternalAPI();
-        const pokedexs = await externalAPI.getPokedex();
-        const types = await externalAPI.getTypes();
+        const [pokedexs, types] = await Promise.all([
+            externalAPI.getPokedex(),
+            externalAPI.getTypes()
+        ]);
 
-        // TODO: スクレイピングするサイトでは、まだ721匹のポケモンしかサポートしていない
-        const scrapingPokestadium: ScrapingPokestadium = new ScrapingPokestadium(
-            pokedexs.slice(0, 721)
-        );
-        const gifs = await scrapingPokestadium.execute();
-
-        const createSeedCommands: CreateSeedCommand[] = [
+        const createSeedCommands: CreateSeedCommand<any>[] = [
             new TypeSeeds('types', types),
             new PokemonSeeds('pokemons', pokedexs),
             new PokemonTypeSeeds('pokemonTypes', { pokedexs, types }),
             new SpecSeeds('specs', pokedexs),
-            new PngSeeds('pngs', pokedexs),
-            new GifSeeds('gifs', gifs)
+            new PngSeeds('pngs', pokedexs)
         ];
 
         createSeedCommands.forEach(createSeedCommand =>
