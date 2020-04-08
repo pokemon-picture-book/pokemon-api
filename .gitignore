@@ -1,8 +1,13 @@
+.DS_Store
+
 # node_modules
 node_modules
 
 # build dir
 dist
+
+# env files
+.env.*
 
 # sonarqube
 .scannerwork
