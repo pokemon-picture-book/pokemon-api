@@ -13,6 +13,7 @@
     "scan": "sonar-scanner",
     "lint": "eslint --fix --ext .ts .",
     "test": "jest",
+    "tn": "ts-node",
     "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
     "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n -c development",
     "migrate:create": "ts-node $(npm bin)/typeorm migration:create -n -c development",
