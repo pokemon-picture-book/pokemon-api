@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import fs = require('fs');
+import ProgressBar = require('progress');
 
 type Pokedex = {
     id: number;
@@ -21,6 +22,8 @@ type MultiLanguageParam = {
     chinese: string;
     japanese: string;
 };
+
+process.setMaxListeners(Infinity);
 
 class ExternalAPI {
     private readonly PATH: string =
