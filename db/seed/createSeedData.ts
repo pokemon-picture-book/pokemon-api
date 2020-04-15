@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-import fs = require('fs');
-import ProgressBar = require('progress');
+import { writeFile } from 'fs';
 
 type Pokedex = {
     id: number;
@@ -22,8 +21,6 @@ type MultiLanguageParam = {
     chinese: string;
     japanese: string;
 };
-
-process.setMaxListeners(Infinity);
 
 class ExternalAPI {
     private readonly PATH: string =
@@ -71,7 +68,7 @@ abstract class CreateSeedCommand<T> {
         if (!this.data) {
             throw new Error('Data is not mapping!');
         }
-        fs.writeFile(
+        writeFile(
             `db/seed/data/${this.namespace}.json`,
             JSON.stringify(await this.mapping(), null, '    '),
             err => {
