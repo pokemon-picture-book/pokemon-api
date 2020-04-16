@@ -15,8 +15,8 @@
     "test": "jest",
     "tn": "ts-node",
     "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
-    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -n -c development",
-    "migrate:create": "ts-node $(npm bin)/typeorm migration:create -n -c development",
+    "migrate:generate": "ts-node $(npm bin)/typeorm migration:generate -c development -n",
+    "migrate:create": "ts-node $(npm bin)/typeorm migration:create -c development -n",
     "migrate:run": "ts-node $(npm bin)/typeorm migration:run -c $NODE_ENV",
     "migrate:revert": "ts-node $(npm bin)/typeorm migration:revert -c $NODE_ENV",
     "create-seed": "ts-node db/seed/createSeedData.ts"
