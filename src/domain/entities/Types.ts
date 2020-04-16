@@ -16,15 +16,13 @@ export class Types extends BaseEntity {
     @Column({
         type: 'varchar',
         length: 60,
-        unique: true,
-        nullable: true
+        unique: true
     })
     public code: string = '';
 
     @Column({
         type: 'varchar',
-        length: 60,
-        nullable: true
+        length: 60
     })
     public name: string = '';
 

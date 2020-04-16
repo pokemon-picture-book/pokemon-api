@@ -6,7 +6,6 @@ import {
     OneToMany,
     OneToOne
 } from 'typeorm';
-import Gifs from './Gifs';
 import Pngs from './Pngs';
 import PokemonTypes from './PokemonTypes';
 import Specs from './Specs';
@@ -19,27 +18,29 @@ export class Pokemons extends BaseEntity {
     @Column({
         type: 'varchar',
         length: 60,
-        unique: true,
-        nullable: true
+        unique: true
     })
     public code: string = '';
 
     @Column({
         type: 'varchar',
-        length: 60,
-        nullable: true
+        length: 60
     })
     public name: string = '';
 
     @Column({
-        type: 'smallint',
-        name: 'generation_no',
+        type: 'varchar',
+        length: 255,
+        name: 'flavor_text',
         nullable: true
     })
-    public generationNo: number;
+    public flavorText: string;
 
-    @OneToMany(() => Gifs, gifs => gifs.pokemon)
-    public gifs: Gifs[];
+    @Column({
+        type: 'smallint',
+        name: 'generation_no'
+    })
+    public generationNo: number;
 
     @OneToOne(() => Specs, spec => spec.pokemon)
     public spec: Specs;
