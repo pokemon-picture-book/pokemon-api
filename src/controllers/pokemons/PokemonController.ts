@@ -21,6 +21,7 @@ export default class PokemonController {
                     r.id,
                     r.code,
                     r.name,
+                    r.flavorText,
                     r.generationNo
                 )
         );

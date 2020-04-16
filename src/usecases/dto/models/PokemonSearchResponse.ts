@@ -5,12 +5,21 @@ export default class PokemonSearchResponse {
 
     private pName: string;
 
+    private pFlavorText: string;
+
     private pGenerationNo: number;
 
-    constructor(id: number, code: string, name: string, generationNo: number) {
+    constructor(
+        id: number,
+        code: string,
+        name: string,
+        flavorText: string,
+        generationNo: number
+    ) {
         this.pId = id;
         this.pCode = code;
         this.pName = name;
+        this.pFlavorText = flavorText;
         this.pGenerationNo = generationNo;
     }
 
@@ -24,6 +33,10 @@ export default class PokemonSearchResponse {
 
     get name(): string {
         return this.pName;
+    }
+
+    get flavorText(): string {
+        return this.pFlavorText;
     }
 
     get generationNo(): number {
