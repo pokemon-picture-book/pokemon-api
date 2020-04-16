@@ -143,7 +143,7 @@ class PokemonSeeds extends CreateSeedCommand<Pokedex[]> {
                 id: pokemonId,
                 code,
                 name,
-                flavorText,
+                flavor_text: flavorText,
                 generation_no: generationNo
             });
         }
