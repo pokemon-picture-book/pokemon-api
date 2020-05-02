@@ -1,14 +1,19 @@
+import * as bodyParser from 'body-parser';
+import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import { Application } from 'express';
-import * as bodyParser from 'body-parser';
 import * as http from 'http';
 import * as os from 'os';
-import * as cookieParser from 'cookie-parser';
-import { createConnection, BaseEntity } from 'typeorm';
-
+import { BaseEntity, ConnectionOptions, createConnection } from 'typeorm';
 import appRoutes from '@/routes';
 import ExpressRouter from '@/domain/ExpressRouter';
-import * as ormconfig from '../ormconfig';
+import Pngs from '@/domain/entities/Pngs';
+import Pokemons from '@/domain/entities/Pokemons';
+import PokemonTypes from '@/domain/entities/PokemonTypes';
+import Specs from '@/domain/entities/Specs';
+import Types from '@/domain/entities/Types';
+
+const ormconfig = require('~/ormconfig');
 
 export default class ExpressServer {
     private app: Application;
@@ -49,21 +54,30 @@ export default class ExpressServer {
     }
 
     private async dbConnection(): Promise<void> {
-        const { NODE_ENV } = process.env;
-        const connection = await createConnection(
-            ormconfig.find((o: { name: string }) => o.name === NODE_ENV)
+        const envConnectionOptions: ConnectionOptions = ormconfig.find(
+            (o: ConnectionOptions) => o.name === process.env.NODE_ENV
         );
 
+        if (!envConnectionOptions) {
+            throw new Error('Please specify either development or production!');
+        }
+
+        const connectionOptions: ConnectionOptions = {
+            ...envConnectionOptions,
+            entities: [Pngs, Pokemons, PokemonTypes, Specs, Types],
+            migrations: []
+        };
+
+        const connection = await createConnection(connectionOptions);
         BaseEntity.useConnection(connection);
     }
 
     private listen(): Application {
-        const { NODE_ENV, PORT, HOST } = process.env;
-        const port = PORT || '3000';
-        const host = HOST || 'localhost';
+        const port = process.env.PORT || '3000';
+        const host = process.env.HOST || 'localhost';
         http.createServer(this.app).listen(Number(port), host, () => {
             console.info(
-                `up and running in ${NODE_ENV ||
+                `up and running in ${process.env.NODE_ENV ||
                     'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
             );
         });

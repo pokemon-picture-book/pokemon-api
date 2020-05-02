@@ -6,8 +6,8 @@ import {
     ManyToOne,
     JoinColumn
 } from 'typeorm';
-import Pokemons from './Pokemons';
-import Types from './Types';
+import Pokemons from '@/domain/entities/Pokemons';
+import Types from '@/domain/entities/Types';
 
 @Entity()
 export class PokemonTypes extends BaseEntity {
