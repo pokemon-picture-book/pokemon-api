@@ -11,8 +11,7 @@
     "types": [
       "reflect-metadata",
       "jest",
-      "@types/node",
-      "./src/@types"
+      "@types/node"
     ],
     "strict": true,
     "moduleResolution": "node",
