@@ -7,8 +7,11 @@ import SearchPokemonInteractor from '@/interactores/pokemons/SearchPokemonIntera
 import PokemonController from '@/controllers/pokemons/PokemonController';
 
 import TYPES from '@/registories/inversify.types';
+import IPokemonPresenter from '@/domain/presenter/IPokemonPresenter';
+import PokemonPresenter from '@/presenter/PokemonPresenter';
 
 const container = new Container();
+container.bind<IPokemonPresenter>(TYPES.IPokemonPresenter).to(PokemonPresenter);
 container
     .bind<IPokemonRepository>(TYPES.IPokemonRepository)
     .to(PokemonRepository);

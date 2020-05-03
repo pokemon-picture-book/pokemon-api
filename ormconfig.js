@@ -1,26 +1,22 @@
-function parseDBConfig(configString) {
-    try {
-        return JSON.parse(configString);
-    } catch {
-        return {};
-    }
-}
+const parseDBConfig = configString => {
+    return configString ? JSON.parse(configString) : {};
+};
 
 const DB_CONFIG = parseDBConfig(process.env.DB_CONFIG);
 
 module.exports = [
     {
         name: 'development',
-        type: 'postgres',
+        type: 'mysql',
         host: DB_CONFIG.host || 'localhost',
-        port: DB_CONFIG.port || 5432,
+        port: Number(DB_CONFIG.port) || 3306,
         username: DB_CONFIG.username || 'pokemon',
         password: DB_CONFIG.password || 'pokemon',
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['src/domain/entities/**/*.ts', 'domain/entities/**/*.ts'],
-        migrations: ['db/migrations/**/*.ts', '../db/migrations/**/*.ts'],
+        entities: ['./src/domain/entities/**/*.ts'],
+        migrations: ['./db/migrations/**/*.ts'],
         cli: {
             entitiesDir: 'src/domain/entities',
             migrationsDir: 'db/migrations'
@@ -29,18 +25,18 @@ module.exports = [
     {
         // TODO: production 環境が出来上がり次第、ここの設定も変更予定
         name: 'production',
-        type: 'postgres',
+        type: 'mysql',
         host: DB_CONFIG.host || 'localhost',
-        port: DB_CONFIG.port || 5432,
+        port: Number(DB_CONFIG.port) || 3306,
         username: DB_CONFIG.username || 'pokemon',
         password: DB_CONFIG.password || 'pokemon',
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['dist/domain/entities/**/*.js'],
-        migrations: ['db/migrations/**/*.ts', '../db/migrations/**/*.ts'],
+        entities: ['./src/domain/entities/**/*.ts'],
+        migrations: ['./db/migrations/**/*.ts'],
         cli: {
-            entitiesDir: 'dist/domain/entities',
+            entitiesDir: 'src/domain/entities',
             migrationsDir: 'db/migrations'
         }
     }

@@ -1,4 +1,3 @@
-import { getConnection } from 'typeorm';
 import PngUrls from '@/domain/entities/Pngs';
 
 const bulkSave = async (pngUrls: PngUrls[]): Promise<PngUrls[]> => {

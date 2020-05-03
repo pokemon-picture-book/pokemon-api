@@ -1,11 +1,10 @@
 import { injectable } from 'inversify';
-
-import IPokemonRepository from '@/domain/repositories/IPokemonRepository';
 import Pokemons from '@/domain/entities/Pokemons';
+import IPokemonRepository from '@/domain/repositories/IPokemonRepository';
 
 @injectable()
 export default class PokemonRepository implements IPokemonRepository {
-    public async findAll(): Promise<Pokemons[]> {
+    public findAll(): Promise<Pokemons[]> {
         return Pokemons.find().catch(err => {
             throw err;
         });

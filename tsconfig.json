@@ -3,30 +3,33 @@
     "target": "esnext",
     "lib": ["esnext", "dom"],
     "module": "commonjs",
+    "sourceMap": true,
     "declaration": true,
     "removeComments": true,
-    "rootDir": "./src",
+    "rootDir": "./",
     "outDir": "./dist",
     "types": [
       "reflect-metadata",
-      "jest"
+      "jest",
+      "@types/node"
     ],
+    "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "~/*": [
+        "./*"
       ]
-    },
-    "plugins": [
-      { "transform": "typescript-transform-paths" },
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ],
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "db"]
+  "include": ["src/**/*", "ormconfig"],
+  "exclude": ["db"]
 }

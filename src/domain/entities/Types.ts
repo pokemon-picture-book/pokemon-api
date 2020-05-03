@@ -6,7 +6,7 @@ import {
     ManyToOne,
     OneToMany
 } from 'typeorm';
-import PokemonTypes from './PokemonTypes';
+import PokemonTypes from '@/domain/entities/PokemonTypes';
 
 @Entity()
 export class Types extends BaseEntity {
@@ -16,19 +16,20 @@ export class Types extends BaseEntity {
     @Column({
         type: 'varchar',
         length: 60,
-        unique: true,
-        nullable: true
+        unique: true
     })
     public code: string = '';
 
     @Column({
         type: 'varchar',
-        length: 60,
-        nullable: true
+        length: 60
     })
     public name: string = '';
 
-    @OneToMany(() => PokemonTypes, pokemonTypes => pokemonTypes.types)
+    @OneToMany(
+        () => PokemonTypes,
+        pokemonTypes => pokemonTypes.types
+    )
     public pokemonTypes: PokemonTypes[];
 
     constructor(code: string, name: string) {

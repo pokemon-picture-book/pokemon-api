@@ -6,7 +6,7 @@ import {
     OneToOne,
     JoinColumn
 } from 'typeorm';
-import Pokemons from './Pokemons';
+import Pokemons from '@/domain/entities/Pokemons';
 
 @Entity()
 export class Specs extends BaseEntity {
