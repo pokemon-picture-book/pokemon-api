@@ -6,9 +6,9 @@ import {
     OneToMany,
     OneToOne
 } from 'typeorm';
-import Pngs from '@/domain/entities/Pngs';
-import PokemonTypes from '@/domain/entities/PokemonTypes';
-import Specs from '@/domain/entities/Specs';
+import Pngs from '@/domain/entity/Pngs';
+import PokemonTypes from '@/domain/entity/PokemonTypes';
+import Specs from '@/domain/entity/Specs';
 
 @Entity()
 export class Pokemons extends BaseEntity {

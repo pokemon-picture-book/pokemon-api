@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import 'reflect-metadata';
 
-import container from '@/registories/inversify.config';
-import PokemonController from '@/controllers/pokemons/PokemonController';
-import TYPES from '@/registories/inversify.types';
+import container from '@/registory/inversify.config';
+import PokemonController from '@/controller/pokemon/PokemonController';
+import TYPES from '@/registory/inversify.types';
 
 const pokemonControllerContainer = container.get<PokemonController>(
     TYPES.PokemonController

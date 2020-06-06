@@ -2,9 +2,9 @@ import { Request, Response } from 'express';
 import { injectable, inject } from 'inversify';
 import 'reflect-metadata';
 
-import TYPES from '@/registories/inversify.types';
-import ISearchPokemonUsecase from '@/usecases/pokemons/ISearchPokemonUsecase';
-import PokemonSearchResponse from '@/usecases/dto/models/PokemonSearchResponse';
+import TYPES from '@/registory/inversify.types';
+import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemonUsecase';
+import PokemonSearchResponse from '@/usecase/dto/model/PokemonSearchResponse';
 
 @injectable()
 export default class PokemonController {

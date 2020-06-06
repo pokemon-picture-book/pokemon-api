@@ -1,5 +1,5 @@
-import Pokemons from '@/domain/entities/Pokemons';
-import PokemonSearchResponse from '@/usecases/dto/models/PokemonSearchResponse';
+import Pokemons from '@/domain/entity/Pokemons';
+import PokemonSearchResponse from '@/usecase/dto/model/PokemonSearchResponse';
 
 export default interface IPokemonPresenter {
     mappingAll(pokemons: Pokemons[]): PokemonSearchResponse[];
