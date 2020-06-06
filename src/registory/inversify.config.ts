@@ -1,12 +1,12 @@
 import { Container } from 'inversify';
 
-import IPokemonRepository from '@/domain/repositories/IPokemonRepository';
-import PokemonRepository from '@/infrastructure/repositories/PokemonRepository';
-import ISearchPokemonUsecase from '@/usecases/pokemons/ISearchPokemonUsecase';
-import SearchPokemonInteractor from '@/interactores/pokemons/SearchPokemonInteractor';
-import PokemonController from '@/controllers/pokemons/PokemonController';
+import IPokemonRepository from '@/domain/repository/IPokemonRepository';
+import PokemonRepository from '@/infrastructure/repository/PokemonRepository';
+import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemonUsecase';
+import SearchPokemonInteractor from '@/interactor/pokemon/SearchPokemonInteractor';
+import PokemonController from '@/controller/pokemon/PokemonController';
 
-import TYPES from '@/registories/inversify.types';
+import TYPES from '@/registory/inversify.types';
 import IPokemonPresenter from '@/domain/presenter/IPokemonPresenter';
 import PokemonPresenter from '@/presenter/PokemonPresenter';
 

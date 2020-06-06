@@ -7,11 +7,11 @@ import * as os from 'os';
 import { BaseEntity, ConnectionOptions, createConnection } from 'typeorm';
 import appRoutes from '@/routes';
 import ExpressRouter from '@/domain/ExpressRouter';
-import Pngs from '@/domain/entities/Pngs';
-import Pokemons from '@/domain/entities/Pokemons';
-import PokemonTypes from '@/domain/entities/PokemonTypes';
-import Specs from '@/domain/entities/Specs';
-import Types from '@/domain/entities/Types';
+import Pngs from '@/domain/entity/Pngs';
+import Pokemons from '@/domain/entity/Pokemons';
+import PokemonTypes from '@/domain/entity/PokemonTypes';
+import Specs from '@/domain/entity/Specs';
+import Types from '@/domain/entity/Types';
 
 const ormconfig = require('~/ormconfig');
 

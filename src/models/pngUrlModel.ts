@@ -1,4 +1,4 @@
-import PngUrls from '@/domain/entities/Pngs';
+import PngUrls from '@/domain/entity/Pngs';
 
 const bulkSave = async (pngUrls: PngUrls[]): Promise<PngUrls[]> => {
     return PngUrls.save(pngUrls).catch(err => {

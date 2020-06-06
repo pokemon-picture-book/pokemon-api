@@ -1,11 +1,11 @@
 import { injectable, inject } from 'inversify';
 import 'reflect-metadata';
 
-import ISearchPokemonUsecase from '@/usecases/pokemons/ISearchPokemonUsecase';
-import TYPES from '@/registories/inversify.types';
-import IPokemonRepository from '@/domain/repositories/IPokemonRepository';
-import Pokemons from '@/domain/entities/Pokemons';
-import PokemonSearchResponse from '@/usecases/dto/models/PokemonSearchResponse';
+import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemonUsecase';
+import TYPES from '@/registory/inversify.types';
+import IPokemonRepository from '@/domain/repository/IPokemonRepository';
+import Pokemons from '@/domain/entity/Pokemons';
+import PokemonSearchResponse from '@/usecase/dto/model/PokemonSearchResponse';
 import IPokemonPresenter from '@/domain/presenter/IPokemonPresenter';
 
 @injectable()
