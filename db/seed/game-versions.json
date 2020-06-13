@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "red",
+        "gameVersionGroupId": 1
+    },
+    {
+        "id": 2,
+        "name": "blue",
+        "gameVersionGroupId": 1
+    },
+    {
+        "id": 3,
+        "name": "yellow",
+        "gameVersionGroupId": 1
+    },
+    {
+        "id": 4,
+        "name": "gold",
+        "gameVersionGroupId": 2
+    },
+    {
+        "id": 5,
+        "name": "silver",
+        "gameVersionGroupId": 2
+    },
+    {
+        "id": 6,
+        "name": "crystal",
+        "gameVersionGroupId": 2
+    },
+    {
+        "id": 7,
+        "name": "ruby",
+        "gameVersionGroupId": 3
+    },
+    {
+        "id": 8,
+        "name": "sapphire",
+        "gameVersionGroupId": 3
+    },
+    {
+        "id": 9,
+        "name": "emerald",
+        "gameVersionGroupId": 3
+    },
+    {
+        "id": 10,
+        "name": "firered",
+        "gameVersionGroupId": 4
+    },
+    {
+        "id": 11,
+        "name": "leafgreen",
+        "gameVersionGroupId": 4
+    },
+    {
+        "id": 12,
+        "name": "diamond",
+        "gameVersionGroupId": 5
+    },
+    {
+        "id": 13,
+        "name": "pearl",
+        "gameVersionGroupId": 5
+    },
+    {
+        "id": 14,
+        "name": "platinum",
+        "gameVersionGroupId": 6
+    },
+    {
+        "id": 15,
+        "name": "heartgold",
+        "gameVersionGroupId": 7
+    },
+    {
+        "id": 16,
+        "name": "soulsilver",
+        "gameVersionGroupId": 7
+    },
+    {
+        "id": 17,
+        "name": "black",
+        "gameVersionGroupId": 8
+    },
+    {
+        "id": 18,
+        "name": "white",
+        "gameVersionGroupId": 8
+    },
+    {
+        "id": 19,
+        "name": "colosseum",
+        "gameVersionGroupId": 9
+    },
+    {
+        "id": 20,
+        "name": "xd",
+        "gameVersionGroupId": 10
+    },
+    {
+        "id": 21,
+        "name": "black-2",
+        "gameVersionGroupId": 11
+    },
+    {
+        "id": 22,
+        "name": "white-2",
+        "gameVersionGroupId": 11
+    },
+    {
+        "id": 23,
+        "name": "x",
+        "gameVersionGroupId": 12
+    },
+    {
+        "id": 24,
+        "name": "y",
+        "gameVersionGroupId": 12
+    },
+    {
+        "id": 25,
+        "name": "omega-ruby",
+        "gameVersionGroupId": 13
+    },
+    {
+        "id": 26,
+        "name": "alpha-sapphire",
+        "gameVersionGroupId": 13
+    },
+    {
+        "id": 27,
+        "name": "sun",
+        "gameVersionGroupId": 14
+    },
+    {
+        "id": 28,
+        "name": "moon",
+        "gameVersionGroupId": 14
+    },
+    {
+        "id": 29,
+        "name": "ultra-sun",
+        "gameVersionGroupId": 15
+    },
+    {
+        "id": 30,
+        "name": "ultra-moon",
+        "gameVersionGroupId": 15
+    }
+]
