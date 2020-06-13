@@ -1,0 +1,302 @@
+[
+    {
+        "gameVersionId": 1,
+        "name": "赤",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 1,
+        "name": "Red",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 2,
+        "name": "緑",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 2,
+        "name": "Blue",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 3,
+        "name": "ピカチュウ",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 3,
+        "name": "Yellow",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 4,
+        "name": "金",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 4,
+        "name": "Gold",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 5,
+        "name": "銀",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 5,
+        "name": "Silver",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 6,
+        "name": "クリスタル",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 6,
+        "name": "Crystal",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 7,
+        "name": "ルビー",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 7,
+        "name": "Ruby",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 8,
+        "name": "サファイア",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 8,
+        "name": "Sapphire",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 9,
+        "name": "エメラルド",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 9,
+        "name": "Emerald",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 10,
+        "name": "ファイアレッド",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 10,
+        "name": "FireRed",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 11,
+        "name": "リーフグリーン",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 11,
+        "name": "LeafGreen",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 12,
+        "name": "ダイヤモンド",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 12,
+        "name": "Diamond",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 13,
+        "name": "パール",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 13,
+        "name": "Pearl",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 14,
+        "name": "プラチナ",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 14,
+        "name": "Platinum",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 15,
+        "name": "ハートゴールド",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 15,
+        "name": "HeartGold",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 16,
+        "name": "ソウルシルバー",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 16,
+        "name": "SoulSilver",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 17,
+        "name": "ブラック",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 17,
+        "name": "Black",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 18,
+        "name": "ホワイト",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 18,
+        "name": "White",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 19,
+        "name": "コロシアム",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 19,
+        "name": "Colosseum",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 20,
+        "name": "XD",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 20,
+        "name": "XD",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 21,
+        "name": "ブラック2",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 21,
+        "name": "Black 2",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 22,
+        "name": "ホワイト2",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 22,
+        "name": "White 2",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 23,
+        "name": "X",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 23,
+        "name": "X",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 24,
+        "name": "Y",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 24,
+        "name": "Y",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 25,
+        "name": "オメガルビー",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 25,
+        "name": "Omega Ruby",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 26,
+        "name": "アルファサファイア",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 26,
+        "name": "Alpha Sapphire",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 27,
+        "name": "サン",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 27,
+        "name": "Sun",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 28,
+        "name": "ムーン",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 28,
+        "name": "Moon",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 29,
+        "name": "ウルトラサン",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 29,
+        "name": "Ultra Sun",
+        "languageId": 2
+    },
+    {
+        "gameVersionId": 30,
+        "name": "ウルトラムーン",
+        "languageId": 1
+    },
+    {
+        "gameVersionId": 30,
+        "name": "Ultra Moon",
+        "languageId": 2
+    }
+]
