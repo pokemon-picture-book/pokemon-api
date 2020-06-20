@@ -7,35 +7,35 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Pokemon from './Pokemon';
+import Pokemon from './Pokemon.entity';
 
 @Entity({ name: 'status' })
 class Status extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    public id: number;
+    readonly id: number;
 
     @Column({
         type: 'smallint',
         insert: true,
         update: false
     })
-    public hp: number;
+    readonly hp: number;
 
     @Column({
         type: 'smallint',
         insert: true,
         update: false
     })
-    public attack: number;
+    readonly attack: number;
 
     @Column({
         type: 'smallint',
         insert: true,
         update: false
     })
-    public defense: number;
+    readonly defense: number;
 
     @Column({
         name: 'special_attack',
@@ -43,7 +43,7 @@ class Status extends BaseEntity {
         insert: true,
         update: false
     })
-    public specialAttack: number;
+    readonly specialAttack: number;
 
     @Column({
         name: 'special_defense',
@@ -51,14 +51,14 @@ class Status extends BaseEntity {
         insert: true,
         update: false
     })
-    public specialDefense: number;
+    readonly specialDefense: number;
 
     @Column({
         type: 'smallint',
         insert: true,
         update: false
     })
-    public speed: number;
+    readonly speed: number;
 
     @OneToOne(
         () => Pokemon,
@@ -67,7 +67,7 @@ class Status extends BaseEntity {
     @JoinColumn({
         name: 'pokemon_id'
     })
-    public pokemon: Pokemon;
+    readonly pokemon: Pokemon;
 
     public refer(): void {
         console.table(this);

@@ -1,18 +1,18 @@
 /* eslint import/extensions: 0 */
 import { BaseEntity, Column, Entity, PrimaryColumn, OneToMany } from 'typeorm';
-import FlavorTextEntry from './FlavorTextEntry';
-import GameVersionName from './GameVersionName';
-import Genera from './Genera';
-import PokemonName from './PokemonName';
-import RegionName from './RegionName';
-import TypeName from './TypeName';
+import FlavorTextEntry from './FlavorTextEntry.entity';
+import GameVersionName from './GameVersionName.entity';
+import Genera from './Genera.entity';
+import PokemonName from './PokemonName.entity';
+import RegionName from './RegionName.entity';
+import TypeName from './TypeName.entity';
 
 @Entity({ name: 'languages' })
 class Language extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @Column({
         type: 'varchar',
@@ -20,43 +20,43 @@ class Language extends BaseEntity {
         insert: true,
         update: false
     })
-    name: string;
+    readonly name: string;
 
     @OneToMany(
         () => FlavorTextEntry,
         flavorTextEntry => flavorTextEntry.language
     )
-    flavorTextEntries: FlavorTextEntry[];
+    readonly flavorTextEntries: FlavorTextEntry[];
 
     @OneToMany(
         () => GameVersionName,
         gameVersionName => gameVersionName.language
     )
-    gameVersionNames: GameVersionName[];
+    readonly gameVersionNames: GameVersionName[];
 
     @OneToMany(
         () => Genera,
         genera => genera.language
     )
-    generas: Genera[];
+    readonly generas: Genera[];
 
     @OneToMany(
         () => PokemonName,
         pokemonName => pokemonName.language
     )
-    pokemonNames: PokemonName[];
+    readonly pokemonNames: PokemonName[];
 
     @OneToMany(
         () => RegionName,
         regionName => regionName.language
     )
-    regionNames: RegionName[];
+    readonly regionNames: RegionName[];
 
     @OneToMany(
         () => TypeName,
         typeName => typeName.language
     )
-    typeNames: TypeName[];
+    readonly typeNames: TypeName[];
 
     public refer(): void {
         console.table(this);

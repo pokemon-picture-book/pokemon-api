@@ -7,15 +7,15 @@ import {
     ManyToOne,
     JoinColumn
 } from 'typeorm';
-import Language from './Language';
-import GameVersion from './GameVersion';
+import Language from './Language.entity';
+import GameVersion from './GameVersion.entity';
 
 @Entity({ name: 'game_version_names' })
 class GameVersionName extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @ManyToOne(
         () => GameVersion,
@@ -24,7 +24,7 @@ class GameVersionName extends BaseEntity {
     @JoinColumn({
         name: 'game_version_id'
     })
-    gameVersion: GameVersion;
+    readonly gameVersion: GameVersion;
 
     @Column({
         type: 'varchar',
@@ -32,7 +32,7 @@ class GameVersionName extends BaseEntity {
         insert: true,
         update: false
     })
-    name: string;
+    readonly name: string;
 
     @ManyToOne(
         () => Language,
@@ -41,7 +41,7 @@ class GameVersionName extends BaseEntity {
     @JoinColumn({
         name: 'language_id'
     })
-    language: Language;
+    readonly language: Language;
 
     public refer(): void {
         console.table(this);

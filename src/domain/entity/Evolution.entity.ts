@@ -8,35 +8,35 @@ import {
     OneToMany,
     PrimaryGeneratedColumn
 } from 'typeorm';
-import Pokemon from './Pokemon';
-import PokemonEvolution from './PokemonEvolution';
+import Pokemon from './Pokemon.entity';
+import PokemonEvolution from './PokemonEvolution.entity';
 
 @Entity({ name: 'evolutions' })
 class Evolution extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @OneToMany(
         () => PokemonEvolution,
         pokemonEvolution => pokemonEvolution.evolution
     )
-    pokemonEvolutions: PokemonEvolution[];
+    readonly pokemonEvolutions: PokemonEvolution[];
 
     @ManyToOne(() => Pokemon)
     @JoinColumn({
         name: 'from_id',
         referencedColumnName: 'id'
     })
-    fromPokemon: Pokemon;
+    readonly fromPokemon: Pokemon;
 
     @ManyToOne(() => Pokemon)
     @JoinColumn({
         name: 'to_id',
         referencedColumnName: 'id'
     })
-    toPokemon: Pokemon;
+    readonly toPokemon: Pokemon;
 
     @Column({
         type: 'varchar',
@@ -44,7 +44,7 @@ class Evolution extends BaseEntity {
         insert: true,
         update: false
     })
-    trigger: string;
+    readonly trigger: string;
 
     @Column({
         name: 'detail_1',
@@ -53,7 +53,7 @@ class Evolution extends BaseEntity {
         update: false,
         nullable: true
     })
-    detail1: string;
+    readonly detail1?: string;
 
     @Column({
         name: 'detail_2',
@@ -62,7 +62,7 @@ class Evolution extends BaseEntity {
         update: false,
         nullable: true
     })
-    detail2: string;
+    readonly detail2?: string;
 
     public refer(): void {
         console.table(this);

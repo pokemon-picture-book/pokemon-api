@@ -9,22 +9,22 @@ import {
     OneToOne,
     PrimaryColumn
 } from 'typeorm';
-import FlavorTextEntry from './FlavorTextEntry';
-import Genera from './Genera';
-import PokemonEvolution from './PokemonEvolution';
-import PokemonGameImage from './PokemonGameImage';
-import PokemonImage from './PokemonImage';
-import PokemonName from './PokemonName';
-import PokemonType from './PokemonType';
-import Region from './Region';
-import Status from './Status';
+import FlavorTextEntry from './FlavorTextEntry.entity';
+import Genera from './Genera.entity';
+import PokemonEvolution from './PokemonEvolution.entity';
+import PokemonGameImage from './PokemonGameImage.entity';
+import PokemonImage from './PokemonImage.entity';
+import PokemonName from './PokemonName.entity';
+import PokemonType from './PokemonType.entity';
+import Region from './Region.entity';
+import Status from './Status.entity';
 
 @Entity({ name: 'pokemons' })
 class Pokemon extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @Column({
         type: 'smallint',
@@ -32,7 +32,7 @@ class Pokemon extends BaseEntity {
         update: false,
         default: 0
     })
-    height: number;
+    readonly height: number;
 
     @Column({
         type: 'smallint',
@@ -40,7 +40,7 @@ class Pokemon extends BaseEntity {
         update: false,
         default: 0
     })
-    weight: number;
+    readonly weight: number;
 
     @Column({
         type: 'mediumint',
@@ -48,7 +48,7 @@ class Pokemon extends BaseEntity {
         update: false,
         default: 0
     })
-    order: number;
+    readonly order: number;
 
     @Column({
         name: 'image_color',
@@ -57,7 +57,7 @@ class Pokemon extends BaseEntity {
         insert: true,
         update: false
     })
-    imageColor: string;
+    readonly imageColor: string;
 
     @ManyToOne(
         () => Region,
@@ -66,55 +66,55 @@ class Pokemon extends BaseEntity {
     @JoinColumn({
         name: 'region_id'
     })
-    region: Region;
+    readonly region: Region;
 
     @OneToMany(
         () => PokemonEvolution,
         pokemonEvolution => pokemonEvolution.pokemon
     )
-    pokemonEvolutions: PokemonEvolution[];
+    readonly pokemonEvolutions: PokemonEvolution[];
 
     @OneToMany(
         () => FlavorTextEntry,
         flavorTextEntry => flavorTextEntry.pokemon
     )
-    flavorTextEntries: FlavorTextEntry[];
+    readonly flavorTextEntries: FlavorTextEntry[];
 
     @OneToMany(
         () => Genera,
         genera => genera.pokemon
     )
-    generas: Genera[];
+    readonly generas: Genera[];
 
     @OneToMany(
         () => PokemonGameImage,
         pokemonGameImage => pokemonGameImage.pokemon
     )
-    pokemonGameImages: PokemonGameImage[];
+    readonly pokemonGameImages: PokemonGameImage[];
 
     @OneToMany(
         () => PokemonImage,
         pokemonImage => pokemonImage.pokemon
     )
-    pokemonImages: PokemonImage[];
+    readonly pokemonImages: PokemonImage[];
 
     @OneToMany(
         () => PokemonName,
         pokemonName => pokemonName.pokemon
     )
-    pokemonNames: PokemonName[];
+    readonly pokemonNames: PokemonName[];
 
     @OneToOne(
         () => Status,
         status => status.pokemon
     )
-    status: Status;
+    readonly status: Status;
 
     @OneToMany(
         () => PokemonType,
         pokemonType => pokemonType.pokemon
     )
-    pokemonTypes: PokemonType[];
+    readonly pokemonTypes: PokemonType[];
 
     public refer(): void {
         console.table(this);

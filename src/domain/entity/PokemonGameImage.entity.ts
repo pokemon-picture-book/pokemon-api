@@ -7,15 +7,15 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import GameVersionGroup from './GameVersionGroup';
-import Pokemon from './Pokemon';
+import GameVersionGroup from './GameVersionGroup.entity';
+import Pokemon from './Pokemon.entity';
 
 @Entity({ name: 'pokemon_game_images' })
 class PokemonGameImage extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @ManyToOne(
         () => Pokemon,
@@ -24,14 +24,14 @@ class PokemonGameImage extends BaseEntity {
     @JoinColumn({
         name: 'pokemon_id'
     })
-    pokemon: Pokemon;
+    readonly pokemon: Pokemon;
 
     @Column({
         type: 'text',
         insert: true,
         update: false
     })
-    path: string;
+    readonly path: string;
 
     @ManyToOne(
         () => GameVersionGroup,
@@ -40,7 +40,7 @@ class PokemonGameImage extends BaseEntity {
     @JoinColumn({
         name: 'game_version_group_id'
     })
-    gameVersionGroup: GameVersionGroup;
+    readonly gameVersionGroup: GameVersionGroup;
 
     public refer(): void {
         console.table(this);

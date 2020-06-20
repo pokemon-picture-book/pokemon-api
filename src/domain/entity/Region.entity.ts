@@ -1,14 +1,14 @@
 /* eslint import/extensions: 0 */
 import { BaseEntity, Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
-import Pokemon from './Pokemon';
-import RegionName from './RegionName';
+import Pokemon from './Pokemon.entity';
+import RegionName from './RegionName.entity';
 
 @Entity({ name: 'regions' })
 class Region extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @Column({
         type: 'varchar',
@@ -16,19 +16,19 @@ class Region extends BaseEntity {
         insert: true,
         update: false
     })
-    name: string;
+    readonly name: string;
 
     @OneToMany(
         () => Pokemon,
         pokemons => pokemons.region
     )
-    pokemons: Pokemon[];
+    readonly pokemons: Pokemon[];
 
     @OneToMany(
         () => RegionName,
         regionName => regionName.region
     )
-    regionNames: RegionName[];
+    readonly regionNames: RegionName[];
 
     public refer(): void {
         console.table(this);
