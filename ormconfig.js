@@ -15,10 +15,10 @@ module.exports = [
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['./src/domain/entities/**/*.ts'],
+        entities: ['./src/domain/entity/**/*.entity.ts'],
         migrations: ['./db/migrations/**/*.ts'],
         cli: {
-            entitiesDir: 'src/domain/entities',
+            entitiesDir: 'src/domain/entity',
             migrationsDir: 'db/migrations'
         }
     },
@@ -33,10 +33,10 @@ module.exports = [
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['./src/domain/entities/**/*.ts'],
+        entities: ['./src/domain/entity/**/*.entity.ts'],
         migrations: ['./db/migrations/**/*.ts'],
         cli: {
-            entitiesDir: 'src/domain/entities',
+            entitiesDir: 'src/domain/entity',
             migrationsDir: 'db/migrations'
         }
     }

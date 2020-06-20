@@ -7,44 +7,34 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Language from './Language';
-import Pokemon from './Pokemon';
+import Pokemon from './Pokemon.entity';
 
-@Entity({ name: 'generas' })
-class Genera extends BaseEntity {
+@Entity({ name: 'pokemon_images' })
+class PokemonImage extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @ManyToOne(
         () => Pokemon,
-        pokemon => pokemon.generas
+        pokemon => pokemon.pokemonImages
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    pokemon: Pokemon;
+    readonly pokemon: Pokemon;
 
     @Column({
         type: 'text',
         insert: true,
         update: false
     })
-    genus: string;
-
-    @ManyToOne(
-        () => Language,
-        language => language.generas
-    )
-    @JoinColumn({
-        name: 'language_id'
-    })
-    language: Language;
+    readonly path: string;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default Genera;
+export default PokemonImage;

@@ -6,15 +6,15 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Evolution from './Evolution';
-import Pokemon from './Pokemon';
+import Evolution from './Evolution.entity';
+import Pokemon from './Pokemon.entity';
 
 @Entity({ name: 'pokemons_evolutions' })
 class PokemonEvolution extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
-    id: number;
+    readonly id: number;
 
     @ManyToOne(
         () => Pokemon,
@@ -23,7 +23,7 @@ class PokemonEvolution extends BaseEntity {
     @JoinColumn({
         name: 'pokemon_id'
     })
-    pokemon: Pokemon;
+    readonly pokemon: Pokemon;
 
     @ManyToOne(
         () => Evolution,
@@ -32,7 +32,7 @@ class PokemonEvolution extends BaseEntity {
     @JoinColumn({
         name: 'evolution_id'
     })
-    evolution: Evolution;
+    readonly evolution: Evolution;
 
     public refer(): void {
         console.table(this);

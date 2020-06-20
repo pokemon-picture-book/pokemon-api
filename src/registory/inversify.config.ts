@@ -1,14 +1,14 @@
 import { Container } from 'inversify';
 
-import IPokemonRepository from '@/domain/repository/IPokemonRepository';
-import PokemonRepository from '@/infrastructure/repository/PokemonRepository';
-import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemonUsecase';
-import SearchPokemonInteractor from '@/interactor/pokemon/SearchPokemonInteractor';
-import PokemonController from '@/controller/pokemon/PokemonController';
+import IPokemonRepository from '@/domain/repository/IPokemon.repository';
+import PokemonRepository from '@/infrastructure/repository/Pokemon.repository';
+import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemon.usecase';
+import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
+import PokemonController from '@/controller/Pokemon.controller';
 
 import TYPES from '@/registory/inversify.types';
-import IPokemonPresenter from '@/domain/presenter/IPokemonPresenter';
-import PokemonPresenter from '@/presenter/PokemonPresenter';
+import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
+import PokemonPresenter from '@/presenter/Pokemon.presenter';
 
 const container = new Container();
 container.bind<IPokemonPresenter>(TYPES.IPokemonPresenter).to(PokemonPresenter);
