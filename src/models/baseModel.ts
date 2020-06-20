@@ -1,5 +1,5 @@
 import { getConnection } from 'typeorm';
-import Bases from '@/domain/entity/Specs';
+import Bases from '@/domain/entity/Status.entity';
 
 const bulkSave = async (bases: Bases[]): Promise<Bases[]> => {
     return Bases.save(bases).catch(err => {

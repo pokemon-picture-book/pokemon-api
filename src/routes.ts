@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import 'reflect-metadata';
 
 import container from '@/registory/inversify.config';
-import PokemonController from '@/controller/pokemon/PokemonController';
+import PokemonController from '@/controller/Pokemon.controller';
 import TYPES from '@/registory/inversify.types';
 
 const pokemonControllerContainer = container.get<PokemonController>(

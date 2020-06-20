@@ -1,19 +1,19 @@
-import Pokemons from '@/domain/entity/Pokemons';
+import Pokemon from '@/domain/entity/Pokemon.entity';
 
-const bulkSave = async (pokemons: Pokemons[]): Promise<Pokemons[]> => {
-    return Pokemons.save(pokemons).catch(err => {
-        throw new Error(`Error in pokemons bulkSave: ${err}`);
+const bulkSave = async (pokemons: Pokemon[]): Promise<Pokemon[]> => {
+    return Pokemon.save(pokemons).catch(err => {
+        throw new Error(`Error in pokemon bulkSave: ${err}`);
     });
 };
 
-const findAll = async (): Promise<Pokemons[]> => {
-    return Pokemons.find().catch(err => {
-        throw new Error(`Error in pokemons findAll: ${err}`);
+const findAll = async (): Promise<Pokemon[]> => {
+    return Pokemon.find().catch(err => {
+        throw new Error(`Error in pokemon findAll: ${err}`);
     });
 };
 
-const findTypeAndPngUrl = async (): Promise<Pokemons[]> =>
-    Pokemons.createQueryBuilder()
+const findTypeAndPngUrl = async (): Promise<Pokemon[]> =>
+    Pokemon.createQueryBuilder()
         .innerJoinAndSelect('Pokemons.pngUrls', 'PngUrl')
         .innerJoinAndSelect('Pokemons.pokemonTypes', 'PokemonTypes')
         .innerJoinAndSelect('PokemonTypes.types', 'Types')
