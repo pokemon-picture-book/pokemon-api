@@ -7,11 +7,7 @@ import * as os from 'os';
 import { BaseEntity, ConnectionOptions, createConnection } from 'typeorm';
 import appRoutes from '@/routes';
 import ExpressRouter from '@/domain/ExpressRouter';
-import Pngs from '@/domain/entity/Pngs';
-import Pokemons from '@/domain/entity/Pokemons';
-import PokemonTypes from '@/domain/entity/PokemonTypes';
-import Specs from '@/domain/entity/Specs';
-import Types from '@/domain/entity/Types';
+import entities from '@/domain/entity';
 
 const ormconfig = require('~/ormconfig');
 
@@ -64,7 +60,7 @@ export default class ExpressServer {
 
         const connectionOptions: ConnectionOptions = {
             ...envConnectionOptions,
-            entities: [Pngs, Pokemons, PokemonTypes, Specs, Types],
+            entities,
             migrations: []
         };
 
