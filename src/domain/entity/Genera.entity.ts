@@ -7,24 +7,24 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Language from './Language.entity';
-import Pokemon from './Pokemon.entity';
+import LanguageEntity from './Language.entity';
+import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'generas' })
-class Genera extends BaseEntity {
+class GeneraEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(
-        () => Pokemon,
+        () => PokemonEntity,
         pokemon => pokemon.generas
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    readonly pokemon: Pokemon;
+    readonly pokemon: PokemonEntity;
 
     @Column({
         type: 'text',
@@ -34,17 +34,17 @@ class Genera extends BaseEntity {
     readonly genus: string;
 
     @ManyToOne(
-        () => Language,
+        () => LanguageEntity,
         language => language.generas
     )
     @JoinColumn({
         name: 'language_id'
     })
-    readonly language: Language;
+    readonly language: LanguageEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default Genera;
+export default GeneraEntity;

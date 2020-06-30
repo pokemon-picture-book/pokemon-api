@@ -1,10 +1,10 @@
 /* eslint import/extensions: 0 */
 import { BaseEntity, Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
-import TypeName from './TypeName.entity';
-import PokemonType from './PokemonType.entity';
+import TypeNameEntity from './TypeName.entity';
+import PokemonTypeEntity from './PokemonType.entity';
 
 @Entity({ name: 'types' })
-class Type extends BaseEntity {
+class TypeEntity extends BaseEntity {
     @PrimaryColumn()
     readonly id: number;
 
@@ -15,20 +15,20 @@ class Type extends BaseEntity {
     readonly name: string = '';
 
     @OneToMany(
-        () => PokemonType,
+        () => PokemonTypeEntity,
         pokemonType => pokemonType.type
     )
-    readonly pokemonTypes: PokemonType[];
+    readonly pokemonTypes: PokemonTypeEntity[];
 
     @OneToMany(
-        () => TypeName,
+        () => TypeNameEntity,
         typeName => typeName.type
     )
-    readonly typeNames: TypeName[];
+    readonly typeNames: TypeNameEntity[];
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default Type;
+export default TypeEntity;

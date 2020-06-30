@@ -7,24 +7,24 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Language from './Language.entity';
-import Pokemon from './Pokemon.entity';
+import LanguageEntity from './Language.entity';
+import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'flavor_text_entries' })
-class FlavorTextEntry extends BaseEntity {
+class FlavorTextEntryEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(
-        () => Pokemon,
+        () => PokemonEntity,
         pokemon => pokemon.flavorTextEntries
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    readonly pokemon: Pokemon;
+    readonly pokemon: PokemonEntity;
 
     @Column({
         name: 'flavor_text',
@@ -35,17 +35,17 @@ class FlavorTextEntry extends BaseEntity {
     readonly flavorText: string;
 
     @ManyToOne(
-        () => Language,
+        () => LanguageEntity,
         language => language.flavorTextEntries
     )
     @JoinColumn({
         name: 'language_id'
     })
-    readonly language: Language;
+    readonly language: LanguageEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default FlavorTextEntry;
+export default FlavorTextEntryEntity;

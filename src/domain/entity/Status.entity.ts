@@ -7,10 +7,10 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Pokemon from './Pokemon.entity';
+import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'status' })
-class Status extends BaseEntity {
+class StatusEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
@@ -61,17 +61,17 @@ class Status extends BaseEntity {
     readonly speed: number;
 
     @OneToOne(
-        () => Pokemon,
+        () => PokemonEntity,
         pokemon => pokemon.status
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    readonly pokemon: Pokemon;
+    readonly pokemon: PokemonEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default Status;
+export default StatusEntity;

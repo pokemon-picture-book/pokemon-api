@@ -1,10 +1,10 @@
 /* eslint import/extensions: 0 */
 import { BaseEntity, Column, Entity, PrimaryColumn, OneToMany } from 'typeorm';
-import GameVersion from './GameVersion.entity';
-import PokemonGameImage from './PokemonGameImage.entity';
+import GameVersionEntity from './GameVersion.entity';
+import PokemonGameImageEntity from './PokemonGameImage.entity';
 
 @Entity({ name: 'game_version_groups' })
-class GameVersionGroup extends BaseEntity {
+class GameVersionGroupEntity extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
@@ -19,20 +19,20 @@ class GameVersionGroup extends BaseEntity {
     readonly alias: string;
 
     @OneToMany(
-        () => GameVersion,
+        () => GameVersionEntity,
         gameVersion => gameVersion.gameVersionGroup
     )
-    readonly gameVersions: GameVersion[];
+    readonly gameVersions: GameVersionEntity[];
 
     @OneToMany(
-        () => PokemonGameImage,
+        () => PokemonGameImageEntity,
         pokemonGameImage => pokemonGameImage.gameVersionGroup
     )
-    readonly pokemonGameImages: PokemonGameImage[];
+    readonly pokemonGameImages: PokemonGameImageEntity[];
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default GameVersionGroup;
+export default GameVersionGroupEntity;
