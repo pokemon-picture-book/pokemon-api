@@ -2,7 +2,7 @@ import { Container } from 'inversify';
 
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import PokemonRepository from '@/infrastructure/repository/Pokemon.repository';
-import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemon.usecase';
+import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
 import PokemonController from '@/controller/Pokemon.controller';
 

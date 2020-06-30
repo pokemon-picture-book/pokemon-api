@@ -1,15 +1,15 @@
 import { getConnection } from 'typeorm';
-import Type from '@/domain/entity/Type.entity';
+import TypeEntity from '@/domain/entity/Type.entity';
 
-const bulkSave = async (types: Type[]): Promise<Type[]> => {
-    return Type.save(types).catch(err => {
+const bulkSave = async (types: TypeEntity[]): Promise<TypeEntity[]> => {
+    return TypeEntity.save(types).catch(err => {
         throw new Error(`Error in type bulkSave: ${err}`);
     });
 };
 
-const findAll = async (): Promise<Type[]> => {
+const findAll = async (): Promise<TypeEntity[]> => {
     return getConnection()
-        .getRepository(Type)
+        .getRepository(TypeEntity)
         .find();
 };
 

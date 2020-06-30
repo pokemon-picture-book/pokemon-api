@@ -1,4 +1,4 @@
-import Pokemon from '@/domain/entity/Pokemon.entity';
+import PokemonEntity from '@/domain/entity/Pokemon.entity';
 
 export default interface IPokemonRepository {
     // findAll(): Promise<Pokemon[]>;
@@ -7,5 +7,5 @@ export default interface IPokemonRepository {
         languageId: number,
         gameVersionGroupId: number,
         regionIds: number[]
-    ): Promise<Pokemon[]>;
+    ): Promise<PokemonEntity[]>;
 }

@@ -1,12 +1,12 @@
 import { injectable, inject } from 'inversify';
 import 'reflect-metadata';
 
-import ISearchPokemonUsecase from '@/usecase/pokemon/ISearchPokemon.usecase';
+import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import TYPES from '@/registory/inversify.types';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
-import Pokemon from '@/domain/entity/Pokemon.entity';
-import PokemonSearchResponse from '@/usecase/dto/model/PokemonSearchResponse';
+import PokemonEntity from '@/domain/entity/Pokemon.entity';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
+import { PokemonSearchResponse } from '@t/response-model';
 
 @injectable()
 export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
@@ -21,11 +21,11 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         gameVersionGroupId: number,
         regionIds: number[]
     ): Promise<PokemonSearchResponse[]> {
-        const pokemons: Pokemon[] = await this.repository.findAll(
+        const pokemons: PokemonEntity[] = await this.repository.findAll(
             languageId,
             gameVersionGroupId,
             regionIds
         );
-        return this.presenter.mappingAll(pokemons);
+        return this.presenter.toPokemonSearchResponse(pokemons);
     }
 }
