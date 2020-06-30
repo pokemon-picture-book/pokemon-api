@@ -3,14 +3,20 @@
     "target": "esnext",
     "lib": ["esnext", "dom"],
     "module": "commonjs",
-    "sourceMap": true,
     "declaration": true,
     "removeComments": true,
-    "rootDir": "./",
+    "rootDir": ".",
     "outDir": "./dist",
+    "incremental": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "types": [
       "reflect-metadata",
       "jest",
+      "./src/@types",
       "@types/node"
     ],
     "strict": true,
@@ -25,11 +31,14 @@
       "@/*": [
         "src/*"
       ],
+      "@t/*": [
+        "src/@types/*"
+      ],
       "~/*": [
         "./*"
       ]
     }
   },
-  "include": ["src/**/*", "ormconfig"],
-  "exclude": ["db"]
+  "include": ["src/**/*.ts", "ormconfig", "tests/**/*.ts"],
+  "exclude": ["db", "node_modules"]
 }
