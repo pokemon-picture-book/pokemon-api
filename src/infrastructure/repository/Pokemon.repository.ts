@@ -1,6 +1,6 @@
-import Pokemon from '@/domain/entity/Pokemon.entity';
-import Type from '@/domain/entity/Type.entity';
-import TypeName from '@/domain/entity/TypeName.entity';
+import PokemonEntity from '@/domain/entity/Pokemon.entity';
+import TypeEntity from '@/domain/entity/Type.entity';
+import TypeNameEntity from '@/domain/entity/TypeName.entity';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import { injectable } from 'inversify';
 
@@ -16,8 +16,8 @@ export default class PokemonRepository implements IPokemonRepository {
         languageId: number,
         gameVersionGroupId: number,
         regionIds: number[]
-    ): Promise<Pokemon[]> {
-        return Pokemon.createQueryBuilder('pokemon')
+    ): Promise<PokemonEntity[]> {
+        return PokemonEntity.createQueryBuilder('pokemon')
             .innerJoin(
                 'pokemon.region',
                 'region',
@@ -40,13 +40,13 @@ export default class PokemonRepository implements IPokemonRepository {
             .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
             .innerJoinAndMapOne(
                 'pokemonType.type',
-                Type,
+                TypeEntity,
                 'type',
                 'pokemonType.type_id = type.id'
             )
-            .innerJoinAndMapOne(
+            .innerJoinAndMapMany(
                 'type.typeNames',
-                TypeName,
+                TypeNameEntity,
                 'typeName',
                 'type.id = typeName.type_id AND typeName.language_id = :languageId',
                 { languageId }
