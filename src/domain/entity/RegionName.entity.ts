@@ -7,24 +7,24 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Language from './Language.entity';
-import Region from './Region.entity';
+import LanguageEntity from './Language.entity';
+import RegionEntity from './Region.entity';
 
 @Entity({ name: 'region_names' })
-class RegionName extends BaseEntity {
+class RegionNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(
-        () => Region,
+        () => RegionEntity,
         region => region.regionNames
     )
     @JoinColumn({
         name: 'region_id'
     })
-    readonly region: Region;
+    readonly region: RegionEntity;
 
     @Column({
         type: 'varchar',
@@ -35,17 +35,17 @@ class RegionName extends BaseEntity {
     readonly name: string;
 
     @ManyToOne(
-        () => Language,
+        () => LanguageEntity,
         language => language.regionNames
     )
     @JoinColumn({
         name: 'language_id'
     })
-    readonly language: Language;
+    readonly language: LanguageEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default RegionName;
+export default RegionNameEntity;

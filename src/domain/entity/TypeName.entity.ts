@@ -7,11 +7,11 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Language from './Language.entity';
-import Type from './Type.entity';
+import LanguageEntity from './Language.entity';
+import TypeEntity from './Type.entity';
 
 @Entity({ name: 'type_names' })
-class TypeName extends BaseEntity {
+class TypeNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn()
     readonly id: number;
 
@@ -22,26 +22,26 @@ class TypeName extends BaseEntity {
     readonly name: string = '';
 
     @ManyToOne(
-        () => Type,
+        () => TypeEntity,
         type => type.typeNames
     )
     @JoinColumn({
         name: 'type_id'
     })
-    readonly type: Type;
+    readonly type: TypeEntity;
 
     @ManyToOne(
-        () => Language,
+        () => LanguageEntity,
         language => language.typeNames
     )
     @JoinColumn({
         name: 'language_id'
     })
-    readonly language: Language;
+    readonly language: LanguageEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default TypeName;
+export default TypeNameEntity;

@@ -7,23 +7,23 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Pokemon from './Pokemon.entity';
+import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'pokemon_images' })
-class PokemonImage extends BaseEntity {
+class PokemonImageEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(
-        () => Pokemon,
+        () => PokemonEntity,
         pokemon => pokemon.pokemonImages
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    readonly pokemon: Pokemon;
+    readonly pokemon: PokemonEntity;
 
     @Column({
         type: 'text',
@@ -37,4 +37,4 @@ class PokemonImage extends BaseEntity {
     }
 }
 
-export default PokemonImage;
+export default PokemonImageEntity;

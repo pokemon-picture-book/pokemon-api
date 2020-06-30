@@ -1,39 +1,39 @@
-import Evolution from './Evolution.entity';
-import FlavorTextEntry from './FlavorTextEntry.entity';
-import GameVersion from './GameVersion.entity';
-import GameVersionGroup from './GameVersionGroup.entity';
-import GameVersionName from './GameVersionName.entity';
-import Genera from './Genera.entity';
-import Language from './Language.entity';
-import Pokemon from './Pokemon.entity';
-import PokemonEvolution from './PokemonEvolution.entity';
-import PokemonGameImage from './PokemonGameImage.entity';
-import PokemonImage from './PokemonImage.entity';
-import PokemonName from './PokemonName.entity';
-import PokemonType from './PokemonType.entity';
-import Region from './Region.entity';
-import RegionName from './RegionName.entity';
-import Status from './Status.entity';
-import Type from './Type.entity';
-import TypeName from './TypeName.entity';
+import EvolutionEntity from './Evolution.entity';
+import FlavorTextEntryEntity from './FlavorTextEntry.entity';
+import GameVersionEntity from './GameVersion.entity';
+import GameVersionGroupEntity from './GameVersionGroup.entity';
+import GameVersionNameEntity from './GameVersionName.entity';
+import GeneraEntity from './Genera.entity';
+import LanguageEntity from './Language.entity';
+import PokemonEntity from './Pokemon.entity';
+import PokemonEvolutionEntity from './PokemonEvolution.entity';
+import PokemonGameImageEntity from './PokemonGameImage.entity';
+import PokemonImageEntity from './PokemonImage.entity';
+import PokemonNameEntity from './PokemonName.entity';
+import PokemonTypeEntity from './PokemonType.entity';
+import RegionEntity from './Region.entity';
+import RegionNameEntity from './RegionName.entity';
+import StatusEntity from './Status.entity';
+import TypeEntity from './Type.entity';
+import TypeNameEntity from './TypeName.entity';
 
 export default [
-    Evolution,
-    FlavorTextEntry,
-    GameVersion,
-    GameVersionGroup,
-    GameVersionName,
-    Genera,
-    Language,
-    Pokemon,
-    PokemonEvolution,
-    PokemonGameImage,
-    PokemonImage,
-    PokemonName,
-    PokemonType,
-    Region,
-    RegionName,
-    Status,
-    Type,
-    TypeName
+    EvolutionEntity,
+    FlavorTextEntryEntity,
+    GameVersionEntity,
+    GameVersionGroupEntity,
+    GameVersionNameEntity,
+    GeneraEntity,
+    LanguageEntity,
+    PokemonEntity,
+    PokemonEvolutionEntity,
+    PokemonGameImageEntity,
+    PokemonImageEntity,
+    PokemonNameEntity,
+    PokemonTypeEntity,
+    RegionEntity,
+    RegionNameEntity,
+    StatusEntity,
+    TypeEntity,
+    TypeNameEntity
 ];

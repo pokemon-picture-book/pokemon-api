@@ -1,14 +1,14 @@
 /* eslint import/extensions: 0 */
 import { BaseEntity, Column, Entity, PrimaryColumn, OneToMany } from 'typeorm';
-import FlavorTextEntry from './FlavorTextEntry.entity';
-import GameVersionName from './GameVersionName.entity';
-import Genera from './Genera.entity';
-import PokemonName from './PokemonName.entity';
-import RegionName from './RegionName.entity';
-import TypeName from './TypeName.entity';
+import FlavorTextEntryEntity from './FlavorTextEntry.entity';
+import GameVersionNameEntity from './GameVersionName.entity';
+import GeneraEntity from './Genera.entity';
+import PokemonNameEntity from './PokemonName.entity';
+import RegionNameEntity from './RegionName.entity';
+import TypeNameEntity from './TypeName.entity';
 
 @Entity({ name: 'languages' })
-class Language extends BaseEntity {
+class LanguageEntity extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
@@ -23,44 +23,44 @@ class Language extends BaseEntity {
     readonly name: string;
 
     @OneToMany(
-        () => FlavorTextEntry,
+        () => FlavorTextEntryEntity,
         flavorTextEntry => flavorTextEntry.language
     )
-    readonly flavorTextEntries: FlavorTextEntry[];
+    readonly flavorTextEntries: FlavorTextEntryEntity[];
 
     @OneToMany(
-        () => GameVersionName,
+        () => GameVersionNameEntity,
         gameVersionName => gameVersionName.language
     )
-    readonly gameVersionNames: GameVersionName[];
+    readonly gameVersionNames: GameVersionNameEntity[];
 
     @OneToMany(
-        () => Genera,
+        () => GeneraEntity,
         genera => genera.language
     )
-    readonly generas: Genera[];
+    readonly generas: GeneraEntity[];
 
     @OneToMany(
-        () => PokemonName,
+        () => PokemonNameEntity,
         pokemonName => pokemonName.language
     )
-    readonly pokemonNames: PokemonName[];
+    readonly pokemonNames: PokemonNameEntity[];
 
     @OneToMany(
-        () => RegionName,
+        () => RegionNameEntity,
         regionName => regionName.language
     )
-    readonly regionNames: RegionName[];
+    readonly regionNames: RegionNameEntity[];
 
     @OneToMany(
-        () => TypeName,
+        () => TypeNameEntity,
         typeName => typeName.language
     )
-    readonly typeNames: TypeName[];
+    readonly typeNames: TypeNameEntity[];
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default Language;
+export default LanguageEntity;

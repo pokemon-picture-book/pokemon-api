@@ -7,11 +7,11 @@ import {
     PrimaryGeneratedColumn,
     JoinColumn
 } from 'typeorm';
-import Pokemon from './Pokemon.entity';
-import Type from './Type.entity';
+import PokemonEntity from './Pokemon.entity';
+import TypeEntity from './Type.entity';
 
 @Entity({ name: 'pokemons_types' })
-class PokemonType extends BaseEntity {
+class PokemonTypeEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint'
     })
@@ -26,26 +26,26 @@ class PokemonType extends BaseEntity {
     readonly order: number;
 
     @ManyToOne(
-        () => Pokemon,
+        () => PokemonEntity,
         pokemon => pokemon.pokemonTypes
     )
     @JoinColumn({
         name: 'pokemon_id'
     })
-    readonly pokemon: Pokemon;
+    readonly pokemon: PokemonEntity;
 
     @ManyToOne(
-        () => Type,
+        () => TypeEntity,
         type => type.pokemonTypes
     )
     @JoinColumn({
         name: 'type_id'
     })
-    readonly type: Type;
+    readonly type: TypeEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default PokemonType;
+export default PokemonTypeEntity;

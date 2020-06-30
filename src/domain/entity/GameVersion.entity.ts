@@ -8,21 +8,21 @@ import {
     OneToMany,
     JoinColumn
 } from 'typeorm';
-import GameVersionName from './GameVersionName.entity';
-import GameVersionGroup from './GameVersionGroup.entity';
+import GameVersionNameEntity from './GameVersionName.entity';
+import GameVersionGroupEntity from './GameVersionGroup.entity';
 
 @Entity({ name: 'game_versions' })
-class GameVersion extends BaseEntity {
+class GameVersionEntity extends BaseEntity {
     @PrimaryColumn({
         type: 'mediumint'
     })
     readonly id: number;
 
     @OneToMany(
-        () => GameVersionName,
+        () => GameVersionNameEntity,
         gameVersionName => gameVersionName.gameVersion
     )
-    readonly gameVersionNames: GameVersionName[];
+    readonly gameVersionNames: GameVersionNameEntity[];
 
     @Column({
         type: 'varchar',
@@ -33,17 +33,17 @@ class GameVersion extends BaseEntity {
     readonly name: string;
 
     @ManyToOne(
-        () => GameVersionGroup,
+        () => GameVersionGroupEntity,
         gameVersionGroup => gameVersionGroup.gameVersions
     )
     @JoinColumn({
         name: 'game_version_group_id'
     })
-    readonly gameVersionGroup: GameVersionGroup;
+    readonly gameVersionGroup: GameVersionGroupEntity;
 
     public refer(): void {
         console.table(this);
     }
 }
 
-export default GameVersion;
+export default GameVersionEntity;
