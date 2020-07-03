@@ -9,10 +9,6 @@ const pokemonControllerContainer = container.get<PokemonController>(
     TYPES.PokemonController
 );
 
-/**
- * 全ての route を管理します.
- * @param app express app
- */
 export default {
     base: '/pokemon-api/v1',
     routes: [
@@ -45,4 +41,4 @@ export default {
             ]
         }
     ]
-};
+} as Readonly<AppRouter>;
