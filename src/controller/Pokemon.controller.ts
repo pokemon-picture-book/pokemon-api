@@ -1,31 +1,36 @@
-import { Request, Response } from 'express';
-import { injectable, inject } from 'inversify';
-import 'reflect-metadata';
-
+import { getDefaultSet } from '@/domain/function/game-region.function';
 import TYPES from '@/registory/inversify.types';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import { PokemonSearchResponse } from '@t/response-model';
+import { AppRequest, AppResponse, AppErrorMessage } from 'express';
+import { inject, injectable } from 'inversify';
+import 'reflect-metadata';
 
 @injectable()
 export default class PokemonController {
     @inject(TYPES.ISearchPokemonUsecase)
     private usecase: ISearchPokemonUsecase;
 
-    async search(request: Request, res: Response): Promise<void> {
-        const languageId = Number(request.query.languageId) || 1;
-        const gameVersionGroupId =
-            Number(request.query.gameVersionGroupId) || 1;
-        const regionIds =
-            request.query.regionIds && Array.isArray(request.query.regionIds)
-                ? request.query.regionIds.map(regionId => Number(regionId))
-                : [1];
+    async search(
+        request: AppRequest<{
+            query: { lang?: string; game?: string; regions?: string[] };
+        }>,
+        response: AppResponse<AppErrorMessage | PokemonSearchResponse[]>
+    ): Promise<void> {
+        const { lang, game, regions } = request.query;
+        const gameResion = getDefaultSet(game, regions);
 
-        const response: PokemonSearchResponse[] = await this.usecase.search(
-            languageId,
-            gameVersionGroupId,
-            regionIds
+        const result: PokemonSearchResponse[] = await this.usecase.search(
+            lang || 'en',
+            gameResion.game,
+            gameResion.regions
         );
 
-        res.status(201).json(response);
+        if (!result.length) {
+            response.status(404).send({ message: 'Not Found!' });
+            return;
+        }
+
+        response.status(200).json(result);
     }
 }
