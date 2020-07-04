@@ -6,12 +6,6 @@ import { injectable } from 'inversify';
 
 @injectable()
 export default class PokemonRepository implements IPokemonRepository {
-    // public findAll(): Promise<Pokemon[]> {
-    //     return Pokemon.find().catch(err => {
-    //         throw err;
-    //     });
-    // }
-
     public findAll(
         languageId: number,
         gameVersionGroupId: number,
