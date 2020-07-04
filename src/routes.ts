@@ -1,9 +1,8 @@
-import { Request, Response } from 'express';
-import 'reflect-metadata';
-
-import container from '@/registory/inversify.config';
 import PokemonController from '@/controller/Pokemon.controller';
+import container from '@/registory/inversify.config';
 import TYPES from '@/registory/inversify.types';
+import { AppRequest, AppResponse } from 'express';
+import 'reflect-metadata';
 
 const pokemonControllerContainer = container.get<PokemonController>(
     TYPES.PokemonController
@@ -18,13 +17,13 @@ export default {
                 {
                     method: 'get',
                     path: '/',
-                    action: (req: Request, res: Response) =>
+                    action: (req: AppRequest<any>, res: AppResponse<any>) =>
                         pokemonControllerContainer.search(req, res)
                 },
                 {
                     method: 'get',
                     path: '/:pokemonId',
-                    action: (req: Request, res: Response) =>
+                    action: (req: AppRequest<any>, res: AppResponse<any>) =>
                         pokemonControllerContainer.search(req, res)
                 },
                 {
@@ -33,8 +32,10 @@ export default {
                         {
                             method: 'get',
                             path: '/',
-                            action: (req: Request, res: Response) =>
-                                pokemonControllerContainer.search(req, res)
+                            action: (
+                                req: AppRequest<any>,
+                                res: AppResponse<any>
+                            ) => pokemonControllerContainer.search(req, res)
                         }
                     ]
                 }
