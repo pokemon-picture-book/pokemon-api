@@ -40,7 +40,6 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         ]);
 
         if (!language || !gameVersionGroup || !regions.length) {
-            console.log('not found...');
             return [];
         }
 
