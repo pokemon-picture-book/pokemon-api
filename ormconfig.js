@@ -14,7 +14,7 @@ module.exports = [
         password: DB_CONFIG.password || 'pokemon',
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
-        logging: false,
+        logging: true,
         entities: ['./src/domain/entity/**/*.entity.ts'],
         migrations: ['./db/migrations/**/*.ts'],
         cli: {
