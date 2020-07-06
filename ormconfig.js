@@ -23,6 +23,17 @@ module.exports = [
         }
     },
     {
+        name: 'test',
+        type: 'mysql',
+        host: DB_CONFIG.host || 'localhost',
+        port: Number(DB_CONFIG.port) || 3307,
+        username: DB_CONFIG.username || 'pokemon',
+        password: DB_CONFIG.password || 'pokemon',
+        database: DB_CONFIG.database || 'pokemon',
+        synchronize: true,
+        logging: false
+    },
+    {
         // TODO: production 環境が出来上がり次第、ここの設定も変更予定
         name: 'production',
         type: 'mysql',
