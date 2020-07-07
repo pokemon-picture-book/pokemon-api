@@ -16,24 +16,31 @@ import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionG
 import IRegionRepository from '@/domain/repository/IRegion.repository';
 import RegionRepository from '@/infrastructure/repository/Region.repository';
 
-const container = new Container();
-container.bind<IPokemonPresenter>(TYPES.IPokemonPresenter).to(PokemonPresenter);
-container
-    .bind<IPokemonRepository>(TYPES.IPokemonRepository)
-    .to(PokemonRepository);
-container
-    .bind<ILanguageRepository>(TYPES.ILanguageRepository)
-    .to(LanguageRepository);
-container
-    .bind<IGameVersionGroupRepository>(TYPES.IGameVersionGroupRepository)
-    .to(GameVersionGroupRepository);
-container.bind<IRegionRepository>(TYPES.IRegionRepository).to(RegionRepository);
-container
-    .bind<ISearchPokemonUsecase>(TYPES.ISearchPokemonUsecase)
-    .to(SearchPokemonInteractor)
-    .inSingletonScope();
-container
-    .bind<PokemonController>(TYPES.PokemonController)
-    .to(PokemonController);
+export default (() => {
+    const container: Readonly<Container> = new Container();
 
-export default container;
+    container
+        .bind<IPokemonPresenter>(TYPES.IPokemonPresenter)
+        .to(PokemonPresenter);
+    container
+        .bind<IPokemonRepository>(TYPES.IPokemonRepository)
+        .to(PokemonRepository);
+    container
+        .bind<ILanguageRepository>(TYPES.ILanguageRepository)
+        .to(LanguageRepository);
+    container
+        .bind<IGameVersionGroupRepository>(TYPES.IGameVersionGroupRepository)
+        .to(GameVersionGroupRepository);
+    container
+        .bind<IRegionRepository>(TYPES.IRegionRepository)
+        .to(RegionRepository);
+    container
+        .bind<ISearchPokemonUsecase>(TYPES.ISearchPokemonUsecase)
+        .to(SearchPokemonInteractor)
+        .inSingletonScope();
+    container
+        .bind<PokemonController>(TYPES.PokemonController)
+        .to(PokemonController);
+
+    return container;
+})();
