@@ -36,9 +36,12 @@
       ],
       "~/*": [
         "./*"
+      ],
+      "@test/*": [
+        "test/*"
       ]
     }
   },
-  "include": ["src/**/*.ts", "ormconfig", "tests/**/*.ts"],
+  "include": ["src/**/*.ts", "ormconfig", "test/**/*.ts"],
   "exclude": ["db", "node_modules"]
 }
