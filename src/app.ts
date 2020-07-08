@@ -1,9 +1,9 @@
-import { dbConnection } from '@/driver';
+import driver from '@/driver';
 import app from '@/server';
 import * as http from 'http';
 import * as os from 'os';
 
-dbConnection();
+driver.connect();
 
 const port = process.env.PORT || '3000';
 const host = process.env.HOST || 'localhost';
