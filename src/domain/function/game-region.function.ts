@@ -33,12 +33,12 @@ export const getDefaultSet = (
     }
 
     if (!game && regions.length) {
-        const latestGame = Object.entries(regionGame)
+        const firstGame = Object.entries(regionGame)
             .filter(([key, _]) => regions.includes(key))
             .flatMap(([_, value]) => value)
-            .pop();
+            .shift();
 
-        return { game: latestGame || '', regions };
+        return { game: firstGame || '', regions };
     }
 
     if (!(game || regions.length)) {
