@@ -13,7 +13,7 @@ export default class PokemonController {
 
     async search(
         request: AppRequest<{
-            query: { lang?: string; game?: string; regions?: string[] };
+            query: SearchPokemonQueryParam;
         }>,
         response: AppResponse<AppErrorMessage | PokemonSearchResponse[]>
     ): Promise<void> {
