@@ -1,16 +1,16 @@
-const gameRegion: Readonly<{ [k: string]: string }> = {
-    rgby: 'kanto',
-    gsc: 'johto',
-    rse: 'hoenn',
-    frlg: 'kanto',
-    dp: 'innoh',
-    pt: 'innoh',
-    hgss: 'johto',
-    bw: 'unova',
-    xy: 'kalos',
-    oras: 'hoenn',
-    sm: 'alola',
-    usum: 'alola'
+const gameRegion: Readonly<{ [k: string]: string[] }> = {
+    rgby: ['kanto'],
+    gsc: ['johto'],
+    rse: ['hoenn'],
+    frlg: ['kanto'],
+    dp: ['innoh'],
+    pt: ['innoh'],
+    hgss: ['johto'],
+    bw: ['unova'],
+    xy: ['kalos'],
+    oras: ['hoenn'],
+    sm: ['alola'],
+    usum: ['alola']
 };
 
 const regionGame: Readonly<{ [k: string]: string[] }> = {
@@ -28,15 +28,15 @@ export const getDefaultSet = (
     regions: string[] = []
 ): { game: string; regions: string[] } => {
     if (game && !regions.length) {
-        const regionInGame = gameRegion[game] || '';
-        return { game, regions: [regionInGame] };
+        const regionInGames = gameRegion[game] || [''];
+        return { game, regions: regionInGames };
     }
 
     if (!game && regions.length) {
-        const firstGame = Object.entries(regionGame)
-            .filter(([key, _]) => regions.includes(key))
-            .flatMap(([_, value]) => value)
-            .shift();
+        const regionKey = Object.keys(regionGame)
+            .filter(key => regions.includes(key))
+            .pop();
+        const firstGame = regionKey ? regionGame[regionKey].shift() : '';
 
         return { game: firstGame || '', regions };
     }
