@@ -30,7 +30,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'pokemonName.language_id = :languageId',
                 { languageId }
             )
-            .innerJoinAndSelect('pokemon.pokemonImages', 'pokemonImage')
+            .leftJoinAndSelect('pokemon.pokemonImages', 'pokemonImage')
             .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
             .innerJoinAndMapOne(
                 'pokemonType.type',
@@ -46,7 +46,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 { languageId }
             )
             .orderBy({
-                'pokemon.order': 'ASC',
+                'pokemon.id': 'ASC',
                 'pokemonType.order': 'ASC'
             })
             .getMany();
