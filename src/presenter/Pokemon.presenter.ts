@@ -1,7 +1,7 @@
-import { injectable } from 'inversify';
-import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import PokemonEntity from '@/domain/entity/Pokemon.entity';
+import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import { PokemonSearchResponse } from '@t/response-model';
+import { injectable } from 'inversify';
 
 @injectable()
 export default class PokemonPresenter implements IPokemonPresenter {
