@@ -4,7 +4,7 @@ import { injectable } from 'inversify';
 
 @injectable()
 export default class RegionMockRepository implements IRegionRepository {
-    public findByNameIn(names: string[]): Promise<RegionEntity[]> {
-        return Promise.resolve(names.length ? [new RegionEntity()] : []);
+    public async findByNameIn(names: string[]): Promise<RegionEntity[]> {
+        return names.length ? [new RegionEntity()] : [];
     }
 }

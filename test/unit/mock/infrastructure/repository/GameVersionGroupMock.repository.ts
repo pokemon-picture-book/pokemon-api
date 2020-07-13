@@ -5,11 +5,9 @@ import { injectable } from 'inversify';
 @injectable()
 export default class GameVersionGroupMockRepository
     implements IGameVersionGroupRepository {
-    public findByAlias(
+    public async findByAlias(
         alias: string
     ): Promise<GameVersionGroupEntity | undefined> {
-        return Promise.resolve(
-            alias ? new GameVersionGroupEntity() : undefined
-        );
+        return alias ? new GameVersionGroupEntity() : undefined;
     }
 }

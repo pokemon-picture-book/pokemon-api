@@ -4,15 +4,13 @@ import { injectable } from 'inversify';
 
 @injectable()
 export default class PokemonMockRepository implements IPokemonRepository {
-    public findAll(
+    public async findAll(
         languageId: number,
         gameVersionGroupId: number,
         regionIds: number[]
     ): Promise<PokemonEntity[]> {
-        return Promise.resolve(
-            languageId || gameVersionGroupId || regionIds.length
-                ? [new PokemonEntity()]
-                : []
-        );
+        return languageId || gameVersionGroupId || regionIds.length
+            ? [new PokemonEntity()]
+            : [];
     }
 }
