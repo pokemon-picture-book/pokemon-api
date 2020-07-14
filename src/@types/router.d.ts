@@ -1,3 +1,8 @@
+declare type Routing = {
+    API: string;
+    POKEMON: string;
+};
+
 declare type AppRouter = {
     base: string;
     routes: (OperationRouter | ChildRouter)[];
