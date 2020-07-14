@@ -13,7 +13,11 @@ declare module 'express' {
         body: T['body'];
     }
 
-    interface AppResponse<T> extends Response {}
+    interface AppResponse<T> extends Response {
+        status: Response['status'] | jest.Mock<any, any>;
+        send: Response['send'] | jest.Mock<any, any>;
+        json: Response['json'] | jest.Mock<any, any>;
+    }
 
     interface AppErrorMessage {
         message: string;
