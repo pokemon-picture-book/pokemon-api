@@ -31,8 +31,8 @@ describe('Integration test for pokemon', () => {
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
                         gameImagePath =>
-                            gameImagePath.includes('icon') ||
-                            gameImagePath.includes('rgby')
+                            gameImagePath.includes('/icon/') ||
+                            gameImagePath.includes('/rgby/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -95,8 +95,8 @@ describe('Integration test for pokemon', () => {
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
                         gameImagePath =>
-                            gameImagePath.includes('icon') ||
-                            gameImagePath.includes('gsc')
+                            gameImagePath.includes('/icon/') ||
+                            gameImagePath.includes('/gsc/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -125,8 +125,8 @@ describe('Integration test for pokemon', () => {
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
                         gameImagePath =>
-                            gameImagePath.includes('icon') ||
-                            gameImagePath.includes('rse')
+                            gameImagePath.includes('/icon/') ||
+                            gameImagePath.includes('/rse/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -157,8 +157,8 @@ describe('Integration test for pokemon', () => {
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
                         gameImagePath =>
-                            gameImagePath.includes('icon') ||
-                            gameImagePath.includes('bw')
+                            gameImagePath.includes('/icon/') ||
+                            gameImagePath.includes('/bw/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -229,8 +229,8 @@ describe('Integration test for pokemon', () => {
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
                         gameImagePath =>
-                            gameImagePath.includes('icon') ||
-                            gameImagePath.includes('rgby')
+                            gameImagePath.includes('/icon/') ||
+                            gameImagePath.includes('/rgby/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
