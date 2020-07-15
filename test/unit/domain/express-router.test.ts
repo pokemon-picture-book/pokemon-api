@@ -91,11 +91,11 @@ describe('Unit test for ExpressRouter', () => {
 
         const agent = request.agent(server);
 
-        agent.get(`/test1/test2`).expect(200);
-        agent.post(`/test1/test2`).expect(201);
-        agent.put(`/test1/test2/test3`).expect(204);
-        agent.delete(`/test1/test2/test3/test4`).expect(204);
-        agent.get(`/test1/test5`).expect(200);
+        agent.get('/test1/test2').expect(200);
+        agent.post('/test1/test2').expect(201);
+        agent.put('/test1/test2/test3').expect(204);
+        agent.delete('/test1/test2/test3/test4').expect(204);
+        agent.get('/test1/test5').expect(200);
 
         done();
     });
