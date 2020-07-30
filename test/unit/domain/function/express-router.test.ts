@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import ExpressRouter from '@/domain/ExpressRouter';
+import settingRouter from '@/domain/function/express-router.function';
 import * as express from 'express';
 import { AppRequest, AppResponse } from 'express';
 import * as request from 'supertest';
@@ -84,10 +84,7 @@ describe('Unit test for ExpressRouter', () => {
             ]
         };
 
-        const expressRouter = new ExpressRouter(appRoutes);
-        const { path, router } = expressRouter.setting();
-
-        server.use(path, router);
+        settingRouter(server, appRoutes);
 
         const agent = request.agent(server);
 
