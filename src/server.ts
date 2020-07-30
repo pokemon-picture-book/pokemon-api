@@ -1,4 +1,4 @@
-import ExpressRouter from '@/domain/ExpressRouter';
+import settingRouter from '@/domain/function/express-router.function';
 import appRoutes from '@/routes';
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
@@ -22,9 +22,6 @@ if (NODE_ENV === 'development') {
     app.use(express.static('public'));
 }
 
-const expressRouter = new ExpressRouter(appRoutes);
-const { path, router } = expressRouter.setting();
-
-app.use(path, router);
+settingRouter(app, appRoutes);
 
 export default app;
