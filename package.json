@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "start": "npm run build && NODE_ENV=production node dist/app.js",
-    "dev": "npm run build:dev & nodemon ./dist/app.js",
+    "dev": "npm run build:dev && nodemon ./dist/app.js",
     "build:dev": "rimraf dist/* && webpack --config webpack.dev.js",
     "build": "rimraf dist/* && webpack --config webpack.prod.js",
     "clean": "rimraf dist/*",
@@ -77,7 +77,6 @@
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "babel-loader": "8.1.0",
-    "babel-watch": "^7.0.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
@@ -94,7 +93,7 @@
     "ts-loader": "6.2.2",
     "ts-node": "8.9.1",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "3.5.3",
+    "typescript": "3.9.7",
     "webpack-cli": "3.3.11"
   },
   "engines": {
