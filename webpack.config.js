@@ -4,7 +4,7 @@ const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src/app.ts'),
+    entry: ['@babel/polyfill', path.resolve(__dirname, 'src/app.ts')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.js'
@@ -50,12 +50,20 @@ module.exports = {
                 test: /\.ts$/,
                 include: [path.resolve(__dirname, 'src')],
                 exclude: /node_modules/,
-                use: {
-                    loader: 'ts-loader',
-                    options: {
-                        configFile: path.resolve(__dirname, 'tsconfig.json')
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                        }
+                    },
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            configFile: path.resolve(__dirname, 'tsconfig.json')
+                        }
                     }
-                }
+                ]
             }
         ]
     }
