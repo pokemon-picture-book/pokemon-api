@@ -12,4 +12,22 @@ export default class GameVersionGroupRepository
             .where('gameVersionGroup.alias = :alias', { alias })
             .getOne();
     }
+
+    public findAllByIsSupported(
+        languageId: number,
+        isSupported: boolean
+    ): Promise<GameVersionGroupEntity[]> {
+        return GameVersionGroupEntity.createQueryBuilder('gameVersionGroup')
+            .innerJoinAndSelect('gameVersionGroup.gameVersions', 'gameVersion')
+            .innerJoinAndSelect(
+                'gameVersion.gameVersionNames',
+                'gameVersionName',
+                'gameVersionName.language_id = :languageId',
+                { languageId }
+            )
+            .where('gameVersionGroup.is_supported = :isSupported', {
+                isSupported
+            })
+            .getMany();
+    }
 }

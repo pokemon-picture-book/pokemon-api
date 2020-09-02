@@ -18,6 +18,15 @@ class GameVersionGroupEntity extends BaseEntity {
     })
     readonly alias: string;
 
+    @Column({
+        name: 'is_supported',
+        type: 'boolean',
+        default: true,
+        insert: true,
+        update: false
+    })
+    readonly isSupported: boolean;
+
     @OneToMany(
         () => GameVersionEntity,
         gameVersion => gameVersion.gameVersionGroup
