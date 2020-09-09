@@ -27,4 +27,53 @@ describe('Unit test for GameVersionGroupRepository repository', () => {
         expect(gameVersionGroup).toBeUndefined();
         done();
     });
+
+    test('正常: languageId を指定した場合、正しい結果が取得できているか', async done => {
+        const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
+            1,
+            true
+        );
+
+        const [first] = gameVersionGroups;
+        const gameVersionGroupName = first.gameVersions
+            .map(gameVersion => {
+                const [gameVersionName] = gameVersion.gameVersionNames;
+                return gameVersionName.name;
+            })
+            .join('/');
+
+        expect(first.alias).toBe('rgby');
+        expect(gameVersionGroupName).toBe('赤/緑/ピカチュウ');
+
+        done();
+    });
+
+    test('正常: isSupported を false に指定した場合、正しい結果が取得できているか', async done => {
+        const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
+            1,
+            false
+        );
+
+        const [first] = gameVersionGroups;
+        const gameVersionGroupName = first.gameVersions
+            .map(gameVersion => {
+                const [gameVersionName] = gameVersion.gameVersionNames;
+                return gameVersionName.name;
+            })
+            .join('/');
+
+        expect(first.alias).toBe('c');
+        expect(gameVersionGroupName).toBe('コロシアム');
+
+        done();
+    });
+
+    test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async done => {
+        const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
+            12345,
+            true
+        );
+        expect(gameVersionGroups.length).toBe(0);
+        done();
+    });
 });

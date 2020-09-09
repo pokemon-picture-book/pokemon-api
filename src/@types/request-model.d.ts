@@ -6,5 +6,5 @@ declare type SearchPokemonQueryParam = {
 
 declare type GameVersionGroupQueryParam = {
     lang?: string;
-    supported?: boolean;
+    supported?: string;
 };
