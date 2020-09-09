@@ -17,7 +17,6 @@ describe('Unit test for Pokemon repository', () => {
 
     test('正常: languageId を指定した場合、正しい結果が取得できているか', async done => {
         const pokemons = await repository.findAll(1, 1, [1]);
-
         const [bulbasaur, ivysaur, venusaur] = pokemons;
 
         const [{ name: bulbasaurName }] = bulbasaur.pokemonNames;

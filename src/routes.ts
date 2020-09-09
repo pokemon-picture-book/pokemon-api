@@ -1,4 +1,5 @@
 import PokemonController from '@/controller/Pokemon.controller';
+import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
 import container from '@/registory/inversify.config';
 import TYPES from '@/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';
@@ -6,7 +7,8 @@ import 'reflect-metadata';
 
 export const ROUTING: Readonly<Routing> = {
     API: '/pokemon-api/v1',
-    POKEMON: '/pokemons'
+    POKEMON: '/pokemons',
+    GAME_VERSION_GROUP: '/game-versions'
 };
 
 export default {
@@ -34,25 +36,21 @@ export default {
                         >(TYPES.PokemonController);
                         pokemonControllerContainer.search(req, res);
                     }
-                },
-                // TODO 以下はサンプルのため、いずれ削除する
+                }
+            ]
+        },
+        {
+            path: ROUTING.GAME_VERSION_GROUP,
+            children: [
                 {
-                    path: '/items',
-                    children: [
-                        {
-                            method: 'get',
-                            path: '/',
-                            action: (
-                                req: AppRequest<any>,
-                                res: AppResponse<any>
-                            ) => {
-                                const pokemonControllerContainer = container.get<
-                                    PokemonController
-                                >(TYPES.PokemonController);
-                                pokemonControllerContainer.search(req, res);
-                            }
-                        }
-                    ]
+                    method: 'get',
+                    path: '/',
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const gameVersionGroupControllerContainer = container.get<
+                            GameVersionGroupController
+                        >(TYPES.GameVersionGroupController);
+                        gameVersionGroupControllerContainer.search(req, res);
+                    }
                 }
             ]
         }

@@ -1,6 +1,7 @@
 declare type Routing = {
     API: string;
     POKEMON: string;
+    GAME_VERSION_GROUP: string;
 };
 
 declare type AppRouter = {
