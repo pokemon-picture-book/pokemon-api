@@ -7769,6 +7769,38 @@
     },
     {
         "pokemonId": 201,
+        "path": "/201/c/overworld/201c-1.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/201c-2.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/201c-3.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/201c-4.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/s/201c-1.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/s/201c-2.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/s/201c-3.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/c/overworld/s/201c-4.gif"
+    },
+    {
+        "pokemonId": 201,
         "path": "/201/d/overworld/201d-1.gif"
     },
     {
@@ -8470,6 +8502,38 @@
     {
         "pokemonId": 201,
         "path": "/201/w/overworld/s/201w-4.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/201x-1.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/201x-2.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/201x-3.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/201x-4.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/s/201x-1.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/s/201x-2.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/s/201x-3.gif"
+    },
+    {
+        "pokemonId": 201,
+        "path": "/201/x/overworld/s/201x-4.gif"
     },
     {
         "pokemonId": 201,
@@ -19482,6 +19546,38 @@
     {
         "pokemonId": 478,
         "path": "/478/overworld/s/478-4.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/479-6-1.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/479-6-2.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/479-6-3.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/479-6-4.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/s/479-6-1.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/s/479-6-2.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/s/479-6-3.gif"
+    },
+    {
+        "pokemonId": 479,
+        "path": "/479/c/overworld/s/479-6-4.gif"
     },
     {
         "pokemonId": 479,
