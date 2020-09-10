@@ -3,3 +3,8 @@ declare type SearchPokemonQueryParam = {
     game?: string;
     regions?: string[];
 };
+
+declare type GameVersionGroupQueryParam = {
+    lang?: string;
+    supported?: string;
+};

@@ -10,4 +10,11 @@ export default class GameVersionGroupMockRepository
     ): Promise<GameVersionGroupEntity | undefined> {
         return alias ? new GameVersionGroupEntity() : undefined;
     }
+
+    public async findAllByIsSupported(
+        languageId: number,
+        isSupported: boolean
+    ): Promise<GameVersionGroupEntity[]> {
+        return languageId || isSupported ? [new GameVersionGroupEntity()] : [];
+    }
 }

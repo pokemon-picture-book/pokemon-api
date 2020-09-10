@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 import { PokemonSearchResponse } from '@/@types/response-model';
 import driver from '@/driver';
-import server from '@/server';
-import * as request from 'supertest';
-import { getRegionPokemonNum } from '@test/shared/region';
 import { ROUTING } from '@/routes';
+import server from '@/server';
+import { getRegionPokemonNum } from '@test/shared/region';
+import * as request from 'supertest';
 
 describe('Integration test for pokemon', () => {
     beforeAll(async () => {
