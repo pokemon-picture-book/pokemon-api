@@ -1,48 +1,58 @@
-import { Request, Response } from 'express';
+import PokemonController from '@/controller/Pokemon.controller';
+import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
+import container from '@/registory/inversify.config';
+import TYPES from '@/registory/inversify.types';
+import { AppRequest, AppResponse } from 'express';
 import 'reflect-metadata';
 
-import container from '@/registories/inversify.config';
-import PokemonController from '@/controllers/pokemons/PokemonController';
-import TYPES from '@/registories/inversify.types';
+export const ROUTING: Readonly<Routing> = {
+    API: '/pokemon-api/v1',
+    POKEMON: '/pokemons',
+    GAME_VERSION_GROUP: '/game-version-groups'
+};
 
-const pokemonControllerContainer = container.get<PokemonController>(
-    TYPES.PokemonController
-);
-
-/**
- * 全ての route を管理します.
- * @param app express app
- */
 export default {
-    base: '/pokemon-api/v1',
+    base: ROUTING.API,
     routes: [
         {
-            path: '/pokemons',
+            path: ROUTING.POKEMON,
             children: [
                 {
                     method: 'get',
                     path: '/',
-                    action: (req: Request, res: Response) =>
-                        pokemonControllerContainer.search(req, res)
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const pokemonControllerContainer = container.get<
+                            PokemonController
+                        >(TYPES.PokemonController);
+                        pokemonControllerContainer.search(req, res);
+                    }
                 },
                 {
                     method: 'get',
                     path: '/:pokemonId',
-                    action: (req: Request, res: Response) =>
-                        pokemonControllerContainer.search(req, res)
-                },
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const pokemonControllerContainer = container.get<
+                            PokemonController
+                        >(TYPES.PokemonController);
+                        pokemonControllerContainer.search(req, res);
+                    }
+                }
+            ]
+        },
+        {
+            path: ROUTING.GAME_VERSION_GROUP,
+            children: [
                 {
-                    path: '/items',
-                    children: [
-                        {
-                            method: 'get',
-                            path: '/',
-                            action: (req: Request, res: Response) =>
-                                pokemonControllerContainer.search(req, res)
-                        }
-                    ]
+                    method: 'get',
+                    path: '/',
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const gameVersionGroupControllerContainer = container.get<
+                            GameVersionGroupController
+                        >(TYPES.GameVersionGroupController);
+                        gameVersionGroupControllerContainer.search(req, res);
+                    }
                 }
             ]
         }
     ]
-};
+} as Readonly<AppRouter>;

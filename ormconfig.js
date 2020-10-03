@@ -9,17 +9,31 @@ module.exports = [
         name: 'development',
         type: 'mysql',
         host: DB_CONFIG.host || 'localhost',
-        port: Number(DB_CONFIG.port) || 3306,
+        port: Number(DB_CONFIG.port) || 3307,
+        username: DB_CONFIG.username || 'pokemon',
+        password: DB_CONFIG.password || 'pokemon',
+        database: DB_CONFIG.database || 'pokemon',
+        synchronize: false,
+        logging: true,
+        entities: ['./src/domain/entity/**/*.entity.ts'],
+        migrations: ['./db/migrations/**/*.ts'],
+        cli: {
+            entitiesDir: 'src/domain/entity',
+            migrationsDir: 'db/migrations'
+        }
+    },
+    {
+        name: 'test',
+        type: 'mysql',
+        host: DB_CONFIG.host || 'localhost',
+        port: Number(DB_CONFIG.port) || 3307,
         username: DB_CONFIG.username || 'pokemon',
         password: DB_CONFIG.password || 'pokemon',
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['./src/domain/entities/**/*.ts'],
-        migrations: ['./db/migrations/**/*.ts'],
-        cli: {
-            entitiesDir: 'src/domain/entities',
-            migrationsDir: 'db/migrations'
+        dialectOptions: {
+            options: { requestTimeout: 300000 }
         }
     },
     {
@@ -33,10 +47,10 @@ module.exports = [
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
         logging: false,
-        entities: ['./src/domain/entities/**/*.ts'],
+        entities: ['./src/domain/entity/**/*.entity.ts'],
         migrations: ['./db/migrations/**/*.ts'],
         cli: {
-            entitiesDir: 'src/domain/entities',
+            entitiesDir: 'src/domain/entity',
             migrationsDir: 'db/migrations'
         }
     }

@@ -1,12 +1,22 @@
 module.exports = {
+    roots: ['<rootDir>'],
+    moduleDirectories: ['node_modules', 'src'],
     testEnvironment: 'node',
     transform: {
         '^.+\\.ts?$': 'ts-jest'
     },
-    testRegex: '(/tests/.*|(\\.|/)(test|spec))\\.ts?$',
+    testPathIgnorePatterns: [
+        '<rootDir>/dist/',
+        '<rootDir>/node_modules/',
+        '<rootDir>/src/'
+    ],
+    testRegex: '(/test/.*|(\\.|/))(test|spec).ts?$',
     moduleFileExtensions: ['ts', 'js', 'jsx', 'json', 'node'],
     moduleNameMapper: {
-        '^@/(.*)$': '<rootDir>/$1'
+        '@/(.*)': '<rootDir>/src/$1',
+        '@t/(.*)': '<rootDir>/src/@types/$1',
+        '~/(.*)': '<rootDir>/$1',
+        '@test/(.*)': '<rootDir>/test/$1'
     },
     globals: {
         'ts-jest': {

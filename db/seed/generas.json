@@ -1,0 +1,7212 @@
+[
+    {
+        "pokemonId": 1,
+        "languageId": 1,
+        "genus": "たねポケモン"
+    },
+    {
+        "pokemonId": 1,
+        "languageId": 2,
+        "genus": "Seed Pokémon"
+    },
+    {
+        "pokemonId": 2,
+        "languageId": 1,
+        "genus": "たねポケモン"
+    },
+    {
+        "pokemonId": 2,
+        "languageId": 2,
+        "genus": "Seed Pokémon"
+    },
+    {
+        "pokemonId": 3,
+        "languageId": 1,
+        "genus": "たねポケモン"
+    },
+    {
+        "pokemonId": 3,
+        "languageId": 2,
+        "genus": "Seed Pokémon"
+    },
+    {
+        "pokemonId": 4,
+        "languageId": 1,
+        "genus": "とかげポケモン"
+    },
+    {
+        "pokemonId": 4,
+        "languageId": 2,
+        "genus": "Lizard Pokémon"
+    },
+    {
+        "pokemonId": 5,
+        "languageId": 1,
+        "genus": "かえんポケモン"
+    },
+    {
+        "pokemonId": 5,
+        "languageId": 2,
+        "genus": "Flame Pokémon"
+    },
+    {
+        "pokemonId": 6,
+        "languageId": 1,
+        "genus": "かえんポケモン"
+    },
+    {
+        "pokemonId": 6,
+        "languageId": 2,
+        "genus": "Flame Pokémon"
+    },
+    {
+        "pokemonId": 7,
+        "languageId": 1,
+        "genus": "かめのこポケモン"
+    },
+    {
+        "pokemonId": 7,
+        "languageId": 2,
+        "genus": "Tiny Turtle Pokémon"
+    },
+    {
+        "pokemonId": 8,
+        "languageId": 1,
+        "genus": "かめポケモン"
+    },
+    {
+        "pokemonId": 8,
+        "languageId": 2,
+        "genus": "Turtle Pokémon"
+    },
+    {
+        "pokemonId": 9,
+        "languageId": 1,
+        "genus": "こうらポケモン"
+    },
+    {
+        "pokemonId": 9,
+        "languageId": 2,
+        "genus": "Shellfish Pokémon"
+    },
+    {
+        "pokemonId": 10,
+        "languageId": 1,
+        "genus": "いもむしポケモン"
+    },
+    {
+        "pokemonId": 10,
+        "languageId": 2,
+        "genus": "Worm Pokémon"
+    },
+    {
+        "pokemonId": 11,
+        "languageId": 1,
+        "genus": "さなぎポケモン"
+    },
+    {
+        "pokemonId": 11,
+        "languageId": 2,
+        "genus": "Cocoon Pokémon"
+    },
+    {
+        "pokemonId": 12,
+        "languageId": 1,
+        "genus": "ちょうちょポケモン"
+    },
+    {
+        "pokemonId": 12,
+        "languageId": 2,
+        "genus": "Butterfly Pokémon"
+    },
+    {
+        "pokemonId": 13,
+        "languageId": 1,
+        "genus": "けむしポケモン"
+    },
+    {
+        "pokemonId": 13,
+        "languageId": 2,
+        "genus": "Hairy Bug Pokémon"
+    },
+    {
+        "pokemonId": 14,
+        "languageId": 1,
+        "genus": "さなぎポケモン"
+    },
+    {
+        "pokemonId": 14,
+        "languageId": 2,
+        "genus": "Cocoon Pokémon"
+    },
+    {
+        "pokemonId": 15,
+        "languageId": 1,
+        "genus": "どくばちポケモン"
+    },
+    {
+        "pokemonId": 15,
+        "languageId": 2,
+        "genus": "Poison Bee Pokémon"
+    },
+    {
+        "pokemonId": 16,
+        "languageId": 1,
+        "genus": "ことりポケモン"
+    },
+    {
+        "pokemonId": 16,
+        "languageId": 2,
+        "genus": "Tiny Bird Pokémon"
+    },
+    {
+        "pokemonId": 17,
+        "languageId": 1,
+        "genus": "とりポケモン"
+    },
+    {
+        "pokemonId": 17,
+        "languageId": 2,
+        "genus": "Bird Pokémon"
+    },
+    {
+        "pokemonId": 18,
+        "languageId": 1,
+        "genus": "とりポケモン"
+    },
+    {
+        "pokemonId": 18,
+        "languageId": 2,
+        "genus": "Bird Pokémon"
+    },
+    {
+        "pokemonId": 19,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 19,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 20,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 20,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 21,
+        "languageId": 1,
+        "genus": "ことりポケモン"
+    },
+    {
+        "pokemonId": 21,
+        "languageId": 2,
+        "genus": "Tiny Bird Pokémon"
+    },
+    {
+        "pokemonId": 22,
+        "languageId": 1,
+        "genus": "くちばしポケモン"
+    },
+    {
+        "pokemonId": 22,
+        "languageId": 2,
+        "genus": "Beak Pokémon"
+    },
+    {
+        "pokemonId": 23,
+        "languageId": 1,
+        "genus": "へびポケモン"
+    },
+    {
+        "pokemonId": 23,
+        "languageId": 2,
+        "genus": "Snake Pokémon"
+    },
+    {
+        "pokemonId": 24,
+        "languageId": 1,
+        "genus": "コブラポケモン"
+    },
+    {
+        "pokemonId": 24,
+        "languageId": 2,
+        "genus": "Cobra Pokémon"
+    },
+    {
+        "pokemonId": 25,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 25,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 26,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 26,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 27,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 27,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 28,
+        "languageId": 1,
+        "genus": "ねずみポケモン"
+    },
+    {
+        "pokemonId": 28,
+        "languageId": 2,
+        "genus": "Mouse Pokémon"
+    },
+    {
+        "pokemonId": 29,
+        "languageId": 1,
+        "genus": "どくばりポケモン"
+    },
+    {
+        "pokemonId": 29,
+        "languageId": 2,
+        "genus": "Poison Pin Pokémon"
+    },
+    {
+        "pokemonId": 30,
+        "languageId": 1,
+        "genus": "どくばりポケモン"
+    },
+    {
+        "pokemonId": 30,
+        "languageId": 2,
+        "genus": "Poison Pin Pokémon"
+    },
+    {
+        "pokemonId": 31,
+        "languageId": 1,
+        "genus": "ドリルポケモン"
+    },
+    {
+        "pokemonId": 31,
+        "languageId": 2,
+        "genus": "Drill Pokémon"
+    },
+    {
+        "pokemonId": 32,
+        "languageId": 1,
+        "genus": "どくばりポケモン"
+    },
+    {
+        "pokemonId": 32,
+        "languageId": 2,
+        "genus": "Poison Pin Pokémon"
+    },
+    {
+        "pokemonId": 33,
+        "languageId": 1,
+        "genus": "どくばりポケモン"
+    },
+    {
+        "pokemonId": 33,
+        "languageId": 2,
+        "genus": "Poison Pin Pokémon"
+    },
+    {
+        "pokemonId": 34,
+        "languageId": 1,
+        "genus": "ドリルポケモン"
+    },
+    {
+        "pokemonId": 34,
+        "languageId": 2,
+        "genus": "Drill Pokémon"
+    },
+    {
+        "pokemonId": 35,
+        "languageId": 1,
+        "genus": "ようせいポケモン"
+    },
+    {
+        "pokemonId": 35,
+        "languageId": 2,
+        "genus": "Fairy Pokémon"
+    },
+    {
+        "pokemonId": 36,
+        "languageId": 1,
+        "genus": "ようせいポケモン"
+    },
+    {
+        "pokemonId": 36,
+        "languageId": 2,
+        "genus": "Fairy Pokémon"
+    },
+    {
+        "pokemonId": 37,
+        "languageId": 1,
+        "genus": "きつねポケモン"
+    },
+    {
+        "pokemonId": 37,
+        "languageId": 2,
+        "genus": "Fox Pokémon"
+    },
+    {
+        "pokemonId": 38,
+        "languageId": 1,
+        "genus": "きつねポケモン"
+    },
+    {
+        "pokemonId": 38,
+        "languageId": 2,
+        "genus": "Fox Pokémon"
+    },
+    {
+        "pokemonId": 39,
+        "languageId": 1,
+        "genus": "ふうせんポケモン"
+    },
+    {
+        "pokemonId": 39,
+        "languageId": 2,
+        "genus": "Balloon Pokémon"
+    },
+    {
+        "pokemonId": 40,
+        "languageId": 1,
+        "genus": "ふうせんポケモン"
+    },
+    {
+        "pokemonId": 40,
+        "languageId": 2,
+        "genus": "Balloon Pokémon"
+    },
+    {
+        "pokemonId": 41,
+        "languageId": 1,
+        "genus": "こうもりポケモン"
+    },
+    {
+        "pokemonId": 41,
+        "languageId": 2,
+        "genus": "Bat Pokémon"
+    },
+    {
+        "pokemonId": 42,
+        "languageId": 1,
+        "genus": "こうもりポケモン"
+    },
+    {
+        "pokemonId": 42,
+        "languageId": 2,
+        "genus": "Bat Pokémon"
+    },
+    {
+        "pokemonId": 43,
+        "languageId": 1,
+        "genus": "ざっそうポケモン"
+    },
+    {
+        "pokemonId": 43,
+        "languageId": 2,
+        "genus": "Weed Pokémon"
+    },
+    {
+        "pokemonId": 44,
+        "languageId": 1,
+        "genus": "ざっそうポケモン"
+    },
+    {
+        "pokemonId": 44,
+        "languageId": 2,
+        "genus": "Weed Pokémon"
+    },
+    {
+        "pokemonId": 45,
+        "languageId": 1,
+        "genus": "フラワーポケモン"
+    },
+    {
+        "pokemonId": 45,
+        "languageId": 2,
+        "genus": "Flower Pokémon"
+    },
+    {
+        "pokemonId": 46,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 46,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 47,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 47,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 48,
+        "languageId": 1,
+        "genus": "こんちゅうポケモン"
+    },
+    {
+        "pokemonId": 48,
+        "languageId": 2,
+        "genus": "Insect Pokémon"
+    },
+    {
+        "pokemonId": 49,
+        "languageId": 1,
+        "genus": "どくがポケモン"
+    },
+    {
+        "pokemonId": 49,
+        "languageId": 2,
+        "genus": "Poison Moth Pokémon"
+    },
+    {
+        "pokemonId": 50,
+        "languageId": 1,
+        "genus": "もぐらポケモン"
+    },
+    {
+        "pokemonId": 50,
+        "languageId": 2,
+        "genus": "Mole Pokémon"
+    },
+    {
+        "pokemonId": 51,
+        "languageId": 1,
+        "genus": "もぐらポケモン"
+    },
+    {
+        "pokemonId": 51,
+        "languageId": 2,
+        "genus": "Mole Pokémon"
+    },
+    {
+        "pokemonId": 52,
+        "languageId": 1,
+        "genus": "ばけねこポケモン"
+    },
+    {
+        "pokemonId": 52,
+        "languageId": 2,
+        "genus": "Scratch Cat Pokémon"
+    },
+    {
+        "pokemonId": 53,
+        "languageId": 1,
+        "genus": "シャムネコポケモン"
+    },
+    {
+        "pokemonId": 53,
+        "languageId": 2,
+        "genus": "Classy Cat Pokémon"
+    },
+    {
+        "pokemonId": 54,
+        "languageId": 1,
+        "genus": "あひるポケモン"
+    },
+    {
+        "pokemonId": 54,
+        "languageId": 2,
+        "genus": "Duck Pokémon"
+    },
+    {
+        "pokemonId": 55,
+        "languageId": 1,
+        "genus": "あひるポケモン"
+    },
+    {
+        "pokemonId": 55,
+        "languageId": 2,
+        "genus": "Duck Pokémon"
+    },
+    {
+        "pokemonId": 56,
+        "languageId": 1,
+        "genus": "ぶたざるポケモン"
+    },
+    {
+        "pokemonId": 56,
+        "languageId": 2,
+        "genus": "Pig Monkey Pokémon"
+    },
+    {
+        "pokemonId": 57,
+        "languageId": 1,
+        "genus": "ぶたざるポケモン"
+    },
+    {
+        "pokemonId": 57,
+        "languageId": 2,
+        "genus": "Pig Monkey Pokémon"
+    },
+    {
+        "pokemonId": 58,
+        "languageId": 1,
+        "genus": "こいぬポケモン"
+    },
+    {
+        "pokemonId": 58,
+        "languageId": 2,
+        "genus": "Puppy Pokémon"
+    },
+    {
+        "pokemonId": 59,
+        "languageId": 1,
+        "genus": "でんせつポケモン"
+    },
+    {
+        "pokemonId": 59,
+        "languageId": 2,
+        "genus": "Legendary Pokémon"
+    },
+    {
+        "pokemonId": 60,
+        "languageId": 1,
+        "genus": "おたまポケモン"
+    },
+    {
+        "pokemonId": 60,
+        "languageId": 2,
+        "genus": "Tadpole Pokémon"
+    },
+    {
+        "pokemonId": 61,
+        "languageId": 1,
+        "genus": "おたまポケモン"
+    },
+    {
+        "pokemonId": 61,
+        "languageId": 2,
+        "genus": "Tadpole Pokémon"
+    },
+    {
+        "pokemonId": 62,
+        "languageId": 1,
+        "genus": "おたまポケモン"
+    },
+    {
+        "pokemonId": 62,
+        "languageId": 2,
+        "genus": "Tadpole Pokémon"
+    },
+    {
+        "pokemonId": 63,
+        "languageId": 1,
+        "genus": "ねんりきポケモン"
+    },
+    {
+        "pokemonId": 63,
+        "languageId": 2,
+        "genus": "Psi Pokémon"
+    },
+    {
+        "pokemonId": 64,
+        "languageId": 1,
+        "genus": "ねんりきポケモン"
+    },
+    {
+        "pokemonId": 64,
+        "languageId": 2,
+        "genus": "Psi Pokémon"
+    },
+    {
+        "pokemonId": 65,
+        "languageId": 1,
+        "genus": "ねんりきポケモン"
+    },
+    {
+        "pokemonId": 65,
+        "languageId": 2,
+        "genus": "Psi Pokémon"
+    },
+    {
+        "pokemonId": 66,
+        "languageId": 1,
+        "genus": "かいりきポケモン"
+    },
+    {
+        "pokemonId": 66,
+        "languageId": 2,
+        "genus": "Superpower Pokémon"
+    },
+    {
+        "pokemonId": 67,
+        "languageId": 1,
+        "genus": "かいりきポケモン"
+    },
+    {
+        "pokemonId": 67,
+        "languageId": 2,
+        "genus": "Superpower Pokémon"
+    },
+    {
+        "pokemonId": 68,
+        "languageId": 1,
+        "genus": "かいりきポケモン"
+    },
+    {
+        "pokemonId": 68,
+        "languageId": 2,
+        "genus": "Superpower Pokémon"
+    },
+    {
+        "pokemonId": 69,
+        "languageId": 1,
+        "genus": "フラワーポケモン"
+    },
+    {
+        "pokemonId": 69,
+        "languageId": 2,
+        "genus": "Flower Pokémon"
+    },
+    {
+        "pokemonId": 70,
+        "languageId": 1,
+        "genus": "ハエとりポケモン"
+    },
+    {
+        "pokemonId": 70,
+        "languageId": 2,
+        "genus": "Flycatcher Pokémon"
+    },
+    {
+        "pokemonId": 71,
+        "languageId": 1,
+        "genus": "ハエとりポケモン"
+    },
+    {
+        "pokemonId": 71,
+        "languageId": 2,
+        "genus": "Flycatcher Pokémon"
+    },
+    {
+        "pokemonId": 72,
+        "languageId": 1,
+        "genus": "くらげポケモン"
+    },
+    {
+        "pokemonId": 72,
+        "languageId": 2,
+        "genus": "Jellyfish Pokémon"
+    },
+    {
+        "pokemonId": 73,
+        "languageId": 1,
+        "genus": "くらげポケモン"
+    },
+    {
+        "pokemonId": 73,
+        "languageId": 2,
+        "genus": "Jellyfish Pokémon"
+    },
+    {
+        "pokemonId": 74,
+        "languageId": 1,
+        "genus": "がんせきポケモン"
+    },
+    {
+        "pokemonId": 74,
+        "languageId": 2,
+        "genus": "Rock Pokémon"
+    },
+    {
+        "pokemonId": 75,
+        "languageId": 1,
+        "genus": "がんせきポケモン"
+    },
+    {
+        "pokemonId": 75,
+        "languageId": 2,
+        "genus": "Rock Pokémon"
+    },
+    {
+        "pokemonId": 76,
+        "languageId": 1,
+        "genus": "メガトンポケモン"
+    },
+    {
+        "pokemonId": 76,
+        "languageId": 2,
+        "genus": "Megaton Pokémon"
+    },
+    {
+        "pokemonId": 77,
+        "languageId": 1,
+        "genus": "ひのうまポケモン"
+    },
+    {
+        "pokemonId": 77,
+        "languageId": 2,
+        "genus": "Fire Horse Pokémon"
+    },
+    {
+        "pokemonId": 78,
+        "languageId": 1,
+        "genus": "ひのうまポケモン"
+    },
+    {
+        "pokemonId": 78,
+        "languageId": 2,
+        "genus": "Fire Horse Pokémon"
+    },
+    {
+        "pokemonId": 79,
+        "languageId": 1,
+        "genus": "まぬけポケモン"
+    },
+    {
+        "pokemonId": 79,
+        "languageId": 2,
+        "genus": "Dopey Pokémon"
+    },
+    {
+        "pokemonId": 80,
+        "languageId": 1,
+        "genus": "やどかりポケモン"
+    },
+    {
+        "pokemonId": 80,
+        "languageId": 2,
+        "genus": "Hermit Crab Pokémon"
+    },
+    {
+        "pokemonId": 81,
+        "languageId": 1,
+        "genus": "じしゃくポケモン"
+    },
+    {
+        "pokemonId": 81,
+        "languageId": 2,
+        "genus": "Magnet Pokémon"
+    },
+    {
+        "pokemonId": 82,
+        "languageId": 1,
+        "genus": "じしゃくポケモン"
+    },
+    {
+        "pokemonId": 82,
+        "languageId": 2,
+        "genus": "Magnet Pokémon"
+    },
+    {
+        "pokemonId": 83,
+        "languageId": 1,
+        "genus": "かるがもポケモン"
+    },
+    {
+        "pokemonId": 83,
+        "languageId": 2,
+        "genus": "Wild Duck Pokémon"
+    },
+    {
+        "pokemonId": 84,
+        "languageId": 1,
+        "genus": "ふたごどりポケモン"
+    },
+    {
+        "pokemonId": 84,
+        "languageId": 2,
+        "genus": "Twin Bird Pokémon"
+    },
+    {
+        "pokemonId": 85,
+        "languageId": 1,
+        "genus": "みつごどりポケモン"
+    },
+    {
+        "pokemonId": 85,
+        "languageId": 2,
+        "genus": "Triple Bird Pokémon"
+    },
+    {
+        "pokemonId": 86,
+        "languageId": 1,
+        "genus": "あしかポケモン"
+    },
+    {
+        "pokemonId": 86,
+        "languageId": 2,
+        "genus": "Sea Lion Pokémon"
+    },
+    {
+        "pokemonId": 87,
+        "languageId": 1,
+        "genus": "あしかポケモン"
+    },
+    {
+        "pokemonId": 87,
+        "languageId": 2,
+        "genus": "Sea Lion Pokémon"
+    },
+    {
+        "pokemonId": 88,
+        "languageId": 1,
+        "genus": "ヘドロポケモン"
+    },
+    {
+        "pokemonId": 88,
+        "languageId": 2,
+        "genus": "Sludge Pokémon"
+    },
+    {
+        "pokemonId": 89,
+        "languageId": 1,
+        "genus": "ヘドロポケモン"
+    },
+    {
+        "pokemonId": 89,
+        "languageId": 2,
+        "genus": "Sludge Pokémon"
+    },
+    {
+        "pokemonId": 90,
+        "languageId": 1,
+        "genus": "２まいがいポケモン"
+    },
+    {
+        "pokemonId": 90,
+        "languageId": 2,
+        "genus": "Bivalve Pokémon"
+    },
+    {
+        "pokemonId": 91,
+        "languageId": 1,
+        "genus": "２まいがいポケモン"
+    },
+    {
+        "pokemonId": 91,
+        "languageId": 2,
+        "genus": "Bivalve Pokémon"
+    },
+    {
+        "pokemonId": 92,
+        "languageId": 1,
+        "genus": "ガスじょうポケモン"
+    },
+    {
+        "pokemonId": 92,
+        "languageId": 2,
+        "genus": "Gas Pokémon"
+    },
+    {
+        "pokemonId": 93,
+        "languageId": 1,
+        "genus": "ガスじょうポケモン"
+    },
+    {
+        "pokemonId": 93,
+        "languageId": 2,
+        "genus": "Gas Pokémon"
+    },
+    {
+        "pokemonId": 94,
+        "languageId": 1,
+        "genus": "シャドーポケモン"
+    },
+    {
+        "pokemonId": 94,
+        "languageId": 2,
+        "genus": "Shadow Pokémon"
+    },
+    {
+        "pokemonId": 95,
+        "languageId": 1,
+        "genus": "いわへびポケモン"
+    },
+    {
+        "pokemonId": 95,
+        "languageId": 2,
+        "genus": "Rock Snake Pokémon"
+    },
+    {
+        "pokemonId": 96,
+        "languageId": 1,
+        "genus": "さいみんポケモン"
+    },
+    {
+        "pokemonId": 96,
+        "languageId": 2,
+        "genus": "Hypnosis Pokémon"
+    },
+    {
+        "pokemonId": 97,
+        "languageId": 1,
+        "genus": "さいみんポケモン"
+    },
+    {
+        "pokemonId": 97,
+        "languageId": 2,
+        "genus": "Hypnosis Pokémon"
+    },
+    {
+        "pokemonId": 98,
+        "languageId": 1,
+        "genus": "さわがにポケモン"
+    },
+    {
+        "pokemonId": 98,
+        "languageId": 2,
+        "genus": "River Crab Pokémon"
+    },
+    {
+        "pokemonId": 99,
+        "languageId": 1,
+        "genus": "はさみポケモン"
+    },
+    {
+        "pokemonId": 99,
+        "languageId": 2,
+        "genus": "Pincer Pokémon"
+    },
+    {
+        "pokemonId": 100,
+        "languageId": 1,
+        "genus": "ボールポケモン"
+    },
+    {
+        "pokemonId": 100,
+        "languageId": 2,
+        "genus": "Ball Pokémon"
+    },
+    {
+        "pokemonId": 101,
+        "languageId": 1,
+        "genus": "ボールポケモン"
+    },
+    {
+        "pokemonId": 101,
+        "languageId": 2,
+        "genus": "Ball Pokémon"
+    },
+    {
+        "pokemonId": 102,
+        "languageId": 1,
+        "genus": "たまごポケモン"
+    },
+    {
+        "pokemonId": 102,
+        "languageId": 2,
+        "genus": "Egg Pokémon"
+    },
+    {
+        "pokemonId": 103,
+        "languageId": 1,
+        "genus": "やしのみポケモン"
+    },
+    {
+        "pokemonId": 103,
+        "languageId": 2,
+        "genus": "Coconut Pokémon"
+    },
+    {
+        "pokemonId": 104,
+        "languageId": 1,
+        "genus": "こどくポケモン"
+    },
+    {
+        "pokemonId": 104,
+        "languageId": 2,
+        "genus": "Lonely Pokémon"
+    },
+    {
+        "pokemonId": 105,
+        "languageId": 1,
+        "genus": "ほねずきポケモン"
+    },
+    {
+        "pokemonId": 105,
+        "languageId": 2,
+        "genus": "Bone Keeper Pokémon"
+    },
+    {
+        "pokemonId": 106,
+        "languageId": 1,
+        "genus": "キックポケモン"
+    },
+    {
+        "pokemonId": 106,
+        "languageId": 2,
+        "genus": "Kicking Pokémon"
+    },
+    {
+        "pokemonId": 107,
+        "languageId": 1,
+        "genus": "パンチポケモン"
+    },
+    {
+        "pokemonId": 107,
+        "languageId": 2,
+        "genus": "Punching Pokémon"
+    },
+    {
+        "pokemonId": 108,
+        "languageId": 1,
+        "genus": "なめまわしポケモン"
+    },
+    {
+        "pokemonId": 108,
+        "languageId": 2,
+        "genus": "Licking Pokémon"
+    },
+    {
+        "pokemonId": 109,
+        "languageId": 1,
+        "genus": "どくガスポケモン"
+    },
+    {
+        "pokemonId": 109,
+        "languageId": 2,
+        "genus": "Poison Gas Pokémon"
+    },
+    {
+        "pokemonId": 110,
+        "languageId": 1,
+        "genus": "どくガスポケモン"
+    },
+    {
+        "pokemonId": 110,
+        "languageId": 2,
+        "genus": "Poison Gas Pokémon"
+    },
+    {
+        "pokemonId": 111,
+        "languageId": 1,
+        "genus": "とげとげポケモン"
+    },
+    {
+        "pokemonId": 111,
+        "languageId": 2,
+        "genus": "Spikes Pokémon"
+    },
+    {
+        "pokemonId": 112,
+        "languageId": 1,
+        "genus": "ドリルポケモン"
+    },
+    {
+        "pokemonId": 112,
+        "languageId": 2,
+        "genus": "Drill Pokémon"
+    },
+    {
+        "pokemonId": 113,
+        "languageId": 1,
+        "genus": "たまごポケモン"
+    },
+    {
+        "pokemonId": 113,
+        "languageId": 2,
+        "genus": "Egg Pokémon"
+    },
+    {
+        "pokemonId": 114,
+        "languageId": 1,
+        "genus": "ツルじょうポケモン"
+    },
+    {
+        "pokemonId": 114,
+        "languageId": 2,
+        "genus": "Vine Pokémon"
+    },
+    {
+        "pokemonId": 115,
+        "languageId": 1,
+        "genus": "おやこポケモン"
+    },
+    {
+        "pokemonId": 115,
+        "languageId": 2,
+        "genus": "Parent Pokémon"
+    },
+    {
+        "pokemonId": 116,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 116,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 117,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 117,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 118,
+        "languageId": 1,
+        "genus": "きんぎょポケモン"
+    },
+    {
+        "pokemonId": 118,
+        "languageId": 2,
+        "genus": "Goldfish Pokémon"
+    },
+    {
+        "pokemonId": 119,
+        "languageId": 1,
+        "genus": "きんぎょポケモン"
+    },
+    {
+        "pokemonId": 119,
+        "languageId": 2,
+        "genus": "Goldfish Pokémon"
+    },
+    {
+        "pokemonId": 120,
+        "languageId": 1,
+        "genus": "ほしがたポケモン"
+    },
+    {
+        "pokemonId": 120,
+        "languageId": 2,
+        "genus": "Star Shape Pokémon"
+    },
+    {
+        "pokemonId": 121,
+        "languageId": 1,
+        "genus": "なぞのポケモン"
+    },
+    {
+        "pokemonId": 121,
+        "languageId": 2,
+        "genus": "Mysterious Pokémon"
+    },
+    {
+        "pokemonId": 122,
+        "languageId": 1,
+        "genus": "バリアーポケモン"
+    },
+    {
+        "pokemonId": 122,
+        "languageId": 2,
+        "genus": "Barrier Pokémon"
+    },
+    {
+        "pokemonId": 123,
+        "languageId": 1,
+        "genus": "かまきりポケモン"
+    },
+    {
+        "pokemonId": 123,
+        "languageId": 2,
+        "genus": "Mantis Pokémon"
+    },
+    {
+        "pokemonId": 124,
+        "languageId": 1,
+        "genus": "ひとがたポケモン"
+    },
+    {
+        "pokemonId": 124,
+        "languageId": 2,
+        "genus": "Human Shape Pokémon"
+    },
+    {
+        "pokemonId": 125,
+        "languageId": 1,
+        "genus": "でんげきポケモン"
+    },
+    {
+        "pokemonId": 125,
+        "languageId": 2,
+        "genus": "Electric Pokémon"
+    },
+    {
+        "pokemonId": 126,
+        "languageId": 1,
+        "genus": "ひふきポケモン"
+    },
+    {
+        "pokemonId": 126,
+        "languageId": 2,
+        "genus": "Spitfire Pokémon"
+    },
+    {
+        "pokemonId": 127,
+        "languageId": 1,
+        "genus": "くわがたポケモン"
+    },
+    {
+        "pokemonId": 127,
+        "languageId": 2,
+        "genus": "Stag Beetle Pokémon"
+    },
+    {
+        "pokemonId": 128,
+        "languageId": 1,
+        "genus": "あばれうしポケモン"
+    },
+    {
+        "pokemonId": 128,
+        "languageId": 2,
+        "genus": "Wild Bull Pokémon"
+    },
+    {
+        "pokemonId": 129,
+        "languageId": 1,
+        "genus": "さかなポケモン"
+    },
+    {
+        "pokemonId": 129,
+        "languageId": 2,
+        "genus": "Fish Pokémon"
+    },
+    {
+        "pokemonId": 130,
+        "languageId": 1,
+        "genus": "きょうあくポケモン"
+    },
+    {
+        "pokemonId": 130,
+        "languageId": 2,
+        "genus": "Atrocious Pokémon"
+    },
+    {
+        "pokemonId": 131,
+        "languageId": 1,
+        "genus": "のりものポケモン"
+    },
+    {
+        "pokemonId": 131,
+        "languageId": 2,
+        "genus": "Transport Pokémon"
+    },
+    {
+        "pokemonId": 132,
+        "languageId": 1,
+        "genus": "へんしんポケモン"
+    },
+    {
+        "pokemonId": 132,
+        "languageId": 2,
+        "genus": "Transform Pokémon"
+    },
+    {
+        "pokemonId": 133,
+        "languageId": 1,
+        "genus": "しんかポケモン"
+    },
+    {
+        "pokemonId": 133,
+        "languageId": 2,
+        "genus": "Evolution Pokémon"
+    },
+    {
+        "pokemonId": 134,
+        "languageId": 1,
+        "genus": "あわはきポケモン"
+    },
+    {
+        "pokemonId": 134,
+        "languageId": 2,
+        "genus": "Bubble Jet Pokémon"
+    },
+    {
+        "pokemonId": 135,
+        "languageId": 1,
+        "genus": "かみなりポケモン"
+    },
+    {
+        "pokemonId": 135,
+        "languageId": 2,
+        "genus": "Lightning Pokémon"
+    },
+    {
+        "pokemonId": 136,
+        "languageId": 1,
+        "genus": "ほのおポケモン"
+    },
+    {
+        "pokemonId": 136,
+        "languageId": 2,
+        "genus": "Flame Pokémon"
+    },
+    {
+        "pokemonId": 137,
+        "languageId": 1,
+        "genus": "バーチャルポケモン"
+    },
+    {
+        "pokemonId": 137,
+        "languageId": 2,
+        "genus": "Virtual Pokémon"
+    },
+    {
+        "pokemonId": 138,
+        "languageId": 1,
+        "genus": "うずまきポケモン"
+    },
+    {
+        "pokemonId": 138,
+        "languageId": 2,
+        "genus": "Spiral Pokémon"
+    },
+    {
+        "pokemonId": 139,
+        "languageId": 1,
+        "genus": "うずまきポケモン"
+    },
+    {
+        "pokemonId": 139,
+        "languageId": 2,
+        "genus": "Spiral Pokémon"
+    },
+    {
+        "pokemonId": 140,
+        "languageId": 1,
+        "genus": "こうらポケモン"
+    },
+    {
+        "pokemonId": 140,
+        "languageId": 2,
+        "genus": "Shellfish Pokémon"
+    },
+    {
+        "pokemonId": 141,
+        "languageId": 1,
+        "genus": "こうらポケモン"
+    },
+    {
+        "pokemonId": 141,
+        "languageId": 2,
+        "genus": "Shellfish Pokémon"
+    },
+    {
+        "pokemonId": 142,
+        "languageId": 1,
+        "genus": "かせきポケモン"
+    },
+    {
+        "pokemonId": 142,
+        "languageId": 2,
+        "genus": "Fossil Pokémon"
+    },
+    {
+        "pokemonId": 143,
+        "languageId": 1,
+        "genus": "いねむりポケモン"
+    },
+    {
+        "pokemonId": 143,
+        "languageId": 2,
+        "genus": "Sleeping Pokémon"
+    },
+    {
+        "pokemonId": 144,
+        "languageId": 1,
+        "genus": "れいとうポケモン"
+    },
+    {
+        "pokemonId": 144,
+        "languageId": 2,
+        "genus": "Freeze Pokémon"
+    },
+    {
+        "pokemonId": 145,
+        "languageId": 1,
+        "genus": "でんげきポケモン"
+    },
+    {
+        "pokemonId": 145,
+        "languageId": 2,
+        "genus": "Electric Pokémon"
+    },
+    {
+        "pokemonId": 146,
+        "languageId": 1,
+        "genus": "かえんポケモン"
+    },
+    {
+        "pokemonId": 146,
+        "languageId": 2,
+        "genus": "Flame Pokémon"
+    },
+    {
+        "pokemonId": 147,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 147,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 148,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 148,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 149,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 149,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 150,
+        "languageId": 1,
+        "genus": "いでんしポケモン"
+    },
+    {
+        "pokemonId": 150,
+        "languageId": 2,
+        "genus": "Genetic Pokémon"
+    },
+    {
+        "pokemonId": 151,
+        "languageId": 1,
+        "genus": "しんしゅポケモン"
+    },
+    {
+        "pokemonId": 151,
+        "languageId": 2,
+        "genus": "New Species Pokémon"
+    },
+    {
+        "pokemonId": 152,
+        "languageId": 1,
+        "genus": "はっぱポケモン"
+    },
+    {
+        "pokemonId": 152,
+        "languageId": 2,
+        "genus": "Leaf Pokémon"
+    },
+    {
+        "pokemonId": 153,
+        "languageId": 1,
+        "genus": "はっぱポケモン"
+    },
+    {
+        "pokemonId": 153,
+        "languageId": 2,
+        "genus": "Leaf Pokémon"
+    },
+    {
+        "pokemonId": 154,
+        "languageId": 1,
+        "genus": "ハーブポケモン"
+    },
+    {
+        "pokemonId": 154,
+        "languageId": 2,
+        "genus": "Herb Pokémon"
+    },
+    {
+        "pokemonId": 155,
+        "languageId": 1,
+        "genus": "ひねずみポケモン"
+    },
+    {
+        "pokemonId": 155,
+        "languageId": 2,
+        "genus": "Fire Mouse Pokémon"
+    },
+    {
+        "pokemonId": 156,
+        "languageId": 1,
+        "genus": "かざんポケモン"
+    },
+    {
+        "pokemonId": 156,
+        "languageId": 2,
+        "genus": "Volcano Pokémon"
+    },
+    {
+        "pokemonId": 157,
+        "languageId": 1,
+        "genus": "かざんポケモン"
+    },
+    {
+        "pokemonId": 157,
+        "languageId": 2,
+        "genus": "Volcano Pokémon"
+    },
+    {
+        "pokemonId": 158,
+        "languageId": 1,
+        "genus": "おおあごポケモン"
+    },
+    {
+        "pokemonId": 158,
+        "languageId": 2,
+        "genus": "Big Jaw Pokémon"
+    },
+    {
+        "pokemonId": 159,
+        "languageId": 1,
+        "genus": "おおあごポケモン"
+    },
+    {
+        "pokemonId": 159,
+        "languageId": 2,
+        "genus": "Big Jaw Pokémon"
+    },
+    {
+        "pokemonId": 160,
+        "languageId": 1,
+        "genus": "おおあごポケモン"
+    },
+    {
+        "pokemonId": 160,
+        "languageId": 2,
+        "genus": "Big Jaw Pokémon"
+    },
+    {
+        "pokemonId": 161,
+        "languageId": 1,
+        "genus": "みはりポケモン"
+    },
+    {
+        "pokemonId": 161,
+        "languageId": 2,
+        "genus": "Scout Pokémon"
+    },
+    {
+        "pokemonId": 162,
+        "languageId": 1,
+        "genus": "どうながポケモン"
+    },
+    {
+        "pokemonId": 162,
+        "languageId": 2,
+        "genus": "Long Body Pokémon"
+    },
+    {
+        "pokemonId": 163,
+        "languageId": 1,
+        "genus": "ふくろうポケモン"
+    },
+    {
+        "pokemonId": 163,
+        "languageId": 2,
+        "genus": "Owl Pokémon"
+    },
+    {
+        "pokemonId": 164,
+        "languageId": 1,
+        "genus": "ふくろうポケモン"
+    },
+    {
+        "pokemonId": 164,
+        "languageId": 2,
+        "genus": "Owl Pokémon"
+    },
+    {
+        "pokemonId": 165,
+        "languageId": 1,
+        "genus": "いつつぼしポケモン"
+    },
+    {
+        "pokemonId": 165,
+        "languageId": 2,
+        "genus": "Five Star Pokémon"
+    },
+    {
+        "pokemonId": 166,
+        "languageId": 1,
+        "genus": "いつつぼしポケモン"
+    },
+    {
+        "pokemonId": 166,
+        "languageId": 2,
+        "genus": "Five Star Pokémon"
+    },
+    {
+        "pokemonId": 167,
+        "languageId": 1,
+        "genus": "いとはきポケモン"
+    },
+    {
+        "pokemonId": 167,
+        "languageId": 2,
+        "genus": "String Spit Pokémon"
+    },
+    {
+        "pokemonId": 168,
+        "languageId": 1,
+        "genus": "あしながポケモン"
+    },
+    {
+        "pokemonId": 168,
+        "languageId": 2,
+        "genus": "Long Leg Pokémon"
+    },
+    {
+        "pokemonId": 169,
+        "languageId": 1,
+        "genus": "こうもりポケモン"
+    },
+    {
+        "pokemonId": 169,
+        "languageId": 2,
+        "genus": "Bat Pokémon"
+    },
+    {
+        "pokemonId": 170,
+        "languageId": 1,
+        "genus": "あんこうポケモン"
+    },
+    {
+        "pokemonId": 170,
+        "languageId": 2,
+        "genus": "Angler Pokémon"
+    },
+    {
+        "pokemonId": 171,
+        "languageId": 1,
+        "genus": "ライトポケモン"
+    },
+    {
+        "pokemonId": 171,
+        "languageId": 2,
+        "genus": "Light Pokémon"
+    },
+    {
+        "pokemonId": 172,
+        "languageId": 1,
+        "genus": "こねずみポケモン"
+    },
+    {
+        "pokemonId": 172,
+        "languageId": 2,
+        "genus": "Tiny Mouse Pokémon"
+    },
+    {
+        "pokemonId": 173,
+        "languageId": 1,
+        "genus": "ほしがたポケモン"
+    },
+    {
+        "pokemonId": 173,
+        "languageId": 2,
+        "genus": "Star Shape Pokémon"
+    },
+    {
+        "pokemonId": 174,
+        "languageId": 1,
+        "genus": "ふうせんポケモン"
+    },
+    {
+        "pokemonId": 174,
+        "languageId": 2,
+        "genus": "Balloon Pokémon"
+    },
+    {
+        "pokemonId": 175,
+        "languageId": 1,
+        "genus": "はりたまポケモン"
+    },
+    {
+        "pokemonId": 175,
+        "languageId": 2,
+        "genus": "Spike Ball Pokémon"
+    },
+    {
+        "pokemonId": 176,
+        "languageId": 1,
+        "genus": "しあわせポケモン"
+    },
+    {
+        "pokemonId": 176,
+        "languageId": 2,
+        "genus": "Happiness Pokémon"
+    },
+    {
+        "pokemonId": 177,
+        "languageId": 1,
+        "genus": "ことりポケモン"
+    },
+    {
+        "pokemonId": 177,
+        "languageId": 2,
+        "genus": "Tiny Bird Pokémon"
+    },
+    {
+        "pokemonId": 178,
+        "languageId": 1,
+        "genus": "せいれいポケモン"
+    },
+    {
+        "pokemonId": 178,
+        "languageId": 2,
+        "genus": "Mystic Pokémon"
+    },
+    {
+        "pokemonId": 179,
+        "languageId": 1,
+        "genus": "わたげポケモン"
+    },
+    {
+        "pokemonId": 179,
+        "languageId": 2,
+        "genus": "Wool Pokémon"
+    },
+    {
+        "pokemonId": 180,
+        "languageId": 1,
+        "genus": "わたげポケモン"
+    },
+    {
+        "pokemonId": 180,
+        "languageId": 2,
+        "genus": "Wool Pokémon"
+    },
+    {
+        "pokemonId": 181,
+        "languageId": 1,
+        "genus": "ライトポケモン"
+    },
+    {
+        "pokemonId": 181,
+        "languageId": 2,
+        "genus": "Light Pokémon"
+    },
+    {
+        "pokemonId": 182,
+        "languageId": 1,
+        "genus": "フラワーポケモン"
+    },
+    {
+        "pokemonId": 182,
+        "languageId": 2,
+        "genus": "Flower Pokémon"
+    },
+    {
+        "pokemonId": 183,
+        "languageId": 1,
+        "genus": "みずねずみポケモン"
+    },
+    {
+        "pokemonId": 183,
+        "languageId": 2,
+        "genus": "Aqua Mouse Pokémon"
+    },
+    {
+        "pokemonId": 184,
+        "languageId": 1,
+        "genus": "みずうさぎポケモン"
+    },
+    {
+        "pokemonId": 184,
+        "languageId": 2,
+        "genus": "Aqua Rabbit Pokémon"
+    },
+    {
+        "pokemonId": 185,
+        "languageId": 1,
+        "genus": "まねポケモン"
+    },
+    {
+        "pokemonId": 185,
+        "languageId": 2,
+        "genus": "Imitation Pokémon"
+    },
+    {
+        "pokemonId": 186,
+        "languageId": 1,
+        "genus": "かえるポケモン"
+    },
+    {
+        "pokemonId": 186,
+        "languageId": 2,
+        "genus": "Frog Pokémon"
+    },
+    {
+        "pokemonId": 187,
+        "languageId": 1,
+        "genus": "わたくさポケモン"
+    },
+    {
+        "pokemonId": 187,
+        "languageId": 2,
+        "genus": "Cottonweed Pokémon"
+    },
+    {
+        "pokemonId": 188,
+        "languageId": 1,
+        "genus": "わたくさポケモン"
+    },
+    {
+        "pokemonId": 188,
+        "languageId": 2,
+        "genus": "Cottonweed Pokémon"
+    },
+    {
+        "pokemonId": 189,
+        "languageId": 1,
+        "genus": "わたくさポケモン"
+    },
+    {
+        "pokemonId": 189,
+        "languageId": 2,
+        "genus": "Cottonweed Pokémon"
+    },
+    {
+        "pokemonId": 190,
+        "languageId": 1,
+        "genus": "おながポケモン"
+    },
+    {
+        "pokemonId": 190,
+        "languageId": 2,
+        "genus": "Long Tail Pokémon"
+    },
+    {
+        "pokemonId": 191,
+        "languageId": 1,
+        "genus": "たねポケモン"
+    },
+    {
+        "pokemonId": 191,
+        "languageId": 2,
+        "genus": "Seed Pokémon"
+    },
+    {
+        "pokemonId": 192,
+        "languageId": 1,
+        "genus": "たいようポケモン"
+    },
+    {
+        "pokemonId": 192,
+        "languageId": 2,
+        "genus": "Sun Pokémon"
+    },
+    {
+        "pokemonId": 193,
+        "languageId": 1,
+        "genus": "うすばねポケモン"
+    },
+    {
+        "pokemonId": 193,
+        "languageId": 2,
+        "genus": "Clear Wing Pokémon"
+    },
+    {
+        "pokemonId": 194,
+        "languageId": 1,
+        "genus": "みずうおポケモン"
+    },
+    {
+        "pokemonId": 194,
+        "languageId": 2,
+        "genus": "Water Fish Pokémon"
+    },
+    {
+        "pokemonId": 195,
+        "languageId": 1,
+        "genus": "みずうおポケモン"
+    },
+    {
+        "pokemonId": 195,
+        "languageId": 2,
+        "genus": "Water Fish Pokémon"
+    },
+    {
+        "pokemonId": 196,
+        "languageId": 1,
+        "genus": "たいようポケモン"
+    },
+    {
+        "pokemonId": 196,
+        "languageId": 2,
+        "genus": "Sun Pokémon"
+    },
+    {
+        "pokemonId": 197,
+        "languageId": 1,
+        "genus": "げっこうポケモン"
+    },
+    {
+        "pokemonId": 197,
+        "languageId": 2,
+        "genus": "Moonlight Pokémon"
+    },
+    {
+        "pokemonId": 198,
+        "languageId": 1,
+        "genus": "くらやみポケモン"
+    },
+    {
+        "pokemonId": 198,
+        "languageId": 2,
+        "genus": "Darkness Pokémon"
+    },
+    {
+        "pokemonId": 199,
+        "languageId": 1,
+        "genus": "おうじゃポケモン"
+    },
+    {
+        "pokemonId": 199,
+        "languageId": 2,
+        "genus": "Royal Pokémon"
+    },
+    {
+        "pokemonId": 200,
+        "languageId": 1,
+        "genus": "よなきポケモン"
+    },
+    {
+        "pokemonId": 200,
+        "languageId": 2,
+        "genus": "Screech Pokémon"
+    },
+    {
+        "pokemonId": 201,
+        "languageId": 1,
+        "genus": "シンボルポケモン"
+    },
+    {
+        "pokemonId": 201,
+        "languageId": 2,
+        "genus": "Symbol Pokémon"
+    },
+    {
+        "pokemonId": 202,
+        "languageId": 1,
+        "genus": "がまんポケモン"
+    },
+    {
+        "pokemonId": 202,
+        "languageId": 2,
+        "genus": "Patient Pokémon"
+    },
+    {
+        "pokemonId": 203,
+        "languageId": 1,
+        "genus": "くびながポケモン"
+    },
+    {
+        "pokemonId": 203,
+        "languageId": 2,
+        "genus": "Long Neck Pokémon"
+    },
+    {
+        "pokemonId": 204,
+        "languageId": 1,
+        "genus": "みのむしポケモン"
+    },
+    {
+        "pokemonId": 204,
+        "languageId": 2,
+        "genus": "Bagworm Pokémon"
+    },
+    {
+        "pokemonId": 205,
+        "languageId": 1,
+        "genus": "みのむしポケモン"
+    },
+    {
+        "pokemonId": 205,
+        "languageId": 2,
+        "genus": "Bagworm Pokémon"
+    },
+    {
+        "pokemonId": 206,
+        "languageId": 1,
+        "genus": "つちへびポケモン"
+    },
+    {
+        "pokemonId": 206,
+        "languageId": 2,
+        "genus": "Land Snake Pokémon"
+    },
+    {
+        "pokemonId": 207,
+        "languageId": 1,
+        "genus": "とびさそりポケモン"
+    },
+    {
+        "pokemonId": 207,
+        "languageId": 2,
+        "genus": "Fly Scorpion Pokémon"
+    },
+    {
+        "pokemonId": 208,
+        "languageId": 1,
+        "genus": "てつへびポケモン"
+    },
+    {
+        "pokemonId": 208,
+        "languageId": 2,
+        "genus": "Iron Snake Pokémon"
+    },
+    {
+        "pokemonId": 209,
+        "languageId": 1,
+        "genus": "ようせいポケモン"
+    },
+    {
+        "pokemonId": 209,
+        "languageId": 2,
+        "genus": "Fairy Pokémon"
+    },
+    {
+        "pokemonId": 210,
+        "languageId": 1,
+        "genus": "ようせいポケモン"
+    },
+    {
+        "pokemonId": 210,
+        "languageId": 2,
+        "genus": "Fairy Pokémon"
+    },
+    {
+        "pokemonId": 211,
+        "languageId": 1,
+        "genus": "ふうせんポケモン"
+    },
+    {
+        "pokemonId": 211,
+        "languageId": 2,
+        "genus": "Balloon Pokémon"
+    },
+    {
+        "pokemonId": 212,
+        "languageId": 1,
+        "genus": "はさみポケモン"
+    },
+    {
+        "pokemonId": 212,
+        "languageId": 2,
+        "genus": "Pincer Pokémon"
+    },
+    {
+        "pokemonId": 213,
+        "languageId": 1,
+        "genus": "はっこうポケモン"
+    },
+    {
+        "pokemonId": 213,
+        "languageId": 2,
+        "genus": "Mold Pokémon"
+    },
+    {
+        "pokemonId": 214,
+        "languageId": 1,
+        "genus": "１ぽんヅノポケモン"
+    },
+    {
+        "pokemonId": 214,
+        "languageId": 2,
+        "genus": "Single Horn Pokémon"
+    },
+    {
+        "pokemonId": 215,
+        "languageId": 1,
+        "genus": "かぎづめポケモン"
+    },
+    {
+        "pokemonId": 215,
+        "languageId": 2,
+        "genus": "Sharp Claw Pokémon"
+    },
+    {
+        "pokemonId": 216,
+        "languageId": 1,
+        "genus": "こぐまポケモン"
+    },
+    {
+        "pokemonId": 216,
+        "languageId": 2,
+        "genus": "Little Bear Pokémon"
+    },
+    {
+        "pokemonId": 217,
+        "languageId": 1,
+        "genus": "とうみんポケモン"
+    },
+    {
+        "pokemonId": 217,
+        "languageId": 2,
+        "genus": "Hibernator Pokémon"
+    },
+    {
+        "pokemonId": 218,
+        "languageId": 1,
+        "genus": "ようがんポケモン"
+    },
+    {
+        "pokemonId": 218,
+        "languageId": 2,
+        "genus": "Lava Pokémon"
+    },
+    {
+        "pokemonId": 219,
+        "languageId": 1,
+        "genus": "ようがんポケモン"
+    },
+    {
+        "pokemonId": 219,
+        "languageId": 2,
+        "genus": "Lava Pokémon"
+    },
+    {
+        "pokemonId": 220,
+        "languageId": 1,
+        "genus": "いのぶたポケモン"
+    },
+    {
+        "pokemonId": 220,
+        "languageId": 2,
+        "genus": "Pig Pokémon"
+    },
+    {
+        "pokemonId": 221,
+        "languageId": 1,
+        "genus": "いのししポケモン"
+    },
+    {
+        "pokemonId": 221,
+        "languageId": 2,
+        "genus": "Swine Pokémon"
+    },
+    {
+        "pokemonId": 222,
+        "languageId": 1,
+        "genus": "さんごポケモン"
+    },
+    {
+        "pokemonId": 222,
+        "languageId": 2,
+        "genus": "Coral Pokémon"
+    },
+    {
+        "pokemonId": 223,
+        "languageId": 1,
+        "genus": "ふんしゃポケモン"
+    },
+    {
+        "pokemonId": 223,
+        "languageId": 2,
+        "genus": "Jet Pokémon"
+    },
+    {
+        "pokemonId": 224,
+        "languageId": 1,
+        "genus": "ふんしゃポケモン"
+    },
+    {
+        "pokemonId": 224,
+        "languageId": 2,
+        "genus": "Jet Pokémon"
+    },
+    {
+        "pokemonId": 225,
+        "languageId": 1,
+        "genus": "はこびやポケモン"
+    },
+    {
+        "pokemonId": 225,
+        "languageId": 2,
+        "genus": "Delivery Pokémon"
+    },
+    {
+        "pokemonId": 226,
+        "languageId": 1,
+        "genus": "カイトポケモン"
+    },
+    {
+        "pokemonId": 226,
+        "languageId": 2,
+        "genus": "Kite Pokémon"
+    },
+    {
+        "pokemonId": 227,
+        "languageId": 1,
+        "genus": "よろいどりポケモン"
+    },
+    {
+        "pokemonId": 227,
+        "languageId": 2,
+        "genus": "Armor Bird Pokémon"
+    },
+    {
+        "pokemonId": 228,
+        "languageId": 1,
+        "genus": "ダークポケモン"
+    },
+    {
+        "pokemonId": 228,
+        "languageId": 2,
+        "genus": "Dark Pokémon"
+    },
+    {
+        "pokemonId": 229,
+        "languageId": 1,
+        "genus": "ダークポケモン"
+    },
+    {
+        "pokemonId": 229,
+        "languageId": 2,
+        "genus": "Dark Pokémon"
+    },
+    {
+        "pokemonId": 230,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 230,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 231,
+        "languageId": 1,
+        "genus": "ながはなポケモン"
+    },
+    {
+        "pokemonId": 231,
+        "languageId": 2,
+        "genus": "Long Nose Pokémon"
+    },
+    {
+        "pokemonId": 232,
+        "languageId": 1,
+        "genus": "よろいポケモン"
+    },
+    {
+        "pokemonId": 232,
+        "languageId": 2,
+        "genus": "Armor Pokémon"
+    },
+    {
+        "pokemonId": 233,
+        "languageId": 1,
+        "genus": "バーチャルポケモン"
+    },
+    {
+        "pokemonId": 233,
+        "languageId": 2,
+        "genus": "Virtual Pokémon"
+    },
+    {
+        "pokemonId": 234,
+        "languageId": 1,
+        "genus": "おおツノポケモン"
+    },
+    {
+        "pokemonId": 234,
+        "languageId": 2,
+        "genus": "Big Horn Pokémon"
+    },
+    {
+        "pokemonId": 235,
+        "languageId": 1,
+        "genus": "えかきポケモン"
+    },
+    {
+        "pokemonId": 235,
+        "languageId": 2,
+        "genus": "Painter Pokémon"
+    },
+    {
+        "pokemonId": 236,
+        "languageId": 1,
+        "genus": "けんかポケモン"
+    },
+    {
+        "pokemonId": 236,
+        "languageId": 2,
+        "genus": "Scuffle Pokémon"
+    },
+    {
+        "pokemonId": 237,
+        "languageId": 1,
+        "genus": "さかだちポケモン"
+    },
+    {
+        "pokemonId": 237,
+        "languageId": 2,
+        "genus": "Handstand Pokémon"
+    },
+    {
+        "pokemonId": 238,
+        "languageId": 1,
+        "genus": "くちづけポケモン"
+    },
+    {
+        "pokemonId": 238,
+        "languageId": 2,
+        "genus": "Kiss Pokémon"
+    },
+    {
+        "pokemonId": 239,
+        "languageId": 1,
+        "genus": "でんきポケモン"
+    },
+    {
+        "pokemonId": 239,
+        "languageId": 2,
+        "genus": "Electric Pokémon"
+    },
+    {
+        "pokemonId": 240,
+        "languageId": 1,
+        "genus": "ひだねポケモン"
+    },
+    {
+        "pokemonId": 240,
+        "languageId": 2,
+        "genus": "Live Coal Pokémon"
+    },
+    {
+        "pokemonId": 241,
+        "languageId": 1,
+        "genus": "ちちうしポケモン"
+    },
+    {
+        "pokemonId": 241,
+        "languageId": 2,
+        "genus": "Milk Cow Pokémon"
+    },
+    {
+        "pokemonId": 242,
+        "languageId": 1,
+        "genus": "しあわせポケモン"
+    },
+    {
+        "pokemonId": 242,
+        "languageId": 2,
+        "genus": "Happiness Pokémon"
+    },
+    {
+        "pokemonId": 243,
+        "languageId": 1,
+        "genus": "いかずちポケモン"
+    },
+    {
+        "pokemonId": 243,
+        "languageId": 2,
+        "genus": "Thunder Pokémon"
+    },
+    {
+        "pokemonId": 244,
+        "languageId": 1,
+        "genus": "かざんポケモン"
+    },
+    {
+        "pokemonId": 244,
+        "languageId": 2,
+        "genus": "Volcano Pokémon"
+    },
+    {
+        "pokemonId": 245,
+        "languageId": 1,
+        "genus": "オーロラポケモン"
+    },
+    {
+        "pokemonId": 245,
+        "languageId": 2,
+        "genus": "Aurora Pokémon"
+    },
+    {
+        "pokemonId": 246,
+        "languageId": 1,
+        "genus": "いわはだポケモン"
+    },
+    {
+        "pokemonId": 246,
+        "languageId": 2,
+        "genus": "Rock Skin Pokémon"
+    },
+    {
+        "pokemonId": 247,
+        "languageId": 1,
+        "genus": "だんがんポケモン"
+    },
+    {
+        "pokemonId": 247,
+        "languageId": 2,
+        "genus": "Hard Shell Pokémon"
+    },
+    {
+        "pokemonId": 248,
+        "languageId": 1,
+        "genus": "よろいポケモン"
+    },
+    {
+        "pokemonId": 248,
+        "languageId": 2,
+        "genus": "Armor Pokémon"
+    },
+    {
+        "pokemonId": 249,
+        "languageId": 1,
+        "genus": "せんすいポケモン"
+    },
+    {
+        "pokemonId": 249,
+        "languageId": 2,
+        "genus": "Diving Pokémon"
+    },
+    {
+        "pokemonId": 250,
+        "languageId": 1,
+        "genus": "にじいろポケモン"
+    },
+    {
+        "pokemonId": 250,
+        "languageId": 2,
+        "genus": "Rainbow Pokémon"
+    },
+    {
+        "pokemonId": 251,
+        "languageId": 1,
+        "genus": "ときわたりポケモン"
+    },
+    {
+        "pokemonId": 251,
+        "languageId": 2,
+        "genus": "Time Travel Pokémon"
+    },
+    {
+        "pokemonId": 252,
+        "languageId": 1,
+        "genus": "もりトカゲポケモン"
+    },
+    {
+        "pokemonId": 252,
+        "languageId": 2,
+        "genus": "Wood Gecko Pokémon"
+    },
+    {
+        "pokemonId": 253,
+        "languageId": 1,
+        "genus": "もりトカゲポケモン"
+    },
+    {
+        "pokemonId": 253,
+        "languageId": 2,
+        "genus": "Wood Gecko Pokémon"
+    },
+    {
+        "pokemonId": 254,
+        "languageId": 1,
+        "genus": "みつりんポケモン"
+    },
+    {
+        "pokemonId": 254,
+        "languageId": 2,
+        "genus": "Forest Pokémon"
+    },
+    {
+        "pokemonId": 255,
+        "languageId": 1,
+        "genus": "ひよこポケモン"
+    },
+    {
+        "pokemonId": 255,
+        "languageId": 2,
+        "genus": "Chick Pokémon"
+    },
+    {
+        "pokemonId": 256,
+        "languageId": 1,
+        "genus": "わかどりポケモン"
+    },
+    {
+        "pokemonId": 256,
+        "languageId": 2,
+        "genus": "Young Fowl Pokémon"
+    },
+    {
+        "pokemonId": 257,
+        "languageId": 1,
+        "genus": "もうかポケモン"
+    },
+    {
+        "pokemonId": 257,
+        "languageId": 2,
+        "genus": "Blaze Pokémon"
+    },
+    {
+        "pokemonId": 258,
+        "languageId": 1,
+        "genus": "ぬまうおポケモン"
+    },
+    {
+        "pokemonId": 258,
+        "languageId": 2,
+        "genus": "Mud Fish Pokémon"
+    },
+    {
+        "pokemonId": 259,
+        "languageId": 1,
+        "genus": "ぬまうおポケモン"
+    },
+    {
+        "pokemonId": 259,
+        "languageId": 2,
+        "genus": "Mud Fish Pokémon"
+    },
+    {
+        "pokemonId": 260,
+        "languageId": 1,
+        "genus": "ぬまうおポケモン"
+    },
+    {
+        "pokemonId": 260,
+        "languageId": 2,
+        "genus": "Mud Fish Pokémon"
+    },
+    {
+        "pokemonId": 261,
+        "languageId": 1,
+        "genus": "かみつきポケモン"
+    },
+    {
+        "pokemonId": 261,
+        "languageId": 2,
+        "genus": "Bite Pokémon"
+    },
+    {
+        "pokemonId": 262,
+        "languageId": 1,
+        "genus": "かみつきポケモン"
+    },
+    {
+        "pokemonId": 262,
+        "languageId": 2,
+        "genus": "Bite Pokémon"
+    },
+    {
+        "pokemonId": 263,
+        "languageId": 1,
+        "genus": "まめだぬきポケモン"
+    },
+    {
+        "pokemonId": 263,
+        "languageId": 2,
+        "genus": "Tiny Raccoon Pokémon"
+    },
+    {
+        "pokemonId": 264,
+        "languageId": 1,
+        "genus": "とっしんポケモン"
+    },
+    {
+        "pokemonId": 264,
+        "languageId": 2,
+        "genus": "Rushing Pokémon"
+    },
+    {
+        "pokemonId": 265,
+        "languageId": 1,
+        "genus": "いもむしポケモン"
+    },
+    {
+        "pokemonId": 265,
+        "languageId": 2,
+        "genus": "Worm Pokémon"
+    },
+    {
+        "pokemonId": 266,
+        "languageId": 1,
+        "genus": "さなぎポケモン"
+    },
+    {
+        "pokemonId": 266,
+        "languageId": 2,
+        "genus": "Cocoon Pokémon"
+    },
+    {
+        "pokemonId": 267,
+        "languageId": 1,
+        "genus": "ちょうちょポケモン"
+    },
+    {
+        "pokemonId": 267,
+        "languageId": 2,
+        "genus": "Butterfly Pokémon"
+    },
+    {
+        "pokemonId": 268,
+        "languageId": 1,
+        "genus": "さなぎポケモン"
+    },
+    {
+        "pokemonId": 268,
+        "languageId": 2,
+        "genus": "Cocoon Pokémon"
+    },
+    {
+        "pokemonId": 269,
+        "languageId": 1,
+        "genus": "どくがポケモン"
+    },
+    {
+        "pokemonId": 269,
+        "languageId": 2,
+        "genus": "Poison Moth Pokémon"
+    },
+    {
+        "pokemonId": 270,
+        "languageId": 1,
+        "genus": "うきくさポケモン"
+    },
+    {
+        "pokemonId": 270,
+        "languageId": 2,
+        "genus": "Water Weed Pokémon"
+    },
+    {
+        "pokemonId": 271,
+        "languageId": 1,
+        "genus": "ようきポケモン"
+    },
+    {
+        "pokemonId": 271,
+        "languageId": 2,
+        "genus": "Jolly Pokémon"
+    },
+    {
+        "pokemonId": 272,
+        "languageId": 1,
+        "genus": "のうてんきポケモン"
+    },
+    {
+        "pokemonId": 272,
+        "languageId": 2,
+        "genus": "Carefree Pokémon"
+    },
+    {
+        "pokemonId": 273,
+        "languageId": 1,
+        "genus": "どんぐりポケモン"
+    },
+    {
+        "pokemonId": 273,
+        "languageId": 2,
+        "genus": "Acorn Pokémon"
+    },
+    {
+        "pokemonId": 274,
+        "languageId": 1,
+        "genus": "いじわるポケモン"
+    },
+    {
+        "pokemonId": 274,
+        "languageId": 2,
+        "genus": "Wily Pokémon"
+    },
+    {
+        "pokemonId": 275,
+        "languageId": 1,
+        "genus": "よこしまポケモン"
+    },
+    {
+        "pokemonId": 275,
+        "languageId": 2,
+        "genus": "Wicked Pokémon"
+    },
+    {
+        "pokemonId": 276,
+        "languageId": 1,
+        "genus": "こツバメポケモン"
+    },
+    {
+        "pokemonId": 276,
+        "languageId": 2,
+        "genus": "Tiny Swallow Pokémon"
+    },
+    {
+        "pokemonId": 277,
+        "languageId": 1,
+        "genus": "ツバメポケモン"
+    },
+    {
+        "pokemonId": 277,
+        "languageId": 2,
+        "genus": "Swallow Pokémon"
+    },
+    {
+        "pokemonId": 278,
+        "languageId": 1,
+        "genus": "うみねこポケモン"
+    },
+    {
+        "pokemonId": 278,
+        "languageId": 2,
+        "genus": "Seagull Pokémon"
+    },
+    {
+        "pokemonId": 279,
+        "languageId": 1,
+        "genus": "みずどりポケモン"
+    },
+    {
+        "pokemonId": 279,
+        "languageId": 2,
+        "genus": "Water Bird Pokémon"
+    },
+    {
+        "pokemonId": 280,
+        "languageId": 1,
+        "genus": "きもちポケモン"
+    },
+    {
+        "pokemonId": 280,
+        "languageId": 2,
+        "genus": "Feeling Pokémon"
+    },
+    {
+        "pokemonId": 281,
+        "languageId": 1,
+        "genus": "かんじょうポケモン"
+    },
+    {
+        "pokemonId": 281,
+        "languageId": 2,
+        "genus": "Emotion Pokémon"
+    },
+    {
+        "pokemonId": 282,
+        "languageId": 1,
+        "genus": "ほうようポケモン"
+    },
+    {
+        "pokemonId": 282,
+        "languageId": 2,
+        "genus": "Embrace Pokémon"
+    },
+    {
+        "pokemonId": 283,
+        "languageId": 1,
+        "genus": "あめんぼポケモン"
+    },
+    {
+        "pokemonId": 283,
+        "languageId": 2,
+        "genus": "Pond Skater Pokémon"
+    },
+    {
+        "pokemonId": 284,
+        "languageId": 1,
+        "genus": "めだまポケモン"
+    },
+    {
+        "pokemonId": 284,
+        "languageId": 2,
+        "genus": "Eyeball Pokémon"
+    },
+    {
+        "pokemonId": 285,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 285,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 286,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 286,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 287,
+        "languageId": 1,
+        "genus": "なまけものポケモン"
+    },
+    {
+        "pokemonId": 287,
+        "languageId": 2,
+        "genus": "Slacker Pokémon"
+    },
+    {
+        "pokemonId": 288,
+        "languageId": 1,
+        "genus": "あばれザルポケモン"
+    },
+    {
+        "pokemonId": 288,
+        "languageId": 2,
+        "genus": "Wild Monkey Pokémon"
+    },
+    {
+        "pokemonId": 289,
+        "languageId": 1,
+        "genus": "ものぐさポケモン"
+    },
+    {
+        "pokemonId": 289,
+        "languageId": 2,
+        "genus": "Lazy Pokémon"
+    },
+    {
+        "pokemonId": 290,
+        "languageId": 1,
+        "genus": "したづみポケモン"
+    },
+    {
+        "pokemonId": 290,
+        "languageId": 2,
+        "genus": "Trainee Pokémon"
+    },
+    {
+        "pokemonId": 291,
+        "languageId": 1,
+        "genus": "しのびポケモン"
+    },
+    {
+        "pokemonId": 291,
+        "languageId": 2,
+        "genus": "Ninja Pokémon"
+    },
+    {
+        "pokemonId": 292,
+        "languageId": 1,
+        "genus": "ぬけがらポケモン"
+    },
+    {
+        "pokemonId": 292,
+        "languageId": 2,
+        "genus": "Shed Pokémon"
+    },
+    {
+        "pokemonId": 293,
+        "languageId": 1,
+        "genus": "ささやきポケモン"
+    },
+    {
+        "pokemonId": 293,
+        "languageId": 2,
+        "genus": "Whisper Pokémon"
+    },
+    {
+        "pokemonId": 294,
+        "languageId": 1,
+        "genus": "おおごえポケモン"
+    },
+    {
+        "pokemonId": 294,
+        "languageId": 2,
+        "genus": "Big Voice Pokémon"
+    },
+    {
+        "pokemonId": 295,
+        "languageId": 1,
+        "genus": "そうおんポケモン"
+    },
+    {
+        "pokemonId": 295,
+        "languageId": 2,
+        "genus": "Loud Noise Pokémon"
+    },
+    {
+        "pokemonId": 296,
+        "languageId": 1,
+        "genus": "こんじょうポケモン"
+    },
+    {
+        "pokemonId": 296,
+        "languageId": 2,
+        "genus": "Guts Pokémon"
+    },
+    {
+        "pokemonId": 297,
+        "languageId": 1,
+        "genus": "つっぱりポケモン"
+    },
+    {
+        "pokemonId": 297,
+        "languageId": 2,
+        "genus": "Arm Thrust Pokémon"
+    },
+    {
+        "pokemonId": 298,
+        "languageId": 1,
+        "genus": "みずたまポケモン"
+    },
+    {
+        "pokemonId": 298,
+        "languageId": 2,
+        "genus": "Polka Dot Pokémon"
+    },
+    {
+        "pokemonId": 299,
+        "languageId": 1,
+        "genus": "コンパスポケモン"
+    },
+    {
+        "pokemonId": 299,
+        "languageId": 2,
+        "genus": "Compass Pokémon"
+    },
+    {
+        "pokemonId": 300,
+        "languageId": 1,
+        "genus": "こねこポケモン"
+    },
+    {
+        "pokemonId": 300,
+        "languageId": 2,
+        "genus": "Kitten Pokémon"
+    },
+    {
+        "pokemonId": 301,
+        "languageId": 1,
+        "genus": "おすましポケモン"
+    },
+    {
+        "pokemonId": 301,
+        "languageId": 2,
+        "genus": "Prim Pokémon"
+    },
+    {
+        "pokemonId": 302,
+        "languageId": 1,
+        "genus": "くらやみポケモン"
+    },
+    {
+        "pokemonId": 302,
+        "languageId": 2,
+        "genus": "Darkness Pokémon"
+    },
+    {
+        "pokemonId": 303,
+        "languageId": 1,
+        "genus": "あざむきポケモン"
+    },
+    {
+        "pokemonId": 303,
+        "languageId": 2,
+        "genus": "Deceiver Pokémon"
+    },
+    {
+        "pokemonId": 304,
+        "languageId": 1,
+        "genus": "てつヨロイポケモン"
+    },
+    {
+        "pokemonId": 304,
+        "languageId": 2,
+        "genus": "Iron Armor Pokémon"
+    },
+    {
+        "pokemonId": 305,
+        "languageId": 1,
+        "genus": "てつヨロイポケモン"
+    },
+    {
+        "pokemonId": 305,
+        "languageId": 2,
+        "genus": "Iron Armor Pokémon"
+    },
+    {
+        "pokemonId": 306,
+        "languageId": 1,
+        "genus": "てつヨロイポケモン"
+    },
+    {
+        "pokemonId": 306,
+        "languageId": 2,
+        "genus": "Iron Armor Pokémon"
+    },
+    {
+        "pokemonId": 307,
+        "languageId": 1,
+        "genus": "めいそうポケモン"
+    },
+    {
+        "pokemonId": 307,
+        "languageId": 2,
+        "genus": "Meditate Pokémon"
+    },
+    {
+        "pokemonId": 308,
+        "languageId": 1,
+        "genus": "めいそうポケモン"
+    },
+    {
+        "pokemonId": 308,
+        "languageId": 2,
+        "genus": "Meditate Pokémon"
+    },
+    {
+        "pokemonId": 309,
+        "languageId": 1,
+        "genus": "いなずまポケモン"
+    },
+    {
+        "pokemonId": 309,
+        "languageId": 2,
+        "genus": "Lightning Pokémon"
+    },
+    {
+        "pokemonId": 310,
+        "languageId": 1,
+        "genus": "ほうでんポケモン"
+    },
+    {
+        "pokemonId": 310,
+        "languageId": 2,
+        "genus": "Discharge Pokémon"
+    },
+    {
+        "pokemonId": 311,
+        "languageId": 1,
+        "genus": "おうえんポケモン"
+    },
+    {
+        "pokemonId": 311,
+        "languageId": 2,
+        "genus": "Cheering Pokémon"
+    },
+    {
+        "pokemonId": 312,
+        "languageId": 1,
+        "genus": "おうえんポケモン"
+    },
+    {
+        "pokemonId": 312,
+        "languageId": 2,
+        "genus": "Cheering Pokémon"
+    },
+    {
+        "pokemonId": 313,
+        "languageId": 1,
+        "genus": "ほたるポケモン"
+    },
+    {
+        "pokemonId": 313,
+        "languageId": 2,
+        "genus": "Firefly Pokémon"
+    },
+    {
+        "pokemonId": 314,
+        "languageId": 1,
+        "genus": "ほたるポケモン"
+    },
+    {
+        "pokemonId": 314,
+        "languageId": 2,
+        "genus": "Firefly Pokémon"
+    },
+    {
+        "pokemonId": 315,
+        "languageId": 1,
+        "genus": "いばらポケモン"
+    },
+    {
+        "pokemonId": 315,
+        "languageId": 2,
+        "genus": "Thorn Pokémon"
+    },
+    {
+        "pokemonId": 316,
+        "languageId": 1,
+        "genus": "いぶくろポケモン"
+    },
+    {
+        "pokemonId": 316,
+        "languageId": 2,
+        "genus": "Stomach Pokémon"
+    },
+    {
+        "pokemonId": 317,
+        "languageId": 1,
+        "genus": "どくぶくろポケモン"
+    },
+    {
+        "pokemonId": 317,
+        "languageId": 2,
+        "genus": "Poison Bag Pokémon"
+    },
+    {
+        "pokemonId": 318,
+        "languageId": 1,
+        "genus": "どうもうポケモン"
+    },
+    {
+        "pokemonId": 318,
+        "languageId": 2,
+        "genus": "Savage Pokémon"
+    },
+    {
+        "pokemonId": 319,
+        "languageId": 1,
+        "genus": "きょうぼうポケモン"
+    },
+    {
+        "pokemonId": 319,
+        "languageId": 2,
+        "genus": "Brutal Pokémon"
+    },
+    {
+        "pokemonId": 320,
+        "languageId": 1,
+        "genus": "たまくじらポケモン"
+    },
+    {
+        "pokemonId": 320,
+        "languageId": 2,
+        "genus": "Ball Whale Pokémon"
+    },
+    {
+        "pokemonId": 321,
+        "languageId": 1,
+        "genus": "うきくじらポケモン"
+    },
+    {
+        "pokemonId": 321,
+        "languageId": 2,
+        "genus": "Float Whale Pokémon"
+    },
+    {
+        "pokemonId": 322,
+        "languageId": 1,
+        "genus": "どんかんポケモン"
+    },
+    {
+        "pokemonId": 322,
+        "languageId": 2,
+        "genus": "Numb Pokémon"
+    },
+    {
+        "pokemonId": 323,
+        "languageId": 1,
+        "genus": "ふんかポケモン"
+    },
+    {
+        "pokemonId": 323,
+        "languageId": 2,
+        "genus": "Eruption Pokémon"
+    },
+    {
+        "pokemonId": 324,
+        "languageId": 1,
+        "genus": "せきたんポケモン"
+    },
+    {
+        "pokemonId": 324,
+        "languageId": 2,
+        "genus": "Coal Pokémon"
+    },
+    {
+        "pokemonId": 325,
+        "languageId": 1,
+        "genus": "とびはねポケモン"
+    },
+    {
+        "pokemonId": 325,
+        "languageId": 2,
+        "genus": "Bounce Pokémon"
+    },
+    {
+        "pokemonId": 326,
+        "languageId": 1,
+        "genus": "あやつりポケモン"
+    },
+    {
+        "pokemonId": 326,
+        "languageId": 2,
+        "genus": "Manipulate Pokémon"
+    },
+    {
+        "pokemonId": 327,
+        "languageId": 1,
+        "genus": "ぶちパンダポケモン"
+    },
+    {
+        "pokemonId": 327,
+        "languageId": 2,
+        "genus": "Spot Panda Pokémon"
+    },
+    {
+        "pokemonId": 328,
+        "languageId": 1,
+        "genus": "ありじごくポケモン"
+    },
+    {
+        "pokemonId": 328,
+        "languageId": 2,
+        "genus": "Ant Pit Pokémon"
+    },
+    {
+        "pokemonId": 329,
+        "languageId": 1,
+        "genus": "しんどうポケモン"
+    },
+    {
+        "pokemonId": 329,
+        "languageId": 2,
+        "genus": "Vibration Pokémon"
+    },
+    {
+        "pokemonId": 330,
+        "languageId": 1,
+        "genus": "せいれいポケモン"
+    },
+    {
+        "pokemonId": 330,
+        "languageId": 2,
+        "genus": "Mystic Pokémon"
+    },
+    {
+        "pokemonId": 331,
+        "languageId": 1,
+        "genus": "サボテンポケモン"
+    },
+    {
+        "pokemonId": 331,
+        "languageId": 2,
+        "genus": "Cactus Pokémon"
+    },
+    {
+        "pokemonId": 332,
+        "languageId": 1,
+        "genus": "カカシぐさポケモン"
+    },
+    {
+        "pokemonId": 332,
+        "languageId": 2,
+        "genus": "Scarecrow Pokémon"
+    },
+    {
+        "pokemonId": 333,
+        "languageId": 1,
+        "genus": "わたどりポケモン"
+    },
+    {
+        "pokemonId": 333,
+        "languageId": 2,
+        "genus": "Cotton Bird Pokémon"
+    },
+    {
+        "pokemonId": 334,
+        "languageId": 1,
+        "genus": "ハミングポケモン"
+    },
+    {
+        "pokemonId": 334,
+        "languageId": 2,
+        "genus": "Humming Pokémon"
+    },
+    {
+        "pokemonId": 335,
+        "languageId": 1,
+        "genus": "ネコイタチポケモン"
+    },
+    {
+        "pokemonId": 335,
+        "languageId": 2,
+        "genus": "Cat Ferret Pokémon"
+    },
+    {
+        "pokemonId": 336,
+        "languageId": 1,
+        "genus": "キバへびポケモン"
+    },
+    {
+        "pokemonId": 336,
+        "languageId": 2,
+        "genus": "Fang Snake Pokémon"
+    },
+    {
+        "pokemonId": 337,
+        "languageId": 1,
+        "genus": "いんせきポケモン"
+    },
+    {
+        "pokemonId": 337,
+        "languageId": 2,
+        "genus": "Meteorite Pokémon"
+    },
+    {
+        "pokemonId": 338,
+        "languageId": 1,
+        "genus": "いんせきポケモン"
+    },
+    {
+        "pokemonId": 338,
+        "languageId": 2,
+        "genus": "Meteorite Pokémon"
+    },
+    {
+        "pokemonId": 339,
+        "languageId": 1,
+        "genus": "ひげうおポケモン"
+    },
+    {
+        "pokemonId": 339,
+        "languageId": 2,
+        "genus": "Whiskers Pokémon"
+    },
+    {
+        "pokemonId": 340,
+        "languageId": 1,
+        "genus": "ひげうおポケモン"
+    },
+    {
+        "pokemonId": 340,
+        "languageId": 2,
+        "genus": "Whiskers Pokémon"
+    },
+    {
+        "pokemonId": 341,
+        "languageId": 1,
+        "genus": "ごろつきポケモン"
+    },
+    {
+        "pokemonId": 341,
+        "languageId": 2,
+        "genus": "Ruffian Pokémon"
+    },
+    {
+        "pokemonId": 342,
+        "languageId": 1,
+        "genus": "ならずものポケモン"
+    },
+    {
+        "pokemonId": 342,
+        "languageId": 2,
+        "genus": "Rogue Pokémon"
+    },
+    {
+        "pokemonId": 343,
+        "languageId": 1,
+        "genus": "どぐうポケモン"
+    },
+    {
+        "pokemonId": 343,
+        "languageId": 2,
+        "genus": "Clay Doll Pokémon"
+    },
+    {
+        "pokemonId": 344,
+        "languageId": 1,
+        "genus": "どぐうポケモン"
+    },
+    {
+        "pokemonId": 344,
+        "languageId": 2,
+        "genus": "Clay Doll Pokémon"
+    },
+    {
+        "pokemonId": 345,
+        "languageId": 1,
+        "genus": "ウミユリポケモン"
+    },
+    {
+        "pokemonId": 345,
+        "languageId": 2,
+        "genus": "Sea Lily Pokémon"
+    },
+    {
+        "pokemonId": 346,
+        "languageId": 1,
+        "genus": "いわつぼポケモン"
+    },
+    {
+        "pokemonId": 346,
+        "languageId": 2,
+        "genus": "Barnacle Pokémon"
+    },
+    {
+        "pokemonId": 347,
+        "languageId": 1,
+        "genus": "むかしエビポケモン"
+    },
+    {
+        "pokemonId": 347,
+        "languageId": 2,
+        "genus": "Old Shrimp Pokémon"
+    },
+    {
+        "pokemonId": 348,
+        "languageId": 1,
+        "genus": "かっちゅうポケモン"
+    },
+    {
+        "pokemonId": 348,
+        "languageId": 2,
+        "genus": "Plate Pokémon"
+    },
+    {
+        "pokemonId": 349,
+        "languageId": 1,
+        "genus": "さかなポケモン"
+    },
+    {
+        "pokemonId": 349,
+        "languageId": 2,
+        "genus": "Fish Pokémon"
+    },
+    {
+        "pokemonId": 350,
+        "languageId": 1,
+        "genus": "いつくしみポケモン"
+    },
+    {
+        "pokemonId": 350,
+        "languageId": 2,
+        "genus": "Tender Pokémon"
+    },
+    {
+        "pokemonId": 351,
+        "languageId": 1,
+        "genus": "てんきポケモン"
+    },
+    {
+        "pokemonId": 351,
+        "languageId": 2,
+        "genus": "Weather Pokémon"
+    },
+    {
+        "pokemonId": 352,
+        "languageId": 1,
+        "genus": "いろへんげポケモン"
+    },
+    {
+        "pokemonId": 352,
+        "languageId": 2,
+        "genus": "Color Swap Pokémon"
+    },
+    {
+        "pokemonId": 353,
+        "languageId": 1,
+        "genus": "にんぎょうポケモン"
+    },
+    {
+        "pokemonId": 353,
+        "languageId": 2,
+        "genus": "Puppet Pokémon"
+    },
+    {
+        "pokemonId": 354,
+        "languageId": 1,
+        "genus": "ぬいぐるみポケモン"
+    },
+    {
+        "pokemonId": 354,
+        "languageId": 2,
+        "genus": "Marionette Pokémon"
+    },
+    {
+        "pokemonId": 355,
+        "languageId": 1,
+        "genus": "おむかえポケモン"
+    },
+    {
+        "pokemonId": 355,
+        "languageId": 2,
+        "genus": "Requiem Pokémon"
+    },
+    {
+        "pokemonId": 356,
+        "languageId": 1,
+        "genus": "てまねきポケモン"
+    },
+    {
+        "pokemonId": 356,
+        "languageId": 2,
+        "genus": "Beckon Pokémon"
+    },
+    {
+        "pokemonId": 357,
+        "languageId": 1,
+        "genus": "フルーツポケモン"
+    },
+    {
+        "pokemonId": 357,
+        "languageId": 2,
+        "genus": "Fruit Pokémon"
+    },
+    {
+        "pokemonId": 358,
+        "languageId": 1,
+        "genus": "ふうりんポケモン"
+    },
+    {
+        "pokemonId": 358,
+        "languageId": 2,
+        "genus": "Wind Chime Pokémon"
+    },
+    {
+        "pokemonId": 359,
+        "languageId": 1,
+        "genus": "わざわいポケモン"
+    },
+    {
+        "pokemonId": 359,
+        "languageId": 2,
+        "genus": "Disaster Pokémon"
+    },
+    {
+        "pokemonId": 360,
+        "languageId": 1,
+        "genus": "ほがらかポケモン"
+    },
+    {
+        "pokemonId": 360,
+        "languageId": 2,
+        "genus": "Bright Pokémon"
+    },
+    {
+        "pokemonId": 361,
+        "languageId": 1,
+        "genus": "ゆきかさポケモン"
+    },
+    {
+        "pokemonId": 361,
+        "languageId": 2,
+        "genus": "Snow Hat Pokémon"
+    },
+    {
+        "pokemonId": 362,
+        "languageId": 1,
+        "genus": "がんめんポケモン"
+    },
+    {
+        "pokemonId": 362,
+        "languageId": 2,
+        "genus": "Face Pokémon"
+    },
+    {
+        "pokemonId": 363,
+        "languageId": 1,
+        "genus": "てたたきポケモン"
+    },
+    {
+        "pokemonId": 363,
+        "languageId": 2,
+        "genus": "Clap Pokémon"
+    },
+    {
+        "pokemonId": 364,
+        "languageId": 1,
+        "genus": "たままわしポケモン"
+    },
+    {
+        "pokemonId": 364,
+        "languageId": 2,
+        "genus": "Ball Roll Pokémon"
+    },
+    {
+        "pokemonId": 365,
+        "languageId": 1,
+        "genus": "こおりわりポケモン"
+    },
+    {
+        "pokemonId": 365,
+        "languageId": 2,
+        "genus": "Ice Break Pokémon"
+    },
+    {
+        "pokemonId": 366,
+        "languageId": 1,
+        "genus": "２まいがいポケモン"
+    },
+    {
+        "pokemonId": 366,
+        "languageId": 2,
+        "genus": "Bivalve Pokémon"
+    },
+    {
+        "pokemonId": 367,
+        "languageId": 1,
+        "genus": "しんかいポケモン"
+    },
+    {
+        "pokemonId": 367,
+        "languageId": 2,
+        "genus": "Deep Sea Pokémon"
+    },
+    {
+        "pokemonId": 368,
+        "languageId": 1,
+        "genus": "なんかいポケモン"
+    },
+    {
+        "pokemonId": 368,
+        "languageId": 2,
+        "genus": "South Sea Pokémon"
+    },
+    {
+        "pokemonId": 369,
+        "languageId": 1,
+        "genus": "ちょうじゅポケモン"
+    },
+    {
+        "pokemonId": 369,
+        "languageId": 2,
+        "genus": "Longevity Pokémon"
+    },
+    {
+        "pokemonId": 370,
+        "languageId": 1,
+        "genus": "ランデブーポケモン"
+    },
+    {
+        "pokemonId": 370,
+        "languageId": 2,
+        "genus": "Rendezvous Pokémon"
+    },
+    {
+        "pokemonId": 371,
+        "languageId": 1,
+        "genus": "いしあたまポケモン"
+    },
+    {
+        "pokemonId": 371,
+        "languageId": 2,
+        "genus": "Rock Head Pokémon"
+    },
+    {
+        "pokemonId": 372,
+        "languageId": 1,
+        "genus": "にんたいポケモン"
+    },
+    {
+        "pokemonId": 372,
+        "languageId": 2,
+        "genus": "Endurance Pokémon"
+    },
+    {
+        "pokemonId": 373,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 373,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 374,
+        "languageId": 1,
+        "genus": "てっきゅうポケモン"
+    },
+    {
+        "pokemonId": 374,
+        "languageId": 2,
+        "genus": "Iron Ball Pokémon"
+    },
+    {
+        "pokemonId": 375,
+        "languageId": 1,
+        "genus": "てつツメポケモン"
+    },
+    {
+        "pokemonId": 375,
+        "languageId": 2,
+        "genus": "Iron Claw Pokémon"
+    },
+    {
+        "pokemonId": 376,
+        "languageId": 1,
+        "genus": "てつあしポケモン"
+    },
+    {
+        "pokemonId": 376,
+        "languageId": 2,
+        "genus": "Iron Leg Pokémon"
+    },
+    {
+        "pokemonId": 377,
+        "languageId": 1,
+        "genus": "いわやまポケモン"
+    },
+    {
+        "pokemonId": 377,
+        "languageId": 2,
+        "genus": "Rock Peak Pokémon"
+    },
+    {
+        "pokemonId": 378,
+        "languageId": 1,
+        "genus": "ひょうざんポケモン"
+    },
+    {
+        "pokemonId": 378,
+        "languageId": 2,
+        "genus": "Iceberg Pokémon"
+    },
+    {
+        "pokemonId": 379,
+        "languageId": 1,
+        "genus": "くろがねポケモン"
+    },
+    {
+        "pokemonId": 379,
+        "languageId": 2,
+        "genus": "Iron Pokémon"
+    },
+    {
+        "pokemonId": 380,
+        "languageId": 1,
+        "genus": "むげんポケモン"
+    },
+    {
+        "pokemonId": 380,
+        "languageId": 2,
+        "genus": "Eon Pokémon"
+    },
+    {
+        "pokemonId": 381,
+        "languageId": 1,
+        "genus": "むげんポケモン"
+    },
+    {
+        "pokemonId": 381,
+        "languageId": 2,
+        "genus": "Eon Pokémon"
+    },
+    {
+        "pokemonId": 382,
+        "languageId": 1,
+        "genus": "かいていポケモン"
+    },
+    {
+        "pokemonId": 382,
+        "languageId": 2,
+        "genus": "Sea Basin Pokémon"
+    },
+    {
+        "pokemonId": 383,
+        "languageId": 1,
+        "genus": "たいりくポケモン"
+    },
+    {
+        "pokemonId": 383,
+        "languageId": 2,
+        "genus": "Continent Pokémon"
+    },
+    {
+        "pokemonId": 384,
+        "languageId": 1,
+        "genus": "てんくうポケモン"
+    },
+    {
+        "pokemonId": 384,
+        "languageId": 2,
+        "genus": "Sky High Pokémon"
+    },
+    {
+        "pokemonId": 385,
+        "languageId": 1,
+        "genus": "ねがいごとポケモン"
+    },
+    {
+        "pokemonId": 385,
+        "languageId": 2,
+        "genus": "Wish Pokémon"
+    },
+    {
+        "pokemonId": 386,
+        "languageId": 1,
+        "genus": "ＤＮＡポケモン"
+    },
+    {
+        "pokemonId": 386,
+        "languageId": 2,
+        "genus": "DNA Pokémon"
+    },
+    {
+        "pokemonId": 387,
+        "languageId": 1,
+        "genus": "わかばポケモン"
+    },
+    {
+        "pokemonId": 387,
+        "languageId": 2,
+        "genus": "Tiny Leaf Pokémon"
+    },
+    {
+        "pokemonId": 388,
+        "languageId": 1,
+        "genus": "こだちポケモン"
+    },
+    {
+        "pokemonId": 388,
+        "languageId": 2,
+        "genus": "Grove Pokémon"
+    },
+    {
+        "pokemonId": 389,
+        "languageId": 1,
+        "genus": "たいりくポケモン"
+    },
+    {
+        "pokemonId": 389,
+        "languageId": 2,
+        "genus": "Continent Pokémon"
+    },
+    {
+        "pokemonId": 390,
+        "languageId": 1,
+        "genus": "こざるポケモン"
+    },
+    {
+        "pokemonId": 390,
+        "languageId": 2,
+        "genus": "Chimp Pokémon"
+    },
+    {
+        "pokemonId": 391,
+        "languageId": 1,
+        "genus": "やんちゃポケモン"
+    },
+    {
+        "pokemonId": 391,
+        "languageId": 2,
+        "genus": "Playful Pokémon"
+    },
+    {
+        "pokemonId": 392,
+        "languageId": 1,
+        "genus": "かえんポケモン"
+    },
+    {
+        "pokemonId": 392,
+        "languageId": 2,
+        "genus": "Flame Pokémon"
+    },
+    {
+        "pokemonId": 393,
+        "languageId": 1,
+        "genus": "ペンギンポケモン"
+    },
+    {
+        "pokemonId": 393,
+        "languageId": 2,
+        "genus": "Penguin Pokémon"
+    },
+    {
+        "pokemonId": 394,
+        "languageId": 1,
+        "genus": "ペンギンポケモン"
+    },
+    {
+        "pokemonId": 394,
+        "languageId": 2,
+        "genus": "Penguin Pokémon"
+    },
+    {
+        "pokemonId": 395,
+        "languageId": 1,
+        "genus": "こうていポケモン"
+    },
+    {
+        "pokemonId": 395,
+        "languageId": 2,
+        "genus": "Emperor Pokémon"
+    },
+    {
+        "pokemonId": 396,
+        "languageId": 1,
+        "genus": "むくどりポケモン"
+    },
+    {
+        "pokemonId": 396,
+        "languageId": 2,
+        "genus": "Starling Pokémon"
+    },
+    {
+        "pokemonId": 397,
+        "languageId": 1,
+        "genus": "むくどりポケモン"
+    },
+    {
+        "pokemonId": 397,
+        "languageId": 2,
+        "genus": "Starling Pokémon"
+    },
+    {
+        "pokemonId": 398,
+        "languageId": 1,
+        "genus": "もうきんポケモン"
+    },
+    {
+        "pokemonId": 398,
+        "languageId": 2,
+        "genus": "Predator Pokémon"
+    },
+    {
+        "pokemonId": 399,
+        "languageId": 1,
+        "genus": "まるねずみポケモン"
+    },
+    {
+        "pokemonId": 399,
+        "languageId": 2,
+        "genus": "Plump Mouse Pokémon"
+    },
+    {
+        "pokemonId": 400,
+        "languageId": 1,
+        "genus": "ビーバーポケモン"
+    },
+    {
+        "pokemonId": 400,
+        "languageId": 2,
+        "genus": "Beaver Pokémon"
+    },
+    {
+        "pokemonId": 401,
+        "languageId": 1,
+        "genus": "こおろぎポケモン"
+    },
+    {
+        "pokemonId": 401,
+        "languageId": 2,
+        "genus": "Cricket Pokémon"
+    },
+    {
+        "pokemonId": 402,
+        "languageId": 1,
+        "genus": "こおろぎポケモン"
+    },
+    {
+        "pokemonId": 402,
+        "languageId": 2,
+        "genus": "Cricket Pokémon"
+    },
+    {
+        "pokemonId": 403,
+        "languageId": 1,
+        "genus": "せんこうポケモン"
+    },
+    {
+        "pokemonId": 403,
+        "languageId": 2,
+        "genus": "Flash Pokémon"
+    },
+    {
+        "pokemonId": 404,
+        "languageId": 1,
+        "genus": "でんこうポケモン"
+    },
+    {
+        "pokemonId": 404,
+        "languageId": 2,
+        "genus": "Spark Pokémon"
+    },
+    {
+        "pokemonId": 405,
+        "languageId": 1,
+        "genus": "がんこうポケモン"
+    },
+    {
+        "pokemonId": 405,
+        "languageId": 2,
+        "genus": "Gleam Eyes Pokémon"
+    },
+    {
+        "pokemonId": 406,
+        "languageId": 1,
+        "genus": "つぼみポケモン"
+    },
+    {
+        "pokemonId": 406,
+        "languageId": 2,
+        "genus": "Bud Pokémon"
+    },
+    {
+        "pokemonId": 407,
+        "languageId": 1,
+        "genus": "ブーケポケモン"
+    },
+    {
+        "pokemonId": 407,
+        "languageId": 2,
+        "genus": "Bouquet Pokémon"
+    },
+    {
+        "pokemonId": 408,
+        "languageId": 1,
+        "genus": "ずつきポケモン"
+    },
+    {
+        "pokemonId": 408,
+        "languageId": 2,
+        "genus": "Head Butt Pokémon"
+    },
+    {
+        "pokemonId": 409,
+        "languageId": 1,
+        "genus": "ずつきポケモン"
+    },
+    {
+        "pokemonId": 409,
+        "languageId": 2,
+        "genus": "Head Butt Pokémon"
+    },
+    {
+        "pokemonId": 410,
+        "languageId": 1,
+        "genus": "シールドポケモン"
+    },
+    {
+        "pokemonId": 410,
+        "languageId": 2,
+        "genus": "Shield Pokémon"
+    },
+    {
+        "pokemonId": 411,
+        "languageId": 1,
+        "genus": "シールドポケモン"
+    },
+    {
+        "pokemonId": 411,
+        "languageId": 2,
+        "genus": "Shield Pokémon"
+    },
+    {
+        "pokemonId": 412,
+        "languageId": 1,
+        "genus": "みのむしポケモン"
+    },
+    {
+        "pokemonId": 412,
+        "languageId": 2,
+        "genus": "Bagworm Pokémon"
+    },
+    {
+        "pokemonId": 413,
+        "languageId": 1,
+        "genus": "みのむしポケモン"
+    },
+    {
+        "pokemonId": 413,
+        "languageId": 2,
+        "genus": "Bagworm Pokémon"
+    },
+    {
+        "pokemonId": 414,
+        "languageId": 1,
+        "genus": "ミノガポケモン"
+    },
+    {
+        "pokemonId": 414,
+        "languageId": 2,
+        "genus": "Moth Pokémon"
+    },
+    {
+        "pokemonId": 415,
+        "languageId": 1,
+        "genus": "はちのこポケモン"
+    },
+    {
+        "pokemonId": 415,
+        "languageId": 2,
+        "genus": "Tiny Bee Pokémon"
+    },
+    {
+        "pokemonId": 416,
+        "languageId": 1,
+        "genus": "はちのすポケモン"
+    },
+    {
+        "pokemonId": 416,
+        "languageId": 2,
+        "genus": "Beehive Pokémon"
+    },
+    {
+        "pokemonId": 417,
+        "languageId": 1,
+        "genus": "でんきりすポケモン"
+    },
+    {
+        "pokemonId": 417,
+        "languageId": 2,
+        "genus": "EleSquirrel Pokémon"
+    },
+    {
+        "pokemonId": 418,
+        "languageId": 1,
+        "genus": "うみイタチポケモン"
+    },
+    {
+        "pokemonId": 418,
+        "languageId": 2,
+        "genus": "Sea Weasel Pokémon"
+    },
+    {
+        "pokemonId": 419,
+        "languageId": 1,
+        "genus": "うみイタチポケモン"
+    },
+    {
+        "pokemonId": 419,
+        "languageId": 2,
+        "genus": "Sea Weasel Pokémon"
+    },
+    {
+        "pokemonId": 420,
+        "languageId": 1,
+        "genus": "さくらんぼポケモン"
+    },
+    {
+        "pokemonId": 420,
+        "languageId": 2,
+        "genus": "Cherry Pokémon"
+    },
+    {
+        "pokemonId": 421,
+        "languageId": 1,
+        "genus": "サクラポケモン"
+    },
+    {
+        "pokemonId": 421,
+        "languageId": 2,
+        "genus": "Blossom Pokémon"
+    },
+    {
+        "pokemonId": 422,
+        "languageId": 1,
+        "genus": "ウミウシポケモン"
+    },
+    {
+        "pokemonId": 422,
+        "languageId": 2,
+        "genus": "Sea Slug Pokémon"
+    },
+    {
+        "pokemonId": 423,
+        "languageId": 1,
+        "genus": "ウミウシポケモン"
+    },
+    {
+        "pokemonId": 423,
+        "languageId": 2,
+        "genus": "Sea Slug Pokémon"
+    },
+    {
+        "pokemonId": 424,
+        "languageId": 1,
+        "genus": "おながポケモン"
+    },
+    {
+        "pokemonId": 424,
+        "languageId": 2,
+        "genus": "Long Tail Pokémon"
+    },
+    {
+        "pokemonId": 425,
+        "languageId": 1,
+        "genus": "ふうせんポケモン"
+    },
+    {
+        "pokemonId": 425,
+        "languageId": 2,
+        "genus": "Balloon Pokémon"
+    },
+    {
+        "pokemonId": 426,
+        "languageId": 1,
+        "genus": "ききゅうポケモン"
+    },
+    {
+        "pokemonId": 426,
+        "languageId": 2,
+        "genus": "Blimp Pokémon"
+    },
+    {
+        "pokemonId": 427,
+        "languageId": 1,
+        "genus": "うさぎポケモン"
+    },
+    {
+        "pokemonId": 427,
+        "languageId": 2,
+        "genus": "Rabbit Pokémon"
+    },
+    {
+        "pokemonId": 428,
+        "languageId": 1,
+        "genus": "うさぎポケモン"
+    },
+    {
+        "pokemonId": 428,
+        "languageId": 2,
+        "genus": "Rabbit Pokémon"
+    },
+    {
+        "pokemonId": 429,
+        "languageId": 1,
+        "genus": "マジカルポケモン"
+    },
+    {
+        "pokemonId": 429,
+        "languageId": 2,
+        "genus": "Magical Pokémon"
+    },
+    {
+        "pokemonId": 430,
+        "languageId": 1,
+        "genus": "おおボスポケモン"
+    },
+    {
+        "pokemonId": 430,
+        "languageId": 2,
+        "genus": "Big Boss Pokémon"
+    },
+    {
+        "pokemonId": 431,
+        "languageId": 1,
+        "genus": "ねこかぶりポケモン"
+    },
+    {
+        "pokemonId": 431,
+        "languageId": 2,
+        "genus": "Catty Pokémon"
+    },
+    {
+        "pokemonId": 432,
+        "languageId": 1,
+        "genus": "とらねこポケモン"
+    },
+    {
+        "pokemonId": 432,
+        "languageId": 2,
+        "genus": "Tiger Cat Pokémon"
+    },
+    {
+        "pokemonId": 433,
+        "languageId": 1,
+        "genus": "すずポケモン"
+    },
+    {
+        "pokemonId": 433,
+        "languageId": 2,
+        "genus": "Bell Pokémon"
+    },
+    {
+        "pokemonId": 434,
+        "languageId": 1,
+        "genus": "スカンクポケモン"
+    },
+    {
+        "pokemonId": 434,
+        "languageId": 2,
+        "genus": "Skunk Pokémon"
+    },
+    {
+        "pokemonId": 435,
+        "languageId": 1,
+        "genus": "スカンクポケモン"
+    },
+    {
+        "pokemonId": 435,
+        "languageId": 2,
+        "genus": "Skunk Pokémon"
+    },
+    {
+        "pokemonId": 436,
+        "languageId": 1,
+        "genus": "せいどうポケモン"
+    },
+    {
+        "pokemonId": 436,
+        "languageId": 2,
+        "genus": "Bronze Pokémon"
+    },
+    {
+        "pokemonId": 437,
+        "languageId": 1,
+        "genus": "どうたくポケモン"
+    },
+    {
+        "pokemonId": 437,
+        "languageId": 2,
+        "genus": "Bronze Bell Pokémon"
+    },
+    {
+        "pokemonId": 438,
+        "languageId": 1,
+        "genus": "ぼんさいポケモン"
+    },
+    {
+        "pokemonId": 438,
+        "languageId": 2,
+        "genus": "Bonsai Pokémon"
+    },
+    {
+        "pokemonId": 439,
+        "languageId": 1,
+        "genus": "マイムポケモン"
+    },
+    {
+        "pokemonId": 439,
+        "languageId": 2,
+        "genus": "Mime Pokémon"
+    },
+    {
+        "pokemonId": 440,
+        "languageId": 1,
+        "genus": "ままごとポケモン"
+    },
+    {
+        "pokemonId": 440,
+        "languageId": 2,
+        "genus": "Playhouse Pokémon"
+    },
+    {
+        "pokemonId": 441,
+        "languageId": 1,
+        "genus": "おんぷポケモン"
+    },
+    {
+        "pokemonId": 441,
+        "languageId": 2,
+        "genus": "Music Note Pokémon"
+    },
+    {
+        "pokemonId": 442,
+        "languageId": 1,
+        "genus": "ふういんポケモン"
+    },
+    {
+        "pokemonId": 442,
+        "languageId": 2,
+        "genus": "Forbidden Pokémon"
+    },
+    {
+        "pokemonId": 443,
+        "languageId": 1,
+        "genus": "りくザメポケモン"
+    },
+    {
+        "pokemonId": 443,
+        "languageId": 2,
+        "genus": "Land Shark Pokémon"
+    },
+    {
+        "pokemonId": 444,
+        "languageId": 1,
+        "genus": "ほらあなポケモン"
+    },
+    {
+        "pokemonId": 444,
+        "languageId": 2,
+        "genus": "Cave Pokémon"
+    },
+    {
+        "pokemonId": 445,
+        "languageId": 1,
+        "genus": "マッハポケモン"
+    },
+    {
+        "pokemonId": 445,
+        "languageId": 2,
+        "genus": "Mach Pokémon"
+    },
+    {
+        "pokemonId": 446,
+        "languageId": 1,
+        "genus": "おおぐいポケモン"
+    },
+    {
+        "pokemonId": 446,
+        "languageId": 2,
+        "genus": "Big Eater Pokémon"
+    },
+    {
+        "pokemonId": 447,
+        "languageId": 1,
+        "genus": "はもんポケモン"
+    },
+    {
+        "pokemonId": 447,
+        "languageId": 2,
+        "genus": "Emanation Pokémon"
+    },
+    {
+        "pokemonId": 448,
+        "languageId": 1,
+        "genus": "はどうポケモン"
+    },
+    {
+        "pokemonId": 448,
+        "languageId": 2,
+        "genus": "Aura Pokémon"
+    },
+    {
+        "pokemonId": 449,
+        "languageId": 1,
+        "genus": "カバポケモン"
+    },
+    {
+        "pokemonId": 449,
+        "languageId": 2,
+        "genus": "Hippo Pokémon"
+    },
+    {
+        "pokemonId": 450,
+        "languageId": 1,
+        "genus": "じゅうりょうポケモン"
+    },
+    {
+        "pokemonId": 450,
+        "languageId": 2,
+        "genus": "Heavyweight Pokémon"
+    },
+    {
+        "pokemonId": 451,
+        "languageId": 1,
+        "genus": "さそりポケモン"
+    },
+    {
+        "pokemonId": 451,
+        "languageId": 2,
+        "genus": "Scorpion Pokémon"
+    },
+    {
+        "pokemonId": 452,
+        "languageId": 1,
+        "genus": "ばけさそりポケモン"
+    },
+    {
+        "pokemonId": 452,
+        "languageId": 2,
+        "genus": "Ogre Scorpion Pokémon"
+    },
+    {
+        "pokemonId": 453,
+        "languageId": 1,
+        "genus": "どくづきポケモン"
+    },
+    {
+        "pokemonId": 453,
+        "languageId": 2,
+        "genus": "Toxic Mouth Pokémon"
+    },
+    {
+        "pokemonId": 454,
+        "languageId": 1,
+        "genus": "どくづきポケモン"
+    },
+    {
+        "pokemonId": 454,
+        "languageId": 2,
+        "genus": "Toxic Mouth Pokémon"
+    },
+    {
+        "pokemonId": 455,
+        "languageId": 1,
+        "genus": "むしとりポケモン"
+    },
+    {
+        "pokemonId": 455,
+        "languageId": 2,
+        "genus": "Bug Catcher Pokémon"
+    },
+    {
+        "pokemonId": 456,
+        "languageId": 1,
+        "genus": "はねうおポケモン"
+    },
+    {
+        "pokemonId": 456,
+        "languageId": 2,
+        "genus": "Wing Fish Pokémon"
+    },
+    {
+        "pokemonId": 457,
+        "languageId": 1,
+        "genus": "ネオンポケモン"
+    },
+    {
+        "pokemonId": 457,
+        "languageId": 2,
+        "genus": "Neon Pokémon"
+    },
+    {
+        "pokemonId": 458,
+        "languageId": 1,
+        "genus": "カイトポケモン"
+    },
+    {
+        "pokemonId": 458,
+        "languageId": 2,
+        "genus": "Kite Pokémon"
+    },
+    {
+        "pokemonId": 459,
+        "languageId": 1,
+        "genus": "じゅひょうポケモン"
+    },
+    {
+        "pokemonId": 459,
+        "languageId": 2,
+        "genus": "Frost Tree Pokémon"
+    },
+    {
+        "pokemonId": 460,
+        "languageId": 1,
+        "genus": "じゅひょうポケモン"
+    },
+    {
+        "pokemonId": 460,
+        "languageId": 2,
+        "genus": "Frost Tree Pokémon"
+    },
+    {
+        "pokemonId": 461,
+        "languageId": 1,
+        "genus": "かぎづめポケモン"
+    },
+    {
+        "pokemonId": 461,
+        "languageId": 2,
+        "genus": "Sharp Claw Pokémon"
+    },
+    {
+        "pokemonId": 462,
+        "languageId": 1,
+        "genus": "じばポケモン"
+    },
+    {
+        "pokemonId": 462,
+        "languageId": 2,
+        "genus": "Magnet Area Pokémon"
+    },
+    {
+        "pokemonId": 463,
+        "languageId": 1,
+        "genus": "なめまわしポケモン"
+    },
+    {
+        "pokemonId": 463,
+        "languageId": 2,
+        "genus": "Licking Pokémon"
+    },
+    {
+        "pokemonId": 464,
+        "languageId": 1,
+        "genus": "ドリルポケモン"
+    },
+    {
+        "pokemonId": 464,
+        "languageId": 2,
+        "genus": "Drill Pokémon"
+    },
+    {
+        "pokemonId": 465,
+        "languageId": 1,
+        "genus": "ツルじょうポケモン"
+    },
+    {
+        "pokemonId": 465,
+        "languageId": 2,
+        "genus": "Vine Pokémon"
+    },
+    {
+        "pokemonId": 466,
+        "languageId": 1,
+        "genus": "らいでんポケモン"
+    },
+    {
+        "pokemonId": 466,
+        "languageId": 2,
+        "genus": "Thunderbolt Pokémon"
+    },
+    {
+        "pokemonId": 467,
+        "languageId": 1,
+        "genus": "ばくえんポケモン"
+    },
+    {
+        "pokemonId": 467,
+        "languageId": 2,
+        "genus": "Blast Pokémon"
+    },
+    {
+        "pokemonId": 468,
+        "languageId": 1,
+        "genus": "しゅくふくポケモン"
+    },
+    {
+        "pokemonId": 468,
+        "languageId": 2,
+        "genus": "Jubilee Pokémon"
+    },
+    {
+        "pokemonId": 469,
+        "languageId": 1,
+        "genus": "オニトンボポケモン"
+    },
+    {
+        "pokemonId": 469,
+        "languageId": 2,
+        "genus": "Ogre Darner Pokémon"
+    },
+    {
+        "pokemonId": 470,
+        "languageId": 1,
+        "genus": "しんりょくポケモン"
+    },
+    {
+        "pokemonId": 470,
+        "languageId": 2,
+        "genus": "Verdant Pokémon"
+    },
+    {
+        "pokemonId": 471,
+        "languageId": 1,
+        "genus": "しんせつポケモン"
+    },
+    {
+        "pokemonId": 471,
+        "languageId": 2,
+        "genus": "Fresh Snow Pokémon"
+    },
+    {
+        "pokemonId": 472,
+        "languageId": 1,
+        "genus": "キバさそりポケモン"
+    },
+    {
+        "pokemonId": 472,
+        "languageId": 2,
+        "genus": "Fang Scorpion Pokémon"
+    },
+    {
+        "pokemonId": 473,
+        "languageId": 1,
+        "genus": "２ほんキバポケモン"
+    },
+    {
+        "pokemonId": 473,
+        "languageId": 2,
+        "genus": "Twin Tusk Pokémon"
+    },
+    {
+        "pokemonId": 474,
+        "languageId": 1,
+        "genus": "バーチャルポケモン"
+    },
+    {
+        "pokemonId": 474,
+        "languageId": 2,
+        "genus": "Virtual Pokémon"
+    },
+    {
+        "pokemonId": 475,
+        "languageId": 1,
+        "genus": "やいばポケモン"
+    },
+    {
+        "pokemonId": 475,
+        "languageId": 2,
+        "genus": "Blade Pokémon"
+    },
+    {
+        "pokemonId": 476,
+        "languageId": 1,
+        "genus": "コンパスポケモン"
+    },
+    {
+        "pokemonId": 476,
+        "languageId": 2,
+        "genus": "Compass Pokémon"
+    },
+    {
+        "pokemonId": 477,
+        "languageId": 1,
+        "genus": "てづかみポケモン"
+    },
+    {
+        "pokemonId": 477,
+        "languageId": 2,
+        "genus": "Gripper Pokémon"
+    },
+    {
+        "pokemonId": 478,
+        "languageId": 1,
+        "genus": "ゆきぐにポケモン"
+    },
+    {
+        "pokemonId": 478,
+        "languageId": 2,
+        "genus": "Snow Land Pokémon"
+    },
+    {
+        "pokemonId": 479,
+        "languageId": 1,
+        "genus": "プラズマポケモン"
+    },
+    {
+        "pokemonId": 479,
+        "languageId": 2,
+        "genus": "Plasma Pokémon"
+    },
+    {
+        "pokemonId": 480,
+        "languageId": 1,
+        "genus": "ちしきポケモン"
+    },
+    {
+        "pokemonId": 480,
+        "languageId": 2,
+        "genus": "Knowledge Pokémon"
+    },
+    {
+        "pokemonId": 481,
+        "languageId": 1,
+        "genus": "かんじょうポケモン"
+    },
+    {
+        "pokemonId": 481,
+        "languageId": 2,
+        "genus": "Emotion Pokémon"
+    },
+    {
+        "pokemonId": 482,
+        "languageId": 1,
+        "genus": "いしポケモン"
+    },
+    {
+        "pokemonId": 482,
+        "languageId": 2,
+        "genus": "Willpower Pokémon"
+    },
+    {
+        "pokemonId": 483,
+        "languageId": 1,
+        "genus": "じかんポケモン"
+    },
+    {
+        "pokemonId": 483,
+        "languageId": 2,
+        "genus": "Temporal Pokémon"
+    },
+    {
+        "pokemonId": 484,
+        "languageId": 1,
+        "genus": "くうかんポケモン"
+    },
+    {
+        "pokemonId": 484,
+        "languageId": 2,
+        "genus": "Spatial Pokémon"
+    },
+    {
+        "pokemonId": 485,
+        "languageId": 1,
+        "genus": "かこうポケモン"
+    },
+    {
+        "pokemonId": 485,
+        "languageId": 2,
+        "genus": "Lava Dome Pokémon"
+    },
+    {
+        "pokemonId": 486,
+        "languageId": 1,
+        "genus": "きょだいポケモン"
+    },
+    {
+        "pokemonId": 486,
+        "languageId": 2,
+        "genus": "Colossal Pokémon"
+    },
+    {
+        "pokemonId": 487,
+        "languageId": 1,
+        "genus": "はんこつポケモン"
+    },
+    {
+        "pokemonId": 487,
+        "languageId": 2,
+        "genus": "Renegade Pokémon"
+    },
+    {
+        "pokemonId": 488,
+        "languageId": 1,
+        "genus": "みかづきポケモン"
+    },
+    {
+        "pokemonId": 488,
+        "languageId": 2,
+        "genus": "Lunar Pokémon"
+    },
+    {
+        "pokemonId": 489,
+        "languageId": 1,
+        "genus": "かいようポケモン"
+    },
+    {
+        "pokemonId": 489,
+        "languageId": 2,
+        "genus": "Sea Drifter Pokémon"
+    },
+    {
+        "pokemonId": 490,
+        "languageId": 1,
+        "genus": "かいゆうポケモン"
+    },
+    {
+        "pokemonId": 490,
+        "languageId": 2,
+        "genus": "Seafaring Pokémon"
+    },
+    {
+        "pokemonId": 491,
+        "languageId": 1,
+        "genus": "あんこくポケモン"
+    },
+    {
+        "pokemonId": 491,
+        "languageId": 2,
+        "genus": "Pitch-Black Pokémon"
+    },
+    {
+        "pokemonId": 492,
+        "languageId": 1,
+        "genus": "かんしゃポケモン"
+    },
+    {
+        "pokemonId": 492,
+        "languageId": 2,
+        "genus": "Gratitude Pokémon"
+    },
+    {
+        "pokemonId": 493,
+        "languageId": 1,
+        "genus": "そうぞうポケモン"
+    },
+    {
+        "pokemonId": 493,
+        "languageId": 2,
+        "genus": "Alpha Pokémon"
+    },
+    {
+        "pokemonId": 494,
+        "languageId": 1,
+        "genus": "しょうりポケモン"
+    },
+    {
+        "pokemonId": 494,
+        "languageId": 2,
+        "genus": "Victory Pokémon"
+    },
+    {
+        "pokemonId": 495,
+        "languageId": 1,
+        "genus": "くさへびポケモン"
+    },
+    {
+        "pokemonId": 495,
+        "languageId": 2,
+        "genus": "Grass Snake Pokémon"
+    },
+    {
+        "pokemonId": 496,
+        "languageId": 1,
+        "genus": "くさへびポケモン"
+    },
+    {
+        "pokemonId": 496,
+        "languageId": 2,
+        "genus": "Grass Snake Pokémon"
+    },
+    {
+        "pokemonId": 497,
+        "languageId": 1,
+        "genus": "ロイヤルポケモン"
+    },
+    {
+        "pokemonId": 497,
+        "languageId": 2,
+        "genus": "Regal Pokémon"
+    },
+    {
+        "pokemonId": 498,
+        "languageId": 1,
+        "genus": "ひぶたポケモン"
+    },
+    {
+        "pokemonId": 498,
+        "languageId": 2,
+        "genus": "Fire Pig Pokémon"
+    },
+    {
+        "pokemonId": 499,
+        "languageId": 1,
+        "genus": "ひぶたポケモン"
+    },
+    {
+        "pokemonId": 499,
+        "languageId": 2,
+        "genus": "Fire Pig Pokémon"
+    },
+    {
+        "pokemonId": 500,
+        "languageId": 1,
+        "genus": "おおひぶたポケモン"
+    },
+    {
+        "pokemonId": 500,
+        "languageId": 2,
+        "genus": "Mega Fire Pig Pokémon"
+    },
+    {
+        "pokemonId": 501,
+        "languageId": 1,
+        "genus": "ラッコポケモン"
+    },
+    {
+        "pokemonId": 501,
+        "languageId": 2,
+        "genus": "Sea Otter Pokémon"
+    },
+    {
+        "pokemonId": 502,
+        "languageId": 1,
+        "genus": "しゅぎょうポケモン"
+    },
+    {
+        "pokemonId": 502,
+        "languageId": 2,
+        "genus": "Discipline Pokémon"
+    },
+    {
+        "pokemonId": 503,
+        "languageId": 1,
+        "genus": "かんろくポケモン"
+    },
+    {
+        "pokemonId": 503,
+        "languageId": 2,
+        "genus": "Formidable Pokémon"
+    },
+    {
+        "pokemonId": 504,
+        "languageId": 1,
+        "genus": "みはりポケモン"
+    },
+    {
+        "pokemonId": 504,
+        "languageId": 2,
+        "genus": "Scout Pokémon"
+    },
+    {
+        "pokemonId": 505,
+        "languageId": 1,
+        "genus": "けいかいポケモン"
+    },
+    {
+        "pokemonId": 505,
+        "languageId": 2,
+        "genus": "Lookout Pokémon"
+    },
+    {
+        "pokemonId": 506,
+        "languageId": 1,
+        "genus": "こいぬポケモン"
+    },
+    {
+        "pokemonId": 506,
+        "languageId": 2,
+        "genus": "Puppy Pokémon"
+    },
+    {
+        "pokemonId": 507,
+        "languageId": 1,
+        "genus": "ちゅうけんポケモン"
+    },
+    {
+        "pokemonId": 507,
+        "languageId": 2,
+        "genus": "Loyal Dog Pokémon"
+    },
+    {
+        "pokemonId": 508,
+        "languageId": 1,
+        "genus": "かんだいポケモン"
+    },
+    {
+        "pokemonId": 508,
+        "languageId": 2,
+        "genus": "Big-Hearted Pokémon"
+    },
+    {
+        "pokemonId": 509,
+        "languageId": 1,
+        "genus": "しょうわるポケモン"
+    },
+    {
+        "pokemonId": 509,
+        "languageId": 2,
+        "genus": "Devious Pokémon"
+    },
+    {
+        "pokemonId": 510,
+        "languageId": 1,
+        "genus": "れいこくポケモン"
+    },
+    {
+        "pokemonId": 510,
+        "languageId": 2,
+        "genus": "Cruel Pokémon"
+    },
+    {
+        "pokemonId": 511,
+        "languageId": 1,
+        "genus": "くさざるポケモン"
+    },
+    {
+        "pokemonId": 511,
+        "languageId": 2,
+        "genus": "Grass Monkey Pokémon"
+    },
+    {
+        "pokemonId": 512,
+        "languageId": 1,
+        "genus": "とげざるポケモン"
+    },
+    {
+        "pokemonId": 512,
+        "languageId": 2,
+        "genus": "Thorn Monkey Pokémon"
+    },
+    {
+        "pokemonId": 513,
+        "languageId": 1,
+        "genus": "こうおんポケモン"
+    },
+    {
+        "pokemonId": 513,
+        "languageId": 2,
+        "genus": "High Temp Pokémon"
+    },
+    {
+        "pokemonId": 514,
+        "languageId": 1,
+        "genus": "ひのこポケモン"
+    },
+    {
+        "pokemonId": 514,
+        "languageId": 2,
+        "genus": "Ember Pokémon"
+    },
+    {
+        "pokemonId": 515,
+        "languageId": 1,
+        "genus": "みずかけポケモン"
+    },
+    {
+        "pokemonId": 515,
+        "languageId": 2,
+        "genus": "Spray Pokémon"
+    },
+    {
+        "pokemonId": 516,
+        "languageId": 1,
+        "genus": "ほうすいポケモン"
+    },
+    {
+        "pokemonId": 516,
+        "languageId": 2,
+        "genus": "Geyser Pokémon"
+    },
+    {
+        "pokemonId": 517,
+        "languageId": 1,
+        "genus": "ゆめくいポケモン"
+    },
+    {
+        "pokemonId": 517,
+        "languageId": 2,
+        "genus": "Dream Eater Pokémon"
+    },
+    {
+        "pokemonId": 518,
+        "languageId": 1,
+        "genus": "ゆめうつつポケモン"
+    },
+    {
+        "pokemonId": 518,
+        "languageId": 2,
+        "genus": "Drowsing Pokémon"
+    },
+    {
+        "pokemonId": 519,
+        "languageId": 1,
+        "genus": "こばとポケモン"
+    },
+    {
+        "pokemonId": 519,
+        "languageId": 2,
+        "genus": "Tiny Pigeon Pokémon"
+    },
+    {
+        "pokemonId": 520,
+        "languageId": 1,
+        "genus": "のばとポケモン"
+    },
+    {
+        "pokemonId": 520,
+        "languageId": 2,
+        "genus": "Wild Pigeon Pokémon"
+    },
+    {
+        "pokemonId": 521,
+        "languageId": 1,
+        "genus": "プライドポケモン"
+    },
+    {
+        "pokemonId": 521,
+        "languageId": 2,
+        "genus": "Proud Pokémon"
+    },
+    {
+        "pokemonId": 522,
+        "languageId": 1,
+        "genus": "たいでんポケモン"
+    },
+    {
+        "pokemonId": 522,
+        "languageId": 2,
+        "genus": "Electrified Pokémon"
+    },
+    {
+        "pokemonId": 523,
+        "languageId": 1,
+        "genus": "らいでんポケモン"
+    },
+    {
+        "pokemonId": 523,
+        "languageId": 2,
+        "genus": "Thunderbolt Pokémon"
+    },
+    {
+        "pokemonId": 524,
+        "languageId": 1,
+        "genus": "マントルポケモン"
+    },
+    {
+        "pokemonId": 524,
+        "languageId": 2,
+        "genus": "Mantle Pokémon"
+    },
+    {
+        "pokemonId": 525,
+        "languageId": 1,
+        "genus": "こうせきポケモン"
+    },
+    {
+        "pokemonId": 525,
+        "languageId": 2,
+        "genus": "Ore Pokémon"
+    },
+    {
+        "pokemonId": 526,
+        "languageId": 1,
+        "genus": "こうあつポケモン"
+    },
+    {
+        "pokemonId": 526,
+        "languageId": 2,
+        "genus": "Compressed Pokémon"
+    },
+    {
+        "pokemonId": 527,
+        "languageId": 1,
+        "genus": "こうもりポケモン"
+    },
+    {
+        "pokemonId": 527,
+        "languageId": 2,
+        "genus": "Bat Pokémon"
+    },
+    {
+        "pokemonId": 528,
+        "languageId": 1,
+        "genus": "きゅうあいポケモン"
+    },
+    {
+        "pokemonId": 528,
+        "languageId": 2,
+        "genus": "Courting Pokémon"
+    },
+    {
+        "pokemonId": 529,
+        "languageId": 1,
+        "genus": "もぐらポケモン"
+    },
+    {
+        "pokemonId": 529,
+        "languageId": 2,
+        "genus": "Mole Pokémon"
+    },
+    {
+        "pokemonId": 530,
+        "languageId": 1,
+        "genus": "ちていポケモン"
+    },
+    {
+        "pokemonId": 530,
+        "languageId": 2,
+        "genus": "Subterrene Pokémon"
+    },
+    {
+        "pokemonId": 531,
+        "languageId": 1,
+        "genus": "ヒヤリングポケモン"
+    },
+    {
+        "pokemonId": 531,
+        "languageId": 2,
+        "genus": "Hearing Pokémon"
+    },
+    {
+        "pokemonId": 532,
+        "languageId": 1,
+        "genus": "きんこつポケモン"
+    },
+    {
+        "pokemonId": 532,
+        "languageId": 2,
+        "genus": "Muscular Pokémon"
+    },
+    {
+        "pokemonId": 533,
+        "languageId": 1,
+        "genus": "きんこつポケモン"
+    },
+    {
+        "pokemonId": 533,
+        "languageId": 2,
+        "genus": "Muscular Pokémon"
+    },
+    {
+        "pokemonId": 534,
+        "languageId": 1,
+        "genus": "きんこつポケモン"
+    },
+    {
+        "pokemonId": 534,
+        "languageId": 2,
+        "genus": "Muscular Pokémon"
+    },
+    {
+        "pokemonId": 535,
+        "languageId": 1,
+        "genus": "おたまポケモン"
+    },
+    {
+        "pokemonId": 535,
+        "languageId": 2,
+        "genus": "Tadpole Pokémon"
+    },
+    {
+        "pokemonId": 536,
+        "languageId": 1,
+        "genus": "しんどうポケモン"
+    },
+    {
+        "pokemonId": 536,
+        "languageId": 2,
+        "genus": "Vibration Pokémon"
+    },
+    {
+        "pokemonId": 537,
+        "languageId": 1,
+        "genus": "しんどうポケモン"
+    },
+    {
+        "pokemonId": 537,
+        "languageId": 2,
+        "genus": "Vibration Pokémon"
+    },
+    {
+        "pokemonId": 538,
+        "languageId": 1,
+        "genus": "じゅうどうポケモン"
+    },
+    {
+        "pokemonId": 538,
+        "languageId": 2,
+        "genus": "Judo Pokémon"
+    },
+    {
+        "pokemonId": 539,
+        "languageId": 1,
+        "genus": "からてポケモン"
+    },
+    {
+        "pokemonId": 539,
+        "languageId": 2,
+        "genus": "Karate Pokémon"
+    },
+    {
+        "pokemonId": 540,
+        "languageId": 1,
+        "genus": "さいほうポケモン"
+    },
+    {
+        "pokemonId": 540,
+        "languageId": 2,
+        "genus": "Sewing Pokémon"
+    },
+    {
+        "pokemonId": 541,
+        "languageId": 1,
+        "genus": "はごもりポケモン"
+    },
+    {
+        "pokemonId": 541,
+        "languageId": 2,
+        "genus": "Leaf-Wrapped Pokémon"
+    },
+    {
+        "pokemonId": 542,
+        "languageId": 1,
+        "genus": "こそだてポケモン"
+    },
+    {
+        "pokemonId": 542,
+        "languageId": 2,
+        "genus": "Nurturing Pokémon"
+    },
+    {
+        "pokemonId": 543,
+        "languageId": 1,
+        "genus": "ムカデポケモン"
+    },
+    {
+        "pokemonId": 543,
+        "languageId": 2,
+        "genus": "Centipede Pokémon"
+    },
+    {
+        "pokemonId": 544,
+        "languageId": 1,
+        "genus": "まゆムカデポケモン"
+    },
+    {
+        "pokemonId": 544,
+        "languageId": 2,
+        "genus": "Curlipede Pokémon"
+    },
+    {
+        "pokemonId": 545,
+        "languageId": 1,
+        "genus": "メガムカデポケモン"
+    },
+    {
+        "pokemonId": 545,
+        "languageId": 2,
+        "genus": "Megapede Pokémon"
+    },
+    {
+        "pokemonId": 546,
+        "languageId": 1,
+        "genus": "わたたまポケモン"
+    },
+    {
+        "pokemonId": 546,
+        "languageId": 2,
+        "genus": "Cotton Puff Pokémon"
+    },
+    {
+        "pokemonId": 547,
+        "languageId": 1,
+        "genus": "かぜかくれポケモン"
+    },
+    {
+        "pokemonId": 547,
+        "languageId": 2,
+        "genus": "Windveiled Pokémon"
+    },
+    {
+        "pokemonId": 548,
+        "languageId": 1,
+        "genus": "ねっこポケモン"
+    },
+    {
+        "pokemonId": 548,
+        "languageId": 2,
+        "genus": "Bulb Pokémon"
+    },
+    {
+        "pokemonId": 549,
+        "languageId": 1,
+        "genus": "はなかざりポケモン"
+    },
+    {
+        "pokemonId": 549,
+        "languageId": 2,
+        "genus": "Flowering Pokémon"
+    },
+    {
+        "pokemonId": 550,
+        "languageId": 1,
+        "genus": "らんぼうポケモン"
+    },
+    {
+        "pokemonId": 550,
+        "languageId": 2,
+        "genus": "Hostile Pokémon"
+    },
+    {
+        "pokemonId": 551,
+        "languageId": 1,
+        "genus": "さばくワニポケモン"
+    },
+    {
+        "pokemonId": 551,
+        "languageId": 2,
+        "genus": "Desert Croc Pokémon"
+    },
+    {
+        "pokemonId": 552,
+        "languageId": 1,
+        "genus": "さばくワニポケモン"
+    },
+    {
+        "pokemonId": 552,
+        "languageId": 2,
+        "genus": "Desert Croc Pokémon"
+    },
+    {
+        "pokemonId": 553,
+        "languageId": 1,
+        "genus": "いかくポケモン"
+    },
+    {
+        "pokemonId": 553,
+        "languageId": 2,
+        "genus": "Intimidation Pokémon"
+    },
+    {
+        "pokemonId": 554,
+        "languageId": 1,
+        "genus": "だるまポケモン"
+    },
+    {
+        "pokemonId": 554,
+        "languageId": 2,
+        "genus": "Zen Charm Pokémon"
+    },
+    {
+        "pokemonId": 555,
+        "languageId": 1,
+        "genus": "えんじょうポケモン"
+    },
+    {
+        "pokemonId": 555,
+        "languageId": 2,
+        "genus": "Blazing Pokémon"
+    },
+    {
+        "pokemonId": 556,
+        "languageId": 1,
+        "genus": "サボテンポケモン"
+    },
+    {
+        "pokemonId": 556,
+        "languageId": 2,
+        "genus": "Cactus Pokémon"
+    },
+    {
+        "pokemonId": 557,
+        "languageId": 1,
+        "genus": "いしやどポケモン"
+    },
+    {
+        "pokemonId": 557,
+        "languageId": 2,
+        "genus": "Rock Inn Pokémon"
+    },
+    {
+        "pokemonId": 558,
+        "languageId": 1,
+        "genus": "いわやどポケモン"
+    },
+    {
+        "pokemonId": 558,
+        "languageId": 2,
+        "genus": "Stone Home Pokémon"
+    },
+    {
+        "pokemonId": 559,
+        "languageId": 1,
+        "genus": "だっぴポケモン"
+    },
+    {
+        "pokemonId": 559,
+        "languageId": 2,
+        "genus": "Shedding Pokémon"
+    },
+    {
+        "pokemonId": 560,
+        "languageId": 1,
+        "genus": "あくとうポケモン"
+    },
+    {
+        "pokemonId": 560,
+        "languageId": 2,
+        "genus": "Hoodlum Pokémon"
+    },
+    {
+        "pokemonId": 561,
+        "languageId": 1,
+        "genus": "とりもどきポケモン"
+    },
+    {
+        "pokemonId": 561,
+        "languageId": 2,
+        "genus": "Avianoid Pokémon"
+    },
+    {
+        "pokemonId": 562,
+        "languageId": 1,
+        "genus": "たましいポケモン"
+    },
+    {
+        "pokemonId": 562,
+        "languageId": 2,
+        "genus": "Spirit Pokémon"
+    },
+    {
+        "pokemonId": 563,
+        "languageId": 1,
+        "genus": "かんおけポケモン"
+    },
+    {
+        "pokemonId": 563,
+        "languageId": 2,
+        "genus": "Coffin Pokémon"
+    },
+    {
+        "pokemonId": 564,
+        "languageId": 1,
+        "genus": "こだいがめポケモン"
+    },
+    {
+        "pokemonId": 564,
+        "languageId": 2,
+        "genus": "Prototurtle Pokémon"
+    },
+    {
+        "pokemonId": 565,
+        "languageId": 1,
+        "genus": "こだいがめポケモン"
+    },
+    {
+        "pokemonId": 565,
+        "languageId": 2,
+        "genus": "Prototurtle Pokémon"
+    },
+    {
+        "pokemonId": 566,
+        "languageId": 1,
+        "genus": "さいこどりポケモン"
+    },
+    {
+        "pokemonId": 566,
+        "languageId": 2,
+        "genus": "First Bird Pokémon"
+    },
+    {
+        "pokemonId": 567,
+        "languageId": 1,
+        "genus": "さいこどりポケモン"
+    },
+    {
+        "pokemonId": 567,
+        "languageId": 2,
+        "genus": "First Bird Pokémon"
+    },
+    {
+        "pokemonId": 568,
+        "languageId": 1,
+        "genus": "ゴミぶくろポケモン"
+    },
+    {
+        "pokemonId": 568,
+        "languageId": 2,
+        "genus": "Trash Bag Pokémon"
+    },
+    {
+        "pokemonId": 569,
+        "languageId": 1,
+        "genus": "ゴミすてばポケモン"
+    },
+    {
+        "pokemonId": 569,
+        "languageId": 2,
+        "genus": "Trash Heap Pokémon"
+    },
+    {
+        "pokemonId": 570,
+        "languageId": 1,
+        "genus": "わるぎつねポケモン"
+    },
+    {
+        "pokemonId": 570,
+        "languageId": 2,
+        "genus": "Tricky Fox Pokémon"
+    },
+    {
+        "pokemonId": 571,
+        "languageId": 1,
+        "genus": "ばけぎつねポケモン"
+    },
+    {
+        "pokemonId": 571,
+        "languageId": 2,
+        "genus": "Illusion Fox Pokémon"
+    },
+    {
+        "pokemonId": 572,
+        "languageId": 1,
+        "genus": "チンチラポケモン"
+    },
+    {
+        "pokemonId": 572,
+        "languageId": 2,
+        "genus": "Chinchilla Pokémon"
+    },
+    {
+        "pokemonId": 573,
+        "languageId": 1,
+        "genus": "スカーフポケモン"
+    },
+    {
+        "pokemonId": 573,
+        "languageId": 2,
+        "genus": "Scarf Pokémon"
+    },
+    {
+        "pokemonId": 574,
+        "languageId": 1,
+        "genus": "ぎょうしポケモン"
+    },
+    {
+        "pokemonId": 574,
+        "languageId": 2,
+        "genus": "Fixation Pokémon"
+    },
+    {
+        "pokemonId": 575,
+        "languageId": 1,
+        "genus": "あやつりポケモン"
+    },
+    {
+        "pokemonId": 575,
+        "languageId": 2,
+        "genus": "Manipulate Pokémon"
+    },
+    {
+        "pokemonId": 576,
+        "languageId": 1,
+        "genus": "てんたいポケモン"
+    },
+    {
+        "pokemonId": 576,
+        "languageId": 2,
+        "genus": "Astral Body Pokémon"
+    },
+    {
+        "pokemonId": 577,
+        "languageId": 1,
+        "genus": "さいぼうポケモン"
+    },
+    {
+        "pokemonId": 577,
+        "languageId": 2,
+        "genus": "Cell Pokémon"
+    },
+    {
+        "pokemonId": 578,
+        "languageId": 1,
+        "genus": "ぶんかつポケモン"
+    },
+    {
+        "pokemonId": 578,
+        "languageId": 2,
+        "genus": "Mitosis Pokémon"
+    },
+    {
+        "pokemonId": 579,
+        "languageId": 1,
+        "genus": "ぞうふくポケモン"
+    },
+    {
+        "pokemonId": 579,
+        "languageId": 2,
+        "genus": "Multiplying Pokémon"
+    },
+    {
+        "pokemonId": 580,
+        "languageId": 1,
+        "genus": "みずどりポケモン"
+    },
+    {
+        "pokemonId": 580,
+        "languageId": 2,
+        "genus": "Water Bird Pokémon"
+    },
+    {
+        "pokemonId": 581,
+        "languageId": 1,
+        "genus": "しらとりポケモン"
+    },
+    {
+        "pokemonId": 581,
+        "languageId": 2,
+        "genus": "White Bird Pokémon"
+    },
+    {
+        "pokemonId": 582,
+        "languageId": 1,
+        "genus": "しんせつポケモン"
+    },
+    {
+        "pokemonId": 582,
+        "languageId": 2,
+        "genus": "Fresh Snow Pokémon"
+    },
+    {
+        "pokemonId": 583,
+        "languageId": 1,
+        "genus": "ひょうせつポケモン"
+    },
+    {
+        "pokemonId": 583,
+        "languageId": 2,
+        "genus": "Icy Snow Pokémon"
+    },
+    {
+        "pokemonId": 584,
+        "languageId": 1,
+        "genus": "ブリザードポケモン"
+    },
+    {
+        "pokemonId": 584,
+        "languageId": 2,
+        "genus": "Snowstorm Pokémon"
+    },
+    {
+        "pokemonId": 585,
+        "languageId": 1,
+        "genus": "きせつポケモン"
+    },
+    {
+        "pokemonId": 585,
+        "languageId": 2,
+        "genus": "Season Pokémon"
+    },
+    {
+        "pokemonId": 586,
+        "languageId": 1,
+        "genus": "きせつポケモン"
+    },
+    {
+        "pokemonId": 586,
+        "languageId": 2,
+        "genus": "Season Pokémon"
+    },
+    {
+        "pokemonId": 587,
+        "languageId": 1,
+        "genus": "モモンガポケモン"
+    },
+    {
+        "pokemonId": 587,
+        "languageId": 2,
+        "genus": "Sky Squirrel Pokémon"
+    },
+    {
+        "pokemonId": 588,
+        "languageId": 1,
+        "genus": "かぶりつきポケモン"
+    },
+    {
+        "pokemonId": 588,
+        "languageId": 2,
+        "genus": "Clamping Pokémon"
+    },
+    {
+        "pokemonId": 589,
+        "languageId": 1,
+        "genus": "きへいポケモン"
+    },
+    {
+        "pokemonId": 589,
+        "languageId": 2,
+        "genus": "Cavalry Pokémon"
+    },
+    {
+        "pokemonId": 590,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 590,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 591,
+        "languageId": 1,
+        "genus": "きのこポケモン"
+    },
+    {
+        "pokemonId": 591,
+        "languageId": 2,
+        "genus": "Mushroom Pokémon"
+    },
+    {
+        "pokemonId": 592,
+        "languageId": 1,
+        "genus": "ふゆうポケモン"
+    },
+    {
+        "pokemonId": 592,
+        "languageId": 2,
+        "genus": "Floating Pokémon"
+    },
+    {
+        "pokemonId": 593,
+        "languageId": 1,
+        "genus": "ふゆうポケモン"
+    },
+    {
+        "pokemonId": 593,
+        "languageId": 2,
+        "genus": "Floating Pokémon"
+    },
+    {
+        "pokemonId": 594,
+        "languageId": 1,
+        "genus": "かいほうポケモン"
+    },
+    {
+        "pokemonId": 594,
+        "languageId": 2,
+        "genus": "Caring Pokémon"
+    },
+    {
+        "pokemonId": 595,
+        "languageId": 1,
+        "genus": "くっつきポケモン"
+    },
+    {
+        "pokemonId": 595,
+        "languageId": 2,
+        "genus": "Attaching Pokémon"
+    },
+    {
+        "pokemonId": 596,
+        "languageId": 1,
+        "genus": "でんきグモポケモン"
+    },
+    {
+        "pokemonId": 596,
+        "languageId": 2,
+        "genus": "EleSpider Pokémon"
+    },
+    {
+        "pokemonId": 597,
+        "languageId": 1,
+        "genus": "とげのみポケモン"
+    },
+    {
+        "pokemonId": 597,
+        "languageId": 2,
+        "genus": "Thorn Seed Pokémon"
+    },
+    {
+        "pokemonId": 598,
+        "languageId": 1,
+        "genus": "とげだまポケモン"
+    },
+    {
+        "pokemonId": 598,
+        "languageId": 2,
+        "genus": "Thorn Pod Pokémon"
+    },
+    {
+        "pokemonId": 599,
+        "languageId": 1,
+        "genus": "はぐるまポケモン"
+    },
+    {
+        "pokemonId": 599,
+        "languageId": 2,
+        "genus": "Gear Pokémon"
+    },
+    {
+        "pokemonId": 600,
+        "languageId": 1,
+        "genus": "はぐるまポケモン"
+    },
+    {
+        "pokemonId": 600,
+        "languageId": 2,
+        "genus": "Gear Pokémon"
+    },
+    {
+        "pokemonId": 601,
+        "languageId": 1,
+        "genus": "はぐるまポケモン"
+    },
+    {
+        "pokemonId": 601,
+        "languageId": 2,
+        "genus": "Gear Pokémon"
+    },
+    {
+        "pokemonId": 602,
+        "languageId": 1,
+        "genus": "でんきうおポケモン"
+    },
+    {
+        "pokemonId": 602,
+        "languageId": 2,
+        "genus": "EleFish Pokémon"
+    },
+    {
+        "pokemonId": 603,
+        "languageId": 1,
+        "genus": "でんきうおポケモン"
+    },
+    {
+        "pokemonId": 603,
+        "languageId": 2,
+        "genus": "EleFish Pokémon"
+    },
+    {
+        "pokemonId": 604,
+        "languageId": 1,
+        "genus": "でんきうおポケモン"
+    },
+    {
+        "pokemonId": 604,
+        "languageId": 2,
+        "genus": "EleFish Pokémon"
+    },
+    {
+        "pokemonId": 605,
+        "languageId": 1,
+        "genus": "ブレインポケモン"
+    },
+    {
+        "pokemonId": 605,
+        "languageId": 2,
+        "genus": "Cerebral Pokémon"
+    },
+    {
+        "pokemonId": 606,
+        "languageId": 1,
+        "genus": "ブレインポケモン"
+    },
+    {
+        "pokemonId": 606,
+        "languageId": 2,
+        "genus": "Cerebral Pokémon"
+    },
+    {
+        "pokemonId": 607,
+        "languageId": 1,
+        "genus": "ろうそくポケモン"
+    },
+    {
+        "pokemonId": 607,
+        "languageId": 2,
+        "genus": "Candle Pokémon"
+    },
+    {
+        "pokemonId": 608,
+        "languageId": 1,
+        "genus": "ランプポケモン"
+    },
+    {
+        "pokemonId": 608,
+        "languageId": 2,
+        "genus": "Lamp Pokémon"
+    },
+    {
+        "pokemonId": 609,
+        "languageId": 1,
+        "genus": "いざないポケモン"
+    },
+    {
+        "pokemonId": 609,
+        "languageId": 2,
+        "genus": "Luring Pokémon"
+    },
+    {
+        "pokemonId": 610,
+        "languageId": 1,
+        "genus": "キバポケモン"
+    },
+    {
+        "pokemonId": 610,
+        "languageId": 2,
+        "genus": "Tusk Pokémon"
+    },
+    {
+        "pokemonId": 611,
+        "languageId": 1,
+        "genus": "あごオノポケモン"
+    },
+    {
+        "pokemonId": 611,
+        "languageId": 2,
+        "genus": "Axe Jaw Pokémon"
+    },
+    {
+        "pokemonId": 612,
+        "languageId": 1,
+        "genus": "あごオノポケモン"
+    },
+    {
+        "pokemonId": 612,
+        "languageId": 2,
+        "genus": "Axe Jaw Pokémon"
+    },
+    {
+        "pokemonId": 613,
+        "languageId": 1,
+        "genus": "ひょうけつポケモン"
+    },
+    {
+        "pokemonId": 613,
+        "languageId": 2,
+        "genus": "Chill Pokémon"
+    },
+    {
+        "pokemonId": 614,
+        "languageId": 1,
+        "genus": "とうけつポケモン"
+    },
+    {
+        "pokemonId": 614,
+        "languageId": 2,
+        "genus": "Freezing Pokémon"
+    },
+    {
+        "pokemonId": 615,
+        "languageId": 1,
+        "genus": "けっしょうポケモン"
+    },
+    {
+        "pokemonId": 615,
+        "languageId": 2,
+        "genus": "Crystallizing Pokémon"
+    },
+    {
+        "pokemonId": 616,
+        "languageId": 1,
+        "genus": "マイマイポケモン"
+    },
+    {
+        "pokemonId": 616,
+        "languageId": 2,
+        "genus": "Snail Pokémon"
+    },
+    {
+        "pokemonId": 617,
+        "languageId": 1,
+        "genus": "からぬけポケモン"
+    },
+    {
+        "pokemonId": 617,
+        "languageId": 2,
+        "genus": "Shell Out Pokémon"
+    },
+    {
+        "pokemonId": 618,
+        "languageId": 1,
+        "genus": "トラップポケモン"
+    },
+    {
+        "pokemonId": 618,
+        "languageId": 2,
+        "genus": "Trap Pokémon"
+    },
+    {
+        "pokemonId": 619,
+        "languageId": 1,
+        "genus": "ぶじゅつポケモン"
+    },
+    {
+        "pokemonId": 619,
+        "languageId": 2,
+        "genus": "Martial Arts Pokémon"
+    },
+    {
+        "pokemonId": 620,
+        "languageId": 1,
+        "genus": "ぶじゅつポケモン"
+    },
+    {
+        "pokemonId": 620,
+        "languageId": 2,
+        "genus": "Martial Arts Pokémon"
+    },
+    {
+        "pokemonId": 621,
+        "languageId": 1,
+        "genus": "ほらあなポケモン"
+    },
+    {
+        "pokemonId": 621,
+        "languageId": 2,
+        "genus": "Cave Pokémon"
+    },
+    {
+        "pokemonId": 622,
+        "languageId": 1,
+        "genus": "ゴーレムポケモン"
+    },
+    {
+        "pokemonId": 622,
+        "languageId": 2,
+        "genus": "Automaton Pokémon"
+    },
+    {
+        "pokemonId": 623,
+        "languageId": 1,
+        "genus": "ゴーレムポケモン"
+    },
+    {
+        "pokemonId": 623,
+        "languageId": 2,
+        "genus": "Automaton Pokémon"
+    },
+    {
+        "pokemonId": 624,
+        "languageId": 1,
+        "genus": "はものポケモン"
+    },
+    {
+        "pokemonId": 624,
+        "languageId": 2,
+        "genus": "Sharp Blade Pokémon"
+    },
+    {
+        "pokemonId": 625,
+        "languageId": 1,
+        "genus": "とうじんポケモン"
+    },
+    {
+        "pokemonId": 625,
+        "languageId": 2,
+        "genus": "Sword Blade Pokémon"
+    },
+    {
+        "pokemonId": 626,
+        "languageId": 1,
+        "genus": "ずつきうしポケモン"
+    },
+    {
+        "pokemonId": 626,
+        "languageId": 2,
+        "genus": "Bash Buffalo Pokémon"
+    },
+    {
+        "pokemonId": 627,
+        "languageId": 1,
+        "genus": "ヒナわしポケモン"
+    },
+    {
+        "pokemonId": 627,
+        "languageId": 2,
+        "genus": "Eaglet Pokémon"
+    },
+    {
+        "pokemonId": 628,
+        "languageId": 1,
+        "genus": "ゆうもうポケモン"
+    },
+    {
+        "pokemonId": 628,
+        "languageId": 2,
+        "genus": "Valiant Pokémon"
+    },
+    {
+        "pokemonId": 629,
+        "languageId": 1,
+        "genus": "おむつポケモン"
+    },
+    {
+        "pokemonId": 629,
+        "languageId": 2,
+        "genus": "Diapered Pokémon"
+    },
+    {
+        "pokemonId": 630,
+        "languageId": 1,
+        "genus": "ほねわしポケモン"
+    },
+    {
+        "pokemonId": 630,
+        "languageId": 2,
+        "genus": "Bone Vulture Pokémon"
+    },
+    {
+        "pokemonId": 631,
+        "languageId": 1,
+        "genus": "アリクイポケモン"
+    },
+    {
+        "pokemonId": 631,
+        "languageId": 2,
+        "genus": "Anteater Pokémon"
+    },
+    {
+        "pokemonId": 632,
+        "languageId": 1,
+        "genus": "てつアリポケモン"
+    },
+    {
+        "pokemonId": 632,
+        "languageId": 2,
+        "genus": "Iron Ant Pokémon"
+    },
+    {
+        "pokemonId": 633,
+        "languageId": 1,
+        "genus": "そぼうポケモン"
+    },
+    {
+        "pokemonId": 633,
+        "languageId": 2,
+        "genus": "Irate Pokémon"
+    },
+    {
+        "pokemonId": 634,
+        "languageId": 1,
+        "genus": "らんぼうポケモン"
+    },
+    {
+        "pokemonId": 634,
+        "languageId": 2,
+        "genus": "Hostile Pokémon"
+    },
+    {
+        "pokemonId": 635,
+        "languageId": 1,
+        "genus": "きょうぼうポケモン"
+    },
+    {
+        "pokemonId": 635,
+        "languageId": 2,
+        "genus": "Brutal Pokémon"
+    },
+    {
+        "pokemonId": 636,
+        "languageId": 1,
+        "genus": "たいまつポケモン"
+    },
+    {
+        "pokemonId": 636,
+        "languageId": 2,
+        "genus": "Torch Pokémon"
+    },
+    {
+        "pokemonId": 637,
+        "languageId": 1,
+        "genus": "たいようポケモン"
+    },
+    {
+        "pokemonId": 637,
+        "languageId": 2,
+        "genus": "Sun Pokémon"
+    },
+    {
+        "pokemonId": 638,
+        "languageId": 1,
+        "genus": "てっしんポケモン"
+    },
+    {
+        "pokemonId": 638,
+        "languageId": 2,
+        "genus": "Iron Will Pokémon"
+    },
+    {
+        "pokemonId": 639,
+        "languageId": 1,
+        "genus": "がんくつポケモン"
+    },
+    {
+        "pokemonId": 639,
+        "languageId": 2,
+        "genus": "Cavern Pokémon"
+    },
+    {
+        "pokemonId": 640,
+        "languageId": 1,
+        "genus": "そうげんポケモン"
+    },
+    {
+        "pokemonId": 640,
+        "languageId": 2,
+        "genus": "Grassland Pokémon"
+    },
+    {
+        "pokemonId": 641,
+        "languageId": 1,
+        "genus": "せんぷうポケモン"
+    },
+    {
+        "pokemonId": 641,
+        "languageId": 2,
+        "genus": "Cyclone Pokémon"
+    },
+    {
+        "pokemonId": 642,
+        "languageId": 1,
+        "genus": "らいげきポケモン"
+    },
+    {
+        "pokemonId": 642,
+        "languageId": 2,
+        "genus": "Bolt Strike Pokémon"
+    },
+    {
+        "pokemonId": 643,
+        "languageId": 1,
+        "genus": "はくようポケモン"
+    },
+    {
+        "pokemonId": 643,
+        "languageId": 2,
+        "genus": "Vast White Pokémon"
+    },
+    {
+        "pokemonId": 644,
+        "languageId": 1,
+        "genus": "こくいんポケモン"
+    },
+    {
+        "pokemonId": 644,
+        "languageId": 2,
+        "genus": "Deep Black Pokémon"
+    },
+    {
+        "pokemonId": 645,
+        "languageId": 1,
+        "genus": "ほうじょうポケモン"
+    },
+    {
+        "pokemonId": 645,
+        "languageId": 2,
+        "genus": "Abundance Pokémon"
+    },
+    {
+        "pokemonId": 646,
+        "languageId": 1,
+        "genus": "きょうかいポケモン"
+    },
+    {
+        "pokemonId": 646,
+        "languageId": 2,
+        "genus": "Boundary Pokémon"
+    },
+    {
+        "pokemonId": 647,
+        "languageId": 1,
+        "genus": "わかごまポケモン"
+    },
+    {
+        "pokemonId": 647,
+        "languageId": 2,
+        "genus": "Colt Pokémon"
+    },
+    {
+        "pokemonId": 648,
+        "languageId": 1,
+        "genus": "せんりつポケモン"
+    },
+    {
+        "pokemonId": 648,
+        "languageId": 2,
+        "genus": "Melody Pokémon"
+    },
+    {
+        "pokemonId": 649,
+        "languageId": 1,
+        "genus": "こせいだいポケモン"
+    },
+    {
+        "pokemonId": 649,
+        "languageId": 2,
+        "genus": "Paleozoic Pokémon"
+    },
+    {
+        "pokemonId": 650,
+        "languageId": 1,
+        "genus": "いがぐりポケモン"
+    },
+    {
+        "pokemonId": 650,
+        "languageId": 2,
+        "genus": "Spiny Nut Pokémon"
+    },
+    {
+        "pokemonId": 651,
+        "languageId": 1,
+        "genus": "とげよろいポケモン"
+    },
+    {
+        "pokemonId": 651,
+        "languageId": 2,
+        "genus": "Spiny Armor Pokémon"
+    },
+    {
+        "pokemonId": 652,
+        "languageId": 1,
+        "genus": "とげよろいポケモン"
+    },
+    {
+        "pokemonId": 652,
+        "languageId": 2,
+        "genus": "Spiny Armor Pokémon"
+    },
+    {
+        "pokemonId": 653,
+        "languageId": 1,
+        "genus": "キツネポケモン"
+    },
+    {
+        "pokemonId": 653,
+        "languageId": 2,
+        "genus": "Fox Pokémon"
+    },
+    {
+        "pokemonId": 654,
+        "languageId": 1,
+        "genus": "キツネポケモン"
+    },
+    {
+        "pokemonId": 654,
+        "languageId": 2,
+        "genus": "Fox Pokémon"
+    },
+    {
+        "pokemonId": 655,
+        "languageId": 1,
+        "genus": "キツネポケモン"
+    },
+    {
+        "pokemonId": 655,
+        "languageId": 2,
+        "genus": "Fox Pokémon"
+    },
+    {
+        "pokemonId": 656,
+        "languageId": 1,
+        "genus": "あわがえるポケモン"
+    },
+    {
+        "pokemonId": 656,
+        "languageId": 2,
+        "genus": "Bubble Frog Pokémon"
+    },
+    {
+        "pokemonId": 657,
+        "languageId": 1,
+        "genus": "あわがえるポケモン"
+    },
+    {
+        "pokemonId": 657,
+        "languageId": 2,
+        "genus": "Bubble Frog Pokémon"
+    },
+    {
+        "pokemonId": 658,
+        "languageId": 1,
+        "genus": "しのびポケモン"
+    },
+    {
+        "pokemonId": 658,
+        "languageId": 2,
+        "genus": "Ninja Pokémon"
+    },
+    {
+        "pokemonId": 659,
+        "languageId": 1,
+        "genus": "あなほりポケモン"
+    },
+    {
+        "pokemonId": 659,
+        "languageId": 2,
+        "genus": "Digging Pokémon"
+    },
+    {
+        "pokemonId": 660,
+        "languageId": 1,
+        "genus": "あなほりポケモン"
+    },
+    {
+        "pokemonId": 660,
+        "languageId": 2,
+        "genus": "Digging Pokémon"
+    },
+    {
+        "pokemonId": 661,
+        "languageId": 1,
+        "genus": "コマドリポケモン"
+    },
+    {
+        "pokemonId": 661,
+        "languageId": 2,
+        "genus": "Tiny Robin Pokémon"
+    },
+    {
+        "pokemonId": 662,
+        "languageId": 1,
+        "genus": "ひのこポケモン"
+    },
+    {
+        "pokemonId": 662,
+        "languageId": 2,
+        "genus": "Ember Pokémon"
+    },
+    {
+        "pokemonId": 663,
+        "languageId": 1,
+        "genus": "れっかポケモン"
+    },
+    {
+        "pokemonId": 663,
+        "languageId": 2,
+        "genus": "Scorching Pokémon"
+    },
+    {
+        "pokemonId": 664,
+        "languageId": 1,
+        "genus": "こなふきポケモン"
+    },
+    {
+        "pokemonId": 664,
+        "languageId": 2,
+        "genus": "Scatterdust Pokémon"
+    },
+    {
+        "pokemonId": 665,
+        "languageId": 1,
+        "genus": "こなふきポケモン"
+    },
+    {
+        "pokemonId": 665,
+        "languageId": 2,
+        "genus": "Scatterdust Pokémon"
+    },
+    {
+        "pokemonId": 666,
+        "languageId": 1,
+        "genus": "りんぷんポケモン"
+    },
+    {
+        "pokemonId": 666,
+        "languageId": 2,
+        "genus": "Scale Pokémon"
+    },
+    {
+        "pokemonId": 667,
+        "languageId": 1,
+        "genus": "わかじしポケモン"
+    },
+    {
+        "pokemonId": 667,
+        "languageId": 2,
+        "genus": "Lion Cub Pokémon"
+    },
+    {
+        "pokemonId": 668,
+        "languageId": 1,
+        "genus": "おうじゃポケモン"
+    },
+    {
+        "pokemonId": 668,
+        "languageId": 2,
+        "genus": "Royal Pokémon"
+    },
+    {
+        "pokemonId": 669,
+        "languageId": 1,
+        "genus": "いちりんポケモン"
+    },
+    {
+        "pokemonId": 669,
+        "languageId": 2,
+        "genus": "Single Bloom Pokémon"
+    },
+    {
+        "pokemonId": 670,
+        "languageId": 1,
+        "genus": "いちりんポケモン"
+    },
+    {
+        "pokemonId": 670,
+        "languageId": 2,
+        "genus": "Single Bloom Pokémon"
+    },
+    {
+        "pokemonId": 671,
+        "languageId": 1,
+        "genus": "ガーデンポケモン"
+    },
+    {
+        "pokemonId": 671,
+        "languageId": 2,
+        "genus": "Garden Pokémon"
+    },
+    {
+        "pokemonId": 672,
+        "languageId": 1,
+        "genus": "ライドポケモン"
+    },
+    {
+        "pokemonId": 672,
+        "languageId": 2,
+        "genus": "Mount Pokémon"
+    },
+    {
+        "pokemonId": 673,
+        "languageId": 1,
+        "genus": "ライドポケモン"
+    },
+    {
+        "pokemonId": 673,
+        "languageId": 2,
+        "genus": "Mount Pokémon"
+    },
+    {
+        "pokemonId": 674,
+        "languageId": 1,
+        "genus": "やんちゃポケモン"
+    },
+    {
+        "pokemonId": 674,
+        "languageId": 2,
+        "genus": "Playful Pokémon"
+    },
+    {
+        "pokemonId": 675,
+        "languageId": 1,
+        "genus": "こわもてポケモン"
+    },
+    {
+        "pokemonId": 675,
+        "languageId": 2,
+        "genus": "Daunting Pokémon"
+    },
+    {
+        "pokemonId": 676,
+        "languageId": 1,
+        "genus": "プードルポケモン"
+    },
+    {
+        "pokemonId": 676,
+        "languageId": 2,
+        "genus": "Poodle Pokémon"
+    },
+    {
+        "pokemonId": 677,
+        "languageId": 1,
+        "genus": "じせいポケモン"
+    },
+    {
+        "pokemonId": 677,
+        "languageId": 2,
+        "genus": "Restraint Pokémon"
+    },
+    {
+        "pokemonId": 678,
+        "languageId": 1,
+        "genus": "よくせいポケモン"
+    },
+    {
+        "pokemonId": 678,
+        "languageId": 2,
+        "genus": "Constraint Pokémon"
+    },
+    {
+        "pokemonId": 679,
+        "languageId": 1,
+        "genus": "とうけんポケモン"
+    },
+    {
+        "pokemonId": 679,
+        "languageId": 2,
+        "genus": "Sword Pokémon"
+    },
+    {
+        "pokemonId": 680,
+        "languageId": 1,
+        "genus": "とうけんポケモン"
+    },
+    {
+        "pokemonId": 680,
+        "languageId": 2,
+        "genus": "Sword Pokémon"
+    },
+    {
+        "pokemonId": 681,
+        "languageId": 1,
+        "genus": "おうけんポケモン"
+    },
+    {
+        "pokemonId": 681,
+        "languageId": 2,
+        "genus": "Royal Sword Pokémon"
+    },
+    {
+        "pokemonId": 682,
+        "languageId": 1,
+        "genus": "こうすいポケモン"
+    },
+    {
+        "pokemonId": 682,
+        "languageId": 2,
+        "genus": "Perfume Pokémon"
+    },
+    {
+        "pokemonId": 683,
+        "languageId": 1,
+        "genus": "ほうこうポケモン"
+    },
+    {
+        "pokemonId": 683,
+        "languageId": 2,
+        "genus": "Fragrance Pokémon"
+    },
+    {
+        "pokemonId": 684,
+        "languageId": 1,
+        "genus": "わたあめポケモン"
+    },
+    {
+        "pokemonId": 684,
+        "languageId": 2,
+        "genus": "Cotton Candy Pokémon"
+    },
+    {
+        "pokemonId": 685,
+        "languageId": 1,
+        "genus": "ホイップポケモン"
+    },
+    {
+        "pokemonId": 685,
+        "languageId": 2,
+        "genus": "Meringue Pokémon"
+    },
+    {
+        "pokemonId": 686,
+        "languageId": 1,
+        "genus": "かいてんポケモン"
+    },
+    {
+        "pokemonId": 686,
+        "languageId": 2,
+        "genus": "Revolving Pokémon"
+    },
+    {
+        "pokemonId": 687,
+        "languageId": 1,
+        "genus": "ぎゃくてんポケモン"
+    },
+    {
+        "pokemonId": 687,
+        "languageId": 2,
+        "genus": "Overturning Pokémon"
+    },
+    {
+        "pokemonId": 688,
+        "languageId": 1,
+        "genus": "ふたてポケモン"
+    },
+    {
+        "pokemonId": 688,
+        "languageId": 2,
+        "genus": "Two-Handed Pokémon"
+    },
+    {
+        "pokemonId": 689,
+        "languageId": 1,
+        "genus": "しゅうごうポケモン"
+    },
+    {
+        "pokemonId": 689,
+        "languageId": 2,
+        "genus": "Collective Pokémon"
+    },
+    {
+        "pokemonId": 690,
+        "languageId": 1,
+        "genus": "クサモドキポケモン"
+    },
+    {
+        "pokemonId": 690,
+        "languageId": 2,
+        "genus": "Mock Kelp Pokémon"
+    },
+    {
+        "pokemonId": 691,
+        "languageId": 1,
+        "genus": "クサモドキポケモン"
+    },
+    {
+        "pokemonId": 691,
+        "languageId": 2,
+        "genus": "Mock Kelp Pokémon"
+    },
+    {
+        "pokemonId": 692,
+        "languageId": 1,
+        "genus": "みずでっぽうポケモン"
+    },
+    {
+        "pokemonId": 692,
+        "languageId": 2,
+        "genus": "Water Gun Pokémon"
+    },
+    {
+        "pokemonId": 693,
+        "languageId": 1,
+        "genus": "ランチャーポケモン"
+    },
+    {
+        "pokemonId": 693,
+        "languageId": 2,
+        "genus": "Howitzer Pokémon"
+    },
+    {
+        "pokemonId": 694,
+        "languageId": 1,
+        "genus": "はつでんポケモン"
+    },
+    {
+        "pokemonId": 694,
+        "languageId": 2,
+        "genus": "Generator Pokémon"
+    },
+    {
+        "pokemonId": 695,
+        "languageId": 1,
+        "genus": "はつでんポケモン"
+    },
+    {
+        "pokemonId": 695,
+        "languageId": 2,
+        "genus": "Generator Pokémon"
+    },
+    {
+        "pokemonId": 696,
+        "languageId": 1,
+        "genus": "ようくんポケモン"
+    },
+    {
+        "pokemonId": 696,
+        "languageId": 2,
+        "genus": "Royal Heir Pokémon"
+    },
+    {
+        "pokemonId": 697,
+        "languageId": 1,
+        "genus": "ぼうくんポケモン"
+    },
+    {
+        "pokemonId": 697,
+        "languageId": 2,
+        "genus": "Despot Pokémon"
+    },
+    {
+        "pokemonId": 698,
+        "languageId": 1,
+        "genus": "ツンドラポケモン"
+    },
+    {
+        "pokemonId": 698,
+        "languageId": 2,
+        "genus": "Tundra Pokémon"
+    },
+    {
+        "pokemonId": 699,
+        "languageId": 1,
+        "genus": "ツンドラポケモン"
+    },
+    {
+        "pokemonId": 699,
+        "languageId": 2,
+        "genus": "Tundra Pokémon"
+    },
+    {
+        "pokemonId": 700,
+        "languageId": 1,
+        "genus": "むすびつきポケモン"
+    },
+    {
+        "pokemonId": 700,
+        "languageId": 2,
+        "genus": "Intertwining Pokémon"
+    },
+    {
+        "pokemonId": 701,
+        "languageId": 1,
+        "genus": "レスリングポケモン"
+    },
+    {
+        "pokemonId": 701,
+        "languageId": 2,
+        "genus": "Wrestling Pokémon"
+    },
+    {
+        "pokemonId": 702,
+        "languageId": 1,
+        "genus": "アンテナポケモン"
+    },
+    {
+        "pokemonId": 702,
+        "languageId": 2,
+        "genus": "Antenna Pokémon"
+    },
+    {
+        "pokemonId": 703,
+        "languageId": 1,
+        "genus": "ほうせきポケモン"
+    },
+    {
+        "pokemonId": 703,
+        "languageId": 2,
+        "genus": "Jewel Pokémon"
+    },
+    {
+        "pokemonId": 704,
+        "languageId": 1,
+        "genus": "なんたいポケモン"
+    },
+    {
+        "pokemonId": 704,
+        "languageId": 2,
+        "genus": "Soft Tissue Pokémon"
+    },
+    {
+        "pokemonId": 705,
+        "languageId": 1,
+        "genus": "なんたいポケモン"
+    },
+    {
+        "pokemonId": 705,
+        "languageId": 2,
+        "genus": "Soft Tissue Pokémon"
+    },
+    {
+        "pokemonId": 706,
+        "languageId": 1,
+        "genus": "ドラゴンポケモン"
+    },
+    {
+        "pokemonId": 706,
+        "languageId": 2,
+        "genus": "Dragon Pokémon"
+    },
+    {
+        "pokemonId": 707,
+        "languageId": 1,
+        "genus": "かぎたばポケモン"
+    },
+    {
+        "pokemonId": 707,
+        "languageId": 2,
+        "genus": "Key Ring Pokémon"
+    },
+    {
+        "pokemonId": 708,
+        "languageId": 1,
+        "genus": "きりかぶポケモン"
+    },
+    {
+        "pokemonId": 708,
+        "languageId": 2,
+        "genus": "Stump Pokémon"
+    },
+    {
+        "pokemonId": 709,
+        "languageId": 1,
+        "genus": "ろうぼくポケモン"
+    },
+    {
+        "pokemonId": 709,
+        "languageId": 2,
+        "genus": "Elder Tree Pokémon"
+    },
+    {
+        "pokemonId": 710,
+        "languageId": 1,
+        "genus": "かぼちゃポケモン"
+    },
+    {
+        "pokemonId": 710,
+        "languageId": 2,
+        "genus": "Pumpkin Pokémon"
+    },
+    {
+        "pokemonId": 711,
+        "languageId": 1,
+        "genus": "かぼちゃポケモン"
+    },
+    {
+        "pokemonId": 711,
+        "languageId": 2,
+        "genus": "Pumpkin Pokémon"
+    },
+    {
+        "pokemonId": 712,
+        "languageId": 1,
+        "genus": "ひょうかいポケモン"
+    },
+    {
+        "pokemonId": 712,
+        "languageId": 2,
+        "genus": "Ice Chunk Pokémon"
+    },
+    {
+        "pokemonId": 713,
+        "languageId": 1,
+        "genus": "ひょうざんポケモン"
+    },
+    {
+        "pokemonId": 713,
+        "languageId": 2,
+        "genus": "Iceberg Pokémon"
+    },
+    {
+        "pokemonId": 714,
+        "languageId": 1,
+        "genus": "おんぱポケモン"
+    },
+    {
+        "pokemonId": 714,
+        "languageId": 2,
+        "genus": "Sound Wave Pokémon"
+    },
+    {
+        "pokemonId": 715,
+        "languageId": 1,
+        "genus": "おんぱポケモン"
+    },
+    {
+        "pokemonId": 715,
+        "languageId": 2,
+        "genus": "Sound Wave Pokémon"
+    },
+    {
+        "pokemonId": 716,
+        "languageId": 1,
+        "genus": "せいめいポケモン"
+    },
+    {
+        "pokemonId": 716,
+        "languageId": 2,
+        "genus": "Life Pokémon"
+    },
+    {
+        "pokemonId": 717,
+        "languageId": 1,
+        "genus": "はかいポケモン"
+    },
+    {
+        "pokemonId": 717,
+        "languageId": 2,
+        "genus": "Destruction Pokémon"
+    },
+    {
+        "pokemonId": 718,
+        "languageId": 1,
+        "genus": "ちつじょポケモン"
+    },
+    {
+        "pokemonId": 718,
+        "languageId": 2,
+        "genus": "Order Pokémon"
+    },
+    {
+        "pokemonId": 719,
+        "languageId": 1,
+        "genus": "ほうせきポケモン"
+    },
+    {
+        "pokemonId": 719,
+        "languageId": 2,
+        "genus": "Jewel Pokémon"
+    },
+    {
+        "pokemonId": 720,
+        "languageId": 1,
+        "genus": "いたずらポケモン"
+    },
+    {
+        "pokemonId": 720,
+        "languageId": 2,
+        "genus": "Mischief Pokémon"
+    },
+    {
+        "pokemonId": 721,
+        "languageId": 1,
+        "genus": "スチームポケモン"
+    },
+    {
+        "pokemonId": 721,
+        "languageId": 2,
+        "genus": "Steam Pokémon"
+    }
+]

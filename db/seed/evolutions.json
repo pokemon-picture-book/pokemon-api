@@ -1,0 +1,2980 @@
+[
+    {
+        "id": 1,
+        "pokemonEvolutionId": 1,
+        "fromId": 1,
+        "toId": 2,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 2,
+        "pokemonEvolutionId": 1,
+        "fromId": 2,
+        "toId": 3,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 3,
+        "pokemonEvolutionId": 2,
+        "fromId": 4,
+        "toId": 5,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 4,
+        "pokemonEvolutionId": 2,
+        "fromId": 5,
+        "toId": 6,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 5,
+        "pokemonEvolutionId": 3,
+        "fromId": 7,
+        "toId": 8,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 6,
+        "pokemonEvolutionId": 3,
+        "fromId": 8,
+        "toId": 9,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 7,
+        "pokemonEvolutionId": 4,
+        "fromId": 10,
+        "toId": 11,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":7}"
+    },
+    {
+        "id": 8,
+        "pokemonEvolutionId": 4,
+        "fromId": 11,
+        "toId": 12,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":10}"
+    },
+    {
+        "id": 9,
+        "pokemonEvolutionId": 5,
+        "fromId": 13,
+        "toId": 14,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":7}"
+    },
+    {
+        "id": 10,
+        "pokemonEvolutionId": 5,
+        "fromId": 14,
+        "toId": 15,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":10}"
+    },
+    {
+        "id": 11,
+        "pokemonEvolutionId": 6,
+        "fromId": 16,
+        "toId": 17,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 12,
+        "pokemonEvolutionId": 6,
+        "fromId": 17,
+        "toId": 18,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 13,
+        "pokemonEvolutionId": 7,
+        "fromId": 19,
+        "toId": 20,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 14,
+        "pokemonEvolutionId": 8,
+        "fromId": 21,
+        "toId": 22,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 15,
+        "pokemonEvolutionId": 9,
+        "fromId": 23,
+        "toId": 24,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 16,
+        "pokemonEvolutionId": 10,
+        "fromId": 172,
+        "toId": 25,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 17,
+        "pokemonEvolutionId": 10,
+        "fromId": 25,
+        "toId": 26,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"thunder-stone\"}}"
+    },
+    {
+        "id": 18,
+        "pokemonEvolutionId": 11,
+        "fromId": 27,
+        "toId": 28,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 19,
+        "pokemonEvolutionId": 12,
+        "fromId": 29,
+        "toId": 30,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 20,
+        "pokemonEvolutionId": 12,
+        "fromId": 30,
+        "toId": 31,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 21,
+        "pokemonEvolutionId": 13,
+        "fromId": 32,
+        "toId": 33,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 22,
+        "pokemonEvolutionId": 13,
+        "fromId": 33,
+        "toId": 34,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 23,
+        "pokemonEvolutionId": 14,
+        "fromId": 173,
+        "toId": 35,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 24,
+        "pokemonEvolutionId": 14,
+        "fromId": 35,
+        "toId": 36,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 25,
+        "pokemonEvolutionId": 15,
+        "fromId": 37,
+        "toId": 38,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"fire-stone\"}}"
+    },
+    {
+        "id": 26,
+        "pokemonEvolutionId": 16,
+        "fromId": 174,
+        "toId": 39,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 27,
+        "pokemonEvolutionId": 16,
+        "fromId": 39,
+        "toId": 40,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 28,
+        "pokemonEvolutionId": 17,
+        "fromId": 41,
+        "toId": 42,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 29,
+        "pokemonEvolutionId": 17,
+        "fromId": 42,
+        "toId": 169,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 30,
+        "pokemonEvolutionId": 18,
+        "fromId": 43,
+        "toId": 44,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":21}"
+    },
+    {
+        "id": 31,
+        "pokemonEvolutionId": 18,
+        "fromId": 44,
+        "toId": 45,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
+    },
+    {
+        "id": 32,
+        "pokemonEvolutionId": 18,
+        "fromId": 44,
+        "toId": 182,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"sun-stone\"}}"
+    },
+    {
+        "id": 33,
+        "pokemonEvolutionId": 19,
+        "fromId": 46,
+        "toId": 47,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":24}"
+    },
+    {
+        "id": 34,
+        "pokemonEvolutionId": 20,
+        "fromId": 48,
+        "toId": 49,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":31}"
+    },
+    {
+        "id": 35,
+        "pokemonEvolutionId": 21,
+        "fromId": 50,
+        "toId": 51,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":26}"
+    },
+    {
+        "id": 36,
+        "pokemonEvolutionId": 22,
+        "fromId": 52,
+        "toId": 53,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 37,
+        "pokemonEvolutionId": 23,
+        "fromId": 54,
+        "toId": 55,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":33}"
+    },
+    {
+        "id": 38,
+        "pokemonEvolutionId": 24,
+        "fromId": 56,
+        "toId": 57,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 39,
+        "pokemonEvolutionId": 25,
+        "fromId": 58,
+        "toId": 59,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"fire-stone\"}}"
+    },
+    {
+        "id": 40,
+        "pokemonEvolutionId": 26,
+        "fromId": 60,
+        "toId": 61,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 41,
+        "pokemonEvolutionId": 26,
+        "fromId": 61,
+        "toId": 62,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 42,
+        "pokemonEvolutionId": 26,
+        "fromId": 61,
+        "toId": 186,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"kings-rock\"}}"
+    },
+    {
+        "id": 43,
+        "pokemonEvolutionId": 27,
+        "fromId": 63,
+        "toId": 64,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 44,
+        "pokemonEvolutionId": 27,
+        "fromId": 64,
+        "toId": 65,
+        "trigger": "trade"
+    },
+    {
+        "id": 45,
+        "pokemonEvolutionId": 28,
+        "fromId": 66,
+        "toId": 67,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 46,
+        "pokemonEvolutionId": 28,
+        "fromId": 67,
+        "toId": 68,
+        "trigger": "trade"
+    },
+    {
+        "id": 47,
+        "pokemonEvolutionId": 29,
+        "fromId": 69,
+        "toId": 70,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":21}"
+    },
+    {
+        "id": 48,
+        "pokemonEvolutionId": 29,
+        "fromId": 70,
+        "toId": 71,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
+    },
+    {
+        "id": 49,
+        "pokemonEvolutionId": 30,
+        "fromId": 72,
+        "toId": 73,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 50,
+        "pokemonEvolutionId": 31,
+        "fromId": 74,
+        "toId": 75,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 51,
+        "pokemonEvolutionId": 31,
+        "fromId": 75,
+        "toId": 76,
+        "trigger": "trade"
+    },
+    {
+        "id": 52,
+        "pokemonEvolutionId": 32,
+        "fromId": 77,
+        "toId": 78,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 53,
+        "pokemonEvolutionId": 33,
+        "fromId": 79,
+        "toId": 80,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 54,
+        "pokemonEvolutionId": 33,
+        "fromId": 79,
+        "toId": 199,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"kings-rock\"}}"
+    },
+    {
+        "id": 55,
+        "pokemonEvolutionId": 34,
+        "fromId": 81,
+        "toId": 82,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 56,
+        "pokemonEvolutionId": 34,
+        "fromId": 82,
+        "toId": 462,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"mt-coronet\"}}"
+    },
+    {
+        "id": 57,
+        "pokemonEvolutionId": 34,
+        "fromId": 82,
+        "toId": 462,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"chargestone-cave\"}}"
+    },
+    {
+        "id": 58,
+        "pokemonEvolutionId": 34,
+        "fromId": 82,
+        "toId": 462,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"kalos-route-13\"}}"
+    },
+    {
+        "id": 59,
+        "pokemonEvolutionId": 34,
+        "fromId": 82,
+        "toId": 462,
+        "trigger": "level-up"
+    },
+    {
+        "id": 60,
+        "pokemonEvolutionId": 36,
+        "fromId": 84,
+        "toId": 85,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":31}"
+    },
+    {
+        "id": 61,
+        "pokemonEvolutionId": 37,
+        "fromId": 86,
+        "toId": 87,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 62,
+        "pokemonEvolutionId": 38,
+        "fromId": 88,
+        "toId": 89,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":38}"
+    },
+    {
+        "id": 63,
+        "pokemonEvolutionId": 39,
+        "fromId": 90,
+        "toId": 91,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 64,
+        "pokemonEvolutionId": 40,
+        "fromId": 92,
+        "toId": 93,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 65,
+        "pokemonEvolutionId": 40,
+        "fromId": 93,
+        "toId": 94,
+        "trigger": "trade"
+    },
+    {
+        "id": 66,
+        "pokemonEvolutionId": 41,
+        "fromId": 95,
+        "toId": 208,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"metal-coat\"}}"
+    },
+    {
+        "id": 67,
+        "pokemonEvolutionId": 42,
+        "fromId": 96,
+        "toId": 97,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":26}"
+    },
+    {
+        "id": 68,
+        "pokemonEvolutionId": 43,
+        "fromId": 98,
+        "toId": 99,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 69,
+        "pokemonEvolutionId": 44,
+        "fromId": 100,
+        "toId": 101,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 70,
+        "pokemonEvolutionId": 45,
+        "fromId": 102,
+        "toId": 103,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
+    },
+    {
+        "id": 71,
+        "pokemonEvolutionId": 46,
+        "fromId": 104,
+        "toId": 105,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 72,
+        "pokemonEvolutionId": 46,
+        "fromId": 104,
+        "toId": 105,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 73,
+        "pokemonEvolutionId": 47,
+        "fromId": 236,
+        "toId": 106,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}",
+        "detail2": "{\"relative_physical_stats\":1}"
+    },
+    {
+        "id": 74,
+        "pokemonEvolutionId": 47,
+        "fromId": 236,
+        "toId": 107,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}",
+        "detail2": "{\"relative_physical_stats\":-1}"
+    },
+    {
+        "id": 75,
+        "pokemonEvolutionId": 47,
+        "fromId": 236,
+        "toId": 237,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 76,
+        "pokemonEvolutionId": 48,
+        "fromId": 108,
+        "toId": 463,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"rollout\"}}"
+    },
+    {
+        "id": 77,
+        "pokemonEvolutionId": 49,
+        "fromId": 109,
+        "toId": 110,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 78,
+        "pokemonEvolutionId": 50,
+        "fromId": 111,
+        "toId": 112,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":42}"
+    },
+    {
+        "id": 79,
+        "pokemonEvolutionId": 50,
+        "fromId": 112,
+        "toId": 464,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"protector\"}}"
+    },
+    {
+        "id": 80,
+        "pokemonEvolutionId": 51,
+        "fromId": 440,
+        "toId": 113,
+        "trigger": "level-up",
+        "detail1": "{\"held_item\":{\"name\":\"oval-stone\"}}",
+        "detail2": "{\"time_of_day\":\"day\"}"
+    },
+    {
+        "id": 81,
+        "pokemonEvolutionId": 51,
+        "fromId": 113,
+        "toId": 242,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 82,
+        "pokemonEvolutionId": 52,
+        "fromId": 114,
+        "toId": 465,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"ancient-power\"}}"
+    },
+    {
+        "id": 83,
+        "pokemonEvolutionId": 54,
+        "fromId": 116,
+        "toId": 117,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 84,
+        "pokemonEvolutionId": 54,
+        "fromId": 117,
+        "toId": 230,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"dragon-scale\"}}"
+    },
+    {
+        "id": 85,
+        "pokemonEvolutionId": 55,
+        "fromId": 118,
+        "toId": 119,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":33}"
+    },
+    {
+        "id": 86,
+        "pokemonEvolutionId": 56,
+        "fromId": 120,
+        "toId": 121,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 87,
+        "pokemonEvolutionId": 57,
+        "fromId": 439,
+        "toId": 122,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"mimic\"}}"
+    },
+    {
+        "id": 88,
+        "pokemonEvolutionId": 58,
+        "fromId": 123,
+        "toId": 212,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"metal-coat\"}}"
+    },
+    {
+        "id": 89,
+        "pokemonEvolutionId": 59,
+        "fromId": 238,
+        "toId": 124,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 90,
+        "pokemonEvolutionId": 60,
+        "fromId": 239,
+        "toId": 125,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 91,
+        "pokemonEvolutionId": 60,
+        "fromId": 125,
+        "toId": 466,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"electirizer\"}}"
+    },
+    {
+        "id": 92,
+        "pokemonEvolutionId": 61,
+        "fromId": 240,
+        "toId": 126,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 93,
+        "pokemonEvolutionId": 61,
+        "fromId": 126,
+        "toId": 467,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"magmarizer\"}}"
+    },
+    {
+        "id": 94,
+        "pokemonEvolutionId": 64,
+        "fromId": 129,
+        "toId": 130,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 95,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 134,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 96,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 135,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"thunder-stone\"}}"
+    },
+    {
+        "id": 97,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 136,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"fire-stone\"}}"
+    },
+    {
+        "id": 98,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 196,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}",
+        "detail2": "{\"time_of_day\":\"day\"}"
+    },
+    {
+        "id": 99,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 197,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 100,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 470,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"eterna-forest\"}}"
+    },
+    {
+        "id": 101,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 470,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"pinwheel-forest\"}}"
+    },
+    {
+        "id": 102,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 470,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"kalos-route-20\"}}"
+    },
+    {
+        "id": 103,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 470,
+        "trigger": "level-up"
+    },
+    {
+        "id": 104,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 471,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"sinnoh-route-217\"}}"
+    },
+    {
+        "id": 105,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 471,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"twist-mountain\"}}"
+    },
+    {
+        "id": 106,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 471,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"frost-cavern\"}}"
+    },
+    {
+        "id": 107,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 471,
+        "trigger": "level-up"
+    },
+    {
+        "id": 108,
+        "pokemonEvolutionId": 67,
+        "fromId": 133,
+        "toId": 700,
+        "trigger": "level-up",
+        "detail1": "{\"known_move_type\":{\"name\":\"fairy\"}}",
+        "detail2": "{\"min_affection\":2}"
+    },
+    {
+        "id": 109,
+        "pokemonEvolutionId": 68,
+        "fromId": 137,
+        "toId": 233,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"up-grade\"}}"
+    },
+    {
+        "id": 110,
+        "pokemonEvolutionId": 68,
+        "fromId": 233,
+        "toId": 474,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"dubious-disc\"}}"
+    },
+    {
+        "id": 111,
+        "pokemonEvolutionId": 69,
+        "fromId": 138,
+        "toId": 139,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 112,
+        "pokemonEvolutionId": 70,
+        "fromId": 140,
+        "toId": 141,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 113,
+        "pokemonEvolutionId": 72,
+        "fromId": 446,
+        "toId": 143,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 114,
+        "pokemonEvolutionId": 76,
+        "fromId": 147,
+        "toId": 148,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 115,
+        "pokemonEvolutionId": 76,
+        "fromId": 148,
+        "toId": 149,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":55}"
+    },
+    {
+        "id": 116,
+        "pokemonEvolutionId": 79,
+        "fromId": 152,
+        "toId": 153,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 117,
+        "pokemonEvolutionId": 79,
+        "fromId": 153,
+        "toId": 154,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 118,
+        "pokemonEvolutionId": 80,
+        "fromId": 155,
+        "toId": 156,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":14}"
+    },
+    {
+        "id": 119,
+        "pokemonEvolutionId": 80,
+        "fromId": 156,
+        "toId": 157,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 120,
+        "pokemonEvolutionId": 81,
+        "fromId": 158,
+        "toId": 159,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 121,
+        "pokemonEvolutionId": 81,
+        "fromId": 159,
+        "toId": 160,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 122,
+        "pokemonEvolutionId": 82,
+        "fromId": 161,
+        "toId": 162,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":15}"
+    },
+    {
+        "id": 123,
+        "pokemonEvolutionId": 83,
+        "fromId": 163,
+        "toId": 164,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 124,
+        "pokemonEvolutionId": 84,
+        "fromId": 165,
+        "toId": 166,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 125,
+        "pokemonEvolutionId": 85,
+        "fromId": 167,
+        "toId": 168,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 126,
+        "pokemonEvolutionId": 86,
+        "fromId": 170,
+        "toId": 171,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":27}"
+    },
+    {
+        "id": 127,
+        "pokemonEvolutionId": 87,
+        "fromId": 175,
+        "toId": 176,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 128,
+        "pokemonEvolutionId": 87,
+        "fromId": 176,
+        "toId": 468,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"shiny-stone\"}}"
+    },
+    {
+        "id": 129,
+        "pokemonEvolutionId": 88,
+        "fromId": 177,
+        "toId": 178,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 130,
+        "pokemonEvolutionId": 89,
+        "fromId": 179,
+        "toId": 180,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":15}"
+    },
+    {
+        "id": 131,
+        "pokemonEvolutionId": 89,
+        "fromId": 180,
+        "toId": 181,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 132,
+        "pokemonEvolutionId": 90,
+        "fromId": 298,
+        "toId": 183,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 133,
+        "pokemonEvolutionId": 90,
+        "fromId": 183,
+        "toId": 184,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 134,
+        "pokemonEvolutionId": 91,
+        "fromId": 438,
+        "toId": 185,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"mimic\"}}"
+    },
+    {
+        "id": 135,
+        "pokemonEvolutionId": 92,
+        "fromId": 187,
+        "toId": 188,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 136,
+        "pokemonEvolutionId": 92,
+        "fromId": 188,
+        "toId": 189,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":27}"
+    },
+    {
+        "id": 137,
+        "pokemonEvolutionId": 93,
+        "fromId": 190,
+        "toId": 424,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"double-hit\"}}"
+    },
+    {
+        "id": 138,
+        "pokemonEvolutionId": 94,
+        "fromId": 191,
+        "toId": 192,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"sun-stone\"}}"
+    },
+    {
+        "id": 139,
+        "pokemonEvolutionId": 95,
+        "fromId": 193,
+        "toId": 469,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"ancient-power\"}}"
+    },
+    {
+        "id": 140,
+        "pokemonEvolutionId": 96,
+        "fromId": 194,
+        "toId": 195,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 141,
+        "pokemonEvolutionId": 97,
+        "fromId": 198,
+        "toId": 430,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"dusk-stone\"}}"
+    },
+    {
+        "id": 142,
+        "pokemonEvolutionId": 98,
+        "fromId": 200,
+        "toId": 429,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"dusk-stone\"}}"
+    },
+    {
+        "id": 143,
+        "pokemonEvolutionId": 100,
+        "fromId": 360,
+        "toId": 202,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":15}"
+    },
+    {
+        "id": 144,
+        "pokemonEvolutionId": 102,
+        "fromId": 204,
+        "toId": 205,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":31}"
+    },
+    {
+        "id": 145,
+        "pokemonEvolutionId": 104,
+        "fromId": 207,
+        "toId": 472,
+        "trigger": "level-up",
+        "detail1": "{\"held_item\":{\"name\":\"razor-fang\"}}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 146,
+        "pokemonEvolutionId": 105,
+        "fromId": 209,
+        "toId": 210,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":23}"
+    },
+    {
+        "id": 147,
+        "pokemonEvolutionId": 109,
+        "fromId": 215,
+        "toId": 461,
+        "trigger": "level-up",
+        "detail1": "{\"held_item\":{\"name\":\"razor-claw\"}}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 148,
+        "pokemonEvolutionId": 110,
+        "fromId": 216,
+        "toId": 217,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 149,
+        "pokemonEvolutionId": 111,
+        "fromId": 218,
+        "toId": 219,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":38}"
+    },
+    {
+        "id": 150,
+        "pokemonEvolutionId": 112,
+        "fromId": 220,
+        "toId": 221,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":33}"
+    },
+    {
+        "id": 151,
+        "pokemonEvolutionId": 112,
+        "fromId": 221,
+        "toId": 473,
+        "trigger": "level-up",
+        "detail1": "{\"known_move\":{\"name\":\"ancient-power\"}}"
+    },
+    {
+        "id": 152,
+        "pokemonEvolutionId": 114,
+        "fromId": 223,
+        "toId": 224,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 153,
+        "pokemonEvolutionId": 116,
+        "fromId": 458,
+        "toId": 226,
+        "trigger": "level-up",
+        "detail1": "{\"party_species\":{\"name\":\"remoraid\"}}"
+    },
+    {
+        "id": 154,
+        "pokemonEvolutionId": 118,
+        "fromId": 228,
+        "toId": 229,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":24}"
+    },
+    {
+        "id": 155,
+        "pokemonEvolutionId": 119,
+        "fromId": 231,
+        "toId": 232,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 156,
+        "pokemonEvolutionId": 126,
+        "fromId": 246,
+        "toId": 247,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 157,
+        "pokemonEvolutionId": 126,
+        "fromId": 247,
+        "toId": 248,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":55}"
+    },
+    {
+        "id": 158,
+        "pokemonEvolutionId": 130,
+        "fromId": 252,
+        "toId": 253,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 159,
+        "pokemonEvolutionId": 130,
+        "fromId": 253,
+        "toId": 254,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 160,
+        "pokemonEvolutionId": 131,
+        "fromId": 255,
+        "toId": 256,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 161,
+        "pokemonEvolutionId": 131,
+        "fromId": 256,
+        "toId": 257,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 162,
+        "pokemonEvolutionId": 132,
+        "fromId": 258,
+        "toId": 259,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 163,
+        "pokemonEvolutionId": 132,
+        "fromId": 259,
+        "toId": 260,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 164,
+        "pokemonEvolutionId": 133,
+        "fromId": 261,
+        "toId": 262,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 165,
+        "pokemonEvolutionId": 134,
+        "fromId": 263,
+        "toId": 264,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 166,
+        "pokemonEvolutionId": 135,
+        "fromId": 265,
+        "toId": 266,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":7}"
+    },
+    {
+        "id": 167,
+        "pokemonEvolutionId": 135,
+        "fromId": 266,
+        "toId": 267,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":10}"
+    },
+    {
+        "id": 168,
+        "pokemonEvolutionId": 135,
+        "fromId": 265,
+        "toId": 268,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":7}"
+    },
+    {
+        "id": 169,
+        "pokemonEvolutionId": 135,
+        "fromId": 268,
+        "toId": 269,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":10}"
+    },
+    {
+        "id": 170,
+        "pokemonEvolutionId": 136,
+        "fromId": 270,
+        "toId": 271,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":14}"
+    },
+    {
+        "id": 171,
+        "pokemonEvolutionId": 136,
+        "fromId": 271,
+        "toId": 272,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 172,
+        "pokemonEvolutionId": 137,
+        "fromId": 273,
+        "toId": 274,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":14}"
+    },
+    {
+        "id": 173,
+        "pokemonEvolutionId": 137,
+        "fromId": 274,
+        "toId": 275,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
+    },
+    {
+        "id": 174,
+        "pokemonEvolutionId": 138,
+        "fromId": 276,
+        "toId": 277,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 175,
+        "pokemonEvolutionId": 139,
+        "fromId": 278,
+        "toId": 279,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 176,
+        "pokemonEvolutionId": 140,
+        "fromId": 280,
+        "toId": 281,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 177,
+        "pokemonEvolutionId": 140,
+        "fromId": 281,
+        "toId": 282,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 178,
+        "pokemonEvolutionId": 140,
+        "fromId": 281,
+        "toId": 475,
+        "trigger": "use-item",
+        "detail1": "{\"gender\":2}",
+        "detail2": "{\"item\":{\"name\":\"dawn-stone\"}}"
+    },
+    {
+        "id": 179,
+        "pokemonEvolutionId": 141,
+        "fromId": 283,
+        "toId": 284,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 180,
+        "pokemonEvolutionId": 142,
+        "fromId": 285,
+        "toId": 286,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":23}"
+    },
+    {
+        "id": 181,
+        "pokemonEvolutionId": 143,
+        "fromId": 287,
+        "toId": 288,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 182,
+        "pokemonEvolutionId": 143,
+        "fromId": 288,
+        "toId": 289,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 183,
+        "pokemonEvolutionId": 144,
+        "fromId": 290,
+        "toId": 291,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 184,
+        "pokemonEvolutionId": 144,
+        "fromId": 290,
+        "toId": 292,
+        "trigger": "shed"
+    },
+    {
+        "id": 185,
+        "pokemonEvolutionId": 145,
+        "fromId": 293,
+        "toId": 294,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 186,
+        "pokemonEvolutionId": 145,
+        "fromId": 294,
+        "toId": 295,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 187,
+        "pokemonEvolutionId": 146,
+        "fromId": 296,
+        "toId": 297,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":24}"
+    },
+    {
+        "id": 188,
+        "pokemonEvolutionId": 147,
+        "fromId": 299,
+        "toId": 476,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"mt-coronet\"}}"
+    },
+    {
+        "id": 189,
+        "pokemonEvolutionId": 147,
+        "fromId": 299,
+        "toId": 476,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"chargestone-cave\"}}"
+    },
+    {
+        "id": 190,
+        "pokemonEvolutionId": 147,
+        "fromId": 299,
+        "toId": 476,
+        "trigger": "level-up",
+        "detail1": "{\"location\":{\"name\":\"kalos-route-13\"}}"
+    },
+    {
+        "id": 191,
+        "pokemonEvolutionId": 147,
+        "fromId": 299,
+        "toId": 476,
+        "trigger": "level-up"
+    },
+    {
+        "id": 192,
+        "pokemonEvolutionId": 148,
+        "fromId": 300,
+        "toId": 301,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 193,
+        "pokemonEvolutionId": 151,
+        "fromId": 304,
+        "toId": 305,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 194,
+        "pokemonEvolutionId": 151,
+        "fromId": 305,
+        "toId": 306,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":42}"
+    },
+    {
+        "id": 195,
+        "pokemonEvolutionId": 152,
+        "fromId": 307,
+        "toId": 308,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 196,
+        "pokemonEvolutionId": 153,
+        "fromId": 309,
+        "toId": 310,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":26}"
+    },
+    {
+        "id": 197,
+        "pokemonEvolutionId": 158,
+        "fromId": 406,
+        "toId": 315,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}",
+        "detail2": "{\"time_of_day\":\"day\"}"
+    },
+    {
+        "id": 198,
+        "pokemonEvolutionId": 158,
+        "fromId": 315,
+        "toId": 407,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"shiny-stone\"}}"
+    },
+    {
+        "id": 199,
+        "pokemonEvolutionId": 159,
+        "fromId": 316,
+        "toId": 317,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":26}"
+    },
+    {
+        "id": 200,
+        "pokemonEvolutionId": 160,
+        "fromId": 318,
+        "toId": 319,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 201,
+        "pokemonEvolutionId": 161,
+        "fromId": 320,
+        "toId": 321,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 202,
+        "pokemonEvolutionId": 162,
+        "fromId": 322,
+        "toId": 323,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":33}"
+    },
+    {
+        "id": 203,
+        "pokemonEvolutionId": 164,
+        "fromId": 325,
+        "toId": 326,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 204,
+        "pokemonEvolutionId": 166,
+        "fromId": 328,
+        "toId": 329,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 205,
+        "pokemonEvolutionId": 166,
+        "fromId": 329,
+        "toId": 330,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":45}"
+    },
+    {
+        "id": 206,
+        "pokemonEvolutionId": 167,
+        "fromId": 331,
+        "toId": 332,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 207,
+        "pokemonEvolutionId": 168,
+        "fromId": 333,
+        "toId": 334,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 208,
+        "pokemonEvolutionId": 173,
+        "fromId": 339,
+        "toId": 340,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 209,
+        "pokemonEvolutionId": 174,
+        "fromId": 341,
+        "toId": 342,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 210,
+        "pokemonEvolutionId": 175,
+        "fromId": 343,
+        "toId": 344,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 211,
+        "pokemonEvolutionId": 176,
+        "fromId": 345,
+        "toId": 346,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 212,
+        "pokemonEvolutionId": 177,
+        "fromId": 347,
+        "toId": 348,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 213,
+        "pokemonEvolutionId": 178,
+        "fromId": 349,
+        "toId": 350,
+        "trigger": "level-up",
+        "detail1": "{\"min_beauty\":171}"
+    },
+    {
+        "id": 214,
+        "pokemonEvolutionId": 178,
+        "fromId": 349,
+        "toId": 350,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"prism-scale\"}}"
+    },
+    {
+        "id": 215,
+        "pokemonEvolutionId": 178,
+        "fromId": 349,
+        "toId": 350,
+        "trigger": "level-up",
+        "detail1": "{\"min_beauty\":170}"
+    },
+    {
+        "id": 216,
+        "pokemonEvolutionId": 181,
+        "fromId": 353,
+        "toId": 354,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 217,
+        "pokemonEvolutionId": 182,
+        "fromId": 355,
+        "toId": 356,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 218,
+        "pokemonEvolutionId": 182,
+        "fromId": 356,
+        "toId": 477,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"reaper-cloth\"}}"
+    },
+    {
+        "id": 219,
+        "pokemonEvolutionId": 184,
+        "fromId": 433,
+        "toId": 358,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 220,
+        "pokemonEvolutionId": 186,
+        "fromId": 361,
+        "toId": 362,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":42}"
+    },
+    {
+        "id": 221,
+        "pokemonEvolutionId": 186,
+        "fromId": 361,
+        "toId": 478,
+        "trigger": "use-item",
+        "detail1": "{\"gender\":1}",
+        "detail2": "{\"item\":{\"name\":\"dawn-stone\"}}"
+    },
+    {
+        "id": 222,
+        "pokemonEvolutionId": 187,
+        "fromId": 363,
+        "toId": 364,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 223,
+        "pokemonEvolutionId": 187,
+        "fromId": 364,
+        "toId": 365,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":44}"
+    },
+    {
+        "id": 224,
+        "pokemonEvolutionId": 188,
+        "fromId": 366,
+        "toId": 367,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"deep-sea-tooth\"}}"
+    },
+    {
+        "id": 225,
+        "pokemonEvolutionId": 188,
+        "fromId": 366,
+        "toId": 368,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"deep-sea-scale\"}}"
+    },
+    {
+        "id": 226,
+        "pokemonEvolutionId": 191,
+        "fromId": 371,
+        "toId": 372,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 227,
+        "pokemonEvolutionId": 191,
+        "fromId": 372,
+        "toId": 373,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":50}"
+    },
+    {
+        "id": 228,
+        "pokemonEvolutionId": 192,
+        "fromId": 374,
+        "toId": 375,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 229,
+        "pokemonEvolutionId": 192,
+        "fromId": 375,
+        "toId": 376,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":45}"
+    },
+    {
+        "id": 230,
+        "pokemonEvolutionId": 203,
+        "fromId": 387,
+        "toId": 388,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":18}"
+    },
+    {
+        "id": 231,
+        "pokemonEvolutionId": 203,
+        "fromId": 388,
+        "toId": 389,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 232,
+        "pokemonEvolutionId": 204,
+        "fromId": 390,
+        "toId": 391,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":14}"
+    },
+    {
+        "id": 233,
+        "pokemonEvolutionId": 204,
+        "fromId": 391,
+        "toId": 392,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 234,
+        "pokemonEvolutionId": 205,
+        "fromId": 393,
+        "toId": 394,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 235,
+        "pokemonEvolutionId": 205,
+        "fromId": 394,
+        "toId": 395,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 236,
+        "pokemonEvolutionId": 206,
+        "fromId": 396,
+        "toId": 397,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":14}"
+    },
+    {
+        "id": 237,
+        "pokemonEvolutionId": 206,
+        "fromId": 397,
+        "toId": 398,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 238,
+        "pokemonEvolutionId": 207,
+        "fromId": 399,
+        "toId": 400,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":15}"
+    },
+    {
+        "id": 239,
+        "pokemonEvolutionId": 208,
+        "fromId": 401,
+        "toId": 402,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":10}"
+    },
+    {
+        "id": 240,
+        "pokemonEvolutionId": 209,
+        "fromId": 403,
+        "toId": 404,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":15}"
+    },
+    {
+        "id": 241,
+        "pokemonEvolutionId": 209,
+        "fromId": 404,
+        "toId": 405,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 242,
+        "pokemonEvolutionId": 211,
+        "fromId": 408,
+        "toId": 409,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 243,
+        "pokemonEvolutionId": 212,
+        "fromId": 410,
+        "toId": 411,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 244,
+        "pokemonEvolutionId": 213,
+        "fromId": 412,
+        "toId": 413,
+        "trigger": "level-up",
+        "detail1": "{\"gender\":1}",
+        "detail2": "{\"min_level\":20}"
+    },
+    {
+        "id": 245,
+        "pokemonEvolutionId": 213,
+        "fromId": 412,
+        "toId": 414,
+        "trigger": "level-up",
+        "detail1": "{\"gender\":2}",
+        "detail2": "{\"min_level\":20}"
+    },
+    {
+        "id": 246,
+        "pokemonEvolutionId": 214,
+        "fromId": 415,
+        "toId": 416,
+        "trigger": "level-up",
+        "detail1": "{\"gender\":1}",
+        "detail2": "{\"min_level\":21}"
+    },
+    {
+        "id": 247,
+        "pokemonEvolutionId": 216,
+        "fromId": 418,
+        "toId": 419,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":26}"
+    },
+    {
+        "id": 248,
+        "pokemonEvolutionId": 217,
+        "fromId": 420,
+        "toId": 421,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 249,
+        "pokemonEvolutionId": 218,
+        "fromId": 422,
+        "toId": 423,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 250,
+        "pokemonEvolutionId": 219,
+        "fromId": 425,
+        "toId": 426,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":28}"
+    },
+    {
+        "id": 251,
+        "pokemonEvolutionId": 220,
+        "fromId": 427,
+        "toId": 428,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 252,
+        "pokemonEvolutionId": 221,
+        "fromId": 431,
+        "toId": 432,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":38}"
+    },
+    {
+        "id": 253,
+        "pokemonEvolutionId": 223,
+        "fromId": 434,
+        "toId": 435,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 254,
+        "pokemonEvolutionId": 224,
+        "fromId": 436,
+        "toId": 437,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":33}"
+    },
+    {
+        "id": 255,
+        "pokemonEvolutionId": 230,
+        "fromId": 443,
+        "toId": 444,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":24}"
+    },
+    {
+        "id": 256,
+        "pokemonEvolutionId": 230,
+        "fromId": 444,
+        "toId": 445,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":48}"
+    },
+    {
+        "id": 257,
+        "pokemonEvolutionId": 232,
+        "fromId": 447,
+        "toId": 448,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}",
+        "detail2": "{\"time_of_day\":\"day\"}"
+    },
+    {
+        "id": 258,
+        "pokemonEvolutionId": 233,
+        "fromId": 449,
+        "toId": 450,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 259,
+        "pokemonEvolutionId": 234,
+        "fromId": 451,
+        "toId": 452,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 260,
+        "pokemonEvolutionId": 235,
+        "fromId": 453,
+        "toId": 454,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 261,
+        "pokemonEvolutionId": 237,
+        "fromId": 456,
+        "toId": 457,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":31}"
+    },
+    {
+        "id": 262,
+        "pokemonEvolutionId": 239,
+        "fromId": 459,
+        "toId": 460,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 263,
+        "pokemonEvolutionId": 256,
+        "fromId": 495,
+        "toId": 496,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":17}"
+    },
+    {
+        "id": 264,
+        "pokemonEvolutionId": 256,
+        "fromId": 496,
+        "toId": 497,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 265,
+        "pokemonEvolutionId": 257,
+        "fromId": 498,
+        "toId": 499,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":17}"
+    },
+    {
+        "id": 266,
+        "pokemonEvolutionId": 257,
+        "fromId": 499,
+        "toId": 500,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 267,
+        "pokemonEvolutionId": 258,
+        "fromId": 501,
+        "toId": 502,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":17}"
+    },
+    {
+        "id": 268,
+        "pokemonEvolutionId": 258,
+        "fromId": 502,
+        "toId": 503,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 269,
+        "pokemonEvolutionId": 259,
+        "fromId": 504,
+        "toId": 505,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 270,
+        "pokemonEvolutionId": 260,
+        "fromId": 506,
+        "toId": 507,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 271,
+        "pokemonEvolutionId": 260,
+        "fromId": 507,
+        "toId": 508,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 272,
+        "pokemonEvolutionId": 261,
+        "fromId": 509,
+        "toId": 510,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 273,
+        "pokemonEvolutionId": 262,
+        "fromId": 511,
+        "toId": 512,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
+    },
+    {
+        "id": 274,
+        "pokemonEvolutionId": 263,
+        "fromId": 513,
+        "toId": 514,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"fire-stone\"}}"
+    },
+    {
+        "id": 275,
+        "pokemonEvolutionId": 264,
+        "fromId": 515,
+        "toId": 516,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"water-stone\"}}"
+    },
+    {
+        "id": 276,
+        "pokemonEvolutionId": 265,
+        "fromId": 517,
+        "toId": 518,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"moon-stone\"}}"
+    },
+    {
+        "id": 277,
+        "pokemonEvolutionId": 266,
+        "fromId": 519,
+        "toId": 520,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":21}"
+    },
+    {
+        "id": 278,
+        "pokemonEvolutionId": 266,
+        "fromId": 520,
+        "toId": 521,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 279,
+        "pokemonEvolutionId": 267,
+        "fromId": 522,
+        "toId": 523,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":27}"
+    },
+    {
+        "id": 280,
+        "pokemonEvolutionId": 268,
+        "fromId": 524,
+        "toId": 525,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 281,
+        "pokemonEvolutionId": 268,
+        "fromId": 525,
+        "toId": 526,
+        "trigger": "trade"
+    },
+    {
+        "id": 282,
+        "pokemonEvolutionId": 269,
+        "fromId": 527,
+        "toId": 528,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 283,
+        "pokemonEvolutionId": 270,
+        "fromId": 529,
+        "toId": 530,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":31}"
+    },
+    {
+        "id": 284,
+        "pokemonEvolutionId": 272,
+        "fromId": 532,
+        "toId": 533,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 285,
+        "pokemonEvolutionId": 272,
+        "fromId": 533,
+        "toId": 534,
+        "trigger": "trade"
+    },
+    {
+        "id": 286,
+        "pokemonEvolutionId": 273,
+        "fromId": 535,
+        "toId": 536,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 287,
+        "pokemonEvolutionId": 273,
+        "fromId": 536,
+        "toId": 537,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 288,
+        "pokemonEvolutionId": 276,
+        "fromId": 540,
+        "toId": 541,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 289,
+        "pokemonEvolutionId": 276,
+        "fromId": 541,
+        "toId": 542,
+        "trigger": "level-up",
+        "detail1": "{\"min_happiness\":220}"
+    },
+    {
+        "id": 290,
+        "pokemonEvolutionId": 277,
+        "fromId": 543,
+        "toId": 544,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":22}"
+    },
+    {
+        "id": 291,
+        "pokemonEvolutionId": 277,
+        "fromId": 544,
+        "toId": 545,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 292,
+        "pokemonEvolutionId": 278,
+        "fromId": 546,
+        "toId": 547,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"sun-stone\"}}"
+    },
+    {
+        "id": 293,
+        "pokemonEvolutionId": 279,
+        "fromId": 548,
+        "toId": 549,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"sun-stone\"}}"
+    },
+    {
+        "id": 294,
+        "pokemonEvolutionId": 281,
+        "fromId": 551,
+        "toId": 552,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":29}"
+    },
+    {
+        "id": 295,
+        "pokemonEvolutionId": 281,
+        "fromId": 552,
+        "toId": 553,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 296,
+        "pokemonEvolutionId": 282,
+        "fromId": 554,
+        "toId": 555,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 297,
+        "pokemonEvolutionId": 284,
+        "fromId": 557,
+        "toId": 558,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 298,
+        "pokemonEvolutionId": 285,
+        "fromId": 559,
+        "toId": 560,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}"
+    },
+    {
+        "id": 299,
+        "pokemonEvolutionId": 287,
+        "fromId": 562,
+        "toId": 563,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 300,
+        "pokemonEvolutionId": 288,
+        "fromId": 564,
+        "toId": 565,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 301,
+        "pokemonEvolutionId": 289,
+        "fromId": 566,
+        "toId": 567,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 302,
+        "pokemonEvolutionId": 290,
+        "fromId": 568,
+        "toId": 569,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 303,
+        "pokemonEvolutionId": 291,
+        "fromId": 570,
+        "toId": 571,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}"
+    },
+    {
+        "id": 304,
+        "pokemonEvolutionId": 292,
+        "fromId": 572,
+        "toId": 573,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"shiny-stone\"}}"
+    },
+    {
+        "id": 305,
+        "pokemonEvolutionId": 293,
+        "fromId": 574,
+        "toId": 575,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 306,
+        "pokemonEvolutionId": 293,
+        "fromId": 575,
+        "toId": 576,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":41}"
+    },
+    {
+        "id": 307,
+        "pokemonEvolutionId": 294,
+        "fromId": 577,
+        "toId": 578,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 308,
+        "pokemonEvolutionId": 294,
+        "fromId": 578,
+        "toId": 579,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":41}"
+    },
+    {
+        "id": 309,
+        "pokemonEvolutionId": 295,
+        "fromId": 580,
+        "toId": 581,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 310,
+        "pokemonEvolutionId": 296,
+        "fromId": 582,
+        "toId": 583,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 311,
+        "pokemonEvolutionId": 296,
+        "fromId": 583,
+        "toId": 584,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":47}"
+    },
+    {
+        "id": 312,
+        "pokemonEvolutionId": 297,
+        "fromId": 585,
+        "toId": 586,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":34}"
+    },
+    {
+        "id": 313,
+        "pokemonEvolutionId": 299,
+        "fromId": 588,
+        "toId": 589,
+        "trigger": "trade",
+        "detail1": "{\"trade_species\":{\"name\":\"shelmet\"}}"
+    },
+    {
+        "id": 314,
+        "pokemonEvolutionId": 300,
+        "fromId": 590,
+        "toId": 591,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}"
+    },
+    {
+        "id": 315,
+        "pokemonEvolutionId": 301,
+        "fromId": 592,
+        "toId": 593,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 316,
+        "pokemonEvolutionId": 303,
+        "fromId": 595,
+        "toId": 596,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 317,
+        "pokemonEvolutionId": 304,
+        "fromId": 597,
+        "toId": 598,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 318,
+        "pokemonEvolutionId": 305,
+        "fromId": 599,
+        "toId": 600,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":38}"
+    },
+    {
+        "id": 319,
+        "pokemonEvolutionId": 305,
+        "fromId": 600,
+        "toId": 601,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":49}"
+    },
+    {
+        "id": 320,
+        "pokemonEvolutionId": 306,
+        "fromId": 602,
+        "toId": 603,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}"
+    },
+    {
+        "id": 321,
+        "pokemonEvolutionId": 306,
+        "fromId": 603,
+        "toId": 604,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"thunder-stone\"}}"
+    },
+    {
+        "id": 322,
+        "pokemonEvolutionId": 307,
+        "fromId": 605,
+        "toId": 606,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":42}"
+    },
+    {
+        "id": 323,
+        "pokemonEvolutionId": 308,
+        "fromId": 607,
+        "toId": 608,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":41}"
+    },
+    {
+        "id": 324,
+        "pokemonEvolutionId": 308,
+        "fromId": 608,
+        "toId": 609,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"dusk-stone\"}}"
+    },
+    {
+        "id": 325,
+        "pokemonEvolutionId": 309,
+        "fromId": 610,
+        "toId": 611,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":38}"
+    },
+    {
+        "id": 326,
+        "pokemonEvolutionId": 309,
+        "fromId": 611,
+        "toId": 612,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":48}"
+    },
+    {
+        "id": 327,
+        "pokemonEvolutionId": 310,
+        "fromId": 613,
+        "toId": 614,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 328,
+        "pokemonEvolutionId": 312,
+        "fromId": 616,
+        "toId": 617,
+        "trigger": "trade",
+        "detail1": "{\"trade_species\":{\"name\":\"karrablast\"}}"
+    },
+    {
+        "id": 329,
+        "pokemonEvolutionId": 314,
+        "fromId": 619,
+        "toId": 620,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":50}"
+    },
+    {
+        "id": 330,
+        "pokemonEvolutionId": 316,
+        "fromId": 622,
+        "toId": 623,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":43}"
+    },
+    {
+        "id": 331,
+        "pokemonEvolutionId": 317,
+        "fromId": 624,
+        "toId": 625,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":52}"
+    },
+    {
+        "id": 332,
+        "pokemonEvolutionId": 319,
+        "fromId": 627,
+        "toId": 628,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":54}"
+    },
+    {
+        "id": 333,
+        "pokemonEvolutionId": 320,
+        "fromId": 629,
+        "toId": 630,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":54}"
+    },
+    {
+        "id": 334,
+        "pokemonEvolutionId": 323,
+        "fromId": 633,
+        "toId": 634,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":50}"
+    },
+    {
+        "id": 335,
+        "pokemonEvolutionId": 323,
+        "fromId": 634,
+        "toId": 635,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":64}"
+    },
+    {
+        "id": 336,
+        "pokemonEvolutionId": 324,
+        "fromId": 636,
+        "toId": 637,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":59}"
+    },
+    {
+        "id": 337,
+        "pokemonEvolutionId": 337,
+        "fromId": 650,
+        "toId": 651,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 338,
+        "pokemonEvolutionId": 337,
+        "fromId": 651,
+        "toId": 652,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 339,
+        "pokemonEvolutionId": 338,
+        "fromId": 653,
+        "toId": 654,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 340,
+        "pokemonEvolutionId": 338,
+        "fromId": 654,
+        "toId": 655,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 341,
+        "pokemonEvolutionId": 339,
+        "fromId": 656,
+        "toId": 657,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":16}"
+    },
+    {
+        "id": 342,
+        "pokemonEvolutionId": 339,
+        "fromId": 657,
+        "toId": 658,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":36}"
+    },
+    {
+        "id": 343,
+        "pokemonEvolutionId": 340,
+        "fromId": 659,
+        "toId": 660,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":20}"
+    },
+    {
+        "id": 344,
+        "pokemonEvolutionId": 341,
+        "fromId": 661,
+        "toId": 662,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":17}"
+    },
+    {
+        "id": 345,
+        "pokemonEvolutionId": 341,
+        "fromId": 662,
+        "toId": 663,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 346,
+        "pokemonEvolutionId": 342,
+        "fromId": 664,
+        "toId": 665,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":9}"
+    },
+    {
+        "id": 347,
+        "pokemonEvolutionId": 342,
+        "fromId": 665,
+        "toId": 666,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":12}"
+    },
+    {
+        "id": 348,
+        "pokemonEvolutionId": 343,
+        "fromId": 667,
+        "toId": 668,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 349,
+        "pokemonEvolutionId": 344,
+        "fromId": 669,
+        "toId": 670,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":19}"
+    },
+    {
+        "id": 350,
+        "pokemonEvolutionId": 344,
+        "fromId": 670,
+        "toId": 671,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"shiny-stone\"}}"
+    },
+    {
+        "id": 351,
+        "pokemonEvolutionId": 345,
+        "fromId": 672,
+        "toId": 673,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}"
+    },
+    {
+        "id": 352,
+        "pokemonEvolutionId": 346,
+        "fromId": 674,
+        "toId": 675,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":32}",
+        "detail2": "{\"party_type\":{\"name\":\"dark\"}}"
+    },
+    {
+        "id": 353,
+        "pokemonEvolutionId": 348,
+        "fromId": 677,
+        "toId": 678,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":25}"
+    },
+    {
+        "id": 354,
+        "pokemonEvolutionId": 348,
+        "fromId": 677,
+        "toId": 678,
+        "trigger": "level-up",
+        "detail1": "{\"gender\":2}",
+        "detail2": "{\"min_level\":25}"
+    },
+    {
+        "id": 355,
+        "pokemonEvolutionId": 349,
+        "fromId": 679,
+        "toId": 680,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":35}"
+    },
+    {
+        "id": 356,
+        "pokemonEvolutionId": 349,
+        "fromId": 680,
+        "toId": 681,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"dusk-stone\"}}"
+    },
+    {
+        "id": 357,
+        "pokemonEvolutionId": 350,
+        "fromId": 682,
+        "toId": 683,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"sachet\"}}"
+    },
+    {
+        "id": 358,
+        "pokemonEvolutionId": 351,
+        "fromId": 684,
+        "toId": 685,
+        "trigger": "trade",
+        "detail1": "{\"held_item\":{\"name\":\"whipped-dream\"}}"
+    },
+    {
+        "id": 359,
+        "pokemonEvolutionId": 352,
+        "fromId": 686,
+        "toId": 687,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":30}",
+        "detail2": "{\"turn_upside_down\":true}"
+    },
+    {
+        "id": 360,
+        "pokemonEvolutionId": 353,
+        "fromId": 688,
+        "toId": 689,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}"
+    },
+    {
+        "id": 361,
+        "pokemonEvolutionId": 354,
+        "fromId": 690,
+        "toId": 691,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":48}"
+    },
+    {
+        "id": 362,
+        "pokemonEvolutionId": 355,
+        "fromId": 692,
+        "toId": 693,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 363,
+        "pokemonEvolutionId": 356,
+        "fromId": 694,
+        "toId": 695,
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"sun-stone\"}}"
+    },
+    {
+        "id": 364,
+        "pokemonEvolutionId": 357,
+        "fromId": 696,
+        "toId": 697,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}",
+        "detail2": "{\"time_of_day\":\"day\"}"
+    },
+    {
+        "id": 365,
+        "pokemonEvolutionId": 358,
+        "fromId": 698,
+        "toId": 699,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":39}",
+        "detail2": "{\"time_of_day\":\"night\"}"
+    },
+    {
+        "id": 366,
+        "pokemonEvolutionId": 362,
+        "fromId": 704,
+        "toId": 705,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":40}"
+    },
+    {
+        "id": 367,
+        "pokemonEvolutionId": 362,
+        "fromId": 705,
+        "toId": 706,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":50}",
+        "detail2": "{\"needs_overworld_rain\":true}"
+    },
+    {
+        "id": 368,
+        "pokemonEvolutionId": 364,
+        "fromId": 708,
+        "toId": 709,
+        "trigger": "trade"
+    },
+    {
+        "id": 369,
+        "pokemonEvolutionId": 365,
+        "fromId": 710,
+        "toId": 711,
+        "trigger": "trade"
+    },
+    {
+        "id": 370,
+        "pokemonEvolutionId": 366,
+        "fromId": 712,
+        "toId": 713,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":37}"
+    },
+    {
+        "id": 371,
+        "pokemonEvolutionId": 367,
+        "fromId": 714,
+        "toId": 715,
+        "trigger": "level-up",
+        "detail1": "{\"min_level\":48}"
+    }
+]

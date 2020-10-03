@@ -1,4 +1,15 @@
-import * as express from 'express';
-import ExpressServer from '@/server';
+import driver from '@/driver';
+import app from '@/server';
+import * as http from 'http';
+import * as os from 'os';
 
-export default new ExpressServer(express()).start();
+driver.connect();
+
+const port = process.env.PORT || '3000';
+const host = process.env.HOST || 'localhost';
+http.createServer(app).listen(Number(port), host, () => {
+    console.info(
+        `up and running in ${process.env.NODE_ENV ||
+            'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
+    );
+});

@@ -15,6 +15,3 @@ package-lock.json
 
 # migration file
 db/migrations/*.ts
-
-# tests
-tests

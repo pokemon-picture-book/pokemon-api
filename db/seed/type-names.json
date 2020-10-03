@@ -1,0 +1,202 @@
+[
+    {
+        "typeId": 1,
+        "name": "ノーマル",
+        "languageId": 1
+    },
+    {
+        "typeId": 1,
+        "name": "Normal",
+        "languageId": 2
+    },
+    {
+        "typeId": 2,
+        "name": "かくとう",
+        "languageId": 1
+    },
+    {
+        "typeId": 2,
+        "name": "Fighting",
+        "languageId": 2
+    },
+    {
+        "typeId": 3,
+        "name": "ひこう",
+        "languageId": 1
+    },
+    {
+        "typeId": 3,
+        "name": "Flying",
+        "languageId": 2
+    },
+    {
+        "typeId": 4,
+        "name": "どく",
+        "languageId": 1
+    },
+    {
+        "typeId": 4,
+        "name": "Poison",
+        "languageId": 2
+    },
+    {
+        "typeId": 5,
+        "name": "じめん",
+        "languageId": 1
+    },
+    {
+        "typeId": 5,
+        "name": "Ground",
+        "languageId": 2
+    },
+    {
+        "typeId": 6,
+        "name": "いわ",
+        "languageId": 1
+    },
+    {
+        "typeId": 6,
+        "name": "Rock",
+        "languageId": 2
+    },
+    {
+        "typeId": 7,
+        "name": "むし",
+        "languageId": 1
+    },
+    {
+        "typeId": 7,
+        "name": "Bug",
+        "languageId": 2
+    },
+    {
+        "typeId": 8,
+        "name": "ゴースト",
+        "languageId": 1
+    },
+    {
+        "typeId": 8,
+        "name": "Ghost",
+        "languageId": 2
+    },
+    {
+        "typeId": 9,
+        "name": "はがね",
+        "languageId": 1
+    },
+    {
+        "typeId": 9,
+        "name": "Steel",
+        "languageId": 2
+    },
+    {
+        "typeId": 10,
+        "name": "ほのお",
+        "languageId": 1
+    },
+    {
+        "typeId": 10,
+        "name": "Fire",
+        "languageId": 2
+    },
+    {
+        "typeId": 11,
+        "name": "みず",
+        "languageId": 1
+    },
+    {
+        "typeId": 11,
+        "name": "Water",
+        "languageId": 2
+    },
+    {
+        "typeId": 12,
+        "name": "くさ",
+        "languageId": 1
+    },
+    {
+        "typeId": 12,
+        "name": "Grass",
+        "languageId": 2
+    },
+    {
+        "typeId": 13,
+        "name": "でんき",
+        "languageId": 1
+    },
+    {
+        "typeId": 13,
+        "name": "Electric",
+        "languageId": 2
+    },
+    {
+        "typeId": 14,
+        "name": "エスパー",
+        "languageId": 1
+    },
+    {
+        "typeId": 14,
+        "name": "Psychic",
+        "languageId": 2
+    },
+    {
+        "typeId": 15,
+        "name": "こおり",
+        "languageId": 1
+    },
+    {
+        "typeId": 15,
+        "name": "Ice",
+        "languageId": 2
+    },
+    {
+        "typeId": 16,
+        "name": "ドラゴン",
+        "languageId": 1
+    },
+    {
+        "typeId": 16,
+        "name": "Dragon",
+        "languageId": 2
+    },
+    {
+        "typeId": 17,
+        "name": "あく",
+        "languageId": 1
+    },
+    {
+        "typeId": 17,
+        "name": "Dark",
+        "languageId": 2
+    },
+    {
+        "typeId": 18,
+        "name": "フェアリー",
+        "languageId": 1
+    },
+    {
+        "typeId": 18,
+        "name": "Fairy",
+        "languageId": 2
+    },
+    {
+        "typeId": 10001,
+        "name": "？？？",
+        "languageId": 1
+    },
+    {
+        "typeId": 10001,
+        "name": "???",
+        "languageId": 2
+    },
+    {
+        "typeId": 10002,
+        "name": "ダーク",
+        "languageId": 1
+    },
+    {
+        "typeId": 10002,
+        "name": "Shadow",
+        "languageId": 2
+    }
+]

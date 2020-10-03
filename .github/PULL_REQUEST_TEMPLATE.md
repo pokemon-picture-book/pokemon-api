@@ -2,8 +2,7 @@
 ​
 ## Refs: 関連ファイル
 ​
-* Redmine ticket: link
-* Google doc: link
+* Ora ticket: link
 * Others: link
 ​
 ## Why: なぜこの変更をするのか

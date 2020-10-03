@@ -29,5 +29,20 @@
         "no-await-in-loop": "off",
         "import/no-duplicates": "off",
         "class-methods-use-this": "off"
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__test__/*.{j,t}s?(x)",
+          "**/test/integration/**/*.test.{j,t}s?(x)",
+          "**/test/unit/**/*.test.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest/globals": true
+        },
+        "plugins": [
+          "jest"
+        ]
+      }
+    ]
 }

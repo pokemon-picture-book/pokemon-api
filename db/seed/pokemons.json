@@ -1,0 +1,6491 @@
+[
+    {
+        "id": 1,
+        "height": 7,
+        "weight": 69,
+        "order": 1,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 1
+    },
+    {
+        "id": 2,
+        "height": 10,
+        "weight": 130,
+        "order": 2,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 1
+    },
+    {
+        "id": 3,
+        "height": 20,
+        "weight": 1000,
+        "order": 3,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 1
+    },
+    {
+        "id": 4,
+        "height": 6,
+        "weight": 85,
+        "order": 5,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 2
+    },
+    {
+        "id": 5,
+        "height": 11,
+        "weight": 190,
+        "order": 6,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 2
+    },
+    {
+        "id": 6,
+        "height": 17,
+        "weight": 905,
+        "order": 7,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 2
+    },
+    {
+        "id": 7,
+        "height": 5,
+        "weight": 90,
+        "order": 10,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 3
+    },
+    {
+        "id": 8,
+        "height": 10,
+        "weight": 225,
+        "order": 11,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 3
+    },
+    {
+        "id": 9,
+        "height": 16,
+        "weight": 855,
+        "order": 12,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 3
+    },
+    {
+        "id": 10,
+        "height": 3,
+        "weight": 29,
+        "order": 14,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 4
+    },
+    {
+        "id": 11,
+        "height": 7,
+        "weight": 99,
+        "order": 15,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 4
+    },
+    {
+        "id": 12,
+        "height": 11,
+        "weight": 320,
+        "order": 16,
+        "imageColor": "white",
+        "regionId": 1,
+        "pokemonEvolutionId": 4
+    },
+    {
+        "id": 13,
+        "height": 3,
+        "weight": 32,
+        "order": 17,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 5
+    },
+    {
+        "id": 14,
+        "height": 6,
+        "weight": 100,
+        "order": 18,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 5
+    },
+    {
+        "id": 15,
+        "height": 10,
+        "weight": 295,
+        "order": 19,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 5
+    },
+    {
+        "id": 16,
+        "height": 3,
+        "weight": 18,
+        "order": 21,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 6
+    },
+    {
+        "id": 17,
+        "height": 11,
+        "weight": 300,
+        "order": 22,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 6
+    },
+    {
+        "id": 18,
+        "height": 15,
+        "weight": 395,
+        "order": 23,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 6
+    },
+    {
+        "id": 19,
+        "height": 3,
+        "weight": 35,
+        "order": 25,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 7
+    },
+    {
+        "id": 20,
+        "height": 7,
+        "weight": 185,
+        "order": 27,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 7
+    },
+    {
+        "id": 21,
+        "height": 3,
+        "weight": 20,
+        "order": 30,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 8
+    },
+    {
+        "id": 22,
+        "height": 12,
+        "weight": 380,
+        "order": 31,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 8
+    },
+    {
+        "id": 23,
+        "height": 20,
+        "weight": 69,
+        "order": 32,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 9
+    },
+    {
+        "id": 24,
+        "height": 35,
+        "weight": 650,
+        "order": 33,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 9
+    },
+    {
+        "id": 25,
+        "height": 4,
+        "weight": 60,
+        "order": 35,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 10
+    },
+    {
+        "id": 26,
+        "height": 8,
+        "weight": 300,
+        "order": 49,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 10
+    },
+    {
+        "id": 27,
+        "height": 6,
+        "weight": 120,
+        "order": 51,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 11
+    },
+    {
+        "id": 28,
+        "height": 10,
+        "weight": 295,
+        "order": 53,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 11
+    },
+    {
+        "id": 29,
+        "height": 4,
+        "weight": 70,
+        "order": 55,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 12
+    },
+    {
+        "id": 30,
+        "height": 8,
+        "weight": 200,
+        "order": 56,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 12
+    },
+    {
+        "id": 31,
+        "height": 13,
+        "weight": 600,
+        "order": 57,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 12
+    },
+    {
+        "id": 32,
+        "height": 5,
+        "weight": 90,
+        "order": 58,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 13
+    },
+    {
+        "id": 33,
+        "height": 9,
+        "weight": 195,
+        "order": 59,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 13
+    },
+    {
+        "id": 34,
+        "height": 14,
+        "weight": 620,
+        "order": 60,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 13
+    },
+    {
+        "id": 35,
+        "height": 6,
+        "weight": 75,
+        "order": 62,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 14
+    },
+    {
+        "id": 36,
+        "height": 13,
+        "weight": 400,
+        "order": 63,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 14
+    },
+    {
+        "id": 37,
+        "height": 6,
+        "weight": 99,
+        "order": 64,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 15
+    },
+    {
+        "id": 38,
+        "height": 11,
+        "weight": 199,
+        "order": 66,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 15
+    },
+    {
+        "id": 39,
+        "height": 5,
+        "weight": 55,
+        "order": 69,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 16
+    },
+    {
+        "id": 40,
+        "height": 10,
+        "weight": 120,
+        "order": 70,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 16
+    },
+    {
+        "id": 41,
+        "height": 8,
+        "weight": 75,
+        "order": 71,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 17
+    },
+    {
+        "id": 42,
+        "height": 16,
+        "weight": 550,
+        "order": 72,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 17
+    },
+    {
+        "id": 43,
+        "height": 5,
+        "weight": 54,
+        "order": 74,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 18
+    },
+    {
+        "id": 44,
+        "height": 8,
+        "weight": 86,
+        "order": 75,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 18
+    },
+    {
+        "id": 45,
+        "height": 12,
+        "weight": 186,
+        "order": 76,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 18
+    },
+    {
+        "id": 46,
+        "height": 3,
+        "weight": 54,
+        "order": 78,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 19
+    },
+    {
+        "id": 47,
+        "height": 10,
+        "weight": 295,
+        "order": 79,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 19
+    },
+    {
+        "id": 48,
+        "height": 10,
+        "weight": 300,
+        "order": 80,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 20
+    },
+    {
+        "id": 49,
+        "height": 15,
+        "weight": 125,
+        "order": 81,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 20
+    },
+    {
+        "id": 50,
+        "height": 2,
+        "weight": 8,
+        "order": 82,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 21
+    },
+    {
+        "id": 51,
+        "height": 7,
+        "weight": 333,
+        "order": 84,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 21
+    },
+    {
+        "id": 52,
+        "height": 4,
+        "weight": 42,
+        "order": 86,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 22
+    },
+    {
+        "id": 53,
+        "height": 10,
+        "weight": 320,
+        "order": 88,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 22
+    },
+    {
+        "id": 54,
+        "height": 8,
+        "weight": 196,
+        "order": 90,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 23
+    },
+    {
+        "id": 55,
+        "height": 17,
+        "weight": 766,
+        "order": 91,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 23
+    },
+    {
+        "id": 56,
+        "height": 5,
+        "weight": 280,
+        "order": 92,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 24
+    },
+    {
+        "id": 57,
+        "height": 10,
+        "weight": 320,
+        "order": 93,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 24
+    },
+    {
+        "id": 58,
+        "height": 7,
+        "weight": 190,
+        "order": 94,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 25
+    },
+    {
+        "id": 59,
+        "height": 19,
+        "weight": 1550,
+        "order": 95,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 25
+    },
+    {
+        "id": 60,
+        "height": 6,
+        "weight": 124,
+        "order": 96,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 26
+    },
+    {
+        "id": 61,
+        "height": 10,
+        "weight": 200,
+        "order": 97,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 26
+    },
+    {
+        "id": 62,
+        "height": 13,
+        "weight": 540,
+        "order": 98,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 26
+    },
+    {
+        "id": 63,
+        "height": 9,
+        "weight": 195,
+        "order": 100,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 27
+    },
+    {
+        "id": 64,
+        "height": 13,
+        "weight": 565,
+        "order": 101,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 27
+    },
+    {
+        "id": 65,
+        "height": 15,
+        "weight": 480,
+        "order": 102,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 27
+    },
+    {
+        "id": 66,
+        "height": 8,
+        "weight": 195,
+        "order": 104,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 28
+    },
+    {
+        "id": 67,
+        "height": 15,
+        "weight": 705,
+        "order": 105,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 28
+    },
+    {
+        "id": 68,
+        "height": 16,
+        "weight": 1300,
+        "order": 106,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 28
+    },
+    {
+        "id": 69,
+        "height": 7,
+        "weight": 40,
+        "order": 107,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 29
+    },
+    {
+        "id": 70,
+        "height": 10,
+        "weight": 64,
+        "order": 108,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 29
+    },
+    {
+        "id": 71,
+        "height": 17,
+        "weight": 155,
+        "order": 109,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 29
+    },
+    {
+        "id": 72,
+        "height": 9,
+        "weight": 455,
+        "order": 110,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 30
+    },
+    {
+        "id": 73,
+        "height": 16,
+        "weight": 550,
+        "order": 111,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 30
+    },
+    {
+        "id": 74,
+        "height": 4,
+        "weight": 200,
+        "order": 112,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 31
+    },
+    {
+        "id": 75,
+        "height": 10,
+        "weight": 1050,
+        "order": 114,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 31
+    },
+    {
+        "id": 76,
+        "height": 14,
+        "weight": 3000,
+        "order": 116,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 31
+    },
+    {
+        "id": 77,
+        "height": 10,
+        "weight": 300,
+        "order": 118,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 32
+    },
+    {
+        "id": 78,
+        "height": 17,
+        "weight": 950,
+        "order": 119,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 32
+    },
+    {
+        "id": 79,
+        "height": 12,
+        "weight": 360,
+        "order": 120,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 33
+    },
+    {
+        "id": 80,
+        "height": 16,
+        "weight": 785,
+        "order": 121,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 33
+    },
+    {
+        "id": 81,
+        "height": 3,
+        "weight": 60,
+        "order": 124,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 34
+    },
+    {
+        "id": 82,
+        "height": 10,
+        "weight": 600,
+        "order": 125,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 34
+    },
+    {
+        "id": 83,
+        "height": 8,
+        "weight": 150,
+        "order": 127,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 84,
+        "height": 14,
+        "weight": 392,
+        "order": 128,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 36
+    },
+    {
+        "id": 85,
+        "height": 18,
+        "weight": 852,
+        "order": 129,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 36
+    },
+    {
+        "id": 86,
+        "height": 11,
+        "weight": 900,
+        "order": 130,
+        "imageColor": "white",
+        "regionId": 1,
+        "pokemonEvolutionId": 37
+    },
+    {
+        "id": 87,
+        "height": 17,
+        "weight": 1200,
+        "order": 131,
+        "imageColor": "white",
+        "regionId": 1,
+        "pokemonEvolutionId": 37
+    },
+    {
+        "id": 88,
+        "height": 9,
+        "weight": 300,
+        "order": 132,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 38
+    },
+    {
+        "id": 89,
+        "height": 12,
+        "weight": 300,
+        "order": 134,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 38
+    },
+    {
+        "id": 90,
+        "height": 3,
+        "weight": 40,
+        "order": 136,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 39
+    },
+    {
+        "id": 91,
+        "height": 15,
+        "weight": 1325,
+        "order": 137,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 39
+    },
+    {
+        "id": 92,
+        "height": 13,
+        "weight": 1,
+        "order": 138,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 40
+    },
+    {
+        "id": 93,
+        "height": 16,
+        "weight": 1,
+        "order": 139,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 40
+    },
+    {
+        "id": 94,
+        "height": 15,
+        "weight": 405,
+        "order": 140,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 40
+    },
+    {
+        "id": 95,
+        "height": 88,
+        "weight": 2100,
+        "order": 142,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 41
+    },
+    {
+        "id": 96,
+        "height": 10,
+        "weight": 324,
+        "order": 145,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 42
+    },
+    {
+        "id": 97,
+        "height": 16,
+        "weight": 756,
+        "order": 146,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 42
+    },
+    {
+        "id": 98,
+        "height": 4,
+        "weight": 65,
+        "order": 147,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 43
+    },
+    {
+        "id": 99,
+        "height": 13,
+        "weight": 600,
+        "order": 148,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 43
+    },
+    {
+        "id": 100,
+        "height": 5,
+        "weight": 104,
+        "order": 149,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 44
+    },
+    {
+        "id": 101,
+        "height": 12,
+        "weight": 666,
+        "order": 150,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 44
+    },
+    {
+        "id": 102,
+        "height": 4,
+        "weight": 25,
+        "order": 151,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 45
+    },
+    {
+        "id": 103,
+        "height": 20,
+        "weight": 1200,
+        "order": 152,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 45
+    },
+    {
+        "id": 104,
+        "height": 4,
+        "weight": 65,
+        "order": 154,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 46
+    },
+    {
+        "id": 105,
+        "height": 10,
+        "weight": 450,
+        "order": 155,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 46
+    },
+    {
+        "id": 106,
+        "height": 15,
+        "weight": 498,
+        "order": 159,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 47
+    },
+    {
+        "id": 107,
+        "height": 14,
+        "weight": 502,
+        "order": 160,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 47
+    },
+    {
+        "id": 108,
+        "height": 12,
+        "weight": 655,
+        "order": 162,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 48
+    },
+    {
+        "id": 109,
+        "height": 6,
+        "weight": 10,
+        "order": 164,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 49
+    },
+    {
+        "id": 110,
+        "height": 12,
+        "weight": 95,
+        "order": 165,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 49
+    },
+    {
+        "id": 111,
+        "height": 10,
+        "weight": 1150,
+        "order": 166,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 50
+    },
+    {
+        "id": 112,
+        "height": 19,
+        "weight": 1200,
+        "order": 167,
+        "imageColor": "gray",
+        "regionId": 1,
+        "pokemonEvolutionId": 50
+    },
+    {
+        "id": 113,
+        "height": 11,
+        "weight": 346,
+        "order": 170,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 51
+    },
+    {
+        "id": 114,
+        "height": 10,
+        "weight": 350,
+        "order": 172,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 52
+    },
+    {
+        "id": 115,
+        "height": 22,
+        "weight": 800,
+        "order": 174,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 116,
+        "height": 4,
+        "weight": 80,
+        "order": 176,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 54
+    },
+    {
+        "id": 117,
+        "height": 12,
+        "weight": 250,
+        "order": 177,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 54
+    },
+    {
+        "id": 118,
+        "height": 6,
+        "weight": 150,
+        "order": 179,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 55
+    },
+    {
+        "id": 119,
+        "height": 13,
+        "weight": 390,
+        "order": 180,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 55
+    },
+    {
+        "id": 120,
+        "height": 8,
+        "weight": 345,
+        "order": 181,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 56
+    },
+    {
+        "id": 121,
+        "height": 11,
+        "weight": 800,
+        "order": 182,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": 56
+    },
+    {
+        "id": 122,
+        "height": 13,
+        "weight": 545,
+        "order": 184,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 57
+    },
+    {
+        "id": 123,
+        "height": 15,
+        "weight": 560,
+        "order": 185,
+        "imageColor": "green",
+        "regionId": 1,
+        "pokemonEvolutionId": 58
+    },
+    {
+        "id": 124,
+        "height": 14,
+        "weight": 406,
+        "order": 189,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 59
+    },
+    {
+        "id": 125,
+        "height": 11,
+        "weight": 300,
+        "order": 191,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 60
+    },
+    {
+        "id": 126,
+        "height": 13,
+        "weight": 445,
+        "order": 194,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 61
+    },
+    {
+        "id": 127,
+        "height": 15,
+        "weight": 550,
+        "order": 196,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 128,
+        "height": 14,
+        "weight": 884,
+        "order": 198,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 129,
+        "height": 9,
+        "weight": 100,
+        "order": 199,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 64
+    },
+    {
+        "id": 130,
+        "height": 65,
+        "weight": 2350,
+        "order": 200,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 64
+    },
+    {
+        "id": 131,
+        "height": 25,
+        "weight": 2200,
+        "order": 202,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 132,
+        "height": 3,
+        "weight": 40,
+        "order": 203,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 133,
+        "height": 3,
+        "weight": 65,
+        "order": 204,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 134,
+        "height": 10,
+        "weight": 290,
+        "order": 205,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 135,
+        "height": 8,
+        "weight": 245,
+        "order": 206,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 136,
+        "height": 9,
+        "weight": 250,
+        "order": 207,
+        "imageColor": "red",
+        "regionId": 1,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 137,
+        "height": 8,
+        "weight": 365,
+        "order": 213,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": 68
+    },
+    {
+        "id": 138,
+        "height": 4,
+        "weight": 75,
+        "order": 216,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 69
+    },
+    {
+        "id": 139,
+        "height": 10,
+        "weight": 350,
+        "order": 217,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 69
+    },
+    {
+        "id": 140,
+        "height": 5,
+        "weight": 115,
+        "order": 218,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 70
+    },
+    {
+        "id": 141,
+        "height": 13,
+        "weight": 405,
+        "order": 219,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 70
+    },
+    {
+        "id": 142,
+        "height": 18,
+        "weight": 590,
+        "order": 220,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 143,
+        "height": 21,
+        "weight": 4600,
+        "order": 223,
+        "imageColor": "black",
+        "regionId": 1,
+        "pokemonEvolutionId": 72
+    },
+    {
+        "id": 144,
+        "height": 17,
+        "weight": 554,
+        "order": 224,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 145,
+        "height": 16,
+        "weight": 526,
+        "order": 225,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 146,
+        "height": 20,
+        "weight": 600,
+        "order": 226,
+        "imageColor": "yellow",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 147,
+        "height": 18,
+        "weight": 33,
+        "order": 227,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 76
+    },
+    {
+        "id": 148,
+        "height": 40,
+        "weight": 165,
+        "order": 228,
+        "imageColor": "blue",
+        "regionId": 1,
+        "pokemonEvolutionId": 76
+    },
+    {
+        "id": 149,
+        "height": 22,
+        "weight": 2100,
+        "order": 229,
+        "imageColor": "brown",
+        "regionId": 1,
+        "pokemonEvolutionId": 76
+    },
+    {
+        "id": 150,
+        "height": 20,
+        "weight": 1220,
+        "order": 230,
+        "imageColor": "purple",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 151,
+        "height": 4,
+        "weight": 40,
+        "order": 233,
+        "imageColor": "pink",
+        "regionId": 1,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 152,
+        "height": 9,
+        "weight": 64,
+        "order": 234,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 79
+    },
+    {
+        "id": 153,
+        "height": 12,
+        "weight": 158,
+        "order": 235,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 79
+    },
+    {
+        "id": 154,
+        "height": 18,
+        "weight": 1005,
+        "order": 236,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 79
+    },
+    {
+        "id": 155,
+        "height": 5,
+        "weight": 79,
+        "order": 237,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 80
+    },
+    {
+        "id": 156,
+        "height": 9,
+        "weight": 190,
+        "order": 238,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 80
+    },
+    {
+        "id": 157,
+        "height": 17,
+        "weight": 795,
+        "order": 239,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 80
+    },
+    {
+        "id": 158,
+        "height": 6,
+        "weight": 95,
+        "order": 240,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 81
+    },
+    {
+        "id": 159,
+        "height": 11,
+        "weight": 250,
+        "order": 241,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 81
+    },
+    {
+        "id": 160,
+        "height": 23,
+        "weight": 888,
+        "order": 242,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 81
+    },
+    {
+        "id": 161,
+        "height": 8,
+        "weight": 60,
+        "order": 243,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 82
+    },
+    {
+        "id": 162,
+        "height": 18,
+        "weight": 325,
+        "order": 244,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 82
+    },
+    {
+        "id": 163,
+        "height": 7,
+        "weight": 212,
+        "order": 245,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 83
+    },
+    {
+        "id": 164,
+        "height": 16,
+        "weight": 408,
+        "order": 246,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 83
+    },
+    {
+        "id": 165,
+        "height": 10,
+        "weight": 108,
+        "order": 247,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 84
+    },
+    {
+        "id": 166,
+        "height": 14,
+        "weight": 356,
+        "order": 248,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 84
+    },
+    {
+        "id": 167,
+        "height": 5,
+        "weight": 85,
+        "order": 249,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 85
+    },
+    {
+        "id": 168,
+        "height": 11,
+        "weight": 335,
+        "order": 250,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 85
+    },
+    {
+        "id": 169,
+        "height": 18,
+        "weight": 750,
+        "order": 73,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 17
+    },
+    {
+        "id": 170,
+        "height": 5,
+        "weight": 120,
+        "order": 251,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 86
+    },
+    {
+        "id": 171,
+        "height": 12,
+        "weight": 225,
+        "order": 252,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 86
+    },
+    {
+        "id": 172,
+        "height": 3,
+        "weight": 20,
+        "order": 34,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 10
+    },
+    {
+        "id": 173,
+        "height": 3,
+        "weight": 30,
+        "order": 61,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 14
+    },
+    {
+        "id": 174,
+        "height": 3,
+        "weight": 10,
+        "order": 68,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 16
+    },
+    {
+        "id": 175,
+        "height": 3,
+        "weight": 15,
+        "order": 253,
+        "imageColor": "white",
+        "regionId": 2,
+        "pokemonEvolutionId": 87
+    },
+    {
+        "id": 176,
+        "height": 6,
+        "weight": 32,
+        "order": 254,
+        "imageColor": "white",
+        "regionId": 2,
+        "pokemonEvolutionId": 87
+    },
+    {
+        "id": 177,
+        "height": 2,
+        "weight": 20,
+        "order": 256,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 88
+    },
+    {
+        "id": 178,
+        "height": 15,
+        "weight": 150,
+        "order": 257,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 88
+    },
+    {
+        "id": 179,
+        "height": 6,
+        "weight": 78,
+        "order": 258,
+        "imageColor": "white",
+        "regionId": 2,
+        "pokemonEvolutionId": 89
+    },
+    {
+        "id": 180,
+        "height": 8,
+        "weight": 133,
+        "order": 259,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 89
+    },
+    {
+        "id": 181,
+        "height": 14,
+        "weight": 615,
+        "order": 260,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 89
+    },
+    {
+        "id": 182,
+        "height": 4,
+        "weight": 58,
+        "order": 77,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 18
+    },
+    {
+        "id": 183,
+        "height": 4,
+        "weight": 85,
+        "order": 263,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 90
+    },
+    {
+        "id": 184,
+        "height": 8,
+        "weight": 285,
+        "order": 264,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 90
+    },
+    {
+        "id": 185,
+        "height": 12,
+        "weight": 380,
+        "order": 266,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 91
+    },
+    {
+        "id": 186,
+        "height": 11,
+        "weight": 339,
+        "order": 99,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 26
+    },
+    {
+        "id": 187,
+        "height": 4,
+        "weight": 5,
+        "order": 267,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 92
+    },
+    {
+        "id": 188,
+        "height": 6,
+        "weight": 10,
+        "order": 268,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 92
+    },
+    {
+        "id": 189,
+        "height": 8,
+        "weight": 30,
+        "order": 269,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 92
+    },
+    {
+        "id": 190,
+        "height": 8,
+        "weight": 115,
+        "order": 270,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 93
+    },
+    {
+        "id": 191,
+        "height": 3,
+        "weight": 18,
+        "order": 272,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 94
+    },
+    {
+        "id": 192,
+        "height": 8,
+        "weight": 85,
+        "order": 273,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 94
+    },
+    {
+        "id": 193,
+        "height": 12,
+        "weight": 380,
+        "order": 274,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 95
+    },
+    {
+        "id": 194,
+        "height": 4,
+        "weight": 85,
+        "order": 276,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 96
+    },
+    {
+        "id": 195,
+        "height": 14,
+        "weight": 750,
+        "order": 277,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 96
+    },
+    {
+        "id": 196,
+        "height": 9,
+        "weight": 265,
+        "order": 208,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 197,
+        "height": 10,
+        "weight": 270,
+        "order": 209,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 198,
+        "height": 5,
+        "weight": 21,
+        "order": 278,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": 97
+    },
+    {
+        "id": 199,
+        "height": 20,
+        "weight": 795,
+        "order": 123,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 33
+    },
+    {
+        "id": 200,
+        "height": 7,
+        "weight": 10,
+        "order": 280,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 98
+    },
+    {
+        "id": 201,
+        "height": 5,
+        "weight": 50,
+        "order": 282,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 202,
+        "height": 13,
+        "weight": 285,
+        "order": 284,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 100
+    },
+    {
+        "id": 203,
+        "height": 15,
+        "weight": 415,
+        "order": 285,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 204,
+        "height": 6,
+        "weight": 72,
+        "order": 286,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 102
+    },
+    {
+        "id": 205,
+        "height": 12,
+        "weight": 1258,
+        "order": 287,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 102
+    },
+    {
+        "id": 206,
+        "height": 15,
+        "weight": 140,
+        "order": 288,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 207,
+        "height": 11,
+        "weight": 648,
+        "order": 289,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 104
+    },
+    {
+        "id": 208,
+        "height": 92,
+        "weight": 4000,
+        "order": 143,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 41
+    },
+    {
+        "id": 209,
+        "height": 6,
+        "weight": 78,
+        "order": 291,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 105
+    },
+    {
+        "id": 210,
+        "height": 14,
+        "weight": 487,
+        "order": 292,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 105
+    },
+    {
+        "id": 211,
+        "height": 5,
+        "weight": 39,
+        "order": 293,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 212,
+        "height": 18,
+        "weight": 1180,
+        "order": 186,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 58
+    },
+    {
+        "id": 213,
+        "height": 6,
+        "weight": 205,
+        "order": 294,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 214,
+        "height": 15,
+        "weight": 540,
+        "order": 295,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 215,
+        "height": 9,
+        "weight": 280,
+        "order": 297,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": 109
+    },
+    {
+        "id": 216,
+        "height": 6,
+        "weight": 88,
+        "order": 299,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 110
+    },
+    {
+        "id": 217,
+        "height": 18,
+        "weight": 1258,
+        "order": 300,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 110
+    },
+    {
+        "id": 218,
+        "height": 7,
+        "weight": 350,
+        "order": 301,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 111
+    },
+    {
+        "id": 219,
+        "height": 8,
+        "weight": 550,
+        "order": 302,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 111
+    },
+    {
+        "id": 220,
+        "height": 4,
+        "weight": 65,
+        "order": 303,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 112
+    },
+    {
+        "id": 221,
+        "height": 11,
+        "weight": 558,
+        "order": 304,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 112
+    },
+    {
+        "id": 222,
+        "height": 6,
+        "weight": 50,
+        "order": 306,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 223,
+        "height": 6,
+        "weight": 120,
+        "order": 307,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 114
+    },
+    {
+        "id": 224,
+        "height": 9,
+        "weight": 285,
+        "order": 308,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 114
+    },
+    {
+        "id": 225,
+        "height": 9,
+        "weight": 160,
+        "order": 309,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 226,
+        "height": 21,
+        "weight": 2200,
+        "order": 311,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 116
+    },
+    {
+        "id": 227,
+        "height": 17,
+        "weight": 505,
+        "order": 312,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 228,
+        "height": 6,
+        "weight": 108,
+        "order": 313,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": 118
+    },
+    {
+        "id": 229,
+        "height": 14,
+        "weight": 350,
+        "order": 314,
+        "imageColor": "black",
+        "regionId": 2,
+        "pokemonEvolutionId": 118
+    },
+    {
+        "id": 230,
+        "height": 18,
+        "weight": 1520,
+        "order": 178,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 54
+    },
+    {
+        "id": 231,
+        "height": 5,
+        "weight": 335,
+        "order": 316,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": 119
+    },
+    {
+        "id": 232,
+        "height": 11,
+        "weight": 1200,
+        "order": 317,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 119
+    },
+    {
+        "id": 233,
+        "height": 6,
+        "weight": 325,
+        "order": 214,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 68
+    },
+    {
+        "id": 234,
+        "height": 14,
+        "weight": 712,
+        "order": 318,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 235,
+        "height": 12,
+        "weight": 580,
+        "order": 319,
+        "imageColor": "white",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 236,
+        "height": 7,
+        "weight": 210,
+        "order": 158,
+        "imageColor": "purple",
+        "regionId": 2,
+        "pokemonEvolutionId": 47
+    },
+    {
+        "id": 237,
+        "height": 14,
+        "weight": 480,
+        "order": 161,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": 47
+    },
+    {
+        "id": 238,
+        "height": 4,
+        "weight": 60,
+        "order": 188,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 59
+    },
+    {
+        "id": 239,
+        "height": 6,
+        "weight": 235,
+        "order": 190,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": 60
+    },
+    {
+        "id": 240,
+        "height": 7,
+        "weight": 214,
+        "order": 193,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": 61
+    },
+    {
+        "id": 241,
+        "height": 12,
+        "weight": 755,
+        "order": 320,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 242,
+        "height": 15,
+        "weight": 468,
+        "order": 171,
+        "imageColor": "pink",
+        "regionId": 2,
+        "pokemonEvolutionId": 51
+    },
+    {
+        "id": 243,
+        "height": 19,
+        "weight": 1780,
+        "order": 321,
+        "imageColor": "yellow",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 244,
+        "height": 21,
+        "weight": 1980,
+        "order": 322,
+        "imageColor": "brown",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 245,
+        "height": 20,
+        "weight": 1870,
+        "order": 323,
+        "imageColor": "blue",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 246,
+        "height": 6,
+        "weight": 720,
+        "order": 324,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 126
+    },
+    {
+        "id": 247,
+        "height": 12,
+        "weight": 1520,
+        "order": 325,
+        "imageColor": "gray",
+        "regionId": 2,
+        "pokemonEvolutionId": 126
+    },
+    {
+        "id": 248,
+        "height": 20,
+        "weight": 2020,
+        "order": 326,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": 126
+    },
+    {
+        "id": 249,
+        "height": 52,
+        "weight": 2160,
+        "order": 328,
+        "imageColor": "white",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 250,
+        "height": 38,
+        "weight": 1990,
+        "order": 329,
+        "imageColor": "red",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 251,
+        "height": 6,
+        "weight": 50,
+        "order": 330,
+        "imageColor": "green",
+        "regionId": 2,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 252,
+        "height": 5,
+        "weight": 50,
+        "order": 331,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 130
+    },
+    {
+        "id": 253,
+        "height": 9,
+        "weight": 216,
+        "order": 332,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 130
+    },
+    {
+        "id": 254,
+        "height": 17,
+        "weight": 522,
+        "order": 333,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 130
+    },
+    {
+        "id": 255,
+        "height": 4,
+        "weight": 25,
+        "order": 335,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 131
+    },
+    {
+        "id": 256,
+        "height": 9,
+        "weight": 195,
+        "order": 336,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 131
+    },
+    {
+        "id": 257,
+        "height": 19,
+        "weight": 520,
+        "order": 337,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 131
+    },
+    {
+        "id": 258,
+        "height": 4,
+        "weight": 76,
+        "order": 339,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 132
+    },
+    {
+        "id": 259,
+        "height": 7,
+        "weight": 280,
+        "order": 340,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 132
+    },
+    {
+        "id": 260,
+        "height": 15,
+        "weight": 819,
+        "order": 341,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 132
+    },
+    {
+        "id": 261,
+        "height": 5,
+        "weight": 136,
+        "order": 343,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 133
+    },
+    {
+        "id": 262,
+        "height": 10,
+        "weight": 370,
+        "order": 344,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 133
+    },
+    {
+        "id": 263,
+        "height": 4,
+        "weight": 175,
+        "order": 345,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 134
+    },
+    {
+        "id": 264,
+        "height": 5,
+        "weight": 325,
+        "order": 346,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 134
+    },
+    {
+        "id": 265,
+        "height": 3,
+        "weight": 36,
+        "order": 347,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 135
+    },
+    {
+        "id": 266,
+        "height": 6,
+        "weight": 100,
+        "order": 348,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 135
+    },
+    {
+        "id": 267,
+        "height": 10,
+        "weight": 284,
+        "order": 349,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 135
+    },
+    {
+        "id": 268,
+        "height": 7,
+        "weight": 115,
+        "order": 350,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": 135
+    },
+    {
+        "id": 269,
+        "height": 12,
+        "weight": 316,
+        "order": 351,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 135
+    },
+    {
+        "id": 270,
+        "height": 5,
+        "weight": 26,
+        "order": 352,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 136
+    },
+    {
+        "id": 271,
+        "height": 12,
+        "weight": 325,
+        "order": 353,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 136
+    },
+    {
+        "id": 272,
+        "height": 15,
+        "weight": 550,
+        "order": 354,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 136
+    },
+    {
+        "id": 273,
+        "height": 5,
+        "weight": 40,
+        "order": 355,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 137
+    },
+    {
+        "id": 274,
+        "height": 10,
+        "weight": 280,
+        "order": 356,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 137
+    },
+    {
+        "id": 275,
+        "height": 13,
+        "weight": 596,
+        "order": 357,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 137
+    },
+    {
+        "id": 276,
+        "height": 3,
+        "weight": 23,
+        "order": 358,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 138
+    },
+    {
+        "id": 277,
+        "height": 7,
+        "weight": 198,
+        "order": 359,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 138
+    },
+    {
+        "id": 278,
+        "height": 6,
+        "weight": 95,
+        "order": 360,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 139
+    },
+    {
+        "id": 279,
+        "height": 12,
+        "weight": 280,
+        "order": 361,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 139
+    },
+    {
+        "id": 280,
+        "height": 4,
+        "weight": 66,
+        "order": 362,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 140
+    },
+    {
+        "id": 281,
+        "height": 8,
+        "weight": 202,
+        "order": 363,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 140
+    },
+    {
+        "id": 282,
+        "height": 16,
+        "weight": 484,
+        "order": 364,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 140
+    },
+    {
+        "id": 283,
+        "height": 5,
+        "weight": 17,
+        "order": 368,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 141
+    },
+    {
+        "id": 284,
+        "height": 8,
+        "weight": 36,
+        "order": 369,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 141
+    },
+    {
+        "id": 285,
+        "height": 4,
+        "weight": 45,
+        "order": 370,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 142
+    },
+    {
+        "id": 286,
+        "height": 12,
+        "weight": 392,
+        "order": 371,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 142
+    },
+    {
+        "id": 287,
+        "height": 8,
+        "weight": 240,
+        "order": 372,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 143
+    },
+    {
+        "id": 288,
+        "height": 14,
+        "weight": 465,
+        "order": 373,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 143
+    },
+    {
+        "id": 289,
+        "height": 20,
+        "weight": 1305,
+        "order": 374,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 143
+    },
+    {
+        "id": 290,
+        "height": 5,
+        "weight": 55,
+        "order": 375,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 144
+    },
+    {
+        "id": 291,
+        "height": 8,
+        "weight": 120,
+        "order": 376,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 144
+    },
+    {
+        "id": 292,
+        "height": 8,
+        "weight": 12,
+        "order": 377,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 144
+    },
+    {
+        "id": 293,
+        "height": 6,
+        "weight": 163,
+        "order": 378,
+        "imageColor": "pink",
+        "regionId": 3,
+        "pokemonEvolutionId": 145
+    },
+    {
+        "id": 294,
+        "height": 10,
+        "weight": 405,
+        "order": 379,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 145
+    },
+    {
+        "id": 295,
+        "height": 15,
+        "weight": 840,
+        "order": 380,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 145
+    },
+    {
+        "id": 296,
+        "height": 10,
+        "weight": 864,
+        "order": 381,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 146
+    },
+    {
+        "id": 297,
+        "height": 23,
+        "weight": 2538,
+        "order": 382,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 146
+    },
+    {
+        "id": 298,
+        "height": 2,
+        "weight": 20,
+        "order": 262,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 90
+    },
+    {
+        "id": 299,
+        "height": 10,
+        "weight": 970,
+        "order": 383,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 147
+    },
+    {
+        "id": 300,
+        "height": 6,
+        "weight": 110,
+        "order": 385,
+        "imageColor": "pink",
+        "regionId": 3,
+        "pokemonEvolutionId": 148
+    },
+    {
+        "id": 301,
+        "height": 11,
+        "weight": 326,
+        "order": 386,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": 148
+    },
+    {
+        "id": 302,
+        "height": 5,
+        "weight": 110,
+        "order": 387,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 303,
+        "height": 6,
+        "weight": 115,
+        "order": 389,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 304,
+        "height": 4,
+        "weight": 600,
+        "order": 391,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 151
+    },
+    {
+        "id": 305,
+        "height": 9,
+        "weight": 1200,
+        "order": 392,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 151
+    },
+    {
+        "id": 306,
+        "height": 21,
+        "weight": 3600,
+        "order": 393,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 151
+    },
+    {
+        "id": 307,
+        "height": 6,
+        "weight": 112,
+        "order": 395,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 152
+    },
+    {
+        "id": 308,
+        "height": 13,
+        "weight": 315,
+        "order": 396,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 152
+    },
+    {
+        "id": 309,
+        "height": 6,
+        "weight": 152,
+        "order": 398,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 153
+    },
+    {
+        "id": 310,
+        "height": 15,
+        "weight": 402,
+        "order": 399,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 153
+    },
+    {
+        "id": 311,
+        "height": 4,
+        "weight": 42,
+        "order": 401,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 312,
+        "height": 4,
+        "weight": 42,
+        "order": 402,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 313,
+        "height": 7,
+        "weight": 177,
+        "order": 403,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 314,
+        "height": 6,
+        "weight": 177,
+        "order": 404,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 315,
+        "height": 3,
+        "weight": 20,
+        "order": 406,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 158
+    },
+    {
+        "id": 316,
+        "height": 4,
+        "weight": 103,
+        "order": 408,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 159
+    },
+    {
+        "id": 317,
+        "height": 17,
+        "weight": 800,
+        "order": 409,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": 159
+    },
+    {
+        "id": 318,
+        "height": 8,
+        "weight": 208,
+        "order": 410,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 160
+    },
+    {
+        "id": 319,
+        "height": 18,
+        "weight": 888,
+        "order": 411,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 160
+    },
+    {
+        "id": 320,
+        "height": 20,
+        "weight": 1300,
+        "order": 413,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 161
+    },
+    {
+        "id": 321,
+        "height": 145,
+        "weight": 3980,
+        "order": 414,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 161
+    },
+    {
+        "id": 322,
+        "height": 7,
+        "weight": 240,
+        "order": 415,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": 162
+    },
+    {
+        "id": 323,
+        "height": 19,
+        "weight": 2200,
+        "order": 416,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 162
+    },
+    {
+        "id": 324,
+        "height": 5,
+        "weight": 804,
+        "order": 418,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 325,
+        "height": 7,
+        "weight": 306,
+        "order": 419,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 164
+    },
+    {
+        "id": 326,
+        "height": 9,
+        "weight": 715,
+        "order": 420,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": 164
+    },
+    {
+        "id": 327,
+        "height": 11,
+        "weight": 50,
+        "order": 421,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 328,
+        "height": 7,
+        "weight": 150,
+        "order": 422,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 166
+    },
+    {
+        "id": 329,
+        "height": 11,
+        "weight": 153,
+        "order": 423,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 166
+    },
+    {
+        "id": 330,
+        "height": 20,
+        "weight": 820,
+        "order": 424,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 166
+    },
+    {
+        "id": 331,
+        "height": 4,
+        "weight": 513,
+        "order": 425,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 167
+    },
+    {
+        "id": 332,
+        "height": 13,
+        "weight": 774,
+        "order": 426,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 167
+    },
+    {
+        "id": 333,
+        "height": 4,
+        "weight": 12,
+        "order": 427,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 168
+    },
+    {
+        "id": 334,
+        "height": 11,
+        "weight": 206,
+        "order": 428,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 168
+    },
+    {
+        "id": 335,
+        "height": 13,
+        "weight": 403,
+        "order": 430,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 336,
+        "height": 27,
+        "weight": 525,
+        "order": 431,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 337,
+        "height": 10,
+        "weight": 1680,
+        "order": 432,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 338,
+        "height": 12,
+        "weight": 1540,
+        "order": 433,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 339,
+        "height": 4,
+        "weight": 19,
+        "order": 434,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 173
+    },
+    {
+        "id": 340,
+        "height": 9,
+        "weight": 236,
+        "order": 435,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 173
+    },
+    {
+        "id": 341,
+        "height": 6,
+        "weight": 115,
+        "order": 436,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 174
+    },
+    {
+        "id": 342,
+        "height": 11,
+        "weight": 328,
+        "order": 437,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": 174
+    },
+    {
+        "id": 343,
+        "height": 5,
+        "weight": 215,
+        "order": 438,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 175
+    },
+    {
+        "id": 344,
+        "height": 15,
+        "weight": 1080,
+        "order": 439,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 175
+    },
+    {
+        "id": 345,
+        "height": 10,
+        "weight": 238,
+        "order": 440,
+        "imageColor": "purple",
+        "regionId": 3,
+        "pokemonEvolutionId": 176
+    },
+    {
+        "id": 346,
+        "height": 15,
+        "weight": 604,
+        "order": 441,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": 176
+    },
+    {
+        "id": 347,
+        "height": 7,
+        "weight": 125,
+        "order": 442,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 177
+    },
+    {
+        "id": 348,
+        "height": 15,
+        "weight": 682,
+        "order": 443,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 177
+    },
+    {
+        "id": 349,
+        "height": 6,
+        "weight": 74,
+        "order": 444,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": 178
+    },
+    {
+        "id": 350,
+        "height": 62,
+        "weight": 1620,
+        "order": 445,
+        "imageColor": "pink",
+        "regionId": 3,
+        "pokemonEvolutionId": 178
+    },
+    {
+        "id": 351,
+        "height": 3,
+        "weight": 8,
+        "order": 446,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 352,
+        "height": 10,
+        "weight": 220,
+        "order": 450,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 353,
+        "height": 6,
+        "weight": 23,
+        "order": 451,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 181
+    },
+    {
+        "id": 354,
+        "height": 11,
+        "weight": 125,
+        "order": 452,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 181
+    },
+    {
+        "id": 355,
+        "height": 8,
+        "weight": 150,
+        "order": 454,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 182
+    },
+    {
+        "id": 356,
+        "height": 16,
+        "weight": 306,
+        "order": 455,
+        "imageColor": "black",
+        "regionId": 3,
+        "pokemonEvolutionId": 182
+    },
+    {
+        "id": 357,
+        "height": 20,
+        "weight": 1000,
+        "order": 457,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 358,
+        "height": 6,
+        "weight": 10,
+        "order": 459,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 184
+    },
+    {
+        "id": 359,
+        "height": 12,
+        "weight": 470,
+        "order": 460,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 360,
+        "height": 6,
+        "weight": 140,
+        "order": 283,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 100
+    },
+    {
+        "id": 361,
+        "height": 7,
+        "weight": 168,
+        "order": 462,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 186
+    },
+    {
+        "id": 362,
+        "height": 15,
+        "weight": 2565,
+        "order": 463,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": 186
+    },
+    {
+        "id": 363,
+        "height": 8,
+        "weight": 395,
+        "order": 466,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 187
+    },
+    {
+        "id": 364,
+        "height": 11,
+        "weight": 876,
+        "order": 467,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 187
+    },
+    {
+        "id": 365,
+        "height": 14,
+        "weight": 1506,
+        "order": 468,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 187
+    },
+    {
+        "id": 366,
+        "height": 4,
+        "weight": 525,
+        "order": 469,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 188
+    },
+    {
+        "id": 367,
+        "height": 17,
+        "weight": 270,
+        "order": 470,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 188
+    },
+    {
+        "id": 368,
+        "height": 18,
+        "weight": 226,
+        "order": 471,
+        "imageColor": "pink",
+        "regionId": 3,
+        "pokemonEvolutionId": 188
+    },
+    {
+        "id": 369,
+        "height": 10,
+        "weight": 234,
+        "order": 472,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 370,
+        "height": 6,
+        "weight": 87,
+        "order": 473,
+        "imageColor": "pink",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 371,
+        "height": 6,
+        "weight": 421,
+        "order": 474,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 191
+    },
+    {
+        "id": 372,
+        "height": 11,
+        "weight": 1105,
+        "order": 475,
+        "imageColor": "white",
+        "regionId": 3,
+        "pokemonEvolutionId": 191
+    },
+    {
+        "id": 373,
+        "height": 15,
+        "weight": 1026,
+        "order": 476,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 191
+    },
+    {
+        "id": 374,
+        "height": 6,
+        "weight": 952,
+        "order": 478,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 192
+    },
+    {
+        "id": 375,
+        "height": 12,
+        "weight": 2025,
+        "order": 479,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 192
+    },
+    {
+        "id": 376,
+        "height": 16,
+        "weight": 5500,
+        "order": 480,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": 192
+    },
+    {
+        "id": 377,
+        "height": 17,
+        "weight": 2300,
+        "order": 482,
+        "imageColor": "brown",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 378,
+        "height": 18,
+        "weight": 1750,
+        "order": 483,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 379,
+        "height": 19,
+        "weight": 2050,
+        "order": 484,
+        "imageColor": "gray",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 380,
+        "height": 14,
+        "weight": 400,
+        "order": 485,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 381,
+        "height": 20,
+        "weight": 600,
+        "order": 487,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 382,
+        "height": 45,
+        "weight": 3520,
+        "order": 489,
+        "imageColor": "blue",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 383,
+        "height": 35,
+        "weight": 9500,
+        "order": 491,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 384,
+        "height": 70,
+        "weight": 2065,
+        "order": 493,
+        "imageColor": "green",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 385,
+        "height": 3,
+        "weight": 11,
+        "order": 495,
+        "imageColor": "yellow",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 386,
+        "height": 17,
+        "weight": 608,
+        "order": 496,
+        "imageColor": "red",
+        "regionId": 3,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 387,
+        "height": 4,
+        "weight": 102,
+        "order": 500,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 203
+    },
+    {
+        "id": 388,
+        "height": 11,
+        "weight": 970,
+        "order": 501,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 203
+    },
+    {
+        "id": 389,
+        "height": 22,
+        "weight": 3100,
+        "order": 502,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 203
+    },
+    {
+        "id": 390,
+        "height": 5,
+        "weight": 62,
+        "order": 503,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 204
+    },
+    {
+        "id": 391,
+        "height": 9,
+        "weight": 220,
+        "order": 504,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 204
+    },
+    {
+        "id": 392,
+        "height": 12,
+        "weight": 550,
+        "order": 505,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 204
+    },
+    {
+        "id": 393,
+        "height": 4,
+        "weight": 52,
+        "order": 506,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 205
+    },
+    {
+        "id": 394,
+        "height": 8,
+        "weight": 230,
+        "order": 507,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 205
+    },
+    {
+        "id": 395,
+        "height": 17,
+        "weight": 845,
+        "order": 508,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 205
+    },
+    {
+        "id": 396,
+        "height": 3,
+        "weight": 20,
+        "order": 509,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 206
+    },
+    {
+        "id": 397,
+        "height": 6,
+        "weight": 155,
+        "order": 510,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 206
+    },
+    {
+        "id": 398,
+        "height": 12,
+        "weight": 249,
+        "order": 511,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 206
+    },
+    {
+        "id": 399,
+        "height": 5,
+        "weight": 200,
+        "order": 512,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 207
+    },
+    {
+        "id": 400,
+        "height": 10,
+        "weight": 315,
+        "order": 513,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 207
+    },
+    {
+        "id": 401,
+        "height": 3,
+        "weight": 22,
+        "order": 514,
+        "imageColor": "red",
+        "regionId": 4,
+        "pokemonEvolutionId": 208
+    },
+    {
+        "id": 402,
+        "height": 10,
+        "weight": 255,
+        "order": 515,
+        "imageColor": "red",
+        "regionId": 4,
+        "pokemonEvolutionId": 208
+    },
+    {
+        "id": 403,
+        "height": 5,
+        "weight": 95,
+        "order": 516,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 209
+    },
+    {
+        "id": 404,
+        "height": 9,
+        "weight": 305,
+        "order": 517,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 209
+    },
+    {
+        "id": 405,
+        "height": 14,
+        "weight": 420,
+        "order": 518,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 209
+    },
+    {
+        "id": 406,
+        "height": 2,
+        "weight": 12,
+        "order": 405,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 158
+    },
+    {
+        "id": 407,
+        "height": 9,
+        "weight": 145,
+        "order": 407,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 158
+    },
+    {
+        "id": 408,
+        "height": 9,
+        "weight": 315,
+        "order": 519,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 211
+    },
+    {
+        "id": 409,
+        "height": 16,
+        "weight": 1025,
+        "order": 520,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 211
+    },
+    {
+        "id": 410,
+        "height": 5,
+        "weight": 570,
+        "order": 521,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 212
+    },
+    {
+        "id": 411,
+        "height": 13,
+        "weight": 1495,
+        "order": 522,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 212
+    },
+    {
+        "id": 412,
+        "height": 2,
+        "weight": 34,
+        "order": 523,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 213
+    },
+    {
+        "id": 413,
+        "height": 5,
+        "weight": 65,
+        "order": 524,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 213
+    },
+    {
+        "id": 414,
+        "height": 9,
+        "weight": 233,
+        "order": 527,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": 213
+    },
+    {
+        "id": 415,
+        "height": 3,
+        "weight": 55,
+        "order": 528,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": 214
+    },
+    {
+        "id": 416,
+        "height": 12,
+        "weight": 385,
+        "order": 529,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": 214
+    },
+    {
+        "id": 417,
+        "height": 4,
+        "weight": 39,
+        "order": 530,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 418,
+        "height": 7,
+        "weight": 295,
+        "order": 531,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 216
+    },
+    {
+        "id": 419,
+        "height": 11,
+        "weight": 335,
+        "order": 532,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 216
+    },
+    {
+        "id": 420,
+        "height": 4,
+        "weight": 33,
+        "order": 533,
+        "imageColor": "pink",
+        "regionId": 4,
+        "pokemonEvolutionId": 217
+    },
+    {
+        "id": 421,
+        "height": 5,
+        "weight": 93,
+        "order": 534,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 217
+    },
+    {
+        "id": 422,
+        "height": 3,
+        "weight": 63,
+        "order": 535,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 218
+    },
+    {
+        "id": 423,
+        "height": 9,
+        "weight": 299,
+        "order": 536,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 218
+    },
+    {
+        "id": 424,
+        "height": 12,
+        "weight": 203,
+        "order": 271,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 93
+    },
+    {
+        "id": 425,
+        "height": 4,
+        "weight": 12,
+        "order": 537,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 219
+    },
+    {
+        "id": 426,
+        "height": 12,
+        "weight": 150,
+        "order": 538,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 219
+    },
+    {
+        "id": 427,
+        "height": 4,
+        "weight": 55,
+        "order": 539,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 220
+    },
+    {
+        "id": 428,
+        "height": 12,
+        "weight": 333,
+        "order": 540,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 220
+    },
+    {
+        "id": 429,
+        "height": 9,
+        "weight": 44,
+        "order": 281,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 98
+    },
+    {
+        "id": 430,
+        "height": 9,
+        "weight": 273,
+        "order": 279,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": 97
+    },
+    {
+        "id": 431,
+        "height": 5,
+        "weight": 39,
+        "order": 542,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 221
+    },
+    {
+        "id": 432,
+        "height": 10,
+        "weight": 438,
+        "order": 543,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 221
+    },
+    {
+        "id": 433,
+        "height": 2,
+        "weight": 6,
+        "order": 458,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": 184
+    },
+    {
+        "id": 434,
+        "height": 4,
+        "weight": 192,
+        "order": 544,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 223
+    },
+    {
+        "id": 435,
+        "height": 10,
+        "weight": 380,
+        "order": 545,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 223
+    },
+    {
+        "id": 436,
+        "height": 5,
+        "weight": 605,
+        "order": 546,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 224
+    },
+    {
+        "id": 437,
+        "height": 13,
+        "weight": 1870,
+        "order": 547,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 224
+    },
+    {
+        "id": 438,
+        "height": 5,
+        "weight": 150,
+        "order": 265,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 91
+    },
+    {
+        "id": 439,
+        "height": 6,
+        "weight": 130,
+        "order": 183,
+        "imageColor": "pink",
+        "regionId": 4,
+        "pokemonEvolutionId": 57
+    },
+    {
+        "id": 440,
+        "height": 6,
+        "weight": 244,
+        "order": 169,
+        "imageColor": "pink",
+        "regionId": 4,
+        "pokemonEvolutionId": 51
+    },
+    {
+        "id": 441,
+        "height": 5,
+        "weight": 19,
+        "order": 548,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 442,
+        "height": 10,
+        "weight": 1080,
+        "order": 549,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 443,
+        "height": 7,
+        "weight": 205,
+        "order": 550,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 230
+    },
+    {
+        "id": 444,
+        "height": 14,
+        "weight": 560,
+        "order": 551,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 230
+    },
+    {
+        "id": 445,
+        "height": 19,
+        "weight": 950,
+        "order": 552,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 230
+    },
+    {
+        "id": 446,
+        "height": 6,
+        "weight": 1050,
+        "order": 222,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": 72
+    },
+    {
+        "id": 447,
+        "height": 7,
+        "weight": 202,
+        "order": 554,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 232
+    },
+    {
+        "id": 448,
+        "height": 12,
+        "weight": 540,
+        "order": 555,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 232
+    },
+    {
+        "id": 449,
+        "height": 8,
+        "weight": 495,
+        "order": 557,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 233
+    },
+    {
+        "id": 450,
+        "height": 20,
+        "weight": 3000,
+        "order": 558,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 233
+    },
+    {
+        "id": 451,
+        "height": 8,
+        "weight": 120,
+        "order": 559,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 234
+    },
+    {
+        "id": 452,
+        "height": 13,
+        "weight": 615,
+        "order": 560,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 234
+    },
+    {
+        "id": 453,
+        "height": 7,
+        "weight": 230,
+        "order": 561,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 235
+    },
+    {
+        "id": 454,
+        "height": 13,
+        "weight": 444,
+        "order": 562,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 235
+    },
+    {
+        "id": 455,
+        "height": 14,
+        "weight": 270,
+        "order": 563,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 456,
+        "height": 4,
+        "weight": 70,
+        "order": 564,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 237
+    },
+    {
+        "id": 457,
+        "height": 12,
+        "weight": 240,
+        "order": 565,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 237
+    },
+    {
+        "id": 458,
+        "height": 10,
+        "weight": 650,
+        "order": 310,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 116
+    },
+    {
+        "id": 459,
+        "height": 10,
+        "weight": 505,
+        "order": 566,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": 239
+    },
+    {
+        "id": 460,
+        "height": 22,
+        "weight": 1355,
+        "order": 567,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": 239
+    },
+    {
+        "id": 461,
+        "height": 11,
+        "weight": 340,
+        "order": 298,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": 109
+    },
+    {
+        "id": 462,
+        "height": 12,
+        "weight": 1800,
+        "order": 126,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 34
+    },
+    {
+        "id": 463,
+        "height": 17,
+        "weight": 1400,
+        "order": 163,
+        "imageColor": "pink",
+        "regionId": 4,
+        "pokemonEvolutionId": 48
+    },
+    {
+        "id": 464,
+        "height": 24,
+        "weight": 2828,
+        "order": 168,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 50
+    },
+    {
+        "id": 465,
+        "height": 20,
+        "weight": 1286,
+        "order": 173,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 52
+    },
+    {
+        "id": 466,
+        "height": 18,
+        "weight": 1386,
+        "order": 192,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": 60
+    },
+    {
+        "id": 467,
+        "height": 16,
+        "weight": 680,
+        "order": 195,
+        "imageColor": "red",
+        "regionId": 4,
+        "pokemonEvolutionId": 61
+    },
+    {
+        "id": 468,
+        "height": 15,
+        "weight": 380,
+        "order": 255,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": 87
+    },
+    {
+        "id": 469,
+        "height": 19,
+        "weight": 515,
+        "order": 275,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 95
+    },
+    {
+        "id": 470,
+        "height": 10,
+        "weight": 255,
+        "order": 210,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 471,
+        "height": 8,
+        "weight": 259,
+        "order": 211,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 472,
+        "height": 20,
+        "weight": 425,
+        "order": 290,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": 104
+    },
+    {
+        "id": 473,
+        "height": 25,
+        "weight": 2910,
+        "order": 305,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": 112
+    },
+    {
+        "id": 474,
+        "height": 9,
+        "weight": 340,
+        "order": 215,
+        "imageColor": "red",
+        "regionId": 4,
+        "pokemonEvolutionId": 68
+    },
+    {
+        "id": 475,
+        "height": 16,
+        "weight": 520,
+        "order": 366,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": 140
+    },
+    {
+        "id": 476,
+        "height": 14,
+        "weight": 3400,
+        "order": 384,
+        "imageColor": "gray",
+        "regionId": 4,
+        "pokemonEvolutionId": 147
+    },
+    {
+        "id": 477,
+        "height": 22,
+        "weight": 1066,
+        "order": 456,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": 182
+    },
+    {
+        "id": 478,
+        "height": 13,
+        "weight": 266,
+        "order": 465,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": 186
+    },
+    {
+        "id": 479,
+        "height": 3,
+        "weight": 3,
+        "order": 569,
+        "imageColor": "red",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 480,
+        "height": 3,
+        "weight": 3,
+        "order": 575,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 481,
+        "height": 3,
+        "weight": 3,
+        "order": 576,
+        "imageColor": "pink",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 482,
+        "height": 3,
+        "weight": 3,
+        "order": 577,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 483,
+        "height": 54,
+        "weight": 6830,
+        "order": 578,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 484,
+        "height": 42,
+        "weight": 3360,
+        "order": 579,
+        "imageColor": "purple",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 485,
+        "height": 17,
+        "weight": 4300,
+        "order": 580,
+        "imageColor": "brown",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 486,
+        "height": 37,
+        "weight": 4200,
+        "order": 581,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 487,
+        "height": 45,
+        "weight": 7500,
+        "order": 582,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 488,
+        "height": 15,
+        "weight": 856,
+        "order": 584,
+        "imageColor": "yellow",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 489,
+        "height": 4,
+        "weight": 31,
+        "order": 585,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 490,
+        "height": 3,
+        "weight": 14,
+        "order": 586,
+        "imageColor": "blue",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 491,
+        "height": 15,
+        "weight": 505,
+        "order": 587,
+        "imageColor": "black",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 492,
+        "height": 2,
+        "weight": 21,
+        "order": 588,
+        "imageColor": "green",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 493,
+        "height": 32,
+        "weight": 3200,
+        "order": 590,
+        "imageColor": "white",
+        "regionId": 4,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 494,
+        "height": 4,
+        "weight": 40,
+        "order": 591,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 495,
+        "height": 6,
+        "weight": 81,
+        "order": 592,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 256
+    },
+    {
+        "id": 496,
+        "height": 8,
+        "weight": 160,
+        "order": 593,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 256
+    },
+    {
+        "id": 497,
+        "height": 33,
+        "weight": 630,
+        "order": 594,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 256
+    },
+    {
+        "id": 498,
+        "height": 5,
+        "weight": 99,
+        "order": 595,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 257
+    },
+    {
+        "id": 499,
+        "height": 10,
+        "weight": 555,
+        "order": 596,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 257
+    },
+    {
+        "id": 500,
+        "height": 16,
+        "weight": 1500,
+        "order": 597,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 257
+    },
+    {
+        "id": 501,
+        "height": 5,
+        "weight": 59,
+        "order": 598,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 258
+    },
+    {
+        "id": 502,
+        "height": 8,
+        "weight": 245,
+        "order": 599,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 258
+    },
+    {
+        "id": 503,
+        "height": 15,
+        "weight": 946,
+        "order": 600,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 258
+    },
+    {
+        "id": 504,
+        "height": 5,
+        "weight": 116,
+        "order": 601,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 259
+    },
+    {
+        "id": 505,
+        "height": 11,
+        "weight": 270,
+        "order": 602,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 259
+    },
+    {
+        "id": 506,
+        "height": 4,
+        "weight": 41,
+        "order": 603,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 260
+    },
+    {
+        "id": 507,
+        "height": 9,
+        "weight": 147,
+        "order": 604,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 260
+    },
+    {
+        "id": 508,
+        "height": 12,
+        "weight": 610,
+        "order": 605,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 260
+    },
+    {
+        "id": 509,
+        "height": 4,
+        "weight": 101,
+        "order": 606,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 261
+    },
+    {
+        "id": 510,
+        "height": 11,
+        "weight": 375,
+        "order": 607,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 261
+    },
+    {
+        "id": 511,
+        "height": 6,
+        "weight": 105,
+        "order": 608,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 262
+    },
+    {
+        "id": 512,
+        "height": 11,
+        "weight": 305,
+        "order": 609,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 262
+    },
+    {
+        "id": 513,
+        "height": 6,
+        "weight": 110,
+        "order": 610,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 263
+    },
+    {
+        "id": 514,
+        "height": 10,
+        "weight": 280,
+        "order": 611,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 263
+    },
+    {
+        "id": 515,
+        "height": 6,
+        "weight": 135,
+        "order": 612,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 264
+    },
+    {
+        "id": 516,
+        "height": 10,
+        "weight": 290,
+        "order": 613,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 264
+    },
+    {
+        "id": 517,
+        "height": 6,
+        "weight": 233,
+        "order": 614,
+        "imageColor": "pink",
+        "regionId": 5,
+        "pokemonEvolutionId": 265
+    },
+    {
+        "id": 518,
+        "height": 11,
+        "weight": 605,
+        "order": 615,
+        "imageColor": "pink",
+        "regionId": 5,
+        "pokemonEvolutionId": 265
+    },
+    {
+        "id": 519,
+        "height": 3,
+        "weight": 21,
+        "order": 616,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 266
+    },
+    {
+        "id": 520,
+        "height": 6,
+        "weight": 150,
+        "order": 617,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 266
+    },
+    {
+        "id": 521,
+        "height": 12,
+        "weight": 290,
+        "order": 618,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 266
+    },
+    {
+        "id": 522,
+        "height": 8,
+        "weight": 298,
+        "order": 619,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": 267
+    },
+    {
+        "id": 523,
+        "height": 16,
+        "weight": 795,
+        "order": 620,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": 267
+    },
+    {
+        "id": 524,
+        "height": 4,
+        "weight": 180,
+        "order": 621,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 268
+    },
+    {
+        "id": 525,
+        "height": 9,
+        "weight": 1020,
+        "order": 622,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 268
+    },
+    {
+        "id": 526,
+        "height": 17,
+        "weight": 2600,
+        "order": 623,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 268
+    },
+    {
+        "id": 527,
+        "height": 4,
+        "weight": 21,
+        "order": 624,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 269
+    },
+    {
+        "id": 528,
+        "height": 9,
+        "weight": 105,
+        "order": 625,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 269
+    },
+    {
+        "id": 529,
+        "height": 3,
+        "weight": 85,
+        "order": 626,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 270
+    },
+    {
+        "id": 530,
+        "height": 7,
+        "weight": 404,
+        "order": 627,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 270
+    },
+    {
+        "id": 531,
+        "height": 11,
+        "weight": 310,
+        "order": 628,
+        "imageColor": "pink",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 532,
+        "height": 6,
+        "weight": 125,
+        "order": 630,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 272
+    },
+    {
+        "id": 533,
+        "height": 12,
+        "weight": 400,
+        "order": 631,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 272
+    },
+    {
+        "id": 534,
+        "height": 14,
+        "weight": 870,
+        "order": 632,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 272
+    },
+    {
+        "id": 535,
+        "height": 5,
+        "weight": 45,
+        "order": 633,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 273
+    },
+    {
+        "id": 536,
+        "height": 8,
+        "weight": 170,
+        "order": 634,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 273
+    },
+    {
+        "id": 537,
+        "height": 15,
+        "weight": 620,
+        "order": 635,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 273
+    },
+    {
+        "id": 538,
+        "height": 13,
+        "weight": 555,
+        "order": 636,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 539,
+        "height": 14,
+        "weight": 510,
+        "order": 637,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 540,
+        "height": 3,
+        "weight": 25,
+        "order": 638,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 276
+    },
+    {
+        "id": 541,
+        "height": 5,
+        "weight": 73,
+        "order": 639,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 276
+    },
+    {
+        "id": 542,
+        "height": 12,
+        "weight": 205,
+        "order": 640,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 276
+    },
+    {
+        "id": 543,
+        "height": 4,
+        "weight": 53,
+        "order": 641,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 277
+    },
+    {
+        "id": 544,
+        "height": 12,
+        "weight": 585,
+        "order": 642,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 277
+    },
+    {
+        "id": 545,
+        "height": 25,
+        "weight": 2005,
+        "order": 643,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 277
+    },
+    {
+        "id": 546,
+        "height": 3,
+        "weight": 6,
+        "order": 644,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 278
+    },
+    {
+        "id": 547,
+        "height": 7,
+        "weight": 66,
+        "order": 645,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 278
+    },
+    {
+        "id": 548,
+        "height": 5,
+        "weight": 66,
+        "order": 646,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 279
+    },
+    {
+        "id": 549,
+        "height": 11,
+        "weight": 163,
+        "order": 647,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 279
+    },
+    {
+        "id": 550,
+        "height": 10,
+        "weight": 180,
+        "order": 648,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 551,
+        "height": 7,
+        "weight": 152,
+        "order": 650,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 281
+    },
+    {
+        "id": 552,
+        "height": 10,
+        "weight": 334,
+        "order": 651,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 281
+    },
+    {
+        "id": 553,
+        "height": 15,
+        "weight": 963,
+        "order": 652,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 281
+    },
+    {
+        "id": 554,
+        "height": 6,
+        "weight": 375,
+        "order": 653,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 282
+    },
+    {
+        "id": 555,
+        "height": 13,
+        "weight": 929,
+        "order": 654,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 282
+    },
+    {
+        "id": 556,
+        "height": 10,
+        "weight": 280,
+        "order": 656,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 557,
+        "height": 3,
+        "weight": 145,
+        "order": 657,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 284
+    },
+    {
+        "id": 558,
+        "height": 14,
+        "weight": 2000,
+        "order": 658,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 284
+    },
+    {
+        "id": 559,
+        "height": 6,
+        "weight": 118,
+        "order": 659,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 285
+    },
+    {
+        "id": 560,
+        "height": 11,
+        "weight": 300,
+        "order": 660,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 285
+    },
+    {
+        "id": 561,
+        "height": 14,
+        "weight": 140,
+        "order": 661,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 562,
+        "height": 5,
+        "weight": 15,
+        "order": 662,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": 287
+    },
+    {
+        "id": 563,
+        "height": 17,
+        "weight": 765,
+        "order": 663,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 287
+    },
+    {
+        "id": 564,
+        "height": 7,
+        "weight": 165,
+        "order": 664,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 288
+    },
+    {
+        "id": 565,
+        "height": 12,
+        "weight": 810,
+        "order": 665,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 288
+    },
+    {
+        "id": 566,
+        "height": 5,
+        "weight": 95,
+        "order": 666,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 289
+    },
+    {
+        "id": 567,
+        "height": 14,
+        "weight": 320,
+        "order": 667,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 289
+    },
+    {
+        "id": 568,
+        "height": 6,
+        "weight": 310,
+        "order": 668,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 290
+    },
+    {
+        "id": 569,
+        "height": 19,
+        "weight": 1073,
+        "order": 669,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 290
+    },
+    {
+        "id": 570,
+        "height": 7,
+        "weight": 125,
+        "order": 670,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 291
+    },
+    {
+        "id": 571,
+        "height": 16,
+        "weight": 811,
+        "order": 671,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 291
+    },
+    {
+        "id": 572,
+        "height": 4,
+        "weight": 58,
+        "order": 672,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 292
+    },
+    {
+        "id": 573,
+        "height": 5,
+        "weight": 75,
+        "order": 673,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 292
+    },
+    {
+        "id": 574,
+        "height": 4,
+        "weight": 58,
+        "order": 674,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 293
+    },
+    {
+        "id": 575,
+        "height": 7,
+        "weight": 180,
+        "order": 675,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 293
+    },
+    {
+        "id": 576,
+        "height": 15,
+        "weight": 440,
+        "order": 676,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 293
+    },
+    {
+        "id": 577,
+        "height": 3,
+        "weight": 10,
+        "order": 677,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 294
+    },
+    {
+        "id": 578,
+        "height": 6,
+        "weight": 80,
+        "order": 678,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 294
+    },
+    {
+        "id": 579,
+        "height": 10,
+        "weight": 201,
+        "order": 679,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 294
+    },
+    {
+        "id": 580,
+        "height": 5,
+        "weight": 55,
+        "order": 680,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 295
+    },
+    {
+        "id": 581,
+        "height": 13,
+        "weight": 242,
+        "order": 681,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 295
+    },
+    {
+        "id": 582,
+        "height": 4,
+        "weight": 57,
+        "order": 682,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 296
+    },
+    {
+        "id": 583,
+        "height": 11,
+        "weight": 410,
+        "order": 683,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 296
+    },
+    {
+        "id": 584,
+        "height": 13,
+        "weight": 575,
+        "order": 684,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 296
+    },
+    {
+        "id": 585,
+        "height": 6,
+        "weight": 195,
+        "order": 685,
+        "imageColor": "pink",
+        "regionId": 5,
+        "pokemonEvolutionId": 297
+    },
+    {
+        "id": 586,
+        "height": 19,
+        "weight": 925,
+        "order": 686,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 297
+    },
+    {
+        "id": 587,
+        "height": 4,
+        "weight": 50,
+        "order": 687,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 588,
+        "height": 5,
+        "weight": 59,
+        "order": 688,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 299
+    },
+    {
+        "id": 589,
+        "height": 10,
+        "weight": 330,
+        "order": 689,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 299
+    },
+    {
+        "id": 590,
+        "height": 2,
+        "weight": 10,
+        "order": 690,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 300
+    },
+    {
+        "id": 591,
+        "height": 6,
+        "weight": 105,
+        "order": 691,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 300
+    },
+    {
+        "id": 592,
+        "height": 12,
+        "weight": 330,
+        "order": 692,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 301
+    },
+    {
+        "id": 593,
+        "height": 22,
+        "weight": 1350,
+        "order": 693,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 301
+    },
+    {
+        "id": 594,
+        "height": 12,
+        "weight": 316,
+        "order": 694,
+        "imageColor": "pink",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 595,
+        "height": 1,
+        "weight": 6,
+        "order": 695,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 303
+    },
+    {
+        "id": 596,
+        "height": 8,
+        "weight": 143,
+        "order": 696,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 303
+    },
+    {
+        "id": 597,
+        "height": 6,
+        "weight": 188,
+        "order": 697,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 304
+    },
+    {
+        "id": 598,
+        "height": 10,
+        "weight": 1100,
+        "order": 698,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 304
+    },
+    {
+        "id": 599,
+        "height": 3,
+        "weight": 210,
+        "order": 699,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 305
+    },
+    {
+        "id": 600,
+        "height": 6,
+        "weight": 510,
+        "order": 700,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 305
+    },
+    {
+        "id": 601,
+        "height": 6,
+        "weight": 810,
+        "order": 701,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": 305
+    },
+    {
+        "id": 602,
+        "height": 2,
+        "weight": 3,
+        "order": 702,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 306
+    },
+    {
+        "id": 603,
+        "height": 12,
+        "weight": 220,
+        "order": 703,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 306
+    },
+    {
+        "id": 604,
+        "height": 21,
+        "weight": 805,
+        "order": 704,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 306
+    },
+    {
+        "id": 605,
+        "height": 5,
+        "weight": 90,
+        "order": 705,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 307
+    },
+    {
+        "id": 606,
+        "height": 10,
+        "weight": 345,
+        "order": 706,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 307
+    },
+    {
+        "id": 607,
+        "height": 3,
+        "weight": 31,
+        "order": 707,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 308
+    },
+    {
+        "id": 608,
+        "height": 6,
+        "weight": 130,
+        "order": 708,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": 308
+    },
+    {
+        "id": 609,
+        "height": 10,
+        "weight": 343,
+        "order": 709,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": 308
+    },
+    {
+        "id": 610,
+        "height": 6,
+        "weight": 180,
+        "order": 710,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 309
+    },
+    {
+        "id": 611,
+        "height": 10,
+        "weight": 360,
+        "order": 711,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 309
+    },
+    {
+        "id": 612,
+        "height": 18,
+        "weight": 1055,
+        "order": 712,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 309
+    },
+    {
+        "id": 613,
+        "height": 5,
+        "weight": 85,
+        "order": 713,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 310
+    },
+    {
+        "id": 614,
+        "height": 26,
+        "weight": 2600,
+        "order": 714,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 310
+    },
+    {
+        "id": 615,
+        "height": 11,
+        "weight": 1480,
+        "order": 715,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 616,
+        "height": 4,
+        "weight": 77,
+        "order": 716,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 312
+    },
+    {
+        "id": 617,
+        "height": 8,
+        "weight": 253,
+        "order": 717,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 312
+    },
+    {
+        "id": 618,
+        "height": 7,
+        "weight": 110,
+        "order": 718,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 619,
+        "height": 9,
+        "weight": 200,
+        "order": 719,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": 314
+    },
+    {
+        "id": 620,
+        "height": 14,
+        "weight": 355,
+        "order": 720,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": 314
+    },
+    {
+        "id": 621,
+        "height": 16,
+        "weight": 1390,
+        "order": 721,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 622,
+        "height": 10,
+        "weight": 920,
+        "order": 722,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 316
+    },
+    {
+        "id": 623,
+        "height": 28,
+        "weight": 3300,
+        "order": 723,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": 316
+    },
+    {
+        "id": 624,
+        "height": 5,
+        "weight": 102,
+        "order": 724,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 317
+    },
+    {
+        "id": 625,
+        "height": 16,
+        "weight": 700,
+        "order": 725,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 317
+    },
+    {
+        "id": 626,
+        "height": 16,
+        "weight": 946,
+        "order": 726,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 627,
+        "height": 5,
+        "weight": 105,
+        "order": 727,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 319
+    },
+    {
+        "id": 628,
+        "height": 15,
+        "weight": 410,
+        "order": 728,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": 319
+    },
+    {
+        "id": 629,
+        "height": 5,
+        "weight": 90,
+        "order": 729,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 320
+    },
+    {
+        "id": 630,
+        "height": 12,
+        "weight": 395,
+        "order": 730,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": 320
+    },
+    {
+        "id": 631,
+        "height": 14,
+        "weight": 580,
+        "order": 731,
+        "imageColor": "red",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 632,
+        "height": 3,
+        "weight": 330,
+        "order": 732,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 633,
+        "height": 8,
+        "weight": 173,
+        "order": 733,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 323
+    },
+    {
+        "id": 634,
+        "height": 14,
+        "weight": 500,
+        "order": 734,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 323
+    },
+    {
+        "id": 635,
+        "height": 18,
+        "weight": 1600,
+        "order": 735,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": 323
+    },
+    {
+        "id": 636,
+        "height": 11,
+        "weight": 288,
+        "order": 736,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 324
+    },
+    {
+        "id": 637,
+        "height": 16,
+        "weight": 460,
+        "order": 737,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": 324
+    },
+    {
+        "id": 638,
+        "height": 21,
+        "weight": 2500,
+        "order": 738,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 639,
+        "height": 19,
+        "weight": 2600,
+        "order": 739,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 640,
+        "height": 20,
+        "weight": 2000,
+        "order": 740,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 641,
+        "height": 15,
+        "weight": 630,
+        "order": 741,
+        "imageColor": "green",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 642,
+        "height": 15,
+        "weight": 610,
+        "order": 743,
+        "imageColor": "blue",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 643,
+        "height": 32,
+        "weight": 3300,
+        "order": 745,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 644,
+        "height": 29,
+        "weight": 3450,
+        "order": 746,
+        "imageColor": "black",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 645,
+        "height": 15,
+        "weight": 680,
+        "order": 747,
+        "imageColor": "brown",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 646,
+        "height": 30,
+        "weight": 3250,
+        "order": 749,
+        "imageColor": "gray",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 647,
+        "height": 14,
+        "weight": 485,
+        "order": 752,
+        "imageColor": "yellow",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 648,
+        "height": 6,
+        "weight": 65,
+        "order": 754,
+        "imageColor": "white",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 649,
+        "height": 15,
+        "weight": 825,
+        "order": 756,
+        "imageColor": "purple",
+        "regionId": 5,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 650,
+        "height": 4,
+        "weight": 90,
+        "order": 757,
+        "imageColor": "green",
+        "regionId": 6,
+        "pokemonEvolutionId": 337
+    },
+    {
+        "id": 651,
+        "height": 7,
+        "weight": 290,
+        "order": 758,
+        "imageColor": "green",
+        "regionId": 6,
+        "pokemonEvolutionId": 337
+    },
+    {
+        "id": 652,
+        "height": 16,
+        "weight": 900,
+        "order": 759,
+        "imageColor": "green",
+        "regionId": 6,
+        "pokemonEvolutionId": 337
+    },
+    {
+        "id": 653,
+        "height": 4,
+        "weight": 94,
+        "order": 760,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 338
+    },
+    {
+        "id": 654,
+        "height": 10,
+        "weight": 145,
+        "order": 761,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 338
+    },
+    {
+        "id": 655,
+        "height": 15,
+        "weight": 390,
+        "order": 762,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 338
+    },
+    {
+        "id": 656,
+        "height": 3,
+        "weight": 70,
+        "order": 763,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 339
+    },
+    {
+        "id": 657,
+        "height": 6,
+        "weight": 109,
+        "order": 764,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 339
+    },
+    {
+        "id": 658,
+        "height": 15,
+        "weight": 400,
+        "order": 765,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 339
+    },
+    {
+        "id": 659,
+        "height": 4,
+        "weight": 50,
+        "order": 768,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 340
+    },
+    {
+        "id": 660,
+        "height": 10,
+        "weight": 424,
+        "order": 769,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 340
+    },
+    {
+        "id": 661,
+        "height": 3,
+        "weight": 17,
+        "order": 770,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 341
+    },
+    {
+        "id": 662,
+        "height": 7,
+        "weight": 160,
+        "order": 771,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 341
+    },
+    {
+        "id": 663,
+        "height": 12,
+        "weight": 245,
+        "order": 772,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 341
+    },
+    {
+        "id": 664,
+        "height": 3,
+        "weight": 25,
+        "order": 773,
+        "imageColor": "black",
+        "regionId": 6,
+        "pokemonEvolutionId": 342
+    },
+    {
+        "id": 665,
+        "height": 3,
+        "weight": 84,
+        "order": 774,
+        "imageColor": "black",
+        "regionId": 6,
+        "pokemonEvolutionId": 342
+    },
+    {
+        "id": 666,
+        "height": 12,
+        "weight": 170,
+        "order": 775,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 342
+    },
+    {
+        "id": 667,
+        "height": 6,
+        "weight": 135,
+        "order": 776,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 343
+    },
+    {
+        "id": 668,
+        "height": 15,
+        "weight": 815,
+        "order": 777,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 343
+    },
+    {
+        "id": 669,
+        "height": 1,
+        "weight": 1,
+        "order": 778,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 344
+    },
+    {
+        "id": 670,
+        "height": 2,
+        "weight": 9,
+        "order": 779,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 344
+    },
+    {
+        "id": 671,
+        "height": 11,
+        "weight": 100,
+        "order": 781,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 344
+    },
+    {
+        "id": 672,
+        "height": 9,
+        "weight": 310,
+        "order": 782,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 345
+    },
+    {
+        "id": 673,
+        "height": 17,
+        "weight": 910,
+        "order": 783,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 345
+    },
+    {
+        "id": 674,
+        "height": 6,
+        "weight": 80,
+        "order": 784,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 346
+    },
+    {
+        "id": 675,
+        "height": 21,
+        "weight": 1360,
+        "order": 785,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 346
+    },
+    {
+        "id": 676,
+        "height": 12,
+        "weight": 280,
+        "order": 786,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 677,
+        "height": 3,
+        "weight": 35,
+        "order": 787,
+        "imageColor": "gray",
+        "regionId": 6,
+        "pokemonEvolutionId": 348
+    },
+    {
+        "id": 678,
+        "height": 6,
+        "weight": 85,
+        "order": 788,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 348
+    },
+    {
+        "id": 679,
+        "height": 8,
+        "weight": 20,
+        "order": 790,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 349
+    },
+    {
+        "id": 680,
+        "height": 8,
+        "weight": 45,
+        "order": 791,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 349
+    },
+    {
+        "id": 681,
+        "height": 17,
+        "weight": 530,
+        "order": 792,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 349
+    },
+    {
+        "id": 682,
+        "height": 2,
+        "weight": 5,
+        "order": 794,
+        "imageColor": "pink",
+        "regionId": 6,
+        "pokemonEvolutionId": 350
+    },
+    {
+        "id": 683,
+        "height": 8,
+        "weight": 155,
+        "order": 795,
+        "imageColor": "pink",
+        "regionId": 6,
+        "pokemonEvolutionId": 350
+    },
+    {
+        "id": 684,
+        "height": 4,
+        "weight": 35,
+        "order": 796,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 351
+    },
+    {
+        "id": 685,
+        "height": 8,
+        "weight": 50,
+        "order": 797,
+        "imageColor": "white",
+        "regionId": 6,
+        "pokemonEvolutionId": 351
+    },
+    {
+        "id": 686,
+        "height": 4,
+        "weight": 35,
+        "order": 798,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 352
+    },
+    {
+        "id": 687,
+        "height": 15,
+        "weight": 470,
+        "order": 799,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 352
+    },
+    {
+        "id": 688,
+        "height": 5,
+        "weight": 310,
+        "order": 800,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 353
+    },
+    {
+        "id": 689,
+        "height": 13,
+        "weight": 960,
+        "order": 801,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 353
+    },
+    {
+        "id": 690,
+        "height": 5,
+        "weight": 73,
+        "order": 802,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 354
+    },
+    {
+        "id": 691,
+        "height": 18,
+        "weight": 815,
+        "order": 803,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 354
+    },
+    {
+        "id": 692,
+        "height": 5,
+        "weight": 83,
+        "order": 804,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 355
+    },
+    {
+        "id": 693,
+        "height": 13,
+        "weight": 353,
+        "order": 805,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 355
+    },
+    {
+        "id": 694,
+        "height": 5,
+        "weight": 60,
+        "order": 806,
+        "imageColor": "yellow",
+        "regionId": 6,
+        "pokemonEvolutionId": 356
+    },
+    {
+        "id": 695,
+        "height": 10,
+        "weight": 210,
+        "order": 807,
+        "imageColor": "yellow",
+        "regionId": 6,
+        "pokemonEvolutionId": 356
+    },
+    {
+        "id": 696,
+        "height": 8,
+        "weight": 260,
+        "order": 808,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 357
+    },
+    {
+        "id": 697,
+        "height": 25,
+        "weight": 2700,
+        "order": 809,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": 357
+    },
+    {
+        "id": 698,
+        "height": 13,
+        "weight": 252,
+        "order": 810,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 358
+    },
+    {
+        "id": 699,
+        "height": 27,
+        "weight": 2250,
+        "order": 811,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 358
+    },
+    {
+        "id": 700,
+        "height": 10,
+        "weight": 235,
+        "order": 212,
+        "imageColor": "pink",
+        "regionId": 6,
+        "pokemonEvolutionId": 67
+    },
+    {
+        "id": 701,
+        "height": 8,
+        "weight": 215,
+        "order": 812,
+        "imageColor": "green",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 702,
+        "height": 2,
+        "weight": 22,
+        "order": 813,
+        "imageColor": "yellow",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 703,
+        "height": 3,
+        "weight": 57,
+        "order": 814,
+        "imageColor": "gray",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 704,
+        "height": 3,
+        "weight": 28,
+        "order": 815,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": 362
+    },
+    {
+        "id": 705,
+        "height": 8,
+        "weight": 175,
+        "order": 816,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": 362
+    },
+    {
+        "id": 706,
+        "height": 20,
+        "weight": 1505,
+        "order": 817,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": 362
+    },
+    {
+        "id": 707,
+        "height": 2,
+        "weight": 30,
+        "order": 818,
+        "imageColor": "gray",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 708,
+        "height": 4,
+        "weight": 70,
+        "order": 819,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 364
+    },
+    {
+        "id": 709,
+        "height": 15,
+        "weight": 710,
+        "order": 820,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 364
+    },
+    {
+        "id": 710,
+        "height": 4,
+        "weight": 50,
+        "order": 821,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 365
+    },
+    {
+        "id": 711,
+        "height": 9,
+        "weight": 125,
+        "order": 825,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": 365
+    },
+    {
+        "id": 712,
+        "height": 10,
+        "weight": 995,
+        "order": 829,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 366
+    },
+    {
+        "id": 713,
+        "height": 20,
+        "weight": 5050,
+        "order": 830,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": 366
+    },
+    {
+        "id": 714,
+        "height": 5,
+        "weight": 80,
+        "order": 831,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": 367
+    },
+    {
+        "id": 715,
+        "height": 15,
+        "weight": 850,
+        "order": 832,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": 367
+    },
+    {
+        "id": 716,
+        "height": 30,
+        "weight": 2150,
+        "order": 833,
+        "imageColor": "blue",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 717,
+        "height": 58,
+        "weight": 2030,
+        "order": 834,
+        "imageColor": "red",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 718,
+        "height": 50,
+        "weight": 3050,
+        "order": 835,
+        "imageColor": "green",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 719,
+        "height": 7,
+        "weight": 88,
+        "order": 839,
+        "imageColor": "pink",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 720,
+        "height": 5,
+        "weight": 90,
+        "order": 841,
+        "imageColor": "purple",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    },
+    {
+        "id": 721,
+        "height": 17,
+        "weight": 1950,
+        "order": 843,
+        "imageColor": "brown",
+        "regionId": 6,
+        "pokemonEvolutionId": null
+    }
+]

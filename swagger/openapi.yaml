@@ -23,57 +23,129 @@ schemes:
 paths:
   /pokemons:
     get:
+      parameters:
+      - name: lang
+        in: query
+        description: 言語 (英語 - en / 日本語 - ja-Hrkt)
+        type: string
+      - name: game
+        in: query
+        description:
+          ゲームバージョン
+          (rgby / gsc / rse / frlg / dp / pt / hgss / bw / c / x / bw2 / xy / oras / sm / usum)
+        type: string
+      - name: regions
+        in: query
+        description: 地方 (kanto / johto / hoenn / sinnoh / unova / kalos / alola)
+        type: array
+        items:
+          type: string
       tags:
         - pokemons
       summary: Find All Pokemons
-      description: ポケモン情報を全件取得します.
+      description: パラメータに紐づくポケモン情報一覧を取得します
       operationId: findAllPokemons
       produces:
         - application/json
       responses:
-        '200':
+        200:
           description: successful operation
           schema:
             type: array
             items:
-              $ref: '#/definitions/Pokemons'
+              $ref: '#/definitions/Pokemon'
+        404:
+          description: not found
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: 'Not Found!'
+  /game-version-groups:
+    get:
+      parameters:
+      - name: lang
+        in: query
+        description: 言語 (英語 - en / 日本語 - ja-Hrkt)
+        type: string
+      - name: supported
+        in: query
+        description: サポートされてるか（Yes - true / No - false）
+        type: boolean
+      tags:
+        - game_version_groups
+      summary: Find All GameVersionGroups
+      description: ゲームバージョングループ情報一覧を取得します
+      operationId: findAllGameVerisionGroups
+      produces:
+        - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/GameVersionGroup'
+        404:
+          description: not found
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: 'Not Found!'
 definitions:
-  Pokemons:
+  Pokemon:
     type: object
     properties:
       id:
         type: integer
         format: int64
         example: 25
+      imageColor:
+        type: string
+        example: 'yellow'
       name:
         type: string
         example: 'ピカチュウ'
-      code:
-        type: string
-        example: 'Pikachu'
-      generationNo:
-        type: integer
-        format: int64
-        enum:
-          - 1
-          - 2
-          - 3
-          - 4
-          - 5
-          - 6
-          - 7
+      gameImagePaths:
+        type: array
+        items:
+          type: string
+          example:
+            - '/25/icon/1/1.gif'
+            - '/25/rgby/25.png'
+      imagePaths:
+        type: array
+        items:
+          type: string
+          example:
+            - '/25/footmark/25.png'
+            - '/25/overworld/25-1.gif'
+      types:
+        type: array
+        items:
+          type: string
+          example:
+            - 'でんき'
     xml:
       name: Pokemons
-  # ApiResponse:
-  #   type: object
-  #   properties:
-  #     code:
-  #       type: integer
-  #       format: int32
-  #     type:
-  #       type: string
-  #     message:
-  #       type: string
+  GameVersionGroup:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        example: 1
+      alias:
+        type: string
+        example: 'rgby'
+      name:
+        type: string
+        example: '赤/緑/ピカチュウ'
+    xml:
+      name: GameVersionGroup
 externalDocs:
   description: Find out more about Swagger
   url: 'http://swagger.io'
