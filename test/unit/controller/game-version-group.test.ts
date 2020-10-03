@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';

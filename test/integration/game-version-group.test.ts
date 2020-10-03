@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { GameVersionGroupResponse } from '@/@types/response-model';
 import driver from '@/driver';
 import { ROUTING } from '@/routes';

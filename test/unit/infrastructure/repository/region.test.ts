@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import IRegionRepository from '@/domain/repository/IRegion.repository';
 import driver from '@/driver';
 import RegionRepository from '@/infrastructure/repository/Region.repository';

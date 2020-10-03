@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import settingRouter from '@/domain/function/express-router.function';
 import * as express from 'express';
 import { AppRequest, AppResponse } from 'express';

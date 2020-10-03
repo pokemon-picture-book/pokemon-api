@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import driver from '@/driver';
 import PokemonRepository from '@/infrastructure/repository/Pokemon.repository';

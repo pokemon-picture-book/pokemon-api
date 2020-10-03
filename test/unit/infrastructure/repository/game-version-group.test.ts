@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import driver from '@/driver';
 import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
 import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionGroup.repository';

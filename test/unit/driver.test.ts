@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 import driver from '@/driver';
 
 describe('Unit test for driver', () => {

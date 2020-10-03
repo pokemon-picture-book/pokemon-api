@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
 import GameVersionGroupInteractor from '@/interactor/GameVersionGroup.interactor';
 import TYPES from '@/registory/inversify.types';

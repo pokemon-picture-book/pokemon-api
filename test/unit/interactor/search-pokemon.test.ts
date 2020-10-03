@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
 import { interactorContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';

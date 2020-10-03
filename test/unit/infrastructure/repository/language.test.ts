@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import LanguageEntity from '@/domain/entity/Language.entity';
 import ILanguageRepository from '@/domain/repository/ILanguage.repository';
 import driver from '@/driver';

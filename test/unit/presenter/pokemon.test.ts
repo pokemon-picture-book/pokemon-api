@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import driver from '@/driver';

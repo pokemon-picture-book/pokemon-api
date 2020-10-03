@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { getDefaultSet } from '@/domain/function/game-region.function';
 
 describe('Unit test for game-region function', () => {
