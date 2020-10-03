@@ -4,7 +4,7 @@ import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.r
 import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionGroup.repository';
 import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
 
-describe('Unit test for GameVersionGroupRepository repository', () => {
+describe('Unit test for GameVersionGroup repository', () => {
     const repository: IGameVersionGroupRepository = new GameVersionGroupRepository();
 
     beforeAll(async () => {
@@ -33,18 +33,16 @@ describe('Unit test for GameVersionGroupRepository repository', () => {
             1,
             true
         );
-
         const [first] = gameVersionGroups;
-        const gameVersionGroupName = first.gameVersions
-            .map(gameVersion => {
-                const [gameVersionName] = gameVersion.gameVersionNames;
-                return gameVersionName.name;
-            })
-            .join('/');
-
+        expect(first.gameVersions.length).toBe(3);
+        const actualGameVersionNames = ['赤', '緑', 'ピカチュウ'];
+        first.gameVersions.forEach(gameVersion => {
+            const [gameVersionName] = gameVersion.gameVersionNames;
+            expect(
+                actualGameVersionNames.includes(gameVersionName.name)
+            ).toBeTruthy();
+        });
         expect(first.alias).toBe('rgby');
-        expect(gameVersionGroupName).toBe('赤/緑/ピカチュウ');
-
         done();
     });
 
@@ -53,18 +51,12 @@ describe('Unit test for GameVersionGroupRepository repository', () => {
             1,
             false
         );
-
         const [first] = gameVersionGroups;
-        const gameVersionGroupName = first.gameVersions
-            .map(gameVersion => {
-                const [gameVersionName] = gameVersion.gameVersionNames;
-                return gameVersionName.name;
-            })
-            .join('/');
-
         expect(first.alias).toBe('c');
-        expect(gameVersionGroupName).toBe('コロシアム');
-
+        expect(first.gameVersions.length).toBe(1);
+        expect(first.gameVersions[0].gameVersionNames[0].name).toBe(
+            'コロシアム'
+        );
         done();
     });
 

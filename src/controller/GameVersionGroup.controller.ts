@@ -19,7 +19,7 @@ export default class GameVersionGroupController {
         const { lang, supported } = request.query;
 
         // TODO: 真偽値以外のパラメータを送れるのがよくないので、あとでバリデータ追加
-        const isSupported = !(supported === 'false');
+        const isSupported = supported !== 'false';
         const result: GameVersionGroupResponse[] = await this.usecase.search(
             lang || 'en',
             isSupported
