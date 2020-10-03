@@ -31,7 +31,10 @@ module.exports = [
         password: DB_CONFIG.password || 'pokemon',
         database: DB_CONFIG.database || 'pokemon',
         synchronize: true,
-        logging: false
+        logging: false,
+        dialectOptions: {
+            options: { requestTimeout: 300000 }
+        }
     },
     {
         // TODO: production 環境が出来上がり次第、ここの設定も変更予定
