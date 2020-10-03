@@ -8,7 +8,7 @@ import 'reflect-metadata';
 export const ROUTING: Readonly<Routing> = {
     API: '/pokemon-api/v1',
     POKEMON: '/pokemons',
-    GAME_VERSION_GROUP: '/game-versions'
+    GAME_VERSION_GROUP: '/game-version-groups'
 };
 
 export default {
