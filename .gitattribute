@@ -1,0 +1,9 @@
+* text=auto
+
+*.bat eol=crlf
+*.sh eol=lf
+*.command eol=lf
+
+*.conf eol=lf
+*.service eol=lf
+gradlew eol=lf
