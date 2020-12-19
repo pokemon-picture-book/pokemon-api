@@ -1,9 +1,8 @@
-FROM node:14
-
+FROM node:14-alpine
 WORKDIR /usr/app
-COPY . .
-
-# RUN apt-get update
-# RUN apt-get install -y openjdk-8-jre
-
+COPY package*.json ./
 RUN npm ci
+COPY . .
+RUN npm run build
+
+EXPOSE 80
