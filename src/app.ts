@@ -9,7 +9,8 @@ const port = process.env.PORT || '3000';
 const host = process.env.HOST || 'localhost';
 http.createServer(app).listen(Number(port), host, () => {
     console.info(
-        `up and running in ${process.env.NODE_ENV ||
-            'development'} @: ${os.hostname()} on port: ${port}, host: ${host}`
+        `up and running in ${
+            process.env.NODE_ENV || 'development'
+        } @: ${os.hostname()} on port: ${port}, host: ${host}`
     );
 });

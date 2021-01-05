@@ -17,7 +17,7 @@ describe('Unit test for GameVersionGroup presenter', () => {
         driver.close();
     });
 
-    test('正常: 正しくマッピングできているか', async done => {
+    test('正常: 正しくマッピングできているか', async (done) => {
         const gameVersionGroups = await repository.findAllByIsSupported(
             1,
             true
@@ -35,7 +35,7 @@ describe('Unit test for GameVersionGroup presenter', () => {
         done();
     });
 
-    test('正常: 正しくマッピングできているか', async done => {
+    test('正常: 正しくマッピングできているか', async (done) => {
         const responses = presenter.toGameVersionGroupResponse([]);
         expect(responses.length).toBe(0);
         done();

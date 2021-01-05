@@ -14,14 +14,14 @@ describe('Unit test for Language repository', () => {
         driver.close();
     });
 
-    test('正常: name を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: name を指定した場合、正しい結果が取得できているか', async (done) => {
         const language = await repository.findByName('en');
         expect(language).not.toBeNull();
         expect((language as LanguageEntity).name).toBe('en');
         done();
     });
 
-    test('異常: name に存在しないデータのパラメータを指定した場合、undefined となるか', async done => {
+    test('異常: name に存在しないデータのパラメータを指定した場合、undefined となるか', async (done) => {
         const language = await repository.findByName('xxxxx');
         expect(language).toBeUndefined();
         done();

@@ -1,7 +1,8 @@
-import { GameVersionGroupResponse } from '@/@types/response-model';
 import driver from '@/driver';
 import { ROUTING } from '@/routes';
 import server from '@/server';
+import { GameVersionGroupQueryParam } from 'app-request-model';
+import { GameVersionGroupResponse } from 'app-response-model';
 import * as request from 'supertest';
 
 describe('Integration test for gameVersionGroup', () => {
@@ -13,12 +14,12 @@ describe('Integration test for gameVersionGroup', () => {
         driver.close();
     });
 
-    test('正常: クエリパラメータなしでリクエストした際にサポートされたゲームバージョンが英語のデータで取得できているか', done => {
+    test('正常: クエリパラメータなしでリクエストした際にサポートされたゲームバージョンが英語のデータで取得できているか', (done) => {
         request(server)
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
@@ -38,9 +39,9 @@ describe('Integration test for gameVersionGroup', () => {
             });
     });
 
-    test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', done => {
+    test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
-            lang: 'ja-Hrkt'
+            lang: 'ja-Hrkt',
         };
 
         request(server)
@@ -48,7 +49,7 @@ describe('Integration test for gameVersionGroup', () => {
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
@@ -65,16 +66,16 @@ describe('Integration test for gameVersionGroup', () => {
             });
     });
 
-    test('正常: supported パラメータを送信した際に、指定したサポートの有無に対応したデータが取得できるか', done => {
+    test('正常: supported パラメータを送信した際に、指定したサポートの有無に対応したデータが取得できるか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
-            supported: 'false'
+            supported: 'false',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
@@ -94,10 +95,10 @@ describe('Integration test for gameVersionGroup', () => {
             });
     });
 
-    test('正常: lang / supported パラメータを送信した際に、指定したデータが取得できているか', done => {
+    test('正常: lang / supported パラメータを送信した際に、指定したデータが取得できているか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
             lang: 'ja-Hrkt',
-            supported: 'true'
+            supported: 'true',
         };
 
         request(server)
@@ -105,7 +106,7 @@ describe('Integration test for gameVersionGroup', () => {
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
@@ -125,9 +126,9 @@ describe('Integration test for gameVersionGroup', () => {
             });
     });
 
-    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', done => {
+    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
-            lang: 'xxxxx'
+            lang: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
@@ -136,9 +137,9 @@ describe('Integration test for gameVersionGroup', () => {
             .expect(404, done);
     });
 
-    test('異常: supported に不正な値を入れ、リクエストを送信した際 200 となるか', done => {
+    test('異常: supported に不正な値を入れ、リクエストを送信した際 200 となるか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
-            supported: 'xxxxx'
+            supported: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
@@ -147,9 +148,9 @@ describe('Integration test for gameVersionGroup', () => {
             .expect(200, done);
     });
 
-    test('異常: lang / supported とは別のパラメータを設定した場合、サポートされたバージョンで英語のデータが取得できているか', done => {
+    test('異常: lang / supported とは別のパラメータを設定した場合、サポートされたバージョンで英語のデータが取得できているか', (done) => {
         const queryParam: Readonly<any> = {
-            xxxx: true
+            xxxx: true,
         };
 
         request(server)
@@ -157,7 +158,7 @@ describe('Integration test for gameVersionGroup', () => {
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 

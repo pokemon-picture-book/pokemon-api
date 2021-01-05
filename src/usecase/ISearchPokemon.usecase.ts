@@ -1,4 +1,4 @@
-import { PokemonSearchResponse } from '@t/response-model';
+import { PokemonSearchResponse } from 'app-response-model';
 
 export default interface ISearchPokemonUsecase {
     search(

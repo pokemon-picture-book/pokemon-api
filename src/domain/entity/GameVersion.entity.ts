@@ -6,7 +6,7 @@ import {
     ManyToOne,
     PrimaryColumn,
     OneToMany,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import GameVersionNameEntity from './GameVersionName.entity';
 import GameVersionGroupEntity from './GameVersionGroup.entity';
@@ -14,13 +14,13 @@ import GameVersionGroupEntity from './GameVersionGroup.entity';
 @Entity({ name: 'game_versions' })
 class GameVersionEntity extends BaseEntity {
     @PrimaryColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
     @OneToMany(
         () => GameVersionNameEntity,
-        gameVersionName => gameVersionName.gameVersion
+        (gameVersionName) => gameVersionName.gameVersion
     )
     readonly gameVersionNames: GameVersionNameEntity[];
 
@@ -28,16 +28,16 @@ class GameVersionEntity extends BaseEntity {
         type: 'varchar',
         length: 32,
         insert: true,
-        update: false
+        update: false,
     })
     readonly name: string;
 
     @ManyToOne(
         () => GameVersionGroupEntity,
-        gameVersionGroup => gameVersionGroup.gameVersions
+        (gameVersionGroup) => gameVersionGroup.gameVersions
     )
     @JoinColumn({
-        name: 'game_version_group_id'
+        name: 'game_version_group_id',
     })
     readonly gameVersionGroup: GameVersionGroupEntity;
 

@@ -47,7 +47,7 @@ export default class PokemonRepository implements IPokemonRepository {
             )
             .orderBy({
                 'pokemon.id': 'ASC',
-                'pokemonType.order': 'ASC'
+                'pokemonType.order': 'ASC',
             })
             .getMany();
     }

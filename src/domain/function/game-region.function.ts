@@ -10,7 +10,7 @@ const gameRegion: Readonly<{ [k: string]: string[] }> = {
     xy: ['kalos'],
     oras: ['hoenn'],
     sm: ['alola'],
-    usum: ['alola']
+    usum: ['alola'],
 };
 
 const regionGame: Readonly<{ [k: string]: string[] }> = {
@@ -20,7 +20,7 @@ const regionGame: Readonly<{ [k: string]: string[] }> = {
     innoh: ['dp', 'pt'],
     unova: ['bw'],
     kalos: ['xy'],
-    alola: ['sm', 'usum']
+    alola: ['sm', 'usum'],
 };
 
 export const getDefaultSet = (
@@ -34,7 +34,7 @@ export const getDefaultSet = (
 
     if (!game && regions.length) {
         const regionKey = Object.keys(regionGame)
-            .filter(key => regions.includes(key))
+            .filter((key) => regions.includes(key))
             .pop();
         const firstGame = regionKey ? regionGame[regionKey].shift() : '';
 

@@ -1,10 +1,12 @@
-declare type SearchPokemonQueryParam = {
-    lang?: string;
-    game?: string;
-    regions?: string[];
-};
+declare module 'app-request-model' {
+    export type SearchPokemonQueryParam = {
+        lang?: string;
+        game?: string;
+        regions?: string[];
+    };
 
-declare type GameVersionGroupQueryParam = {
-    lang?: string;
-    supported?: string;
-};
+    export type GameVersionGroupQueryParam = {
+        lang?: string;
+        supported?: string;
+    };
+}

@@ -6,7 +6,7 @@ import {
     JoinColumn,
     ManyToOne,
     OneToMany,
-    PrimaryGeneratedColumn
+    PrimaryGeneratedColumn,
 } from 'typeorm';
 import PokemonEntity from './Pokemon.entity';
 import PokemonEvolutionEntity from './PokemonEvolution.entity';
@@ -14,27 +14,27 @@ import PokemonEvolutionEntity from './PokemonEvolution.entity';
 @Entity({ name: 'evolutions' })
 class EvolutionEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
     @OneToMany(
         () => PokemonEvolutionEntity,
-        pokemonEvolution => pokemonEvolution.evolution
+        (pokemonEvolution) => pokemonEvolution.evolution
     )
     readonly pokemonEvolutions: PokemonEvolutionEntity[];
 
     @ManyToOne(() => PokemonEntity)
     @JoinColumn({
         name: 'from_id',
-        referencedColumnName: 'id'
+        referencedColumnName: 'id',
     })
     readonly fromPokemon: PokemonEntity;
 
     @ManyToOne(() => PokemonEntity)
     @JoinColumn({
         name: 'to_id',
-        referencedColumnName: 'id'
+        referencedColumnName: 'id',
     })
     readonly toPokemon: PokemonEntity;
 
@@ -42,7 +42,7 @@ class EvolutionEntity extends BaseEntity {
         type: 'varchar',
         length: 32,
         insert: true,
-        update: false
+        update: false,
     })
     readonly trigger: string;
 
@@ -51,7 +51,7 @@ class EvolutionEntity extends BaseEntity {
         type: 'json',
         insert: true,
         update: false,
-        nullable: true
+        nullable: true,
     })
     readonly detail1?: string;
 
@@ -60,7 +60,7 @@ class EvolutionEntity extends BaseEntity {
         type: 'json',
         insert: true,
         update: false,
-        nullable: true
+        nullable: true,
     })
     readonly detail2?: string;
 

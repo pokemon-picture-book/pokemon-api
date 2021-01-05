@@ -3,7 +3,7 @@ import {
     BaseEntity,
     ConnectionOptions,
     createConnection,
-    getConnection
+    getConnection,
 } from 'typeorm';
 
 const ormconfig = require('~/ormconfig');
@@ -23,7 +23,7 @@ export default {
         const connectionOptions: ConnectionOptions = {
             ...envConnectionOptions,
             entities,
-            migrations: []
+            migrations: [],
         };
 
         const connection = await createConnection(connectionOptions);
@@ -32,5 +32,5 @@ export default {
     close: () => {
         const connection = getConnection(process.env.NODE_ENV);
         connection.close();
-    }
+    },
 };

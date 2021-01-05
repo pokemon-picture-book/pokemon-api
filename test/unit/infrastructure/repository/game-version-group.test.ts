@@ -14,20 +14,20 @@ describe('Unit test for GameVersionGroup repository', () => {
         driver.close();
     });
 
-    test('正常: alias を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: alias を指定した場合、正しい結果が取得できているか', async (done) => {
         const gameVersionGroup = await repository.findByAlias('xy');
         expect(gameVersionGroup).not.toBeNull();
         expect((gameVersionGroup as GameVersionGroupEntity).alias).toBe('xy');
         done();
     });
 
-    test('異常: alias に存在しないデータのパラメータを指定した場合、undefined となるか', async done => {
+    test('異常: alias に存在しないデータのパラメータを指定した場合、undefined となるか', async (done) => {
         const gameVersionGroup = await repository.findByAlias('xxxxx');
         expect(gameVersionGroup).toBeUndefined();
         done();
     });
 
-    test('正常: languageId を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: languageId を指定した場合、正しい結果が取得できているか', async (done) => {
         const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
             1,
             true
@@ -35,7 +35,7 @@ describe('Unit test for GameVersionGroup repository', () => {
         const [first] = gameVersionGroups;
         expect(first.gameVersions.length).toBe(3);
         const actualGameVersionNames = ['赤', '緑', 'ピカチュウ'];
-        first.gameVersions.forEach(gameVersion => {
+        first.gameVersions.forEach((gameVersion) => {
             const [gameVersionName] = gameVersion.gameVersionNames;
             expect(
                 actualGameVersionNames.includes(gameVersionName.name)
@@ -45,7 +45,7 @@ describe('Unit test for GameVersionGroup repository', () => {
         done();
     });
 
-    test('正常: isSupported を false に指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: isSupported を false に指定した場合、正しい結果が取得できているか', async (done) => {
         const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
             1,
             false
@@ -59,7 +59,7 @@ describe('Unit test for GameVersionGroup repository', () => {
         done();
     });
 
-    test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async done => {
+    test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
         const gameVersionGroups: GameVersionGroupEntity[] = await repository.findAllByIsSupported(
             12345,
             true

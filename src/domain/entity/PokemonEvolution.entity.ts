@@ -4,7 +4,7 @@ import {
     Entity,
     ManyToOne,
     PrimaryGeneratedColumn,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import EvolutionEntity from './Evolution.entity';
 import PokemonEntity from './Pokemon.entity';
@@ -12,25 +12,22 @@ import PokemonEntity from './Pokemon.entity';
 @Entity({ name: 'pokemons_evolutions' })
 class PokemonEvolutionEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
-    @ManyToOne(
-        () => PokemonEntity,
-        pokemon => pokemon.pokemonEvolutions
-    )
+    @ManyToOne(() => PokemonEntity, (pokemon) => pokemon.pokemonEvolutions)
     @JoinColumn({
-        name: 'pokemon_id'
+        name: 'pokemon_id',
     })
     readonly pokemon: PokemonEntity;
 
     @ManyToOne(
         () => EvolutionEntity,
-        evolution => evolution.pokemonEvolutions
+        (evolution) => evolution.pokemonEvolutions
     )
     @JoinColumn({
-        name: 'evolution_id'
+        name: 'evolution_id',
     })
     readonly evolution: EvolutionEntity;
 

@@ -5,35 +5,35 @@ import {
     Entity,
     OneToOne,
     PrimaryGeneratedColumn,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'status' })
 class StatusEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
     @Column({
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly hp: number;
 
     @Column({
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly attack: number;
 
     @Column({
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly defense: number;
 
@@ -41,7 +41,7 @@ class StatusEntity extends BaseEntity {
         name: 'special_attack',
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly specialAttack: number;
 
@@ -49,23 +49,20 @@ class StatusEntity extends BaseEntity {
         name: 'special_defense',
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly specialDefense: number;
 
     @Column({
         type: 'smallint',
         insert: true,
-        update: false
+        update: false,
     })
     readonly speed: number;
 
-    @OneToOne(
-        () => PokemonEntity,
-        pokemon => pokemon.status
-    )
+    @OneToOne(() => PokemonEntity, (pokemon) => pokemon.status)
     @JoinColumn({
-        name: 'pokemon_id'
+        name: 'pokemon_id',
     })
     readonly pokemon: PokemonEntity;
 

@@ -35,5 +35,5 @@ export default [
     RegionNameEntity,
     StatusEntity,
     TypeEntity,
-    TypeNameEntity
+    TypeNameEntity,
 ];

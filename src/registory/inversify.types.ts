@@ -8,7 +8,7 @@ const TYPES = {
     ISearchPokemonUsecase: Symbol.for('ISearchPokemonUsecase'),
     IGameVersionGroupUsecase: Symbol.for('IGameVersionGroupUsecase'),
     IPokemonPresenter: Symbol.for('IPokemonPresenter'),
-    IGameVersionGroupPresenter: Symbol.for('IGameVersionGroupPresenter')
+    IGameVersionGroupPresenter: Symbol.for('IGameVersionGroupPresenter'),
 } as const;
 
 export default TYPES;

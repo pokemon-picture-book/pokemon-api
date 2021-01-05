@@ -1,8 +1,9 @@
-import { PokemonSearchResponse } from '@/@types/response-model';
 import driver from '@/driver';
 import { ROUTING } from '@/routes';
 import server from '@/server';
 import { getRegionPokemonNum } from '@test/shared/region';
+import { SearchPokemonQueryParam } from 'app-request-model';
+import { PokemonSearchResponse } from 'app-response-model';
 import * as request from 'supertest';
 
 describe('Integration test for pokemon', () => {
@@ -14,12 +15,12 @@ describe('Integration test for pokemon', () => {
         driver.close();
     });
 
-    test('正常: クエリパラメータなしでリクエストした際に一番古い地域・ゲームバージョンで英語のデータが取得できているか', done => {
+    test('正常: クエリパラメータなしでリクエストした際に一番古い地域・ゲームバージョンで英語のデータが取得できているか', (done) => {
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // 一番古い地域でのポケモンの数であるか
@@ -29,7 +30,7 @@ describe('Integration test for pokemon', () => {
                 // 一番古いゲームバージョンであるか
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
-                        gameImagePath =>
+                        (gameImagePath) =>
                             gameImagePath.includes('/icon/') ||
                             gameImagePath.includes('/rgby/')
                     );
@@ -49,16 +50,16 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', done => {
+    test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            lang: 'ja-Hrkt'
+            lang: 'ja-Hrkt',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // 日本語のデータであるか（最初の３匹だけで検証する）
@@ -74,16 +75,16 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('正常: game パラメータを送信した際に、指定したゲームでのデータが取得できているか', done => {
+    test('正常: game パラメータを送信した際に、指定したゲームでのデータが取得できているか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            game: 'gsc'
+            game: 'gsc',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // 金銀バージョンでの地域（ジョウト地方）のポケモン数であるか
@@ -93,7 +94,7 @@ describe('Integration test for pokemon', () => {
                 // 金銀バージョンであるか
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
-                        gameImagePath =>
+                        (gameImagePath) =>
                             gameImagePath.includes('/icon/') ||
                             gameImagePath.includes('/gsc/')
                     );
@@ -104,16 +105,16 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('正常: regions パラメータを送信した際に、指定した地域でのデータが取得できているか', done => {
+    test('正常: regions パラメータを送信した際に、指定した地域でのデータが取得できているか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            regions: ['kanto', 'hoenn']
+            regions: ['kanto', 'hoenn'],
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // カントウ地方＋ホウエン地方のポケモン数であるか
@@ -123,7 +124,7 @@ describe('Integration test for pokemon', () => {
                 // 金銀バージョンであるか
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
-                        gameImagePath =>
+                        (gameImagePath) =>
                             gameImagePath.includes('/icon/') ||
                             gameImagePath.includes('/rse/')
                     );
@@ -134,18 +135,18 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('正常: lang / game / regions パラメータを送信した際に、指定したデータが取得できているか', done => {
+    test('正常: lang / game / regions パラメータを送信した際に、指定したデータが取得できているか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
             lang: 'ja-Hrkt',
             game: 'bw',
-            regions: ['hoenn', 'johto']
+            regions: ['hoenn', 'johto'],
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // ジョウト・ホウエン地方でのポケモンの数であるか
@@ -155,7 +156,7 @@ describe('Integration test for pokemon', () => {
                 // ブラック・ホワイトバージョンであるか
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
-                        gameImagePath =>
+                        (gameImagePath) =>
                             gameImagePath.includes('/icon/') ||
                             gameImagePath.includes('/bw/')
                     );
@@ -175,9 +176,9 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', done => {
+    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            lang: 'xxxxx'
+            lang: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -186,9 +187,9 @@ describe('Integration test for pokemon', () => {
             .expect(404, done);
     });
 
-    test('異常: game に不正な値を入れ、リクエストを送信した際 404 となるか', done => {
+    test('異常: game に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            game: 'xxxxx'
+            game: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -197,9 +198,9 @@ describe('Integration test for pokemon', () => {
             .expect(404, done);
     });
 
-    test('異常: regions に不正な値を入れ、リクエストを送信した際 404 となるか', done => {
+    test('異常: regions に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            regions: ['xxxxx', 'ooooo']
+            regions: ['xxxxx', 'ooooo'],
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -208,16 +209,16 @@ describe('Integration test for pokemon', () => {
             .expect(404, done);
     });
 
-    test('異常: lang / game / regions とは別のパラメータを設定した場合、一番古いバージョン・地域で英語のデータが取得できているか', done => {
+    test('異常: lang / game / regions とは別のパラメータを設定した場合、一番古いバージョン・地域で英語のデータが取得できているか', (done) => {
         const queryParam: Readonly<any> = {
-            xxxx: true
+            xxxx: true,
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
             .expect(200)
-            .then(response => {
+            .then((response) => {
                 const pokemons: PokemonSearchResponse[] = response.body;
 
                 // 一番古い地域でのポケモンの数であるか
@@ -227,7 +228,7 @@ describe('Integration test for pokemon', () => {
                 // 一番古いゲームバージョンであるか
                 pokemons.forEach(({ gameImagePaths }) => {
                     const hasOldGame = gameImagePaths.every(
-                        gameImagePath =>
+                        (gameImagePath) =>
                             gameImagePath.includes('/icon/') ||
                             gameImagePath.includes('/rgby/')
                     );
@@ -247,9 +248,9 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に 404 となる', done => {
+    test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に 404 となる', (done) => {
         const queryParam: Readonly<any> = {
-            regions: 'xxxxx'
+            regions: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -258,9 +259,9 @@ describe('Integration test for pokemon', () => {
             .expect(404, done);
     });
 
-    test('異常: SQL インジェクションが含まれるようなパラメータでリクエストを送信した場合に、404 となる', done => {
+    test('異常: SQL インジェクションが含まれるようなパラメータでリクエストを送信した場合に、404 となる', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
-            lang: '1; DROP TABLE pokemons;'
+            lang: '1; DROP TABLE pokemons;',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)

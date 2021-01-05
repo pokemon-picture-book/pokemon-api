@@ -4,22 +4,22 @@ import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';
 
 describe('Unit test for Pokemon controller', () => {
-    const controller: PokemonController = controllerContainer.get<
-        PokemonController
-    >(TYPES.PokemonController);
+    const controller: PokemonController = controllerContainer.get<PokemonController>(
+        TYPES.PokemonController
+    );
 
-    test('正常: 200 ステータス確認', async done => {
+    test('正常: 200 ステータス確認', async (done) => {
         const req = {
             query: {
                 lang: true,
                 game: true,
-                regions: [true]
-            }
+                regions: [true],
+            },
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            json: jest.fn().mockReturnThis()
+            json: jest.fn().mockReturnThis(),
         };
 
         await controller.search(
@@ -33,18 +33,18 @@ describe('Unit test for Pokemon controller', () => {
         done();
     });
 
-    test('正常: 404 ステータス確認', async done => {
+    test('正常: 404 ステータス確認', async (done) => {
         const req = {
             query: {
                 lang: false,
                 game: false,
-                regions: [false]
-            }
+                regions: [false],
+            },
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis()
+            send: jest.fn().mockReturnThis(),
         };
 
         await controller.search(
@@ -54,7 +54,7 @@ describe('Unit test for Pokemon controller', () => {
 
         expect(res.status.mock.calls[0][0]).toBe(404);
         expect(res.send.mock.calls[0][0]).toEqual({
-            message: 'Not Found!'
+            message: 'Not Found!',
         });
 
         done();

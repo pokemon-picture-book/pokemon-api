@@ -13,7 +13,7 @@ app.use(bodyParser.json({ limit: REQUEST_LIMIT || '100kb' }));
 app.use(
     bodyParser.urlencoded({
         extended: true,
-        limit: REQUEST_LIMIT || '100kb'
+        limit: REQUEST_LIMIT || '100kb',
     })
 );
 app.use(cookieParser(SESSION_SECRET || 'mySecret'));

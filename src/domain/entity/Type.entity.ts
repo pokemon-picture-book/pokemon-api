@@ -10,20 +10,14 @@ class TypeEntity extends BaseEntity {
 
     @Column({
         type: 'varchar',
-        length: 64
+        length: 64,
     })
     readonly name: string = '';
 
-    @OneToMany(
-        () => PokemonTypeEntity,
-        pokemonType => pokemonType.type
-    )
+    @OneToMany(() => PokemonTypeEntity, (pokemonType) => pokemonType.type)
     readonly pokemonTypes: PokemonTypeEntity[];
 
-    @OneToMany(
-        () => TypeNameEntity,
-        typeName => typeName.type
-    )
+    @OneToMany(() => TypeNameEntity, (typeName) => typeName.type)
     readonly typeNames: TypeNameEntity[];
 
     public refer(): void {

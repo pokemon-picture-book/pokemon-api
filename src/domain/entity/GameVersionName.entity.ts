@@ -5,7 +5,7 @@ import {
     Entity,
     PrimaryGeneratedColumn,
     ManyToOne,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import GameVersionEntity from './GameVersion.entity';
@@ -13,16 +13,16 @@ import GameVersionEntity from './GameVersion.entity';
 @Entity({ name: 'game_version_names' })
 class GameVersionNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
     @ManyToOne(
         () => GameVersionEntity,
-        gameVersion => gameVersion.gameVersionNames
+        (gameVersion) => gameVersion.gameVersionNames
     )
     @JoinColumn({
-        name: 'game_version_id'
+        name: 'game_version_id',
     })
     readonly gameVersion: GameVersionEntity;
 
@@ -30,16 +30,13 @@ class GameVersionNameEntity extends BaseEntity {
         type: 'varchar',
         length: 32,
         insert: true,
-        update: false
+        update: false,
     })
     readonly name: string;
 
-    @ManyToOne(
-        () => LanguageEntity,
-        language => language.gameVersionNames
-    )
+    @ManyToOne(() => LanguageEntity, (language) => language.gameVersionNames)
     @JoinColumn({
-        name: 'language_id'
+        name: 'language_id',
     })
     readonly language: LanguageEntity;
 
