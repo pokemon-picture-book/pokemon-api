@@ -6,7 +6,7 @@ import PokemonGameImageEntity from './PokemonGameImage.entity';
 @Entity({ name: 'game_version_groups' })
 class GameVersionGroupEntity extends BaseEntity {
     @PrimaryColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
@@ -14,7 +14,7 @@ class GameVersionGroupEntity extends BaseEntity {
         type: 'varchar',
         length: 16,
         insert: true,
-        update: false
+        update: false,
     })
     readonly alias: string;
 
@@ -23,19 +23,19 @@ class GameVersionGroupEntity extends BaseEntity {
         type: 'boolean',
         default: true,
         insert: true,
-        update: false
+        update: false,
     })
     readonly isSupported: boolean;
 
     @OneToMany(
         () => GameVersionEntity,
-        gameVersion => gameVersion.gameVersionGroup
+        (gameVersion) => gameVersion.gameVersionGroup
     )
     readonly gameVersions: GameVersionEntity[];
 
     @OneToMany(
         () => PokemonGameImageEntity,
-        pokemonGameImage => pokemonGameImage.gameVersionGroup
+        (pokemonGameImage) => pokemonGameImage.gameVersionGroup
     )
     readonly pokemonGameImages: PokemonGameImageEntity[];
 

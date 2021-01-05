@@ -14,7 +14,12 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
+    "globals": {
+      "jest": false,
+      "function": false
+    },
     "rules": {
+      "no-undef": "warn",
         "prettier/prettier": [
             "error",
             {

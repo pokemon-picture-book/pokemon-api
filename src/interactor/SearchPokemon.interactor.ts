@@ -6,10 +6,10 @@ import TYPES from '@/registory/inversify.types';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import PokemonEntity from '@/domain/entity/Pokemon.entity';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
-import { PokemonSearchResponse } from '@t/response-model';
 import ILanguageRepository from '@/domain/repository/ILanguage.repository';
 import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
 import IRegionRepository from '@/domain/repository/IRegion.repository';
+import { PokemonSearchResponse } from 'app-response-model';
 
 @injectable()
 export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
@@ -36,7 +36,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         const [language, gameVersionGroup, regions] = await Promise.all([
             this.languageRepository.findByName(languageName),
             this.gameVersionGroupRepository.findByAlias(gameVersionGroupAlias),
-            this.regionRepository.findByNameIn(regionNames)
+            this.regionRepository.findByNameIn(regionNames),
         ]);
 
         if (!language || !gameVersionGroup || !regions.length) {

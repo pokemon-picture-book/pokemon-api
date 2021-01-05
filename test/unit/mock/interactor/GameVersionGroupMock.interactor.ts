@@ -1,5 +1,5 @@
-import { GameVersionGroupResponse } from '@/@types/response-model';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
+import { GameVersionGroupResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 
 @injectable()
@@ -14,8 +14,8 @@ export default class GameVersionGroupMockInteractor
                   {
                       id: 1,
                       alias: 'alias',
-                      name: 'name'
-                  }
+                      name: 'name',
+                  },
               ]
             : [];
     }

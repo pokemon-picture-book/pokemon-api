@@ -14,7 +14,6 @@ module.exports = {
     moduleFileExtensions: ['ts', 'js', 'jsx', 'json', 'node'],
     moduleNameMapper: {
         '@/(.*)': '<rootDir>/src/$1',
-        '@t/(.*)': '<rootDir>/src/@types/$1',
         '~/(.*)': '<rootDir>/$1',
         '@test/(.*)': '<rootDir>/test/$1'
     },
@@ -22,5 +21,6 @@ module.exports = {
         'ts-jest': {
             tsConfig: 'tsconfig.json'
         }
-    }
+    },
+    testTimeout: 300000
 };

@@ -26,7 +26,7 @@ export default class GameVersionGroupRepository
                 { languageId }
             )
             .where('gameVersionGroup.is_supported = :isSupported', {
-                isSupported
+                isSupported,
             })
             .getMany();
     }

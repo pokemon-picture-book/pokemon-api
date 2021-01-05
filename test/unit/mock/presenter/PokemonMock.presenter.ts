@@ -1,7 +1,7 @@
 import { injectable } from 'inversify';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import PokemonEntity from '@/domain/entity/Pokemon.entity';
-import { PokemonSearchResponse } from '@t/response-model';
+import { PokemonSearchResponse } from 'app-response-model';
 
 @injectable()
 export default class PokemonMockPresenter implements IPokemonPresenter {
@@ -16,7 +16,7 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
                     name: 'name',
                     gameImagePaths: ['gameImagePath'],
                     imagePaths: ['imagePath'],
-                    types: ['type']
+                    types: ['type'],
                 };
             }
         );

@@ -2,8 +2,9 @@ import { Application, Router } from 'express';
 import {
     isChildRouter,
     isOperationRouter,
-    isSupportedHttpMethod
+    isSupportedHttpMethod,
 } from '@/domain/function/router.function';
+import { AppRouter, ChildRouter, OperationRouter } from 'app-router';
 
 const setRouter = (
     app: Application,
@@ -12,7 +13,7 @@ const setRouter = (
 ) => {
     const router = Router();
 
-    routes.forEach(route => {
+    routes.forEach((route) => {
         if (isChildRouter(route)) {
             setRouter(app, route.children, `${path}${route.path}`);
             return;

@@ -1,10 +1,11 @@
-// import { getDefaultSet } from '@/domain/function/game-region.function';
-import { GameVersionGroupResponse } from '@/@types/response-model';
 import TYPES from '@/registory/inversify.types';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
+import { GameVersionGroupQueryParam } from 'app-request-model';
+import { GameVersionGroupResponse } from 'app-response-model';
 import { AppErrorMessage, AppRequest, AppResponse } from 'express';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
+
 @injectable()
 export default class GameVersionGroupController {
     @inject(TYPES.IGameVersionGroupUsecase)

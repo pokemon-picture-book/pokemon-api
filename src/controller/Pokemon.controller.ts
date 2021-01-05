@@ -1,7 +1,8 @@
 import { getDefaultSet } from '@/domain/function/game-region.function';
 import TYPES from '@/registory/inversify.types';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
-import { PokemonSearchResponse } from '@t/response-model';
+import { SearchPokemonQueryParam } from 'app-request-model';
+import { PokemonSearchResponse } from 'app-response-model';
 import { AppRequest, AppResponse, AppErrorMessage } from 'express';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';

@@ -5,7 +5,7 @@ import {
     Entity,
     ManyToOne,
     PrimaryGeneratedColumn,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import PokemonEntity from './Pokemon.entity';
@@ -13,16 +13,13 @@ import PokemonEntity from './Pokemon.entity';
 @Entity({ name: 'pokemon_names' })
 class PokemonNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint'
+        type: 'mediumint',
     })
     readonly id: number;
 
-    @ManyToOne(
-        () => PokemonEntity,
-        pokemon => pokemon.pokemonNames
-    )
+    @ManyToOne(() => PokemonEntity, (pokemon) => pokemon.pokemonNames)
     @JoinColumn({
-        name: 'pokemon_id'
+        name: 'pokemon_id',
     })
     readonly pokemon: PokemonEntity;
 
@@ -30,16 +27,13 @@ class PokemonNameEntity extends BaseEntity {
         type: 'varchar',
         length: 32,
         insert: true,
-        update: false
+        update: false,
     })
     readonly name: string;
 
-    @ManyToOne(
-        () => LanguageEntity,
-        language => language.pokemonNames
-    )
+    @ManyToOne(() => LanguageEntity, (language) => language.pokemonNames)
     @JoinColumn({
-        name: 'language_id'
+        name: 'language_id',
     })
     readonly language: LanguageEntity;
 

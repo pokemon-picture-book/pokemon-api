@@ -1,5 +1,5 @@
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
-import { PokemonSearchResponse } from '@t/response-model';
+import { PokemonSearchResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 import 'reflect-metadata';
 
@@ -19,8 +19,8 @@ export default class SearchPokemonMockInteractor
                       imageColor: 'imageColor',
                       gameImagePaths: ['gameImagePath'],
                       imagePaths: ['imagePath'],
-                      types: ['type']
-                  }
+                      types: ['type'],
+                  },
               ]
             : [];
     }

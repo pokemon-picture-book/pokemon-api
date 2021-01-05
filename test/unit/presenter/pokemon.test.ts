@@ -17,7 +17,7 @@ describe('Unit test for Pokemon presenter', () => {
         driver.close();
     });
 
-    test('正常: 正しくマッピングできているか', async done => {
+    test('正常: 正しくマッピングできているか', async (done) => {
         const pokemons = await repository.findAll(1, 1, [1]);
 
         const [pokemonSearchResponse] = presenter.toPokemonSearchResponse(
@@ -45,7 +45,7 @@ describe('Unit test for Pokemon presenter', () => {
         done();
     });
 
-    test('正常: 正しくマッピングできているか', async done => {
+    test('正常: 正しくマッピングできているか', async (done) => {
         const responses = presenter.toPokemonSearchResponse([]);
         expect(responses.length).toBe(0);
         done();

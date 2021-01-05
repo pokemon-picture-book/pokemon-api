@@ -14,7 +14,7 @@ describe('Unit test for Pokemon repository', () => {
         driver.close();
     });
 
-    test('正常: languageId を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: languageId を指定した場合、正しい結果が取得できているか', async (done) => {
         const pokemons = await repository.findAll(1, 1, [1]);
         const [bulbasaur, ivysaur, venusaur] = pokemons;
 
@@ -45,7 +45,7 @@ describe('Unit test for Pokemon repository', () => {
         done();
     });
 
-    test('正常: gameVersionGroupId を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: gameVersionGroupId を指定した場合、正しい結果が取得できているか', async (done) => {
         const pokemons = await repository.findAll(1, 1, [1]);
 
         pokemons.forEach(({ pokemonGameImages }) => {
@@ -58,7 +58,7 @@ describe('Unit test for Pokemon repository', () => {
         done();
     });
 
-    test('正常: regionIds を指定した場合、正しい結果が取得できているか', async done => {
+    test('正常: regionIds を指定した場合、正しい結果が取得できているか', async (done) => {
         const pokemons = await repository.findAll(1, 2, [1, 2]);
 
         const actualNum = getRegionPokemonNum('kanto', 'johto');
@@ -67,7 +67,7 @@ describe('Unit test for Pokemon repository', () => {
         done();
     });
 
-    test('正常: ID でソートされているか', async done => {
+    test('正常: ID でソートされているか', async (done) => {
         const pokemons = await repository.findAll(1, 1, [1]);
 
         pokemons.forEach((pokemon, i) => {
@@ -77,19 +77,19 @@ describe('Unit test for Pokemon repository', () => {
         done();
     });
 
-    test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async done => {
+    test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
         const pokemons = await repository.findAll(99999, 1, [1]);
         expect(pokemons.length).toBe(0);
         done();
     });
 
-    test('異常: gameVersionGroupId に存在しないデータのパラメータを指定した場合、空配列となるか', async done => {
+    test('異常: gameVersionGroupId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
         const pokemons = await repository.findAll(1, 99999, [1]);
         expect(pokemons.length).toBe(0);
         done();
     });
 
-    test('異常: regionIds に存在しないデータのパラメータを指定した場合、空配列となるか', async done => {
+    test('異常: regionIds に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
         const pokemons = await repository.findAll(1, 1, [99999]);
         expect(pokemons.length).toBe(0);
         done();

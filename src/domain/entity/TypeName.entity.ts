@@ -5,7 +5,7 @@ import {
     Entity,
     ManyToOne,
     PrimaryGeneratedColumn,
-    JoinColumn
+    JoinColumn,
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import TypeEntity from './Type.entity';
@@ -17,25 +17,19 @@ class TypeNameEntity extends BaseEntity {
 
     @Column({
         type: 'varchar',
-        length: 60
+        length: 60,
     })
     readonly name: string = '';
 
-    @ManyToOne(
-        () => TypeEntity,
-        type => type.typeNames
-    )
+    @ManyToOne(() => TypeEntity, (type) => type.typeNames)
     @JoinColumn({
-        name: 'type_id'
+        name: 'type_id',
     })
     readonly type: TypeEntity;
 
-    @ManyToOne(
-        () => LanguageEntity,
-        language => language.typeNames
-    )
+    @ManyToOne(() => LanguageEntity, (language) => language.typeNames)
     @JoinColumn({
-        name: 'language_id'
+        name: 'language_id',
     })
     readonly language: LanguageEntity;
 

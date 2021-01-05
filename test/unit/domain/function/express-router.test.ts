@@ -1,10 +1,11 @@
 import settingRouter from '@/domain/function/express-router.function';
+import { AppRouter } from 'app-router';
 import * as express from 'express';
 import { AppRequest, AppResponse } from 'express';
 import * as request from 'supertest';
 
 describe('Unit test for ExpressRouter', () => {
-    test('正常: routing 設定した場合、正しくエンドポイントを叩けるか', done => {
+    test('正常: routing 設定した場合、正しくエンドポイントを叩けるか', (done) => {
         const server = express();
 
         const appRoutes: AppRouter = {
@@ -21,7 +22,7 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(200).send('ok');
-                            }
+                            },
                         },
                         {
                             method: 'post',
@@ -31,7 +32,7 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(201).send('ok');
-                            }
+                            },
                         },
                         {
                             path: '/test3',
@@ -44,7 +45,7 @@ describe('Unit test for ExpressRouter', () => {
                                         res: AppResponse<any>
                                     ) => {
                                         res.status(204).send('ok');
-                                    }
+                                    },
                                 },
                                 {
                                     path: '/test4',
@@ -57,13 +58,13 @@ describe('Unit test for ExpressRouter', () => {
                                                 res: AppResponse<any>
                                             ) => {
                                                 res.status(204).send('ok');
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
                 },
                 {
                     path: '/test5',
@@ -76,11 +77,11 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(200).send('ok');
-                            }
-                        }
-                    ]
-                }
-            ]
+                            },
+                        },
+                    ],
+                },
+            ],
         };
 
         settingRouter(server, appRoutes);

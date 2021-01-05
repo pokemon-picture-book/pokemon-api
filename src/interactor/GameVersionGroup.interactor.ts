@@ -1,10 +1,10 @@
-import { GameVersionGroupResponse } from '@/@types/response-model';
 import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
 import IGameVersionGroupPresenter from '@/domain/presenter/IGameVersionGroup.presenter';
 import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
 import ILanguageRepository from '@/domain/repository/ILanguage.repository';
 import TYPES from '@/registory/inversify.types';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
+import { GameVersionGroupResponse } from 'app-response-model';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
 
