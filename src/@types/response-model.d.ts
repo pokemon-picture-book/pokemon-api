@@ -7,6 +7,8 @@ declare module 'app-response-model' {
         GameVersionGroup,
         GameVersionName,
         TypeName,
+        Region,
+        RegionName,
     } from 'app-entity';
 
     export type PokemonSearchResponse = Pick<Pokemon, 'id' | 'imageColor'> &
@@ -21,4 +23,8 @@ declare module 'app-response-model' {
         'id' | 'alias'
     > &
         Pick<GameVersionName, 'name'>;
+
+    export type RegionResponse = Pick<Region, 'id' | 'name'> & {
+        displayName: RegionName['name'];
+    };
 }

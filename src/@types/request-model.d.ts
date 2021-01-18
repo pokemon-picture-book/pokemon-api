@@ -9,4 +9,8 @@ declare module 'app-request-model' {
         lang?: string;
         supported?: string;
     };
+
+    export type RegionQueryParam = {
+        lang?: string;
+    };
 }

@@ -1,10 +1,10 @@
-import { Application, Router } from 'express';
 import {
     isChildRouter,
     isOperationRouter,
     isSupportedHttpMethod,
 } from '@/domain/function/router.function';
 import { AppRouter, ChildRouter, OperationRouter } from 'app-router';
+import { Application, AppRequest, AppResponse, Router } from 'express';
 
 const setRouter = (
     app: Application,
@@ -25,9 +25,21 @@ const setRouter = (
                 next();
             });
 
-            router
-                .route(route.path)
-                [route.method]((req, res) => route.action(req, res));
+            if (route.validator && route.validator.length) {
+                router[route.method](
+                    route.path,
+                    route.validator,
+                    (req: AppRequest<any>, res: AppResponse<any>) =>
+                        route.action(req, res)
+                );
+                return;
+            }
+
+            router[route.method](
+                route.path,
+                (req: AppRequest<any>, res: AppResponse<any>) =>
+                    route.action(req, res)
+            );
         }
     });
 
