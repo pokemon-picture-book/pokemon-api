@@ -1,5 +1,5 @@
 import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
-import { GameVersionGroupResponse } from '@/@types/response-model';
+import { GameVersionGroupResponse } from 'app-response-model';
 
 export default interface IGameVersionGroupPresenter {
     toGameVersionGroupResponse(
