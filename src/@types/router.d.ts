@@ -1,4 +1,6 @@
 declare module 'app-router' {
+    import { ValidationChain } from 'express-validator';
+
     export type Routing = {
         API: string;
         POKEMON: string;
@@ -12,6 +14,7 @@ declare module 'app-router' {
     export type OperationRouter = ItemRouter & {
         method: string;
         action: function;
+        validator?: ValidationChain[];
     };
 
     export type ChildRouter = ItemRouter & {
