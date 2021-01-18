@@ -1,6 +1,8 @@
-import { Response, Request } from 'express';
+import 'express';
 
 declare module 'express' {
+    import { Response, Request } from 'express';
+
     interface RequestParams {
         params?: any;
         query?: any;
