@@ -18,7 +18,7 @@ export default class RegionRepository implements IRegionRepository {
             .getMany();
     }
 
-    public findByNameIn(names: string[]): Promise<RegionEntity[]> {
+    public findAllByNameIn(names: string[]): Promise<RegionEntity[]> {
         return RegionEntity.createQueryBuilder('region')
             .where('region.name IN (:names)', { names })
             .getMany();

@@ -36,7 +36,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         const [language, gameVersionGroup, regions] = await Promise.all([
             this.languageRepository.findByName(languageName),
             this.gameVersionGroupRepository.findByAlias(gameVersionGroupAlias),
-            this.regionRepository.findByNameIn(regionNames),
+            this.regionRepository.findAllByNameIn(regionNames),
         ]);
 
         if (!language || !gameVersionGroup || !regions.length) {

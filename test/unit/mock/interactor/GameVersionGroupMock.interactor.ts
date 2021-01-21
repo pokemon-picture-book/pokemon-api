@@ -9,7 +9,7 @@ export default class GameVersionGroupMockInteractor
         languageName: string,
         isSupported: boolean
     ): Promise<GameVersionGroupResponse[]> {
-        return !!languageName && !!isSupported
+        return languageName === 'en' && isSupported
             ? [
                   {
                       id: 1,

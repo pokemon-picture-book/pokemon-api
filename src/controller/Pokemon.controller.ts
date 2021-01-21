@@ -3,7 +3,8 @@ import TYPES from '@/registory/inversify.types';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import { SearchPokemonQueryParam } from 'app-request-model';
 import { PokemonSearchResponse } from 'app-response-model';
-import { AppRequest, AppResponse, AppErrorMessage } from 'express';
+import { AppRequest, AppResponse, AppErrorMessage, Request } from 'express';
+import { validationResult } from 'express-validator';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
 
@@ -18,6 +19,12 @@ export default class PokemonController {
         }>,
         response: AppResponse<AppErrorMessage | PokemonSearchResponse[]>
     ): Promise<void> {
+        const errors = validationResult(request as Request);
+        if (!errors.isEmpty()) {
+            response.status(400).send({ errors: errors.array() });
+            return;
+        }
+
         const { lang, game, regions } = request.query;
         const gameResion = getDefaultSet(game, regions);
 

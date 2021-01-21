@@ -2,11 +2,10 @@ import TYPES from '@/registory/inversify.types';
 import IRegionUsecase from '@/usecase/IRegion.usecase';
 import { RegionQueryParam } from 'app-request-model';
 import { RegionResponse } from 'app-response-model';
-import { AppErrorMessage, AppRequest, AppResponse } from 'express';
+import { AppErrorMessage, AppRequest, AppResponse, Request } from 'express';
 import { validationResult } from 'express-validator';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
-import { Request } from 'express';
 
 @injectable()
 export default class RegionController {
@@ -21,7 +20,7 @@ export default class RegionController {
     ): Promise<void> {
         const errors = validationResult(request as Request);
         if (!errors.isEmpty()) {
-            response.status(400).json({ errors: errors.array() });
+            response.status(400).send({ errors: errors.array() });
             return;
         }
 

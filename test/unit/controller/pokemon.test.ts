@@ -2,6 +2,9 @@ import PokemonController from '@/controller/Pokemon.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';
+import { Result, ValidationError, validationResult } from 'express-validator';
+
+jest.mock('express-validator');
 
 describe('Unit test for Pokemon controller', () => {
     const controller: PokemonController = controllerContainer.get<PokemonController>(
@@ -9,11 +12,20 @@ describe('Unit test for Pokemon controller', () => {
     );
 
     test('正常: 200 ステータス確認', async (done) => {
+        (validationResult as jest.MockedFunction<
+            typeof validationResult
+        >).mockImplementation(
+            () =>
+                ({
+                    isEmpty: () => true,
+                } as Result<ValidationError>)
+        );
+
         const req = {
             query: {
-                lang: true,
-                game: true,
-                regions: [true],
+                lang: 'en',
+                game: 'rgby',
+                regions: ['kanto'],
             },
         };
 
@@ -34,11 +46,20 @@ describe('Unit test for Pokemon controller', () => {
     });
 
     test('正常: 404 ステータス確認', async (done) => {
+        (validationResult as jest.MockedFunction<
+            typeof validationResult
+        >).mockImplementation(
+            () =>
+                ({
+                    isEmpty: () => true,
+                } as Result<ValidationError>)
+        );
+
         const req = {
             query: {
-                lang: false,
-                game: false,
-                regions: [false],
+                lang: 'ja-Hrkt',
+                game: 'rgby',
+                regions: [],
             },
         };
 
@@ -55,6 +76,57 @@ describe('Unit test for Pokemon controller', () => {
         expect(res.status.mock.calls[0][0]).toBe(404);
         expect(res.send.mock.calls[0][0]).toEqual({
             message: 'Not Found!',
+        });
+
+        done();
+    });
+
+    test('正常: 400 ステータス確認', async (done) => {
+        const myValidationResult = validationResult as jest.MockedFunction<
+            typeof validationResult
+        >;
+        myValidationResult.mockImplementation(() => {
+            return {
+                isEmpty: () => false,
+                array: () => [
+                    {
+                        value: 'mock value',
+                        msg: 'mock message',
+                        param: 'mock param',
+                        location: 'body',
+                    },
+                ],
+            } as Result<ValidationError>;
+        });
+
+        const req = {
+            query: {
+                lang: 'ja-Hrkt',
+                game: 'rgby',
+                regions: ['kanto'],
+            },
+        };
+
+        const res = {
+            status: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis(),
+        };
+
+        await controller.search(
+            req as AppRequest<any>,
+            res as AppResponse<any>
+        );
+
+        expect(res.status.mock.calls[0][0]).toBe(400);
+        expect(res.send.mock.calls[0][0]).toEqual({
+            errors: [
+                {
+                    value: 'mock value',
+                    msg: 'mock message',
+                    param: 'mock param',
+                    location: 'body',
+                },
+            ],
         });
 
         done();

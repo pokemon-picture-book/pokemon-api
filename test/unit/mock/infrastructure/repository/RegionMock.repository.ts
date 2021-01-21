@@ -8,7 +8,7 @@ export default class RegionMockRepository implements IRegionRepository {
         return languageId ? [new RegionEntity()] : [];
     }
 
-    public async findByNameIn(names: string[]): Promise<RegionEntity[]> {
+    public async findAllByNameIn(names: string[]): Promise<RegionEntity[]> {
         return names.length ? [new RegionEntity()] : [];
     }
 }

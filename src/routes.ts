@@ -25,6 +25,7 @@ export default {
                 {
                     method: 'get',
                     path: '/',
+                    validator: [langQueryValidator],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
                         const pokemonControllerContainer = container.get<PokemonController>(
                             TYPES.PokemonController
