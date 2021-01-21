@@ -184,7 +184,7 @@ describe('Integration test for pokemon', () => {
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
-            .expect(404, done);
+            .expect(400, done);
     });
 
     test('異常: game に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
@@ -251,17 +251,6 @@ describe('Integration test for pokemon', () => {
     test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に 404 となる', (done) => {
         const queryParam: Readonly<any> = {
             regions: 'xxxxx',
-        };
-        request(server)
-            .get(`${ROUTING.API}${ROUTING.POKEMON}`)
-            .query(queryParam)
-            .expect('Content-Type', /json/)
-            .expect(404, done);
-    });
-
-    test('異常: SQL インジェクションが含まれるようなパラメータでリクエストを送信した場合に、404 となる', (done) => {
-        const queryParam: Readonly<SearchPokemonQueryParam> = {
-            lang: '1; DROP TABLE pokemons;',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)

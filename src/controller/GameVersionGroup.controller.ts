@@ -2,7 +2,8 @@ import TYPES from '@/registory/inversify.types';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
 import { GameVersionGroupQueryParam } from 'app-request-model';
 import { GameVersionGroupResponse } from 'app-response-model';
-import { AppErrorMessage, AppRequest, AppResponse } from 'express';
+import { AppErrorMessage, AppRequest, AppResponse, Request } from 'express';
+import { validationResult } from 'express-validator';
 import { inject, injectable } from 'inversify';
 import 'reflect-metadata';
 
@@ -17,6 +18,12 @@ export default class GameVersionGroupController {
         }>,
         response: AppResponse<AppErrorMessage | GameVersionGroupResponse[]>
     ): Promise<void> {
+        const errors = validationResult(request as Request);
+        if (!errors.isEmpty()) {
+            response.status(400).send({ errors: errors.array() });
+            return;
+        }
+
         const { lang, supported } = request.query;
 
         // TODO: 真偽値以外のパラメータを送れるのがよくないので、あとでバリデータ追加

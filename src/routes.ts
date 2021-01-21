@@ -1,15 +1,19 @@
-import PokemonController from '@/controller/Pokemon.controller';
 import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
+import PokemonController from '@/controller/Pokemon.controller';
+import { langQueryValidator } from '@/controller/validator/common';
+import { supportedQueryValidator } from '@/controller/validator/game-version-group';
 import container from '@/registory/inversify.config';
 import TYPES from '@/registory/inversify.types';
+import { AppRouter, Routing } from 'app-router';
 import { AppRequest, AppResponse } from 'express';
 import 'reflect-metadata';
-import { AppRouter, Routing } from 'app-router';
+import RegionController from './controller/Region.controller';
 
 export const ROUTING: Readonly<Routing> = {
     API: '/pokemon-api/v1',
     POKEMON: '/pokemons',
     GAME_VERSION_GROUP: '/game-version-groups',
+    REGION: '/regions',
 };
 
 export default {
@@ -21,6 +25,7 @@ export default {
                 {
                     method: 'get',
                     path: '/',
+                    validator: [langQueryValidator],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
                         const pokemonControllerContainer = container.get<PokemonController>(
                             TYPES.PokemonController
@@ -46,11 +51,28 @@ export default {
                 {
                     method: 'get',
                     path: '/',
+                    validator: [langQueryValidator, supportedQueryValidator],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
                         const gameVersionGroupControllerContainer = container.get<GameVersionGroupController>(
                             TYPES.GameVersionGroupController
                         );
                         gameVersionGroupControllerContainer.search(req, res);
+                    },
+                },
+            ],
+        },
+        {
+            path: ROUTING.REGION,
+            children: [
+                {
+                    method: 'get',
+                    path: '/',
+                    validator: [langQueryValidator],
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const regionControllerContainer = container.get<RegionController>(
+                            TYPES.RegionController
+                        );
+                        regionControllerContainer.search(req, res);
                     },
                 },
             ],

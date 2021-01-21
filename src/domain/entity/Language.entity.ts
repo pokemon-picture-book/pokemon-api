@@ -49,6 +49,27 @@ class LanguageEntity extends BaseEntity {
     public refer(): void {
         console.table(this);
     }
+
+    constructor(
+        id: number,
+        name: string,
+        flavorTextEntries: FlavorTextEntryEntity[],
+        gameVersionNames: GameVersionNameEntity[],
+        generas: GeneraEntity[],
+        pokemonNames: PokemonNameEntity[],
+        regionNames: RegionNameEntity[],
+        typeNames: TypeNameEntity[]
+    ) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.flavorTextEntries = flavorTextEntries;
+        this.gameVersionNames = gameVersionNames;
+        this.generas = generas;
+        this.pokemonNames = pokemonNames;
+        this.regionNames = regionNames;
+        this.typeNames = typeNames;
+    }
 }
 
 export default LanguageEntity;

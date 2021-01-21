@@ -11,7 +11,9 @@ export default class SearchPokemonMockInteractor
         gameVersionGroupAlias: string,
         regionNames: string[]
     ): Promise<PokemonSearchResponse[]> {
-        return !!languageName && !!gameVersionGroupAlias && !!regionNames.length
+        return languageName === 'en' &&
+            gameVersionGroupAlias === 'rgby' &&
+            regionNames.length
             ? [
                   {
                       id: 1,

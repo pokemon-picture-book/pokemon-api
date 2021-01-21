@@ -1,4 +1,4 @@
-import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
+import RegionController from '@/controller/Region.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';
@@ -6,9 +6,9 @@ import { Result, ValidationError, validationResult } from 'express-validator';
 
 jest.mock('express-validator');
 
-describe('Unit test for GameVersionGroup controller', () => {
-    const controller: GameVersionGroupController = controllerContainer.get<GameVersionGroupController>(
-        TYPES.GameVersionGroupController
+describe('Unit test for Region controller', () => {
+    const controller: RegionController = controllerContainer.get<RegionController>(
+        TYPES.RegionController
     );
 
     test('正常: 200 ステータス確認', async (done) => {
@@ -24,7 +24,6 @@ describe('Unit test for GameVersionGroup controller', () => {
         const req = {
             query: {
                 lang: 'en',
-                supported: true,
             },
         };
 
@@ -57,7 +56,6 @@ describe('Unit test for GameVersionGroup controller', () => {
         const req = {
             query: {
                 lang: 'ja-Hrkt',
-                supported: false,
             },
         };
 
@@ -100,7 +98,6 @@ describe('Unit test for GameVersionGroup controller', () => {
         const req = {
             query: {
                 lang: 'en',
-                supported: true,
             },
         };
 

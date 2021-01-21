@@ -16,7 +16,7 @@ describe('Unit test for GameVersionGroup interactor', () => {
 
     test('異常: 異常なパラメータで call した場合、空配列であるか', async (done) => {
         const gameVersionGroups = await usecase.search('', true);
-        expect(gameVersionGroups.length).toBe(0);
+        expect(gameVersionGroups).toHaveLength(0);
         done();
     });
 });

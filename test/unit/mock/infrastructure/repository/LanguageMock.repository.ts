@@ -5,6 +5,8 @@ import { injectable } from 'inversify';
 @injectable()
 export default class LanguageMockRepository implements ILanguageRepository {
     public async findByName(name: string): Promise<LanguageEntity | undefined> {
-        return name ? new LanguageEntity() : undefined;
+        return name
+            ? new LanguageEntity(1, 'testLang', [], [], [], [], [], [])
+            : undefined;
     }
 }

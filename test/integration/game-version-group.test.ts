@@ -126,7 +126,7 @@ describe('Integration test for gameVersionGroup', () => {
             });
     });
 
-    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
+    test('異常: lang に不正な値を入れ、リクエストを送信した際 400 (バリデーションエラー) となるか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
             lang: 'xxxxx',
         };
@@ -134,10 +134,10 @@ describe('Integration test for gameVersionGroup', () => {
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
-            .expect(404, done);
+            .expect(400, done);
     });
 
-    test('異常: supported に不正な値を入れ、リクエストを送信した際 200 となるか', (done) => {
+    test('異常: supported に不正な値を入れ、リクエストを送信した際 400 (バリデーションエラー) となるか', (done) => {
         const queryParam: Readonly<GameVersionGroupQueryParam> = {
             supported: 'xxxxx',
         };
@@ -145,7 +145,7 @@ describe('Integration test for gameVersionGroup', () => {
             .get(`${ROUTING.API}${ROUTING.GAME_VERSION_GROUP}`)
             .query(queryParam)
             .expect('Content-Type', /json/)
-            .expect(200, done);
+            .expect(400, done);
     });
 
     test('異常: lang / supported とは別のパラメータを設定した場合、サポートされたバージョンで英語のデータが取得できているか', (done) => {

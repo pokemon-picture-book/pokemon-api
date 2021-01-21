@@ -1,25 +1,31 @@
-import PokemonController from '@/controller/Pokemon.controller';
 import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
-import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
+import PokemonController from '@/controller/Pokemon.controller';
+import RegionController from '@/controller/Region.controller';
 import IGameVersionGroupPresenter from '@/domain/presenter/IGameVersionGroup.presenter';
+import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
+import IRegionPresenter from '@/domain/presenter/IRegion.presenter';
+import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
 import ILanguageRepository from '@/domain/repository/ILanguage.repository';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
-import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
 import IRegionRepository from '@/domain/repository/IRegion.repository';
-import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
 import GameVersionGroupInteractor from '@/interactor/GameVersionGroup.interactor';
-import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
+import RegionInteractor from '@/interactor/Region.interactor';
+import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
+import IRegionUsecase from '@/usecase/IRegion.usecase';
+import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
+import GameVersionGroupMockRepository from '@test/unit/mock/infrastructure/repository/GameVersionGroupMock.repository';
 import LanguageMockRepository from '@test/unit/mock/infrastructure/repository/LanguageMock.repository';
 import PokemonMockRepository from '@test/unit/mock/infrastructure/repository/PokemonMock.repository';
 import RegionMockRepository from '@test/unit/mock/infrastructure/repository/RegionMock.repository';
-import GameVersionGroupMockRepository from '@test/unit/mock/infrastructure/repository/GameVersionGroupMock.repository';
-import SearchPokemonMockInteractor from '@test/unit/mock/interactor/SearchPokemonMock.interactor';
 import GameVersionGroupMockInteractor from '@test/unit/mock/interactor/GameVersionGroupMock.interactor';
-import PokemonMockPresenter from '@test/unit/mock/presenter/PokemonMock.presenter';
+import SearchPokemonMockInteractor from '@test/unit/mock/interactor/SearchPokemonMock.interactor';
 import GameVersionGroupMockPresenter from '@test/unit/mock/presenter/GameVersionGroupMock.presenter';
+import PokemonMockPresenter from '@test/unit/mock/presenter/PokemonMock.presenter';
 import TYPES from '@test/unit/registory/inversify.types';
 import { Container } from 'inversify';
+import RegionMockInteractor from '../mock/interactor/RegionMock.interactor';
+import RegionMockPresenter from '../mock/presenter/RegionMock.presenter';
 
 export const interactorContainer = (() => {
     const container: Readonly<Container> = new Container();
@@ -30,6 +36,9 @@ export const interactorContainer = (() => {
     container
         .bind<IGameVersionGroupPresenter>(TYPES.IGameVersionGroupPresenter)
         .to(GameVersionGroupMockPresenter);
+    container
+        .bind<IRegionPresenter>(TYPES.IRegionPresenter)
+        .to(RegionMockPresenter);
     container
         .bind<IPokemonRepository>(TYPES.IPokemonRepository)
         .to(PokemonMockRepository);
@@ -48,7 +57,10 @@ export const interactorContainer = (() => {
         .inSingletonScope();
     container
         .bind<IGameVersionGroupUsecase>(TYPES.IGameVersionGroupUsecase)
-        .to(GameVersionGroupInteractor)
+        .to(GameVersionGroupInteractor);
+    container
+        .bind<IRegionUsecase>(TYPES.IRegionUsecase)
+        .to(RegionInteractor)
         .inSingletonScope();
 
     return container;
@@ -69,7 +81,13 @@ export const controllerContainer = (() => {
         .to(GameVersionGroupController);
     container
         .bind<IGameVersionGroupUsecase>(TYPES.IGameVersionGroupUsecase)
-        .to(GameVersionGroupMockInteractor)
+        .to(GameVersionGroupMockInteractor);
+    container
+        .bind<RegionController>(TYPES.RegionController)
+        .to(RegionController);
+    container
+        .bind<IRegionUsecase>(TYPES.IRegionUsecase)
+        .to(RegionMockInteractor)
         .inSingletonScope();
 
     return container;

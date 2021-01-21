@@ -14,8 +14,8 @@ describe('Unit test for Region repository', () => {
     });
 
     test('正常: names を指定した場合、正しい結果が取得できているか', async (done) => {
-        const regions = await repository.findByNameIn(['kanto', 'alola']);
-        expect(regions.length).toBe(2);
+        const regions = await repository.findAllByNameIn(['kanto', 'alola']);
+        expect(regions).toHaveLength(2);
 
         const kanto = regions.find((region) => region.name === 'kanto');
         expect(kanto).not.toBeNull();
@@ -26,9 +26,29 @@ describe('Unit test for Region repository', () => {
         done();
     });
 
+    test('正常： languageId を指定した場合、正しい結果が取得できているか', async (done) => {
+        // languageId:1 -> ja-Hrkt
+        const regions = await repository.findByLanguageId(1);
+
+        expect(regions).toHaveLength(6);
+
+        const kanto = regions.find((region) => region.name === 'kanto');
+        expect(kanto).not.toBeNull();
+        expect(kanto?.regionNames).toHaveLength(1);
+        expect(kanto?.regionNames[0].name).toEqual('カントー地方');
+
+        done();
+    });
+
     test('異常: names に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
-        const regions = await repository.findByNameIn(['xxxxx']);
-        expect(regions.length).toBe(0);
+        const regions = await repository.findAllByNameIn(['xxxxx']);
+        expect(regions).toHaveLength(0);
+        done();
+    });
+
+    test('異常: languageId に存在しないパラメータを指定した場合、空配列となるか', async (done) => {
+        const regions = await repository.findByLanguageId(-1);
+        expect(regions).toHaveLength(0);
         done();
     });
 });
