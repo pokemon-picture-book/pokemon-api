@@ -19,6 +19,8 @@ tags:
 #       url: 'https://github.com/pokemon-picture-book/pokemon.json'
   - name: GameVersionGroup
     description: ゲームバージョングループ情報に関する API
+  - name: Region
+    description: 地域情報に関する API
 schemes:
   - http
   - https
@@ -112,6 +114,41 @@ paths:
           description: 不正なリクエストをした場合
           schema:
             $ref: '#/definitions/QueryError'
+  /regions:
+    get:
+      tags:
+        - Region
+      parameters:
+      - name: lang
+        in: query
+        description: 言語 (英語 - en / 日本語 - ja-Hrkt)
+        type: string
+      summary: 地域一覧取得
+      description: |-
+        ## 詳細
+        地域情報一覧を取得します
+      operationId: findAllRegions
+      produces:
+        - application/json
+      responses:
+        200:
+          description: 通信が正常に成功した場合
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/RegionListResponse'
+        204:
+          description: データが見つからなかった場合
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: 'No Content!'
+        400:
+          description: 不正なリクエストをした場合
+          schema:
+            $ref: '#/definitions/QueryError'
 definitions:
   PokemonListResponse:
     type: object
@@ -159,6 +196,19 @@ definitions:
       name:
         type: string
         example: '赤/緑/ピカチュウ'
+  RegionListResponse:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        example: 1
+      name:
+        type: string
+        example: 'kanto'
+      displayName:
+        type: string
+        example: 'カントー地方'
   QueryError:
     type: object
     properties:
