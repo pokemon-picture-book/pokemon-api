@@ -176,7 +176,7 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('異常: lang に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
+    test('異常: lang に不正な値を入れ、リクエストを送信した際 400 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
             lang: 'xxxxx',
         };
