@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
-  description: 'ポケモン情報取得に関する API.'
+  description: 'ポケモンに関する情報を提供する API'
   version: 1.0.0
-  title: ポケモン情報取得 API
+  title: ポケモン API
   # termsOfService: 'http://localhost/pokemon-api/terms'
   contact:
     email: noriyuki.shimizu0612@gmail.com
@@ -12,17 +12,24 @@ info:
 host: localhost:8003
 basePath: /pokemon-api/v1
 tags:
-  - name: pokemons
-    description: Everything about your Pets
-    externalDocs:
-      description: Find out more
-      url: 'https://github.com/pokemon-picture-book/pokemon.json'
+  - name: Pokemon
+    description: ポケモン情報に関する API
+#     externalDocs:
+#       description: Find out more
+#       url: 'https://github.com/pokemon-picture-book/pokemon.json'
+  - name: GameVersionGroup
+    description: ゲームバージョングループ情報に関する API
 schemes:
   - http
   - https
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
 paths:
   /pokemons:
     get:
+      tags:
+        - Pokemon
       parameters:
       - name: lang
         in: query
@@ -40,30 +47,36 @@ paths:
         type: array
         items:
           type: string
-      tags:
-        - pokemons
-      summary: Find All Pokemons
-      description: パラメータに紐づくポケモン情報一覧を取得します
+      summary: ポケモン一覧取得
+      description: |-
+        ## 詳細
+        パラメータに紐づくポケモン情報一覧を取得します
       operationId: findAllPokemons
       produces:
         - application/json
       responses:
         200:
-          description: successful operation
+          description: 通信が正常に成功した場合
           schema:
             type: array
             items:
-              $ref: '#/definitions/Pokemon'
-        404:
-          description: not found
+              $ref: '#/definitions/PokemonListResponse'
+        204:
+          description: データが見つからなかった場合
           schema:
             type: object
             properties:
               message:
                 type: string
-                example: 'Not Found!'
+                example: 'No Content!'
+        400:
+          description: 不正なリクエストをした場合
+          schema:
+            $ref: '#/definitions/QueryError'
   /game-version-groups:
     get:
+      tags:
+        - GameVersionGroup
       parameters:
       - name: lang
         in: query
@@ -73,30 +86,34 @@ paths:
         in: query
         description: サポートされてるか（Yes - true / No - false）
         type: boolean
-      tags:
-        - game_version_groups
-      summary: Find All GameVersionGroups
-      description: ゲームバージョングループ情報一覧を取得します
+      summary: ゲームバージョングループ一覧取得
+      description: |-
+        ## 詳細
+        ゲームバージョングループ情報一覧を取得します
       operationId: findAllGameVerisionGroups
       produces:
         - application/json
       responses:
         200:
-          description: successful operation
+          description: 通信が正常に成功した場合
           schema:
             type: array
             items:
-              $ref: '#/definitions/GameVersionGroup'
-        404:
-          description: not found
+              $ref: '#/definitions/GameVersionGroupListResponse'
+        204:
+          description: データが見つからなかった場合
           schema:
             type: object
             properties:
               message:
                 type: string
-                example: 'Not Found!'
+                example: 'No Content!'
+        400:
+          description: 不正なリクエストをした場合
+          schema:
+            $ref: '#/definitions/QueryError'
 definitions:
-  Pokemon:
+  PokemonListResponse:
     type: object
     properties:
       id:
@@ -129,9 +146,7 @@ definitions:
           type: string
           example:
             - 'でんき'
-    xml:
-      name: Pokemons
-  GameVersionGroup:
+  GameVersionGroupListResponse:
     type: object
     properties:
       id:
@@ -144,8 +159,23 @@ definitions:
       name:
         type: string
         example: '赤/緑/ピカチュウ'
-    xml:
-      name: GameVersionGroup
-externalDocs:
-  description: Find out more about Swagger
-  url: 'http://swagger.io'
+  QueryError:
+    type: object
+    properties:
+      errors:
+        type: array
+        items:
+          type: object
+          properties:
+            value:
+              type: string
+              example: ja-Hrktu
+            msg:
+              type: string
+              example: Select en or ja-Hrkt as the \"lang\"
+            param:
+              type: string
+              example: lang
+            location:
+              type: string
+              example: query
