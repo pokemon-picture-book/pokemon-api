@@ -44,7 +44,7 @@ describe('Unit test for GameVersionGroup controller', () => {
         done();
     });
 
-    test('正常: 404 ステータス確認', async (done) => {
+    test('正常: 204 ステータス確認', async (done) => {
         (validationResult as jest.MockedFunction<
             typeof validationResult
         >).mockImplementation(
@@ -71,9 +71,9 @@ describe('Unit test for GameVersionGroup controller', () => {
             res as AppResponse<any>
         );
 
-        expect(res.status.mock.calls[0][0]).toBe(404);
+        expect(res.status.mock.calls[0][0]).toBe(204);
         expect(res.send.mock.calls[0][0]).toEqual({
-            message: 'Not Found!',
+            message: 'No Content!',
         });
 
         done();

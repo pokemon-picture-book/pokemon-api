@@ -187,26 +187,24 @@ describe('Integration test for pokemon', () => {
             .expect(400, done);
     });
 
-    test('異常: game に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
+    test('異常: game に不正な値を入れ、リクエストを送信した際 204 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
             game: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
-            .expect('Content-Type', /json/)
-            .expect(404, done);
+            .expect(204, done);
     });
 
-    test('異常: regions に不正な値を入れ、リクエストを送信した際 404 となるか', (done) => {
+    test('異常: regions に不正な値を入れ、リクエストを送信した際 204 となるか', (done) => {
         const queryParam: Readonly<SearchPokemonQueryParam> = {
             regions: ['xxxxx', 'ooooo'],
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
-            .expect('Content-Type', /json/)
-            .expect(404, done);
+            .expect(204, done);
     });
 
     test('異常: lang / game / regions とは別のパラメータを設定した場合、一番古いバージョン・地域で英語のデータが取得できているか', (done) => {
@@ -248,14 +246,13 @@ describe('Integration test for pokemon', () => {
             });
     });
 
-    test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に 404 となる', (done) => {
+    test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に 204 となる', (done) => {
         const queryParam: Readonly<any> = {
             regions: 'xxxxx',
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.POKEMON}`)
             .query(queryParam)
-            .expect('Content-Type', /json/)
-            .expect(404, done);
+            .expect(204, done);
     });
 });

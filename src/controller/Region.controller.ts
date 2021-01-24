@@ -31,7 +31,7 @@ export default class RegionController {
         );
 
         if (!result.length) {
-            response.status(404).send({ message: 'Not Found!' });
+            response.status(204).send({ message: 'No Content!' });
             return;
         }
 
