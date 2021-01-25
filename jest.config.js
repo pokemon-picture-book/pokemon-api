@@ -1,4 +1,9 @@
 module.exports = {
+    collectCoverageFrom: [
+        'src/**/*.{js,ts}',
+        '!<rootDir>/node_modules/'
+    ],
+    testResultsProcessor: 'jest-sonar-reporter',
     roots: ['<rootDir>'],
     moduleDirectories: ['node_modules', 'src'],
     testEnvironment: 'node',
