@@ -17,3 +17,7 @@ dist
 
 # test
 coverage
+test-report.xml
+
+# lint
+lint-report.json
