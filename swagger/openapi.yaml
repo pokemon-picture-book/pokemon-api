@@ -21,6 +21,8 @@ tags:
     description: ゲームバージョングループ情報に関する API
   - name: Region
     description: 地域情報に関する API
+  - name: Language
+    description: 言語情報に関する API
 schemes:
   - http
   - https
@@ -149,6 +151,33 @@ paths:
           description: 不正なリクエストをした場合
           schema:
             $ref: '#/definitions/QueryError'
+  /languages:
+    get:
+      tags:
+        - Language
+      summary: 地域一覧取得
+      description: |-
+        ## 詳細
+        言語情報一覧を取得します
+        言語名の昇順でデータを取得します
+      operationId: findAllLanguages
+      produces:
+        - application/json
+      responses:
+        200:
+          description: 通信が正常に成功した場合
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/LanguageListResponse'
+        204:
+          description: データが見つからなかった場合（運用上 204 は起こり得ない）
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: 'No Content!'
 definitions:
   PokemonListResponse:
     type: object
@@ -209,6 +238,16 @@ definitions:
       displayName:
         type: string
         example: 'カントー地方'
+  LanguageListResponse:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        example: 1
+      name:
+        type: string
+        example: 'en'
   QueryError:
     type: object
     properties:
