@@ -155,7 +155,7 @@ paths:
     get:
       tags:
         - Language
-      summary: 地域一覧取得
+      summary: 言語一覧取得
       description: |-
         ## 詳細
         言語情報一覧を取得します
