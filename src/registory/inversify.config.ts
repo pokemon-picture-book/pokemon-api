@@ -2,14 +2,17 @@
 import PokemonController from '@/controller/Pokemon.controller';
 import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
 import RegionController from '@/controller/Region.controller';
+import LanguageController from '@/controller/Language.controller';
 
 // presenter
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import IGameVersionGroupPresenter from '@/domain/presenter/IGameVersionGroup.presenter';
 import IRegionPresenter from '@/domain/presenter/IRegion.presenter';
+import ILanguagePresenter from '@/domain/presenter/ILanguage.presenter';
 import PokemonPresenter from '@/presenter/Pokemon.presenter';
 import GameVersionGroupPresenter from '@/presenter/GameVersionGroup.presenter';
 import RegionPresenter from '@/presenter/Region.presenter';
+import LanguagePresenter from '@/presenter/Language.presenter';
 
 // repository
 import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
@@ -25,9 +28,11 @@ import RegionRepository from '@/infrastructure/repository/Region.repository';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
 import IRegionUsecase from '@/usecase/IRegion.usecase';
+import ILanguageUsecase from '@/usecase/ILanguage.usecase';
 import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
 import GameVersionGroupInteractor from '@/interactor/GameVersionGroup.interactor';
 import RegionInteractor from '@/interactor/Region.interactor';
+import LanguageInteractor from '@/interactor/Language.interactor';
 
 import TYPES from '@/registory/inversify.types';
 import { Container } from 'inversify';
@@ -44,6 +49,9 @@ export default (() => {
     container
         .bind<IRegionPresenter>(TYPES.IRegionPresenter)
         .to(RegionPresenter);
+    container
+        .bind<ILanguagePresenter>(TYPES.ILanguagePresenter)
+        .to(LanguagePresenter);
     container
         .bind<IPokemonRepository>(TYPES.IPokemonRepository)
         .to(PokemonRepository);
@@ -70,12 +78,19 @@ export default (() => {
         .bind<RegionController>(TYPES.RegionController)
         .to(RegionController);
     container
+        .bind<LanguageController>(TYPES.LanguageController)
+        .to(LanguageController);
+    container
         .bind<IGameVersionGroupUsecase>(TYPES.IGameVersionGroupUsecase)
         .to(GameVersionGroupInteractor)
         .inSingletonScope();
     container
         .bind<IRegionUsecase>(TYPES.IRegionUsecase)
         .to(RegionInteractor)
+        .inSingletonScope();
+    container
+        .bind<ILanguageUsecase>(TYPES.ILanguageUsecase)
+        .to(LanguageInteractor)
         .inSingletonScope();
     return container;
 })();

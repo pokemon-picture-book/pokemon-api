@@ -7,6 +7,7 @@ import TYPES from '@/registory/inversify.types';
 import { AppRouter, Routing } from 'app-router';
 import { AppRequest, AppResponse } from 'express';
 import 'reflect-metadata';
+import LanguageController from './controller/Language.controller';
 import RegionController from './controller/Region.controller';
 
 export const ROUTING: Readonly<Routing> = {
@@ -14,6 +15,7 @@ export const ROUTING: Readonly<Routing> = {
     POKEMON: '/pokemons',
     GAME_VERSION_GROUP: '/game-version-groups',
     REGION: '/regions',
+    LANGUAGE: '/languages',
 };
 
 export default {
@@ -73,6 +75,21 @@ export default {
                             TYPES.RegionController
                         );
                         regionControllerContainer.search(req, res);
+                    },
+                },
+            ],
+        },
+        {
+            path: ROUTING.LANGUAGE,
+            children: [
+                {
+                    method: 'get',
+                    path: '/',
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const languageControllerContainer = container.get<LanguageController>(
+                            TYPES.LanguageController
+                        );
+                        languageControllerContainer.search(req, res);
                     },
                 },
             ],
