@@ -26,4 +26,17 @@ describe('Unit test for Language repository', () => {
         expect(language).toBeUndefined();
         done();
     });
+
+    test('正常: 言語一覧が取得できている・言語名でソートされているか', async (done) => {
+        const languages = await repository.findAllOrderByNameAsc();
+        expect(languages).toHaveLength(2);
+
+        const [en, ja] = languages;
+        expect(en.id).toBe(2);
+        expect(en.name).toBe('en');
+        expect(ja.id).toBe(1);
+        expect(ja.name).toBe('ja-Hrkt');
+
+        done();
+    });
 });
