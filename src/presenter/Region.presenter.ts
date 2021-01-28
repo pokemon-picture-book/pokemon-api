@@ -9,7 +9,7 @@ export default class RegionPresenter implements IRegionPresenter {
         return regions.map(
             (region): RegionResponse => {
                 const { id, name, regionNames } = region;
-                if (regionNames?.length !== 1) {
+                if (regionNames.length !== 1) {
                     throw new Error();
                 }
                 const [regionName] = regionNames;
