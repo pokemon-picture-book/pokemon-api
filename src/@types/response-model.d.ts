@@ -4,6 +4,7 @@ declare module 'app-response-model' {
         PokemonGameImage,
         PokemonImage,
         PokemonName,
+        Language,
         GameVersionGroup,
         GameVersionName,
         TypeName,
@@ -27,4 +28,6 @@ declare module 'app-response-model' {
     export type RegionResponse = Pick<Region, 'id' | 'name'> & {
         displayName: RegionName['name'];
     };
+
+    export type LanguageResponse = Pick<Language, 'id' | 'name'>;
 }

@@ -24,6 +24,19 @@ class RegionEntity extends BaseEntity {
     @OneToMany(() => RegionNameEntity, (regionName) => regionName.region)
     readonly regionNames: RegionNameEntity[];
 
+    constructor(
+        id: number,
+        name: string,
+        pokemons: PokemonEntity[],
+        regionNames: RegionNameEntity[]
+    ) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.pokemons = pokemons;
+        this.regionNames = regionNames;
+    }
+
     public refer(): void {
         console.table(this);
     }

@@ -6,6 +6,7 @@ declare module 'app-router' {
         POKEMON: string;
         GAME_VERSION_GROUP: string;
         REGION: string;
+        LANGUAGE: string;
     };
 
     export type ItemRouter = {
