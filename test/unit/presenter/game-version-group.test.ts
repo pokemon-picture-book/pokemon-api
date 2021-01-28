@@ -23,14 +23,14 @@ describe('Unit test for GameVersionGroup presenter', () => {
             true
         );
 
-        const [gameVersionGroupResponce] = presenter.toGameVersionGroupResponse(
+        const [gameVersionGroupResponse] = presenter.toGameVersionGroupResponse(
             gameVersionGroups
         );
         const [actual] = gameVersionGroups;
 
-        expect(gameVersionGroupResponce.id).toBe(actual.id);
-        expect(gameVersionGroupResponce.alias).toBe(actual.alias);
-        expect(gameVersionGroupResponce.name).toBe('赤/緑/ピカチュウ');
+        expect(gameVersionGroupResponse.id).toBe(actual.id);
+        expect(gameVersionGroupResponse.alias).toBe(actual.alias);
+        expect(gameVersionGroupResponse.name).toBe('赤/緑/ピカチュウ');
 
         done();
     });
