@@ -3,40 +3,39 @@
 ## 使用技術
 
 * 言語
-  * Node.js (11.10.0)
-  * Typescript (3.5.3)
+  * Node.js (14.0.0)
+  * Typescript (4.1.3)
 
 * バージョン管理
   * NVM
     * 参考：[Nodeのバージョンを切り替えられる「NVM」（Windows編）](http://blog.h2o-space.com/2016/11/1095/)
+  * NVM
+    * 参考：[NodebrewでNodeをインストールする（Mac）](https://qiita.com/mame_daifuku/items/373daf5f49ee585ea498)
 
 * フレームワーク
   * Express (4.17.1)
 
 * ビルド
-  * ttypescript (1.5.7)
+  * webpack (5.10.1)
 
 * 静的検証ツール
-  * ESLint (6.1.0)
-  * airbnb (13.2.0)
+  * ESLint (7.15.0)
+  * airbnb (14.2.1)
 
 * コードフォーマット
-  * prettier (1.18.2)
+  * prettier (2.2.1)
 
 * コードの静的分析
   * sonarqube
 
-* スクレイピング
-  * puppeteer (1.19.0)
-
 * DB
-  * PostgreSQL (9.6)
+  * MySQL (5.7)
 
 * ORM
-  * typeorm (0.2.10-rc.1)
+  * typeorm (0.2.29)
 
 * テスト
-  * jest (24.9.0)
+  * jest (26.6.3)
 
 ## セットアップ
 
