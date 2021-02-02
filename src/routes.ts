@@ -38,11 +38,9 @@ export default {
                 {
                     method: 'get',
                     path: '/:pokemonId',
-                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
-                        const pokemonControllerContainer = container.get<PokemonController>(
-                            TYPES.PokemonController
-                        );
-                        pokemonControllerContainer.search(req, res);
+                    action: (_: AppRequest<any>, res: AppResponse<any>) => {
+                        res.status(200);
+                        res.send('ok');
                     },
                 },
             ],

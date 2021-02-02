@@ -12,5 +12,5 @@ declare module 'app-request-model' {
         supported?: string;
     };
 
-    export type RegionQueryParam = LangQueryParam & {};
+    export type RegionQueryParam = LangQueryParam;
 }
