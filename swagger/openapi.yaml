@@ -247,7 +247,10 @@ definitions:
         example: 1
       name:
         type: string
-        example: 'en'
+        example: 'ja-Hrkt'
+      labelName:
+        type: string
+        example: '日本語'
   QueryError:
     type: object
     properties:
