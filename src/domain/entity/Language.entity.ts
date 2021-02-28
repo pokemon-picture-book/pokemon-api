@@ -22,6 +22,16 @@ class LanguageEntity extends BaseEntity {
     })
     readonly name: string;
 
+    @Column({
+        name: 'label_name',
+        type: 'varchar',
+        length: 16,
+        default: '',
+        insert: true,
+        update: false,
+    })
+    readonly labelName: string;
+
     @OneToMany(
         () => FlavorTextEntryEntity,
         (flavorTextEntry) => flavorTextEntry.language

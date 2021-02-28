@@ -11,6 +11,7 @@ export default class LanguageMockPresenter implements ILanguagePresenter {
                 return {
                     id: 1,
                     name: 'name',
+                    labelName: 'labelName',
                 };
             }
         );
