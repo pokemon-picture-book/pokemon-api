@@ -24,6 +24,7 @@ describe('Unit test for Language presenter', () => {
         actuals.forEach((actual, i) => {
             expect(languageResponses[i].id).toBe(actual.id);
             expect(languageResponses[i].name).toBe(actual.name);
+            expect(languageResponses[i].labelName).toBe(actual.labelName);
         });
 
         done();

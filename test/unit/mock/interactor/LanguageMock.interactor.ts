@@ -5,7 +5,7 @@ import { injectable } from 'inversify';
 @injectable()
 export class LanguageMockInteractor implements ILanguageUsecase {
     public async search(): Promise<LanguageResponse[]> {
-        return [{ id: 1, name: 'en' }];
+        return [{ id: 1, name: 'en', labelName: 'English' }];
     }
 }
 

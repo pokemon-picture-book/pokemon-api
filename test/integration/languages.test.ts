@@ -26,6 +26,7 @@ describe('Integration test for language', () => {
                 const [en, ja] = languages;
                 expect(en.name).toBe('en');
                 expect(ja.name).toBe('ja-Hrkt');
+                expect(ja.labelName).toBe('日本語');
 
                 done();
             });
