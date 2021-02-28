@@ -29,5 +29,5 @@ declare module 'app-response-model' {
         displayName: RegionName['name'];
     };
 
-    export type LanguageResponse = Pick<Language, 'id' | 'name'>;
+    export type LanguageResponse = Pick<Language, 'id' | 'name' | 'labelName'>;
 }

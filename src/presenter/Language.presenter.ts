@@ -9,6 +9,7 @@ export default class LanguagePresenter implements ILanguagePresenter {
         return Languages.map((language) => ({
             id: language.id,
             name: language.name,
+            labelName: language.labelName,
         }));
     }
 }
