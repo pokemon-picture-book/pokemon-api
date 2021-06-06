@@ -1,24 +1,29 @@
-import settingRouter from '@/domain/function/express-router.function';
-import appRoutes from '@/routes';
 import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
-import { Application } from 'express';
+import * as cors from 'cors';
+import settingRouter from '@/domain/function/express-router.function';
+import appRoutes from '@/routes';
+import config from '@/config';
 
-const app: Application = express();
+const app = express();
 
-const { NODE_ENV, REQUEST_LIMIT, SESSION_SECRET } = process.env;
+const appConfig = config[process.env.NODE_ENV || 'development'];
 
-app.use(express.json({ limit: REQUEST_LIMIT || '100kb' }));
+const corsOptions = {
+    origin: appConfig.CORS_ALLOW_ORIGIN_URL,
+};
+
+app.use(cors(corsOptions));
+app.use(express.json({ limit: appConfig.REQUEST_LIMIT || '100kb' }));
 app.use(
     express.urlencoded({
         extended: true,
-        limit: REQUEST_LIMIT || '100kb',
+        limit: appConfig.REQUEST_LIMIT || '100kb',
     })
 );
+app.use(cookieParser(appConfig.SESSION_SECRET || 'mySecret'));
 
-app.use(cookieParser(SESSION_SECRET || 'mySecret'));
-
-if (NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
     app.use(express.static('public'));
 }
 
