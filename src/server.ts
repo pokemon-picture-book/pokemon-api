@@ -7,7 +7,7 @@ import config from '@/config';
 
 const app = express();
 
-const appConfig = config[process.env.NODE_ENV || 'development'];
+const appConfig = config[process.env.NODE_ENV];
 
 const corsOptions = {
     origin: appConfig.CORS_ALLOW_ORIGIN_URL,

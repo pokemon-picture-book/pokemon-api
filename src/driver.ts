@@ -17,7 +17,7 @@ export default {
 
         if (!envConnectionOptions) {
             throw new Error(
-                'Please specify either "development" | "production"'
+                'Please specify either "test" | "development" | "production"'
             );
         }
 
