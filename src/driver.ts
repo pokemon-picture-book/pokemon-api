@@ -9,14 +9,15 @@ import {
 const ormconfig = require('~/ormconfig');
 
 export default {
-    connect: async (): Promise<void> => {
+    connect: async (systemEnv?: string): Promise<void> => {
+        const env = systemEnv || process.env.NODE_ENV;
         const envConnectionOptions: ConnectionOptions = ormconfig.find(
-            (o: ConnectionOptions) => o.name === process.env.NODE_ENV
+            (o: ConnectionOptions) => o.name === env
         );
 
         if (!envConnectionOptions) {
             throw new Error(
-                'Please specify either "development" | "test" | "production"'
+                'Please specify either "development" | "production"'
             );
         }
 
@@ -29,8 +30,9 @@ export default {
         const connection = await createConnection(connectionOptions);
         BaseEntity.useConnection(connection);
     },
-    close: () => {
-        const connection = getConnection(process.env.NODE_ENV);
+    close: (systemEnv?: string) => {
+        const env = systemEnv || process.env.NODE_ENV;
+        const connection = getConnection(env);
         connection.close();
     },
 };
