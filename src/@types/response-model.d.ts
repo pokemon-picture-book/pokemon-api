@@ -7,6 +7,7 @@ declare module 'app-response-model' {
         Language,
         GameVersionGroup,
         GameVersionName,
+        Type,
         TypeName,
         Region,
         RegionName,
@@ -16,7 +17,10 @@ declare module 'app-response-model' {
         Pick<PokemonName, 'name'> & {
             gameImagePaths: PokemonGameImage['path'][];
             imagePaths: PokemonImage['path'][];
-            types: TypeName['name'][];
+            types: {
+                code: Type['name'];
+                name: TypeName['name'];
+            }[];
         };
 
     export type GameVersionGroupResponse = Pick<

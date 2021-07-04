@@ -23,7 +23,7 @@ export default class PokemonPresenter implements IPokemonPresenter {
                     ),
                     types: p.pokemonTypes.map(({ type }) => {
                         const [{ name: typeName }] = type.typeNames;
-                        return typeName;
+                        return { code: type.name, name: typeName };
                     }),
                 };
             }

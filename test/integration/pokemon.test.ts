@@ -40,11 +40,23 @@ describe('Integration test for pokemon', () => {
                 // 英語のデータであるか（最初の３匹だけで検証する）
                 const [bulbasaur, ivysaur, venusaur] = pokemons;
                 expect(bulbasaur.name).toBe('Bulbasaur');
-                expect(bulbasaur.types).toEqual(['Grass', 'Poison']);
+                const [bulbasaurGrass, bulbasaurPoison] = bulbasaur.types;
+                expect(bulbasaurGrass.code).toEqual('grass');
+                expect(bulbasaurGrass.name).toEqual('Grass');
+                expect(bulbasaurPoison.code).toEqual('poison');
+                expect(bulbasaurPoison.name).toEqual('Poison');
                 expect(ivysaur.name).toBe('Ivysaur');
-                expect(ivysaur.types).toEqual(['Grass', 'Poison']);
+                const [ivysaurGrass, ivysaurPoison] = ivysaur.types;
+                expect(ivysaurGrass.code).toEqual('grass');
+                expect(ivysaurGrass.name).toEqual('Grass');
+                expect(ivysaurPoison.code).toEqual('poison');
+                expect(ivysaurPoison.name).toEqual('Poison');
                 expect(venusaur.name).toBe('Venusaur');
-                expect(venusaur.types).toEqual(['Grass', 'Poison']);
+                const [venusaurGrass, venusaurPoison] = venusaur.types;
+                expect(venusaurGrass.code).toEqual('grass');
+                expect(venusaurGrass.name).toEqual('Grass');
+                expect(venusaurPoison.code).toEqual('poison');
+                expect(venusaurPoison.name).toEqual('Poison');
 
                 done();
             });
@@ -65,11 +77,23 @@ describe('Integration test for pokemon', () => {
                 // 日本語のデータであるか（最初の３匹だけで検証する）
                 const [bulbasaur, ivysaur, venusaur] = pokemons;
                 expect(bulbasaur.name).toBe('フシギダネ');
-                expect(bulbasaur.types).toEqual(['くさ', 'どく']);
+                const [bulbasaurGrass, bulbasaurPoison] = bulbasaur.types;
+                expect(bulbasaurGrass.code).toEqual('grass');
+                expect(bulbasaurGrass.name).toEqual('くさ');
+                expect(bulbasaurPoison.code).toEqual('poison');
+                expect(bulbasaurPoison.name).toEqual('どく');
                 expect(ivysaur.name).toBe('フシギソウ');
-                expect(ivysaur.types).toEqual(['くさ', 'どく']);
+                const [ivysaurGrass, ivysaurPoison] = ivysaur.types;
+                expect(ivysaurGrass.code).toEqual('grass');
+                expect(ivysaurGrass.name).toEqual('くさ');
+                expect(ivysaurPoison.code).toEqual('poison');
+                expect(ivysaurPoison.name).toEqual('どく');
                 expect(venusaur.name).toBe('フシギバナ');
-                expect(venusaur.types).toEqual(['くさ', 'どく']);
+                const [venusaurGrass, venusaurPoison] = venusaur.types;
+                expect(venusaurGrass.code).toEqual('grass');
+                expect(venusaurGrass.name).toEqual('くさ');
+                expect(venusaurPoison.code).toEqual('poison');
+                expect(venusaurPoison.name).toEqual('どく');
 
                 done();
             });
@@ -166,11 +190,17 @@ describe('Integration test for pokemon', () => {
                 // 日本語のデータであるか（最初の３匹だけで検証する）
                 const [chikorita, bayleef, meganium] = pokemons;
                 expect(chikorita.name).toBe('チコリータ');
-                expect(chikorita.types).toEqual(['くさ']);
+                const [chikoritaGrass] = chikorita.types;
+                expect(chikoritaGrass.code).toEqual('grass');
+                expect(chikoritaGrass.name).toEqual('くさ');
                 expect(bayleef.name).toBe('ベイリーフ');
-                expect(bayleef.types).toEqual(['くさ']);
+                const [bayleefGrass] = bayleef.types;
+                expect(bayleefGrass.code).toEqual('grass');
+                expect(bayleefGrass.name).toEqual('くさ');
                 expect(meganium.name).toBe('メガニウム');
-                expect(meganium.types).toEqual(['くさ']);
+                const [meganiumGrass] = meganium.types;
+                expect(meganiumGrass.code).toEqual('grass');
+                expect(meganiumGrass.name).toEqual('くさ');
 
                 done();
             });
@@ -236,11 +266,23 @@ describe('Integration test for pokemon', () => {
                 // 英語のデータであるか（最初の３匹だけで検証する）
                 const [bulbasaur, ivysaur, venusaur] = pokemons;
                 expect(bulbasaur.name).toBe('Bulbasaur');
-                expect(bulbasaur.types).toEqual(['Grass', 'Poison']);
+                const [bulbasaurGrass, bulbasaurPoison] = bulbasaur.types;
+                expect(bulbasaurGrass.code).toEqual('grass');
+                expect(bulbasaurGrass.name).toEqual('Grass');
+                expect(bulbasaurPoison.code).toEqual('poison');
+                expect(bulbasaurPoison.name).toEqual('Poison');
                 expect(ivysaur.name).toBe('Ivysaur');
-                expect(ivysaur.types).toEqual(['Grass', 'Poison']);
+                const [ivysaurGrass, ivysaurPoison] = ivysaur.types;
+                expect(ivysaurGrass.code).toEqual('grass');
+                expect(ivysaurGrass.name).toEqual('Grass');
+                expect(ivysaurPoison.code).toEqual('poison');
+                expect(ivysaurPoison.name).toEqual('Poison');
                 expect(venusaur.name).toBe('Venusaur');
-                expect(venusaur.types).toEqual(['Grass', 'Poison']);
+                const [venusaurGrass, venusaurPoison] = venusaur.types;
+                expect(venusaurGrass.code).toEqual('grass');
+                expect(venusaurGrass.name).toEqual('Grass');
+                expect(venusaurPoison.code).toEqual('poison');
+                expect(venusaurPoison.name).toEqual('Poison');
 
                 done();
             });

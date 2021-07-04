@@ -37,9 +37,9 @@ describe('Unit test for Pokemon presenter', () => {
             expect(pokemonSearchResponse.imagePaths[i]).toBe(image.path);
         });
         actual.pokemonTypes.forEach((type, i) => {
-            expect(pokemonSearchResponse.types[i]).toBe(
-                type.type.typeNames[0].name
-            );
+            const { code, name } = pokemonSearchResponse.types[i];
+            expect(code).toBe(type.type.name);
+            expect(name).toBe(type.type.typeNames[0].name);
         });
 
         done();

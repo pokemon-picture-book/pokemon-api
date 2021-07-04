@@ -209,9 +209,14 @@ definitions:
       types:
         type: array
         items:
-          type: string
-          example:
-            - 'でんき'
+          type: object
+          properties:
+            code:
+              type: string
+              example: 'electric'
+            name:
+              type: string
+              example: 'でんき'
   GameVersionGroupListResponse:
     type: object
     properties:
