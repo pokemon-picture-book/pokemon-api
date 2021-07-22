@@ -23,8 +23,8 @@ describe('Integration test for gameVersionGroup', () => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
-                // supported = true のバージョンデータ数は 11 のため
-                expect(gameVersionGroups.length).toBe(11);
+                // supported = true のバージョンデータ数は 10 のため
+                expect(gameVersionGroups.length).toBe(10);
 
                 // サポートされたバージョンであり、英語のデータであるか（最初の3つのデータだけで検証する）
                 const [rgby, gsc, rse] = gameVersionGroups;
@@ -79,8 +79,8 @@ describe('Integration test for gameVersionGroup', () => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
-                // supported = false のバージョンデータ数は 4 のため
-                expect(gameVersionGroups.length).toBe(4);
+                // supported = false のバージョンデータ数は 5 のため
+                expect(gameVersionGroups.length).toBe(5);
 
                 // supported = false に対応したデータであるか
                 const [colosseum, xd, bw2] = gameVersionGroups;
@@ -110,8 +110,8 @@ describe('Integration test for gameVersionGroup', () => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
-                // supported = true のバージョンデータ数は 11 のため
-                expect(gameVersionGroups.length).toBe(11);
+                // supported = true のバージョンデータ数は 10 のため
+                expect(gameVersionGroups.length).toBe(10);
 
                 // 日本語のデータであるか（最初の3つのデータだけで検証する）
                 const [rgby, gsc, rse] = gameVersionGroups;
@@ -162,8 +162,8 @@ describe('Integration test for gameVersionGroup', () => {
                 const gameVersionGroups: GameVersionGroupResponse[] =
                     response.body;
 
-                // supported = true のバージョンデータ数は 11 のため
-                expect(gameVersionGroups.length).toBe(11);
+                // supported = true のバージョンデータ数は 10 のため
+                expect(gameVersionGroups.length).toBe(10);
 
                 // サポートされたバージョンであり、英語のデータであるか（最初の3つのデータだけで検証する）
                 const [rgby, gsc, rse] = gameVersionGroups;
