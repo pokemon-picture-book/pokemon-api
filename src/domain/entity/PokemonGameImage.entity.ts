@@ -30,6 +30,14 @@ class PokemonGameImageEntity extends BaseEntity {
     })
     readonly path: string;
 
+    @Column({
+        name: 'is_main',
+        type: 'boolean',
+        insert: true,
+        update: false,
+    })
+    readonly isMain: boolean;
+
     @ManyToOne(
         () => GameVersionGroupEntity,
         (gameVersionGroup) => gameVersionGroup.pokemonGameImages

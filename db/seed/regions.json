@@ -26,5 +26,9 @@
     {
         "id": 7,
         "name": "alola"
+    },
+    {
+        "id": 8,
+        "name": "galar"
     }
 ]

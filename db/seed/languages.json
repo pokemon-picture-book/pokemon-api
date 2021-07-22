@@ -1,10 +1,12 @@
 [
     {
         "id": 1,
-        "name": "ja-Hrkt"
+        "name": "ja-Hrkt",
+        "labelName": "日本語"
     },
     {
         "id": 2,
-        "name": "en"
+        "name": "en",
+        "labelName": "English"
     }
 ]

@@ -821,7 +821,8 @@
         "pokemonEvolutionId": 67,
         "fromId": 133,
         "toId": 470,
-        "trigger": "level-up"
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"leaf-stone\"}}"
     },
     {
         "id": 104,
@@ -852,7 +853,8 @@
         "pokemonEvolutionId": 67,
         "fromId": 133,
         "toId": 471,
-        "trigger": "level-up"
+        "trigger": "use-item",
+        "detail1": "{\"item\":{\"name\":\"ice-stone\"}}"
     },
     {
         "id": 108,

@@ -71,13 +71,13 @@
     },
     {
         "pokemonId": 8,
-        "flavorText": "When tapped, this Pokémon will pull in its head,\nbut its tail will still stick out a little bit.",
-        "languageId": 2
+        "flavorText": "ポカンと　あたまを　たたかれるとき\nこうらに　ひっこんで　よける。でも\nちょっとだけ　しっぽが　でているよ。",
+        "languageId": 1
     },
     {
         "pokemonId": 8,
-        "flavorText": "ポカンと　あたまを　たたかれるとき\nこうらに　ひっこんで　よける。でも\nちょっとだけ　しっぽが　でているよ。",
-        "languageId": 1
+        "flavorText": "When tapped, this Pokémon will pull in its head,\nbut its tail will still stick out a little bit.",
+        "languageId": 2
     },
     {
         "pokemonId": 9,
@@ -101,13 +101,13 @@
     },
     {
         "pokemonId": 11,
-        "flavorText": "A steel-hard shell protects its tender body.\nIt quietly endures hardships while\nawaiting evolution.",
-        "languageId": 2
+        "flavorText": "こうてつのように　かたい　カラで\nやわらかい　なかみを　まもっている。\nしんかするまで　じっと　たえている。",
+        "languageId": 1
     },
     {
         "pokemonId": 11,
-        "flavorText": "こうてつのように　かたい　カラで\nやわらかい　なかみを　まもっている。\nしんかするまで　じっと　たえている。",
-        "languageId": 1
+        "flavorText": "A steel-hard shell protects its tender body.\nIt quietly endures hardships while\nawaiting evolution.",
+        "languageId": 2
     },
     {
         "pokemonId": 12,
@@ -1451,13 +1451,13 @@
     },
     {
         "pokemonId": 146,
-        "flavorText": "むかしから　ひのとりでんせつとして\nしられる。はばたくたびに　はねが\nあかるく　もえあがり　うつくしい。",
-        "languageId": 1
+        "flavorText": "It is said to be the legendary bird Pokémon of fire.\nEvery flap of its wings creates a dazzling flare\nof flames.",
+        "languageId": 2
     },
     {
         "pokemonId": 146,
-        "flavorText": "It is said to be the legendary bird Pokémon of fire.\nEvery flap of its wings creates a dazzling flare\nof flames.",
-        "languageId": 2
+        "flavorText": "むかしから　ひのとりでんせつとして\nしられる。はばたくたびに　はねが\nあかるく　もえあがり　うつくしい。",
+        "languageId": 1
     },
     {
         "pokemonId": 147,
@@ -1721,13 +1721,13 @@
     },
     {
         "pokemonId": 173,
-        "flavorText": "Because of its unusual, starlike silhouette, people\nbelieve that it came here on a meteor.",
-        "languageId": 2
+        "flavorText": "おほしさまのような　シルエット。\nそのすがたから　ながれぼしにのって\nやってくると　しんじられている。",
+        "languageId": 1
     },
     {
         "pokemonId": 173,
-        "flavorText": "おほしさまのような　シルエット。\nそのすがたから　ながれぼしにのって\nやってくると　しんじられている。",
-        "languageId": 1
+        "flavorText": "Because of its unusual, starlike silhouette, people\nbelieve that it came here on a meteor.",
+        "languageId": 2
     },
     {
         "pokemonId": 174,
@@ -2041,13 +2041,13 @@
     },
     {
         "pokemonId": 205,
-        "flavorText": "It is encased in a steel shell. Its peering eyes are\nall that can be seen of its mysterious innards.",
-        "languageId": 2
+        "flavorText": "こうてつの　カラで　まもられている。\nすきまから　めだまが　のぞいているが\nなかみの　しょうたいは　なぞのまま。",
+        "languageId": 1
     },
     {
         "pokemonId": 205,
-        "flavorText": "こうてつの　カラで　まもられている。\nすきまから　めだまが　のぞいているが\nなかみの　しょうたいは　なぞのまま。",
-        "languageId": 1
+        "flavorText": "It is encased in a steel shell. Its peering eyes are\nall that can be seen of its mysterious innards.",
+        "languageId": 2
     },
     {
         "pokemonId": 206,
@@ -2381,13 +2381,13 @@
     },
     {
         "pokemonId": 239,
-        "flavorText": "りょううでを　ぐるぐる　ふりまわして\nでんきを　はっせいさせる。しかし\nつくった　でんきは　ためておけない。",
-        "languageId": 1
+        "flavorText": "It generates electricity by whirling its arms.\nHowever, it can’t store the energy it makes.",
+        "languageId": 2
     },
     {
         "pokemonId": 239,
-        "flavorText": "It generates electricity by whirling its arms.\nHowever, it can’t store the energy it makes.",
-        "languageId": 2
+        "flavorText": "りょううでを　ぐるぐる　ふりまわして\nでんきを　はっせいさせる。しかし\nつくった　でんきは　ためておけない。",
+        "languageId": 1
     },
     {
         "pokemonId": 240,
@@ -2911,13 +2911,13 @@
     },
     {
         "pokemonId": 292,
-        "flavorText": "ぬけがらが　たましいを　やどした。\nせなかの　すきまから　のぞきこむと\nたましいを　すわれてしまうらしい。",
-        "languageId": 1
+        "flavorText": "A discarded bug shell that came to life. Peering into\nthe crack on its back is said to steal one’s spirit.",
+        "languageId": 2
     },
     {
         "pokemonId": 292,
-        "flavorText": "A discarded bug shell that came to life. Peering into\nthe crack on its back is said to steal one’s spirit.",
-        "languageId": 2
+        "flavorText": "ぬけがらが　たましいを　やどした。\nせなかの　すきまから　のぞきこむと\nたましいを　すわれてしまうらしい。",
+        "languageId": 1
     },
     {
         "pokemonId": 293,
@@ -3091,13 +3091,13 @@
     },
     {
         "pokemonId": 310,
-        "flavorText": "It rarely appears before people. It is said to nest\nwhere lightning has fallen.",
-        "languageId": 2
+        "flavorText": "ひとまえには　めったに　すがたを\nみせない。かみなりの　おちた\nばしょに　すみかが　あると　いう。",
+        "languageId": 1
     },
     {
         "pokemonId": 310,
-        "flavorText": "ひとまえには　めったに　すがたを\nみせない。かみなりの　おちた\nばしょに　すみかが　あると　いう。",
-        "languageId": 1
+        "flavorText": "It rarely appears before people. It is said to nest\nwhere lightning has fallen.",
+        "languageId": 2
     },
     {
         "pokemonId": 311,
@@ -3191,13 +3191,13 @@
     },
     {
         "pokemonId": 320,
-        "flavorText": "ボールの　ように　はずんで　あそぶ。\nたくさん　かいすいを　のみこむ　ほど\nたかく　はずむ　ように　なるのだ。",
-        "languageId": 1
+        "flavorText": "It bounces playfully like a ball. The more seawater\nit swallows, the higher it bounces.",
+        "languageId": 2
     },
     {
         "pokemonId": 320,
-        "flavorText": "It bounces playfully like a ball. The more seawater\nit swallows, the higher it bounces.",
-        "languageId": 2
+        "flavorText": "ボールの　ように　はずんで　あそぶ。\nたくさん　かいすいを　のみこむ　ほど\nたかく　はずむ　ように　なるのだ。",
+        "languageId": 1
     },
     {
         "pokemonId": 321,
@@ -3601,13 +3601,13 @@
     },
     {
         "pokemonId": 361,
-        "flavorText": "It is said that several Snorunt gather under giant\nleaves and live together in harmony.",
-        "languageId": 2
+        "flavorText": "おおきな　はっぱの　したに\nすうひきの　ユキワラシが　あつまり\nなかよく　くらしているという。",
+        "languageId": 1
     },
     {
         "pokemonId": 361,
-        "flavorText": "おおきな　はっぱの　したに\nすうひきの　ユキワラシが　あつまり\nなかよく　くらしているという。",
-        "languageId": 1
+        "flavorText": "It is said that several Snorunt gather under giant\nleaves and live together in harmony.",
+        "languageId": 2
     },
     {
         "pokemonId": 362,
@@ -4241,13 +4241,13 @@
     },
     {
         "pokemonId": 425,
-        "flavorText": "ひとや　ポケモンの　たましいが\nかたまって　うまれた　ポケモン。\nジメジメした　きせつが　だいすき。",
-        "languageId": 1
+        "flavorText": "A Pokémon formed by the spirits of people and\nPokémon. It loves damp, humid seasons.",
+        "languageId": 2
     },
     {
         "pokemonId": 425,
-        "flavorText": "A Pokémon formed by the spirits of people and\nPokémon. It loves damp, humid seasons.",
-        "languageId": 2
+        "flavorText": "ひとや　ポケモンの　たましいが\nかたまって　うまれた　ポケモン。\nジメジメした　きせつが　だいすき。",
+        "languageId": 1
     },
     {
         "pokemonId": 426,
@@ -6441,13 +6441,13 @@
     },
     {
         "pokemonId": 645,
-        "flavorText": "ランドロスの　おとずれる　とちは\nさくもつが　たくさん　みのるため\nはたけのかみさま　と　いわれている。",
-        "languageId": 1
+        "flavorText": "Lands visited by Landorus grant such bountiful\ncrops that it has been hailed as “The Guardian of\nthe Fields.”",
+        "languageId": 2
     },
     {
         "pokemonId": 645,
-        "flavorText": "Lands visited by Landorus grant such bountiful\ncrops that it has been hailed as “The Guardian of\nthe Fields.”",
-        "languageId": 2
+        "flavorText": "ランドロスの　おとずれる　とちは\nさくもつが　たくさん　みのるため\nはたけのかみさま　と　いわれている。",
+        "languageId": 1
     },
     {
         "pokemonId": 646,

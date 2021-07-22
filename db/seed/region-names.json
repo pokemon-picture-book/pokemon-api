@@ -63,5 +63,10 @@
         "regionId": 7,
         "name": "Alola",
         "languageId": 2
+    },
+    {
+        "regionId": 8,
+        "name": "Galar",
+        "languageId": 2
     }
 ]

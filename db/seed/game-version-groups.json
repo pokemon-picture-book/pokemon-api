@@ -1,62 +1,77 @@
 [
     {
         "id": 1,
-        "alias": "rgby"
+        "alias": "rgby",
+        "isSupported": true
     },
     {
         "id": 2,
-        "alias": "gsc"
+        "alias": "gsc",
+        "isSupported": true
     },
     {
         "id": 3,
-        "alias": "rse"
+        "alias": "rse",
+        "isSupported": true
     },
     {
         "id": 4,
-        "alias": "frlg"
+        "alias": "frlg",
+        "isSupported": true
     },
     {
         "id": 5,
-        "alias": "dp"
+        "alias": "dp",
+        "isSupported": true
     },
     {
         "id": 6,
-        "alias": "pt"
+        "alias": "pt",
+        "isSupported": true
     },
     {
         "id": 7,
-        "alias": "hgss"
+        "alias": "hgss",
+        "isSupported": true
     },
     {
         "id": 8,
-        "alias": "bw"
+        "alias": "bw",
+        "isSupported": true
     },
     {
         "id": 9,
-        "alias": "c"
+        "alias": "c",
+        "isSupported": false
     },
     {
         "id": 10,
-        "alias": "x"
+        "alias": "x",
+        "isSupported": false
     },
     {
         "id": 11,
-        "alias": "bw2"
+        "alias": "bw2",
+        "isSupported": false
     },
     {
         "id": 12,
-        "alias": "xy"
+        "alias": "xy",
+        "isSupported": true
     },
     {
         "id": 13,
-        "alias": "oras"
+        "alias": "oras",
+        "isSupported": true
     },
     {
         "id": 14,
-        "alias": "sm"
+        "alias": "sm",
+        "isSupported": false
     },
     {
         "id": 15,
-        "alias": "usum"
+        "alias": "usum",
+        "isSupported": false
     }
 ]

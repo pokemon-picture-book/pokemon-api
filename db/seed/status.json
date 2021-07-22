@@ -6123,9 +6123,9 @@
         "pokemonId": 681,
         "hp": 60,
         "attack": 50,
-        "defense": 150,
+        "defense": 140,
         "specialAttack": 50,
-        "specialDefense": 150,
+        "specialDefense": 140,
         "speed": 60
     },
     {
