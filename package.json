@@ -7,8 +7,8 @@
   "license": "ISC",
   "scripts": {
     "start": "npm run build && node dist/app.js",
-    "dev": "npm run build:dev & nodemon ./dist/app.js",
-    "build:dev": "npm run clean && webpack --config webpack.dev.js --watch",
+    "dev": "npm run build:dev && nodemon ./dist/app.js",
+    "build:dev": "npm run clean && webpack --config webpack.dev.js --watch &",
     "build": "npm run clean && webpack --config webpack.prod.js",
     "clean": "rimraf dist/*",
     "scan": "sonar-scanner",
