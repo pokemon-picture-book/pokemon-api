@@ -19,9 +19,12 @@ export default class SearchPokemonMockInteractor
                       id: 1,
                       name: 'name',
                       imageColor: 'imageColor',
-                      gameImagePaths: ['gameImagePath'],
+                      gameImagePath: {
+                          mainPath: 'gameImagePathMain',
+                          otherPaths: ['gameImagePathOther'],
+                      },
                       imagePaths: ['imagePath'],
-                      types: ['type'],
+                      types: [{ code: 'typeCode', name: 'typeName' }],
                   },
               ]
             : [];

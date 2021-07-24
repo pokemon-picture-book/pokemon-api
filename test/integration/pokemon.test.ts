@@ -28,11 +28,13 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.length).toBe(actualNum);
 
                 // 一番古いゲームバージョンであるか
-                pokemons.forEach(({ gameImagePaths }) => {
+                pokemons.forEach(({ gameImagePath }) => {
+                    const gameImagePaths = gameImagePath.otherPaths.concat([
+                        gameImagePath.mainPath,
+                    ]);
                     const hasOldGame = gameImagePaths.every(
-                        (gameImagePath) =>
-                            gameImagePath.includes('/icon/') ||
-                            gameImagePath.includes('/rgby/')
+                        (path) =>
+                            path.includes('/icon/') || path.includes('/rgby/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -116,11 +118,13 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.length).toBe(actualNum);
 
                 // 金銀バージョンであるか
-                pokemons.forEach(({ gameImagePaths }) => {
+                pokemons.forEach(({ gameImagePath }) => {
+                    const gameImagePaths = gameImagePath.otherPaths.concat([
+                        gameImagePath.mainPath,
+                    ]);
                     const hasOldGame = gameImagePaths.every(
-                        (gameImagePath) =>
-                            gameImagePath.includes('/icon/') ||
-                            gameImagePath.includes('/gsc/')
+                        (path) =>
+                            path.includes('/icon/') || path.includes('/gsc/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -146,11 +150,13 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.length).toBe(actualNum);
 
                 // 金銀バージョンであるか
-                pokemons.forEach(({ gameImagePaths }) => {
+                pokemons.forEach(({ gameImagePath }) => {
+                    const gameImagePaths = gameImagePath.otherPaths.concat([
+                        gameImagePath.mainPath,
+                    ]);
                     const hasOldGame = gameImagePaths.every(
-                        (gameImagePath) =>
-                            gameImagePath.includes('/icon/') ||
-                            gameImagePath.includes('/rse/')
+                        (path) =>
+                            path.includes('/icon/') || path.includes('/rse/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -178,11 +184,13 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.length).toBe(actualNum);
 
                 // ブラック・ホワイトバージョンであるか
-                pokemons.forEach(({ gameImagePaths }) => {
+                pokemons.forEach(({ gameImagePath }) => {
+                    const gameImagePaths = gameImagePath.otherPaths.concat([
+                        gameImagePath.mainPath,
+                    ]);
                     const hasOldGame = gameImagePaths.every(
-                        (gameImagePath) =>
-                            gameImagePath.includes('/icon/') ||
-                            gameImagePath.includes('/bw/')
+                        (path) =>
+                            path.includes('/icon/') || path.includes('/bw/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });
@@ -254,11 +262,13 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.length).toBe(actualNum);
 
                 // 一番古いゲームバージョンであるか
-                pokemons.forEach(({ gameImagePaths }) => {
+                pokemons.forEach(({ gameImagePath }) => {
+                    const gameImagePaths = gameImagePath.otherPaths.concat([
+                        gameImagePath.mainPath,
+                    ]);
                     const hasOldGame = gameImagePaths.every(
-                        (gameImagePath) =>
-                            gameImagePath.includes('/icon/') ||
-                            gameImagePath.includes('/rgby/')
+                        (path) =>
+                            path.includes('/icon/') || path.includes('/rgby/')
                     );
                     expect(hasOldGame).toBeTruthy();
                 });

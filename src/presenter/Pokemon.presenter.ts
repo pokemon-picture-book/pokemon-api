@@ -15,8 +15,23 @@ export default class PokemonPresenter implements IPokemonPresenter {
                     id: p.id,
                     imageColor: p.imageColor,
                     name: pokemonName,
-                    gameImagePaths: p.pokemonGameImages.map(
-                        (pokemonGameImage) => pokemonGameImage.path
+                    gameImagePath: p.pokemonGameImages.reduce(
+                        (a, c) => {
+                            if (c.isMain) {
+                                return {
+                                    ...a,
+                                    mainPath: c.path,
+                                };
+                            }
+                            return {
+                                ...a,
+                                otherPaths: a.otherPaths.concat([c.path]),
+                            };
+                        },
+                        {
+                            mainPath: '',
+                            otherPaths: [],
+                        } as PokemonSearchResponse['gameImagePath']
                     ),
                     imagePaths: p.pokemonImages.map(
                         (pokemonImage) => pokemonImage.path

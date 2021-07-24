@@ -22,8 +22,8 @@ describe('Integration test for region', () => {
             .then((response) => {
                 const regions: RegionResponse[] = response.body;
 
-                // 英語データだと 7 件となる
-                expect(regions.length).toBe(7);
+                // 英語データだと 8 件となる
+                expect(regions.length).toBe(8);
 
                 // 英語の地域データであるか（最初の3つのデータだけで検証する）
                 const [kanto, johto, hoenn] = regions;

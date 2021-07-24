@@ -192,13 +192,18 @@ definitions:
       name:
         type: string
         example: 'ピカチュウ'
-      gameImagePaths:
-        type: array
-        items:
-          type: string
-          example:
-            - '/25/icon/1/1.gif'
-            - '/25/rgby/25.png'
+      gameImagePath:
+        type: object
+        properties:
+          mainPath:
+            type: string
+            example: '/25/rgby/25.png'
+          otherPaths:
+            type: array
+            items:
+              type: string
+              example:
+                - '/25/icon/1/1.gif'
       imagePaths:
         type: array
         items:

@@ -28,11 +28,19 @@ describe('Unit test for Pokemon presenter', () => {
         expect(pokemonSearchResponse.id).toBe(actual.id);
         expect(pokemonSearchResponse.imageColor).toBe(actual.imageColor);
         expect(pokemonSearchResponse.name).toBe(actual.pokemonNames[0].name);
-        actual.pokemonGameImages.forEach((gameImage, i) => {
-            expect(pokemonSearchResponse.gameImagePaths[i]).toBe(
-                gameImage.path
-            );
-        });
+
+        expect(
+            actual.pokemonGameImages.every((pokemonGameImage) => {
+                const {
+                    mainPath,
+                    otherPaths,
+                } = pokemonSearchResponse.gameImagePath;
+                return (
+                    mainPath === pokemonGameImage.path ||
+                    otherPaths.includes(pokemonGameImage.path)
+                );
+            })
+        ).toBeTruthy();
         actual.pokemonImages.forEach((image, i) => {
             expect(pokemonSearchResponse.imagePaths[i]).toBe(image.path);
         });
