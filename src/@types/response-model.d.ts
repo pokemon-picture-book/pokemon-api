@@ -30,7 +30,9 @@ declare module 'app-response-model' {
         GameVersionGroup,
         'id' | 'alias'
     > &
-        Pick<GameVersionName, 'name'>;
+        Pick<GameVersionName, 'name'> & {
+            relatedRegions: Pick<Region, 'id' | 'name'>[];
+        };
 
     export type RegionResponse = Pick<Region, 'id' | 'name'> & {
         displayName: RegionName['name'];

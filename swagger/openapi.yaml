@@ -235,6 +235,17 @@ definitions:
       name:
         type: string
         example: '赤/緑/ピカチュウ'
+      relatedRegions:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: integer
+              example: 1
+            name:
+              type: string
+              example: 'kanto'
   RegionListResponse:
     type: object
     properties:

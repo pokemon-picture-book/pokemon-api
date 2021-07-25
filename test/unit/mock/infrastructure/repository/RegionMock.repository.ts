@@ -5,10 +5,10 @@ import { injectable } from 'inversify';
 @injectable()
 export default class RegionMockRepository implements IRegionRepository {
     public async findByLanguageId(languageId: number): Promise<RegionEntity[]> {
-        return languageId ? [new RegionEntity(1, 'region', [], [])] : [];
+        return languageId ? [new RegionEntity(1, 'region', [], [], [])] : [];
     }
 
     public async findAllByNameIn(names: string[]): Promise<RegionEntity[]> {
-        return names.length ? [new RegionEntity(1, 'region', [], [])] : [];
+        return names.length ? [new RegionEntity(1, 'region', [], [], [])] : [];
     }
 }
