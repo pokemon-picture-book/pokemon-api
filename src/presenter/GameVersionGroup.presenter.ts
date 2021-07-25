@@ -9,8 +9,8 @@ export default class GameVersionGroupPresenter
     public toGameVersionGroupResponse(
         gameVersionGroups: GameVersionGroupEntity[]
     ): GameVersionGroupResponse[] {
-        return gameVersionGroups.map(
-            ({ id, alias, gameVersions }): GameVersionGroupResponse => {
+        return gameVersionGroups.map<GameVersionGroupResponse>(
+            ({ id, alias, gameVersions, gameVersionGroupRegions }) => {
                 return {
                     id,
                     alias,
@@ -20,6 +20,14 @@ export default class GameVersionGroupPresenter
                             return gameVersionName.name;
                         })
                         .join('/'),
+                    relatedRegions: gameVersionGroupRegions.map(
+                        ({ region }) => {
+                            return {
+                                id: region.id,
+                                name: region.name,
+                            };
+                        }
+                    ),
                 };
             }
         );

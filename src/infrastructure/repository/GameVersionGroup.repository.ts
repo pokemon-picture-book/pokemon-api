@@ -25,6 +25,11 @@ export default class GameVersionGroupRepository
                 'gameVersionName.language_id = :languageId',
                 { languageId }
             )
+            .leftJoinAndSelect(
+                'gameVersionGroup.gameVersionGroupRegions',
+                'gameVersionGroupRegion'
+            )
+            .leftJoinAndSelect('gameVersionGroupRegion.region', 'region')
             .where('gameVersionGroup.is_supported = :isSupported', {
                 isSupported,
             })

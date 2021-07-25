@@ -30,10 +30,13 @@ describe('Integration test for gameVersionGroup', () => {
                 const [rgby, gsc, rse] = gameVersionGroups;
                 expect(rgby.alias).toBe('rgby');
                 expect(rgby.name).toBe('Red/Blue/Yellow');
+                expect(rgby.relatedRegions).toHaveLength(1);
                 expect(gsc.alias).toBe('gsc');
                 expect(gsc.name).toBe('Gold/Silver/Crystal');
+                expect(gsc.relatedRegions).toHaveLength(2);
                 expect(rse.alias).toBe('rse');
                 expect(rse.name).toBe('Ruby/Sapphire/Emerald');
+                expect(rse.relatedRegions).toHaveLength(3);
 
                 done();
             });
@@ -57,10 +60,13 @@ describe('Integration test for gameVersionGroup', () => {
                 const [rgby, gsc, rse] = gameVersionGroups;
                 expect(rgby.alias).toBe('rgby');
                 expect(rgby.name).toBe('赤/緑/ピカチュウ');
+                expect(rgby.relatedRegions).toHaveLength(1);
                 expect(gsc.alias).toBe('gsc');
                 expect(gsc.name).toBe('金/銀/クリスタル');
+                expect(gsc.relatedRegions).toHaveLength(2);
                 expect(rse.alias).toBe('rse');
                 expect(rse.name).toBe('ルビー/サファイア/エメラルド');
+                expect(rse.relatedRegions).toHaveLength(3);
 
                 done();
             });
@@ -86,10 +92,13 @@ describe('Integration test for gameVersionGroup', () => {
                 const [colosseum, xd, bw2] = gameVersionGroups;
                 expect(colosseum.alias).toBe('c');
                 expect(colosseum.name).toBe('Colosseum');
+                expect(colosseum.relatedRegions).toHaveLength(0);
                 expect(xd.alias).toBe('x');
                 expect(xd.name).toBe('XD');
+                expect(xd.relatedRegions).toHaveLength(0);
                 expect(bw2.alias).toBe('bw2');
                 expect(bw2.name).toBe('Black 2/White 2');
+                expect(bw2.relatedRegions).toHaveLength(0);
 
                 done();
             });
@@ -117,10 +126,13 @@ describe('Integration test for gameVersionGroup', () => {
                 const [rgby, gsc, rse] = gameVersionGroups;
                 expect(rgby.alias).toBe('rgby');
                 expect(rgby.name).toBe('赤/緑/ピカチュウ');
+                expect(rgby.relatedRegions).toHaveLength(1);
                 expect(gsc.alias).toBe('gsc');
                 expect(gsc.name).toBe('金/銀/クリスタル');
+                expect(gsc.relatedRegions).toHaveLength(2);
                 expect(rse.alias).toBe('rse');
                 expect(rse.name).toBe('ルビー/サファイア/エメラルド');
+                expect(rse.relatedRegions).toHaveLength(3);
 
                 done();
             });
@@ -169,10 +181,13 @@ describe('Integration test for gameVersionGroup', () => {
                 const [rgby, gsc, rse] = gameVersionGroups;
                 expect(rgby.alias).toBe('rgby');
                 expect(rgby.name).toBe('Red/Blue/Yellow');
+                expect(rgby.relatedRegions).toHaveLength(1);
                 expect(gsc.alias).toBe('gsc');
                 expect(gsc.name).toBe('Gold/Silver/Crystal');
+                expect(gsc.relatedRegions).toHaveLength(2);
                 expect(rse.alias).toBe('rse');
                 expect(rse.name).toBe('Ruby/Sapphire/Emerald');
+                expect(rse.relatedRegions).toHaveLength(3);
 
                 done();
             });
