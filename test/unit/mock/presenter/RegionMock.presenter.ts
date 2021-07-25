@@ -12,6 +12,12 @@ export default class RegionMockPresenter implements IRegionPresenter {
                     id: 1,
                     name: 'name',
                     displayName: '',
+                    relatedGameVersionGroups: [
+                        {
+                            id: 1,
+                            alias: 'gameVersionGroupAlias',
+                        },
+                    ],
                 };
             }
         );

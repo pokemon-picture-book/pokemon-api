@@ -12,6 +12,14 @@ export default class RegionRepository implements IRegionRepository {
                 'regionName.language_id = :languageId',
                 { languageId }
             )
+            .innerJoinAndSelect(
+                'region.gameVersionGroupRegions',
+                'gameVersionGroupRegion'
+            )
+            .innerJoinAndSelect(
+                'gameVersionGroupRegion.gameVersionGroup',
+                'gameVersionGroup'
+            )
             .orderBy({
                 'region.id': 'ASC',
             })

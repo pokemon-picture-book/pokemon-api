@@ -259,6 +259,17 @@ definitions:
       displayName:
         type: string
         example: 'カントー地方'
+      relatedGameVersionGroups:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: integer
+              example: 1
+            alias:
+              type: string
+              example: 'rgby'
   LanguageListResponse:
     type: object
     properties:

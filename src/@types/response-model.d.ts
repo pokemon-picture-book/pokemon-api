@@ -36,6 +36,7 @@ declare module 'app-response-model' {
 
     export type RegionResponse = Pick<Region, 'id' | 'name'> & {
         displayName: RegionName['name'];
+        relatedGameVersionGroups: Pick<GameVersionGroup, 'id', 'alias'>[];
     };
 
     export type LanguageResponse = Pick<Language, 'id' | 'name' | 'labelName'>;

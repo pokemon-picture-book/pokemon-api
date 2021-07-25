@@ -22,17 +22,20 @@ describe('Integration test for region', () => {
             .then((response) => {
                 const regions: RegionResponse[] = response.body;
 
-                // 英語データだと 8 件となる
-                expect(regions.length).toBe(8);
+                // 現状、サポートしている地域の件数のみ取得する
+                expect(regions.length).toBe(6);
 
                 // 英語の地域データであるか（最初の3つのデータだけで検証する）
                 const [kanto, johto, hoenn] = regions;
                 expect(kanto.name).toBe('kanto');
                 expect(kanto.displayName).toBe('Kanto');
+                expect(kanto.relatedGameVersionGroups).toHaveLength(10);
                 expect(johto.name).toBe('johto');
                 expect(johto.displayName).toBe('Johto');
+                expect(johto.relatedGameVersionGroups).toHaveLength(9);
                 expect(hoenn.name).toBe('hoenn');
                 expect(hoenn.displayName).toBe('Hoenn');
+                expect(hoenn.relatedGameVersionGroups).toHaveLength(8);
 
                 done();
             });
@@ -51,17 +54,20 @@ describe('Integration test for region', () => {
             .then((response) => {
                 const regions: RegionResponse[] = response.body;
 
-                // 日本語データだと 6 件となる
+                // 現状、サポートしている地域の件数のみ取得する
                 expect(regions.length).toBe(6);
 
                 // 日本語の地域データであるか（最初の3つのデータだけで検証する）
                 const [kanto, johto, hoenn] = regions;
                 expect(kanto.name).toBe('kanto');
                 expect(kanto.displayName).toBe('カントー地方');
+                expect(kanto.relatedGameVersionGroups).toHaveLength(10);
                 expect(johto.name).toBe('johto');
                 expect(johto.displayName).toBe('ジョウト地方');
+                expect(johto.relatedGameVersionGroups).toHaveLength(9);
                 expect(hoenn.name).toBe('hoenn');
                 expect(hoenn.displayName).toBe('ホウエン地方');
+                expect(hoenn.relatedGameVersionGroups).toHaveLength(8);
 
                 done();
             });
