@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "gameVersionGroupId": 1,
+        "regionId": 1
+    },
+    {
+        "id": 2,
+        "gameVersionGroupId": 2,
+        "regionId": 1
+    },
+    {
+        "id": 3,
+        "gameVersionGroupId": 2,
+        "regionId": 2
+    },
+    {
+        "id": 4,
+        "gameVersionGroupId": 3,
+        "regionId": 1
+    },
+    {
+        "id": 5,
+        "gameVersionGroupId": 3,
+        "regionId": 2
+    },
+    {
+        "id": 6,
+        "gameVersionGroupId": 3,
+        "regionId": 3
+    },
+    {
+        "id": 7,
+        "gameVersionGroupId": 4,
+        "regionId": 1
+    },
+    {
+        "id": 8,
+        "gameVersionGroupId": 4,
+        "regionId": 2
+    },
+    {
+        "id": 9,
+        "gameVersionGroupId": 4,
+        "regionId": 3
+    },
+    {
+        "id": 10,
+        "gameVersionGroupId": 5,
+        "regionId": 1
+    },
+    {
+        "id": 11,
+        "gameVersionGroupId": 5,
+        "regionId": 2
+    },
+    {
+        "id": 12,
+        "gameVersionGroupId": 5,
+        "regionId": 3
+    },
+    {
+        "id": 13,
+        "gameVersionGroupId": 5,
+        "regionId": 4
+    },
+    {
+        "id": 14,
+        "gameVersionGroupId": 6,
+        "regionId": 1
+    },
+    {
+        "id": 15,
+        "gameVersionGroupId": 6,
+        "regionId": 2
+    },
+    {
+        "id": 16,
+        "gameVersionGroupId": 6,
+        "regionId": 3
+    },
+    {
+        "id": 17,
+        "gameVersionGroupId": 6,
+        "regionId": 4
+    },
+    {
+        "id": 18,
+        "gameVersionGroupId": 7,
+        "regionId": 1
+    },
+    {
+        "id": 19,
+        "gameVersionGroupId": 7,
+        "regionId": 2
+    },
+    {
+        "id": 20,
+        "gameVersionGroupId": 7,
+        "regionId": 3
+    },
+    {
+        "id": 21,
+        "gameVersionGroupId": 7,
+        "regionId": 4
+    },
+    {
+        "id": 22,
+        "gameVersionGroupId": 8,
+        "regionId": 1
+    },
+    {
+        "id": 23,
+        "gameVersionGroupId": 8,
+        "regionId": 2
+    },
+    {
+        "id": 24,
+        "gameVersionGroupId": 8,
+        "regionId": 3
+    },
+    {
+        "id": 25,
+        "gameVersionGroupId": 8,
+        "regionId": 4
+    },
+    {
+        "id": 26,
+        "gameVersionGroupId": 8,
+        "regionId": 5
+    },
+    {
+        "id": 27,
+        "gameVersionGroupId": 12,
+        "regionId": 1
+    },
+    {
+        "id": 28,
+        "gameVersionGroupId": 12,
+        "regionId": 2
+    },
+    {
+        "id": 29,
+        "gameVersionGroupId": 12,
+        "regionId": 3
+    },
+    {
+        "id": 30,
+        "gameVersionGroupId": 12,
+        "regionId": 4
+    },
+    {
+        "id": 31,
+        "gameVersionGroupId": 12,
+        "regionId": 5
+    },
+    {
+        "id": 32,
+        "gameVersionGroupId": 12,
+        "regionId": 6
+    },
+    {
+        "id": 33,
+        "gameVersionGroupId": 13,
+        "regionId": 1
+    },
+    {
+        "id": 34,
+        "gameVersionGroupId": 13,
+        "regionId": 2
+    },
+    {
+        "id": 35,
+        "gameVersionGroupId": 13,
+        "regionId": 3
+    },
+    {
+        "id": 36,
+        "gameVersionGroupId": 13,
+        "regionId": 4
+    },
+    {
+        "id": 37,
+        "gameVersionGroupId": 13,
+        "regionId": 5
+    },
+    {
+        "id": 38,
+        "gameVersionGroupId": 13,
+        "regionId": 6
+    }
+]

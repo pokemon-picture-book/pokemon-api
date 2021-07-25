@@ -3,6 +3,7 @@ declare module 'app-entity' {
     import FlavorTextEntryEntity from '@/domain/entity/FlavorTextEntry.entity';
     import GameVersionEntity from '@/domain/entity/GameVersion.entity';
     import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
+    import GameVersionGroupRegionEntity from '@/domain/entity/GameVersionGroupRegion.entity';
     import GameVersionNameEntity from '@/domain/entity/GameVersionName.entity';
     import GeneraEntity from '@/domain/entity/Genera.entity';
     import LanguageEntity from '@/domain/entity/Language.entity';
@@ -22,6 +23,9 @@ declare module 'app-entity' {
     export type FlavorTextEntry = InstanceType<typeof FlavorTextEntryEntity>;
     export type GameVersion = InstanceType<typeof GameVersionEntity>;
     export type GameVersionGroup = InstanceType<typeof GameVersionGroupEntity>;
+    export type GameVersionGroupRegion = InstanceType<
+        typeof GameVersionGroupRegionEntity
+    >;
     export type GameVersionName = InstanceType<typeof GameVersionNameEntity>;
     export type Genera = InstanceType<typeof GeneraEntity>;
     export type Language = InstanceType<typeof LanguageEntity>;

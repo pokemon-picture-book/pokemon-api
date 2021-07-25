@@ -2,6 +2,7 @@ import EvolutionEntity from './Evolution.entity';
 import FlavorTextEntryEntity from './FlavorTextEntry.entity';
 import GameVersionEntity from './GameVersion.entity';
 import GameVersionGroupEntity from './GameVersionGroup.entity';
+import GameVersionGroupRegionEntity from './GameVersionGroupRegion.entity';
 import GameVersionNameEntity from './GameVersionName.entity';
 import GeneraEntity from './Genera.entity';
 import LanguageEntity from './Language.entity';
@@ -22,6 +23,7 @@ export default [
     FlavorTextEntryEntity,
     GameVersionEntity,
     GameVersionGroupEntity,
+    GameVersionGroupRegionEntity,
     GameVersionNameEntity,
     GeneraEntity,
     LanguageEntity,

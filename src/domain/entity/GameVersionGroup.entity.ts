@@ -2,6 +2,7 @@
 import { BaseEntity, Column, Entity, PrimaryColumn, OneToMany } from 'typeorm';
 import GameVersionEntity from './GameVersion.entity';
 import PokemonGameImageEntity from './PokemonGameImage.entity';
+import GameVersionGroupRegionEntity from './GameVersionGroupRegion.entity';
 
 @Entity({ name: 'game_version_groups' })
 class GameVersionGroupEntity extends BaseEntity {
@@ -38,6 +39,12 @@ class GameVersionGroupEntity extends BaseEntity {
         (pokemonGameImage) => pokemonGameImage.gameVersionGroup
     )
     readonly pokemonGameImages: PokemonGameImageEntity[];
+
+    @OneToMany(
+        () => GameVersionGroupRegionEntity,
+        (gameVersionGroupRegion) => gameVersionGroupRegion.gameVersionGroup
+    )
+    readonly gameVersionGroupRegions: GameVersionGroupRegionEntity[];
 
     public refer(): void {
         console.table(this);
