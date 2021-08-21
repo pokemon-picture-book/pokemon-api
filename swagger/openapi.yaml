@@ -204,13 +204,6 @@ definitions:
               type: string
               example:
                 - '/25/icon/1/1.gif'
-      imagePaths:
-        type: array
-        items:
-          type: string
-          example:
-            - '/25/footmark/25.png'
-            - '/25/overworld/25-1.gif'
       types:
         type: array
         items:

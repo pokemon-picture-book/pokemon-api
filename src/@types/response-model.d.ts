@@ -19,7 +19,6 @@ declare module 'app-response-model' {
                 mainPath: PokemonGameImage['path'];
                 otherPaths: PokemonGameImage['path'][];
             };
-            imagePaths: PokemonImage['path'][];
             types: {
                 code: Type['name'];
                 name: TypeName['name'];

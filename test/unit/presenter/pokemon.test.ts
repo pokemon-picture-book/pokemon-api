@@ -48,9 +48,6 @@ describe('Unit test for Pokemon presenter', () => {
                 );
             })
         ).toBeTruthy();
-        actual.pokemonImages.forEach((image, i) => {
-            expect(pokemonSearchResponse.imagePaths[i]).toBe(image.path);
-        });
         actual.pokemonTypes.forEach((type, i) => {
             const { code, name } = pokemonSearchResponse.types[i];
             expect(code).toBe(type.type.name);

@@ -33,9 +33,6 @@ export default class PokemonPresenter implements IPokemonPresenter {
                             otherPaths: [],
                         } as PokemonSearchResponse['gameImagePath']
                     ),
-                    imagePaths: p.pokemonImages.map(
-                        (pokemonImage) => pokemonImage.path
-                    ),
                     types: p.pokemonTypes.map(({ type }) => {
                         const [{ name: typeName }] = type.typeNames;
                         return { code: type.name, name: typeName };

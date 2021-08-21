@@ -33,7 +33,6 @@ export default class PokemonRepository implements IPokemonRepository {
                 'pokemonName.language_id = :languageId',
                 { languageId: whereParam.languageId }
             )
-            .leftJoinAndSelect('pokemon.pokemonImages', 'pokemonImage')
             .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
             .innerJoinAndMapOne(
                 'pokemonType.type',
