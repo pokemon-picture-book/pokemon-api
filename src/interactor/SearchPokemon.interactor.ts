@@ -3,6 +3,7 @@ import 'reflect-metadata';
 
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import TYPES from '@/registory/inversify.types';
+import { getDefaultSet } from '@/domain/function/game-region.function';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import PokemonEntity from '@/domain/entity/Pokemon.entity';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
@@ -29,24 +30,65 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
     private presenter: IPokemonPresenter;
 
     public async search(
-        languageName: string,
-        gameVersionGroupAlias: string,
-        regionNames: string[]
+        requestParam: {
+            languageName?: string;
+            gameVersionGroupAlias?: string;
+            regionNames?: string[];
+        },
+        pageParam: {
+            offset?: number;
+            limit?: number;
+        }
     ): Promise<PokemonSearchResponse[]> {
-        const [language, gameVersionGroup, regions] = await Promise.all([
-            this.languageRepository.findByName(languageName),
-            this.gameVersionGroupRepository.findByAlias(gameVersionGroupAlias),
-            this.regionRepository.findAllByNameIn(regionNames),
+        const {
+            languageName,
+            gameVersionGroupAlias,
+            regionNames,
+        } = requestParam;
+        const language = await this.languageRepository.findByName(
+            languageName || 'en'
+        );
+        if (!language) {
+            return [];
+        }
+
+        const [allGames, allRegions] = await Promise.all([
+            this.gameVersionGroupRepository.findAllByIsSupported(
+                language.id,
+                true
+            ),
+            this.regionRepository.findByLanguageId(language.id),
         ]);
 
-        if (!language || !gameVersionGroup || !regions.length) {
+        const gameRegion = getDefaultSet(
+            {
+                game: gameVersionGroupAlias || '',
+                regions: regionNames || [],
+            },
+            {
+                allGames,
+                allRegions,
+            }
+        );
+        const [gameVersionGroup, regions] = await Promise.all([
+            this.gameVersionGroupRepository.findByAlias(gameRegion.game),
+            this.regionRepository.findAllByNameIn(gameRegion.regions),
+        ]);
+
+        if (!(gameVersionGroup && regions.length)) {
             return [];
         }
 
         const pokemons: PokemonEntity[] = await this.repository.findAll(
-            language.id,
-            gameVersionGroup.id,
-            regions.map(({ id }) => id)
+            {
+                languageId: language.id,
+                gameVersionGroupId: gameVersionGroup.id,
+                regionIds: regions.map(({ id }) => id),
+            },
+            {
+                offset: pageParam?.offset,
+                limit: pageParam?.limit,
+            }
         );
         return this.presenter.toPokemonSearchResponse(pokemons);
     }

@@ -46,6 +46,23 @@ class GameVersionGroupEntity extends BaseEntity {
     )
     readonly gameVersionGroupRegions: GameVersionGroupRegionEntity[];
 
+    constructor(
+        id: number,
+        alias: string,
+        isSupported: boolean,
+        gameVersions: GameVersionEntity[],
+        pokemonGameImages: PokemonGameImageEntity[],
+        gameVersionGroupRegions: GameVersionGroupRegionEntity[]
+    ) {
+        super();
+        this.id = id;
+        this.alias = alias;
+        this.isSupported = isSupported;
+        this.gameVersions = gameVersions;
+        this.pokemonGameImages = pokemonGameImages;
+        this.gameVersionGroupRegions = gameVersionGroupRegions;
+    }
+
     public refer(): void {
         console.table(this);
     }

@@ -1,4 +1,3 @@
-import { getDefaultSet } from '@/domain/function/game-region.function';
 import TYPES from '@/registory/inversify.types';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import { SearchPokemonQueryParam } from 'app-request-model';
@@ -25,13 +24,17 @@ export default class PokemonController {
             return;
         }
 
-        const { lang, game, regions } = request.query;
-        const gameResion = getDefaultSet(game, regions);
-
+        const { lang, game, regions, offset, limit } = request.query;
         const result: PokemonSearchResponse[] = await this.usecase.search(
-            lang || 'en',
-            gameResion.game,
-            gameResion.regions
+            {
+                languageName: lang,
+                gameVersionGroupAlias: game,
+                regionNames: regions,
+            },
+            {
+                offset,
+                limit,
+            }
         );
 
         if (!result.length) {

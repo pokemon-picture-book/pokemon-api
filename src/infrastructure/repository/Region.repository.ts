@@ -22,6 +22,7 @@ export default class RegionRepository implements IRegionRepository {
             )
             .orderBy({
                 'region.id': 'ASC',
+                'gameVersionGroup.id': 'ASC',
             })
             .getMany();
     }

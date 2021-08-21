@@ -2,8 +2,14 @@ import { PokemonSearchResponse } from 'app-response-model';
 
 export default interface ISearchPokemonUsecase {
     search(
-        languageName: string,
-        gameVersionGroupAlias: string,
-        regionNames: string[]
+        requestParam: {
+            languageName?: string;
+            gameVersionGroupAlias?: string;
+            regionNames?: string[];
+        },
+        pageParam: {
+            offset?: number;
+            limit?: number;
+        }
     ): Promise<PokemonSearchResponse[]>;
 }

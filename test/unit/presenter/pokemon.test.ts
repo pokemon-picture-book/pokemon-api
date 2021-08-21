@@ -18,7 +18,14 @@ describe('Unit test for Pokemon presenter', () => {
     });
 
     test('正常: 正しくマッピングできているか', async (done) => {
-        const pokemons = await repository.findAll(1, 1, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 1,
+                regionIds: [1],
+            },
+            {}
+        );
 
         const [pokemonSearchResponse] = presenter.toPokemonSearchResponse(
             pokemons

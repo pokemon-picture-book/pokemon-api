@@ -7,12 +7,21 @@ import 'reflect-metadata';
 export default class SearchPokemonMockInteractor
     implements ISearchPokemonUsecase {
     public async search(
-        languageName: string,
-        gameVersionGroupAlias: string,
-        regionNames: string[]
+        requestParam: {
+            languageName?: string | undefined;
+            gameVersionGroupAlias?: string | undefined;
+            regionNames?: string[] | undefined;
+        },
+        _: { offset?: number | undefined; limit?: number | undefined }
     ): Promise<PokemonSearchResponse[]> {
+        const {
+            languageName,
+            gameVersionGroupAlias,
+            regionNames,
+        } = requestParam;
         return languageName === 'en' &&
             gameVersionGroupAlias === 'rgby' &&
+            regionNames &&
             regionNames.length
             ? [
                   {

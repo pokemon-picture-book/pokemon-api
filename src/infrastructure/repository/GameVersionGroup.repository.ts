@@ -33,6 +33,11 @@ export default class GameVersionGroupRepository
             .where('gameVersionGroup.is_supported = :isSupported', {
                 isSupported,
             })
+            .orderBy({
+                'gameVersionGroup.id': 'ASC',
+                'gameVersion.id': 'ASC',
+                'region.id': 'ASC',
+            })
             .getMany();
     }
 }
