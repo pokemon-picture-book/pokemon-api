@@ -70,9 +70,15 @@ paths:
         200:
           description: 通信が正常に成功した場合
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/PokemonListResponse'
+            type: object
+            properties:
+              hits:
+                type: number
+                example: 151
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/PokemonListResponseData'
         204:
           description: データが見つからなかった場合
           schema:
@@ -187,7 +193,7 @@ paths:
                 type: string
                 example: 'No Content!'
 definitions:
-  PokemonListResponse:
+  PokemonListResponseData:
     type: object
     properties:
       id:
