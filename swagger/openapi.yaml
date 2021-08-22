@@ -51,6 +51,14 @@ paths:
         type: array
         items:
           type: string
+      - name: offset
+        in: query
+        description: Offset
+        type: number
+      - name: limit
+        in: query
+        description: Limit
+        type: number
       summary: ポケモン一覧取得
       description: |-
         ## 詳細
@@ -62,9 +70,15 @@ paths:
         200:
           description: 通信が正常に成功した場合
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/PokemonListResponse'
+            type: object
+            properties:
+              hits:
+                type: number
+                example: 151
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/PokemonListResponseData'
         204:
           description: データが見つからなかった場合
           schema:
@@ -179,7 +193,7 @@ paths:
                 type: string
                 example: 'No Content!'
 definitions:
-  PokemonListResponse:
+  PokemonListResponseData:
     type: object
     properties:
       id:
@@ -204,13 +218,6 @@ definitions:
               type: string
               example:
                 - '/25/icon/1/1.gif'
-      imagePaths:
-        type: array
-        items:
-          type: string
-          example:
-            - '/25/footmark/25.png'
-            - '/25/overworld/25-1.gif'
       types:
         type: array
         items:
@@ -259,6 +266,17 @@ definitions:
       displayName:
         type: string
         example: 'カントー地方'
+      relatedGameVersionGroups:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: integer
+              example: 1
+            alias:
+              type: string
+              example: 'rgby'
   LanguageListResponse:
     type: object
     properties:

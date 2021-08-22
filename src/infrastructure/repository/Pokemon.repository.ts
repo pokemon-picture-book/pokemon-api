@@ -3,34 +3,34 @@ import TypeEntity from '@/domain/entity/Type.entity';
 import TypeNameEntity from '@/domain/entity/TypeName.entity';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import { injectable } from 'inversify';
+import { SelectQueryBuilder } from 'typeorm';
 
 @injectable()
 export default class PokemonRepository implements IPokemonRepository {
-    public findAll(
-        languageId: number,
-        gameVersionGroupId: number,
-        regionIds: number[]
-    ): Promise<PokemonEntity[]> {
+    private commonFindAllQueryBuilder(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }): SelectQueryBuilder<PokemonEntity> {
         return PokemonEntity.createQueryBuilder('pokemon')
             .innerJoin(
                 'pokemon.region',
                 'region',
                 'region.id IN (:regionIds)',
-                { regionIds }
+                { regionIds: whereParam.regionIds }
             )
             .innerJoinAndSelect(
                 'pokemon.pokemonGameImages',
                 'pokemonGameImage',
                 'pokemonGameImage.game_version_group_id = :gameVersionGroupId',
-                { gameVersionGroupId }
+                { gameVersionGroupId: whereParam.gameVersionGroupId }
             )
             .innerJoinAndSelect(
                 'pokemon.pokemonNames',
                 'pokemonName',
                 'pokemonName.language_id = :languageId',
-                { languageId }
+                { languageId: whereParam.languageId }
             )
-            .leftJoinAndSelect('pokemon.pokemonImages', 'pokemonImage')
             .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
             .innerJoinAndMapOne(
                 'pokemonType.type',
@@ -43,12 +43,32 @@ export default class PokemonRepository implements IPokemonRepository {
                 TypeNameEntity,
                 'typeName',
                 'type.id = typeName.type_id AND typeName.language_id = :languageId',
-                { languageId }
-            )
+                { languageId: whereParam.languageId }
+            );
+    }
+
+    public findAll(
+        whereParam: {
+            languageId: number;
+            gameVersionGroupId: number;
+            regionIds: number[];
+        },
+        pageParam: { offset?: number; limit?: number }
+    ): Promise<PokemonEntity[]> {
+        return this.commonFindAllQueryBuilder(whereParam)
+            .take(pageParam.limit)
+            .skip(pageParam.offset)
             .orderBy({
                 'pokemon.id': 'ASC',
-                'pokemonType.order': 'ASC',
             })
             .getMany();
+    }
+
+    public findAllCount(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }): Promise<number> {
+        return this.commonFindAllQueryBuilder(whereParam).getCount();
     }
 }

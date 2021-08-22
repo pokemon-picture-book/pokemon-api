@@ -15,7 +15,14 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('正常: languageId を指定した場合、正しい結果が取得できているか', async (done) => {
-        const pokemons = await repository.findAll(1, 1, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 1,
+                regionIds: [1],
+            },
+            {}
+        );
         const [bulbasaur, ivysaur, venusaur] = pokemons;
 
         const [{ name: bulbasaurName }] = bulbasaur.pokemonNames;
@@ -46,7 +53,14 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('正常: gameVersionGroupId を指定した場合、正しい結果が取得できているか', async (done) => {
-        const pokemons = await repository.findAll(1, 1, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 1,
+                regionIds: [1],
+            },
+            {}
+        );
 
         pokemons.forEach(({ pokemonGameImages }) => {
             const hasRgbyGame = pokemonGameImages.every(
@@ -59,7 +73,14 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('正常: regionIds を指定した場合、正しい結果が取得できているか', async (done) => {
-        const pokemons = await repository.findAll(1, 2, [1, 2]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 2,
+                regionIds: [1, 2],
+            },
+            {}
+        );
 
         const actualNum = getRegionPokemonNum('kanto', 'johto');
         expect(pokemons.length).toBe(actualNum);
@@ -68,7 +89,14 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('正常: ID でソートされているか', async (done) => {
-        const pokemons = await repository.findAll(1, 1, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 1,
+                regionIds: [1],
+            },
+            {}
+        );
 
         pokemons.forEach((pokemon, i) => {
             expect(pokemon.id).toBe(i + 1);
@@ -78,19 +106,40 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
-        const pokemons = await repository.findAll(99999, 1, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 99999,
+                gameVersionGroupId: 1,
+                regionIds: [1],
+            },
+            {}
+        );
         expect(pokemons.length).toBe(0);
         done();
     });
 
     test('異常: gameVersionGroupId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
-        const pokemons = await repository.findAll(1, 99999, [1]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 99999,
+                regionIds: [1],
+            },
+            {}
+        );
         expect(pokemons.length).toBe(0);
         done();
     });
 
     test('異常: regionIds に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
-        const pokemons = await repository.findAll(1, 1, [99999]);
+        const pokemons = await repository.findAll(
+            {
+                languageId: 1,
+                gameVersionGroupId: 1,
+                regionIds: [99999],
+            },
+            {}
+        );
         expect(pokemons.length).toBe(0);
         done();
     });

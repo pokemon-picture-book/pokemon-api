@@ -9,8 +9,8 @@ export default class LanguageMockRepository implements ILanguageRepository {
     }
 
     public async findByName(name: string): Promise<LanguageEntity | undefined> {
-        return name
-            ? new LanguageEntity(1, 'testLang', [], [], [], [], [], [])
+        return name === 'en'
+            ? new LanguageEntity(0, name, [], [], [], [], [], [])
             : undefined;
     }
 }

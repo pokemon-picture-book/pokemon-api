@@ -8,15 +8,31 @@ describe('Unit test for SearchPokemon interactor', () => {
         TYPES.ISearchPokemonUsecase
     );
 
-    test('正常: 正常なパラメータで call した場合、空配列ではないか', async (done) => {
-        const pokemons = await usecase.search('test1', 'test2', ['test3']);
-        expect(pokemons.length).not.toBe(0);
+    test('異常: 言語に対し異常なパラメータで call した場合、空配列であるか', async (done) => {
+        const pokemons = await usecase.search(
+            {
+                languageName: 'xxxxx',
+                gameVersionGroupAlias: '',
+                regionNames: [''],
+            },
+            {}
+        );
+        expect(pokemons.hits).toBe(0);
+        expect(pokemons.data.length).toBe(0);
         done();
     });
 
-    test('異常: 異常なパラメータで call した場合、空配列であるか', async (done) => {
-        const pokemons = await usecase.search('', '', ['']);
-        expect(pokemons.length).toBe(0);
+    test('異常: ゲーム・地域に対し異常なパラメータで call した場合、空配列であるか', async (done) => {
+        const pokemons = await usecase.search(
+            {
+                languageName: '',
+                gameVersionGroupAlias: '',
+                regionNames: [''],
+            },
+            {}
+        );
+        expect(pokemons.hits).toBe(0);
+        expect(pokemons.data.length).toBe(0);
         done();
     });
 });

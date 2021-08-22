@@ -1,6 +1,10 @@
 import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
 import PokemonController from '@/controller/Pokemon.controller';
 import { langQueryValidator } from '@/controller/validator/common';
+import {
+    limitQueryValidator,
+    offsetQueryValidator,
+} from '@/controller/validator/pagination';
 import { supportedQueryValidator } from '@/controller/validator/game-version-group';
 import container from '@/registory/inversify.config';
 import TYPES from '@/registory/inversify.types';
@@ -27,7 +31,11 @@ export default {
                 {
                     method: 'get',
                     path: '/',
-                    validator: [langQueryValidator],
+                    validator: [
+                        langQueryValidator,
+                        limitQueryValidator,
+                        offsetQueryValidator,
+                    ],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
                         const pokemonControllerContainer = container.get<PokemonController>(
                             TYPES.PokemonController

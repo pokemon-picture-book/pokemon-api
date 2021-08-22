@@ -6,10 +6,12 @@ import { PokemonSearchResponse } from 'app-response-model';
 @injectable()
 export default class PokemonMockPresenter implements IPokemonPresenter {
     public toPokemonSearchResponse(
+        hits: number,
         pokemons: PokemonEntity[]
-    ): PokemonSearchResponse[] {
-        return pokemons.map(
-            (): PokemonSearchResponse => {
+    ): PokemonSearchResponse {
+        return {
+            hits,
+            data: pokemons.map<PokemonSearchResponse['data'][number]>(() => {
                 return {
                     id: 1,
                     imageColor: 'imageColor',
@@ -18,10 +20,9 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
                         mainPath: 'gameImagePathMain',
                         otherPaths: ['gameImagePathSub'],
                     },
-                    imagePaths: ['imagePath'],
                     types: [{ code: 'code', name: 'name' }],
                 };
-            }
-        );
+            }),
+        };
     }
 }

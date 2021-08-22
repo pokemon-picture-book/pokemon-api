@@ -6,6 +6,8 @@ declare module 'app-request-model' {
     export type SearchPokemonQueryParam = LangQueryParam & {
         game?: string;
         regions?: string[];
+        offset?: number;
+        limit?: number;
     };
 
     export type GameVersionGroupQueryParam = LangQueryParam & {
