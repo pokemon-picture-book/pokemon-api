@@ -15,7 +15,10 @@ describe('Unit test for SearchPokemon interactor', () => {
                 gameVersionGroupAlias: '',
                 regionNames: [''],
             },
-            {}
+            {
+                offset: 1,
+                limit: 1,
+            }
         );
         expect(pokemons.hits).toBe(0);
         expect(pokemons.data.length).toBe(0);
@@ -29,7 +32,10 @@ describe('Unit test for SearchPokemon interactor', () => {
                 gameVersionGroupAlias: '',
                 regionNames: [''],
             },
-            {}
+            {
+                offset: 1,
+                limit: 1,
+            }
         );
         expect(pokemons.hits).toBe(0);
         expect(pokemons.data.length).toBe(0);
