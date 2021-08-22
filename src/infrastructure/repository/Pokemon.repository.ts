@@ -3,17 +3,15 @@ import TypeEntity from '@/domain/entity/Type.entity';
 import TypeNameEntity from '@/domain/entity/TypeName.entity';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import { injectable } from 'inversify';
+import { SelectQueryBuilder } from 'typeorm';
 
 @injectable()
 export default class PokemonRepository implements IPokemonRepository {
-    public findAll(
-        whereParam: {
-            languageId: number;
-            gameVersionGroupId: number;
-            regionIds: number[];
-        },
-        pageParam: { offset?: number; limit?: number }
-    ): Promise<PokemonEntity[]> {
+    private commonFindAllQueryBuilder(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }): SelectQueryBuilder<PokemonEntity> {
         return PokemonEntity.createQueryBuilder('pokemon')
             .innerJoin(
                 'pokemon.region',
@@ -46,13 +44,31 @@ export default class PokemonRepository implements IPokemonRepository {
                 'typeName',
                 'type.id = typeName.type_id AND typeName.language_id = :languageId',
                 { languageId: whereParam.languageId }
-            )
-            .offset(pageParam.offset)
-            .limit(pageParam.limit)
+            );
+    }
+
+    public findAll(
+        whereParam: {
+            languageId: number;
+            gameVersionGroupId: number;
+            regionIds: number[];
+        },
+        pageParam: { offset?: number; limit?: number }
+    ): Promise<PokemonEntity[]> {
+        return this.commonFindAllQueryBuilder(whereParam)
+            .take(pageParam.limit)
+            .skip(pageParam.offset)
             .orderBy({
                 'pokemon.id': 'ASC',
-                'pokemonType.order': 'ASC',
             })
             .getMany();
+    }
+
+    public findAllCount(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }): Promise<number> {
+        return this.commonFindAllQueryBuilder(whereParam).getCount();
     }
 }

@@ -40,7 +40,7 @@ describe('Unit test for Pokemon controller', () => {
         );
 
         expect(res.status.mock.calls[0][0]).toBe(200);
-        expect(res.json.mock.calls[0][0].length).toBe(1);
+        expect(res.json.mock.calls[0][0].hits).toBe(1);
 
         done();
     });

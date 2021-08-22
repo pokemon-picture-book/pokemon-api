@@ -51,6 +51,14 @@ paths:
         type: array
         items:
           type: string
+      - name: offset
+        in: query
+        description: Offset
+        type: number
+      - name: limit
+        in: query
+        description: Limit
+        type: number
       summary: ポケモン一覧取得
       description: |-
         ## 詳細

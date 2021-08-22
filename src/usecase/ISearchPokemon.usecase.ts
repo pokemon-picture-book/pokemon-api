@@ -8,8 +8,8 @@ export default interface ISearchPokemonUsecase {
             regionNames?: string[];
         },
         pageParam: {
-            offset?: number;
-            limit?: number;
+            offset: number;
+            limit: number;
         }
-    ): Promise<PokemonSearchResponse[]>;
+    ): Promise<PokemonSearchResponse>;
 }

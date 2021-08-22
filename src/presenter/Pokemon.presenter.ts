@@ -6,10 +6,12 @@ import { injectable } from 'inversify';
 @injectable()
 export default class PokemonPresenter implements IPokemonPresenter {
     public toPokemonSearchResponse(
+        hits: number,
         pokemons: PokemonEntity[]
-    ): PokemonSearchResponse[] {
-        return pokemons.map(
-            (p): PokemonSearchResponse => {
+    ): PokemonSearchResponse {
+        return {
+            hits,
+            data: pokemons.map<PokemonSearchResponse['data'][number]>((p) => {
                 const [{ name: pokemonName }] = p.pokemonNames;
                 return {
                     id: p.id,
@@ -30,15 +32,15 @@ export default class PokemonPresenter implements IPokemonPresenter {
                         },
                         {
                             mainPath: '',
-                            otherPaths: [],
-                        } as PokemonSearchResponse['gameImagePath']
+                            otherPaths: [] as string[],
+                        }
                     ),
                     types: p.pokemonTypes.map(({ type }) => {
                         const [{ name: typeName }] = type.typeNames;
                         return { code: type.name, name: typeName };
                     }),
                 };
-            }
-        );
+            }),
+        };
     }
 }

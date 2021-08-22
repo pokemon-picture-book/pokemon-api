@@ -17,4 +17,13 @@ export default class PokemonMockRepository implements IPokemonRepository {
             ? [new PokemonEntity()]
             : [];
     }
+
+    public async findAllCount(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }) {
+        const { languageId, gameVersionGroupId, regionIds } = whereParam;
+        return languageId || gameVersionGroupId || regionIds.length ? 1 : 0;
+    }
 }

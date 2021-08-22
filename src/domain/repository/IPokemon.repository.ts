@@ -12,4 +12,10 @@ export default interface IPokemonRepository {
             limit?: number;
         }
     ): Promise<PokemonEntity[]>;
+
+    findAllCount(whereParam: {
+        languageId: number;
+        gameVersionGroupId: number;
+        regionIds: number[];
+    }): Promise<number>;
 }

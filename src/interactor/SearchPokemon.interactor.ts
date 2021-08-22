@@ -5,7 +5,6 @@ import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
 import TYPES from '@/registory/inversify.types';
 import { getDefaultSet } from '@/domain/function/game-region.function';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
-import PokemonEntity from '@/domain/entity/Pokemon.entity';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import ILanguageRepository from '@/domain/repository/ILanguage.repository';
 import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
@@ -36,10 +35,10 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             regionNames?: string[];
         },
         pageParam: {
-            offset?: number;
-            limit?: number;
+            offset: number;
+            limit: number;
         }
-    ): Promise<PokemonSearchResponse[]> {
+    ): Promise<PokemonSearchResponse> {
         const {
             languageName,
             gameVersionGroupAlias,
@@ -49,7 +48,10 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             languageName || 'en'
         );
         if (!language) {
-            return [];
+            return {
+                hits: 0,
+                data: [],
+            };
         }
 
         const [allGames, allRegions] = await Promise.all([
@@ -76,20 +78,24 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         ]);
 
         if (!(gameVersionGroup && regions.length)) {
-            return [];
+            return {
+                hits: 0,
+                data: [],
+            };
         }
 
-        const pokemons: PokemonEntity[] = await this.repository.findAll(
-            {
-                languageId: language.id,
-                gameVersionGroupId: gameVersionGroup.id,
-                regionIds: regions.map(({ id }) => id),
-            },
-            {
-                offset: pageParam?.offset,
-                limit: pageParam?.limit,
-            }
-        );
-        return this.presenter.toPokemonSearchResponse(pokemons);
+        const whereParam = {
+            languageId: language.id,
+            gameVersionGroupId: gameVersionGroup.id,
+            regionIds: regions.map(({ id }) => id),
+        };
+        const [hits, pokemons] = await Promise.all([
+            this.repository.findAllCount(whereParam),
+            this.repository.findAll(whereParam, {
+                offset: pageParam.offset,
+                limit: pageParam.limit,
+            }),
+        ]);
+        return this.presenter.toPokemonSearchResponse(hits, pokemons);
     }
 }

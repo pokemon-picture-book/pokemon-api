@@ -1,5 +1,6 @@
 import TYPES from '@/registory/inversify.types';
 import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
+import { LIMIT_MAX_NUM } from '@/domain/constant/pagination';
 import { SearchPokemonQueryParam } from 'app-request-model';
 import { PokemonSearchResponse } from 'app-response-model';
 import { AppRequest, AppResponse, AppErrorMessage, Request } from 'express';
@@ -16,7 +17,7 @@ export default class PokemonController {
         request: AppRequest<{
             query: SearchPokemonQueryParam;
         }>,
-        response: AppResponse<AppErrorMessage | PokemonSearchResponse[]>
+        response: AppResponse<AppErrorMessage | PokemonSearchResponse>
     ): Promise<void> {
         const errors = validationResult(request as Request);
         if (!errors.isEmpty()) {
@@ -25,19 +26,19 @@ export default class PokemonController {
         }
 
         const { lang, game, regions, offset, limit } = request.query;
-        const result: PokemonSearchResponse[] = await this.usecase.search(
+        const result: PokemonSearchResponse = await this.usecase.search(
             {
                 languageName: lang,
                 gameVersionGroupAlias: game,
                 regionNames: regions,
             },
             {
-                offset,
-                limit,
+                offset: (offset || 1) - 1,
+                limit: limit || LIMIT_MAX_NUM,
             }
         );
 
-        if (!result.length) {
+        if (!result.hits) {
             response.status(204).send({ message: 'No Content!' });
             return;
         }

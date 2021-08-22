@@ -27,21 +27,27 @@ describe('Unit test for Pokemon presenter', () => {
             {}
         );
 
-        const [pokemonSearchResponse] = presenter.toPokemonSearchResponse(
+        const pokemonSearchResponse = presenter.toPokemonSearchResponse(
+            pokemons.length,
             pokemons
         );
+        const [pokemonSearchResponseData] = pokemonSearchResponse.data;
         const [actual] = pokemons;
 
-        expect(pokemonSearchResponse.id).toBe(actual.id);
-        expect(pokemonSearchResponse.imageColor).toBe(actual.imageColor);
-        expect(pokemonSearchResponse.name).toBe(actual.pokemonNames[0].name);
+        expect(pokemonSearchResponse.hits).toBe(pokemons.length);
+
+        expect(pokemonSearchResponseData.id).toBe(actual.id);
+        expect(pokemonSearchResponseData.imageColor).toBe(actual.imageColor);
+        expect(pokemonSearchResponseData.name).toBe(
+            actual.pokemonNames[0].name
+        );
 
         expect(
             actual.pokemonGameImages.every((pokemonGameImage) => {
                 const {
                     mainPath,
                     otherPaths,
-                } = pokemonSearchResponse.gameImagePath;
+                } = pokemonSearchResponseData.gameImagePath;
                 return (
                     mainPath === pokemonGameImage.path ||
                     otherPaths.includes(pokemonGameImage.path)
@@ -49,7 +55,7 @@ describe('Unit test for Pokemon presenter', () => {
             })
         ).toBeTruthy();
         actual.pokemonTypes.forEach((type, i) => {
-            const { code, name } = pokemonSearchResponse.types[i];
+            const { code, name } = pokemonSearchResponseData.types[i];
             expect(code).toBe(type.type.name);
             expect(name).toBe(type.type.typeNames[0].name);
         });
@@ -58,8 +64,9 @@ describe('Unit test for Pokemon presenter', () => {
     });
 
     test('正常: 正しくマッピングできているか', async (done) => {
-        const responses = presenter.toPokemonSearchResponse([]);
-        expect(responses.length).toBe(0);
+        const responses = presenter.toPokemonSearchResponse(0, []);
+        expect(responses.hits).toBe(0);
+        expect(responses.data.length).toBe(0);
         done();
     });
 });

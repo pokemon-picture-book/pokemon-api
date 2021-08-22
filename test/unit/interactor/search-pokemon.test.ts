@@ -17,7 +17,8 @@ describe('Unit test for SearchPokemon interactor', () => {
             },
             {}
         );
-        expect(pokemons.length).toBe(0);
+        expect(pokemons.hits).toBe(0);
+        expect(pokemons.data.length).toBe(0);
         done();
     });
 
@@ -30,7 +31,8 @@ describe('Unit test for SearchPokemon interactor', () => {
             },
             {}
         );
-        expect(pokemons.length).toBe(0);
+        expect(pokemons.hits).toBe(0);
+        expect(pokemons.data.length).toBe(0);
         done();
     });
 });
