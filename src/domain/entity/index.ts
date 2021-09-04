@@ -9,7 +9,8 @@ import LanguageEntity from './Language.entity';
 import PokemonEntity from './Pokemon.entity';
 import PokemonEvolutionEntity from './PokemonEvolution.entity';
 import PokemonGameImageEntity from './PokemonGameImage.entity';
-import PokemonImageEntity from './PokemonImage.entity';
+import PokemonFootmarkImageEntity from './PokemonFootmarkImage.entity';
+import PokemonWarkImageEntity from './PokemonWarkImage.entity';
 import PokemonNameEntity from './PokemonName.entity';
 import PokemonTypeEntity from './PokemonType.entity';
 import RegionEntity from './Region.entity';
@@ -30,7 +31,8 @@ export default [
     PokemonEntity,
     PokemonEvolutionEntity,
     PokemonGameImageEntity,
-    PokemonImageEntity,
+    PokemonFootmarkImageEntity,
+    PokemonWarkImageEntity,
     PokemonNameEntity,
     PokemonTypeEntity,
     RegionEntity,

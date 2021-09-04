@@ -1,0 +1,4126 @@
+[
+    {
+        "pokemonId": 1,
+        "path": "/001/footmark/001.png"
+    },
+    {
+        "pokemonId": 1,
+        "path": "/001/footmark/001b.png"
+    },
+    {
+        "pokemonId": 2,
+        "path": "/002/footmark/002.png"
+    },
+    {
+        "pokemonId": 2,
+        "path": "/002/footmark/002b.png"
+    },
+    {
+        "pokemonId": 3,
+        "path": "/003/footmark/003.png"
+    },
+    {
+        "pokemonId": 3,
+        "path": "/003/footmark/003b.png"
+    },
+    {
+        "pokemonId": 4,
+        "path": "/004/footmark/004.png"
+    },
+    {
+        "pokemonId": 4,
+        "path": "/004/footmark/004b.png"
+    },
+    {
+        "pokemonId": 5,
+        "path": "/005/footmark/005.png"
+    },
+    {
+        "pokemonId": 5,
+        "path": "/005/footmark/005b.png"
+    },
+    {
+        "pokemonId": 6,
+        "path": "/006/footmark/006.png"
+    },
+    {
+        "pokemonId": 6,
+        "path": "/006/footmark/006b.png"
+    },
+    {
+        "pokemonId": 7,
+        "path": "/007/footmark/007.png"
+    },
+    {
+        "pokemonId": 7,
+        "path": "/007/footmark/007b.png"
+    },
+    {
+        "pokemonId": 8,
+        "path": "/008/footmark/008.png"
+    },
+    {
+        "pokemonId": 8,
+        "path": "/008/footmark/008b.png"
+    },
+    {
+        "pokemonId": 9,
+        "path": "/009/footmark/009.png"
+    },
+    {
+        "pokemonId": 9,
+        "path": "/009/footmark/009b.png"
+    },
+    {
+        "pokemonId": 10,
+        "path": "/010/footmark/010.png"
+    },
+    {
+        "pokemonId": 10,
+        "path": "/010/footmark/010b.png"
+    },
+    {
+        "pokemonId": 12,
+        "path": "/012/footmark/012.png"
+    },
+    {
+        "pokemonId": 12,
+        "path": "/012/footmark/012b.png"
+    },
+    {
+        "pokemonId": 13,
+        "path": "/013/footmark/013.png"
+    },
+    {
+        "pokemonId": 13,
+        "path": "/013/footmark/013b.png"
+    },
+    {
+        "pokemonId": 15,
+        "path": "/015/footmark/015.png"
+    },
+    {
+        "pokemonId": 15,
+        "path": "/015/footmark/015b.png"
+    },
+    {
+        "pokemonId": 16,
+        "path": "/016/footmark/016.png"
+    },
+    {
+        "pokemonId": 16,
+        "path": "/016/footmark/016b.png"
+    },
+    {
+        "pokemonId": 17,
+        "path": "/017/footmark/017.png"
+    },
+    {
+        "pokemonId": 17,
+        "path": "/017/footmark/017b.png"
+    },
+    {
+        "pokemonId": 18,
+        "path": "/018/footmark/018.png"
+    },
+    {
+        "pokemonId": 18,
+        "path": "/018/footmark/018b.png"
+    },
+    {
+        "pokemonId": 19,
+        "path": "/019/footmark/019.png"
+    },
+    {
+        "pokemonId": 19,
+        "path": "/019/footmark/019b.png"
+    },
+    {
+        "pokemonId": 20,
+        "path": "/020/footmark/020.png"
+    },
+    {
+        "pokemonId": 20,
+        "path": "/020/footmark/020b.png"
+    },
+    {
+        "pokemonId": 21,
+        "path": "/021/footmark/021.png"
+    },
+    {
+        "pokemonId": 21,
+        "path": "/021/footmark/021b.png"
+    },
+    {
+        "pokemonId": 22,
+        "path": "/022/footmark/022.png"
+    },
+    {
+        "pokemonId": 22,
+        "path": "/022/footmark/022b.png"
+    },
+    {
+        "pokemonId": 25,
+        "path": "/025/footmark/025.png"
+    },
+    {
+        "pokemonId": 25,
+        "path": "/025/footmark/025b.png"
+    },
+    {
+        "pokemonId": 26,
+        "path": "/026/footmark/026.png"
+    },
+    {
+        "pokemonId": 26,
+        "path": "/026/footmark/026b.png"
+    },
+    {
+        "pokemonId": 27,
+        "path": "/027/footmark/027.png"
+    },
+    {
+        "pokemonId": 27,
+        "path": "/027/footmark/027b.png"
+    },
+    {
+        "pokemonId": 28,
+        "path": "/028/footmark/028.png"
+    },
+    {
+        "pokemonId": 28,
+        "path": "/028/footmark/028b.png"
+    },
+    {
+        "pokemonId": 29,
+        "path": "/029/footmark/029.png"
+    },
+    {
+        "pokemonId": 29,
+        "path": "/029/footmark/029b.png"
+    },
+    {
+        "pokemonId": 30,
+        "path": "/030/footmark/030.png"
+    },
+    {
+        "pokemonId": 30,
+        "path": "/030/footmark/030b.png"
+    },
+    {
+        "pokemonId": 31,
+        "path": "/031/footmark/031.png"
+    },
+    {
+        "pokemonId": 31,
+        "path": "/031/footmark/031b.png"
+    },
+    {
+        "pokemonId": 32,
+        "path": "/032/footmark/032.png"
+    },
+    {
+        "pokemonId": 32,
+        "path": "/032/footmark/032b.png"
+    },
+    {
+        "pokemonId": 33,
+        "path": "/033/footmark/033.png"
+    },
+    {
+        "pokemonId": 33,
+        "path": "/033/footmark/033b.png"
+    },
+    {
+        "pokemonId": 34,
+        "path": "/034/footmark/034.png"
+    },
+    {
+        "pokemonId": 34,
+        "path": "/034/footmark/034b.png"
+    },
+    {
+        "pokemonId": 35,
+        "path": "/035/footmark/035.png"
+    },
+    {
+        "pokemonId": 35,
+        "path": "/035/footmark/035b.png"
+    },
+    {
+        "pokemonId": 36,
+        "path": "/036/footmark/036.png"
+    },
+    {
+        "pokemonId": 36,
+        "path": "/036/footmark/036b.png"
+    },
+    {
+        "pokemonId": 37,
+        "path": "/037/footmark/037.png"
+    },
+    {
+        "pokemonId": 37,
+        "path": "/037/footmark/037b.png"
+    },
+    {
+        "pokemonId": 38,
+        "path": "/038/footmark/038.png"
+    },
+    {
+        "pokemonId": 38,
+        "path": "/038/footmark/038b.png"
+    },
+    {
+        "pokemonId": 39,
+        "path": "/039/footmark/039.png"
+    },
+    {
+        "pokemonId": 39,
+        "path": "/039/footmark/039b.png"
+    },
+    {
+        "pokemonId": 40,
+        "path": "/040/footmark/040.png"
+    },
+    {
+        "pokemonId": 40,
+        "path": "/040/footmark/040b.png"
+    },
+    {
+        "pokemonId": 42,
+        "path": "/042/footmark/042.png"
+    },
+    {
+        "pokemonId": 42,
+        "path": "/042/footmark/042b.png"
+    },
+    {
+        "pokemonId": 43,
+        "path": "/043/footmark/043.png"
+    },
+    {
+        "pokemonId": 43,
+        "path": "/043/footmark/043b.png"
+    },
+    {
+        "pokemonId": 44,
+        "path": "/044/footmark/044.png"
+    },
+    {
+        "pokemonId": 44,
+        "path": "/044/footmark/044b.png"
+    },
+    {
+        "pokemonId": 45,
+        "path": "/045/footmark/045.png"
+    },
+    {
+        "pokemonId": 45,
+        "path": "/045/footmark/045b.png"
+    },
+    {
+        "pokemonId": 46,
+        "path": "/046/footmark/046.png"
+    },
+    {
+        "pokemonId": 46,
+        "path": "/046/footmark/046b.png"
+    },
+    {
+        "pokemonId": 47,
+        "path": "/047/footmark/047.png"
+    },
+    {
+        "pokemonId": 47,
+        "path": "/047/footmark/047b.png"
+    },
+    {
+        "pokemonId": 48,
+        "path": "/048/footmark/048.png"
+    },
+    {
+        "pokemonId": 48,
+        "path": "/048/footmark/048b.png"
+    },
+    {
+        "pokemonId": 49,
+        "path": "/049/footmark/049.png"
+    },
+    {
+        "pokemonId": 49,
+        "path": "/049/footmark/049b.png"
+    },
+    {
+        "pokemonId": 52,
+        "path": "/052/footmark/052.png"
+    },
+    {
+        "pokemonId": 52,
+        "path": "/052/footmark/052b.png"
+    },
+    {
+        "pokemonId": 53,
+        "path": "/053/footmark/053.png"
+    },
+    {
+        "pokemonId": 53,
+        "path": "/053/footmark/053b.png"
+    },
+    {
+        "pokemonId": 54,
+        "path": "/054/footmark/054.png"
+    },
+    {
+        "pokemonId": 54,
+        "path": "/054/footmark/054b.png"
+    },
+    {
+        "pokemonId": 55,
+        "path": "/055/footmark/055.png"
+    },
+    {
+        "pokemonId": 55,
+        "path": "/055/footmark/055b.png"
+    },
+    {
+        "pokemonId": 56,
+        "path": "/056/footmark/056.png"
+    },
+    {
+        "pokemonId": 56,
+        "path": "/056/footmark/056b.png"
+    },
+    {
+        "pokemonId": 57,
+        "path": "/057/footmark/057.png"
+    },
+    {
+        "pokemonId": 57,
+        "path": "/057/footmark/057b.png"
+    },
+    {
+        "pokemonId": 58,
+        "path": "/058/footmark/058.png"
+    },
+    {
+        "pokemonId": 58,
+        "path": "/058/footmark/058b.png"
+    },
+    {
+        "pokemonId": 59,
+        "path": "/059/footmark/059.png"
+    },
+    {
+        "pokemonId": 59,
+        "path": "/059/footmark/059b.png"
+    },
+    {
+        "pokemonId": 60,
+        "path": "/060/footmark/060.png"
+    },
+    {
+        "pokemonId": 60,
+        "path": "/060/footmark/060b.png"
+    },
+    {
+        "pokemonId": 61,
+        "path": "/061/footmark/061.png"
+    },
+    {
+        "pokemonId": 61,
+        "path": "/061/footmark/061b.png"
+    },
+    {
+        "pokemonId": 62,
+        "path": "/062/footmark/062.png"
+    },
+    {
+        "pokemonId": 62,
+        "path": "/062/footmark/062b.png"
+    },
+    {
+        "pokemonId": 63,
+        "path": "/063/footmark/063.png"
+    },
+    {
+        "pokemonId": 63,
+        "path": "/063/footmark/063b.png"
+    },
+    {
+        "pokemonId": 64,
+        "path": "/064/footmark/064.png"
+    },
+    {
+        "pokemonId": 64,
+        "path": "/064/footmark/064b.png"
+    },
+    {
+        "pokemonId": 65,
+        "path": "/065/footmark/065.png"
+    },
+    {
+        "pokemonId": 65,
+        "path": "/065/footmark/065b.png"
+    },
+    {
+        "pokemonId": 66,
+        "path": "/066/footmark/066.png"
+    },
+    {
+        "pokemonId": 66,
+        "path": "/066/footmark/066b.png"
+    },
+    {
+        "pokemonId": 67,
+        "path": "/067/footmark/067.png"
+    },
+    {
+        "pokemonId": 67,
+        "path": "/067/footmark/067b.png"
+    },
+    {
+        "pokemonId": 68,
+        "path": "/068/footmark/068.png"
+    },
+    {
+        "pokemonId": 68,
+        "path": "/068/footmark/068b.png"
+    },
+    {
+        "pokemonId": 69,
+        "path": "/069/footmark/069.png"
+    },
+    {
+        "pokemonId": 69,
+        "path": "/069/footmark/069b.png"
+    },
+    {
+        "pokemonId": 75,
+        "path": "/075/footmark/075.png"
+    },
+    {
+        "pokemonId": 75,
+        "path": "/075/footmark/075b.png"
+    },
+    {
+        "pokemonId": 76,
+        "path": "/076/footmark/076.png"
+    },
+    {
+        "pokemonId": 76,
+        "path": "/076/footmark/076b.png"
+    },
+    {
+        "pokemonId": 77,
+        "path": "/077/footmark/077.png"
+    },
+    {
+        "pokemonId": 77,
+        "path": "/077/footmark/077b.png"
+    },
+    {
+        "pokemonId": 78,
+        "path": "/078/footmark/078.png"
+    },
+    {
+        "pokemonId": 78,
+        "path": "/078/footmark/078b.png"
+    },
+    {
+        "pokemonId": 79,
+        "path": "/079/footmark/079.png"
+    },
+    {
+        "pokemonId": 79,
+        "path": "/079/footmark/079b.png"
+    },
+    {
+        "pokemonId": 80,
+        "path": "/080/footmark/080.png"
+    },
+    {
+        "pokemonId": 80,
+        "path": "/080/footmark/080b.png"
+    },
+    {
+        "pokemonId": 81,
+        "path": "/081/footmark/081.png"
+    },
+    {
+        "pokemonId": 81,
+        "path": "/081/footmark/081b.png"
+    },
+    {
+        "pokemonId": 82,
+        "path": "/082/footmark/082.png"
+    },
+    {
+        "pokemonId": 82,
+        "path": "/082/footmark/082b.png"
+    },
+    {
+        "pokemonId": 83,
+        "path": "/083/footmark/083.png"
+    },
+    {
+        "pokemonId": 83,
+        "path": "/083/footmark/083b.png"
+    },
+    {
+        "pokemonId": 84,
+        "path": "/084/footmark/084.png"
+    },
+    {
+        "pokemonId": 84,
+        "path": "/084/footmark/084b.png"
+    },
+    {
+        "pokemonId": 85,
+        "path": "/085/footmark/085.png"
+    },
+    {
+        "pokemonId": 85,
+        "path": "/085/footmark/085b.png"
+    },
+    {
+        "pokemonId": 94,
+        "path": "/094/footmark/094.png"
+    },
+    {
+        "pokemonId": 94,
+        "path": "/094/footmark/094b.png"
+    },
+    {
+        "pokemonId": 96,
+        "path": "/096/footmark/096.png"
+    },
+    {
+        "pokemonId": 96,
+        "path": "/096/footmark/096b.png"
+    },
+    {
+        "pokemonId": 97,
+        "path": "/097/footmark/097.png"
+    },
+    {
+        "pokemonId": 97,
+        "path": "/097/footmark/097b.png"
+    },
+    {
+        "pokemonId": 98,
+        "path": "/098/footmark/098.png"
+    },
+    {
+        "pokemonId": 98,
+        "path": "/098/footmark/098b.png"
+    },
+    {
+        "pokemonId": 99,
+        "path": "/099/footmark/099.png"
+    },
+    {
+        "pokemonId": 99,
+        "path": "/099/footmark/099b.png"
+    },
+    {
+        "pokemonId": 103,
+        "path": "/103/footmark/103.png"
+    },
+    {
+        "pokemonId": 103,
+        "path": "/103/footmark/103b.png"
+    },
+    {
+        "pokemonId": 104,
+        "path": "/104/footmark/104.png"
+    },
+    {
+        "pokemonId": 104,
+        "path": "/104/footmark/104b.png"
+    },
+    {
+        "pokemonId": 105,
+        "path": "/105/footmark/105.png"
+    },
+    {
+        "pokemonId": 105,
+        "path": "/105/footmark/105b.png"
+    },
+    {
+        "pokemonId": 106,
+        "path": "/106/footmark/106.png"
+    },
+    {
+        "pokemonId": 106,
+        "path": "/106/footmark/106b.png"
+    },
+    {
+        "pokemonId": 107,
+        "path": "/107/footmark/107.png"
+    },
+    {
+        "pokemonId": 107,
+        "path": "/107/footmark/107b.png"
+    },
+    {
+        "pokemonId": 108,
+        "path": "/108/footmark/108.png"
+    },
+    {
+        "pokemonId": 108,
+        "path": "/108/footmark/108b.png"
+    },
+    {
+        "pokemonId": 111,
+        "path": "/111/footmark/111.png"
+    },
+    {
+        "pokemonId": 111,
+        "path": "/111/footmark/111b.png"
+    },
+    {
+        "pokemonId": 112,
+        "path": "/112/footmark/112.png"
+    },
+    {
+        "pokemonId": 112,
+        "path": "/112/footmark/112b.png"
+    },
+    {
+        "pokemonId": 113,
+        "path": "/113/footmark/113.png"
+    },
+    {
+        "pokemonId": 113,
+        "path": "/113/footmark/113b.png"
+    },
+    {
+        "pokemonId": 114,
+        "path": "/114/footmark/114.png"
+    },
+    {
+        "pokemonId": 114,
+        "path": "/114/footmark/114b.png"
+    },
+    {
+        "pokemonId": 115,
+        "path": "/115/footmark/115.png"
+    },
+    {
+        "pokemonId": 115,
+        "path": "/115/footmark/115b.png"
+    },
+    {
+        "pokemonId": 120,
+        "path": "/120/footmark/120.png"
+    },
+    {
+        "pokemonId": 120,
+        "path": "/120/footmark/120b.png"
+    },
+    {
+        "pokemonId": 121,
+        "path": "/121/footmark/121.png"
+    },
+    {
+        "pokemonId": 121,
+        "path": "/121/footmark/121b.png"
+    },
+    {
+        "pokemonId": 122,
+        "path": "/122/footmark/122.png"
+    },
+    {
+        "pokemonId": 122,
+        "path": "/122/footmark/122b.png"
+    },
+    {
+        "pokemonId": 123,
+        "path": "/123/footmark/123.png"
+    },
+    {
+        "pokemonId": 123,
+        "path": "/123/footmark/123b.png"
+    },
+    {
+        "pokemonId": 125,
+        "path": "/125/footmark/125.png"
+    },
+    {
+        "pokemonId": 125,
+        "path": "/125/footmark/125b.png"
+    },
+    {
+        "pokemonId": 126,
+        "path": "/126/footmark/126.png"
+    },
+    {
+        "pokemonId": 126,
+        "path": "/126/footmark/126b.png"
+    },
+    {
+        "pokemonId": 127,
+        "path": "/127/footmark/127.png"
+    },
+    {
+        "pokemonId": 127,
+        "path": "/127/footmark/127b.png"
+    },
+    {
+        "pokemonId": 128,
+        "path": "/128/footmark/128.png"
+    },
+    {
+        "pokemonId": 128,
+        "path": "/128/footmark/128b.png"
+    },
+    {
+        "pokemonId": 133,
+        "path": "/133/footmark/133.png"
+    },
+    {
+        "pokemonId": 133,
+        "path": "/133/footmark/133b.png"
+    },
+    {
+        "pokemonId": 134,
+        "path": "/134/footmark/134.png"
+    },
+    {
+        "pokemonId": 134,
+        "path": "/134/footmark/134b.png"
+    },
+    {
+        "pokemonId": 135,
+        "path": "/135/footmark/135.png"
+    },
+    {
+        "pokemonId": 135,
+        "path": "/135/footmark/135b.png"
+    },
+    {
+        "pokemonId": 136,
+        "path": "/136/footmark/136.png"
+    },
+    {
+        "pokemonId": 136,
+        "path": "/136/footmark/136b.png"
+    },
+    {
+        "pokemonId": 137,
+        "path": "/137/footmark/137.png"
+    },
+    {
+        "pokemonId": 137,
+        "path": "/137/footmark/137b.png"
+    },
+    {
+        "pokemonId": 138,
+        "path": "/138/footmark/138.png"
+    },
+    {
+        "pokemonId": 138,
+        "path": "/138/footmark/138b.png"
+    },
+    {
+        "pokemonId": 139,
+        "path": "/139/footmark/139.png"
+    },
+    {
+        "pokemonId": 139,
+        "path": "/139/footmark/139b.png"
+    },
+    {
+        "pokemonId": 140,
+        "path": "/140/footmark/140.png"
+    },
+    {
+        "pokemonId": 140,
+        "path": "/140/footmark/140b.png"
+    },
+    {
+        "pokemonId": 141,
+        "path": "/141/footmark/141.png"
+    },
+    {
+        "pokemonId": 141,
+        "path": "/141/footmark/141b.png"
+    },
+    {
+        "pokemonId": 142,
+        "path": "/142/footmark/142.png"
+    },
+    {
+        "pokemonId": 142,
+        "path": "/142/footmark/142b.png"
+    },
+    {
+        "pokemonId": 143,
+        "path": "/143/footmark/143.png"
+    },
+    {
+        "pokemonId": 143,
+        "path": "/143/footmark/143b.png"
+    },
+    {
+        "pokemonId": 144,
+        "path": "/144/footmark/144.png"
+    },
+    {
+        "pokemonId": 144,
+        "path": "/144/footmark/144b.png"
+    },
+    {
+        "pokemonId": 145,
+        "path": "/145/footmark/145.png"
+    },
+    {
+        "pokemonId": 145,
+        "path": "/145/footmark/145b.png"
+    },
+    {
+        "pokemonId": 146,
+        "path": "/146/footmark/146.png"
+    },
+    {
+        "pokemonId": 146,
+        "path": "/146/footmark/146b.png"
+    },
+    {
+        "pokemonId": 149,
+        "path": "/149/footmark/149.png"
+    },
+    {
+        "pokemonId": 149,
+        "path": "/149/footmark/149b.png"
+    },
+    {
+        "pokemonId": 150,
+        "path": "/150/footmark/150.png"
+    },
+    {
+        "pokemonId": 150,
+        "path": "/150/footmark/150b.png"
+    },
+    {
+        "pokemonId": 151,
+        "path": "/151/footmark/151.png"
+    },
+    {
+        "pokemonId": 151,
+        "path": "/151/footmark/151b.png"
+    },
+    {
+        "pokemonId": 152,
+        "path": "/152/footmark/152.png"
+    },
+    {
+        "pokemonId": 152,
+        "path": "/152/footmark/152b.png"
+    },
+    {
+        "pokemonId": 153,
+        "path": "/153/footmark/153.png"
+    },
+    {
+        "pokemonId": 153,
+        "path": "/153/footmark/153b.png"
+    },
+    {
+        "pokemonId": 154,
+        "path": "/154/footmark/154.png"
+    },
+    {
+        "pokemonId": 154,
+        "path": "/154/footmark/154b.png"
+    },
+    {
+        "pokemonId": 155,
+        "path": "/155/footmark/155.png"
+    },
+    {
+        "pokemonId": 155,
+        "path": "/155/footmark/155b.png"
+    },
+    {
+        "pokemonId": 156,
+        "path": "/156/footmark/156.png"
+    },
+    {
+        "pokemonId": 156,
+        "path": "/156/footmark/156b.png"
+    },
+    {
+        "pokemonId": 157,
+        "path": "/157/footmark/157.png"
+    },
+    {
+        "pokemonId": 157,
+        "path": "/157/footmark/157b.png"
+    },
+    {
+        "pokemonId": 158,
+        "path": "/158/footmark/158.png"
+    },
+    {
+        "pokemonId": 158,
+        "path": "/158/footmark/158b.png"
+    },
+    {
+        "pokemonId": 159,
+        "path": "/159/footmark/159.png"
+    },
+    {
+        "pokemonId": 159,
+        "path": "/159/footmark/159b.png"
+    },
+    {
+        "pokemonId": 160,
+        "path": "/160/footmark/160.png"
+    },
+    {
+        "pokemonId": 160,
+        "path": "/160/footmark/160b.png"
+    },
+    {
+        "pokemonId": 161,
+        "path": "/161/footmark/161.png"
+    },
+    {
+        "pokemonId": 161,
+        "path": "/161/footmark/161b.png"
+    },
+    {
+        "pokemonId": 162,
+        "path": "/162/footmark/162.png"
+    },
+    {
+        "pokemonId": 162,
+        "path": "/162/footmark/162b.png"
+    },
+    {
+        "pokemonId": 163,
+        "path": "/163/footmark/163.png"
+    },
+    {
+        "pokemonId": 163,
+        "path": "/163/footmark/163b.png"
+    },
+    {
+        "pokemonId": 164,
+        "path": "/164/footmark/164.png"
+    },
+    {
+        "pokemonId": 164,
+        "path": "/164/footmark/164b.png"
+    },
+    {
+        "pokemonId": 165,
+        "path": "/165/footmark/165.png"
+    },
+    {
+        "pokemonId": 165,
+        "path": "/165/footmark/165b.png"
+    },
+    {
+        "pokemonId": 166,
+        "path": "/166/footmark/166.png"
+    },
+    {
+        "pokemonId": 166,
+        "path": "/166/footmark/166b.png"
+    },
+    {
+        "pokemonId": 167,
+        "path": "/167/footmark/167.png"
+    },
+    {
+        "pokemonId": 167,
+        "path": "/167/footmark/167b.png"
+    },
+    {
+        "pokemonId": 168,
+        "path": "/168/footmark/168.png"
+    },
+    {
+        "pokemonId": 168,
+        "path": "/168/footmark/168b.png"
+    },
+    {
+        "pokemonId": 172,
+        "path": "/172/footmark/172.png"
+    },
+    {
+        "pokemonId": 172,
+        "path": "/172/footmark/172b.png"
+    },
+    {
+        "pokemonId": 173,
+        "path": "/173/footmark/173.png"
+    },
+    {
+        "pokemonId": 173,
+        "path": "/173/footmark/173b.png"
+    },
+    {
+        "pokemonId": 174,
+        "path": "/174/footmark/174.png"
+    },
+    {
+        "pokemonId": 174,
+        "path": "/174/footmark/174b.png"
+    },
+    {
+        "pokemonId": 175,
+        "path": "/175/footmark/175.png"
+    },
+    {
+        "pokemonId": 175,
+        "path": "/175/footmark/175b.png"
+    },
+    {
+        "pokemonId": 176,
+        "path": "/176/footmark/176.png"
+    },
+    {
+        "pokemonId": 176,
+        "path": "/176/footmark/176b.png"
+    },
+    {
+        "pokemonId": 177,
+        "path": "/177/footmark/177.png"
+    },
+    {
+        "pokemonId": 177,
+        "path": "/177/footmark/177b.png"
+    },
+    {
+        "pokemonId": 178,
+        "path": "/178/footmark/178.png"
+    },
+    {
+        "pokemonId": 178,
+        "path": "/178/footmark/178b.png"
+    },
+    {
+        "pokemonId": 179,
+        "path": "/179/footmark/179.png"
+    },
+    {
+        "pokemonId": 179,
+        "path": "/179/footmark/179b.png"
+    },
+    {
+        "pokemonId": 180,
+        "path": "/180/footmark/180.png"
+    },
+    {
+        "pokemonId": 180,
+        "path": "/180/footmark/180b.png"
+    },
+    {
+        "pokemonId": 181,
+        "path": "/181/footmark/181.png"
+    },
+    {
+        "pokemonId": 181,
+        "path": "/181/footmark/181b.png"
+    },
+    {
+        "pokemonId": 183,
+        "path": "/183/footmark/183.png"
+    },
+    {
+        "pokemonId": 183,
+        "path": "/183/footmark/183b.png"
+    },
+    {
+        "pokemonId": 184,
+        "path": "/184/footmark/184.png"
+    },
+    {
+        "pokemonId": 184,
+        "path": "/184/footmark/184b.png"
+    },
+    {
+        "pokemonId": 185,
+        "path": "/185/footmark/185.png"
+    },
+    {
+        "pokemonId": 185,
+        "path": "/185/footmark/185b.png"
+    },
+    {
+        "pokemonId": 186,
+        "path": "/186/footmark/186.png"
+    },
+    {
+        "pokemonId": 186,
+        "path": "/186/footmark/186b.png"
+    },
+    {
+        "pokemonId": 187,
+        "path": "/187/footmark/187.png"
+    },
+    {
+        "pokemonId": 187,
+        "path": "/187/footmark/187b.png"
+    },
+    {
+        "pokemonId": 188,
+        "path": "/188/footmark/188.png"
+    },
+    {
+        "pokemonId": 188,
+        "path": "/188/footmark/188b.png"
+    },
+    {
+        "pokemonId": 189,
+        "path": "/189/footmark/189.png"
+    },
+    {
+        "pokemonId": 189,
+        "path": "/189/footmark/189b.png"
+    },
+    {
+        "pokemonId": 190,
+        "path": "/190/footmark/190.png"
+    },
+    {
+        "pokemonId": 190,
+        "path": "/190/footmark/190b.png"
+    },
+    {
+        "pokemonId": 192,
+        "path": "/192/footmark/192.png"
+    },
+    {
+        "pokemonId": 192,
+        "path": "/192/footmark/192b.png"
+    },
+    {
+        "pokemonId": 193,
+        "path": "/193/footmark/193.png"
+    },
+    {
+        "pokemonId": 193,
+        "path": "/193/footmark/193b.png"
+    },
+    {
+        "pokemonId": 194,
+        "path": "/194/footmark/194.png"
+    },
+    {
+        "pokemonId": 194,
+        "path": "/194/footmark/194b.png"
+    },
+    {
+        "pokemonId": 195,
+        "path": "/195/footmark/195.png"
+    },
+    {
+        "pokemonId": 195,
+        "path": "/195/footmark/195b.png"
+    },
+    {
+        "pokemonId": 196,
+        "path": "/196/footmark/196.png"
+    },
+    {
+        "pokemonId": 196,
+        "path": "/196/footmark/196b.png"
+    },
+    {
+        "pokemonId": 197,
+        "path": "/197/footmark/197.png"
+    },
+    {
+        "pokemonId": 197,
+        "path": "/197/footmark/197b.png"
+    },
+    {
+        "pokemonId": 198,
+        "path": "/198/footmark/198.png"
+    },
+    {
+        "pokemonId": 198,
+        "path": "/198/footmark/198b.png"
+    },
+    {
+        "pokemonId": 199,
+        "path": "/199/footmark/199.png"
+    },
+    {
+        "pokemonId": 199,
+        "path": "/199/footmark/199b.png"
+    },
+    {
+        "pokemonId": 202,
+        "path": "/202/footmark/202.png"
+    },
+    {
+        "pokemonId": 202,
+        "path": "/202/footmark/202b.png"
+    },
+    {
+        "pokemonId": 203,
+        "path": "/203/footmark/203.png"
+    },
+    {
+        "pokemonId": 203,
+        "path": "/203/footmark/203b.png"
+    },
+    {
+        "pokemonId": 207,
+        "path": "/207/footmark/207.png"
+    },
+    {
+        "pokemonId": 207,
+        "path": "/207/footmark/207b.png"
+    },
+    {
+        "pokemonId": 209,
+        "path": "/209/footmark/209.png"
+    },
+    {
+        "pokemonId": 209,
+        "path": "/209/footmark/209b.png"
+    },
+    {
+        "pokemonId": 210,
+        "path": "/210/footmark/210.png"
+    },
+    {
+        "pokemonId": 210,
+        "path": "/210/footmark/210b.png"
+    },
+    {
+        "pokemonId": 212,
+        "path": "/212/footmark/212.png"
+    },
+    {
+        "pokemonId": 212,
+        "path": "/212/footmark/212b.png"
+    },
+    {
+        "pokemonId": 213,
+        "path": "/213/footmark/213.png"
+    },
+    {
+        "pokemonId": 213,
+        "path": "/213/footmark/213b.png"
+    },
+    {
+        "pokemonId": 214,
+        "path": "/214/footmark/214.png"
+    },
+    {
+        "pokemonId": 214,
+        "path": "/214/footmark/214b.png"
+    },
+    {
+        "pokemonId": 215,
+        "path": "/215/footmark/215.png"
+    },
+    {
+        "pokemonId": 215,
+        "path": "/215/footmark/215b.png"
+    },
+    {
+        "pokemonId": 216,
+        "path": "/216/footmark/216.png"
+    },
+    {
+        "pokemonId": 216,
+        "path": "/216/footmark/216b.png"
+    },
+    {
+        "pokemonId": 217,
+        "path": "/217/footmark/217.png"
+    },
+    {
+        "pokemonId": 217,
+        "path": "/217/footmark/217b.png"
+    },
+    {
+        "pokemonId": 220,
+        "path": "/220/footmark/220.png"
+    },
+    {
+        "pokemonId": 220,
+        "path": "/220/footmark/220b.png"
+    },
+    {
+        "pokemonId": 221,
+        "path": "/221/footmark/221.png"
+    },
+    {
+        "pokemonId": 221,
+        "path": "/221/footmark/221b.png"
+    },
+    {
+        "pokemonId": 222,
+        "path": "/222/footmark/222.png"
+    },
+    {
+        "pokemonId": 222,
+        "path": "/222/footmark/222b.png"
+    },
+    {
+        "pokemonId": 224,
+        "path": "/224/footmark/224.png"
+    },
+    {
+        "pokemonId": 224,
+        "path": "/224/footmark/224b.png"
+    },
+    {
+        "pokemonId": 225,
+        "path": "/225/footmark/225.png"
+    },
+    {
+        "pokemonId": 225,
+        "path": "/225/footmark/225b.png"
+    },
+    {
+        "pokemonId": 227,
+        "path": "/227/footmark/227.png"
+    },
+    {
+        "pokemonId": 227,
+        "path": "/227/footmark/227b.png"
+    },
+    {
+        "pokemonId": 228,
+        "path": "/228/footmark/228.png"
+    },
+    {
+        "pokemonId": 228,
+        "path": "/228/footmark/228b.png"
+    },
+    {
+        "pokemonId": 229,
+        "path": "/229/footmark/229.png"
+    },
+    {
+        "pokemonId": 229,
+        "path": "/229/footmark/229b.png"
+    },
+    {
+        "pokemonId": 231,
+        "path": "/231/footmark/231.png"
+    },
+    {
+        "pokemonId": 231,
+        "path": "/231/footmark/231b.png"
+    },
+    {
+        "pokemonId": 232,
+        "path": "/232/footmark/232.png"
+    },
+    {
+        "pokemonId": 232,
+        "path": "/232/footmark/232b.png"
+    },
+    {
+        "pokemonId": 233,
+        "path": "/233/footmark/233.png"
+    },
+    {
+        "pokemonId": 233,
+        "path": "/233/footmark/233b.png"
+    },
+    {
+        "pokemonId": 234,
+        "path": "/234/footmark/234.png"
+    },
+    {
+        "pokemonId": 234,
+        "path": "/234/footmark/234b.png"
+    },
+    {
+        "pokemonId": 235,
+        "path": "/235/footmark/235.png"
+    },
+    {
+        "pokemonId": 235,
+        "path": "/235/footmark/235b.png"
+    },
+    {
+        "pokemonId": 236,
+        "path": "/236/footmark/236.png"
+    },
+    {
+        "pokemonId": 236,
+        "path": "/236/footmark/236b.png"
+    },
+    {
+        "pokemonId": 237,
+        "path": "/237/footmark/237.png"
+    },
+    {
+        "pokemonId": 237,
+        "path": "/237/footmark/237b.png"
+    },
+    {
+        "pokemonId": 238,
+        "path": "/238/footmark/238.png"
+    },
+    {
+        "pokemonId": 238,
+        "path": "/238/footmark/238b.png"
+    },
+    {
+        "pokemonId": 239,
+        "path": "/239/footmark/239.png"
+    },
+    {
+        "pokemonId": 239,
+        "path": "/239/footmark/239b.png"
+    },
+    {
+        "pokemonId": 240,
+        "path": "/240/footmark/240.png"
+    },
+    {
+        "pokemonId": 240,
+        "path": "/240/footmark/240b.png"
+    },
+    {
+        "pokemonId": 241,
+        "path": "/241/footmark/241.png"
+    },
+    {
+        "pokemonId": 241,
+        "path": "/241/footmark/241b.png"
+    },
+    {
+        "pokemonId": 242,
+        "path": "/242/footmark/242.png"
+    },
+    {
+        "pokemonId": 242,
+        "path": "/242/footmark/242b.png"
+    },
+    {
+        "pokemonId": 243,
+        "path": "/243/footmark/243.png"
+    },
+    {
+        "pokemonId": 243,
+        "path": "/243/footmark/243b.png"
+    },
+    {
+        "pokemonId": 244,
+        "path": "/244/footmark/244.png"
+    },
+    {
+        "pokemonId": 244,
+        "path": "/244/footmark/244b.png"
+    },
+    {
+        "pokemonId": 245,
+        "path": "/245/footmark/245.png"
+    },
+    {
+        "pokemonId": 245,
+        "path": "/245/footmark/245b.png"
+    },
+    {
+        "pokemonId": 246,
+        "path": "/246/footmark/246.png"
+    },
+    {
+        "pokemonId": 246,
+        "path": "/246/footmark/246b.png"
+    },
+    {
+        "pokemonId": 248,
+        "path": "/248/footmark/248.png"
+    },
+    {
+        "pokemonId": 248,
+        "path": "/248/footmark/248b.png"
+    },
+    {
+        "pokemonId": 249,
+        "path": "/249/footmark/249.png"
+    },
+    {
+        "pokemonId": 249,
+        "path": "/249/footmark/249b.png"
+    },
+    {
+        "pokemonId": 250,
+        "path": "/250/footmark/250.png"
+    },
+    {
+        "pokemonId": 250,
+        "path": "/250/footmark/250b.png"
+    },
+    {
+        "pokemonId": 251,
+        "path": "/251/footmark/251.png"
+    },
+    {
+        "pokemonId": 251,
+        "path": "/251/footmark/251b.png"
+    },
+    {
+        "pokemonId": 252,
+        "path": "/252/footmark/252.png"
+    },
+    {
+        "pokemonId": 252,
+        "path": "/252/footmark/252b.png"
+    },
+    {
+        "pokemonId": 253,
+        "path": "/253/footmark/253.png"
+    },
+    {
+        "pokemonId": 253,
+        "path": "/253/footmark/253b.png"
+    },
+    {
+        "pokemonId": 254,
+        "path": "/254/footmark/254.png"
+    },
+    {
+        "pokemonId": 254,
+        "path": "/254/footmark/254b.png"
+    },
+    {
+        "pokemonId": 255,
+        "path": "/255/footmark/255.png"
+    },
+    {
+        "pokemonId": 256,
+        "path": "/256/footmark/256.png"
+    },
+    {
+        "pokemonId": 256,
+        "path": "/256/footmark/256b.png"
+    },
+    {
+        "pokemonId": 257,
+        "path": "/257/footmark/257.png"
+    },
+    {
+        "pokemonId": 257,
+        "path": "/257/footmark/257b.png"
+    },
+    {
+        "pokemonId": 258,
+        "path": "/258/footmark/258.png"
+    },
+    {
+        "pokemonId": 258,
+        "path": "/258/footmark/258b.png"
+    },
+    {
+        "pokemonId": 259,
+        "path": "/259/footmark/259.png"
+    },
+    {
+        "pokemonId": 259,
+        "path": "/259/footmark/259b.png"
+    },
+    {
+        "pokemonId": 260,
+        "path": "/260/footmark/260.png"
+    },
+    {
+        "pokemonId": 260,
+        "path": "/260/footmark/260b.png"
+    },
+    {
+        "pokemonId": 261,
+        "path": "/261/footmark/261.png"
+    },
+    {
+        "pokemonId": 261,
+        "path": "/261/footmark/261b.png"
+    },
+    {
+        "pokemonId": 262,
+        "path": "/262/footmark/262.png"
+    },
+    {
+        "pokemonId": 262,
+        "path": "/262/footmark/262b.png"
+    },
+    {
+        "pokemonId": 263,
+        "path": "/263/footmark/263.png"
+    },
+    {
+        "pokemonId": 263,
+        "path": "/263/footmark/263b.png"
+    },
+    {
+        "pokemonId": 264,
+        "path": "/264/footmark/264.png"
+    },
+    {
+        "pokemonId": 264,
+        "path": "/264/footmark/264b.png"
+    },
+    {
+        "pokemonId": 265,
+        "path": "/265/footmark/265.png"
+    },
+    {
+        "pokemonId": 265,
+        "path": "/265/footmark/265b.png"
+    },
+    {
+        "pokemonId": 267,
+        "path": "/267/footmark/267.png"
+    },
+    {
+        "pokemonId": 267,
+        "path": "/267/footmark/267b.png"
+    },
+    {
+        "pokemonId": 269,
+        "path": "/269/footmark/269.png"
+    },
+    {
+        "pokemonId": 269,
+        "path": "/269/footmark/269b.png"
+    },
+    {
+        "pokemonId": 270,
+        "path": "/270/footmark/270.png"
+    },
+    {
+        "pokemonId": 270,
+        "path": "/270/footmark/270b.png"
+    },
+    {
+        "pokemonId": 271,
+        "path": "/271/footmark/271.png"
+    },
+    {
+        "pokemonId": 271,
+        "path": "/271/footmark/271b.png"
+    },
+    {
+        "pokemonId": 272,
+        "path": "/272/footmark/272.png"
+    },
+    {
+        "pokemonId": 272,
+        "path": "/272/footmark/272b.png"
+    },
+    {
+        "pokemonId": 273,
+        "path": "/273/footmark/273.png"
+    },
+    {
+        "pokemonId": 273,
+        "path": "/273/footmark/273b.png"
+    },
+    {
+        "pokemonId": 274,
+        "path": "/274/footmark/274.png"
+    },
+    {
+        "pokemonId": 274,
+        "path": "/274/footmark/274b.png"
+    },
+    {
+        "pokemonId": 275,
+        "path": "/275/footmark/275.png"
+    },
+    {
+        "pokemonId": 275,
+        "path": "/275/footmark/275b.png"
+    },
+    {
+        "pokemonId": 276,
+        "path": "/276/footmark/276.png"
+    },
+    {
+        "pokemonId": 276,
+        "path": "/276/footmark/276b.png"
+    },
+    {
+        "pokemonId": 277,
+        "path": "/277/footmark/277.png"
+    },
+    {
+        "pokemonId": 277,
+        "path": "/277/footmark/277b.png"
+    },
+    {
+        "pokemonId": 278,
+        "path": "/278/footmark/278.png"
+    },
+    {
+        "pokemonId": 278,
+        "path": "/278/footmark/278b.png"
+    },
+    {
+        "pokemonId": 279,
+        "path": "/279/footmark/279.png"
+    },
+    {
+        "pokemonId": 279,
+        "path": "/279/footmark/279b.png"
+    },
+    {
+        "pokemonId": 280,
+        "path": "/280/footmark/280.png"
+    },
+    {
+        "pokemonId": 280,
+        "path": "/280/footmark/280b.png"
+    },
+    {
+        "pokemonId": 281,
+        "path": "/281/footmark/281.png"
+    },
+    {
+        "pokemonId": 281,
+        "path": "/281/footmark/281b.png"
+    },
+    {
+        "pokemonId": 282,
+        "path": "/282/footmark/282.png"
+    },
+    {
+        "pokemonId": 282,
+        "path": "/282/footmark/282b.png"
+    },
+    {
+        "pokemonId": 283,
+        "path": "/283/footmark/283.png"
+    },
+    {
+        "pokemonId": 283,
+        "path": "/283/footmark/283b.png"
+    },
+    {
+        "pokemonId": 285,
+        "path": "/285/footmark/285.png"
+    },
+    {
+        "pokemonId": 285,
+        "path": "/285/footmark/285b.png"
+    },
+    {
+        "pokemonId": 286,
+        "path": "/286/footmark/286.png"
+    },
+    {
+        "pokemonId": 286,
+        "path": "/286/footmark/286b.png"
+    },
+    {
+        "pokemonId": 287,
+        "path": "/287/footmark/287.png"
+    },
+    {
+        "pokemonId": 287,
+        "path": "/287/footmark/287b.png"
+    },
+    {
+        "pokemonId": 288,
+        "path": "/288/footmark/288.png"
+    },
+    {
+        "pokemonId": 288,
+        "path": "/288/footmark/288b.png"
+    },
+    {
+        "pokemonId": 289,
+        "path": "/289/footmark/289.png"
+    },
+    {
+        "pokemonId": 289,
+        "path": "/289/footmark/289b.png"
+    },
+    {
+        "pokemonId": 290,
+        "path": "/290/footmark/290.png"
+    },
+    {
+        "pokemonId": 290,
+        "path": "/290/footmark/290b.png"
+    },
+    {
+        "pokemonId": 291,
+        "path": "/291/footmark/291.png"
+    },
+    {
+        "pokemonId": 291,
+        "path": "/291/footmark/291b.png"
+    },
+    {
+        "pokemonId": 292,
+        "path": "/292/footmark/292.png"
+    },
+    {
+        "pokemonId": 292,
+        "path": "/292/footmark/292b.png"
+    },
+    {
+        "pokemonId": 293,
+        "path": "/293/footmark/293.png"
+    },
+    {
+        "pokemonId": 293,
+        "path": "/293/footmark/293b.png"
+    },
+    {
+        "pokemonId": 294,
+        "path": "/294/footmark/294.png"
+    },
+    {
+        "pokemonId": 294,
+        "path": "/294/footmark/294b.png"
+    },
+    {
+        "pokemonId": 295,
+        "path": "/295/footmark/295.png"
+    },
+    {
+        "pokemonId": 295,
+        "path": "/295/footmark/295b.png"
+    },
+    {
+        "pokemonId": 296,
+        "path": "/296/footmark/296.png"
+    },
+    {
+        "pokemonId": 296,
+        "path": "/296/footmark/296b.png"
+    },
+    {
+        "pokemonId": 297,
+        "path": "/297/footmark/297.png"
+    },
+    {
+        "pokemonId": 297,
+        "path": "/297/footmark/297b.png"
+    },
+    {
+        "pokemonId": 298,
+        "path": "/298/footmark/298.png"
+    },
+    {
+        "pokemonId": 298,
+        "path": "/298/footmark/298b.png"
+    },
+    {
+        "pokemonId": 299,
+        "path": "/299/footmark/299.png"
+    },
+    {
+        "pokemonId": 299,
+        "path": "/299/footmark/299b.png"
+    },
+    {
+        "pokemonId": 300,
+        "path": "/300/footmark/300.png"
+    },
+    {
+        "pokemonId": 300,
+        "path": "/300/footmark/300b.png"
+    },
+    {
+        "pokemonId": 301,
+        "path": "/301/footmark/301.png"
+    },
+    {
+        "pokemonId": 301,
+        "path": "/301/footmark/301b.png"
+    },
+    {
+        "pokemonId": 302,
+        "path": "/302/footmark/302.png"
+    },
+    {
+        "pokemonId": 302,
+        "path": "/302/footmark/302b.png"
+    },
+    {
+        "pokemonId": 303,
+        "path": "/303/footmark/303.png"
+    },
+    {
+        "pokemonId": 303,
+        "path": "/303/footmark/303b.png"
+    },
+    {
+        "pokemonId": 304,
+        "path": "/304/footmark/304.png"
+    },
+    {
+        "pokemonId": 304,
+        "path": "/304/footmark/304b.png"
+    },
+    {
+        "pokemonId": 305,
+        "path": "/305/footmark/305.png"
+    },
+    {
+        "pokemonId": 305,
+        "path": "/305/footmark/305b.png"
+    },
+    {
+        "pokemonId": 306,
+        "path": "/306/footmark/306.png"
+    },
+    {
+        "pokemonId": 306,
+        "path": "/306/footmark/306b.png"
+    },
+    {
+        "pokemonId": 307,
+        "path": "/307/footmark/307.png"
+    },
+    {
+        "pokemonId": 307,
+        "path": "/307/footmark/307b.png"
+    },
+    {
+        "pokemonId": 308,
+        "path": "/308/footmark/308.png"
+    },
+    {
+        "pokemonId": 308,
+        "path": "/308/footmark/308b.png"
+    },
+    {
+        "pokemonId": 309,
+        "path": "/309/footmark/309.png"
+    },
+    {
+        "pokemonId": 309,
+        "path": "/309/footmark/309b.png"
+    },
+    {
+        "pokemonId": 310,
+        "path": "/310/footmark/310.png"
+    },
+    {
+        "pokemonId": 310,
+        "path": "/310/footmark/310b.png"
+    },
+    {
+        "pokemonId": 311,
+        "path": "/311/footmark/311.png"
+    },
+    {
+        "pokemonId": 311,
+        "path": "/311/footmark/311b.png"
+    },
+    {
+        "pokemonId": 312,
+        "path": "/312/footmark/312.png"
+    },
+    {
+        "pokemonId": 312,
+        "path": "/312/footmark/312b.png"
+    },
+    {
+        "pokemonId": 313,
+        "path": "/313/footmark/313.png"
+    },
+    {
+        "pokemonId": 313,
+        "path": "/313/footmark/313b.png"
+    },
+    {
+        "pokemonId": 314,
+        "path": "/314/footmark/314.png"
+    },
+    {
+        "pokemonId": 314,
+        "path": "/314/footmark/314b.png"
+    },
+    {
+        "pokemonId": 315,
+        "path": "/315/footmark/315.png"
+    },
+    {
+        "pokemonId": 315,
+        "path": "/315/footmark/315b.png"
+    },
+    {
+        "pokemonId": 322,
+        "path": "/322/footmark/322.png"
+    },
+    {
+        "pokemonId": 322,
+        "path": "/322/footmark/322b.png"
+    },
+    {
+        "pokemonId": 323,
+        "path": "/323/footmark/323.png"
+    },
+    {
+        "pokemonId": 323,
+        "path": "/323/footmark/323b.png"
+    },
+    {
+        "pokemonId": 324,
+        "path": "/324/footmark/324.png"
+    },
+    {
+        "pokemonId": 324,
+        "path": "/324/footmark/324b.png"
+    },
+    {
+        "pokemonId": 326,
+        "path": "/326/footmark/326.png"
+    },
+    {
+        "pokemonId": 326,
+        "path": "/326/footmark/326b.png"
+    },
+    {
+        "pokemonId": 327,
+        "path": "/327/footmark/327.png"
+    },
+    {
+        "pokemonId": 327,
+        "path": "/327/footmark/327b.png"
+    },
+    {
+        "pokemonId": 328,
+        "path": "/328/footmark/328.png"
+    },
+    {
+        "pokemonId": 328,
+        "path": "/328/footmark/328b.png"
+    },
+    {
+        "pokemonId": 329,
+        "path": "/329/footmark/329.png"
+    },
+    {
+        "pokemonId": 329,
+        "path": "/329/footmark/329b.png"
+    },
+    {
+        "pokemonId": 330,
+        "path": "/330/footmark/330.png"
+    },
+    {
+        "pokemonId": 330,
+        "path": "/330/footmark/330b.png"
+    },
+    {
+        "pokemonId": 331,
+        "path": "/331/footmark/331.png"
+    },
+    {
+        "pokemonId": 331,
+        "path": "/331/footmark/331b.png"
+    },
+    {
+        "pokemonId": 332,
+        "path": "/332/footmark/332.png"
+    },
+    {
+        "pokemonId": 332,
+        "path": "/332/footmark/332b.png"
+    },
+    {
+        "pokemonId": 333,
+        "path": "/333/footmark/333.png"
+    },
+    {
+        "pokemonId": 333,
+        "path": "/333/footmark/333b.png"
+    },
+    {
+        "pokemonId": 334,
+        "path": "/334/footmark/334.png"
+    },
+    {
+        "pokemonId": 334,
+        "path": "/334/footmark/334b.png"
+    },
+    {
+        "pokemonId": 335,
+        "path": "/335/footmark/335.png"
+    },
+    {
+        "pokemonId": 335,
+        "path": "/335/footmark/335b.png"
+    },
+    {
+        "pokemonId": 341,
+        "path": "/341/footmark/341.png"
+    },
+    {
+        "pokemonId": 341,
+        "path": "/341/footmark/341b.png"
+    },
+    {
+        "pokemonId": 342,
+        "path": "/342/footmark/342.png"
+    },
+    {
+        "pokemonId": 342,
+        "path": "/342/footmark/342b.png"
+    },
+    {
+        "pokemonId": 343,
+        "path": "/343/footmark/343.png"
+    },
+    {
+        "pokemonId": 343,
+        "path": "/343/footmark/343b.png"
+    },
+    {
+        "pokemonId": 344,
+        "path": "/344/footmark/344.png"
+    },
+    {
+        "pokemonId": 344,
+        "path": "/344/footmark/344b.png"
+    },
+    {
+        "pokemonId": 345,
+        "path": "/345/footmark/345.png"
+    },
+    {
+        "pokemonId": 345,
+        "path": "/345/footmark/345b.png"
+    },
+    {
+        "pokemonId": 346,
+        "path": "/346/footmark/346.png"
+    },
+    {
+        "pokemonId": 346,
+        "path": "/346/footmark/346b.png"
+    },
+    {
+        "pokemonId": 348,
+        "path": "/348/footmark/348.png"
+    },
+    {
+        "pokemonId": 348,
+        "path": "/348/footmark/348b.png"
+    },
+    {
+        "pokemonId": 352,
+        "path": "/352/footmark/352.png"
+    },
+    {
+        "pokemonId": 352,
+        "path": "/352/footmark/352b.png"
+    },
+    {
+        "pokemonId": 354,
+        "path": "/354/footmark/354.png"
+    },
+    {
+        "pokemonId": 354,
+        "path": "/354/footmark/354b.png"
+    },
+    {
+        "pokemonId": 356,
+        "path": "/356/footmark/356.png"
+    },
+    {
+        "pokemonId": 356,
+        "path": "/356/footmark/356b.png"
+    },
+    {
+        "pokemonId": 357,
+        "path": "/357/footmark/357.png"
+    },
+    {
+        "pokemonId": 357,
+        "path": "/357/footmark/357b.png"
+    },
+    {
+        "pokemonId": 359,
+        "path": "/359/footmark/359.png"
+    },
+    {
+        "pokemonId": 359,
+        "path": "/359/footmark/359b.png"
+    },
+    {
+        "pokemonId": 360,
+        "path": "/360/footmark/360.png"
+    },
+    {
+        "pokemonId": 360,
+        "path": "/360/footmark/360b.png"
+    },
+    {
+        "pokemonId": 361,
+        "path": "/361/footmark/361.png"
+    },
+    {
+        "pokemonId": 361,
+        "path": "/361/footmark/361b.png"
+    },
+    {
+        "pokemonId": 371,
+        "path": "/371/footmark/371.png"
+    },
+    {
+        "pokemonId": 371,
+        "path": "/371/footmark/371b.png"
+    },
+    {
+        "pokemonId": 372,
+        "path": "/372/footmark/372.png"
+    },
+    {
+        "pokemonId": 372,
+        "path": "/372/footmark/372b.png"
+    },
+    {
+        "pokemonId": 373,
+        "path": "/373/footmark/373.png"
+    },
+    {
+        "pokemonId": 373,
+        "path": "/373/footmark/373b.png"
+    },
+    {
+        "pokemonId": 374,
+        "path": "/374/footmark/374.png"
+    },
+    {
+        "pokemonId": 374,
+        "path": "/374/footmark/374b.png"
+    },
+    {
+        "pokemonId": 375,
+        "path": "/375/footmark/375.png"
+    },
+    {
+        "pokemonId": 375,
+        "path": "/375/footmark/375b.png"
+    },
+    {
+        "pokemonId": 376,
+        "path": "/376/footmark/376.png"
+    },
+    {
+        "pokemonId": 376,
+        "path": "/376/footmark/376b.png"
+    },
+    {
+        "pokemonId": 377,
+        "path": "/377/footmark/377.png"
+    },
+    {
+        "pokemonId": 377,
+        "path": "/377/footmark/377b.png"
+    },
+    {
+        "pokemonId": 378,
+        "path": "/378/footmark/378.png"
+    },
+    {
+        "pokemonId": 378,
+        "path": "/378/footmark/378b.png"
+    },
+    {
+        "pokemonId": 379,
+        "path": "/379/footmark/379.png"
+    },
+    {
+        "pokemonId": 379,
+        "path": "/379/footmark/379b.png"
+    },
+    {
+        "pokemonId": 380,
+        "path": "/380/footmark/380.png"
+    },
+    {
+        "pokemonId": 380,
+        "path": "/380/footmark/380b.png"
+    },
+    {
+        "pokemonId": 381,
+        "path": "/381/footmark/381.png"
+    },
+    {
+        "pokemonId": 381,
+        "path": "/381/footmark/381b.png"
+    },
+    {
+        "pokemonId": 382,
+        "path": "/382/footmark/382.png"
+    },
+    {
+        "pokemonId": 382,
+        "path": "/382/footmark/382b.png"
+    },
+    {
+        "pokemonId": 383,
+        "path": "/383/footmark/383.png"
+    },
+    {
+        "pokemonId": 383,
+        "path": "/383/footmark/383b.png"
+    },
+    {
+        "pokemonId": 385,
+        "path": "/385/footmark/385.png"
+    },
+    {
+        "pokemonId": 385,
+        "path": "/385/footmark/385b.png"
+    },
+    {
+        "pokemonId": 386,
+        "path": "/386/footmark/386.png"
+    },
+    {
+        "pokemonId": 386,
+        "path": "/386/footmark/386b.png"
+    },
+    {
+        "pokemonId": 387,
+        "path": "/387/footmark/387.png"
+    },
+    {
+        "pokemonId": 387,
+        "path": "/387/footmark/387b.png"
+    },
+    {
+        "pokemonId": 388,
+        "path": "/388/footmark/388.png"
+    },
+    {
+        "pokemonId": 388,
+        "path": "/388/footmark/388b.png"
+    },
+    {
+        "pokemonId": 389,
+        "path": "/389/footmark/389.png"
+    },
+    {
+        "pokemonId": 389,
+        "path": "/389/footmark/389b.png"
+    },
+    {
+        "pokemonId": 390,
+        "path": "/390/footmark/390.png"
+    },
+    {
+        "pokemonId": 390,
+        "path": "/390/footmark/390b.png"
+    },
+    {
+        "pokemonId": 391,
+        "path": "/391/footmark/391.png"
+    },
+    {
+        "pokemonId": 391,
+        "path": "/391/footmark/391b.png"
+    },
+    {
+        "pokemonId": 392,
+        "path": "/392/footmark/392.png"
+    },
+    {
+        "pokemonId": 392,
+        "path": "/392/footmark/392b.png"
+    },
+    {
+        "pokemonId": 393,
+        "path": "/393/footmark/393.png"
+    },
+    {
+        "pokemonId": 393,
+        "path": "/393/footmark/393b.png"
+    },
+    {
+        "pokemonId": 394,
+        "path": "/394/footmark/394.png"
+    },
+    {
+        "pokemonId": 394,
+        "path": "/394/footmark/394b.png"
+    },
+    {
+        "pokemonId": 395,
+        "path": "/395/footmark/395.png"
+    },
+    {
+        "pokemonId": 395,
+        "path": "/395/footmark/395b.png"
+    },
+    {
+        "pokemonId": 396,
+        "path": "/396/footmark/396.png"
+    },
+    {
+        "pokemonId": 396,
+        "path": "/396/footmark/396b.png"
+    },
+    {
+        "pokemonId": 397,
+        "path": "/397/footmark/397.png"
+    },
+    {
+        "pokemonId": 397,
+        "path": "/397/footmark/397b.png"
+    },
+    {
+        "pokemonId": 398,
+        "path": "/398/footmark/398.png"
+    },
+    {
+        "pokemonId": 398,
+        "path": "/398/footmark/398b.png"
+    },
+    {
+        "pokemonId": 399,
+        "path": "/399/footmark/399.png"
+    },
+    {
+        "pokemonId": 399,
+        "path": "/399/footmark/399b.png"
+    },
+    {
+        "pokemonId": 400,
+        "path": "/400/footmark/400.png"
+    },
+    {
+        "pokemonId": 400,
+        "path": "/400/footmark/400b.png"
+    },
+    {
+        "pokemonId": 401,
+        "path": "/401/footmark/401.png"
+    },
+    {
+        "pokemonId": 401,
+        "path": "/401/footmark/401b.png"
+    },
+    {
+        "pokemonId": 402,
+        "path": "/402/footmark/402.png"
+    },
+    {
+        "pokemonId": 402,
+        "path": "/402/footmark/402b.png"
+    },
+    {
+        "pokemonId": 403,
+        "path": "/403/footmark/403.png"
+    },
+    {
+        "pokemonId": 403,
+        "path": "/403/footmark/403b.png"
+    },
+    {
+        "pokemonId": 404,
+        "path": "/404/footmark/404.png"
+    },
+    {
+        "pokemonId": 404,
+        "path": "/404/footmark/404b.png"
+    },
+    {
+        "pokemonId": 405,
+        "path": "/405/footmark/405.png"
+    },
+    {
+        "pokemonId": 405,
+        "path": "/405/footmark/405b.png"
+    },
+    {
+        "pokemonId": 406,
+        "path": "/406/footmark/406.png"
+    },
+    {
+        "pokemonId": 406,
+        "path": "/406/footmark/406b.png"
+    },
+    {
+        "pokemonId": 407,
+        "path": "/407/footmark/407.png"
+    },
+    {
+        "pokemonId": 407,
+        "path": "/407/footmark/407b.png"
+    },
+    {
+        "pokemonId": 408,
+        "path": "/408/footmark/408.png"
+    },
+    {
+        "pokemonId": 408,
+        "path": "/408/footmark/408b.png"
+    },
+    {
+        "pokemonId": 409,
+        "path": "/409/footmark/409.png"
+    },
+    {
+        "pokemonId": 409,
+        "path": "/409/footmark/409b.png"
+    },
+    {
+        "pokemonId": 410,
+        "path": "/410/footmark/410.png"
+    },
+    {
+        "pokemonId": 410,
+        "path": "/410/footmark/410b.png"
+    },
+    {
+        "pokemonId": 411,
+        "path": "/411/footmark/411.png"
+    },
+    {
+        "pokemonId": 411,
+        "path": "/411/footmark/411b.png"
+    },
+    {
+        "pokemonId": 414,
+        "path": "/414/footmark/414.png"
+    },
+    {
+        "pokemonId": 414,
+        "path": "/414/footmark/414b.png"
+    },
+    {
+        "pokemonId": 417,
+        "path": "/417/footmark/417.png"
+    },
+    {
+        "pokemonId": 417,
+        "path": "/417/footmark/417b.png"
+    },
+    {
+        "pokemonId": 418,
+        "path": "/418/footmark/418.png"
+    },
+    {
+        "pokemonId": 418,
+        "path": "/418/footmark/418b.png"
+    },
+    {
+        "pokemonId": 419,
+        "path": "/419/footmark/419.png"
+    },
+    {
+        "pokemonId": 419,
+        "path": "/419/footmark/419b.png"
+    },
+    {
+        "pokemonId": 420,
+        "path": "/420/footmark/420.png"
+    },
+    {
+        "pokemonId": 420,
+        "path": "/420/footmark/420b.png"
+    },
+    {
+        "pokemonId": 421,
+        "path": "/421/footmark/421.png"
+    },
+    {
+        "pokemonId": 421,
+        "path": "/421/footmark/421b.png"
+    },
+    {
+        "pokemonId": 422,
+        "path": "/422/footmark/422.png"
+    },
+    {
+        "pokemonId": 422,
+        "path": "/422/footmark/422b.png"
+    },
+    {
+        "pokemonId": 423,
+        "path": "/423/footmark/423.png"
+    },
+    {
+        "pokemonId": 423,
+        "path": "/423/footmark/423b.png"
+    },
+    {
+        "pokemonId": 424,
+        "path": "/424/footmark/424.png"
+    },
+    {
+        "pokemonId": 424,
+        "path": "/424/footmark/424b.png"
+    },
+    {
+        "pokemonId": 427,
+        "path": "/427/footmark/427.png"
+    },
+    {
+        "pokemonId": 427,
+        "path": "/427/footmark/427b.png"
+    },
+    {
+        "pokemonId": 428,
+        "path": "/428/footmark/428.png"
+    },
+    {
+        "pokemonId": 428,
+        "path": "/428/footmark/428b.png"
+    },
+    {
+        "pokemonId": 430,
+        "path": "/430/footmark/430.png"
+    },
+    {
+        "pokemonId": 430,
+        "path": "/430/footmark/430b.png"
+    },
+    {
+        "pokemonId": 431,
+        "path": "/431/footmark/431.png"
+    },
+    {
+        "pokemonId": 431,
+        "path": "/431/footmark/431b.png"
+    },
+    {
+        "pokemonId": 432,
+        "path": "/432/footmark/432.png"
+    },
+    {
+        "pokemonId": 432,
+        "path": "/432/footmark/432b.png"
+    },
+    {
+        "pokemonId": 433,
+        "path": "/433/footmark/433.png"
+    },
+    {
+        "pokemonId": 433,
+        "path": "/433/footmark/433b.png"
+    },
+    {
+        "pokemonId": 434,
+        "path": "/434/footmark/434.png"
+    },
+    {
+        "pokemonId": 434,
+        "path": "/434/footmark/434b.png"
+    },
+    {
+        "pokemonId": 435,
+        "path": "/435/footmark/435.png"
+    },
+    {
+        "pokemonId": 435,
+        "path": "/435/footmark/435b.png"
+    },
+    {
+        "pokemonId": 438,
+        "path": "/438/footmark/438.png"
+    },
+    {
+        "pokemonId": 438,
+        "path": "/438/footmark/438b.png"
+    },
+    {
+        "pokemonId": 439,
+        "path": "/439/footmark/439.png"
+    },
+    {
+        "pokemonId": 439,
+        "path": "/439/footmark/439b.png"
+    },
+    {
+        "pokemonId": 440,
+        "path": "/440/footmark/440.png"
+    },
+    {
+        "pokemonId": 440,
+        "path": "/440/footmark/440b.png"
+    },
+    {
+        "pokemonId": 441,
+        "path": "/441/footmark/441.png"
+    },
+    {
+        "pokemonId": 441,
+        "path": "/441/footmark/441b.png"
+    },
+    {
+        "pokemonId": 443,
+        "path": "/443/footmark/443.png"
+    },
+    {
+        "pokemonId": 443,
+        "path": "/443/footmark/443b.png"
+    },
+    {
+        "pokemonId": 444,
+        "path": "/444/footmark/444.png"
+    },
+    {
+        "pokemonId": 444,
+        "path": "/444/footmark/444b.png"
+    },
+    {
+        "pokemonId": 445,
+        "path": "/445/footmark/445.png"
+    },
+    {
+        "pokemonId": 445,
+        "path": "/445/footmark/445b.png"
+    },
+    {
+        "pokemonId": 446,
+        "path": "/446/footmark/446.png"
+    },
+    {
+        "pokemonId": 446,
+        "path": "/446/footmark/446b.png"
+    },
+    {
+        "pokemonId": 447,
+        "path": "/447/footmark/447.png"
+    },
+    {
+        "pokemonId": 447,
+        "path": "/447/footmark/447b.png"
+    },
+    {
+        "pokemonId": 448,
+        "path": "/448/footmark/448.png"
+    },
+    {
+        "pokemonId": 448,
+        "path": "/448/footmark/448b.png"
+    },
+    {
+        "pokemonId": 449,
+        "path": "/449/footmark/449.png"
+    },
+    {
+        "pokemonId": 449,
+        "path": "/449/footmark/449b.png"
+    },
+    {
+        "pokemonId": 450,
+        "path": "/450/footmark/450.png"
+    },
+    {
+        "pokemonId": 450,
+        "path": "/450/footmark/450b.png"
+    },
+    {
+        "pokemonId": 451,
+        "path": "/451/footmark/451.png"
+    },
+    {
+        "pokemonId": 451,
+        "path": "/451/footmark/451b.png"
+    },
+    {
+        "pokemonId": 452,
+        "path": "/452/footmark/452.png"
+    },
+    {
+        "pokemonId": 452,
+        "path": "/452/footmark/452b.png"
+    },
+    {
+        "pokemonId": 453,
+        "path": "/453/footmark/453.png"
+    },
+    {
+        "pokemonId": 453,
+        "path": "/453/footmark/453b.png"
+    },
+    {
+        "pokemonId": 454,
+        "path": "/454/footmark/454.png"
+    },
+    {
+        "pokemonId": 454,
+        "path": "/454/footmark/454b.png"
+    },
+    {
+        "pokemonId": 459,
+        "path": "/459/footmark/459.png"
+    },
+    {
+        "pokemonId": 459,
+        "path": "/459/footmark/459b.png"
+    },
+    {
+        "pokemonId": 460,
+        "path": "/460/footmark/460.png"
+    },
+    {
+        "pokemonId": 460,
+        "path": "/460/footmark/460b.png"
+    },
+    {
+        "pokemonId": 461,
+        "path": "/461/footmark/461.png"
+    },
+    {
+        "pokemonId": 461,
+        "path": "/461/footmark/461b.png"
+    },
+    {
+        "pokemonId": 463,
+        "path": "/463/footmark/463.png"
+    },
+    {
+        "pokemonId": 463,
+        "path": "/463/footmark/463b.png"
+    },
+    {
+        "pokemonId": 464,
+        "path": "/464/footmark/464.png"
+    },
+    {
+        "pokemonId": 464,
+        "path": "/464/footmark/464b.png"
+    },
+    {
+        "pokemonId": 465,
+        "path": "/465/footmark/465.png"
+    },
+    {
+        "pokemonId": 465,
+        "path": "/465/footmark/465b.png"
+    },
+    {
+        "pokemonId": 466,
+        "path": "/466/footmark/466.png"
+    },
+    {
+        "pokemonId": 466,
+        "path": "/466/footmark/466b.png"
+    },
+    {
+        "pokemonId": 467,
+        "path": "/467/footmark/467.png"
+    },
+    {
+        "pokemonId": 467,
+        "path": "/467/footmark/467b.png"
+    },
+    {
+        "pokemonId": 468,
+        "path": "/468/footmark/468.png"
+    },
+    {
+        "pokemonId": 468,
+        "path": "/468/footmark/468b.png"
+    },
+    {
+        "pokemonId": 469,
+        "path": "/469/footmark/469.png"
+    },
+    {
+        "pokemonId": 469,
+        "path": "/469/footmark/469b.png"
+    },
+    {
+        "pokemonId": 470,
+        "path": "/470/footmark/470.png"
+    },
+    {
+        "pokemonId": 470,
+        "path": "/470/footmark/470b.png"
+    },
+    {
+        "pokemonId": 471,
+        "path": "/471/footmark/471.png"
+    },
+    {
+        "pokemonId": 471,
+        "path": "/471/footmark/471b.png"
+    },
+    {
+        "pokemonId": 472,
+        "path": "/472/footmark/472.png"
+    },
+    {
+        "pokemonId": 472,
+        "path": "/472/footmark/472b.png"
+    },
+    {
+        "pokemonId": 473,
+        "path": "/473/footmark/473.png"
+    },
+    {
+        "pokemonId": 473,
+        "path": "/473/footmark/473b.png"
+    },
+    {
+        "pokemonId": 474,
+        "path": "/474/footmark/474.png"
+    },
+    {
+        "pokemonId": 474,
+        "path": "/474/footmark/474b.png"
+    },
+    {
+        "pokemonId": 475,
+        "path": "/475/footmark/475.png"
+    },
+    {
+        "pokemonId": 475,
+        "path": "/475/footmark/475b.png"
+    },
+    {
+        "pokemonId": 476,
+        "path": "/476/footmark/476.png"
+    },
+    {
+        "pokemonId": 476,
+        "path": "/476/footmark/476b.png"
+    },
+    {
+        "pokemonId": 480,
+        "path": "/480/footmark/480.png"
+    },
+    {
+        "pokemonId": 480,
+        "path": "/480/footmark/480b.png"
+    },
+    {
+        "pokemonId": 481,
+        "path": "/481/footmark/481.png"
+    },
+    {
+        "pokemonId": 481,
+        "path": "/481/footmark/481b.png"
+    },
+    {
+        "pokemonId": 482,
+        "path": "/482/footmark/482.png"
+    },
+    {
+        "pokemonId": 482,
+        "path": "/482/footmark/482b.png"
+    },
+    {
+        "pokemonId": 483,
+        "path": "/483/footmark/483.png"
+    },
+    {
+        "pokemonId": 483,
+        "path": "/483/footmark/483b.png"
+    },
+    {
+        "pokemonId": 484,
+        "path": "/484/footmark/484.png"
+    },
+    {
+        "pokemonId": 484,
+        "path": "/484/footmark/484b.png"
+    },
+    {
+        "pokemonId": 485,
+        "path": "/485/footmark/485.png"
+    },
+    {
+        "pokemonId": 485,
+        "path": "/485/footmark/485b.png"
+    },
+    {
+        "pokemonId": 486,
+        "path": "/486/footmark/486.png"
+    },
+    {
+        "pokemonId": 486,
+        "path": "/486/footmark/486b.png"
+    },
+    {
+        "pokemonId": 487,
+        "path": "/487/footmark/487.png"
+    },
+    {
+        "pokemonId": 487,
+        "path": "/487/footmark/487b.png"
+    },
+    {
+        "pokemonId": 491,
+        "path": "/491/footmark/491.png"
+    },
+    {
+        "pokemonId": 491,
+        "path": "/491/footmark/491b.png"
+    },
+    {
+        "pokemonId": 492,
+        "path": "/492/footmark/492.png"
+    },
+    {
+        "pokemonId": 492,
+        "path": "/492/footmark/492b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/bug/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/bug/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/dark/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/dark/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/dragon/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/dragon/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/electric/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/electric/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fairy/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fairy/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fighting/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fighting/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fire/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/fire/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/flying/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/flying/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ghost/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ghost/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/grass/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/grass/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ground/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ground/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ice/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/ice/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/normal/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/normal/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/poison/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/poison/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/psychic/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/psychic/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/rock/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/rock/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/steel/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/steel/footmark/493b.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/water/footmark/493.png"
+    },
+    {
+        "pokemonId": 493,
+        "path": "/493/water/footmark/493b.png"
+    },
+    {
+        "pokemonId": 494,
+        "path": "/494/footmark/494.png"
+    },
+    {
+        "pokemonId": 494,
+        "path": "/494/footmark/494b.png"
+    },
+    {
+        "pokemonId": 495,
+        "path": "/495/footmark/495.png"
+    },
+    {
+        "pokemonId": 495,
+        "path": "/495/footmark/495b.png"
+    },
+    {
+        "pokemonId": 496,
+        "path": "/496/footmark/496.png"
+    },
+    {
+        "pokemonId": 496,
+        "path": "/496/footmark/496b.png"
+    },
+    {
+        "pokemonId": 498,
+        "path": "/498/footmark/498.png"
+    },
+    {
+        "pokemonId": 498,
+        "path": "/498/footmark/498b.png"
+    },
+    {
+        "pokemonId": 499,
+        "path": "/499/footmark/499.png"
+    },
+    {
+        "pokemonId": 499,
+        "path": "/499/footmark/499b.png"
+    },
+    {
+        "pokemonId": 500,
+        "path": "/500/footmark/500.png"
+    },
+    {
+        "pokemonId": 500,
+        "path": "/500/footmark/500b.png"
+    },
+    {
+        "pokemonId": 501,
+        "path": "/501/footmark/501.png"
+    },
+    {
+        "pokemonId": 501,
+        "path": "/501/footmark/501b.png"
+    },
+    {
+        "pokemonId": 502,
+        "path": "/502/footmark/502.png"
+    },
+    {
+        "pokemonId": 502,
+        "path": "/502/footmark/502b.png"
+    },
+    {
+        "pokemonId": 503,
+        "path": "/503/footmark/503.png"
+    },
+    {
+        "pokemonId": 503,
+        "path": "/503/footmark/503b.png"
+    },
+    {
+        "pokemonId": 504,
+        "path": "/504/footmark/504.png"
+    },
+    {
+        "pokemonId": 504,
+        "path": "/504/footmark/504b.png"
+    },
+    {
+        "pokemonId": 505,
+        "path": "/505/footmark/505.png"
+    },
+    {
+        "pokemonId": 505,
+        "path": "/505/footmark/505b.png"
+    },
+    {
+        "pokemonId": 506,
+        "path": "/506/footmark/506.png"
+    },
+    {
+        "pokemonId": 506,
+        "path": "/506/footmark/506b.png"
+    },
+    {
+        "pokemonId": 507,
+        "path": "/507/footmark/507.png"
+    },
+    {
+        "pokemonId": 507,
+        "path": "/507/footmark/507b.png"
+    },
+    {
+        "pokemonId": 508,
+        "path": "/508/footmark/508.png"
+    },
+    {
+        "pokemonId": 508,
+        "path": "/508/footmark/508b.png"
+    },
+    {
+        "pokemonId": 509,
+        "path": "/509/footmark/509.png"
+    },
+    {
+        "pokemonId": 509,
+        "path": "/509/footmark/509b.png"
+    },
+    {
+        "pokemonId": 510,
+        "path": "/510/footmark/510.png"
+    },
+    {
+        "pokemonId": 510,
+        "path": "/510/footmark/510b.png"
+    },
+    {
+        "pokemonId": 511,
+        "path": "/511/footmark/511.png"
+    },
+    {
+        "pokemonId": 511,
+        "path": "/511/footmark/511b.png"
+    },
+    {
+        "pokemonId": 512,
+        "path": "/512/footmark/512.png"
+    },
+    {
+        "pokemonId": 512,
+        "path": "/512/footmark/512b.png"
+    },
+    {
+        "pokemonId": 513,
+        "path": "/513/footmark/513.png"
+    },
+    {
+        "pokemonId": 513,
+        "path": "/513/footmark/513b.png"
+    },
+    {
+        "pokemonId": 514,
+        "path": "/514/footmark/514.png"
+    },
+    {
+        "pokemonId": 514,
+        "path": "/514/footmark/514b.png"
+    },
+    {
+        "pokemonId": 515,
+        "path": "/515/footmark/515.png"
+    },
+    {
+        "pokemonId": 515,
+        "path": "/515/footmark/515b.png"
+    },
+    {
+        "pokemonId": 516,
+        "path": "/516/footmark/516.png"
+    },
+    {
+        "pokemonId": 516,
+        "path": "/516/footmark/516b.png"
+    },
+    {
+        "pokemonId": 517,
+        "path": "/517/footmark/517.png"
+    },
+    {
+        "pokemonId": 517,
+        "path": "/517/footmark/517b.png"
+    },
+    {
+        "pokemonId": 518,
+        "path": "/518/footmark/518.png"
+    },
+    {
+        "pokemonId": 518,
+        "path": "/518/footmark/518b.png"
+    },
+    {
+        "pokemonId": 519,
+        "path": "/519/footmark/519.png"
+    },
+    {
+        "pokemonId": 519,
+        "path": "/519/footmark/519b.png"
+    },
+    {
+        "pokemonId": 520,
+        "path": "/520/footmark/520.png"
+    },
+    {
+        "pokemonId": 520,
+        "path": "/520/footmark/520b.png"
+    },
+    {
+        "pokemonId": 521,
+        "path": "/521/footmark/521.png"
+    },
+    {
+        "pokemonId": 521,
+        "path": "/521/footmark/521b.png"
+    },
+    {
+        "pokemonId": 522,
+        "path": "/522/footmark/522.png"
+    },
+    {
+        "pokemonId": 522,
+        "path": "/522/footmark/522b.png"
+    },
+    {
+        "pokemonId": 523,
+        "path": "/523/footmark/523.png"
+    },
+    {
+        "pokemonId": 523,
+        "path": "/523/footmark/523b.png"
+    },
+    {
+        "pokemonId": 524,
+        "path": "/524/footmark/524.png"
+    },
+    {
+        "pokemonId": 524,
+        "path": "/524/footmark/524b.png"
+    },
+    {
+        "pokemonId": 525,
+        "path": "/525/footmark/525.png"
+    },
+    {
+        "pokemonId": 525,
+        "path": "/525/footmark/525b.png"
+    },
+    {
+        "pokemonId": 526,
+        "path": "/526/footmark/526.png"
+    },
+    {
+        "pokemonId": 526,
+        "path": "/526/footmark/526b.png"
+    },
+    {
+        "pokemonId": 528,
+        "path": "/528/footmark/528.png"
+    },
+    {
+        "pokemonId": 528,
+        "path": "/528/footmark/528b.png"
+    },
+    {
+        "pokemonId": 529,
+        "path": "/529/footmark/529.png"
+    },
+    {
+        "pokemonId": 529,
+        "path": "/529/footmark/529b.png"
+    },
+    {
+        "pokemonId": 530,
+        "path": "/530/footmark/530.png"
+    },
+    {
+        "pokemonId": 530,
+        "path": "/530/footmark/530b.png"
+    },
+    {
+        "pokemonId": 531,
+        "path": "/531/footmark/531.png"
+    },
+    {
+        "pokemonId": 531,
+        "path": "/531/footmark/531b.png"
+    },
+    {
+        "pokemonId": 532,
+        "path": "/532/footmark/532.png"
+    },
+    {
+        "pokemonId": 532,
+        "path": "/532/footmark/532b.png"
+    },
+    {
+        "pokemonId": 533,
+        "path": "/533/footmark/533.png"
+    },
+    {
+        "pokemonId": 533,
+        "path": "/533/footmark/533b.png"
+    },
+    {
+        "pokemonId": 534,
+        "path": "/534/footmark/534.png"
+    },
+    {
+        "pokemonId": 534,
+        "path": "/534/footmark/534b.png"
+    },
+    {
+        "pokemonId": 536,
+        "path": "/536/footmark/536.png"
+    },
+    {
+        "pokemonId": 536,
+        "path": "/536/footmark/536b.png"
+    },
+    {
+        "pokemonId": 537,
+        "path": "/537/footmark/537.png"
+    },
+    {
+        "pokemonId": 537,
+        "path": "/537/footmark/537b.png"
+    },
+    {
+        "pokemonId": 538,
+        "path": "/538/footmark/538.png"
+    },
+    {
+        "pokemonId": 538,
+        "path": "/538/footmark/538b.png"
+    },
+    {
+        "pokemonId": 539,
+        "path": "/539/footmark/539.png"
+    },
+    {
+        "pokemonId": 539,
+        "path": "/539/footmark/539b.png"
+    },
+    {
+        "pokemonId": 540,
+        "path": "/540/footmark/540.png"
+    },
+    {
+        "pokemonId": 540,
+        "path": "/540/footmark/540b.png"
+    },
+    {
+        "pokemonId": 542,
+        "path": "/542/footmark/542.png"
+    },
+    {
+        "pokemonId": 542,
+        "path": "/542/footmark/542b.png"
+    },
+    {
+        "pokemonId": 543,
+        "path": "/543/footmark/543.png"
+    },
+    {
+        "pokemonId": 543,
+        "path": "/543/footmark/543b.png"
+    },
+    {
+        "pokemonId": 545,
+        "path": "/545/footmark/545.png"
+    },
+    {
+        "pokemonId": 545,
+        "path": "/545/footmark/545b.png"
+    },
+    {
+        "pokemonId": 547,
+        "path": "/547/footmark/547.png"
+    },
+    {
+        "pokemonId": 547,
+        "path": "/547/footmark/547b.png"
+    },
+    {
+        "pokemonId": 549,
+        "path": "/549/footmark/549.png"
+    },
+    {
+        "pokemonId": 549,
+        "path": "/549/footmark/549b.png"
+    },
+    {
+        "pokemonId": 551,
+        "path": "/551/footmark/551.png"
+    },
+    {
+        "pokemonId": 551,
+        "path": "/551/footmark/551b.png"
+    },
+    {
+        "pokemonId": 552,
+        "path": "/552/footmark/552.png"
+    },
+    {
+        "pokemonId": 552,
+        "path": "/552/footmark/552b.png"
+    },
+    {
+        "pokemonId": 553,
+        "path": "/553/footmark/553.png"
+    },
+    {
+        "pokemonId": 553,
+        "path": "/553/footmark/553b.png"
+    },
+    {
+        "pokemonId": 554,
+        "path": "/554/footmark/554.png"
+    },
+    {
+        "pokemonId": 554,
+        "path": "/554/footmark/554b.png"
+    },
+    {
+        "pokemonId": 555,
+        "path": "/555/footmark/555.png"
+    },
+    {
+        "pokemonId": 555,
+        "path": "/555/footmark/555b.png"
+    },
+    {
+        "pokemonId": 556,
+        "path": "/556/footmark/556.png"
+    },
+    {
+        "pokemonId": 556,
+        "path": "/556/footmark/556b.png"
+    },
+    {
+        "pokemonId": 557,
+        "path": "/557/footmark/557.png"
+    },
+    {
+        "pokemonId": 557,
+        "path": "/557/footmark/557b.png"
+    },
+    {
+        "pokemonId": 558,
+        "path": "/558/footmark/558.png"
+    },
+    {
+        "pokemonId": 558,
+        "path": "/558/footmark/558b.png"
+    },
+    {
+        "pokemonId": 559,
+        "path": "/559/footmark/559.png"
+    },
+    {
+        "pokemonId": 559,
+        "path": "/559/footmark/559b.png"
+    },
+    {
+        "pokemonId": 560,
+        "path": "/560/footmark/560.png"
+    },
+    {
+        "pokemonId": 560,
+        "path": "/560/footmark/560b.png"
+    },
+    {
+        "pokemonId": 565,
+        "path": "/565/footmark/565.png"
+    },
+    {
+        "pokemonId": 565,
+        "path": "/565/footmark/565b.png"
+    },
+    {
+        "pokemonId": 566,
+        "path": "/566/footmark/566.png"
+    },
+    {
+        "pokemonId": 566,
+        "path": "/566/footmark/566b.png"
+    },
+    {
+        "pokemonId": 567,
+        "path": "/567/footmark/567.png"
+    },
+    {
+        "pokemonId": 567,
+        "path": "/567/footmark/567b.png"
+    },
+    {
+        "pokemonId": 568,
+        "path": "/568/footmark/568.png"
+    },
+    {
+        "pokemonId": 568,
+        "path": "/568/footmark/568b.png"
+    },
+    {
+        "pokemonId": 569,
+        "path": "/569/footmark/569.png"
+    },
+    {
+        "pokemonId": 569,
+        "path": "/569/footmark/569b.png"
+    },
+    {
+        "pokemonId": 570,
+        "path": "/570/footmark/570.png"
+    },
+    {
+        "pokemonId": 570,
+        "path": "/570/footmark/570b.png"
+    },
+    {
+        "pokemonId": 571,
+        "path": "/571/footmark/571.png"
+    },
+    {
+        "pokemonId": 571,
+        "path": "/571/footmark/571b.png"
+    },
+    {
+        "pokemonId": 572,
+        "path": "/572/footmark/572.png"
+    },
+    {
+        "pokemonId": 572,
+        "path": "/572/footmark/572b.png"
+    },
+    {
+        "pokemonId": 573,
+        "path": "/573/footmark/573.png"
+    },
+    {
+        "pokemonId": 573,
+        "path": "/573/footmark/573b.png"
+    },
+    {
+        "pokemonId": 574,
+        "path": "/574/footmark/574.png"
+    },
+    {
+        "pokemonId": 574,
+        "path": "/574/footmark/574b.png"
+    },
+    {
+        "pokemonId": 575,
+        "path": "/575/footmark/575.png"
+    },
+    {
+        "pokemonId": 575,
+        "path": "/575/footmark/575b.png"
+    },
+    {
+        "pokemonId": 576,
+        "path": "/576/footmark/576.png"
+    },
+    {
+        "pokemonId": 576,
+        "path": "/576/footmark/576b.png"
+    },
+    {
+        "pokemonId": 580,
+        "path": "/580/footmark/580.png"
+    },
+    {
+        "pokemonId": 580,
+        "path": "/580/footmark/580b.png"
+    },
+    {
+        "pokemonId": 581,
+        "path": "/581/footmark/581.png"
+    },
+    {
+        "pokemonId": 581,
+        "path": "/581/footmark/581b.png"
+    },
+    {
+        "pokemonId": 585,
+        "path": "/585/footmark/585.png"
+    },
+    {
+        "pokemonId": 585,
+        "path": "/585/footmark/585b.png"
+    },
+    {
+        "pokemonId": 586,
+        "path": "/586/footmark/586.png"
+    },
+    {
+        "pokemonId": 586,
+        "path": "/586/footmark/586b.png"
+    },
+    {
+        "pokemonId": 587,
+        "path": "/587/footmark/587.png"
+    },
+    {
+        "pokemonId": 587,
+        "path": "/587/footmark/587b.png"
+    },
+    {
+        "pokemonId": 588,
+        "path": "/588/footmark/588.png"
+    },
+    {
+        "pokemonId": 588,
+        "path": "/588/footmark/588b.png"
+    },
+    {
+        "pokemonId": 595,
+        "path": "/595/footmark/595.png"
+    },
+    {
+        "pokemonId": 595,
+        "path": "/595/footmark/595b.png"
+    },
+    {
+        "pokemonId": 596,
+        "path": "/596/footmark/596.png"
+    },
+    {
+        "pokemonId": 596,
+        "path": "/596/footmark/596b.png"
+    },
+    {
+        "pokemonId": 598,
+        "path": "/598/footmark/598.png"
+    },
+    {
+        "pokemonId": 598,
+        "path": "/598/footmark/598b.png"
+    },
+    {
+        "pokemonId": 605,
+        "path": "/605/footmark/605.png"
+    },
+    {
+        "pokemonId": 605,
+        "path": "/605/footmark/605b.png"
+    },
+    {
+        "pokemonId": 606,
+        "path": "/606/footmark/606.png"
+    },
+    {
+        "pokemonId": 606,
+        "path": "/606/footmark/606b.png"
+    },
+    {
+        "pokemonId": 610,
+        "path": "/610/footmark/610.png"
+    },
+    {
+        "pokemonId": 610,
+        "path": "/610/footmark/610b.png"
+    },
+    {
+        "pokemonId": 611,
+        "path": "/611/footmark/611.png"
+    },
+    {
+        "pokemonId": 611,
+        "path": "/611/footmark/611b.png"
+    },
+    {
+        "pokemonId": 612,
+        "path": "/612/footmark/612.png"
+    },
+    {
+        "pokemonId": 612,
+        "path": "/612/footmark/612b.png"
+    },
+    {
+        "pokemonId": 613,
+        "path": "/613/footmark/613.png"
+    },
+    {
+        "pokemonId": 613,
+        "path": "/613/footmark/613b.png"
+    },
+    {
+        "pokemonId": 614,
+        "path": "/614/footmark/614.png"
+    },
+    {
+        "pokemonId": 614,
+        "path": "/614/footmark/614b.png"
+    },
+    {
+        "pokemonId": 616,
+        "path": "/616/footmark/616.png"
+    },
+    {
+        "pokemonId": 616,
+        "path": "/616/footmark/616b.png"
+    },
+    {
+        "pokemonId": 619,
+        "path": "/619/footmark/619.png"
+    },
+    {
+        "pokemonId": 619,
+        "path": "/619/footmark/619b.png"
+    },
+    {
+        "pokemonId": 620,
+        "path": "/620/footmark/620.png"
+    },
+    {
+        "pokemonId": 620,
+        "path": "/620/footmark/620b.png"
+    },
+    {
+        "pokemonId": 621,
+        "path": "/621/footmark/621.png"
+    },
+    {
+        "pokemonId": 621,
+        "path": "/621/footmark/621b.png"
+    },
+    {
+        "pokemonId": 622,
+        "path": "/622/footmark/622.png"
+    },
+    {
+        "pokemonId": 622,
+        "path": "/622/footmark/622b.png"
+    },
+    {
+        "pokemonId": 623,
+        "path": "/623/footmark/623.png"
+    },
+    {
+        "pokemonId": 623,
+        "path": "/623/footmark/623b.png"
+    },
+    {
+        "pokemonId": 624,
+        "path": "/624/footmark/624.png"
+    },
+    {
+        "pokemonId": 624,
+        "path": "/624/footmark/624b.png"
+    },
+    {
+        "pokemonId": 625,
+        "path": "/625/footmark/625.png"
+    },
+    {
+        "pokemonId": 625,
+        "path": "/625/footmark/625b.png"
+    },
+    {
+        "pokemonId": 626,
+        "path": "/626/footmark/626.png"
+    },
+    {
+        "pokemonId": 626,
+        "path": "/626/footmark/626b.png"
+    },
+    {
+        "pokemonId": 627,
+        "path": "/627/footmark/627.png"
+    },
+    {
+        "pokemonId": 627,
+        "path": "/627/footmark/627b.png"
+    },
+    {
+        "pokemonId": 628,
+        "path": "/628/footmark/628.png"
+    },
+    {
+        "pokemonId": 628,
+        "path": "/628/footmark/628b.png"
+    },
+    {
+        "pokemonId": 629,
+        "path": "/629/footmark/629.png"
+    },
+    {
+        "pokemonId": 629,
+        "path": "/629/footmark/629b.png"
+    },
+    {
+        "pokemonId": 630,
+        "path": "/630/footmark/630.png"
+    },
+    {
+        "pokemonId": 630,
+        "path": "/630/footmark/630b.png"
+    },
+    {
+        "pokemonId": 631,
+        "path": "/631/footmark/631.png"
+    },
+    {
+        "pokemonId": 631,
+        "path": "/631/footmark/631b.png"
+    },
+    {
+        "pokemonId": 632,
+        "path": "/632/footmark/632.png"
+    },
+    {
+        "pokemonId": 632,
+        "path": "/632/footmark/632b.png"
+    },
+    {
+        "pokemonId": 633,
+        "path": "/633/footmark/633.png"
+    },
+    {
+        "pokemonId": 633,
+        "path": "/633/footmark/633b.png"
+    },
+    {
+        "pokemonId": 634,
+        "path": "/634/footmark/634.png"
+    },
+    {
+        "pokemonId": 634,
+        "path": "/634/footmark/634b.png"
+    },
+    {
+        "pokemonId": 636,
+        "path": "/636/footmark/636.png"
+    },
+    {
+        "pokemonId": 636,
+        "path": "/636/footmark/636b.png"
+    },
+    {
+        "pokemonId": 638,
+        "path": "/638/footmark/638.png"
+    },
+    {
+        "pokemonId": 638,
+        "path": "/638/footmark/638b.png"
+    },
+    {
+        "pokemonId": 639,
+        "path": "/639/footmark/639.png"
+    },
+    {
+        "pokemonId": 639,
+        "path": "/639/footmark/639b.png"
+    },
+    {
+        "pokemonId": 640,
+        "path": "/640/footmark/640.png"
+    },
+    {
+        "pokemonId": 640,
+        "path": "/640/footmark/640b.png"
+    },
+    {
+        "pokemonId": 643,
+        "path": "/643/footmark/643.png"
+    },
+    {
+        "pokemonId": 643,
+        "path": "/643/footmark/643b.png"
+    },
+    {
+        "pokemonId": 644,
+        "path": "/644/footmark/644.png"
+    },
+    {
+        "pokemonId": 644,
+        "path": "/644/footmark/644b.png"
+    },
+    {
+        "pokemonId": 646,
+        "path": "/646/footmark/646.png"
+    },
+    {
+        "pokemonId": 646,
+        "path": "/646/footmark/646b.png"
+    },
+    {
+        "pokemonId": 647,
+        "path": "/647/footmark/647.png"
+    },
+    {
+        "pokemonId": 647,
+        "path": "/647/footmark/647b.png"
+    },
+    {
+        "pokemonId": 648,
+        "path": "/648/footmark/648.png"
+    },
+    {
+        "pokemonId": 648,
+        "path": "/648/footmark/648b.png"
+    },
+    {
+        "pokemonId": 649,
+        "path": "/649/footmark/649.png"
+    },
+    {
+        "pokemonId": 649,
+        "path": "/649/footmark/649b.png"
+    }
+]
