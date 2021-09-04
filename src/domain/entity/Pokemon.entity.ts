@@ -13,7 +13,8 @@ import FlavorTextEntryEntity from './FlavorTextEntry.entity';
 import GeneraEntity from './Genera.entity';
 import PokemonEvolutionEntity from './PokemonEvolution.entity';
 import PokemonGameImageEntity from './PokemonGameImage.entity';
-import PokemonImageEntity from './PokemonImage.entity';
+import PokemonFootmarkImage from './PokemonFootmarkImage.entity';
+import PokemonWarkImage from './PokemonWarkImage.entity';
 import PokemonNameEntity from './PokemonName.entity';
 import PokemonTypeEntity from './PokemonType.entity';
 import RegionEntity from './Region.entity';
@@ -86,8 +87,17 @@ class PokemonEntity extends BaseEntity {
     )
     readonly pokemonGameImages: PokemonGameImageEntity[];
 
-    @OneToMany(() => PokemonImageEntity, (pokemonImage) => pokemonImage.pokemon)
-    readonly pokemonImages: PokemonImageEntity[];
+    @OneToMany(
+        () => PokemonFootmarkImage,
+        (pokemonFootmarkImage) => pokemonFootmarkImage.pokemon
+    )
+    readonly pokemonFootmarkImages: PokemonFootmarkImage[];
+
+    @OneToMany(
+        () => PokemonWarkImage,
+        (pokemonWarkImage) => pokemonWarkImage.pokemon
+    )
+    readonly pokemonWarkImages: PokemonWarkImage[];
 
     @OneToMany(() => PokemonNameEntity, (pokemonName) => pokemonName.pokemon)
     readonly pokemonNames: PokemonNameEntity[];

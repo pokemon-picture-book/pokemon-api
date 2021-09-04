@@ -10,7 +10,8 @@ declare module 'app-entity' {
     import PokemonEntity from '@/domain/entity/Pokemon.entity';
     import PokemonEvolutionEntity from '@/domain/entity/PokemonEvolution.entity';
     import PokemonGameImageEntity from '@/domain/entity/PokemonGameImage.entity';
-    import PokemonImageEntity from '@/domain/entity/PokemonImage.entity';
+    import PokemonFootmarkImageEntity from '@/domain/entity/PokemonFootmarkImage.entity';
+    import PokemonWarkImageEntity from '@/domain/entity/PokemonWarkImage.entity';
     import PokemonNameEntity from '@/domain/entity/PokemonName.entity';
     import PokemonTypeEntity from '@/domain/entity/PokemonType.entity';
     import RegionEntity from '@/domain/entity/Region.entity';
@@ -32,7 +33,10 @@ declare module 'app-entity' {
     export type Pokemon = InstanceType<typeof PokemonEntity>;
     export type PokemonEvolution = InstanceType<typeof PokemonEvolutionEntity>;
     export type PokemonGameImage = InstanceType<typeof PokemonGameImageEntity>;
-    export type PokemonImage = InstanceType<typeof PokemonImageEntity>;
+    export type PokemonFootmarkImage = InstanceType<
+        typeof PokemonFootmarkImageEntity
+    >;
+    export type PokemonWarkImage = InstanceType<typeof PokemonWarkImageEntity>;
     export type PokemonName = InstanceType<typeof PokemonNameEntity>;
     export type PokemonType = InstanceType<typeof PokemonTypeEntity>;
     export type Region = InstanceType<typeof RegionEntity>;
