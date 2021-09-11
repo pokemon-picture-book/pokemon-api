@@ -13,19 +13,21 @@ declare module 'app-response-model' {
         RegionName,
     } from 'app-entity';
 
+    export type PokemonSearchResponseData = Pick<Pokemon, 'id' | 'imageColor'> &
+        Pick<PokemonName, 'name'> & {
+            gameImagePath: {
+                mainPath: PokemonGameImage['path'];
+                otherPaths: PokemonGameImage['path'][];
+            };
+            types: {
+                code: Type['name'];
+                name: TypeName['name'];
+            }[];
+        };
+
     export type PokemonSearchResponse = {
         hits: number;
-        data: (Pick<Pokemon, 'id' | 'imageColor'> &
-            Pick<PokemonName, 'name'> & {
-                gameImagePath: {
-                    mainPath: PokemonGameImage['path'];
-                    otherPaths: PokemonGameImage['path'][];
-                };
-                types: {
-                    code: Type['name'];
-                    name: TypeName['name'];
-                }[];
-            })[];
+        data: PokemonSearchResponseData[];
     };
 
     export type GameVersionGroupResponse = Pick<

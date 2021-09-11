@@ -48,7 +48,7 @@ module.exports = {
             {
                 test: /\.ts$/,
                 include: [path.resolve(__dirname, 'src')],
-                exclude: /node_modules/,
+                exclude: /(node_modules | test)/,
                 use: [
                     {
                         loader: 'babel-loader',
