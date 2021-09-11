@@ -1,3 +1,4 @@
+import { base64RegExp } from '@test/shared/image';
 import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
 import IPokemonRepository from '@/domain/repository/IPokemon.repository';
 import driver from '@/driver';
@@ -27,7 +28,7 @@ describe('Unit test for Pokemon presenter', () => {
             {}
         );
 
-        const pokemonSearchResponse = presenter.toPokemonSearchResponse(
+        const pokemonSearchResponse = await presenter.toPokemonSearchResponse(
             pokemons.length,
             pokemons
         );
@@ -42,18 +43,12 @@ describe('Unit test for Pokemon presenter', () => {
             actual.pokemonNames[0].name
         );
 
-        expect(
-            actual.pokemonGameImages.every((pokemonGameImage) => {
-                const {
-                    mainPath,
-                    otherPaths,
-                } = pokemonSearchResponseData.gameImagePath;
-                return (
-                    mainPath === pokemonGameImage.path ||
-                    otherPaths.includes(pokemonGameImage.path)
-                );
-            })
-        ).toBeTruthy();
+        // base64 にエンコードされているか
+        const isBase64Format = pokemonSearchResponseData.gameImagePath.otherPaths
+            .concat([pokemonSearchResponseData.gameImagePath.mainPath])
+            .every((path) => base64RegExp.test(path));
+        expect(isBase64Format).toBeTruthy();
+
         actual.pokemonTypes.forEach((type, i) => {
             const { code, name } = pokemonSearchResponseData.types[i];
             expect(code).toBe(type.type.name);
@@ -64,7 +59,7 @@ describe('Unit test for Pokemon presenter', () => {
     });
 
     test('正常: 正しくマッピングできているか', async (done) => {
-        const responses = presenter.toPokemonSearchResponse(0, []);
+        const responses = await presenter.toPokemonSearchResponse(0, []);
         expect(responses.hits).toBe(0);
         expect(responses.data.length).toBe(0);
         done();

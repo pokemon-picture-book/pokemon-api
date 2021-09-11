@@ -2,6 +2,7 @@ import driver from '@/driver';
 import { ROUTING } from '@/routes';
 import server from '@/server';
 import { getRegionPokemonNum } from '@test/shared/region';
+import { base64RegExp } from '@test/shared/image';
 import { LIMIT_MAX_NUM } from '@/domain/constant/pagination';
 import { SearchPokemonQueryParam } from 'app-request-model';
 import { PokemonSearchResponse } from 'app-response-model';
@@ -29,16 +30,12 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.hits).toBe(actualNum);
                 expect(pokemons.data.length).toBe(LIMIT_MAX_NUM);
 
-                // 一番古いゲームバージョンであるか
+                // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const gameImagePaths = gameImagePath.otherPaths.concat([
-                        gameImagePath.mainPath,
-                    ]);
-                    const hasOldGame = gameImagePaths.every(
-                        (path) =>
-                            path.includes('/icon/') || path.includes('/rgby/')
-                    );
-                    expect(hasOldGame).toBeTruthy();
+                    const isBase64Format = gameImagePath.otherPaths
+                        .concat([gameImagePath.mainPath])
+                        .every((path) => base64RegExp.test(path));
+                    expect(isBase64Format).toBeTruthy();
                 });
 
                 // 英語のデータであるか（最初の３匹だけで検証する）
@@ -120,16 +117,12 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.hits).toBe(actualNum);
                 expect(pokemons.data.length).toBe(LIMIT_MAX_NUM);
 
-                // 金銀バージョンであるか
+                // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const gameImagePaths = gameImagePath.otherPaths.concat([
-                        gameImagePath.mainPath,
-                    ]);
-                    const hasOldGame = gameImagePaths.every(
-                        (path) =>
-                            path.includes('/icon/') || path.includes('/gsc/')
-                    );
-                    expect(hasOldGame).toBeTruthy();
+                    const isBase64Format = gameImagePath.otherPaths
+                        .concat([gameImagePath.mainPath])
+                        .every((path) => base64RegExp.test(path));
+                    expect(isBase64Format).toBeTruthy();
                 });
 
                 done();
@@ -153,16 +146,12 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.hits).toBe(actualNum);
                 expect(pokemons.data.length).toBe(LIMIT_MAX_NUM);
 
-                // 金銀バージョンであるか
+                // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const gameImagePaths = gameImagePath.otherPaths.concat([
-                        gameImagePath.mainPath,
-                    ]);
-                    const hasOldGame = gameImagePaths.every(
-                        (path) =>
-                            path.includes('/icon/') || path.includes('/rse/')
-                    );
-                    expect(hasOldGame).toBeTruthy();
+                    const isBase64Format = gameImagePath.otherPaths
+                        .concat([gameImagePath.mainPath])
+                        .every((path) => base64RegExp.test(path));
+                    expect(isBase64Format).toBeTruthy();
                 });
 
                 done();
@@ -188,16 +177,12 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.hits).toBe(actualNum);
                 expect(pokemons.data.length).toBe(LIMIT_MAX_NUM);
 
-                // ブラック・ホワイトバージョンであるか
+                // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const gameImagePaths = gameImagePath.otherPaths.concat([
-                        gameImagePath.mainPath,
-                    ]);
-                    const hasOldGame = gameImagePaths.every(
-                        (path) =>
-                            path.includes('/icon/') || path.includes('/bw/')
-                    );
-                    expect(hasOldGame).toBeTruthy();
+                    const isBase64Format = gameImagePath.otherPaths
+                        .concat([gameImagePath.mainPath])
+                        .every((path) => base64RegExp.test(path));
+                    expect(isBase64Format).toBeTruthy();
                 });
 
                 // 日本語のデータであるか（最初の３匹だけで検証する）
@@ -289,16 +274,12 @@ describe('Integration test for pokemon', () => {
                 expect(pokemons.hits).toBe(actualNum);
                 expect(pokemons.data.length).toBe(LIMIT_MAX_NUM);
 
-                // 一番古いゲームバージョンであるか
+                // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const gameImagePaths = gameImagePath.otherPaths.concat([
-                        gameImagePath.mainPath,
-                    ]);
-                    const hasOldGame = gameImagePaths.every(
-                        (path) =>
-                            path.includes('/icon/') || path.includes('/rgby/')
-                    );
-                    expect(hasOldGame).toBeTruthy();
+                    const isBase64Format = gameImagePath.otherPaths
+                        .concat([gameImagePath.mainPath])
+                        .every((path) => base64RegExp.test(path));
+                    expect(isBase64Format).toBeTruthy();
                 });
 
                 // 英語のデータであるか（最初の３匹だけで検証する）

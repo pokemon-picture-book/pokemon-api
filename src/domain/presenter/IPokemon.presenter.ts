@@ -5,5 +5,5 @@ export default interface IPokemonPresenter {
     toPokemonSearchResponse(
         hits: number,
         pokemons: PokemonEntity[]
-    ): PokemonSearchResponse;
+    ): Promise<PokemonSearchResponse>;
 }
