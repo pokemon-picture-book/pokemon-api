@@ -11,6 +11,7 @@ export default class PokemonRepository implements IPokemonRepository {
         languageId: number;
         gameVersionGroupId: number;
         regionIds: number[];
+        isPokemonMainImage: boolean;
     }): SelectQueryBuilder<PokemonEntity> {
         return PokemonEntity.createQueryBuilder('pokemon')
             .innerJoin(
@@ -22,8 +23,11 @@ export default class PokemonRepository implements IPokemonRepository {
             .innerJoinAndSelect(
                 'pokemon.pokemonGameImages',
                 'pokemonGameImage',
-                'pokemonGameImage.game_version_group_id = :gameVersionGroupId',
-                { gameVersionGroupId: whereParam.gameVersionGroupId }
+                'pokemonGameImage.game_version_group_id = :gameVersionGroupId AND pokemonGameImage.is_main = :isPokemonMainImage',
+                {
+                    gameVersionGroupId: whereParam.gameVersionGroupId,
+                    isPokemonMainImage: whereParam.isPokemonMainImage,
+                }
             )
             .innerJoinAndSelect(
                 'pokemon.pokemonNames',
@@ -52,6 +56,7 @@ export default class PokemonRepository implements IPokemonRepository {
             languageId: number;
             gameVersionGroupId: number;
             regionIds: number[];
+            isPokemonMainImage: boolean;
         },
         pageParam: { offset?: number; limit?: number }
     ): Promise<PokemonEntity[]> {
@@ -68,6 +73,7 @@ export default class PokemonRepository implements IPokemonRepository {
         languageId: number;
         gameVersionGroupId: number;
         regionIds: number[];
+        isPokemonMainImage: boolean;
     }): Promise<number> {
         return this.commonFindAllQueryBuilder(whereParam).getCount();
     }

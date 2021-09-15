@@ -24,6 +24,7 @@ describe('Unit test for Pokemon presenter', () => {
                 languageId: 1,
                 gameVersionGroupId: 1,
                 regionIds: [1],
+                isPokemonMainImage: true,
             },
             {}
         );
@@ -44,10 +45,10 @@ describe('Unit test for Pokemon presenter', () => {
         );
 
         // base64 にエンコードされているか
-        const isBase64Format = pokemonSearchResponseData.gameImagePath.otherPaths
-            .concat([pokemonSearchResponseData.gameImagePath.mainPath])
-            .every((path) => base64RegExp.test(path));
-        expect(isBase64Format).toBeTruthy();
+        const isBase64Format = base64RegExp.test(
+            pokemonSearchResponseData.gameImagePath
+        );
+        expect(isBase64Format).toBe(true);
 
         actual.pokemonTypes.forEach((type, i) => {
             const { code, name } = pokemonSearchResponseData.types[i];
