@@ -19,10 +19,7 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
                     id: 1,
                     imageColor: 'imageColor',
                     name: 'name',
-                    gameImagePath: {
-                        mainPath: 'gameImagePathMain',
-                        otherPaths: ['gameImagePathSub'],
-                    },
+                    gameImagePath: 'gameImagePathMain',
                     types: [{ code: 'code', name: 'name' }],
                 };
             }),

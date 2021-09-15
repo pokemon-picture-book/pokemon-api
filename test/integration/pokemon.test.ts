@@ -32,10 +32,8 @@ describe('Integration test for pokemon', () => {
 
                 // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const isBase64Format = gameImagePath.otherPaths
-                        .concat([gameImagePath.mainPath])
-                        .every((path) => base64RegExp.test(path));
-                    expect(isBase64Format).toBeTruthy();
+                    const isBase64Format = base64RegExp.test(gameImagePath);
+                    expect(isBase64Format).toBe(true);
                 });
 
                 // 英語のデータであるか（最初の３匹だけで検証する）
@@ -119,10 +117,8 @@ describe('Integration test for pokemon', () => {
 
                 // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const isBase64Format = gameImagePath.otherPaths
-                        .concat([gameImagePath.mainPath])
-                        .every((path) => base64RegExp.test(path));
-                    expect(isBase64Format).toBeTruthy();
+                    const isBase64Format = base64RegExp.test(gameImagePath);
+                    expect(isBase64Format).toBe(true);
                 });
 
                 done();
@@ -148,10 +144,8 @@ describe('Integration test for pokemon', () => {
 
                 // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const isBase64Format = gameImagePath.otherPaths
-                        .concat([gameImagePath.mainPath])
-                        .every((path) => base64RegExp.test(path));
-                    expect(isBase64Format).toBeTruthy();
+                    const isBase64Format = base64RegExp.test(gameImagePath);
+                    expect(isBase64Format).toBe(true);
                 });
 
                 done();
@@ -179,10 +173,8 @@ describe('Integration test for pokemon', () => {
 
                 // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const isBase64Format = gameImagePath.otherPaths
-                        .concat([gameImagePath.mainPath])
-                        .every((path) => base64RegExp.test(path));
-                    expect(isBase64Format).toBeTruthy();
+                    const isBase64Format = base64RegExp.test(gameImagePath);
+                    expect(isBase64Format).toBe(true);
                 });
 
                 // 日本語のデータであるか（最初の３匹だけで検証する）
@@ -276,10 +268,8 @@ describe('Integration test for pokemon', () => {
 
                 // base64 にエンコードされているか
                 pokemons.data.forEach(({ gameImagePath }) => {
-                    const isBase64Format = gameImagePath.otherPaths
-                        .concat([gameImagePath.mainPath])
-                        .every((path) => base64RegExp.test(path));
-                    expect(isBase64Format).toBeTruthy();
+                    const isBase64Format = base64RegExp.test(gameImagePath);
+                    expect(isBase64Format).toBe(true);
                 });
 
                 // 英語のデータであるか（最初の３匹だけで検証する）

@@ -6,6 +6,7 @@ export default interface IPokemonRepository {
             languageId: number;
             gameVersionGroupId: number;
             regionIds: number[];
+            isPokemonMainImage: boolean;
         },
         pageParam: {
             offset?: number;
@@ -17,5 +18,6 @@ export default interface IPokemonRepository {
         languageId: number;
         gameVersionGroupId: number;
         regionIds: number[];
+        isPokemonMainImage: boolean;
     }): Promise<number>;
 }

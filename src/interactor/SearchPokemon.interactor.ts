@@ -88,6 +88,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             languageId: language.id,
             gameVersionGroupId: gameVersionGroup.id,
             regionIds: regions.map(({ id }) => id),
+            isPokemonMainImage: true,
         };
         const [hits, pokemons] = await Promise.all([
             this.repository.findAllCount(whereParam),

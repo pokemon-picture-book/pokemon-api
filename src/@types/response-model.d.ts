@@ -15,10 +15,7 @@ declare module 'app-response-model' {
 
     export type PokemonSearchResponseData = Pick<Pokemon, 'id' | 'imageColor'> &
         Pick<PokemonName, 'name'> & {
-            gameImagePath: {
-                mainPath: PokemonGameImage['path'];
-                otherPaths: PokemonGameImage['path'][];
-            };
+            gameImagePath: PokemonGameImage['path'];
             types: {
                 code: Type['name'];
                 name: TypeName['name'];

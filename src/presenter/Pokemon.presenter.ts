@@ -21,37 +21,17 @@ export default class PokemonPresenter implements IPokemonPresenter {
                     return { code: type.name, name: typeName };
                 });
 
-                const pokemonGameImages = await Promise.all(
-                    p.pokemonGameImages.map(async (pokemonGameImage) => ({
-                        ...pokemonGameImage,
-                        path: await toBase64(pokemonGameImage.path),
-                    }))
-                );
-                const gameImagePath = pokemonGameImages.reduce<
-                    PokemonSearchResponseData['gameImagePath']
-                >(
-                    (a, c) => {
-                        return c.isMain
-                            ? {
-                                  ...a,
-                                  mainPath: c.path,
-                              }
-                            : {
-                                  ...a,
-                                  otherPaths: a.otherPaths.concat([c.path]),
-                              };
-                    },
-                    {
-                        mainPath: '',
-                        otherPaths: [],
-                    } as PokemonSearchResponseData['gameImagePath']
+                const gameImagePath = p.pokemonGameImages.find(
+                    (pokemonGameImage) => pokemonGameImage.isMain
                 );
 
                 return {
                     id: p.id,
                     imageColor: p.imageColor,
                     name: pokemonName,
-                    gameImagePath,
+                    gameImagePath: gameImagePath
+                        ? await toBase64(gameImagePath.path)
+                        : '',
                     types,
                 };
             })
