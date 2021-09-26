@@ -4,6 +4,7 @@ import * as cors from 'cors';
 import settingRouter from '@/domain/function/express-router.function';
 import appRoutes from '@/routes';
 import config from '@/config';
+import * as cluster from 'cluster';
 
 const app = express();
 
@@ -22,6 +23,13 @@ app.use(
     })
 );
 app.use(cookieParser(appConfig.SESSION_SECRET || 'mySecret'));
+// interceptor
+app.use((_, __, next) => {
+    if (process.env.NODE_ENV !== 'test') {
+        console.info(`[${new Date()}] [PID ${cluster.worker.process.pid}]`);
+    }
+    next();
+});
 
 if (process.env.NODE_ENV === 'development') {
     app.use(express.static('public'));
