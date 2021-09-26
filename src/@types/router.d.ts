@@ -2,11 +2,11 @@ declare module 'app-router' {
     import { ValidationChain } from 'express-validator';
 
     export type Routing = {
-        API: string;
-        POKEMON: string;
-        GAME_VERSION_GROUP: string;
-        REGION: string;
-        LANGUAGE: string;
+        API: '/pokemon-api/v1';
+        POKEMON: '/pokemons';
+        GAME_VERSION_GROUP: '/game-version-groups';
+        REGION: '/regions';
+        LANGUAGE: '/languages';
     };
 
     export type ItemRouter = {
