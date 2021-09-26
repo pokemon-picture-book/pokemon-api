@@ -8,19 +8,19 @@ import {
 import { supportedQueryValidator } from '@/controller/validator/game-version-group';
 import container from '@/registory/inversify.config';
 import TYPES from '@/registory/inversify.types';
-import { AppRouter, Routing } from 'app-router';
+import { AppRouter } from 'app-router';
 import { AppRequest, AppResponse } from 'express';
 import 'reflect-metadata';
 import LanguageController from './controller/Language.controller';
 import RegionController from './controller/Region.controller';
 
-export const ROUTING: Readonly<Routing> = {
+export const ROUTING = {
     API: '/pokemon-api/v1',
     POKEMON: '/pokemons',
     GAME_VERSION_GROUP: '/game-version-groups',
     REGION: '/regions',
     LANGUAGE: '/languages',
-};
+} as const;
 
 export default {
     base: ROUTING.API,
