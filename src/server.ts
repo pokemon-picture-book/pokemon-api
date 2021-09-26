@@ -25,7 +25,9 @@ app.use(
 app.use(cookieParser(appConfig.SESSION_SECRET || 'mySecret'));
 // interceptor
 app.use((_, __, next) => {
-    console.info(`[${new Date()}] [PID ${cluster.worker.process.pid}]`);
+    if (process.env.NODE_ENV !== 'test') {
+        console.info(`[${new Date()}] [PID ${cluster.worker.process.pid}]`);
+    }
     next();
 });
 
