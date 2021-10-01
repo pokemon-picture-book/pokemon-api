@@ -1,0 +1,21 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+      # 毎週金曜日に npm の更新をチェックする
+      day: "saturday"
+      # 午前 10 時 に npm の更新をチェックする
+      time: "10:00"
+      # 日本標準時 (UTC +09:00) を使用する
+      timezone: "Asia/Tokyo"
+    # 最大 5 個までPR作成する
+    open-pull-requests-limit: 5
+    # バージョン更新のプルリクエストを発行する
+    target-branch: "develop"
