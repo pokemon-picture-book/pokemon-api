@@ -52,7 +52,7 @@
     "path": "^0.12.7",
     "reflect-metadata": "^0.1.13",
     "supertest": "4.0.2",
-    "typeorm": "0.2.29",
+    "typeorm": "0.2.38",
     "uuid": "^3.3.2",
     "webpack": "5.10.1",
     "webpack-filter-warnings-plugin": "1.2.1",
