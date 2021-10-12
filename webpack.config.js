@@ -22,8 +22,14 @@ module.exports = {
         }
     },
     plugins: [
-        new CopyWebpackPlugin(['ormconfig.js']),
-        new webpack.IgnorePlugin(/^pg-native$/),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'ormconfig.js')
+                },
+            ],
+        }),
+        new webpack.IgnorePlugin({ resourceRegExp: /^pg-native$/ }),
         new FilterWarningsPlugin({
             exclude: [
                 /mongodb/,
@@ -38,7 +44,9 @@ module.exports = {
                 /redis/,
                 /sqlite3/,
                 /sql.js/,
-                /typeorm-aurora-data-api-driver/
+                /typeorm-aurora-data-api-driver/,
+                /hdb-pool/,
+                /@sap\/hana-client/
             ]
         })
     ],
