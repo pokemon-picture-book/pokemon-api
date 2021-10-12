@@ -2,7 +2,9 @@ import driver from '@/driver';
 import app from '@/server';
 import * as http from 'http';
 import * as os from 'os';
-import * as cluster from 'cluster';
+import { Worker } from 'cluster';
+
+const cluster = require('cluster');
 
 const port = process.env.PORT || '3000';
 const host = process.env.HOST || 'localhost';
@@ -10,7 +12,7 @@ const host = process.env.HOST || 'localhost';
 // CPU のコア (スレッド) 数取得
 const osCUPLen = os.cpus().length;
 
-if (cluster.isMaster) {
+if (cluster.isPrimary) {
     console.info(
         `up and running in ${
             process.env.NODE_ENV || 'development'
@@ -24,7 +26,7 @@ if (cluster.isMaster) {
     });
 
     // Worker クラッシュ時の再生成処理
-    cluster.on('exit', (worker, code, signal) => {
+    cluster.on('exit', (worker: Worker, code: number, signal: string) => {
         console.warn(
             `[${worker.id}] Worker died : [PID ${worker.process.pid}] [Signal ${signal}] [Code ${code}]`
         );
@@ -32,7 +34,7 @@ if (cluster.isMaster) {
     });
 } else {
     console.info(
-        `[${cluster.worker.id}] [PID ${cluster.worker.process.pid}] Worker`
+        `[${cluster.worker?.id}] [PID ${cluster.worker?.process.pid}] Worker`
     );
 
     driver.connect();
