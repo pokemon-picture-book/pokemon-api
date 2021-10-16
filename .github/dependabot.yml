@@ -16,6 +16,6 @@ updates:
       # 日本標準時 (UTC +09:00) を使用する
       timezone: "Asia/Tokyo"
     # 最大 5 個までPR作成する
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 0
     # バージョン更新のプルリクエストを発行する
     target-branch: "develop"
