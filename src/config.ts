@@ -22,6 +22,8 @@ export default {
         CORS_ALLOW_ORIGIN_URL: [
             'http://localhost:8080',
             'http://localhost:6006',
+            // iphone の IP アドレスを記載
+            // mac の IP アドレスを記載
         ],
         REQUEST_LIMIT: '100kb',
         SESSION_SECRET: 'mySecret',
