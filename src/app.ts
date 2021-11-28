@@ -6,8 +6,8 @@ import { Worker } from 'cluster';
 
 const cluster = require('cluster');
 
-const port = process.env.PORT || '3000';
-const host = process.env.HOST || 'localhost';
+const port = process.env.PORT || '3001';
+const host = process.env.HOST || '0.0.0.0';
 
 // CPU のコア (スレッド) 数取得
 const osCUPLen = os.cpus().length;
