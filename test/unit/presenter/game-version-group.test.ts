@@ -1,6 +1,6 @@
 import IGameVersionGroupPresenter from '@/02-application/presenter/IGameVersionGroup.presenter';
 import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
 import GameVersionGroupPresenter from '@/03-interface/presenter/GameVersionGroup.presenter';
 

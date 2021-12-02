@@ -1,4 +1,4 @@
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import app from '@/04-framework/server';
 import * as http from 'http';
 import * as os from 'os';

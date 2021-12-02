@@ -39,5 +39,5 @@
     }
   },
   "include": ["src/**/*.ts", "ormconfig", "test/**/*.ts"],
-  "exclude": ["db", "node_modules"]
+  "exclude": ["src/04-framework/db", "node_modules"]
 }

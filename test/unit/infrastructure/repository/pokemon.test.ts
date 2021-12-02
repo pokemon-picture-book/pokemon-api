@@ -1,5 +1,5 @@
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
 import { getRegionPokemonNum } from '@test/shared/region';
 

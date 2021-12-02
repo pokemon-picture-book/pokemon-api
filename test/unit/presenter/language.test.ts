@@ -1,6 +1,6 @@
 import ILanguagePresenter from '@/02-application/presenter/ILanguage.presenter';
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import LanguageRepository from '@/03-interface/infrastructure/repository/Language.repository';
 import LanguagePresenter from '@/03-interface/presenter/Language.presenter';
 

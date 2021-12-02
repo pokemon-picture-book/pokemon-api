@@ -1,4 +1,4 @@
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import { getDefaultSet } from '@/01-enterprise/function/game-region.function';
 import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
 import RegionEntity from '@/01-enterprise/entity/Region.entity';

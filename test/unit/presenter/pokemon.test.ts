@@ -1,7 +1,7 @@
 import { base64RegExp } from '@test/shared/image';
 import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
 import PokemonPresenter from '@/03-interface/presenter/Pokemon.presenter';
 

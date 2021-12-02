@@ -1,4 +1,4 @@
-import driver from '@/04-framework/driver';
+import driver from '@/04-framework/db/driver';
 import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
 import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
 import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
