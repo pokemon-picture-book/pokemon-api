@@ -1,6 +1,6 @@
-import IRegionRepository from '@/domain/repository/IRegion.repository';
-import driver from '@/driver';
-import RegionRepository from '@/infrastructure/repository/Region.repository';
+import IRegionRepository from '@/02-application/repository/IRegion.repository';
+import driver from '@/04-framework/driver';
+import RegionRepository from '@/03-interface/infrastructure/repository/Region.repository';
 
 describe('Unit test for Region repository', () => {
     const repository: IRegionRepository = new RegionRepository();

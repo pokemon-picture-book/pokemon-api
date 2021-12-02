@@ -1,6 +1,6 @@
 import { injectable } from 'inversify';
-import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
-import PokemonEntity from '@/domain/entity/Pokemon.entity';
+import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
+import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
 import {
     PokemonSearchResponse,
     PokemonSearchResponseData,

@@ -1,4 +1,4 @@
-import driver from '@/driver';
+import driver from '@/04-framework/driver';
 
 describe('Unit test for driver', () => {
     test('異常: 実行環境変数が格納されていない場合、throw されるか', (done) => {

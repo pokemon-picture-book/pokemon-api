@@ -1,5 +1,5 @@
-import RegionEntity from '@/domain/entity/Region.entity';
-import IRegionPresenter from '@/domain/presenter/IRegion.presenter';
+import RegionEntity from '@/01-enterprise/entity/Region.entity';
+import IRegionPresenter from '@/02-application/presenter/IRegion.presenter';
 import { RegionResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 

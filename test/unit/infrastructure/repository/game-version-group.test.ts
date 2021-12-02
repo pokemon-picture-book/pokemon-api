@@ -1,7 +1,7 @@
-import driver from '@/driver';
-import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
-import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionGroup.repository';
-import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
+import driver from '@/04-framework/driver';
+import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
+import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
+import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
 
 describe('Unit test for GameVersionGroup repository', () => {
     const repository: IGameVersionGroupRepository = new GameVersionGroupRepository();

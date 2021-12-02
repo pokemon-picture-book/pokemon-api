@@ -2,7 +2,7 @@ import {
     isSupportedHttpMethod,
     isChildRouter,
     isOperationRouter,
-} from '@/domain/function/router.function';
+} from '@/01-enterprise/function/router.function';
 import { ChildRouter, OperationRouter } from 'app-router';
 
 describe('Unit test for router function', () => {

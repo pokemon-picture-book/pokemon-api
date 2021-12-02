@@ -1,9 +1,9 @@
-import driver from '@/driver';
-import { ROUTING } from '@/routes';
-import server from '@/server';
+import driver from '@/04-framework/driver';
+import { ROUTING } from '@/04-framework/routes';
+import server from '@/04-framework/server';
 import { getRegionPokemonNum } from '@test/shared/region';
 import { base64RegExp } from '@test/shared/image';
-import { LIMIT_MAX_NUM } from '@/domain/constant/pagination';
+import { LIMIT_MAX_NUM } from '@/01-enterprise/constant/pagination';
 import { SearchPokemonQueryParam } from 'app-request-model';
 import { PokemonSearchResponse } from 'app-response-model';
 import * as request from 'supertest';

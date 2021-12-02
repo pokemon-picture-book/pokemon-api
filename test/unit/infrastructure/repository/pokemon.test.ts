@@ -1,6 +1,6 @@
-import IPokemonRepository from '@/domain/repository/IPokemon.repository';
-import driver from '@/driver';
-import PokemonRepository from '@/infrastructure/repository/Pokemon.repository';
+import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
+import driver from '@/04-framework/driver';
+import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
 import { getRegionPokemonNum } from '@test/shared/region';
 
 describe('Unit test for Pokemon repository', () => {

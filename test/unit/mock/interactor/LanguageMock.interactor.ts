@@ -1,4 +1,4 @@
-import ILanguageUsecase from '@/usecase/ILanguage.usecase';
+import ILanguageUsecase from '@/02-application/usecase/ILanguage.usecase';
 import { LanguageResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 

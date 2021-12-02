@@ -1,7 +1,7 @@
-import LanguageEntity from '@/domain/entity/Language.entity';
-import ILanguageRepository from '@/domain/repository/ILanguage.repository';
-import driver from '@/driver';
-import LanguageRepository from '@/infrastructure/repository/Language.repository';
+import LanguageEntity from '@/01-enterprise/entity/Language.entity';
+import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
+import driver from '@/04-framework/driver';
+import LanguageRepository from '@/03-interface/infrastructure/repository/Language.repository';
 
 describe('Unit test for Language repository', () => {
     const repository: ILanguageRepository = new LanguageRepository();

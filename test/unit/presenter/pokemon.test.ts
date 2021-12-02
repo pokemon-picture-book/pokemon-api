@@ -1,9 +1,9 @@
 import { base64RegExp } from '@test/shared/image';
-import IPokemonPresenter from '@/domain/presenter/IPokemon.presenter';
-import IPokemonRepository from '@/domain/repository/IPokemon.repository';
-import driver from '@/driver';
-import PokemonRepository from '@/infrastructure/repository/Pokemon.repository';
-import PokemonPresenter from '@/presenter/Pokemon.presenter';
+import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
+import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
+import driver from '@/04-framework/driver';
+import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
+import PokemonPresenter from '@/03-interface/presenter/Pokemon.presenter';
 
 describe('Unit test for Pokemon presenter', () => {
     const presenter: IPokemonPresenter = new PokemonPresenter();

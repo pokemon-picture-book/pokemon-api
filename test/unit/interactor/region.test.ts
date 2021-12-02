@@ -1,6 +1,6 @@
-import IRegionUsecase from '@/usecase/IRegion.usecase';
-import RegionInteractor from '@/interactor/Region.interactor';
-import TYPES from '@/registory/inversify.types';
+import IRegionUsecase from '@/02-application/usecase/IRegion.usecase';
+import RegionInteractor from '@/02-application/usecase/interactor/Region.interactor';
+import TYPES from '@/inversify.types';
 import { interactorContainer } from '../registory/inversify.config';
 
 describe('Unit test for Region interactor', () => {

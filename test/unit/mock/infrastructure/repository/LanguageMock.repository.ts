@@ -1,5 +1,5 @@
-import ILanguageRepository from '@/domain/repository/ILanguage.repository';
-import LanguageEntity from '@/domain/entity/Language.entity';
+import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
+import LanguageEntity from '@/01-enterprise/entity/Language.entity';
 import { injectable } from 'inversify';
 
 @injectable()

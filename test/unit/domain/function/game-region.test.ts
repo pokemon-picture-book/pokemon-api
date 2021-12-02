@@ -1,11 +1,11 @@
-import driver from '@/driver';
-import { getDefaultSet } from '@/domain/function/game-region.function';
-import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
-import RegionEntity from '@/domain/entity/Region.entity';
-import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionGroup.repository';
-import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
-import RegionRepository from '@/infrastructure/repository/Region.repository';
-import IRegionRepository from '@/domain/repository/IRegion.repository';
+import driver from '@/04-framework/driver';
+import { getDefaultSet } from '@/01-enterprise/function/game-region.function';
+import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
+import RegionEntity from '@/01-enterprise/entity/Region.entity';
+import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
+import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
+import RegionRepository from '@/03-interface/infrastructure/repository/Region.repository';
+import IRegionRepository from '@/02-application/repository/IRegion.repository';
 
 describe('Unit test for game-region function', () => {
     const gameVersionGroupRepository: IGameVersionGroupRepository = new GameVersionGroupRepository();

@@ -1,4 +1,4 @@
-import settingRouter from '@/domain/function/express-router.function';
+import settingRouter from '@/01-enterprise/function/express-router.function';
 import { AppRouter } from 'app-router';
 import * as express from 'express';
 import { AppRequest, AppResponse } from 'express';
