@@ -1,6 +1,6 @@
-import driver from '@/driver';
-import { ROUTING } from '@/routes';
-import server from '@/server';
+import driver from '@/04-framework/db/driver';
+import { ROUTING } from '@/04-framework/routes';
+import server from '@/04-framework/server';
 import { GameVersionGroupQueryParam } from 'app-request-model';
 import { GameVersionGroupResponse } from 'app-response-model';
 import * as request from 'supertest';

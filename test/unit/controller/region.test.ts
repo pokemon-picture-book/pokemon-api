@@ -1,4 +1,4 @@
-import RegionController from '@/controller/Region.controller';
+import RegionController from '@/03-interface/controller/Region.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';

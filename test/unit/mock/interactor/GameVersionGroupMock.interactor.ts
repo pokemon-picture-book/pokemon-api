@@ -1,4 +1,4 @@
-import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
+import IGameVersionGroupUsecase from '@/02-application/usecase/IGameVersionGroup.usecase';
 import { GameVersionGroupResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 

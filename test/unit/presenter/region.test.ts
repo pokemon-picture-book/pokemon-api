@@ -1,9 +1,9 @@
-import RegionEntity from '@/domain/entity/Region.entity';
-import IRegionPresenter from '@/domain/presenter/IRegion.presenter';
-import IRegionRepository from '@/domain/repository/IRegion.repository';
-import driver from '@/driver';
-import RegionRepository from '@/infrastructure/repository/Region.repository';
-import RegionPresenter from '@/presenter/Region.presenter';
+import RegionEntity from '@/01-enterprise/entity/Region.entity';
+import IRegionPresenter from '@/02-application/presenter/IRegion.presenter';
+import IRegionRepository from '@/02-application/repository/IRegion.repository';
+import driver from '@/04-framework/db/driver';
+import RegionRepository from '@/03-interface/infrastructure/repository/Region.repository';
+import RegionPresenter from '@/03-interface/presenter/Region.presenter';
 
 describe('Unit test for Region presenter', () => {
     const presenter: IRegionPresenter = new RegionPresenter();

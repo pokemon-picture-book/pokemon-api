@@ -1,5 +1,5 @@
-import LanguageController from '@/controller/Language.controller';
-import ILanguageUsecase from '@/usecase/ILanguage.usecase';
+import LanguageController from '@/03-interface/controller/Language.controller';
+import ILanguageUsecase from '@/02-application/usecase/ILanguage.usecase';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';

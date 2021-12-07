@@ -1,5 +1,5 @@
-import PokemonEntity from '@/domain/entity/Pokemon.entity';
-import IPokemonRepository from '@/domain/repository/IPokemon.repository';
+import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
+import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
 import { injectable } from 'inversify';
 
 @injectable()

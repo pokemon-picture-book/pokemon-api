@@ -1,5 +1,5 @@
-import LanguageEntity from '@/domain/entity/Language.entity';
-import ILanguagePresenter from '@/domain/presenter/ILanguage.presenter';
+import LanguageEntity from '@/01-enterprise/entity/Language.entity';
+import ILanguagePresenter from '@/02-application/presenter/ILanguage.presenter';
 import { LanguageResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 

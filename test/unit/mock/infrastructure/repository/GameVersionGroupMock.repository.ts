@@ -1,9 +1,9 @@
 import { injectable } from 'inversify';
-import GameVersionEntity from '@/domain/entity/GameVersion.entity';
-import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
-import GameVersionGroupRegionEntity from '@/domain/entity/GameVersionGroupRegion.entity';
-import PokemonGameImageEntity from '@/domain/entity/PokemonGameImage.entity';
-import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
+import GameVersionEntity from '@/01-enterprise/entity/GameVersion.entity';
+import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
+import GameVersionGroupRegionEntity from '@/01-enterprise/entity/GameVersionGroupRegion.entity';
+import PokemonGameImageEntity from '@/01-enterprise/entity/PokemonGameImage.entity';
+import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
 
 @injectable()
 export default class GameVersionGroupMockRepository

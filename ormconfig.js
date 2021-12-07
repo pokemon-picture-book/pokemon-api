@@ -16,10 +16,10 @@ module.exports = [
         synchronize: false,
         logging: true,
         entities: ['./src/domain/entity/**/*.entity.ts'],
-        migrations: ['./db/migrations/**/*.ts'],
+        migrations: ['./src/04-framework/db/migrations/**/*.ts'],
         cli: {
             entitiesDir: 'src/domain/entity',
-            migrationsDir: 'db/migrations'
+            migrationsDir: 'src/04-framework/db/migrations'
         }
     },
     {
@@ -48,10 +48,10 @@ module.exports = [
         synchronize: true,
         logging: false,
         entities: ['./src/domain/entity/**/*.entity.ts'],
-        migrations: ['./db/migrations/**/*.ts'],
+        migrations: ['./src/04-framework/db/migrations/**/*.ts'],
         cli: {
             entitiesDir: 'src/domain/entity',
-            migrationsDir: 'db/migrations'
+            migrationsDir: 'src/04-framework/db/migrations'
         }
     }
 ];

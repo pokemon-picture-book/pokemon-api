@@ -1,4 +1,4 @@
-import IRegionUsecase from '@/usecase/IRegion.usecase';
+import IRegionUsecase from '@/02-application/usecase/IRegion.usecase';
 import { RegionResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 

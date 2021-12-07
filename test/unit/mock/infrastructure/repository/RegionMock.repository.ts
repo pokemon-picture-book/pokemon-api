@@ -1,5 +1,5 @@
-import RegionEntity from '@/domain/entity/Region.entity';
-import IRegionRepository from '@/domain/repository/IRegion.repository';
+import RegionEntity from '@/01-enterprise/entity/Region.entity';
+import IRegionRepository from '@/02-application/repository/IRegion.repository';
 import { injectable } from 'inversify';
 
 @injectable()

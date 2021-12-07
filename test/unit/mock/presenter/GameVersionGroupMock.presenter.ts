@@ -1,6 +1,6 @@
 import { injectable } from 'inversify';
-import IGameVersionGroupPresenter from '@/domain/presenter/IGameVersionGroup.presenter';
-import GameVersionGroupEntity from '@/domain/entity/GameVersionGroup.entity';
+import IGameVersionGroupPresenter from '@/02-application/presenter/IGameVersionGroup.presenter';
+import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.entity';
 import { GameVersionGroupResponse } from 'app-response-model';
 
 @injectable()

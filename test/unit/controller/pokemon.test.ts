@@ -1,4 +1,4 @@
-import PokemonController from '@/controller/Pokemon.controller';
+import PokemonController from '@/03-interface/controller/Pokemon.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';

@@ -1,6 +1,6 @@
-import IGameVersionGroupUsecase from '@/usecase/IGameVersionGroup.usecase';
-import GameVersionGroupInteractor from '@/interactor/GameVersionGroup.interactor';
-import TYPES from '@/registory/inversify.types';
+import IGameVersionGroupUsecase from '@/02-application/usecase/IGameVersionGroup.usecase';
+import GameVersionGroupInteractor from '@/02-application/usecase/interactor/GameVersionGroup.interactor';
+import TYPES from '@/inversify.types';
 import { interactorContainer } from '../registory/inversify.config';
 
 describe('Unit test for GameVersionGroup interactor', () => {

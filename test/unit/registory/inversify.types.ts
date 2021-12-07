@@ -1,4 +1,4 @@
-import TESTS from '@/registory/inversify.types';
+import TESTS from '@/inversify.types';
 
 const TEST_TYPES = {
     ...TESTS,

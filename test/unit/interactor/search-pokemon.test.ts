@@ -1,7 +1,7 @@
-import SearchPokemonInteractor from '@/interactor/SearchPokemon.interactor';
+import SearchPokemonInteractor from '@/02-application/usecase/interactor/SearchPokemon.interactor';
 import { interactorContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
-import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
+import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
 
 describe('Unit test for SearchPokemon interactor', () => {
     const usecase: ISearchPokemonUsecase = interactorContainer.get<SearchPokemonInteractor>(

@@ -1,8 +1,8 @@
-import ILanguagePresenter from '@/domain/presenter/ILanguage.presenter';
-import ILanguageRepository from '@/domain/repository/ILanguage.repository';
-import driver from '@/driver';
-import LanguageRepository from '@/infrastructure/repository/Language.repository';
-import LanguagePresenter from '@/presenter/Language.presenter';
+import ILanguagePresenter from '@/02-application/presenter/ILanguage.presenter';
+import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
+import driver from '@/04-framework/db/driver';
+import LanguageRepository from '@/03-interface/infrastructure/repository/Language.repository';
+import LanguagePresenter from '@/03-interface/presenter/Language.presenter';
 
 describe('Unit test for Language presenter', () => {
     const presenter: ILanguagePresenter = new LanguagePresenter();

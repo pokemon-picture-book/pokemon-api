@@ -1,8 +1,8 @@
-import IGameVersionGroupPresenter from '@/domain/presenter/IGameVersionGroup.presenter';
-import IGameVersionGroupRepository from '@/domain/repository/IGameVersionGroup.repository';
-import driver from '@/driver';
-import GameVersionGroupRepository from '@/infrastructure/repository/GameVersionGroup.repository';
-import GameVersionGroupPresenter from '@/presenter/GameVersionGroup.presenter';
+import IGameVersionGroupPresenter from '@/02-application/presenter/IGameVersionGroup.presenter';
+import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
+import driver from '@/04-framework/db/driver';
+import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
+import GameVersionGroupPresenter from '@/03-interface/presenter/GameVersionGroup.presenter';
 
 describe('Unit test for GameVersionGroup presenter', () => {
     const presenter: IGameVersionGroupPresenter = new GameVersionGroupPresenter();

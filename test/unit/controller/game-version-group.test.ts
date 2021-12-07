@@ -1,4 +1,4 @@
-import GameVersionGroupController from '@/controller/GameVersionGroup.controller';
+import GameVersionGroupController from '@/03-interface/controller/GameVersionGroup.controller';
 import { controllerContainer } from '@test/unit/registory/inversify.config';
 import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';

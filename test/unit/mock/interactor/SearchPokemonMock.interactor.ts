@@ -1,4 +1,4 @@
-import ISearchPokemonUsecase from '@/usecase/ISearchPokemon.usecase';
+import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
 import { PokemonSearchResponse } from 'app-response-model';
 import { injectable } from 'inversify';
 import 'reflect-metadata';
