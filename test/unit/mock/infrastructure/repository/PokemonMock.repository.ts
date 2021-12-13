@@ -26,4 +26,12 @@ export default class PokemonMockRepository implements IPokemonRepository {
         const { languageId, gameVersionGroupId, regionIds } = whereParam;
         return languageId || gameVersionGroupId || regionIds.length ? 1 : 0;
     }
+
+    public async findById(whereParam: {
+        id: number;
+        languageId: number;
+        gameVersionGroupId: number;
+    }): Promise<PokemonEntity | undefined> {
+        return whereParam.id > 0 ? new PokemonEntity() : undefined;
+    }
 }

@@ -1,19 +1,22 @@
 import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
-import { PokemonSearchResponse } from 'app-response-model';
+import {
+    SearchAllPokemonResponse,
+    SearchOnePokemonResponse,
+} from 'app-response-model';
 import { injectable } from 'inversify';
 import 'reflect-metadata';
 
 @injectable()
 export default class SearchPokemonMockInteractor
     implements ISearchPokemonUsecase {
-    public async search(
+    public async searchAll(
         requestParam: {
             languageName?: string | undefined;
             gameVersionGroupAlias?: string | undefined;
             regionNames?: string[] | undefined;
         },
         _: { offset: number | undefined; limit: number | undefined }
-    ): Promise<PokemonSearchResponse> {
+    ): Promise<SearchAllPokemonResponse> {
         const {
             languageName,
             gameVersionGroupAlias,
@@ -39,5 +42,13 @@ export default class SearchPokemonMockInteractor
                   hits: 0,
                   data: [],
               };
+    }
+
+    searchOne(_: {
+        id: number;
+        languageName?: string;
+        gameVersionGroupAlias?: string;
+    }): Promise<SearchOnePokemonResponse | null> {
+        throw new Error('Method not implemented.');
     }
 }

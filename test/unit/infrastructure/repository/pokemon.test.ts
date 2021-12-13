@@ -131,6 +131,18 @@ describe('Unit test for Pokemon repository', () => {
         done();
     });
 
+    test('正常: 正常に1件検索ができるか', async (done) => {
+        const pokemon = await repository.findById({
+            id: 1,
+            languageId: 1,
+            gameVersionGroupId: 1,
+        });
+
+        expect(pokemon).toBeTruthy();
+
+        done();
+    });
+
     test('異常: languageId に存在しないデータのパラメータを指定した場合、空配列となるか', async (done) => {
         const pokemons = await repository.findAll(
             {

@@ -11,20 +11,67 @@ declare module 'app-response-model' {
         TypeName,
         Region,
         RegionName,
+        FlavorTextEntry,
+        Genera,
+        Evolution,
+        Status,
     } from 'app-entity';
 
-    export type PokemonSearchResponseData = Pick<Pokemon, 'id' | 'imageColor'> &
+    type PokemonTypeResponse = {
+        code: Type['name'];
+        name: TypeName['name'];
+    };
+
+    export type SearchAllPokemonResponseData = Pick<
+        Pokemon,
+        'id' | 'imageColor'
+    > &
         Pick<PokemonName, 'name'> & {
             gameImagePath: PokemonGameImage['path'];
-            types: {
-                code: Type['name'];
-                name: TypeName['name'];
-            }[];
+            types: PokemonTypeResponse[];
         };
 
-    export type PokemonSearchResponse = {
+    export type SearchAllPokemonResponse = {
         hits: number;
-        data: PokemonSearchResponseData[];
+        data: SearchAllPokemonResponseData[];
+    };
+
+    export type SearchOnePokemonResponse = Pick<
+        Pokemon,
+        'id' | 'height' | 'weight' | 'imageColor'
+    > & {
+        flavorText: FlavorTextEntry['flavorText'];
+        genus: Genera['genus'];
+        pokemonName: PokemonName['name'];
+        types: PokemonTypeResponse[];
+        status: Pick<
+            Status,
+            | 'hp'
+            | 'attack'
+            | 'defense'
+            | 'specialAttack'
+            | 'specialDefense'
+            | 'speed'
+        >;
+        image: {
+            mainGameImage: string;
+            footmarkImages: string[];
+            handheldIconImages: string[];
+            shinyImages: string[];
+            otherImages: string[];
+        };
+        evolutions: (Pick<Evolution, 'trigger' | 'detail1' | 'detail2'> & {
+            fromPokemon: Pick<Pokemon, 'id' | 'imageColor'> & {
+                pokemonName: PokemonName['name'];
+                gameImagePath: PokemonGameImage['path'];
+                types: PokemonTypeResponse[];
+            };
+            toPokemon: Pick<Pokemon, 'id' | 'imageColor'> & {
+                pokemonName: PokemonName['name'];
+                gameImagePath: PokemonGameImage['path'];
+                types: PokemonTypeResponse[];
+            };
+        })[];
     };
 
     export type GameVersionGroupResponse = Pick<

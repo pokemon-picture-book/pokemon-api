@@ -2,19 +2,20 @@ import { injectable } from 'inversify';
 import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
 import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
 import {
-    PokemonSearchResponse,
-    PokemonSearchResponseData,
+    SearchOnePokemonResponse,
+    SearchAllPokemonResponse,
+    SearchAllPokemonResponseData,
 } from 'app-response-model';
 
 @injectable()
 export default class PokemonMockPresenter implements IPokemonPresenter {
-    public toPokemonSearchResponse(
+    public toSearchAllPokemonResponse(
         hits: number,
         pokemons: PokemonEntity[]
-    ): Promise<PokemonSearchResponse> {
+    ): Promise<SearchAllPokemonResponse> {
         return Promise.resolve({
             hits,
-            data: pokemons.map<PokemonSearchResponseData>(() => {
+            data: pokemons.map<SearchAllPokemonResponseData>(() => {
                 return {
                     id: 1,
                     imageColor: 'imageColor',
@@ -24,5 +25,11 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
                 };
             }),
         });
+    }
+
+    toSearchOnePokemonResponse(
+        _: PokemonEntity
+    ): Promise<SearchOnePokemonResponse> {
+        throw new Error('Method not implemented.');
     }
 }

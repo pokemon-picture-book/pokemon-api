@@ -3,11 +3,15 @@ declare module 'app-request-model' {
         lang?: string;
     };
 
-    export type SearchPokemonQueryParam = LangQueryParam & {
+    export type SearchAllPokemonQueryParam = LangQueryParam & {
         game?: string;
         regions?: string[];
         offset?: number;
         limit?: number;
+    };
+
+    export type SearchOnePokemonQueryParam = LangQueryParam & {
+        game?: string;
     };
 
     export type GameVersionGroupQueryParam = LangQueryParam & {

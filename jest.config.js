@@ -27,5 +27,9 @@ module.exports = {
             tsConfig: 'tsconfig.json'
         }
     },
+    modulePathIgnorePatterns: [
+        '<rootDir>/src/04-framework/db/migrations',
+        '<rootDir>/src/04-framework/db/seed'
+    ],
     testTimeout: 300000
 };

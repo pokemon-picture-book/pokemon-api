@@ -6,11 +6,13 @@ import {
     ManyToOne,
     PrimaryGeneratedColumn,
     JoinColumn,
+    Index,
 } from 'typeorm';
 import GameVersionGroupEntity from './GameVersionGroup.entity';
 import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'pokemon_game_images' })
+@Index(['pokemon', 'gameVersionGroup'])
 class PokemonGameImageEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
         type: 'mediumint',
@@ -21,6 +23,7 @@ class PokemonGameImageEntity extends BaseEntity {
     @JoinColumn({
         name: 'pokemon_id',
     })
+    @Index()
     readonly pokemon: PokemonEntity;
 
     @Column({
@@ -61,6 +64,7 @@ class PokemonGameImageEntity extends BaseEntity {
     @JoinColumn({
         name: 'game_version_group_id',
     })
+    @Index()
     readonly gameVersionGroup: GameVersionGroupEntity;
 
     public refer(): void {
