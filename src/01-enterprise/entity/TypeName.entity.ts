@@ -6,11 +6,13 @@ import {
     ManyToOne,
     PrimaryGeneratedColumn,
     JoinColumn,
+    Index,
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import TypeEntity from './Type.entity';
 
 @Entity({ name: 'type_names' })
+@Index(['type', 'language'])
 class TypeNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn()
     readonly id: number;
@@ -25,12 +27,14 @@ class TypeNameEntity extends BaseEntity {
     @JoinColumn({
         name: 'type_id',
     })
+    @Index()
     readonly type: TypeEntity;
 
     @ManyToOne(() => LanguageEntity, (language) => language.typeNames)
     @JoinColumn({
         name: 'language_id',
     })
+    @Index()
     readonly language: LanguageEntity;
 
     public refer(): void {

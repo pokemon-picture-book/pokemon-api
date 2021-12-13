@@ -1,11 +1,12 @@
 import GameVersionGroupController from '@/03-interface/controller/GameVersionGroup.controller';
 import PokemonController from '@/03-interface/controller/Pokemon.controller';
-import { langQueryValidator } from '@/03-interface/controller/validator/common';
+import { idParamsValidator } from '@/03-interface/controller/validator/params/id';
+import { langQueryValidator } from '@/03-interface/controller/validator/query/common';
 import {
     limitQueryValidator,
     offsetQueryValidator,
-} from '@/03-interface/controller/validator/pagination';
-import { supportedQueryValidator } from '@/03-interface/controller/validator/game-version-group';
+} from '@/03-interface/controller/validator/query/pagination';
+import { supportedQueryValidator } from '@/03-interface/controller/validator/query/game-version-group';
 import container from '@/inversify.config';
 import TYPES from '@/inversify.types';
 import { AppRouter } from 'app-router';
@@ -45,10 +46,13 @@ export default {
                 },
                 {
                     method: 'get',
-                    path: '/:pokemonId',
-                    action: (_: AppRequest<any>, res: AppResponse<any>) => {
-                        res.status(200);
-                        res.send('ok');
+                    path: '/:id',
+                    validator: [idParamsValidator, langQueryValidator],
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const pokemonControllerContainer = container.get<PokemonController>(
+                            TYPES.PokemonController
+                        );
+                        pokemonControllerContainer.searchOne(req, res);
                     },
                 },
             ],

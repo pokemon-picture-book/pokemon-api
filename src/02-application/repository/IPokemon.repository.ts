@@ -20,4 +20,10 @@ export default interface IPokemonRepository {
         regionIds: number[];
         isPokemonMainImage: boolean;
     }): Promise<number>;
+
+    findById(whereParam: {
+        id: number;
+        languageId: number;
+        gameVersionGroupId: number;
+    }): Promise<PokemonEntity | undefined>;
 }

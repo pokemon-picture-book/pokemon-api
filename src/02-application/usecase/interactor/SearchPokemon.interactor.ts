@@ -9,7 +9,10 @@ import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
 import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
 import IRegionRepository from '@/02-application/repository/IRegion.repository';
-import { PokemonSearchResponse } from 'app-response-model';
+import {
+    SearchAllPokemonResponse,
+    SearchOnePokemonResponse,
+} from 'app-response-model';
 
 @injectable()
 export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
@@ -28,7 +31,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
     @inject(TYPES.IPokemonPresenter)
     private presenter: IPokemonPresenter;
 
-    public async search(
+    public async searchAll(
         requestParam: {
             languageName?: string;
             gameVersionGroupAlias?: string;
@@ -38,7 +41,11 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             offset: number;
             limit: number;
         }
-    ): Promise<PokemonSearchResponse> {
+    ): Promise<SearchAllPokemonResponse> {
+        const NO_DATA: Readonly<SearchAllPokemonResponse> = {
+            hits: 0,
+            data: [],
+        };
         const {
             languageName,
             gameVersionGroupAlias,
@@ -48,10 +55,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             languageName || 'en'
         );
         if (!language) {
-            return {
-                hits: 0,
-                data: [],
-            };
+            return NO_DATA;
         }
 
         const [allGames, allRegions] = await Promise.all([
@@ -78,10 +82,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         ]);
 
         if (!(gameVersionGroup && regions.length)) {
-            return {
-                hits: 0,
-                data: [],
-            };
+            return NO_DATA;
         }
 
         const whereParam = {
@@ -97,6 +98,41 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
                 limit: pageParam.limit,
             }),
         ]);
-        return this.presenter.toPokemonSearchResponse(hits, pokemons);
+        return this.presenter.toSearchAllPokemonResponse(hits, pokemons);
+    }
+
+    public async searchOne(requestParam: {
+        id: number;
+        languageName?: string;
+        gameVersionGroupAlias?: string;
+    }): Promise<SearchOnePokemonResponse | null> {
+        const { id, languageName, gameVersionGroupAlias } = requestParam;
+        const language = await this.languageRepository.findByName(
+            languageName || 'en'
+        );
+        if (!language) {
+            return null;
+        }
+
+        const allGames = await this.gameVersionGroupRepository.findAllByIsSupported(
+            language.id,
+            true
+        );
+        const matchGame = allGames.find(
+            (game) => game.alias === gameVersionGroupAlias
+        );
+
+        const whereParam = {
+            id,
+            languageId: language.id,
+            gameVersionGroupId: matchGame ? matchGame.id : allGames[0].id,
+        };
+        const pokemon = await this.repository.findById(whereParam);
+
+        if (!pokemon) {
+            return null;
+        }
+
+        return this.presenter.toSearchOnePokemonResponse(pokemon);
     }
 }
