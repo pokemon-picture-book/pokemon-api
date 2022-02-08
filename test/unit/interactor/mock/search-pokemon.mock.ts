@@ -16,6 +16,7 @@ import TYPES from '@test/unit/registory/inversify.types';
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { Container, injectable } from 'inversify';
 
@@ -82,6 +83,10 @@ export const getSearchOneContainer = (): Readonly<Container> => {
             throw new Error('Method not implemented.');
         }
 
+        findSimpleAll(): Promise<PokemonEntity[]> {
+            throw new Error('Method not implemented.');
+        }
+
         public async findById(whereParam: {
             id: number;
             languageId: number;
@@ -94,6 +99,10 @@ export const getSearchOneContainer = (): Readonly<Container> => {
     @injectable()
     class PokemonMockPresenter implements IPokemonPresenter {
         toSearchAllPokemonResponse(): Promise<SearchAllPokemonResponse> {
+            throw new Error('Method not implemented.');
+        }
+
+        toSearchSimplePokemonResponse(): SearchSimplePokemonResponse {
             throw new Error('Method not implemented.');
         }
 

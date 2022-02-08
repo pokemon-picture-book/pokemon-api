@@ -1,6 +1,7 @@
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 
 export default interface ISearchPokemonUsecase {
@@ -21,4 +22,8 @@ export default interface ISearchPokemonUsecase {
         languageName?: string;
         gameVersionGroupAlias?: string;
     }): Promise<SearchOnePokemonResponse | null>;
+
+    searchSimpleData(requestParam: {
+        languageName?: string;
+    }): Promise<SearchSimplePokemonResponse>;
 }

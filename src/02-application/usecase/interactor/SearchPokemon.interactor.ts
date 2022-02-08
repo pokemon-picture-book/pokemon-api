@@ -12,6 +12,7 @@ import IRegionRepository from '@/02-application/repository/IRegion.repository';
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 
 @injectable()
@@ -134,5 +135,28 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         }
 
         return this.presenter.toSearchOnePokemonResponse(pokemon);
+    }
+
+    async searchSimpleData(requestParam: {
+        languageName?: string | undefined;
+    }): Promise<SearchSimplePokemonResponse> {
+        const NO_DATA: Readonly<SearchSimplePokemonResponse> = {
+            hits: 0,
+            data: [],
+        };
+        const { languageName } = requestParam;
+        const language = await this.languageRepository.findByName(
+            languageName || 'en'
+        );
+        if (!language) {
+            return NO_DATA;
+        }
+
+        const whereParam = {
+            languageId: language.id,
+        };
+
+        const simplePokemons = await this.repository.findSimpleAll(whereParam);
+        return this.presenter.toSearchSimplePokemonResponse(simplePokemons);
     }
 }

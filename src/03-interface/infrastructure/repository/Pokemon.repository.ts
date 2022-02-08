@@ -79,6 +79,19 @@ export default class PokemonRepository implements IPokemonRepository {
         return this.commonFindAllQueryBuilder(whereParam).getCount();
     }
 
+    public findSimpleAll(whereParam: {
+        languageId: number;
+    }): Promise<PokemonEntity[]> {
+        return PokemonEntity.createQueryBuilder('pokemon')
+            .innerJoinAndSelect(
+                'pokemon.pokemonNames',
+                'pokemonName',
+                'pokemonName.language_id = :languageId',
+                { languageId: whereParam.languageId }
+            )
+            .getMany();
+    }
+
     public findById(whereParam: {
         id: number;
         languageId: number;

@@ -10,6 +10,8 @@ declare module 'app-request-model' {
         limit?: number;
     };
 
+    export type SearchSimpleAllPokemonQueryParam = LangQueryParam;
+
     export type SearchOnePokemonQueryParam = LangQueryParam & {
         game?: string;
     };

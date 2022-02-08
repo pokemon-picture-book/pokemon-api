@@ -5,6 +5,7 @@ import {
     SearchOnePokemonResponse,
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 
 @injectable()
@@ -25,6 +26,10 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
                 };
             }),
         });
+    }
+
+    toSearchSimplePokemonResponse(): SearchSimplePokemonResponse {
+        throw new Error('Method not implemented.');
     }
 
     toSearchOnePokemonResponse(
