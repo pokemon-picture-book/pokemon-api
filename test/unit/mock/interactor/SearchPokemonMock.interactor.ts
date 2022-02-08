@@ -2,6 +2,7 @@ import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.useca
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchOnePokemonStatusResponse,
     SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { injectable } from 'inversify';
@@ -54,6 +55,10 @@ export default class SearchPokemonMockInteractor
         languageName?: string;
         gameVersionGroupAlias?: string;
     }): Promise<SearchOnePokemonResponse | null> {
+        throw new Error('Method not implemented.');
+    }
+
+    searchOneStatus(): Promise<SearchOnePokemonStatusResponse | null> {
         throw new Error('Method not implemented.');
     }
 }

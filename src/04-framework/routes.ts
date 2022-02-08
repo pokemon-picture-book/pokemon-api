@@ -55,6 +55,18 @@ export default {
                         pokemonControllerContainer.searchSimpleAll(req, res);
                     },
                 },
+                // TODO: /:id でグルーピングできてない、、、
+                {
+                    method: 'get',
+                    path: '/:id/status',
+                    validator: [idParamsValidator, langQueryValidator],
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const pokemonControllerContainer = container.get<PokemonController>(
+                            TYPES.PokemonController
+                        );
+                        pokemonControllerContainer.searchOneStatus(req, res);
+                    },
+                },
                 {
                     method: 'get',
                     path: '/:id',

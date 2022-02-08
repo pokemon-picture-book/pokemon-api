@@ -250,4 +250,25 @@ export default class PokemonRepository implements IPokemonRepository {
                 .getOne()
         );
     }
+
+    public findStatusById(whereParam: {
+        id: number;
+        languageId: number;
+    }): Promise<PokemonEntity | undefined> {
+        return (
+            PokemonEntity.createQueryBuilder('pokemon')
+                .where('pokemon.id = :id', { id: whereParam.id })
+                // pokemon names
+                .innerJoinAndSelect(
+                    'pokemon.pokemonNames',
+                    'pokemonName',
+                    'pokemonName.language_id = :languageId',
+                    {
+                        languageId: whereParam.languageId,
+                    }
+                )
+                .innerJoinAndSelect('pokemon.status', 'status')
+                .getOne()
+        );
+    }
 }

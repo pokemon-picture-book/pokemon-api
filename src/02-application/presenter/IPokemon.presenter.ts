@@ -3,6 +3,7 @@ import {
     SearchOnePokemonResponse,
     SearchAllPokemonResponse,
     SearchSimplePokemonResponse,
+    SearchOnePokemonStatusResponse,
 } from 'app-response-model';
 
 export default interface IPokemonPresenter {
@@ -18,4 +19,8 @@ export default interface IPokemonPresenter {
     toSearchOnePokemonResponse(
         pokemon: PokemonEntity
     ): Promise<SearchOnePokemonResponse>;
+
+    toSearchOnePokemonStatusResponse(
+        pokemon: PokemonEntity
+    ): SearchOnePokemonStatusResponse;
 }

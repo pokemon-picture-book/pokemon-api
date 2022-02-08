@@ -16,6 +16,8 @@ declare module 'app-request-model' {
         game?: string;
     };
 
+    export type SearchOnePokemonStatusQueryParam = LangQueryParam;
+
     export type GameVersionGroupQueryParam = LangQueryParam & {
         supported?: string;
     };

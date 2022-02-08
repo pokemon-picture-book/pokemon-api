@@ -6,6 +6,7 @@ import {
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
     SearchSimplePokemonResponse,
+    SearchOnePokemonStatusResponse,
 } from 'app-response-model';
 
 @injectable()
@@ -35,6 +36,10 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
     toSearchOnePokemonResponse(
         _: PokemonEntity
     ): Promise<SearchOnePokemonResponse> {
+        throw new Error('Method not implemented.');
+    }
+
+    toSearchOnePokemonStatusResponse(): SearchOnePokemonStatusResponse {
         throw new Error('Method not implemented.');
     }
 }

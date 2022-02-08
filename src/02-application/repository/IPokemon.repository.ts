@@ -28,4 +28,9 @@ export default interface IPokemonRepository {
         languageId: number;
         gameVersionGroupId: number;
     }): Promise<PokemonEntity | undefined>;
+
+    findStatusById(whereParam: {
+        id: number;
+        languageId: number;
+    }): Promise<PokemonEntity | undefined>;
 }
