@@ -2,6 +2,7 @@ import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.useca
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { injectable } from 'inversify';
 import 'reflect-metadata';
@@ -42,6 +43,10 @@ export default class SearchPokemonMockInteractor
                   hits: 0,
                   data: [],
               };
+    }
+
+    searchSimpleData(): Promise<SearchSimplePokemonResponse> {
+        throw new Error('Method not implemented.');
     }
 
     searchOne(_: {

@@ -27,6 +27,10 @@ export default class PokemonMockRepository implements IPokemonRepository {
         return languageId || gameVersionGroupId || regionIds.length ? 1 : 0;
     }
 
+    findSimpleAll(): Promise<PokemonEntity[]> {
+        throw new Error('Method not implemented.');
+    }
+
     public async findById(whereParam: {
         id: number;
         languageId: number;

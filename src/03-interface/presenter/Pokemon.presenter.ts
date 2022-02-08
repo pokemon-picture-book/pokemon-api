@@ -6,6 +6,7 @@ import {
     SearchOnePokemonResponse,
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { injectable } from 'inversify';
 import { toPokemonDetailImage } from '@/01-enterprise/function/serialize/pokemon-image.function';
@@ -41,6 +42,21 @@ export default class PokemonPresenter implements IPokemonPresenter {
         return {
             hits,
             data,
+        };
+    }
+
+    public toSearchSimplePokemonResponse(
+        pokemons: PokemonEntity[]
+    ): SearchSimplePokemonResponse {
+        return {
+            hits: pokemons.length,
+            data: pokemons.map(({ id, pokemonNames }) => {
+                const [{ name }] = pokemonNames;
+                return {
+                    id,
+                    name,
+                };
+            }),
         };
     }
 

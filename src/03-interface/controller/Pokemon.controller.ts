@@ -4,10 +4,12 @@ import { LIMIT_MAX_NUM } from '@/01-enterprise/constant/pagination';
 import {
     SearchAllPokemonQueryParam,
     SearchOnePokemonQueryParam,
+    SearchSimpleAllPokemonQueryParam,
 } from 'app-request-model';
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { AppRequest, AppResponse, AppErrorMessage, Request } from 'express';
 import { validationResult } from 'express-validator';
@@ -43,6 +45,31 @@ export default class PokemonController {
                 limit: limit || LIMIT_MAX_NUM,
             }
         );
+
+        if (!result.hits) {
+            response.status(204).send({ message: 'No Content!' });
+            return;
+        }
+
+        response.status(200).json(result);
+    }
+
+    async searchSimpleAll(
+        request: AppRequest<{
+            query: SearchSimpleAllPokemonQueryParam;
+        }>,
+        response: AppResponse<AppErrorMessage | SearchSimplePokemonResponse>
+    ): Promise<void> {
+        const errors = validationResult(request as Request);
+        if (!errors.isEmpty()) {
+            response.status(400).send({ errors: errors.array() });
+            return;
+        }
+
+        const { lang } = request.query;
+        const result = await this.usecase.searchSimpleData({
+            languageName: lang,
+        });
 
         if (!result.hits) {
             response.status(204).send({ message: 'No Content!' });

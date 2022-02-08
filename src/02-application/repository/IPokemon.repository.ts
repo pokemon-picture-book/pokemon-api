@@ -21,6 +21,8 @@ export default interface IPokemonRepository {
         isPokemonMainImage: boolean;
     }): Promise<number>;
 
+    findSimpleAll(whereParam: { languageId: number }): Promise<PokemonEntity[]>;
+
     findById(whereParam: {
         id: number;
         languageId: number;

@@ -36,6 +36,14 @@ declare module 'app-response-model' {
         data: SearchAllPokemonResponseData[];
     };
 
+    export type SearchSimplePokemonResponseData = Pick<Pokemon, 'id'> &
+        Pick<PokemonName, 'name'>;
+
+    export type SearchSimplePokemonResponse = {
+        hits: number;
+        data: SearchSimplePokemonResponseData[];
+    };
+
     export type SearchOnePokemonResponse = Pick<
         Pokemon,
         'id' | 'height' | 'weight' | 'imageColor'

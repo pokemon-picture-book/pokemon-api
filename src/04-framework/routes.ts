@@ -46,6 +46,17 @@ export default {
                 },
                 {
                     method: 'get',
+                    path: '/simplicities',
+                    validator: [langQueryValidator],
+                    action: (req: AppRequest<any>, res: AppResponse<any>) => {
+                        const pokemonControllerContainer = container.get<PokemonController>(
+                            TYPES.PokemonController
+                        );
+                        pokemonControllerContainer.searchSimpleAll(req, res);
+                    },
+                },
+                {
+                    method: 'get',
                     path: '/:id',
                     validator: [idParamsValidator, langQueryValidator],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
