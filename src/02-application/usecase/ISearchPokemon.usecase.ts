@@ -1,6 +1,7 @@
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchOnePokemonStatusResponse,
     SearchSimplePokemonResponse,
 } from 'app-response-model';
 
@@ -26,4 +27,9 @@ export default interface ISearchPokemonUsecase {
     searchSimpleData(requestParam: {
         languageName?: string;
     }): Promise<SearchSimplePokemonResponse>;
+
+    searchOneStatus(requestParam: {
+        id: number;
+        languageName?: string;
+    }): Promise<SearchOnePokemonStatusResponse | null>;
 }

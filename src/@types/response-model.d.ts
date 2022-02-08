@@ -82,6 +82,19 @@ declare module 'app-response-model' {
         })[];
     };
 
+    export type SearchOnePokemonStatusResponse = Pick<Pokemon, 'id'> & {
+        name: PokemonName['name'];
+        status: Pick<
+            Status,
+            | 'hp'
+            | 'attack'
+            | 'defense'
+            | 'specialAttack'
+            | 'specialDefense'
+            | 'speed'
+        >;
+    };
+
     export type GameVersionGroupResponse = Pick<
         GameVersionGroup,
         'id' | 'alias'

@@ -4,11 +4,13 @@ import { LIMIT_MAX_NUM } from '@/01-enterprise/constant/pagination';
 import {
     SearchAllPokemonQueryParam,
     SearchOnePokemonQueryParam,
+    SearchOnePokemonStatusQueryParam,
     SearchSimpleAllPokemonQueryParam,
 } from 'app-request-model';
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
+    SearchOnePokemonStatusResponse,
     SearchSimplePokemonResponse,
 } from 'app-response-model';
 import { AppRequest, AppResponse, AppErrorMessage, Request } from 'express';
@@ -100,6 +102,36 @@ export default class PokemonController {
             id: Number(id),
             languageName: lang,
             gameVersionGroupAlias: game,
+        });
+
+        if (!result) {
+            response.status(404).send({ message: 'Not Found!' });
+            return;
+        }
+
+        response.status(200).json(result);
+    }
+
+    async searchOneStatus(
+        request: AppRequest<{
+            query: SearchOnePokemonStatusQueryParam;
+            params: {
+                id: string;
+            };
+        }>,
+        response: AppResponse<AppErrorMessage | SearchOnePokemonStatusResponse>
+    ): Promise<void> {
+        const errors = validationResult(request as Request);
+        if (!errors.isEmpty()) {
+            response.status(400).send({ errors: errors.array() });
+            return;
+        }
+
+        const { id } = request.params;
+        const { lang } = request.query;
+        const result = await this.usecase.searchOneStatus({
+            id: Number(id),
+            languageName: lang,
         });
 
         if (!result) {

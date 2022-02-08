@@ -7,6 +7,7 @@ import {
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
     SearchSimplePokemonResponse,
+    SearchOnePokemonStatusResponse,
 } from 'app-response-model';
 import { injectable } from 'inversify';
 import { toPokemonDetailImage } from '@/01-enterprise/function/serialize/pokemon-image.function';
@@ -87,6 +88,26 @@ export default class PokemonPresenter implements IPokemonPresenter {
             types,
             image,
             evolutions,
+            status: {
+                hp: status.hp,
+                attack: status.attack,
+                defense: status.defense,
+                specialAttack: status.specialAttack,
+                specialDefense: status.specialDefense,
+                speed: status.speed,
+            },
+        };
+    }
+
+    public toSearchOnePokemonStatusResponse({
+        id,
+        pokemonNames,
+        status,
+    }: PokemonEntity): SearchOnePokemonStatusResponse {
+        const [pokemonName] = pokemonNames;
+        return {
+            id,
+            name: pokemonName.name,
             status: {
                 hp: status.hp,
                 attack: status.attack,

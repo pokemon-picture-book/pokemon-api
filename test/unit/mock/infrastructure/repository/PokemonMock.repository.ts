@@ -38,4 +38,8 @@ export default class PokemonMockRepository implements IPokemonRepository {
     }): Promise<PokemonEntity | undefined> {
         return whereParam.id > 0 ? new PokemonEntity() : undefined;
     }
+
+    findStatusById(): Promise<PokemonEntity | undefined> {
+        throw new Error('Method not implemented.');
+    }
 }
