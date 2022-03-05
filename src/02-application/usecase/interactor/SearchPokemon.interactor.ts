@@ -15,6 +15,7 @@ import {
     SearchOnePokemonStatusResponse,
     SearchSimplePokemonResponse,
 } from 'app-response-model';
+import IPokemonEvolutionRepository from '@/02-application/repository/IPokemonEvolution.repository';
 
 @injectable()
 export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
@@ -29,6 +30,9 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
 
     @inject(TYPES.IRegionRepository)
     private regionRepository: IRegionRepository;
+
+    @inject(TYPES.IPokemonEvolutionRepository)
+    private pokemonEvolutionRepository: IPokemonEvolutionRepository;
 
     @inject(TYPES.IPokemonPresenter)
     private presenter: IPokemonPresenter;
@@ -124,12 +128,19 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             (game) => game.alias === gameVersionGroupAlias
         );
 
+        const pokemonEvolutions = await this.pokemonEvolutionRepository.findAllByPokemonId(
+            id
+        );
+
         const whereParam = {
             id,
             languageId: language.id,
             gameVersionGroupId: matchGame ? matchGame.id : allGames[0].id,
         };
-        const pokemon = await this.repository.findById(whereParam);
+        const pokemon = await this.repository.findById(
+            whereParam,
+            !!pokemonEvolutions.length
+        );
 
         if (!pokemon) {
             return null;

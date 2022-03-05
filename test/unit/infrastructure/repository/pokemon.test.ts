@@ -132,11 +132,14 @@ describe('Unit test for Pokemon repository', () => {
     });
 
     test('正常: 正常に1件検索ができるか', async (done) => {
-        const pokemon = await repository.findById({
-            id: 1,
-            languageId: 1,
-            gameVersionGroupId: 1,
-        });
+        const pokemon = await repository.findById(
+            {
+                id: 1,
+                languageId: 1,
+                gameVersionGroupId: 1,
+            },
+            true
+        );
 
         expect(pokemon).toBeTruthy();
 

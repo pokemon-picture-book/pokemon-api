@@ -7,6 +7,7 @@ const TYPES = {
     ILanguageRepository: Symbol.for('ILanguageRepository'),
     IGameVersionGroupRepository: Symbol.for('IGameVersionGroupRepository'),
     IRegionRepository: Symbol.for('IRegionRepository'),
+    IPokemonEvolutionRepository: Symbol.for('IPokemonEvolutionRepository'),
     ISearchPokemonUsecase: Symbol.for('ISearchPokemonUsecase'),
     IGameVersionGroupUsecase: Symbol.for('IGameVersionGroupUsecase'),
     IRegionUsecase: Symbol.for('IRegionUsecase'),

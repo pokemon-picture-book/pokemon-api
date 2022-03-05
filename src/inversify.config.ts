@@ -19,10 +19,12 @@ import IGameVersionGroupRepository from '@/02-application/repository/IGameVersio
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
 import IRegionRepository from '@/02-application/repository/IRegion.repository';
+import IPokemonEvolutionRepository from '@/02-application/repository/IPokemonEvolution.repository';
 import GameVersionGroupRepository from '@/03-interface/infrastructure/repository/GameVersionGroup.repository';
 import LanguageRepository from '@/03-interface/infrastructure/repository/Language.repository';
 import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
 import RegionRepository from '@/03-interface/infrastructure/repository/Region.repository';
+import PokemonEvolutionRepository from '@/03-interface/infrastructure/repository/PokemonEvolution.repository';
 
 // usecase
 import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
@@ -64,6 +66,9 @@ export default (() => {
     container
         .bind<IRegionRepository>(TYPES.IRegionRepository)
         .to(RegionRepository);
+    container
+        .bind<IPokemonEvolutionRepository>(TYPES.IPokemonEvolutionRepository)
+        .to(PokemonEvolutionRepository);
     container
         .bind<ISearchPokemonUsecase>(TYPES.ISearchPokemonUsecase)
         .to(SearchPokemonInteractor)

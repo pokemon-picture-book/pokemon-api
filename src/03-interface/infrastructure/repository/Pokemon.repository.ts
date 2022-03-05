@@ -92,37 +92,76 @@ export default class PokemonRepository implements IPokemonRepository {
             .getMany();
     }
 
-    public findById(whereParam: {
-        id: number;
-        languageId: number;
-        gameVersionGroupId: number;
-    }): Promise<PokemonEntity | undefined> {
-        return (
-            PokemonEntity.createQueryBuilder('pokemon')
-                .where('pokemon.id = :id', { id: whereParam.id })
-                // flavor text entries
-                .innerJoinAndSelect(
-                    'pokemon.flavorTextEntries',
-                    'flavorTextEntry',
-                    'flavorTextEntry.language_id = :languageId',
-                    {
-                        languageId: whereParam.languageId,
-                    }
-                )
-                // generas
-                .innerJoinAndSelect(
-                    'pokemon.generas',
-                    'genera',
-                    'genera.language_id = :languageId',
-                    {
-                        languageId: whereParam.languageId,
-                    }
-                )
-                // pokemon footmark images (存在しないポケモンもいるため外部結合とする)
-                .leftJoinAndSelect(
-                    'pokemon.pokemonFootmarkImages',
-                    'pokemonFootmarkImage'
-                )
+    public findById(
+        whereParam: {
+            id: number;
+            languageId: number;
+            gameVersionGroupId: number;
+        },
+        isEvolution: boolean
+    ): Promise<PokemonEntity | undefined> {
+        const builder = PokemonEntity.createQueryBuilder('pokemon')
+            .where('pokemon.id = :id', { id: whereParam.id })
+            // flavor text entries
+            .innerJoinAndSelect(
+                'pokemon.flavorTextEntries',
+                'flavorTextEntry',
+                'flavorTextEntry.language_id = :languageId',
+                {
+                    languageId: whereParam.languageId,
+                }
+            )
+            // generas
+            .innerJoinAndSelect(
+                'pokemon.generas',
+                'genera',
+                'genera.language_id = :languageId',
+                {
+                    languageId: whereParam.languageId,
+                }
+            )
+            // pokemon footmark images (存在しないポケモンもいるため外部結合とする)
+            .leftJoinAndSelect(
+                'pokemon.pokemonFootmarkImages',
+                'pokemonFootmarkImage'
+            )
+            // pokemon game images
+            .innerJoinAndSelect(
+                'pokemon.pokemonGameImages',
+                'pokemonGameImage',
+                'pokemonGameImage.game_version_group_id = :gameVersionGroupId',
+                {
+                    gameVersionGroupId: whereParam.gameVersionGroupId,
+                }
+            )
+            // pokemon names
+            .innerJoinAndSelect(
+                'pokemon.pokemonNames',
+                'pokemonName',
+                'pokemonName.language_id = :languageId',
+                {
+                    languageId: whereParam.languageId,
+                }
+            )
+            // pokemon type
+            .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
+            .innerJoinAndMapOne(
+                'pokemonType.type',
+                TypeEntity,
+                'type',
+                'pokemonType.type_id = type.id'
+            )
+            .innerJoinAndMapMany(
+                'type.typeNames',
+                TypeNameEntity,
+                'typeName',
+                'type.id = typeName.type_id AND typeName.language_id = :languageId',
+                { languageId: whereParam.languageId }
+            )
+            .innerJoinAndSelect('pokemon.status', 'status');
+
+        if (isEvolution) {
+            builder
                 // evolution
                 .innerJoinAndSelect(
                     'pokemon.pokemonEvolutions',
@@ -212,43 +251,9 @@ export default class PokemonRepository implements IPokemonRepository {
                     't_typeName',
                     't_type.id = t_typeName.type_id AND t_typeName.language_id = :languageId',
                     { languageId: whereParam.languageId }
-                )
-                // pokemon game images
-                .innerJoinAndSelect(
-                    'pokemon.pokemonGameImages',
-                    'pokemonGameImage',
-                    'pokemonGameImage.game_version_group_id = :gameVersionGroupId',
-                    {
-                        gameVersionGroupId: whereParam.gameVersionGroupId,
-                    }
-                )
-                // pokemon names
-                .innerJoinAndSelect(
-                    'pokemon.pokemonNames',
-                    'pokemonName',
-                    'pokemonName.language_id = :languageId',
-                    {
-                        languageId: whereParam.languageId,
-                    }
-                )
-                // pokemon type
-                .innerJoinAndSelect('pokemon.pokemonTypes', 'pokemonType')
-                .innerJoinAndMapOne(
-                    'pokemonType.type',
-                    TypeEntity,
-                    'type',
-                    'pokemonType.type_id = type.id'
-                )
-                .innerJoinAndMapMany(
-                    'type.typeNames',
-                    TypeNameEntity,
-                    'typeName',
-                    'type.id = typeName.type_id AND typeName.language_id = :languageId',
-                    { languageId: whereParam.languageId }
-                )
-                .innerJoinAndSelect('pokemon.status', 'status')
-                .getOne()
-        );
+                );
+        }
+        return builder.getOne();
     }
 
     public findStatusById(whereParam: {
