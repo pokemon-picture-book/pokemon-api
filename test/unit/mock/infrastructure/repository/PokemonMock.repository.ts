@@ -31,12 +31,17 @@ export default class PokemonMockRepository implements IPokemonRepository {
         throw new Error('Method not implemented.');
     }
 
-    public async findById(whereParam: {
-        id: number;
-        languageId: number;
-        gameVersionGroupId: number;
-    }): Promise<PokemonEntity | undefined> {
-        return whereParam.id > 0 ? new PokemonEntity() : undefined;
+    public async findById(
+        whereParam: {
+            id: number;
+            languageId: number;
+            gameVersionGroupId: number;
+        },
+        isEvolution: boolean
+    ): Promise<PokemonEntity | undefined> {
+        return whereParam.id > 0 && isEvolution
+            ? new PokemonEntity()
+            : undefined;
     }
 
     findStatusById(): Promise<PokemonEntity | undefined> {

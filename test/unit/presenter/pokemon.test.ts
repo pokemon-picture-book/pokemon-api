@@ -69,11 +69,14 @@ describe('Unit test for Pokemon presenter', () => {
     });
 
     test('正常: 1件データに対し正しくマッピングできてるか', async (done) => {
-        const pokemon = (await repository.findById({
-            id: 1,
-            languageId: 1,
-            gameVersionGroupId: 1,
-        })) as PokemonEntity;
+        const pokemon = (await repository.findById(
+            {
+                id: 1,
+                languageId: 1,
+                gameVersionGroupId: 1,
+            },
+            true
+        )) as PokemonEntity;
 
         const response = await presenter.toSearchOnePokemonResponse(pokemon);
 

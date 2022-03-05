@@ -23,11 +23,14 @@ export default interface IPokemonRepository {
 
     findSimpleAll(whereParam: { languageId: number }): Promise<PokemonEntity[]>;
 
-    findById(whereParam: {
-        id: number;
-        languageId: number;
-        gameVersionGroupId: number;
-    }): Promise<PokemonEntity | undefined>;
+    findById(
+        whereParam: {
+            id: number;
+            languageId: number;
+            gameVersionGroupId: number;
+        },
+        isEvolution: boolean
+    ): Promise<PokemonEntity | undefined>;
 
     findStatusById(whereParam: {
         id: number;

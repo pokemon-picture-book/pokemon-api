@@ -6,6 +6,12 @@ import { SearchOnePokemonResponse } from 'app-response-model';
 export const toPokemonDetailEvolutions = async ({
     pokemonEvolutions,
 }: Pokemon): Promise<SearchOnePokemonResponse['evolutions']> => {
+    if (
+        !pokemonEvolutions ||
+        (pokemonEvolutions && !pokemonEvolutions.length)
+    ) {
+        return [];
+    }
     return Promise.all(
         pokemonEvolutions.map(async ({ evolution }) => {
             const {

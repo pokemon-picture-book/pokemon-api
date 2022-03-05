@@ -3,12 +3,14 @@ import GameVersionGroupEntity from '@/01-enterprise/entity/GameVersionGroup.enti
 import GameVersionGroupRegionEntity from '@/01-enterprise/entity/GameVersionGroupRegion.entity';
 import LanguageEntity from '@/01-enterprise/entity/Language.entity';
 import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
+import PokemonEvolutionEntity from '@/01-enterprise/entity/PokemonEvolution.entity';
 import PokemonGameImageEntity from '@/01-enterprise/entity/PokemonGameImage.entity';
 import RegionEntity from '@/01-enterprise/entity/Region.entity';
 import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
 import IGameVersionGroupRepository from '@/02-application/repository/IGameVersionGroup.repository';
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
+import IPokemonEvolutionRepository from '@/02-application/repository/IPokemonEvolution.repository';
 import IRegionRepository from '@/02-application/repository/IRegion.repository';
 import SearchPokemonInteractor from '@/02-application/usecase/interactor/SearchPokemon.interactor';
 import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
@@ -71,6 +73,14 @@ export const getSearchOneContainer = (): Readonly<Container> => {
 
         findAllByNameIn(): Promise<RegionEntity[]> {
             throw new Error('Method not implemented.');
+        }
+    }
+
+    @injectable()
+    class PokemonEvolutionMockRepository
+        implements IPokemonEvolutionRepository {
+        async findAllByPokemonId(): Promise<PokemonEvolutionEntity[]> {
+            return [];
         }
     }
 
@@ -139,6 +149,9 @@ export const getSearchOneContainer = (): Readonly<Container> => {
     container
         .bind<IRegionRepository>(TYPES.IRegionRepository)
         .to(RegionMockRepository);
+    container
+        .bind<IPokemonEvolutionRepository>(TYPES.IPokemonEvolutionRepository)
+        .to(PokemonEvolutionMockRepository);
     container
         .bind<ISearchPokemonUsecase>(TYPES.ISearchPokemonUsecase)
         .to(SearchPokemonInteractor)

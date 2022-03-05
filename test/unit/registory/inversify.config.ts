@@ -10,6 +10,7 @@ import IGameVersionGroupRepository from '@/02-application/repository/IGameVersio
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
 import IRegionRepository from '@/02-application/repository/IRegion.repository';
+import IPokemonEvolutionRepository from '@/02-application/repository/IPokemonEvolution.repository';
 import GameVersionGroupInteractor from '@/02-application/usecase/interactor/GameVersionGroup.interactor';
 import LanguageInteractor from '@/02-application/usecase/interactor/Language.interactor';
 import RegionInteractor from '@/02-application/usecase/interactor/Region.interactor';
@@ -22,6 +23,7 @@ import GameVersionGroupMockRepository from '@test/unit/mock/infrastructure/repos
 import LanguageMockRepository from '@test/unit/mock/infrastructure/repository/LanguageMock.repository';
 import PokemonMockRepository from '@test/unit/mock/infrastructure/repository/PokemonMock.repository';
 import RegionMockRepository from '@test/unit/mock/infrastructure/repository/RegionMock.repository';
+import PokemonEvolutionMockRepository from '@test/unit/mock/infrastructure/repository/PokemonEvolutionMock.repository';
 import GameVersionGroupMockInteractor from '@test/unit/mock/interactor/GameVersionGroupMock.interactor';
 import RegionMockInteractor from '@test/unit/mock/interactor/RegionMock.interactor';
 import SearchPokemonMockInteractor from '@test/unit/mock/interactor/SearchPokemonMock.interactor';
@@ -60,6 +62,9 @@ export const interactorContainer = (() => {
     container
         .bind<IRegionRepository>(TYPES.IRegionRepository)
         .to(RegionMockRepository);
+    container
+        .bind<IPokemonEvolutionRepository>(TYPES.IPokemonEvolutionRepository)
+        .to(PokemonEvolutionMockRepository);
     container
         .bind<ISearchPokemonUsecase>(TYPES.ISearchPokemonUsecase)
         .to(SearchPokemonInteractor)
