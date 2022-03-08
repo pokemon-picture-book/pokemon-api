@@ -1,11 +1,11 @@
-import { SearchOnePokemonResponse } from 'app-response-model';
+import { SearchOnePokemonResponseData } from 'app-response-model';
 import { Pokemon } from 'app-entity';
 import { toBase64 } from '@/01-enterprise/function/mapping-image.function';
 
 export const toPokemonDetailImage = async ({
     pokemonGameImages,
     pokemonFootmarkImages,
-}: Pokemon): Promise<SearchOnePokemonResponse['image']> => {
+}: Pokemon): Promise<SearchOnePokemonResponseData['image']> => {
     const mainGameImage = pokemonGameImages.find(({ isMain }) => isMain);
     const handheldIconImages = pokemonGameImages.filter(
         ({ isHandheldIcon }) => isHandheldIcon

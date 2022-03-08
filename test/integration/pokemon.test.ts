@@ -500,6 +500,7 @@ describe('Integration test for pokemon', () => {
             const queryParam: Readonly<SearchOnePokemonQueryParam> = {
                 lang: 'ja-Hrkt',
                 game: 'gsc',
+                regions: ['kanto'],
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}/1`)
@@ -510,13 +511,30 @@ describe('Integration test for pokemon', () => {
                     const pokemon: SearchOnePokemonResponse = response.body;
 
                     expect(pokemon).toBeTruthy();
+                    // prevId が 151 (最後の番号) であるか
+                    expect(pokemon.prevId).toBe(151);
+                    // nextId が次の番号であるか
+                    expect(pokemon.nextId).toBe(2);
                     // ID が一致しているか
-                    expect(pokemon.id).toBe(1);
+                    expect(pokemon.data.id).toBe(1);
                     // 日本語データか（ポケモン名でテスト）
-                    expect(pokemon.pokemonName).toBe('フシギダネ');
+                    expect(pokemon.data.pokemonName).toBe('フシギダネ');
 
                     done();
                 });
+        });
+
+        test('異常：ID に紐づかない game / regions を指定した場合 400 エラーとなるか', (done) => {
+            const queryParam: Readonly<SearchOnePokemonQueryParam> = {
+                lang: 'ja-Hrkt',
+                game: 'frlg',
+                regions: ['hoenn'],
+            };
+            request(server)
+                .get(`${ROUTING.API}${ROUTING.POKEMON}/1`)
+                .query(queryParam)
+                .expect('Content-Type', /json/)
+                .expect(400, done);
         });
 
         test('正常：存在しないポケモン ID でリクエストした場合、404 となるか', (done) => {
@@ -546,10 +564,14 @@ describe('Integration test for pokemon', () => {
                     const pokemon: SearchOnePokemonResponse = response.body;
 
                     expect(pokemon).toBeTruthy();
+                    // prevId が 151 (最後の番号) であるか
+                    expect(pokemon.prevId).toBe(151);
+                    // nextId が次の番号であるか
+                    expect(pokemon.nextId).toBe(2);
                     // ID が一致しているか
-                    expect(pokemon.id).toBe(1);
+                    expect(pokemon.data.id).toBe(1);
                     // 英語データか（ポケモン名でテスト）
-                    expect(pokemon.pokemonName).toBe('Bulbasaur');
+                    expect(pokemon.data.pokemonName).toBe('Bulbasaur');
 
                     done();
                 });

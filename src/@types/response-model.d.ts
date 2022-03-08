@@ -44,7 +44,7 @@ declare module 'app-response-model' {
         data: SearchSimplePokemonResponseData[];
     };
 
-    export type SearchOnePokemonResponse = Pick<
+    export type SearchOnePokemonResponseData = Pick<
         Pokemon,
         'id' | 'height' | 'weight' | 'imageColor'
     > & {
@@ -80,6 +80,12 @@ declare module 'app-response-model' {
                 types: PokemonTypeResponse[];
             };
         })[];
+    };
+
+    export type SearchOnePokemonResponse = {
+        prevId: number;
+        nextId: number;
+        data: SearchOnePokemonResponseData;
     };
 
     export type SearchOnePokemonStatusResponse = Pick<Pokemon, 'id'> & {

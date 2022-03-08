@@ -1,11 +1,11 @@
 import { Pokemon } from 'app-entity';
 import { toBase64 } from '@/01-enterprise/function/mapping-image.function';
 import { toTypes } from '@/01-enterprise/function/serialize/pokemon-type.function';
-import { SearchOnePokemonResponse } from 'app-response-model';
+import { SearchOnePokemonResponseData } from 'app-response-model';
 
 export const toPokemonDetailEvolutions = async ({
     pokemonEvolutions,
-}: Pokemon): Promise<SearchOnePokemonResponse['evolutions']> => {
+}: Pokemon): Promise<SearchOnePokemonResponseData['evolutions']> => {
     if (
         !pokemonEvolutions ||
         (pokemonEvolutions && !pokemonEvolutions.length)

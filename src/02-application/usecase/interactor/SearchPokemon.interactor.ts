@@ -4,6 +4,7 @@ import 'reflect-metadata';
 import ISearchPokemonUsecase from '@/02-application/usecase/ISearchPokemon.usecase';
 import TYPES from '@/inversify.types';
 import { getDefaultSet } from '@/01-enterprise/function/game-region.function';
+import { getPrevAndNextId } from '@/01-enterprise/function/pokemon-pager.function';
 import IPokemonRepository from '@/02-application/repository/IPokemon.repository';
 import IPokemonPresenter from '@/02-application/presenter/IPokemon.presenter';
 import ILanguageRepository from '@/02-application/repository/ILanguage.repository';
@@ -111,8 +112,14 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         id: number;
         languageName?: string;
         gameVersionGroupAlias?: string;
+        regionNames?: string[];
     }): Promise<SearchOnePokemonResponse | null> {
-        const { id, languageName, gameVersionGroupAlias } = requestParam;
+        const {
+            id,
+            languageName,
+            gameVersionGroupAlias,
+            regionNames,
+        } = requestParam;
         const language = await this.languageRepository.findByName(
             languageName || 'en'
         );
@@ -120,33 +127,63 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             return null;
         }
 
-        const allGames = await this.gameVersionGroupRepository.findAllByIsSupported(
-            language.id,
-            true
-        );
-        const matchGame = allGames.find(
-            (game) => game.alias === gameVersionGroupAlias
-        );
+        const [allGames, allRegions] = await Promise.all([
+            this.gameVersionGroupRepository.findAllByIsSupported(
+                language.id,
+                true
+            ),
+            this.regionRepository.findByLanguageId(language.id),
+        ]);
 
-        const pokemonEvolutions = await this.pokemonEvolutionRepository.findAllByPokemonId(
-            id
+        const gameRegion = getDefaultSet(
+            {
+                game: gameVersionGroupAlias || '',
+                regions: regionNames || [],
+            },
+            {
+                allGames,
+                allRegions,
+            }
         );
+        const [
+            gameVersionGroup,
+            regions,
+            pokemonEvolutions,
+        ] = await Promise.all([
+            this.gameVersionGroupRepository.findByAlias(gameRegion.game),
+            this.regionRepository.findAllByNameIn(gameRegion.regions),
+            this.pokemonEvolutionRepository.findAllByPokemonId(id),
+        ]);
 
-        const whereParam = {
-            id,
-            languageId: language.id,
-            gameVersionGroupId: matchGame ? matchGame.id : allGames[0].id,
-        };
-        const pokemon = await this.repository.findById(
-            whereParam,
-            !!pokemonEvolutions.length
-        );
+        if (!(gameVersionGroup && regions.length)) {
+            return null;
+        }
+
+        const [pokemons, pokemon] = await Promise.all([
+            this.repository.findAll({
+                languageId: language.id,
+                gameVersionGroupId: gameVersionGroup.id,
+                regionIds: regions.map(({ id: regionId }) => regionId),
+                isPokemonMainImage: true,
+            }),
+            this.repository.findById(
+                {
+                    id,
+                    languageId: language.id,
+                    gameVersionGroupId: gameVersionGroup.id,
+                },
+                !!pokemonEvolutions.length
+            ),
+        ]);
 
         if (!pokemon) {
             return null;
         }
 
-        return this.presenter.toSearchOnePokemonResponse(pokemon);
+        return this.presenter.toSearchOnePokemonResponse(
+            pokemon,
+            getPrevAndNextId(id, pokemons)
+        );
     }
 
     async searchSimpleData(requestParam: {

@@ -8,10 +8,7 @@ export default interface IPokemonRepository {
             regionIds: number[];
             isPokemonMainImage: boolean;
         },
-        pageParam: {
-            offset?: number;
-            limit?: number;
-        }
+        pageParam?: { offset: number; limit: number }
     ): Promise<PokemonEntity[]>;
 
     findAllCount(whereParam: {

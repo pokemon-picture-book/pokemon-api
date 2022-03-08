@@ -97,19 +97,25 @@ export default class PokemonController {
         }
 
         const { id } = request.params;
-        const { lang, game } = request.query;
-        const result = await this.usecase.searchOne({
-            id: Number(id),
-            languageName: lang,
-            gameVersionGroupAlias: game,
-        });
+        const { lang, game, regions } = request.query;
+        this.usecase
+            .searchOne({
+                id: Number(id),
+                languageName: lang,
+                gameVersionGroupAlias: game,
+                regionNames: regions,
+            })
+            .then((result) => {
+                if (!result) {
+                    response.status(404).send({ message: 'Not Found!' });
+                    return;
+                }
 
-        if (!result) {
-            response.status(404).send({ message: 'Not Found!' });
-            return;
-        }
-
-        response.status(200).json(result);
+                response.status(200).json(result);
+            })
+            .catch((e) => {
+                response.status(400).send({ errors: e.message });
+            });
     }
 
     async searchOneStatus(

@@ -62,7 +62,8 @@ export default class PokemonPresenter implements IPokemonPresenter {
     }
 
     public async toSearchOnePokemonResponse(
-        pokemon: PokemonEntity
+        pokemon: PokemonEntity,
+        prevNextIdData: { prevId: number; nextId: number }
     ): Promise<SearchOnePokemonResponse> {
         const [image, evolutions] = await Promise.all([
             // 画像関連処理
@@ -78,23 +79,26 @@ export default class PokemonPresenter implements IPokemonPresenter {
         const [pokemonName] = pokemon.pokemonNames;
         const types = toTypes(pokemon.pokemonTypes);
         return {
-            id,
-            height,
-            weight,
-            imageColor,
-            flavorText: flavorTextEntry.flavorText,
-            genus: generas.genus,
-            pokemonName: pokemonName.name,
-            types,
-            image,
-            evolutions,
-            status: {
-                hp: status.hp,
-                attack: status.attack,
-                defense: status.defense,
-                specialAttack: status.specialAttack,
-                specialDefense: status.specialDefense,
-                speed: status.speed,
+            ...prevNextIdData,
+            data: {
+                id,
+                height,
+                weight,
+                imageColor,
+                flavorText: flavorTextEntry.flavorText,
+                genus: generas.genus,
+                pokemonName: pokemonName.name,
+                types,
+                image,
+                evolutions,
+                status: {
+                    hp: status.hp,
+                    attack: status.attack,
+                    defense: status.defense,
+                    specialAttack: status.specialAttack,
+                    specialDefense: status.specialDefense,
+                    speed: status.speed,
+                },
             },
         };
     }
