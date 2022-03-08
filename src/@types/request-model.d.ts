@@ -14,6 +14,7 @@ declare module 'app-request-model' {
 
     export type SearchOnePokemonQueryParam = LangQueryParam & {
         game?: string;
+        regions?: string[];
     };
 
     export type SearchOnePokemonStatusQueryParam = LangQueryParam;

@@ -5,7 +5,7 @@ import driver from '@/04-framework/db/driver';
 import PokemonRepository from '@/03-interface/infrastructure/repository/Pokemon.repository';
 import PokemonPresenter from '@/03-interface/presenter/Pokemon.presenter';
 import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
-import { SearchOnePokemonResponse } from 'app-response-model';
+import { SearchOnePokemonResponseData } from 'app-response-model';
 
 describe('Unit test for Pokemon presenter', () => {
     const presenter: IPokemonPresenter = new PokemonPresenter();
@@ -21,15 +21,12 @@ describe('Unit test for Pokemon presenter', () => {
     });
 
     test('正常: 正しくマッピングできているか', async (done) => {
-        const pokemons = await repository.findAll(
-            {
-                languageId: 1,
-                gameVersionGroupId: 1,
-                regionIds: [1],
-                isPokemonMainImage: true,
-            },
-            {}
-        );
+        const pokemons = await repository.findAll({
+            languageId: 1,
+            gameVersionGroupId: 1,
+            regionIds: [1],
+            isPokemonMainImage: true,
+        });
 
         const pokemonSearchResponse = await presenter.toSearchAllPokemonResponse(
             pokemons.length,
@@ -78,7 +75,17 @@ describe('Unit test for Pokemon presenter', () => {
             true
         )) as PokemonEntity;
 
-        const response = await presenter.toSearchOnePokemonResponse(pokemon);
+        const {
+            data: response,
+            prevId,
+            nextId,
+        } = await presenter.toSearchOnePokemonResponse(pokemon, {
+            prevId: 151,
+            nextId: 2,
+        });
+
+        expect(prevId).toBe(151);
+        expect(nextId).toBe(2);
 
         expect(Object.keys(response).length).toBe(11);
 
@@ -94,7 +101,7 @@ describe('Unit test for Pokemon presenter', () => {
 
         (Object.keys(
             response.status
-        ) as (keyof SearchOnePokemonResponse['status'])[]).forEach(
+        ) as (keyof SearchOnePokemonResponseData['status'])[]).forEach(
             (statusKey) => {
                 expect(response.status[statusKey]).toBe(
                     pokemon.status[statusKey]

@@ -59,11 +59,11 @@ export default class PokemonRepository implements IPokemonRepository {
             regionIds: number[];
             isPokemonMainImage: boolean;
         },
-        pageParam: { offset?: number; limit?: number }
+        pageParam?: { offset: number; limit: number }
     ): Promise<PokemonEntity[]> {
         return this.commonFindAllQueryBuilder(whereParam)
-            .take(pageParam.limit)
-            .skip(pageParam.offset)
+            .take(pageParam?.limit)
+            .skip(pageParam?.offset)
             .orderBy({
                 'pokemon.id': 'ASC',
             })

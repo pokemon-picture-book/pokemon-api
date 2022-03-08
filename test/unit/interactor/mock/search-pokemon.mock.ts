@@ -42,8 +42,30 @@ export const getSearchOneContainer = (): Readonly<Container> => {
     @injectable()
     class GameVersionGroupMockRepository
         implements IGameVersionGroupRepository {
-        findByAlias(): Promise<GameVersionGroupEntity | undefined> {
-            throw new Error('Method not implemented.');
+        async findByAlias(
+            alias: string
+        ): Promise<GameVersionGroupEntity | undefined> {
+            return new GameVersionGroupEntity(
+                1,
+                alias,
+                true,
+                [new GameVersionEntity()],
+                [new PokemonGameImageEntity()],
+                [
+                    new GameVersionGroupRegionEntity(
+                        1,
+                        new GameVersionGroupEntity(
+                            1,
+                            alias,
+                            true,
+                            [new GameVersionEntity()],
+                            [new PokemonGameImageEntity()],
+                            [new GameVersionGroupRegionEntity()]
+                        ),
+                        new RegionEntity(1, 'regionName', [], [], [])
+                    ),
+                ]
+            );
         }
 
         public async findAllByIsSupported(
@@ -58,7 +80,20 @@ export const getSearchOneContainer = (): Readonly<Container> => {
                           isSupported,
                           [new GameVersionEntity()],
                           [new PokemonGameImageEntity()],
-                          [new GameVersionGroupRegionEntity()]
+                          [
+                              new GameVersionGroupRegionEntity(
+                                  1,
+                                  new GameVersionGroupEntity(
+                                      1,
+                                      'alias',
+                                      isSupported,
+                                      [new GameVersionEntity()],
+                                      [new PokemonGameImageEntity()],
+                                      [new GameVersionGroupRegionEntity()]
+                                  ),
+                                  new RegionEntity(1, 'regionName', [], [], [])
+                              ),
+                          ]
                       ),
                   ]
                 : [];
@@ -67,12 +102,12 @@ export const getSearchOneContainer = (): Readonly<Container> => {
 
     @injectable()
     class RegionMockRepository implements IRegionRepository {
-        findByLanguageId(): Promise<RegionEntity[]> {
-            throw new Error('Method not implemented.');
+        async findByLanguageId(): Promise<RegionEntity[]> {
+            return [new RegionEntity(1, 'region', [], [], [])];
         }
 
-        findAllByNameIn(): Promise<RegionEntity[]> {
-            throw new Error('Method not implemented.');
+        async findAllByNameIn(): Promise<RegionEntity[]> {
+            return [new RegionEntity(1, 'regionName', [], [], [])];
         }
     }
 
@@ -86,8 +121,8 @@ export const getSearchOneContainer = (): Readonly<Container> => {
 
     @injectable()
     class PokemonMockRepository implements IPokemonRepository {
-        findAll(): Promise<PokemonEntity[]> {
-            throw new Error('Method not implemented.');
+        async findAll(): Promise<PokemonEntity[]> {
+            return [new PokemonEntity()];
         }
 
         findAllCount(): Promise<number> {

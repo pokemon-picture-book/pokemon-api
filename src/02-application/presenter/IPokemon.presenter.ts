@@ -17,7 +17,8 @@ export default interface IPokemonPresenter {
     ): SearchSimplePokemonResponse;
 
     toSearchOnePokemonResponse(
-        pokemon: PokemonEntity
+        pokemon: PokemonEntity,
+        prevNextIdData: { prevId: number; nextId: number }
     ): Promise<SearchOnePokemonResponse>;
 
     toSearchOnePokemonStatusResponse(

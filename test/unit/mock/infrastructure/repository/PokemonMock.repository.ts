@@ -10,7 +10,7 @@ export default class PokemonMockRepository implements IPokemonRepository {
             gameVersionGroupId: number;
             regionIds: number[];
         },
-        _: { offset?: number | undefined; limit?: number | undefined }
+        _?: { offset: number; limit: number }
     ): Promise<PokemonEntity[]> {
         const { languageId, gameVersionGroupId, regionIds } = whereParam;
         return languageId || gameVersionGroupId || regionIds.length

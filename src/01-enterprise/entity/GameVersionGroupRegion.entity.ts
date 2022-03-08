@@ -31,6 +31,23 @@ class GameVersionGroupRegionEntity extends BaseEntity {
     })
     readonly region: RegionEntity;
 
+    constructor(
+        id?: number,
+        gameVersionGroup?: GameVersionGroupEntity,
+        region?: RegionEntity
+    ) {
+        super();
+        if (id) {
+            this.id = id;
+        }
+        if (gameVersionGroup) {
+            this.gameVersionGroup = gameVersionGroup;
+        }
+        if (region) {
+            this.region = region;
+        }
+    }
+
     public refer(): void {
         console.table(this);
     }
