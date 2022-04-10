@@ -19,6 +19,26 @@ class RegionEntity extends BaseEntity {
     })
     readonly name: string;
 
+    @Column({
+        name: 'first_pokemon_id',
+        type: 'mediumint',
+        insert: true,
+        update: false,
+        nullable: false,
+        default: 0,
+    })
+    readonly firstPokemonId: number;
+
+    @Column({
+        name: 'last_pokemon_id',
+        type: 'mediumint',
+        insert: true,
+        update: false,
+        nullable: false,
+        default: 0,
+    })
+    readonly lastPokemonId: number;
+
     @OneToMany(() => PokemonEntity, (pokemons) => pokemons.region)
     readonly pokemons: PokemonEntity[];
 
