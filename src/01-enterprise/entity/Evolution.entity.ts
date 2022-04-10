@@ -24,12 +24,22 @@ class EvolutionEntity extends BaseEntity {
     )
     readonly pokemonEvolutions: PokemonEvolutionEntity[];
 
+    @Column({
+        name: 'from_id',
+    })
+    readonly fromId: number;
+
     @ManyToOne(() => PokemonEntity)
     @JoinColumn({
         name: 'from_id',
         referencedColumnName: 'id',
     })
     readonly fromPokemon: PokemonEntity;
+
+    @Column({
+        name: 'to_id',
+    })
+    readonly toId: number;
 
     @ManyToOne(() => PokemonEntity)
     @JoinColumn({

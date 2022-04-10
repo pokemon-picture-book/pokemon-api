@@ -9,6 +9,11 @@ export default class GameVersionGroupRepository
         alias: string
     ): Promise<GameVersionGroupEntity | undefined> {
         return GameVersionGroupEntity.createQueryBuilder('gameVersionGroup')
+            .leftJoinAndSelect(
+                'gameVersionGroup.gameVersionGroupRegions',
+                'gameVersionGroupRegion'
+            )
+            .leftJoinAndSelect('gameVersionGroupRegion.region', 'region')
             .where('gameVersionGroup.alias = :alias', { alias })
             .getOne();
     }

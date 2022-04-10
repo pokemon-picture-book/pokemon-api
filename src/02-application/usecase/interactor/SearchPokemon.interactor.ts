@@ -159,6 +159,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             return null;
         }
 
+        const { region } = gameVersionGroup.gameVersionGroupRegions.pop()!;
         const [pokemons, pokemon] = await Promise.all([
             this.repository.findAll({
                 languageId: language.id,
@@ -172,7 +173,14 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
                     languageId: language.id,
                     gameVersionGroupId: gameVersionGroup.id,
                 },
-                !!pokemonEvolutions.length
+                !!pokemonEvolutions.length &&
+                    pokemonEvolutions.every((pokemonEvolution) => {
+                        const { fromId, toId } = pokemonEvolution.evolution;
+                        return (
+                            region.lastPokemonId >= fromId &&
+                            region.lastPokemonId >= toId
+                        );
+                    })
             ),
         ]);
 
