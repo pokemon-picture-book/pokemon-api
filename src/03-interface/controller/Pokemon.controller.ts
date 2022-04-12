@@ -97,13 +97,12 @@ export default class PokemonController {
         }
 
         const { id } = request.params;
-        const { lang, game, regions } = request.query;
+        const { lang, game } = request.query;
         this.usecase
             .searchOne({
                 id: Number(id),
                 languageName: lang,
                 gameVersionGroupAlias: game,
-                regionNames: regions,
             })
             .then((result) => {
                 if (!result) {
