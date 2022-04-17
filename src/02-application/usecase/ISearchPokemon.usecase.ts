@@ -22,7 +22,6 @@ export default interface ISearchPokemonUsecase {
         id: number;
         languageName?: string;
         gameVersionGroupAlias?: string;
-        regionNames?: string[];
     }): Promise<SearchOnePokemonResponse | null>;
 
     searchSimpleData(requestParam: {

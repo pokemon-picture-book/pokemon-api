@@ -63,7 +63,6 @@ describe('Unit test for SearchPokemon interactor', () => {
                 id: 0,
                 languageName: 'en',
                 gameVersionGroupAlias: 'rgby',
-                regionNames: ['kanto'],
             });
             expect(pokemon).toBeNull();
             done();

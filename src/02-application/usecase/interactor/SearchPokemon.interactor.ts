@@ -112,14 +112,8 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         id: number;
         languageName?: string;
         gameVersionGroupAlias?: string;
-        regionNames?: string[];
     }): Promise<SearchOnePokemonResponse | null> {
-        const {
-            id,
-            languageName,
-            gameVersionGroupAlias,
-            regionNames,
-        } = requestParam;
+        const { id, languageName, gameVersionGroupAlias } = requestParam;
         const language = await this.languageRepository.findByName(
             languageName || 'en'
         );
@@ -127,62 +121,32 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             return null;
         }
 
-        const [allGames, allRegions] = await Promise.all([
-            this.gameVersionGroupRepository.findAllByIsSupported(
-                language.id,
-                true
+        const [gameVersionGroup, pokemonEvolutions] = await Promise.all([
+            this.gameVersionGroupRepository.findByAlias(
+                gameVersionGroupAlias || 'rgby'
             ),
-            this.regionRepository.findByLanguageId(language.id),
-        ]);
-
-        const gameRegion = getDefaultSet(
-            {
-                game: gameVersionGroupAlias || '',
-                regions: regionNames || [],
-            },
-            {
-                allGames,
-                allRegions,
-            }
-        );
-        const [
-            gameVersionGroup,
-            regions,
-            pokemonEvolutions,
-        ] = await Promise.all([
-            this.gameVersionGroupRepository.findByAlias(gameRegion.game),
-            this.regionRepository.findAllByNameIn(gameRegion.regions),
             this.pokemonEvolutionRepository.findAllByPokemonId(id),
         ]);
 
-        if (!(gameVersionGroup && regions.length)) {
+        if (!gameVersionGroup) {
             return null;
         }
 
-        const { region } = gameVersionGroup.gameVersionGroupRegions.pop()!;
-        const [pokemons, pokemon] = await Promise.all([
-            this.repository.findAll({
+        const {
+            lastPokemonId,
+        } = gameVersionGroup.gameVersionGroupRegions.pop()!.region;
+        const pokemon = await this.repository.findById(
+            {
+                id,
                 languageId: language.id,
                 gameVersionGroupId: gameVersionGroup.id,
-                regionIds: regions.map(({ id: regionId }) => regionId),
-                isPokemonMainImage: true,
-            }),
-            this.repository.findById(
-                {
-                    id,
-                    languageId: language.id,
-                    gameVersionGroupId: gameVersionGroup.id,
-                },
-                !!pokemonEvolutions.length &&
-                    pokemonEvolutions.every((pokemonEvolution) => {
-                        const { fromId, toId } = pokemonEvolution.evolution;
-                        return (
-                            region.lastPokemonId >= fromId &&
-                            region.lastPokemonId >= toId
-                        );
-                    })
-            ),
-        ]);
+            },
+            !!pokemonEvolutions.length &&
+                pokemonEvolutions.some((pokemonEvolution) => {
+                    const { fromId, toId } = pokemonEvolution.evolution;
+                    return lastPokemonId >= fromId && lastPokemonId >= toId;
+                })
+        );
 
         if (!pokemon) {
             return null;
@@ -190,7 +154,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
 
         return this.presenter.toSearchOnePokemonResponse(
             pokemon,
-            getPrevAndNextId(id, pokemons)
+            getPrevAndNextId(id, lastPokemonId)
         );
     }
 

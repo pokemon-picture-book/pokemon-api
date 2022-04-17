@@ -1,26 +1,20 @@
 import PokemonEntity from '@/01-enterprise/entity/Pokemon.entity';
+import RegionEntity from '../entity/Region.entity';
 
 export const getPrevAndNextId = (
     targetId: PokemonEntity['id'],
-    pokemons: PokemonEntity[]
+    lastPokemonId: RegionEntity['lastPokemonId']
 ) => {
-    const targetPokemonIndex = pokemons.findIndex((p) => p.id === targetId);
-    if (targetPokemonIndex < 0) {
-        throw new Error('invalid query parameter: game / regions');
+    if (targetId > lastPokemonId) {
+        throw new Error('Invalid target pokemon id.');
     }
 
-    const prevIndex =
-        targetPokemonIndex - 1 < 0
-            ? pokemons.length - 1
-            : targetPokemonIndex - 1;
-    const nextIndex =
-        targetPokemonIndex + 1 > pokemons.length - 1
-            ? 0
-            : targetPokemonIndex + 1;
+    const prevId = targetId - 1 < 1 ? lastPokemonId : targetId - 1;
+    const nextId = targetId + 1 > lastPokemonId ? 1 : targetId + 1;
 
     return {
-        prevId: pokemons[prevIndex].id,
-        nextId: pokemons[nextIndex].id,
+        prevId,
+        nextId,
     };
 };
 
