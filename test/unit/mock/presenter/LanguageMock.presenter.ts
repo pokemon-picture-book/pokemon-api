@@ -7,13 +7,11 @@ import { injectable } from 'inversify';
 export default class LanguageMockPresenter implements ILanguagePresenter {
     public toLanguageResponse(Languages: LanguageEntity[]): LanguageResponse[] {
         return Languages.map(
-            (): LanguageResponse => {
-                return {
+            (): LanguageResponse => ({
                     id: 1,
                     name: 'name',
                     labelName: 'labelName',
-                };
-            }
+                })
         );
     }
 }

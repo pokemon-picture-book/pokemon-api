@@ -10,8 +10,7 @@ export default class GameVersionGroupMockPresenter
         gameVersionGroups: GameVersionGroupEntity[]
     ): GameVersionGroupResponse[] {
         return gameVersionGroups.map(
-            (): GameVersionGroupResponse => {
-                return {
+            (): GameVersionGroupResponse => ({
                     id: 1,
                     alias: 'alias',
                     name: 'name',
@@ -21,8 +20,7 @@ export default class GameVersionGroupMockPresenter
                             name: 'regionName',
                         },
                     ],
-                };
-            }
+                })
         );
     }
 }

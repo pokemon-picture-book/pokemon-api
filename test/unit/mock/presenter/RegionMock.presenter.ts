@@ -7,8 +7,7 @@ import { injectable } from 'inversify';
 export default class RegionMockPresenter implements IRegionPresenter {
     public toRegionResponse(Regions: RegionEntity[]): RegionResponse[] {
         return Regions.map(
-            (): RegionResponse => {
-                return {
+            (): RegionResponse => ({
                     id: 1,
                     name: 'name',
                     displayName: '',
@@ -18,8 +17,7 @@ export default class RegionMockPresenter implements IRegionPresenter {
                             alias: 'gameVersionGroupAlias',
                         },
                     ],
-                };
-            }
+                })
         );
     }
 }

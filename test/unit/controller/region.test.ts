@@ -81,8 +81,7 @@ describe('Unit test for Region controller', () => {
         const myValidationResult = validationResult as jest.MockedFunction<
             typeof validationResult
         >;
-        myValidationResult.mockImplementation(() => {
-            return {
+        myValidationResult.mockImplementation(() => ({
                 isEmpty: () => false,
                 array: () => [
                     {
@@ -92,8 +91,7 @@ describe('Unit test for Region controller', () => {
                         location: 'body',
                     },
                 ],
-            } as Result<ValidationError>;
-        });
+            } as Result<ValidationError>));
 
         const req = {
             query: {

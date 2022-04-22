@@ -17,12 +17,10 @@ export default class RegionPresenter implements IRegionPresenter {
                 name,
                 displayName: regionName.name,
                 relatedGameVersionGroups: gameVersionGroupRegions.map(
-                    ({ gameVersionGroup }) => {
-                        return {
+                    ({ gameVersionGroup }) => ({
                             id: gameVersionGroup.id,
                             alias: gameVersionGroup.alias,
-                        };
-                    }
+                        })
                 ),
             };
         });
