@@ -14,11 +14,11 @@ describe('Unit test for SearchPokemon interactor', () => {
             {
                 languageName: 'xxxxx',
                 gameVersionGroupAlias: '',
-                regionNames: [''],
+                regionNames: ['']
             },
             {
                 offset: 1,
-                limit: 1,
+                limit: 1
             }
         );
         expect(pokemons.hits).toBe(0);
@@ -31,11 +31,11 @@ describe('Unit test for SearchPokemon interactor', () => {
             {
                 languageName: '',
                 gameVersionGroupAlias: '',
-                regionNames: [''],
+                regionNames: ['']
             },
             {
                 offset: 1,
-                limit: 1,
+                limit: 1
             }
         );
         expect(pokemons.hits).toBe(0);
@@ -52,7 +52,7 @@ describe('Unit test for SearchPokemon interactor', () => {
             const pokemon = await searchOneUsecase.searchOne({
                 id: 1,
                 languageName: 'xxxxx',
-                gameVersionGroupAlias: 'rgby',
+                gameVersionGroupAlias: 'rgby'
             });
             expect(pokemon).toBeNull();
             done();
@@ -62,7 +62,7 @@ describe('Unit test for SearchPokemon interactor', () => {
             const pokemon = await searchOneUsecase.searchOne({
                 id: 0,
                 languageName: 'en',
-                gameVersionGroupAlias: 'rgby',
+                gameVersionGroupAlias: 'rgby'
             });
             expect(pokemon).toBeNull();
             done();

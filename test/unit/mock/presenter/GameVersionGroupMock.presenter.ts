@@ -11,16 +11,16 @@ export default class GameVersionGroupMockPresenter
     ): GameVersionGroupResponse[] {
         return gameVersionGroups.map(
             (): GameVersionGroupResponse => ({
-                    id: 1,
-                    alias: 'alias',
-                    name: 'name',
-                    relatedRegions: [
-                        {
-                            id: 1,
-                            name: 'regionName',
-                        },
-                    ],
-                })
+                id: 1,
+                alias: 'alias',
+                name: 'name',
+                relatedRegions: [
+                    {
+                        id: 1,
+                        name: 'regionName'
+                    }
+                ]
+            })
         );
     }
 }

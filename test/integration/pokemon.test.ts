@@ -6,11 +6,11 @@ import { base64RegExp } from '@test/shared/image';
 import { LIMIT_MAX_NUM } from '@/01-enterprise/constant/pagination';
 import {
     SearchAllPokemonQueryParam,
-    SearchOnePokemonQueryParam,
+    SearchOnePokemonQueryParam
 } from 'app-request-model';
 import {
     SearchAllPokemonResponse,
-    SearchOnePokemonResponse,
+    SearchOnePokemonResponse
 } from 'app-response-model';
 import * as request from 'supertest';
 
@@ -70,7 +70,7 @@ describe('Integration test for pokemon', () => {
 
         test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                lang: 'ja-Hrkt',
+                lang: 'ja-Hrkt'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -107,7 +107,7 @@ describe('Integration test for pokemon', () => {
 
         test('正常: game パラメータを送信した際に、指定したゲームでのデータが取得できているか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                game: 'gsc',
+                game: 'gsc'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -134,7 +134,7 @@ describe('Integration test for pokemon', () => {
 
         test('正常: regions パラメータを送信した際に、指定した地域でのデータが取得できているか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                regions: ['kanto', 'hoenn'],
+                regions: ['kanto', 'hoenn']
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -163,7 +163,7 @@ describe('Integration test for pokemon', () => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
                 lang: 'ja-Hrkt',
                 game: 'bw',
-                regions: ['hoenn', 'johto'],
+                regions: ['hoenn', 'johto']
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -205,7 +205,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: lang に不正な値を入れ、リクエストを送信した際 400 となるか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                lang: 'xxxxx',
+                lang: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -216,7 +216,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: game に不正な値を入れ、リクエストを送信した際一番古い地域でのポケモンの数であるか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                game: 'xxxxx',
+                game: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -237,7 +237,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: regions に不正な値を入れ、リクエストを送信した際一番古い地域でのポケモンの数であるか', (done) => {
             const queryParam: Readonly<SearchAllPokemonQueryParam> = {
-                regions: ['xxxxx', 'ooooo'],
+                regions: ['xxxxx', 'ooooo']
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -258,7 +258,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: lang / game / regions とは別のパラメータを設定した場合、一番古いバージョン・地域で英語のデータが取得できているか', (done) => {
             const queryParam: Readonly<any> = {
-                xxxx: true,
+                xxxx: true
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -306,7 +306,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: regions に配列ではなく文字列を入れてリクエストをした場合に一番古い地域でのポケモンの数であるか', (done) => {
             const queryParam: Readonly<any> = {
-                regions: 'xxxxx',
+                regions: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -327,7 +327,7 @@ describe('Integration test for pokemon', () => {
 
         test('offset に整数を指定してリクエストした場合、その offset からのデータが取得できているか', (done) => {
             const queryParam: Readonly<any> = {
-                offset: 4,
+                offset: 4
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -357,7 +357,7 @@ describe('Integration test for pokemon', () => {
 
         test('offset に hits 数よりも大きい数値を指定した場合、data は空配列となっているか', (done) => {
             const queryParam: Readonly<any> = {
-                offset: 152,
+                offset: 152
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -378,7 +378,7 @@ describe('Integration test for pokemon', () => {
 
         test('offset に文字列を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                offset: 'xxxxx',
+                offset: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -389,7 +389,7 @@ describe('Integration test for pokemon', () => {
 
         test('offset に Number.MAX_SAFE_INTEGER よりも大きい数値を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                offset: Number.MAX_SAFE_INTEGER + 1,
+                offset: Number.MAX_SAFE_INTEGER + 1
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -400,7 +400,7 @@ describe('Integration test for pokemon', () => {
 
         test('offset に負の数を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                offset: -1,
+                offset: -1
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -411,7 +411,7 @@ describe('Integration test for pokemon', () => {
 
         test('limit に整数を指定してリクエストした場合、その limit 数分のデータが取得できているか', (done) => {
             const queryParam: Readonly<any> = {
-                limit: 3,
+                limit: 3
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -442,7 +442,7 @@ describe('Integration test for pokemon', () => {
         test('limit に hits 数よりも大きい数値を指定した場合、data にはヒットした分のデータが取得できているか', (done) => {
             const queryParam: Readonly<any> = {
                 limit: 100,
-                regions: ['kalos'],
+                regions: ['kalos']
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -463,7 +463,7 @@ describe('Integration test for pokemon', () => {
 
         test('limit に文字列を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                limit: 'xxxxx',
+                limit: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -474,7 +474,7 @@ describe('Integration test for pokemon', () => {
 
         test('limit に 100 よりも大きい数値を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                limit: 101,
+                limit: 101
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -485,7 +485,7 @@ describe('Integration test for pokemon', () => {
 
         test('limit に負の数を指定した場合、bad request となるか', (done) => {
             const queryParam: Readonly<any> = {
-                limit: -1,
+                limit: -1
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}`)
@@ -499,7 +499,7 @@ describe('Integration test for pokemon', () => {
         test('正常：クエリパラメータを指定した場合正常にデータが取得できるか', (done) => {
             const queryParam: Readonly<SearchOnePokemonQueryParam> = {
                 lang: 'ja-Hrkt',
-                game: 'gsc',
+                game: 'gsc'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}/1`)
@@ -572,7 +572,7 @@ describe('Integration test for pokemon', () => {
 
         test('異常: lang に不正な値を入れ、リクエストを送信した際 400 となるか', (done) => {
             const queryParam: Readonly<SearchOnePokemonQueryParam> = {
-                lang: 'xxxxx',
+                lang: 'xxxxx'
             };
             request(server)
                 .get(`${ROUTING.API}${ROUTING.POKEMON}/1`)

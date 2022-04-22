@@ -2,7 +2,7 @@ import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
     SearchOnePokemonStatusResponse,
-    SearchSimplePokemonResponse,
+    SearchSimplePokemonResponse
 } from 'app-response-model';
 
 export default interface ISearchPokemonUsecase {

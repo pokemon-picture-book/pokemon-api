@@ -27,7 +27,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'pokemonGameImage.game_version_group_id = :gameVersionGroupId AND pokemonGameImage.is_main = :isPokemonMainImage',
                 {
                     gameVersionGroupId: whereParam.gameVersionGroupId,
-                    isPokemonMainImage: whereParam.isPokemonMainImage,
+                    isPokemonMainImage: whereParam.isPokemonMainImage
                 }
             )
             .innerJoinAndSelect(
@@ -65,7 +65,7 @@ export default class PokemonRepository implements IPokemonRepository {
             .take(pageParam?.limit)
             .skip(pageParam?.offset)
             .orderBy({
-                'pokemon.id': 'ASC',
+                'pokemon.id': 'ASC'
             })
             .getMany();
     }
@@ -108,7 +108,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'flavorTextEntry',
                 'flavorTextEntry.language_id = :languageId',
                 {
-                    languageId: whereParam.languageId,
+                    languageId: whereParam.languageId
                 }
             )
             // generas
@@ -117,7 +117,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'genera',
                 'genera.language_id = :languageId',
                 {
-                    languageId: whereParam.languageId,
+                    languageId: whereParam.languageId
                 }
             )
             // pokemon footmark images (存在しないポケモンもいるため外部結合とする)
@@ -131,7 +131,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'pokemonGameImage',
                 'pokemonGameImage.game_version_group_id = :gameVersionGroupId',
                 {
-                    gameVersionGroupId: whereParam.gameVersionGroupId,
+                    gameVersionGroupId: whereParam.gameVersionGroupId
                 }
             )
             // pokemon names
@@ -140,7 +140,7 @@ export default class PokemonRepository implements IPokemonRepository {
                 'pokemonName',
                 'pokemonName.language_id = :languageId',
                 {
-                    languageId: whereParam.languageId,
+                    languageId: whereParam.languageId
                 }
             )
             // pokemon type
@@ -186,7 +186,7 @@ export default class PokemonRepository implements IPokemonRepository {
                     'fromPokemonGameImage.game_version_group_id = :gameVersionGroupId AND fromPokemonGameImage.is_main = :isMain',
                     {
                         gameVersionGroupId: whereParam.gameVersionGroupId,
-                        isMain: true,
+                        isMain: true
                     }
                 )
                 .innerJoinAndSelect(
@@ -194,7 +194,7 @@ export default class PokemonRepository implements IPokemonRepository {
                     'fromPokemonName',
                     'fromPokemonName.language_id = :languageId',
                     {
-                        languageId: whereParam.languageId,
+                        languageId: whereParam.languageId
                     }
                 )
                 .innerJoinAndSelect(
@@ -227,7 +227,7 @@ export default class PokemonRepository implements IPokemonRepository {
                     'toPokemonGameImage.game_version_group_id = :gameVersionGroupId AND toPokemonGameImage.is_main = :isMain',
                     {
                         gameVersionGroupId: whereParam.gameVersionGroupId,
-                        isMain: true,
+                        isMain: true
                     }
                 )
                 .innerJoinAndSelect(
@@ -235,7 +235,7 @@ export default class PokemonRepository implements IPokemonRepository {
                     'toPokemonName',
                     'toPokemonName.language_id = :languageId',
                     {
-                        languageId: whereParam.languageId,
+                        languageId: whereParam.languageId
                     }
                 )
                 .innerJoinAndSelect('toPokemon.pokemonTypes', 'toPokemonType')
@@ -269,7 +269,7 @@ export default class PokemonRepository implements IPokemonRepository {
                     'pokemonName',
                     'pokemonName.language_id = :languageId',
                     {
-                        languageId: whereParam.languageId,
+                        languageId: whereParam.languageId
                     }
                 )
                 .innerJoinAndSelect('pokemon.status', 'status')

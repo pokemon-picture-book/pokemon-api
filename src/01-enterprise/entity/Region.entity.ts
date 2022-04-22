@@ -7,7 +7,7 @@ import GameVersionGroupRegionEntity from './GameVersionGroupRegion.entity';
 @Entity({ name: 'regions' })
 class RegionEntity extends BaseEntity {
     @PrimaryColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
@@ -15,7 +15,7 @@ class RegionEntity extends BaseEntity {
         type: 'varchar',
         length: 16,
         insert: true,
-        update: false,
+        update: false
     })
     readonly name: string;
 
@@ -25,7 +25,7 @@ class RegionEntity extends BaseEntity {
         insert: true,
         update: false,
         nullable: false,
-        default: 0,
+        default: 0
     })
     readonly firstPokemonId: number;
 
@@ -35,7 +35,7 @@ class RegionEntity extends BaseEntity {
         insert: true,
         update: false,
         nullable: false,
-        default: 0,
+        default: 0
     })
     readonly lastPokemonId: number;
 

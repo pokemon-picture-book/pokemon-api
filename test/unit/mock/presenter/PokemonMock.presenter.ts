@@ -6,7 +6,7 @@ import {
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
     SearchSimplePokemonResponse,
-    SearchOnePokemonStatusResponse,
+    SearchOnePokemonStatusResponse
 } from 'app-response-model';
 
 @injectable()
@@ -18,12 +18,12 @@ export default class PokemonMockPresenter implements IPokemonPresenter {
         return Promise.resolve({
             hits,
             data: pokemons.map<SearchAllPokemonResponseData>(() => ({
-                    id: 1,
-                    imageColor: 'imageColor',
-                    name: 'name',
-                    gameImagePath: 'gameImagePathMain',
-                    types: [{ code: 'code', name: 'name' }],
-                })),
+                id: 1,
+                imageColor: 'imageColor',
+                name: 'name',
+                gameImagePath: 'gameImagePathMain',
+                types: [{ code: 'code', name: 'name' }]
+            }))
         });
     }
 

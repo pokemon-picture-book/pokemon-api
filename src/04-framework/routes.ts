@@ -4,7 +4,7 @@ import { idParamsValidator } from '@/03-interface/controller/validator/params/id
 import { langQueryValidator } from '@/03-interface/controller/validator/query/common';
 import {
     limitQueryValidator,
-    offsetQueryValidator,
+    offsetQueryValidator
 } from '@/03-interface/controller/validator/query/pagination';
 import { supportedQueryValidator } from '@/03-interface/controller/validator/query/game-version-group';
 import container from '@/inversify.config';
@@ -20,7 +20,7 @@ export const ROUTING = {
     POKEMON: '/pokemons',
     GAME_VERSION_GROUP: '/game-version-groups',
     REGION: '/regions',
-    LANGUAGE: '/languages',
+    LANGUAGE: '/languages'
 } as const;
 
 export default {
@@ -35,14 +35,14 @@ export default {
                     validator: [
                         langQueryValidator,
                         limitQueryValidator,
-                        offsetQueryValidator,
+                        offsetQueryValidator
                     ],
                     action: (req: AppRequest<any>, res: AppResponse<any>) => {
                         const pokemonControllerContainer = container.get<PokemonController>(
                             TYPES.PokemonController
                         );
                         pokemonControllerContainer.search(req, res);
-                    },
+                    }
                 },
                 {
                     method: 'get',
@@ -53,7 +53,7 @@ export default {
                             TYPES.PokemonController
                         );
                         pokemonControllerContainer.searchSimpleAll(req, res);
-                    },
+                    }
                 },
                 // TODO: /:id でグルーピングできてない、、、
                 {
@@ -65,7 +65,7 @@ export default {
                             TYPES.PokemonController
                         );
                         pokemonControllerContainer.searchOneStatus(req, res);
-                    },
+                    }
                 },
                 {
                     method: 'get',
@@ -76,9 +76,9 @@ export default {
                             TYPES.PokemonController
                         );
                         pokemonControllerContainer.searchOne(req, res);
-                    },
-                },
-            ],
+                    }
+                }
+            ]
         },
         {
             path: ROUTING.GAME_VERSION_GROUP,
@@ -92,9 +92,9 @@ export default {
                             TYPES.GameVersionGroupController
                         );
                         gameVersionGroupControllerContainer.search(req, res);
-                    },
-                },
-            ],
+                    }
+                }
+            ]
         },
         {
             path: ROUTING.REGION,
@@ -108,9 +108,9 @@ export default {
                             TYPES.RegionController
                         );
                         regionControllerContainer.search(req, res);
-                    },
-                },
-            ],
+                    }
+                }
+            ]
         },
         {
             path: ROUTING.LANGUAGE,
@@ -123,9 +123,9 @@ export default {
                             TYPES.LanguageController
                         );
                         languageControllerContainer.search(req, res);
-                    },
-                },
-            ],
-        },
-    ],
+                    }
+                }
+            ]
+        }
+    ]
 } as Readonly<AppRouter>;

@@ -8,14 +8,15 @@ const httpMethods = {
     delete: 'delete',
     patch: 'patch',
     options: 'options',
-    head: 'head',
+    head: 'head'
 } as const;
 
 type SupportedHttpMethod = keyof typeof httpMethods;
 
 export const isSupportedHttpMethod = (
     method: string
-): method is SupportedHttpMethod => Object.values(httpMethods).includes(method as SupportedHttpMethod);
+): method is SupportedHttpMethod =>
+    Object.values(httpMethods).includes(method as SupportedHttpMethod);
 
 export const isChildRouter = (
     router: OperationRouter | ChildRouter

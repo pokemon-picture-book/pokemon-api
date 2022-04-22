@@ -1,7 +1,7 @@
 import {
     isChildRouter,
     isOperationRouter,
-    isSupportedHttpMethod,
+    isSupportedHttpMethod
 } from '@/01-enterprise/function/router.function';
 import { AppRouter, ChildRouter, OperationRouter } from 'app-router';
 import { Application, AppRequest, AppResponse, Router } from 'express';

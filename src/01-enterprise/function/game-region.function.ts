@@ -17,7 +17,7 @@ export const getDefaultSet = (
     if (!(allGames.length && allRegions.length)) {
         return {
             game: '',
-            regions: [],
+            regions: []
         };
     }
 
@@ -27,7 +27,7 @@ export const getDefaultSet = (
         const { region: firstRegion } = [...gameVersionGroupRegions].shift()!;
         return {
             game: alias,
-            regions: [firstRegion.name],
+            regions: [firstRegion.name]
         };
     }
 
@@ -38,11 +38,11 @@ export const getDefaultSet = (
         if (!matchGame) {
             const { alias, gameVersionGroupRegions } = [...allGames].shift()!;
             const { region: firstRegion } = [
-                ...gameVersionGroupRegions,
+                ...gameVersionGroupRegions
             ].shift()!;
             return {
                 game: alias,
-                regions: [firstRegion.name],
+                regions: [firstRegion.name]
             };
         }
 
@@ -50,7 +50,7 @@ export const getDefaultSet = (
         const { region: lastRegion } = [...gameVersionGroupRegions].pop()!;
         return {
             game: alias,
-            regions: [lastRegion.name],
+            regions: [lastRegion.name]
         };
     }
 
@@ -63,21 +63,21 @@ export const getDefaultSet = (
         if (!matchRegions || (matchRegions && !matchRegions.length)) {
             const { name, gameVersionGroupRegions } = [...allRegions].shift()!;
             const { gameVersionGroup: firstGameVersionGroup } = [
-                ...gameVersionGroupRegions,
+                ...gameVersionGroupRegions
             ].shift()!;
             return {
                 game: firstGameVersionGroup.alias,
-                regions: [name],
+                regions: [name]
             };
         }
 
         const lastRegion = [...matchRegions].pop()!;
         const { gameVersionGroup: firstGameVersionGroup } = [
-            ...lastRegion.gameVersionGroupRegions,
+            ...lastRegion.gameVersionGroupRegions
         ].shift()!;
         return {
             game: firstGameVersionGroup.alias,
-            regions: matchRegions.map((matchRegion) => matchRegion.name),
+            regions: matchRegions.map((matchRegion) => matchRegion.name)
         };
     }
 
@@ -91,22 +91,22 @@ export const getDefaultSet = (
         if (!matchRegions || (matchRegions && !matchRegions.length)) {
             const { alias, gameVersionGroupRegions } = [...allGames].shift()!;
             const { region: firstRegion } = [
-                ...gameVersionGroupRegions,
+                ...gameVersionGroupRegions
             ].shift()!;
             return {
                 game: alias,
-                regions: [firstRegion.name],
+                regions: [firstRegion.name]
             };
         }
 
         // 地域情報には含まれていた場合はその地域情報から値を取得する
         const firstMatchRegion = [...matchRegions].shift()!;
         const { gameVersionGroup: firstGameVersionGroup } = [
-            ...firstMatchRegion.gameVersionGroupRegions,
+            ...firstMatchRegion.gameVersionGroupRegions
         ].shift()!;
         return {
             game: firstGameVersionGroup.alias,
-            regions: matchRegions.map((matchRegion) => matchRegion.name),
+            regions: matchRegions.map((matchRegion) => matchRegion.name)
         };
     }
     const matchRegions = allRegions.filter((allRegion) =>
@@ -118,13 +118,13 @@ export const getDefaultSet = (
         const { region: firstRegion } = [...gameVersionGroupRegions].shift()!;
         return {
             game: alias,
-            regions: [firstRegion.name],
+            regions: [firstRegion.name]
         };
     }
 
     return {
         game: matchGame.alias,
-        regions: matchRegions.map((matchRegion) => matchRegion.name),
+        regions: matchRegions.map((matchRegion) => matchRegion.name)
     };
 };
 

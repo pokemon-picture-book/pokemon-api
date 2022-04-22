@@ -17,7 +17,7 @@ describe('Unit test for Pokemon controller', () => {
         >).mockImplementation(
             () =>
                 ({
-                    isEmpty: () => true,
+                    isEmpty: () => true
                 } as Result<ValidationError>)
         );
 
@@ -25,13 +25,13 @@ describe('Unit test for Pokemon controller', () => {
             query: {
                 lang: 'en',
                 game: 'rgby',
-                regions: ['kanto'],
-            },
+                regions: ['kanto']
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            json: jest.fn().mockReturnThis(),
+            json: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -51,7 +51,7 @@ describe('Unit test for Pokemon controller', () => {
         >).mockImplementation(
             () =>
                 ({
-                    isEmpty: () => true,
+                    isEmpty: () => true
                 } as Result<ValidationError>)
         );
 
@@ -59,13 +59,13 @@ describe('Unit test for Pokemon controller', () => {
             query: {
                 lang: 'ja-Hrkt',
                 game: 'rgby',
-                regions: [],
-            },
+                regions: []
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -75,7 +75,7 @@ describe('Unit test for Pokemon controller', () => {
 
         expect(res.status.mock.calls[0][0]).toBe(204);
         expect(res.send.mock.calls[0][0]).toEqual({
-            message: 'No Content!',
+            message: 'No Content!'
         });
 
         done();
@@ -85,29 +85,32 @@ describe('Unit test for Pokemon controller', () => {
         const myValidationResult = validationResult as jest.MockedFunction<
             typeof validationResult
         >;
-        myValidationResult.mockImplementation(() => ({
-                isEmpty: () => false,
-                array: () => [
-                    {
-                        value: 'mock value',
-                        msg: 'mock message',
-                        param: 'mock param',
-                        location: 'body',
-                    },
-                ],
-            } as Result<ValidationError>));
+        myValidationResult.mockImplementation(
+            () =>
+                ({
+                    isEmpty: () => false,
+                    array: () => [
+                        {
+                            value: 'mock value',
+                            msg: 'mock message',
+                            param: 'mock param',
+                            location: 'body'
+                        }
+                    ]
+                } as Result<ValidationError>)
+        );
 
         const req = {
             query: {
                 lang: 'ja-Hrkt',
                 game: 'rgby',
-                regions: ['kanto'],
-            },
+                regions: ['kanto']
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -122,9 +125,9 @@ describe('Unit test for Pokemon controller', () => {
                     value: 'mock value',
                     msg: 'mock message',
                     param: 'mock param',
-                    location: 'body',
-                },
-            ],
+                    location: 'body'
+                }
+            ]
         });
 
         done();

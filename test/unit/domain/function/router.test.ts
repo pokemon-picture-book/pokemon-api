@@ -1,7 +1,7 @@
 import {
     isSupportedHttpMethod,
     isChildRouter,
-    isOperationRouter,
+    isOperationRouter
 } from '@/01-enterprise/function/router.function';
 import { ChildRouter, OperationRouter } from 'app-router';
 
@@ -18,9 +18,9 @@ describe('Unit test for router function', () => {
                 {
                     path: '/test',
                     method: 'get',
-                    action: () => {},
-                },
-            ],
+                    action: () => {}
+                }
+            ]
         };
         expect(isChildRouter(child)).toBeTruthy();
         done();
@@ -30,7 +30,7 @@ describe('Unit test for router function', () => {
         const operation: OperationRouter = {
             path: '/test',
             method: 'get',
-            action: () => {},
+            action: () => {}
         };
         expect(isOperationRouter(operation)).toBeTruthy();
         done();
@@ -43,14 +43,14 @@ describe('Unit test for router function', () => {
 
     test('異常: ChildRouter ではない型の引数で call した場合、false となるか', (done) => {
         const notChild1: any = {
-            xxxxx: '',
+            xxxxx: ''
         };
         expect(isChildRouter(notChild1)).toBeFalsy();
 
         const notChild2: OperationRouter = {
             path: 'xxxxx',
             method: 'xxxxx',
-            action: () => {},
+            action: () => {}
         };
         expect(isChildRouter(notChild2)).toBeFalsy();
 
@@ -59,7 +59,7 @@ describe('Unit test for router function', () => {
 
     test('異常: OperationRouter ではない型の引数で call した場合、false となるか', (done) => {
         const notOperation1: any = {
-            xxxxx: '',
+            xxxxx: ''
         };
         expect(isOperationRouter(notOperation1)).toBeFalsy();
 
@@ -69,9 +69,9 @@ describe('Unit test for router function', () => {
                 {
                     path: 'xxxxx',
                     method: 'xxxxx',
-                    action: () => {},
-                },
-            ],
+                    action: () => {}
+                }
+            ]
         };
         expect(isOperationRouter(notOperation2)).toBeFalsy();
 

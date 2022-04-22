@@ -15,7 +15,7 @@ const TYPES = {
     IPokemonPresenter: Symbol.for('IPokemonPresenter'),
     IGameVersionGroupPresenter: Symbol.for('IGameVersionGroupPresenter'),
     IRegionPresenter: Symbol.for('IRegionPresenter'),
-    ILanguagePresenter: Symbol.for('ILanguagePresenter'),
+    ILanguagePresenter: Symbol.for('ILanguagePresenter')
 } as const;
 
 export default TYPES;

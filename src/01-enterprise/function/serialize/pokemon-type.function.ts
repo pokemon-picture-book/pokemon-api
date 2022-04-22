@@ -7,5 +7,5 @@ export const toTypes = (pokemonTypes: PokemonTypeEntity[]) =>
     });
 
 export default {
-    toTypes,
+    toTypes
 };

@@ -8,10 +8,10 @@ export default class LanguageMockPresenter implements ILanguagePresenter {
     public toLanguageResponse(Languages: LanguageEntity[]): LanguageResponse[] {
         return Languages.map(
             (): LanguageResponse => ({
-                    id: 1,
-                    name: 'name',
-                    labelName: 'labelName',
-                })
+                id: 1,
+                name: 'name',
+                labelName: 'labelName'
+            })
         );
     }
 }

@@ -6,7 +6,7 @@ import {
     ManyToOne,
     PrimaryGeneratedColumn,
     JoinColumn,
-    Index,
+    Index
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import PokemonEntity from './Pokemon.entity';
@@ -15,13 +15,13 @@ import PokemonEntity from './Pokemon.entity';
 @Index(['pokemon', 'language'], { unique: true })
 class GeneraEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(() => PokemonEntity, (pokemon) => pokemon.generas)
     @JoinColumn({
-        name: 'pokemon_id',
+        name: 'pokemon_id'
     })
     @Index()
     readonly pokemon: PokemonEntity;
@@ -29,13 +29,13 @@ class GeneraEntity extends BaseEntity {
     @Column({
         type: 'text',
         insert: true,
-        update: false,
+        update: false
     })
     readonly genus: string;
 
     @ManyToOne(() => LanguageEntity, (language) => language.generas)
     @JoinColumn({
-        name: 'language_id',
+        name: 'language_id'
     })
     @Index()
     readonly language: LanguageEntity;

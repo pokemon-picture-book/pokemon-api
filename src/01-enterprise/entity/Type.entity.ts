@@ -10,7 +10,7 @@ class TypeEntity extends BaseEntity {
 
     @Column({
         type: 'varchar',
-        length: 64,
+        length: 64
     })
     readonly name: string = '';
 

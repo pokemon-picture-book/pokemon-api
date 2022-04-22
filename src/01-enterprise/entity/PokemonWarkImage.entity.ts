@@ -5,27 +5,27 @@ import {
     Entity,
     ManyToOne,
     PrimaryGeneratedColumn,
-    JoinColumn,
+    JoinColumn
 } from 'typeorm';
 import PokemonEntity from './Pokemon.entity';
 
 @Entity({ name: 'pokemon_wark_images' })
 class PokemonWarkImageEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(() => PokemonEntity, (pokemon) => pokemon.pokemonWarkImages)
     @JoinColumn({
-        name: 'pokemon_id',
+        name: 'pokemon_id'
     })
     readonly pokemon: PokemonEntity;
 
     @Column({
         type: 'text',
         insert: true,
-        update: false,
+        update: false
     })
     readonly path: string;
 

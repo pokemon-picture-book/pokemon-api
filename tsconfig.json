@@ -1,43 +1,32 @@
 {
-  "compilerOptions": {
-    "target": "es2018",
-    "lib": ["es2018", "dom"],
-    "module": "commonjs",
-    "removeComments": true,
-    "rootDir": ".",
-    "outDir": "./dist",
-    "incremental": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "types": [
-      "reflect-metadata",
-      "jest",
-      "./src/@types",
-      "@types/node"
-    ],
-    "strict": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "strictPropertyInitialization": false,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "~/*": [
-        "./*"
-      ],
-      "@test/*": [
-        "test/*"
-      ]
-    }
-  },
-  "include": ["src/**/*.ts", "ormconfig", "test/**/*.ts"],
-  "exclude": ["src/04-framework/db", "node_modules"]
+    "compilerOptions": {
+        "target": "es2018",
+        "lib": ["es2018", "dom"],
+        "module": "commonjs",
+        "removeComments": true,
+        "rootDir": ".",
+        "outDir": "./dist",
+        "incremental": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "types": ["reflect-metadata", "jest", "./src/@types", "@types/node"],
+        "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": false,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "~/*": ["./*"],
+            "@test/*": ["test/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "ormconfig", "test/**/*.ts"],
+    "exclude": ["src/04-framework/db", "node_modules"]
 }

@@ -11,21 +11,19 @@ export default class GameVersionGroupPresenter
     ): GameVersionGroupResponse[] {
         return gameVersionGroups.map<GameVersionGroupResponse>(
             ({ id, alias, gameVersions, gameVersionGroupRegions }) => ({
-                    id,
-                    alias,
-                    name: gameVersions
-                        .map(({ gameVersionNames }) => {
-                            const [gameVersionName] = gameVersionNames;
-                            return gameVersionName.name;
-                        })
-                        .join('/'),
-                    relatedRegions: gameVersionGroupRegions.map(
-                        ({ region }) => ({
-                                id: region.id,
-                                name: region.name,
-                            })
-                    ),
-                })
+                id,
+                alias,
+                name: gameVersions
+                    .map(({ gameVersionNames }) => {
+                        const [gameVersionName] = gameVersionNames;
+                        return gameVersionName.name;
+                    })
+                    .join('/'),
+                relatedRegions: gameVersionGroupRegions.map(({ region }) => ({
+                    id: region.id,
+                    name: region.name
+                }))
+            })
         );
     }
 }
