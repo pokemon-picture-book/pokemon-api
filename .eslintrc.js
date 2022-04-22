@@ -1,15 +1,24 @@
 module.exports = {
     extends: [
         'airbnb-base',
-        'prettier',
-        'plugin:prettier/recommended'
+        'prettier'
     ],
     plugins: [
-        'prettier',
         '@typescript-eslint'
     ],
-    parser: '@typescript-eslint/parser',
+    ignorePatterns: [
+      'src/04-framework/db/migrations/*.ts',
+      'src/04-framework/db/seed/*.json',
+      '.eslintrc.js',
+      'jest.config.js',
+      'nodemon.json',
+      'ormconfig.js',
+      'package*.json',
+      'tsconfig.json',
+      'webpack*js'
+    ],
     env: { 'node': true },
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         sourceType: 'module',
         project: './tsconfig.json'
@@ -20,21 +29,14 @@ module.exports = {
     },
     rules: {
       'no-undef': 'warn',
-        'prettier/prettier': [
-            'error',
-            {
-                singleQuote: true,
-                tabWidth: 4
-            }
-        ],
-        'no-console': process.env.NODE_ENV === 'development' ? 'error' : 'off',
-        'import/no-unresolved': 'off',
-        'no-unused-vars': 'off',
-        'no-restricted-syntax': 'off',
-        'no-await-in-loop': 'off',
-        'import/no-duplicates': 'off',
-        'class-methods-use-this': 'off',
-        'max-classes-per-file': 'off'
+      'no-console': process.env.NODE_ENV === 'development' ? 'error' : 'off',
+      'import/no-unresolved': 'off',
+      'no-unused-vars': 'off',
+      'no-restricted-syntax': 'off',
+      'no-await-in-loop': 'off',
+      'import/no-duplicates': 'off',
+      'class-methods-use-this': 'off',
+      'max-classes-per-file': 'off'
     },
     overrides: [
       {

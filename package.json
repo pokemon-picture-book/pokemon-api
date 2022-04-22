@@ -15,7 +15,7 @@
     "clean": "rimraf dist/*",
     "scan": "sonar-scanner",
     "sonar": "npm test && npm run lint -- -f json -o lint-report.json && npm run scan",
-    "lint": "eslint --fix --ext .ts .",
+    "lint": "eslint --ext .ts,.js,.json --ignore-path .gitignore .",
     "test": "jest --coverage",
     "tn": "ts-node",
     "postmerge": "(git diff 'HEAD@{1}' --name-only | grep package.json > /dev/null) && npm ci || :",
