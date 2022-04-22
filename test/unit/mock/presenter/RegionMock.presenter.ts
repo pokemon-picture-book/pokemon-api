@@ -7,19 +7,17 @@ import { injectable } from 'inversify';
 export default class RegionMockPresenter implements IRegionPresenter {
     public toRegionResponse(Regions: RegionEntity[]): RegionResponse[] {
         return Regions.map(
-            (): RegionResponse => {
-                return {
-                    id: 1,
-                    name: 'name',
-                    displayName: '',
-                    relatedGameVersionGroups: [
-                        {
-                            id: 1,
-                            alias: 'gameVersionGroupAlias',
-                        },
-                    ],
-                };
-            }
+            (): RegionResponse => ({
+                id: 1,
+                name: 'name',
+                displayName: '',
+                relatedGameVersionGroups: [
+                    {
+                        id: 1,
+                        alias: 'gameVersionGroupAlias'
+                    }
+                ]
+            })
         );
     }
 }

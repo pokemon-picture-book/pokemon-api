@@ -6,7 +6,7 @@ import {
     ManyToOne,
     PrimaryGeneratedColumn,
     JoinColumn,
-    Index,
+    Index
 } from 'typeorm';
 import GameVersionGroupEntity from './GameVersionGroup.entity';
 import PokemonEntity from './Pokemon.entity';
@@ -15,13 +15,13 @@ import PokemonEntity from './Pokemon.entity';
 @Index(['pokemon', 'gameVersionGroup'])
 class PokemonGameImageEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(() => PokemonEntity, (pokemon) => pokemon.pokemonGameImages)
     @JoinColumn({
-        name: 'pokemon_id',
+        name: 'pokemon_id'
     })
     @Index()
     readonly pokemon: PokemonEntity;
@@ -29,7 +29,7 @@ class PokemonGameImageEntity extends BaseEntity {
     @Column({
         type: 'text',
         insert: true,
-        update: false,
+        update: false
     })
     readonly path: string;
 
@@ -37,7 +37,7 @@ class PokemonGameImageEntity extends BaseEntity {
         name: 'is_main',
         type: 'boolean',
         insert: true,
-        update: false,
+        update: false
     })
     readonly isMain: boolean;
 
@@ -45,7 +45,7 @@ class PokemonGameImageEntity extends BaseEntity {
         name: 'is_handheld_icon',
         type: 'boolean',
         insert: true,
-        update: false,
+        update: false
     })
     readonly isHandheldIcon: boolean;
 
@@ -53,7 +53,7 @@ class PokemonGameImageEntity extends BaseEntity {
         name: 'is_shiny',
         type: 'boolean',
         insert: true,
-        update: false,
+        update: false
     })
     readonly isShiny: boolean;
 
@@ -62,7 +62,7 @@ class PokemonGameImageEntity extends BaseEntity {
         (gameVersionGroup) => gameVersionGroup.pokemonGameImages
     )
     @JoinColumn({
-        name: 'game_version_group_id',
+        name: 'game_version_group_id'
     })
     @Index()
     readonly gameVersionGroup: GameVersionGroupEntity;

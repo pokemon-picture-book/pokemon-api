@@ -1,7 +1,5 @@
 {
     "restartable": "rs",
     "ignore": ["*.test.ts"],
-    "watch": [
-        "dist"
-    ]
+    "watch": ["dist"]
 }

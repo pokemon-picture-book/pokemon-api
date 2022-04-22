@@ -10,7 +10,7 @@ import TypeNameEntity from './TypeName.entity';
 @Entity({ name: 'languages' })
 class LanguageEntity extends BaseEntity {
     @PrimaryColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
@@ -18,7 +18,7 @@ class LanguageEntity extends BaseEntity {
         type: 'varchar',
         length: 16,
         insert: true,
-        update: false,
+        update: false
     })
     readonly name: string;
 
@@ -28,7 +28,7 @@ class LanguageEntity extends BaseEntity {
         length: 16,
         default: '',
         insert: true,
-        update: false,
+        update: false
     })
     readonly labelName: string;
 

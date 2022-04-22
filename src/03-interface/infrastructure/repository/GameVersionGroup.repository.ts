@@ -36,12 +36,12 @@ export default class GameVersionGroupRepository
             )
             .leftJoinAndSelect('gameVersionGroupRegion.region', 'region')
             .where('gameVersionGroup.is_supported = :isSupported', {
-                isSupported,
+                isSupported
             })
             .orderBy({
                 'gameVersionGroup.id': 'ASC',
                 'gameVersion.id': 'ASC',
-                'region.id': 'ASC',
+                'region.id': 'ASC'
             })
             .getMany();
     }

@@ -7,7 +7,7 @@ import {
     SearchAllPokemonResponse,
     SearchAllPokemonResponseData,
     SearchSimplePokemonResponse,
-    SearchOnePokemonStatusResponse,
+    SearchOnePokemonStatusResponse
 } from 'app-response-model';
 import { injectable } from 'inversify';
 import { toPokemonDetailImage } from '@/01-enterprise/function/serialize/pokemon-image.function';
@@ -35,14 +35,14 @@ export default class PokemonPresenter implements IPokemonPresenter {
                     gameImagePath: gameImagePath
                         ? await toBase64(gameImagePath.path)
                         : '',
-                    types,
+                    types
                 };
             })
         );
 
         return {
             hits,
-            data,
+            data
         };
     }
 
@@ -55,9 +55,9 @@ export default class PokemonPresenter implements IPokemonPresenter {
                 const [{ name }] = pokemonNames;
                 return {
                     id,
-                    name,
+                    name
                 };
-            }),
+            })
         };
     }
 
@@ -69,7 +69,7 @@ export default class PokemonPresenter implements IPokemonPresenter {
             // 画像関連処理
             toPokemonDetailImage(pokemon),
             // 進化情報関連処理
-            toPokemonDetailEvolutions(pokemon),
+            toPokemonDetailEvolutions(pokemon)
         ]);
 
         // ポケモン基本情報処理
@@ -97,16 +97,16 @@ export default class PokemonPresenter implements IPokemonPresenter {
                     defense: status.defense,
                     specialAttack: status.specialAttack,
                     specialDefense: status.specialDefense,
-                    speed: status.speed,
-                },
-            },
+                    speed: status.speed
+                }
+            }
         };
     }
 
     public toSearchOnePokemonStatusResponse({
         id,
         pokemonNames,
-        status,
+        status
     }: PokemonEntity): SearchOnePokemonStatusResponse {
         const [pokemonName] = pokemonNames;
         return {
@@ -118,8 +118,8 @@ export default class PokemonPresenter implements IPokemonPresenter {
                 defense: status.defense,
                 specialAttack: status.specialAttack,
                 specialDefense: status.specialDefense,
-                speed: status.speed,
-            },
+                speed: status.speed
+            }
         };
     }
 }

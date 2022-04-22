@@ -14,7 +14,7 @@ export const getPrevAndNextId = (
 
     return {
         prevId,
-        nextId,
+        nextId
     };
 };
 

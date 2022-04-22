@@ -17,20 +17,20 @@ describe('Unit test for GameVersionGroup controller', () => {
         >).mockImplementation(
             () =>
                 ({
-                    isEmpty: () => true,
+                    isEmpty: () => true
                 } as Result<ValidationError>)
         );
 
         const req = {
             query: {
                 lang: 'en',
-                supported: true,
-            },
+                supported: true
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            json: jest.fn().mockReturnThis(),
+            json: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -50,20 +50,20 @@ describe('Unit test for GameVersionGroup controller', () => {
         >).mockImplementation(
             () =>
                 ({
-                    isEmpty: () => true,
+                    isEmpty: () => true
                 } as Result<ValidationError>)
         );
 
         const req = {
             query: {
                 lang: 'ja-Hrkt',
-                supported: false,
-            },
+                supported: false
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -73,7 +73,7 @@ describe('Unit test for GameVersionGroup controller', () => {
 
         expect(res.status.mock.calls[0][0]).toBe(204);
         expect(res.send.mock.calls[0][0]).toEqual({
-            message: 'No Content!',
+            message: 'No Content!'
         });
 
         done();
@@ -83,30 +83,31 @@ describe('Unit test for GameVersionGroup controller', () => {
         const myValidationResult = validationResult as jest.MockedFunction<
             typeof validationResult
         >;
-        myValidationResult.mockImplementation(() => {
-            return {
-                isEmpty: () => false,
-                array: () => [
-                    {
-                        value: 'mock value',
-                        msg: 'mock message',
-                        param: 'mock param',
-                        location: 'body',
-                    },
-                ],
-            } as Result<ValidationError>;
-        });
+        myValidationResult.mockImplementation(
+            () =>
+                ({
+                    isEmpty: () => false,
+                    array: () => [
+                        {
+                            value: 'mock value',
+                            msg: 'mock message',
+                            param: 'mock param',
+                            location: 'body'
+                        }
+                    ]
+                } as Result<ValidationError>)
+        );
 
         const req = {
             query: {
                 lang: 'en',
-                supported: true,
-            },
+                supported: true
+            }
         };
 
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -121,9 +122,9 @@ describe('Unit test for GameVersionGroup controller', () => {
                     value: 'mock value',
                     msg: 'mock message',
                     param: 'mock param',
-                    location: 'body',
-                },
-            ],
+                    location: 'body'
+                }
+            ]
         });
 
         done();

@@ -40,7 +40,7 @@ describe('Unit test for Region presenter', () => {
     test('異常: regionNames が空の場合、例外がスローされるか', async (done) => {
         expect(() => {
             presenter.toRegionResponse([
-                new RegionEntity(1, 'regionName', [], [], []),
+                new RegionEntity(1, 'regionName', [], [], [])
             ]);
         }).toThrow();
 

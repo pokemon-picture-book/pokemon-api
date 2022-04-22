@@ -5,13 +5,13 @@ import {
     SearchAllPokemonQueryParam,
     SearchOnePokemonQueryParam,
     SearchOnePokemonStatusQueryParam,
-    SearchSimpleAllPokemonQueryParam,
+    SearchSimpleAllPokemonQueryParam
 } from 'app-request-model';
 import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
     SearchOnePokemonStatusResponse,
-    SearchSimplePokemonResponse,
+    SearchSimplePokemonResponse
 } from 'app-response-model';
 import { AppRequest, AppResponse, AppErrorMessage, Request } from 'express';
 import { validationResult } from 'express-validator';
@@ -40,11 +40,11 @@ export default class PokemonController {
             {
                 languageName: lang,
                 gameVersionGroupAlias: game,
-                regionNames: regions,
+                regionNames: regions
             },
             {
                 offset: (offset || 1) - 1,
-                limit: limit || LIMIT_MAX_NUM,
+                limit: limit || LIMIT_MAX_NUM
             }
         );
 
@@ -70,7 +70,7 @@ export default class PokemonController {
 
         const { lang } = request.query;
         const result = await this.usecase.searchSimpleData({
-            languageName: lang,
+            languageName: lang
         });
 
         if (!result.hits) {
@@ -102,7 +102,7 @@ export default class PokemonController {
             .searchOne({
                 id: Number(id),
                 languageName: lang,
-                gameVersionGroupAlias: game,
+                gameVersionGroupAlias: game
             })
             .then((result) => {
                 if (!result) {
@@ -136,7 +136,7 @@ export default class PokemonController {
         const { lang } = request.query;
         const result = await this.usecase.searchOneStatus({
             id: Number(id),
-            languageName: lang,
+            languageName: lang
         });
 
         if (!result) {

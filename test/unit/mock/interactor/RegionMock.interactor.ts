@@ -14,10 +14,10 @@ export default class RegionMockInteractor implements IRegionUsecase {
                       relatedGameVersionGroups: [
                           {
                               id: 1,
-                              alias: 'gameVersionGroupAlias',
-                          },
-                      ],
-                  },
+                              alias: 'gameVersionGroupAlias'
+                          }
+                      ]
+                  }
               ]
             : [];
     }

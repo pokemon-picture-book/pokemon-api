@@ -14,7 +14,7 @@ import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
     SearchOnePokemonStatusResponse,
-    SearchSimplePokemonResponse,
+    SearchSimplePokemonResponse
 } from 'app-response-model';
 import IPokemonEvolutionRepository from '@/02-application/repository/IPokemonEvolution.repository';
 
@@ -51,12 +51,12 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
     ): Promise<SearchAllPokemonResponse> {
         const NO_DATA: Readonly<SearchAllPokemonResponse> = {
             hits: 0,
-            data: [],
+            data: []
         };
         const {
             languageName,
             gameVersionGroupAlias,
-            regionNames,
+            regionNames
         } = requestParam;
         const language = await this.languageRepository.findByName(
             languageName || 'en'
@@ -70,22 +70,22 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
                 language.id,
                 true
             ),
-            this.regionRepository.findByLanguageId(language.id),
+            this.regionRepository.findByLanguageId(language.id)
         ]);
 
         const gameRegion = getDefaultSet(
             {
                 game: gameVersionGroupAlias || '',
-                regions: regionNames || [],
+                regions: regionNames || []
             },
             {
                 allGames,
-                allRegions,
+                allRegions
             }
         );
         const [gameVersionGroup, regions] = await Promise.all([
             this.gameVersionGroupRepository.findByAlias(gameRegion.game),
-            this.regionRepository.findAllByNameIn(gameRegion.regions),
+            this.regionRepository.findAllByNameIn(gameRegion.regions)
         ]);
 
         if (!(gameVersionGroup && regions.length)) {
@@ -96,14 +96,14 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             languageId: language.id,
             gameVersionGroupId: gameVersionGroup.id,
             regionIds: regions.map(({ id }) => id),
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         };
         const [hits, pokemons] = await Promise.all([
             this.repository.findAllCount(whereParam),
             this.repository.findAll(whereParam, {
                 offset: pageParam.offset,
-                limit: pageParam.limit,
-            }),
+                limit: pageParam.limit
+            })
         ]);
         return this.presenter.toSearchAllPokemonResponse(hits, pokemons);
     }
@@ -125,7 +125,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
             this.gameVersionGroupRepository.findByAlias(
                 gameVersionGroupAlias || 'rgby'
             ),
-            this.pokemonEvolutionRepository.findAllByPokemonId(id),
+            this.pokemonEvolutionRepository.findAllByPokemonId(id)
         ]);
 
         if (!gameVersionGroup) {
@@ -133,13 +133,13 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         }
 
         const {
-            lastPokemonId,
+            lastPokemonId
         } = gameVersionGroup.gameVersionGroupRegions.pop()!.region;
         const pokemon = await this.repository.findById(
             {
                 id,
                 languageId: language.id,
-                gameVersionGroupId: gameVersionGroup.id,
+                gameVersionGroupId: gameVersionGroup.id
             },
             !!pokemonEvolutions.length &&
                 pokemonEvolutions.some((pokemonEvolution) => {
@@ -163,7 +163,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
     }): Promise<SearchSimplePokemonResponse> {
         const NO_DATA: Readonly<SearchSimplePokemonResponse> = {
             hits: 0,
-            data: [],
+            data: []
         };
         const { languageName } = requestParam;
         const language = await this.languageRepository.findByName(
@@ -174,7 +174,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
         }
 
         const whereParam = {
-            languageId: language.id,
+            languageId: language.id
         };
 
         const simplePokemons = await this.repository.findSimpleAll(whereParam);
@@ -195,7 +195,7 @@ export default class SearchPokemonInteractor implements ISearchPokemonUsecase {
 
         const whereParam = {
             id,
-            languageId: language.id,
+            languageId: language.id
         };
         const pokemon = await this.repository.findStatusById(whereParam);
 

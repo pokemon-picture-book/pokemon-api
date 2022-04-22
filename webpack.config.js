@@ -4,7 +4,10 @@ const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: ['@babel/polyfill', path.resolve(__dirname, 'src/04-framework/app.ts')],
+    entry: [
+        '@babel/polyfill',
+        path.resolve(__dirname, 'src/04-framework/app.ts')
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.js'
@@ -26,8 +29,8 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, 'ormconfig.js')
-                },
-            ],
+                }
+            ]
         }),
         new webpack.IgnorePlugin({ resourceRegExp: /^pg-native$/ }),
         new FilterWarningsPlugin({

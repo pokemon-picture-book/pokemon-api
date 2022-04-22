@@ -1,8 +1,13 @@
 {
-    "files.autoSave": "off",
-    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true // eslint
+    },
+    // formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettier
+    "editor.formatOnSave": true,
+    // 対象外言語
+    "[markdown]": {
+        "editor.formatOnSave": false
     },
 
     "typescript.inlayHints.parameterNames.enabled": "all",
@@ -11,5 +16,5 @@
     "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true
 }

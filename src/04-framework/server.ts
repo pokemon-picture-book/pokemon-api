@@ -12,7 +12,7 @@ const app = express();
 const appConfig = config[process.env.NODE_ENV];
 
 const corsOptions = {
-    origin: appConfig.CORS_ALLOW_ORIGIN_URL,
+    origin: appConfig.CORS_ALLOW_ORIGIN_URL
 };
 
 app.use(cors(corsOptions));
@@ -20,7 +20,7 @@ app.use(express.json({ limit: appConfig.REQUEST_LIMIT || '100kb' }));
 app.use(
     express.urlencoded({
         extended: true,
-        limit: appConfig.REQUEST_LIMIT || '100kb',
+        limit: appConfig.REQUEST_LIMIT || '100kb'
     })
 );
 app.use(cookieParser(appConfig.SESSION_SECRET || 'mySecret'));

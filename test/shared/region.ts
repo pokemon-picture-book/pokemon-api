@@ -6,7 +6,7 @@ export const getRegionPokemonNum = (...regionNames: string[]) => {
         innoh: 107,
         unova: 156,
         kalos: 72,
-        alola: 86,
+        alola: 86
     };
     return Object.keys(regionPokemonNum)
         .filter((key) => regionNames.includes(key))

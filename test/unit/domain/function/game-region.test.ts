@@ -20,7 +20,7 @@ describe('Unit test for game-region function', () => {
         // TODO: ほんとはDBアクセスなしでデータ生成を行う方が良い
         [allGames, allRegions] = await Promise.all([
             gameVersionGroupRepository.findAllByIsSupported(1, true),
-            regionRepository.findByLanguageId(1),
+            regionRepository.findByLanguageId(1)
         ]);
     });
 
@@ -31,11 +31,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game 無しで regions 無しの場合', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: '',
-            regions: [],
+            regions: []
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -47,11 +47,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game 有りで regions 無しの場合、game に紐づく regions が取得できているか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'gsc',
-            regions: [],
+            regions: []
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -63,11 +63,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game 有りで regions 無しの場合、game に存在しないパラメータが含まれている場合に初期のデータが返されるか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'xxxx',
-            regions: [],
+            regions: []
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -79,13 +79,13 @@ describe('Unit test for game-region function', () => {
     test('正常: game 無しで regions 有りの場合、regions に紐づく game が取得できているか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
 
         const defaultSet1 = getDefaultSet(
             {
                 game: '',
-                regions: ['alola', 'johto'],
+                regions: ['alola', 'johto']
             },
             allParam
         );
@@ -96,7 +96,7 @@ describe('Unit test for game-region function', () => {
         const defaultSet2 = getDefaultSet(
             {
                 game: '',
-                regions: ['unova'],
+                regions: ['unova']
             },
             allParam
         );
@@ -108,13 +108,13 @@ describe('Unit test for game-region function', () => {
     test('正常: game 無しで regions 有りの場合、regions に存在しないパラメータが含まれている場合に初期のデータが返されるか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
 
         const defaultSet1 = getDefaultSet(
             {
                 game: '',
-                regions: ['xxxx', 'yyyy'],
+                regions: ['xxxx', 'yyyy']
             },
             allParam
         );
@@ -125,7 +125,7 @@ describe('Unit test for game-region function', () => {
         const defaultSet2 = getDefaultSet(
             {
                 game: '',
-                regions: ['xxxx'],
+                regions: ['xxxx']
             },
             allParam
         );
@@ -137,11 +137,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game/regions 共に有りで、game に存在しないパラメータが含まれている場合に region に紐づくデータが返されるか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'xxxx',
-            regions: ['johto'],
+            regions: ['johto']
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -153,11 +153,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game/regions 共に有りで、game/regions 共に存在しないパラメータが含まれている場合に初期のデータが返されるか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'xxxx',
-            regions: ['yyyy'],
+            regions: ['yyyy']
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -169,11 +169,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game/regions 共に有りで、regions に存在しないパラメータが含まれている場合に game に紐づくデータが返されるか', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'rse',
-            regions: ['xxxx'],
+            regions: ['xxxx']
         };
 
         const defaultSet = getDefaultSet(param, allParam);
@@ -185,11 +185,11 @@ describe('Unit test for game-region function', () => {
     test('正常: game 有りで regions 有りの場合', (done) => {
         const allParam = {
             allGames: [...allGames],
-            allRegions: [...allRegions],
+            allRegions: [...allRegions]
         };
         const param = {
             game: 'hgss',
-            regions: ['kanto'],
+            regions: ['kanto']
         };
 
         const defaultSet = getDefaultSet(param, allParam);

@@ -4,7 +4,7 @@ import { toTypes } from '@/01-enterprise/function/serialize/pokemon-type.functio
 import { SearchOnePokemonResponseData } from 'app-response-model';
 
 export const toPokemonDetailEvolutions = async ({
-    pokemonEvolutions,
+    pokemonEvolutions
 }: Pokemon): Promise<SearchOnePokemonResponseData['evolutions']> => {
     if (
         !pokemonEvolutions ||
@@ -19,7 +19,7 @@ export const toPokemonDetailEvolutions = async ({
                 detail1,
                 detail2,
                 fromPokemon,
-                toPokemon,
+                toPokemon
             } = evolution;
             const [fromPokemonName] = fromPokemon.pokemonNames;
             const [toPokemonName] = toPokemon.pokemonNames;
@@ -36,7 +36,7 @@ export const toPokemonDetailEvolutions = async ({
                     gameImagePath: fromPokemonGameImage
                         ? await toBase64(fromPokemonGameImage.path)
                         : '',
-                    types: toTypes(fromPokemon.pokemonTypes),
+                    types: toTypes(fromPokemon.pokemonTypes)
                 },
                 toPokemon: {
                     id: toPokemon.id,
@@ -45,13 +45,13 @@ export const toPokemonDetailEvolutions = async ({
                     gameImagePath: toPokemonGameImage
                         ? await toBase64(toPokemonGameImage.path)
                         : '',
-                    types: toTypes(toPokemon.pokemonTypes),
-                },
+                    types: toTypes(toPokemon.pokemonTypes)
+                }
             };
         })
     );
 };
 
 export default {
-    toPokemonDetailEvolutions,
+    toPokemonDetailEvolutions
 };

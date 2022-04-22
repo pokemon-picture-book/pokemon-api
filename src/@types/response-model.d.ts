@@ -14,7 +14,7 @@ declare module 'app-response-model' {
         FlavorTextEntry,
         Genera,
         Evolution,
-        Status,
+        Status
     } from 'app-entity';
 
     type PokemonTypeResponse = {

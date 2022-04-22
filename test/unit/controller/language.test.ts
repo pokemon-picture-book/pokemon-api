@@ -5,7 +5,7 @@ import TYPES from '@test/unit/registory/inversify.types';
 import { AppRequest, AppResponse } from 'express';
 import {
     LanguageEmptyMockInteractor,
-    LanguageMockInteractor,
+    LanguageMockInteractor
 } from '../mock/interactor/LanguageMock.interactor';
 
 describe('Unit test for Language controller', () => {
@@ -22,7 +22,7 @@ describe('Unit test for Language controller', () => {
         const req = {};
         const res = {
             status: jest.fn().mockReturnThis(),
-            json: jest.fn().mockReturnThis(),
+            json: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -49,7 +49,7 @@ describe('Unit test for Language controller', () => {
         const req = {};
         const res = {
             status: jest.fn().mockReturnThis(),
-            send: jest.fn().mockReturnThis(),
+            send: jest.fn().mockReturnThis()
         };
 
         await controller.search(
@@ -59,7 +59,7 @@ describe('Unit test for Language controller', () => {
 
         expect(res.status.mock.calls[0][0]).toBe(204);
         expect(res.send.mock.calls[0][0]).toEqual({
-            message: 'No Content!',
+            message: 'No Content!'
         });
 
         done();

@@ -1,4 +1,4 @@
-const parseDBConfig = configString => {
+const parseDBConfig = (configString) => {
     return configString ? JSON.parse(configString) : {};
 };
 

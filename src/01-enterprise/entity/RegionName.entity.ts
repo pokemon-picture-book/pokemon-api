@@ -5,7 +5,7 @@ import {
     Entity,
     ManyToOne,
     PrimaryGeneratedColumn,
-    JoinColumn,
+    JoinColumn
 } from 'typeorm';
 import LanguageEntity from './Language.entity';
 import RegionEntity from './Region.entity';
@@ -13,13 +13,13 @@ import RegionEntity from './Region.entity';
 @Entity({ name: 'region_names' })
 class RegionNameEntity extends BaseEntity {
     @PrimaryGeneratedColumn({
-        type: 'mediumint',
+        type: 'mediumint'
     })
     readonly id: number;
 
     @ManyToOne(() => RegionEntity, (region) => region.regionNames)
     @JoinColumn({
-        name: 'region_id',
+        name: 'region_id'
     })
     readonly region: RegionEntity;
 
@@ -27,13 +27,13 @@ class RegionNameEntity extends BaseEntity {
         type: 'varchar',
         length: 32,
         insert: true,
-        update: false,
+        update: false
     })
     readonly name: string;
 
     @ManyToOne(() => LanguageEntity, (language) => language.regionNames)
     @JoinColumn({
-        name: 'language_id',
+        name: 'language_id'
     })
     readonly language: LanguageEntity;
 

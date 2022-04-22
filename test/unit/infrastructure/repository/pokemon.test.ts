@@ -19,7 +19,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
         const [bulbasaur, ivysaur, venusaur] = pokemons;
 
@@ -55,7 +55,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
 
         pokemons.forEach(({ pokemonGameImages }) => {
@@ -73,7 +73,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 2,
             regionIds: [1, 2],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
 
         const actualNum = getRegionPokemonNum('kanto', 'johto');
@@ -87,7 +87,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
 
         const isAllMainImage = pokemons.every(
@@ -106,7 +106,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
 
         pokemons.forEach((pokemon, i) => {
@@ -121,7 +121,7 @@ describe('Unit test for Pokemon repository', () => {
             {
                 id: 1,
                 languageId: 1,
-                gameVersionGroupId: 1,
+                gameVersionGroupId: 1
             },
             true
         );
@@ -136,7 +136,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 99999,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
         expect(pokemons.length).toBe(0);
         done();
@@ -147,7 +147,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 99999,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
         expect(pokemons.length).toBe(0);
         done();
@@ -158,7 +158,7 @@ describe('Unit test for Pokemon repository', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [99999],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
         expect(pokemons.length).toBe(0);
         done();

@@ -22,7 +22,7 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(200).send('ok');
-                            },
+                            }
                         },
                         {
                             method: 'post',
@@ -32,7 +32,7 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(201).send('ok');
-                            },
+                            }
                         },
                         {
                             path: '/test3',
@@ -45,7 +45,7 @@ describe('Unit test for ExpressRouter', () => {
                                         res: AppResponse<any>
                                     ) => {
                                         res.status(204).send('ok');
-                                    },
+                                    }
                                 },
                                 {
                                     path: '/test4',
@@ -58,13 +58,13 @@ describe('Unit test for ExpressRouter', () => {
                                                 res: AppResponse<any>
                                             ) => {
                                                 res.status(204).send('ok');
-                                            },
-                                        },
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     path: '/test5',
@@ -77,11 +77,11 @@ describe('Unit test for ExpressRouter', () => {
                                 res: AppResponse<any>
                             ) => {
                                 res.status(200).send('ok');
-                            },
-                        },
-                    ],
-                },
-            ],
+                            }
+                        }
+                    ]
+                }
+            ]
         };
 
         settingRouter(server, appRoutes);

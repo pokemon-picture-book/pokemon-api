@@ -19,7 +19,7 @@ import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
     SearchOnePokemonStatusResponse,
-    SearchSimplePokemonResponse,
+    SearchSimplePokemonResponse
 } from 'app-response-model';
 import { Container, injectable } from 'inversify';
 
@@ -63,7 +63,7 @@ export const getSearchOneContainer = (): Readonly<Container> => {
                             [new GameVersionGroupRegionEntity()]
                         ),
                         new RegionEntity(1, 'regionName', [], [], [])
-                    ),
+                    )
                 ]
             );
         }
@@ -92,9 +92,9 @@ export const getSearchOneContainer = (): Readonly<Container> => {
                                       [new GameVersionGroupRegionEntity()]
                                   ),
                                   new RegionEntity(1, 'regionName', [], [], [])
-                              ),
+                              )
                           ]
-                      ),
+                      )
                   ]
                 : [];
         }
@@ -196,5 +196,5 @@ export const getSearchOneContainer = (): Readonly<Container> => {
 };
 
 export default {
-    getSearchOneContainer,
+    getSearchOneContainer
 };

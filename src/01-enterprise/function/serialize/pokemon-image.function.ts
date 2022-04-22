@@ -4,7 +4,7 @@ import { toBase64 } from '@/01-enterprise/function/mapping-image.function';
 
 export const toPokemonDetailImage = async ({
     pokemonGameImages,
-    pokemonFootmarkImages,
+    pokemonFootmarkImages
 }: Pokemon): Promise<SearchOnePokemonResponseData['image']> => {
     const mainGameImage = pokemonGameImages.find(({ isMain }) => isMain);
     const handheldIconImages = pokemonGameImages.filter(
@@ -17,24 +17,20 @@ export const toPokemonDetailImage = async ({
     );
 
     const base64FootmarkImages = await Promise.all(
-        pokemonFootmarkImages.map(async (pokemonFootmarkImage) => {
-            return toBase64(pokemonFootmarkImage.path);
-        })
+        pokemonFootmarkImages.map(async (pokemonFootmarkImage) =>
+            toBase64(pokemonFootmarkImage.path)
+        )
     );
     const base64HandheldIconImages = await Promise.all(
-        handheldIconImages.map(async (handheldIconImage) => {
-            return toBase64(handheldIconImage.path);
-        })
+        handheldIconImages.map(async (handheldIconImage) =>
+            toBase64(handheldIconImage.path)
+        )
     );
     const base64ShinyImages = await Promise.all(
-        shinyImages.map(async (shinyImage) => {
-            return toBase64(shinyImage.path);
-        })
+        shinyImages.map(async (shinyImage) => toBase64(shinyImage.path))
     );
     const base64OtherImages = await Promise.all(
-        otherImages.map(async (otherImage) => {
-            return toBase64(otherImage.path);
-        })
+        otherImages.map(async (otherImage) => toBase64(otherImage.path))
     );
 
     return {
@@ -42,10 +38,10 @@ export const toPokemonDetailImage = async ({
         footmarkImages: base64FootmarkImages,
         handheldIconImages: base64HandheldIconImages,
         shinyImages: base64ShinyImages,
-        otherImages: base64OtherImages,
+        otherImages: base64OtherImages
     };
 };
 
 export default {
-    toPokemonDetailImage,
+    toPokemonDetailImage
 };

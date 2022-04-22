@@ -3,7 +3,7 @@ import {
     SearchAllPokemonResponse,
     SearchOnePokemonResponse,
     SearchOnePokemonStatusResponse,
-    SearchSimplePokemonResponse,
+    SearchSimplePokemonResponse
 } from 'app-response-model';
 import { injectable } from 'inversify';
 import 'reflect-metadata';
@@ -22,7 +22,7 @@ export default class SearchPokemonMockInteractor
         const {
             languageName,
             gameVersionGroupAlias,
-            regionNames,
+            regionNames
         } = requestParam;
         return languageName === 'en' &&
             gameVersionGroupAlias === 'rgby' &&
@@ -36,13 +36,13 @@ export default class SearchPokemonMockInteractor
                           name: 'name',
                           imageColor: 'imageColor',
                           gameImagePath: 'gameImagePathMain',
-                          types: [{ code: 'typeCode', name: 'typeName' }],
-                      },
-                  ],
+                          types: [{ code: 'typeCode', name: 'typeName' }]
+                      }
+                  ]
               }
             : {
                   hits: 0,
-                  data: [],
+                  data: []
               };
     }
 

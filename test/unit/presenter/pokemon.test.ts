@@ -25,7 +25,7 @@ describe('Unit test for Pokemon presenter', () => {
             languageId: 1,
             gameVersionGroupId: 1,
             regionIds: [1],
-            isPokemonMainImage: true,
+            isPokemonMainImage: true
         });
 
         const pokemonSearchResponse = await presenter.toSearchAllPokemonResponse(
@@ -70,7 +70,7 @@ describe('Unit test for Pokemon presenter', () => {
             {
                 id: 1,
                 languageId: 1,
-                gameVersionGroupId: 1,
+                gameVersionGroupId: 1
             },
             true
         )) as PokemonEntity;
@@ -78,10 +78,10 @@ describe('Unit test for Pokemon presenter', () => {
         const {
             data: response,
             prevId,
-            nextId,
+            nextId
         } = await presenter.toSearchOnePokemonResponse(pokemon, {
             prevId: 151,
-            nextId: 2,
+            nextId: 2
         });
 
         expect(prevId).toBe(151);

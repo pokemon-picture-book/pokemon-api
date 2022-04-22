@@ -10,26 +10,20 @@ export default class GameVersionGroupPresenter
         gameVersionGroups: GameVersionGroupEntity[]
     ): GameVersionGroupResponse[] {
         return gameVersionGroups.map<GameVersionGroupResponse>(
-            ({ id, alias, gameVersions, gameVersionGroupRegions }) => {
-                return {
-                    id,
-                    alias,
-                    name: gameVersions
-                        .map(({ gameVersionNames }) => {
-                            const [gameVersionName] = gameVersionNames;
-                            return gameVersionName.name;
-                        })
-                        .join('/'),
-                    relatedRegions: gameVersionGroupRegions.map(
-                        ({ region }) => {
-                            return {
-                                id: region.id,
-                                name: region.name,
-                            };
-                        }
-                    ),
-                };
-            }
+            ({ id, alias, gameVersions, gameVersionGroupRegions }) => ({
+                id,
+                alias,
+                name: gameVersions
+                    .map(({ gameVersionNames }) => {
+                        const [gameVersionName] = gameVersionNames;
+                        return gameVersionName.name;
+                    })
+                    .join('/'),
+                relatedRegions: gameVersionGroupRegions.map(({ region }) => ({
+                    id: region.id,
+                    name: region.name
+                }))
+            })
         );
     }
 }

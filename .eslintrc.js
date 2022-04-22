@@ -1,32 +1,29 @@
 module.exports = {
-    extends: [
-        'airbnb-base',
-        'prettier',
-        'plugin:prettier/recommended'
+    extends: ['airbnb-base', 'prettier'],
+    plugins: ['@typescript-eslint'],
+    ignorePatterns: [
+        'src/04-framework/db/migrations/*.ts',
+        'src/04-framework/db/seed/*.json',
+        '.eslintrc.js',
+        'jest.config.js',
+        'nodemon.json',
+        'ormconfig.js',
+        'package*.json',
+        'tsconfig.json',
+        'webpack*js'
     ],
-    plugins: [
-        'prettier',
-        '@typescript-eslint'
-    ],
+    env: { node: true },
     parser: '@typescript-eslint/parser',
-    env: { 'node': true },
     parserOptions: {
         sourceType: 'module',
         project: './tsconfig.json'
     },
     globals: {
-      jest: false,
-      function: false
+        jest: false,
+        function: false
     },
     rules: {
-      'no-undef': 'warn',
-        'prettier/prettier': [
-            'error',
-            {
-                singleQuote: true,
-                tabWidth: 4
-            }
-        ],
+        'no-undef': 'warn',
         'no-console': process.env.NODE_ENV === 'development' ? 'error' : 'off',
         'import/no-unresolved': 'off',
         'no-unused-vars': 'off',
@@ -37,18 +34,16 @@ module.exports = {
         'max-classes-per-file': 'off'
     },
     overrides: [
-      {
-        files: [
-          '**/__test__/*.{j,t}s?(x)',
-          '**/test/integration/**/*.test.{j,t}s?(x)',
-          '**/test/unit/**/*.test.{j,t}s?(x)'
-        ],
-        env: {
-          'jest/globals': true
-        },
-        plugins: [
-          'jest'
-        ]
-      }
+        {
+            files: [
+                '**/__test__/*.{j,t}s?(x)',
+                '**/test/integration/**/*.test.{j,t}s?(x)',
+                '**/test/unit/**/*.test.{j,t}s?(x)'
+            ],
+            env: {
+                'jest/globals': true
+            },
+            plugins: ['jest']
+        }
     ]
-}
+};

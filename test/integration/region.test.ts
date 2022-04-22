@@ -43,7 +43,7 @@ describe('Integration test for region', () => {
 
     test('正常: lang パラメータを送信した際に、指定した言語でのデータが取得できているか', (done) => {
         const queryParam: Readonly<RegionQueryParam> = {
-            lang: 'ja-Hrkt',
+            lang: 'ja-Hrkt'
         };
 
         request(server)
@@ -75,7 +75,7 @@ describe('Integration test for region', () => {
 
     test('異常: lang に不正な値を入れ、リクエストを送信した際 400 (バリデーションエラー) となるか', (done) => {
         const queryParam: Readonly<RegionQueryParam> = {
-            lang: 'xxxxx',
+            lang: 'xxxxx'
         };
         request(server)
             .get(`${ROUTING.API}${ROUTING.REGION}`)

@@ -15,8 +15,8 @@ export default class GameVersionGroupMockInteractor
                       id: 1,
                       alias: 'alias',
                       name: 'name',
-                      relatedRegions: [{ id: 1, name: 'regionName' }],
-                  },
+                      relatedRegions: [{ id: 1, name: 'regionName' }]
+                  }
               ]
             : [];
     }

@@ -36,7 +36,7 @@ export default class GameVersionGroupMockRepository
                       [new GameVersionEntity()],
                       [new PokemonGameImageEntity()],
                       [new GameVersionGroupRegionEntity()]
-                  ),
+                  )
               ]
             : [];
     }
