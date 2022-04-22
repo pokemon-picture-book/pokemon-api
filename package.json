@@ -28,7 +28,7 @@
         "lint-staged": "lint-staged"
     },
     "lint-staged": {
-        "*.ts": [
+        "*.{js,ts,json}": [
             "npm run lint",
             "git add"
         ]
