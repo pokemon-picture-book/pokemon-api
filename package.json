@@ -41,7 +41,7 @@
         "cors": "2.8.5",
         "express": "^4.17.1",
         "express-validator": "6.13.0",
-        "file-type": "16.5.3",
+        "file-type": "16.5.4",
         "fs": "0.0.1-security",
         "inversify": "^5.0.1",
         "logform": "^2.1.2",
